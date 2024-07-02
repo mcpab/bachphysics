@@ -39,8 +39,6 @@ export default function MediaAndText({ imageSrc, imageSize = 50, imagePosition =
         lf = img; sl = sImage;
     }
 
-    console.log('ciao' +sImage);
-
     return (
         <>
             <Grid container spacing={1}>
