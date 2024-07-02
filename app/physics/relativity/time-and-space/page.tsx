@@ -16,7 +16,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 
-import MediaAndText from '@/src/MediaAndText';
+import MediaAndText from '@/src/MediaAndTextGrid';
 import Divider from '@mui/material/Divider';
 
 
@@ -228,7 +228,7 @@ export default function Page() {
 
             </p>
 
-            <MediaAndText imageSrc='/img/fig1.png' imagePosition='right' imageSize={40} caption="Fig 3:The photon velocities">
+            <MediaAndText imageSrc='/img/fig1.png' imagePosition='right' imageSize={50} caption="Fig 3:The photon velocities">
               <p>
                 {cleanUp(
                   "Equation (\\ref{eq2}) can be further simplified if we look in detail to the direction of the vectors ${\vb v}$, ${\vb c_{down}}$ and ${\vb c_{up}}$.                 " +
@@ -357,10 +357,9 @@ export default function Page() {
 
                 "and can be written in bi-linear form as" +
 
-                "\begin{align*}\Delta s^2 &= \bra{\vb* X}\ket{ \vb M \vb* X} \\ \vb* X&= (x_2-x_1,y_2-y_1,z_2-z_1,c (t_2-t_1))" +
-                "\end{align*}" +
+                "\\[\Delta s^2 = \bra{\vb* X}\ket{ \vb M \vb* X} \\]" +
                 "" +
-                "where" +
+                "where $\vb* X= (x_2-x_1,y_2-y_1,z_2-z_1,c (t_2-t_1))$ and " +
                 "" +
                 "\begin{equation}" +
                 "{\vb M}=\begin{pmatrix}" +
@@ -373,18 +372,22 @@ export default function Page() {
                 "" +
                 "A spacetime interval measured in $F'$ is linked to the same interval in $F$ by the Lorentz transformation" +
                 "" +
-                "\begin{align*} \Delta s'^2 &=   \bra{\vb*  X'}\ket{ \vb M  \vb*  X'}= \bra{{\vb \Lambda}\vb*{X}}\ket{ {\vb M} {\vb \Lambda}\vb*{X}}\\ &=\bra{\vb*{X}}\ket{ {\vb \Lambda}^T{\vb M} {\vb \Lambda}\vb*{X}} \end{align*}" +
+                "\begin{equation} \Delta s'^2 =   \bra{\vb*  X'}\ket{ \vb M  \vb*  X'}= \bra{{\vb \Lambda}\vb*{X}}\ket{ {\vb M} {\vb \Lambda}\vb*{X}}\\ =\bra{\vb*{X}}\ket{ {\vb \Lambda}^T{\vb M} {\vb \Lambda}\vb*{X}} \end{equation}" +
 
-                "In the system $F$ we consider a photon moving along an unitary vector $\vb n$. The photon at time $t_1$ is in the position $\vb x_1$, and moves to the position $\vb x_1+{\vb n}\,c(t_2-t_1)$ at the time $t_2$. The spacetime interval in $F$ of the two events is identically zero," +
+                "In the system $F$ we consider a photon moving along an unitary vector $\vb n$. The photon at time $t_1$ is in the position $\vb x_1$, and moves to the position $\vb x_1+{\vb n}c(t_2-t_1)$ at the time $t_2$." +
+                "The spacetime interval in $F$ of the two events is identically zero," +
                 "" +
-                "\begin{equation*}\Delta s^2 = \Vert{\vb n}\Vert c^2(t_2-t_1)^2-c^2(t_2-t_1)^2  \end{equation*}" +
+                "\begin{equation}\Delta s^2 = c^2(t_2-t_1)^2\Vert{\vb n}\Vert^2 -c^2(t_2-t_1)^2 =0 \end{equation}" +
                 "" +
-                "As we are considering two events along the path of a photon (the so-called world line of a photon), the spacetime interval $\Delta' s^2$ in $F'$ must also be zero," +
+                "As we are considering two events along the path of a photon (the so-called world line of a photon), the spacetime interval $\Delta' s^2$ in $F'$ must also be zero if we assume that the speed of light $c$ is invariant," +
 
-                "\begin{equation} \bra{({\vb n}\,c(t_2-t_1),c(t_2-t_1))}\ket{{\vb \Lambda}^T{\vb M} {\vb \Lambda}\cdot({\vb n}\,c(t_2-t_1),c(t_2-t_1))}=0\end{equation}" +
+                "\begin{equation} \bra{(c(t_2-t_1){\vb n},c(t_2-t_1))}\ket{{\vb \Lambda}^T{\vb M} {\vb \Lambda}\\cdot(c(t_2-t_1){\vb n},c(t_2-t_1))}=0\end{equation}" +
+
                 "equivalent to," +
-                "\begin{equation}\bra{({\vb n},1)}\ket{{\vb \Lambda}^T{\vb M} {\vb \Lambda}\cdot({\vb n} ,1)}=0 \label{rt1l}\end{equation}" +
+
+                "\begin{equation}\bra{({\vb n},1)}\ket{{\vb \Lambda}^T{\vb M} {\vb \Lambda}\\cdot({\vb n} ,1)}=0 \\label{rt1l}\end{equation}" +
                 "for all $\vb n$ such that  $||\vb n||=1$." +
+
                 "To solve equation (\ref{rt1l}) we need ${\vb M} {\vb \Lambda}$, which is ${\vb \Lambda}$ with the time component changed sign," +
                 "\begin{equation}" +
                 "{\vb M} \vb \Lambda({\vb v})=" +
@@ -393,7 +396,7 @@ export default function Page() {
                 "\lambda_{3, 3}\ket{\vb{e}_3,0}\bra{\vb{e}_3,0}" +
                 "+\beta\frac{v} {c} \ket{\vb{0},1}\bra{\vb{e}_1,0}   " +
                 "-\beta \ket{\vb{0},1}\bra{\vb{0},1}" +
-                "\label{simpleLambda_v11}" +
+                "\\label{simpleLambda_v11}" +
                 "\end{equation}" +
                 "" +
                 "and $ {\vb \Lambda}^T$ is readily obtained by exchanging the bra and ket vectors," +
@@ -405,7 +408,7 @@ export default function Page() {
                 "\lambda_{3, 3}\ket{\vb{e}_3,0}\bra{\vb{e}_3,0}" +
                 "-\beta\frac{v} {c} \ket{\vb{e}_1,0}\bra{\vb{0},1}   " +
                 "+\beta \ket{\vb{0},1}\bra{\vb{0},1}" +
-                "\label{simpleLambda_v12}" +
+                "\\label{simpleLambda_v12}" +
                 "\end{equation}" +
 
                 "The product $\vb \Lambda({\vb v})^T{\vb M} \vb \Lambda({\vb v})$ is" +
@@ -413,15 +416,15 @@ export default function Page() {
                 "\begin{equation}" +
                 "\begin{matrix}" +
                 "(\lambda_{1, 1}^2-\beta^2\frac{v ^ 2} {c ^ 2}) \ket{\vb{e}_1,0}\bra{\vb{e}_1,0} + (\lambda_{1, 1}\lambda_{1, 4}+\beta^2\frac{v} {c})\ket{\vb{0},1}\bra{\vb{e}_1,0}" +
-                "+ (\lambda_{1, 1}\lambda_{1, 4}+\beta^2\frac{v} {c})\ket{\vb{e}_1,0}\bra{\vb{0},1}+\\" +
+                "+ (\lambda_{1, 1}\lambda_{1, 4}+\beta^2\frac{v} {c})\ket{\vb{e}_1,0}\bra{\vb{0},1}+ \\ " +
                 "\lambda_{2, 2}^2\ket{\vb{e}_2,0}\bra{\vb{e}_2,0}+" +
                 "\lambda_{3, 3}^2\ket{\vb{e}_3,0}\bra{\vb{e}_3,0}" +
                 "+(\lambda_{1, 4}^2-\beta^2) \ket{\vb{0},1}\bra{\vb{0},1}" +
                 "\end{matrix}" +
-                "\label{simpleLambda_v13}" +
+                "\\label{simpleLambda_v13}" +
                 "\end{equation}" +
                 "" +
-                "and equation $\ref{rt1l}$ reads," +
+                "and equation $(\\ref{rt1l})$ reads," +
                 "" +
                 "\begin{equation}" +
                 "(\lambda_{1, 1}^2-\beta^2\frac{v ^ 2} {c ^ 2}) n_1^2 + 2(\lambda_{1, 1}\lambda_{1, 4}+\beta^2\frac{v} {c})n_1" +
@@ -429,7 +432,7 @@ export default function Page() {
                 "n_2^2 +" +
                 "n_3^2 " +
                 "+(\lambda_{1, 4}^2-\beta^2) =0" +
-                "\label{simpleLambda_v13l}" +
+                "\\label{simpleLambda_v13l}" +
                 "\end{equation}" +
                 "" +
                 "Choosing $n_2$ or $n_3=1$ and $n_1=0$, " +
@@ -440,7 +443,7 @@ export default function Page() {
                 "" +
                 "\end{equation}" +
                 "" +
-                "Choosing $n_1=\pm 1$ and  $n_2=n_3=0$, " +
+                "Choosing $n_1=\\pm 1$ and  $n_2=n_3=0$, " +
                 "" +
                 "\begin{gather}" +
                 "" +
@@ -454,20 +457,89 @@ export default function Page() {
                 "" +
                 "\begin{equation}" +
                 "\begin{matrix}" +
-                "\lambda_{1, 1}^2-\ds\beta^2\frac{v ^ 2} {c ^ 2} &= 1 \\" +
-                "\lambda_{1, 1}\lambda_{1, 4}+\ds\beta^2\frac{v} {c} & =0 \\" +
-                "\lambda_{1, 4}^2-\beta^2 &=-1 \\" +
+                "\lambda_{1, 1}^2-\beta^2\\displaystyle\frac{v ^ 2} {c ^ 2} &= 1 \\ " +
+                "\lambda_{1, 1}\lambda_{1, 4}+\beta^2\\displaystyle\\frac{v} {c} & =0 \\ " +
+                "\lambda_{1, 4}^2-\beta^2 &=-1 \\ " +
                 "" +
                 "\end{matrix}" +
                 "\end{equation}" +
                 "" +
-                "which has the only admissible solutions," +
+                "which has the following admissible solutions," +
                 "" +
-                "\begin{align *}" +
-                "\beta&=\ds\frac{1}{\ds\sqrt{1 -\frac{v ^ 2}{c ^ 2} }}\\" +
-                "\lambda_{1, 1}&= \beta \\" +
-                "\lambda_{1, 4}&=-\ds\frac{v}{c}\beta \\" +
-                "\end{align *}")}
+                "\begin{align*}" +
+                "\beta&=\frac{1}{\\sqrt{1 -\frac{v ^ 2}{c ^ 2} }} \\ " +
+                "\lambda_{1, 1}&= \beta \\ " +
+                "\lambda_{1, 4}&=-\frac{v}{c}\beta \\ " +
+                "\end{align*}" +
+
+                "The Lorentz transformation takes the final form" +
+
+                "\begin{equation}" +
+                "\vb \Lambda({\vb v})=" +
+                "\beta \ket{\vb{e}_1,0}\bra{\vb{e}_1,0}  -\beta\frac{v}{c}\ket{\vb{e}_1,0}\bra{\vb{0},1}+" +
+                "\ket{\vb{e}_2,0}\bra{\vb{e}_2,0}+\ket{\vb{e}_3,0}\bra{\vb{e}_3,0}" +
+                "-\beta\frac{ v} {c} \ket{\vb{0},1}\bra{\vb{e}_1,0}   " +
+                "+\beta \ket{\vb{0},1}\bra{\vb{0},1} \\ " +
+                "\\label{lambda_1}" +
+                "\end{equation}" +
+
+                // "where the operator $\vb I'$ is the identity for the components $\ket{\vb{e}_1,0}, \ket{\vb{e}_2,0}$ and $\ket{\vb{e}_3,0}$ ," +
+
+                // "\begin{equation}" +
+                // "\ket{\vb{e}_2,0}\bra{\vb{e}_2,0}+" +
+                // "\ket{\vb{e}_3,0}\bra{\vb{e}_3,0} = {\vb{I'}}-\ket{\vb{e}_1,0}\bra{\vb{e}_1,0}" +
+                // "\end{equation}" +
+
+                "The inverse of $\Lambda(v)$ transforms the coordinates from $ F'$ to $F$ and can be readily obtained by exchanging the velocity sign, as it can be verified directly" +
+
+                
+                "\begin{equation}" +
+                "\vb \Lambda^{-1}({\vb v})= \Lambda(-{\vb v})=" +
+                "\beta \ket{\vb{e}_1,0}\bra{\vb{e}_1,0}  +\beta\frac{v}{c}\ket{\vb{e}_1,0}\bra{\vb{0},1}+" +
+                "\ket{\vb{e}_2,0}\bra{\vb{e}_2,0}+\ket{\vb{e}_3,0}\bra{\vb{e}_3,0}" +
+                "+\beta\frac{ v} {c} \ket{\vb{0},1}\bra{\vb{e}_1,0}   " +
+                "+\beta \ket{\vb{0},1}\bra{\vb{0},1} \\ " +
+                "\\label{lambda_inv}" +
+                "\end{equation}" +
+
+                "The Lorentz transformation written explicitly in terms of the velocity vector, as $ \ket{\vb{e}_1,0}=\ket{\vb{v},0}/v$, reads," +
+
+                "\begin{equation}" +
+                "\vb \Lambda({\vb v})=" +
+                "\frac{\beta}{v^2} \ket{\vb v,0}\bra{\vb{v},0}  -\frac{\beta}{c}\ket{\vb{v},0}\bra{\vb{0},1}+" +
+               "\ket{\vb{e}_2,0}\bra{\vb{e}_2,0}+\ket{\vb{e}_3,0}\bra{\vb{e}_3,0}" +
+                "-\frac{ \beta} {c} \ket{\vb{0},1}\bra{\vb{v},0}   " +
+                "+\beta \ket{\vb{0},1}\bra{\vb{0},1} \\ " +
+                "\\label{lambda_123}" +
+                "\end{equation}" +
+
+                // "The derivation of the relativistic Maxwell equations is easier when the time component $t$ in the Lorentz transformation is in time units, not space $ct$," +
+
+                // "\begin{equation}" +
+                // "\vb \Lambda'({\vb v})=" +
+                // "\frac{\beta}{v^2} \ket{\vb v,0}\bra{\vb v,0}  -\ds\beta\ket{\vb v,0}\bra{\vb{0},1}+" +
+                // "(\vb{I'}-\frac{1}{v^2}\ket{\vb{v},0}\bra{\vb{v},0})" +
+                // "-\frac{ \beta} {c^2} \ket{\vb{0},1}\bra{\vb v,0}   " +
+                // "+\beta \ket{\vb{0},1}\bra{\vb{0},1} \\ " +
+                // "\\label{lambda_11}" +
+                // "\end{equation}" +
+
+                "When $\vb v$ has the direction of the x-axis, the transformation simplifies to the original Einstein formula" +
+
+                "\begin{align}" +
+                " x' &= \beta(x-vt ) \nonumber \\ " +
+                " y'&=y\nonumber \\ " +
+                " z'&=z\nonumber \\ " +
+                " t'&= \beta \\left(t-\frac{v}{c^2}x \\right) \\label{Lorentz}" +
+                "\end{align}" +
+
+                "Finally, from equation ($\\ref{simpleLambda_v13l}$), the Lorentz transformation satisfies the condition ${\vb \Lambda}^T{\vb M} {\vb \Lambda}=\vb M$, hence $\Delta' s=\Delta s$ for all events, not only those on a world line of a photon," +
+
+                "\begin{equation}" +
+                "\Delta s'^2 =   \bra{\vb*  X'}\ket{ \vb M  \vb*  X'}= \bra{{\vb \Lambda}\vb*{X}}\ket{ {\vb M} {\vb \Lambda}\vb*{X}}=\bra{\vb*{X}}\ket{ {\vb \Lambda}^T{\vb M} {\vb \Lambda}\vb*{X}}=\bra{\vb*{X}}\ket{ {\vb M} \vb*{X}}=\Delta s \\label{nrm}" +
+                "\end{equation}" 
+                
+                )}
 
             </p>
 

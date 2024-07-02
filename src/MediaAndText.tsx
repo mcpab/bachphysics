@@ -5,6 +5,9 @@ import Image from 'next/image'
 
 export default function MediaAndText({ imageSrc, imageSize = 50, imagePosition = 'left', caption = '', children }: Readonly<{ imageSrc: string, imageSize?: number, imagePosition?: string, caption?: string, children: React.ReactNode }>) {
 
+    var sImage;
+    var sChild;
+    
     const cp = caption === '' ? '' : <figcaption className='m-4 text-sm text-center'> {caption}</figcaption>;
 
     const img = <figure className='relative content-center drop-shadow-lg '>
@@ -33,15 +36,16 @@ export default function MediaAndText({ imageSrc, imageSize = 50, imagePosition =
         lf = img; sl= sImage;
     }
 
-    var sImage;
-    var sChild;
-
+    var fg= "grid grid-flow-col grid-cols-["+sl+"_"+sr+"] justify-center content-center  ";
 
 
     return (
-        <div className={`grid grid-cols-[${sl}_${sr}] justify-center content-center  `}>
+        // <div className={`grid grid-flow-col grid-cols-[80%_20%] justify-center content-center  `}>
+        // <div className={`grid grid-flow-col grid-cols-[${sl}_${sr}] justify-center content-center  `}> 
+          <div className={fg}> 
 
-            <div> {lf} </div>
+
+            <div  className=' flex content-center '> {lf} </div>
 
             <div className=' flex content-center '>
                 {rg}
