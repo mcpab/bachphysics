@@ -7,7 +7,7 @@ export default function MathJax() {
 
     return (
         <>
-            <Script>
+            <Script id='mtx'>
                 {`MathJax = {
   loader: {load: ['[tex]/physics']},
     tex: {
