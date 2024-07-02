@@ -54,7 +54,7 @@ export default function Navigation() {
                     <MenuItem> <Link className='text-slate-700' href="/physics">Physics</Link></MenuItem>
                 </Menu>
 
-                <AppBar position="static" style={{ background: 'transparent', boxShadow: 'none' }} className="absolute z-10" >
+                <AppBar position="static" style={{ background: 'transparent', boxShadow: 'none' }} className="" >
                     <Toolbar>
                         <Container className='flex flex-row flex-nowrap ' >
                             <IconButton onClick={iconPressed}

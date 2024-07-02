@@ -11,10 +11,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'bos-clouds': "url('/img/bsc.jpg')",
-        'colorado-nav': "url('/img/colorado.jpg')",
-        'body-img-1': "url('/img/hans-isaacson-odTQ0nftWTc-unsplash.jpg')",
         'body-img-2': "url('/img/osarugue-igbinoba-KZPIHQvOIvQ-unsplash.jpg')",
+        'body-img-4': "url('/img/bg4.jpg')",
         
       },
       height: {

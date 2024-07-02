@@ -1,14 +1,17 @@
 
 
 import Container from '@mui/material/Container';
+import BackgroundImage from '@/src/BackgroundImage';
 
-export default function Cover({ image, children }: Readonly<{ image: string, children: React.ReactNode }>) {
+
+export default function Cover({ image, height, mode ='cover' , children }: Readonly<{ image: string, height:string, mode?: 'cover' | 'contain', children?: React.ReactNode }>) {
 
     return (
 
         <>
-            <div className={`flex flex-col grow bg-${image} bg-center bg-cover bg-no-repeat h-180`}>
-                <div className="flex-auto flex-col justify-center content-center">
+            <div className={`relative ${height} flex flex-col`}>
+                <BackgroundImage image={image}  mode={mode}/>
+                <div className="flex-auto flex-col justify-center content-center z-10">
                     {children}
                 </div>
             </div>
