@@ -23,7 +23,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 
-export default function Navigation() {
+export default function Navigation({clerkKey}:Readonly<{clerkKey: string}>) {
 
     const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 
@@ -42,7 +42,7 @@ export default function Navigation() {
     return (
 
         <>
-            <ClerkProvider publishableKey='pk_test_d2l0dHktY2FyaWJvdS0yNC5jbGVyay5hY2NvdW50cy5kZXYk'>
+            <ClerkProvider publishableKey={`${clerkKey}`}>
                 <Menu
                     id="basic-menu"
                     anchorEl={anchorEl}

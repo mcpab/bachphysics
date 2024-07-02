@@ -39,7 +39,7 @@ export default function RootLayout({
         <AppRouterCacheProvider options={{ enableCssLayer: true }}>
           <StyledEngineProvider injectFirst>
             <ThemeProvider theme={theme}>
-              <Navigation />
+              <Navigation clerkKey="'pk_test_d2l0dHktY2FyaWJvdS0yNC5jbGVyay5hY2NvdW50cy5kZXYk'"/>
 
               <main className="font-sans flex flex-col">
                 {children}
