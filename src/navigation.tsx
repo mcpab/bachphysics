@@ -42,7 +42,7 @@ export default function Navigation() {
     return (
 
         <>
-            <ClerkProvider>
+            <ClerkProvider publishableKey='pk_test_d2l0dHktY2FyaWJvdS0yNC5jbGVyay5hY2NvdW50cy5kZXYk'>
                 <Menu
                     id="basic-menu"
                     anchorEl={anchorEl}
