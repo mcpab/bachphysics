@@ -7,7 +7,7 @@ export default function MathJax() {
 
     return (
         <>
-            <Script id='mtx'>
+            <Script id='mtx' strategy="beforeInteractive">
                 {`MathJax = {
   loader: {load: ['[tex]/physics']},
     tex: {
@@ -24,7 +24,7 @@ export default function MathJax() {
             }}
                 defer /> */}
 
-            <Script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async strategy="lazyOnload" onReady={() => {
+            <Script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"  strategy="afterInteractive" onReady={() => {
                 console.log('loaded MathJax');
             }}
                 defer />
