@@ -5,7 +5,6 @@ import Container from '@mui/material/Container';
 import Paper from '@mui/material/Paper';
 
 
-// import Katex from '@/src/katex/Katex';
 import Link from 'next/link';
 
 import Table from '@mui/material/Table';
@@ -70,7 +69,7 @@ export default function Page() {
             <h2  >Introduction</h2>
             <section>In his seminal article, Einstein elegantly derived the Lorentz transformation for time and space between systems moving at constant relative velocity. His original derivation assumed
               that the relative velocity was aligned with the <em>x</em>-axis, and implicitly considered the measurement of length perpendicular to this velocity direction
-              to be consistent in both systems. In this section, we will follow Einstein's reasoning and extend the derivation to a more general case—a boost in any arbitrary direction.</section>
+              to be consistent in both systems. In this section, we will follow Einstein reasoning and extend the derivation to a more general case—a boost in any arbitrary direction.</section>
             <section>Our goals are as follows:</section>
             <ol>
               <li><strong>General Boost Transformation:</strong>
@@ -87,7 +86,7 @@ export default function Page() {
               </li>
               <li><strong>Time Transformation via Clock Synchronization:</strong>
                 <ul>
-                  <li>Following Einstein's original method, we will derive the transformation of time based on clock synchronization.</li>
+                  <li>Following Einstein original method, we will derive the transformation of time based on clock synchronization.</li>
                   <li>This step lays the foundation for our subsequent analysis.</li>
                 </ul>
               </li>
@@ -120,7 +119,7 @@ export default function Page() {
 
 
             <section> Now, let us imagine an experiment where a photon is emitted from A, travels to B, and gets reflected back to its origin in A.
-              Observer A records the time of emission as <Math math='t_1' />, while observer B notes the time of reflection as {mt("t_2")}. Finally, A marks the time of the photon’s arrival as {mt("t_3")}.
+              Observer A records the time of emission as <Math math='t_1' />, while observer B notes the time of reflection as {mt("t_2")}. Finally, A marks the time of the photon arrival as {mt("t_3")}.
               We assume that both A and B have access to each other time recordings (for example they would exchange data after the experiment).
              <section>A possible outcome of this experiment could be as per the  table below (units of time are not relevant in this discussion):</section> 
             </section>

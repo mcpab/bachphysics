@@ -3,13 +3,13 @@ import Image from 'next/image'
 import Grid from '@mui/material/Grid';
 
 
-export default function MediaAndText({ imageSrc, imageSize = 50, imagePosition = 'left', caption = '', children }: Readonly<{ imageSrc: string, imageSize?: number, imagePosition?: string, caption?: string, children: React.ReactNode }>) {
+export default function MediaAndText({ imageSrc, imageSize = 50, imagePosition = 'left', caption, children }: Readonly<{ imageSrc: string, imageSize?: number, imagePosition?: string, caption: React.ReactNode, children: React.ReactNode }>) {
 
     var sImage;
     var sChild;
 
    
-    const cp = caption === '' ? '' : <figcaption className='m-4 text-sm text-center'> {caption}</figcaption>;
+    const cp =  <figcaption className='m-4 text-sm text-center'> {caption}</figcaption>;
 
     const img = <figure className='relative content-center drop-shadow-lg '>
         <Image className=' relative   h-auto w-full' src={`${imageSrc}`}   alt="" quality={100} fill={true} />
