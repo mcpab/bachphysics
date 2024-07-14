@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 
 
-export default function MediaAndText({ imageSrc, imageSize = 50, imagePosition = 'left', caption = '', children }: Readonly<{ imageSrc: string, imageSize?: number, imagePosition?: string, caption?: string, children: React.ReactNode }>) {
+export default function MediaAndText({ imageSrc, imageSize = 50, imagePosition = 'left', caption , children }: Readonly<{ imageSrc: string, imageSize: number, imagePosition: string, caption:   HTMLElement | string, children: React.ReactNode }>) {
 
     var sImage;
     var sChild;
@@ -40,14 +40,13 @@ export default function MediaAndText({ imageSrc, imageSize = 50, imagePosition =
 
 
     return (
-        // <div className={`grid grid-flow-col grid-cols-[80%_20%] justify-center content-center  `}>
-        // <div className={`grid grid-flow-col grid-cols-[${sl}_${sr}] justify-center content-center  `}> 
+
           <div className={fg}> 
 
 
-            <div  className=' flex content-center '> {lf} </div>
+            <div  className=' flex content-center justify-center  '> {lf} </div>
 
-            <div className=' flex content-center '>
+            <div className=' flex content-center justify-center '>
                 {rg}
             </div>
         </div>
