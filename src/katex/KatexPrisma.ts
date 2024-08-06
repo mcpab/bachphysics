@@ -302,7 +302,11 @@ export async function selectPage(pageName: string) {
     } catch (error) {
 
         errorInPage();
-        if (isPrismaError(error)) {
+        if (error instanceof Prisma.PrismaClientKnownRequestError ||
+            error instanceof Prisma.PrismaClientUnknownRequestError ||
+            error instanceof Prisma.PrismaClientRustPanicError ||
+            error instanceof Prisma.PrismaClientValidationError ||
+            error instanceof Prisma.PrismaClientInitializationError) {
             throw new Error(error.message);
         } else if (error instanceof Error) {
             throw error;
