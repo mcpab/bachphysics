@@ -1,0 +1,32 @@
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider  = "postgresql"
+    // Uses connection pooling
+    url       = env("POSTGRES_PRISMA_URL")
+    // Uses direct connection, ⚠️ make sure to keep this to `POSTGRES_URL_NON_POOLING`
+    // or you'll have dangling databases from migrations
+    directUrl = env("POSTGRES_URL_NON_POOLING")
+}
+
+model Pages {
+    id        Int        @id @default(autoincrement())
+    pageName  String     @unique
+    label     String     @default("")
+    link      String     @default("")
+    equations Equation[]
+}
+
+model Equation {
+    id Int @id @default(autoincrement())
+
+    label  String
+    latex  String
+    html   String
+    pageId Int
+    page   Pages  @relation(fields: [pageId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+    number Int     
+    @@unique([pageId, label])
+}

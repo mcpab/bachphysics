@@ -1,31 +1,38 @@
-'use client'
 
 
-import Ktx from './KatexEnv';
- 
-import LargePopup from './LargePopup';
 
-export default function Equation({ math, label }: Readonly<{ math: string, label?: string }>) {
+import { addEquation, renderLatex } from '@/src/katex/KatexPrisma'
+import BorderedDiv from '../BorderedDiv';
 
-    
-    var rt = '*';
+export default async function Equation({ math, label }: Readonly<{ math: string, label?: string }>) {
+
+
     var eq;
 
-    var popCt = <span dangerouslySetInnerHTML={{ __html: Ktx.render("\\begin{equation*}\\huge " + math + "\\end{equation*}") }} />;
+    var html;
+    let pageName;
+    var signature;
 
-    if (label !== undefined) {
-        console.log('Define '+label)
-        Ktx.addLabel(label,popCt);
-        rt = '';
-       console.log('Got ');console.log(Ktx.getLabel(label))
+    var latex = "\\begin{equation*}" + math + "\\end{equation*}";
+
+    if (label === undefined) {
+        html = await renderLatex(latex);
+
+    } else {
+
+        const rt = await addEquation(latex, label);
+        html = rt.result['html'];
+        pageName = rt.result['pageName']
+        signature = pageName + ': ' + label.replace(/\b\w/g, function (char) {
+            return char.toUpperCase()
+        })
+
     }
 
+    eq = <span dangerouslySetInnerHTML={{ __html: html }} />;
 
-    eq = <span dangerouslySetInnerHTML={{ __html: Ktx.render("\\begin{equation" + rt + "}" + math + "\\end{equation" + rt + "}") }} />;
-    
-    
-    return (
-           <LargePopup zoomContent={popCt}> {eq} </LargePopup>  
-    )
+    const rrn = label === undefined ? eq : <BorderedDiv signature={signature}>{eq} </BorderedDiv>
+
+    return (rrn)
 
 }

@@ -1,8 +1,8 @@
-import Ktx from "./KatexEnv";
+import {renderLatex } from "./KatexPrisma";
 
-export default function Math({ math }: Readonly<{ math: string }>) {
+export default async function Math({ math }: Readonly<{ math: string }>) {
 
-    const rd = Ktx.render(math, false);
+    const rd = await renderLatex(math, false);
 
     return <span dangerouslySetInnerHTML={{ __html: rd }} />;
 

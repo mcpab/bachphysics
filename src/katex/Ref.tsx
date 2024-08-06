@@ -1,22 +1,58 @@
- 
 'use client'
 
-import Ktx from './KatexEnv';
-import LargePopup from './LargePopup';
+import LargePopup from "../LargePopup";
+import { getEquation } from "./KatexPrisma";
+import { useEffect, useState } from "react";
+import BorderedDiv from "../BorderedDiv";
+
+export default function Ref({ label }: Readonly<{ label: string }>) {
 
 
-export default function Ref({ label}:Readonly<{ label:string}>) {
+    const [_label, _setLabel] = useState('');
+    const [_html, _setHtml] = useState('');
+    const [_pageName, _setPageName] = useState('');
+    const [loading, setLoading] = useState(true);
+
+    var results;
 
 
-    var lbl = Ktx.getLabel(label); 
+    useEffect(() => {
 
-    const rt = lbl===undefined? <span className="bg-yellow-300 text-red-600">Label {label} not defined</span> : <span className="underline text-blue-500">Eq ({lbl[0]})</span>; 
-    const popCt = lbl===undefined? <span className="bg-yellow-300 text-red-600">Label {label} not defined</span> : lbl[1]; 
+        (async () => {
 
-        return(
-            <>
-           <LargePopup zoomContent={popCt} inline={true}> {rt} </LargePopup>  
-            </>
-        )
+            setLoading(true); // Start loading
+            results = await getEquation(label);
+            setLoading(false); // Start loading
+
+            _setLabel(results.result['label']);
+            _setHtml(results.result['html']);
+            _setPageName(results.result['pageName']);
+
+        })();
+
+
+    }, [label])
+
+    if (loading) {
+        return <span>Loading...</span>;
+    }
+
+    var rt = <span className="bg-yellow-300 text-red-600">Label {label} not defined</span>
+
+    if (_label !== '') {
+
+        let eq = <span dangerouslySetInnerHTML={{ __html: _html }} />;
+
+        let signature = (_pageName+": "+_label).replace(/-/g,' ').replace(/\b\w/g, function (char) {
+            return char.toUpperCase()
+        })
+        let zoom = <BorderedDiv signature={signature}>{eq} </BorderedDiv>
+
+        rt = <LargePopup inline={true} zoom={zoom}> <span className="underline text-blue-500">{label}</span>  </LargePopup>
+
+
+    }
+
+    return (<>{rt}</>)
 
 }

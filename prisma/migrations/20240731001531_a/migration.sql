@@ -1,0 +1,3 @@
+-- AlterTable
+ALTER TABLE "Pages" ADD COLUMN     "label" TEXT NOT NULL DEFAULT '',
+ADD COLUMN     "link" TEXT NOT NULL DEFAULT '';

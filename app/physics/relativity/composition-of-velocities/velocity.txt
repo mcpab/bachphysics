@@ -1,0 +1,376 @@
+
+
+<h1>Composition of Velocities</h1>
+
+
+
+<p>In classical mechanics, a velocity ${\\vb u'}$ in the moving frame will be measured in the stationary frame
+ as ${\\vb u}={\\vb v}+{\\vb u'}$, which is the well-known law of the parallelograms. </p>
+
+
+
+<p>In relativity, the parallelogram formula holds only for velocities well below the speed of light, and the composition of velocities 
+needs to account for the fact that no speed can be measured, which is faster than the speed of light.</p>
+
+
+
+<p>To derive the more general parallelogram formula, we consider the general motion of a body in $F'$ described by the four-vector</p>
+
+
+
+\\begin{equation}
+\\ket{\\vb{x'},0} +c t' \\ket{\\vb{0},1}
+\\end{equation}
+
+
+
+<p>The motion of the body observed in $F$ is given by the Lorentz transformation<,</p>
+
+
+
+\\begin{equation}
+ \\vb \\Lambda({\\vb v}) \\left(\\ket{\\vb{x},0} +c t \\ket{\\vb{0},1}\\right) = \\ket{\\vb{x'},0} +c t' \\ket{\\vb{0},1} \\label{lk}
+\\end{equation}
+
+
+
+\\begin{equation}
+\\vb \\Lambda({\\vb v})=
+\\beta \\ket{\\vb{e}_1,0}\\bra{\\vb{e}_1,0}  -\\ds\\beta\\frac{v}{c}\\ket{\\vb{e}_1,0}\\bra{\\vb{0},1}+
+(\\vb{I'}-\\ket{\\vb{e}_1,0}\\bra{\\vb{e}_1,0})
+-\\beta\\frac{ v} {c} \\ket{\\vb{0},1}\\bra{\\vb{e}_1,0}   
++\\beta \\ket{\\vb{0},1}\\bra{\\vb{0},1}\\\\
+\\label{lambda_1}
+\\end{equation}
+
+
+
+<p>and the  velocity of the body in $F$ is computed from the time derivative of equation (\\ref{lk}) with respect to the time $t$,</p>
+
+
+
+\\begin{equation}
+\\vb \\Lambda({\\vb v}) (\\ket{\\vb{u},0} +c  \\ket{\\vb{0},1}) =  \\beta\\left(-\\frac{ v} {c^2}\\bra{{\\vb e}_1}\\ket{\\vb u}+1 \\right) (\\ket{\\vb{u'},0} +c  \\ket{\\vb{0},1}) \\label{nm}
+\\end{equation}
+
+
+
+<p>where  the time $t'$ is a function of the time $t$ given by the time component of the Lorentz transformation</p>
+
+
+
+\\begin{equation} 
+t'=\\beta\\left(-\\frac{ v} {c^2}\\bra{{\\vb e}_1}\\ket{\\vb x}+t \\right)
+\\end{equation}
+
+
+
+<p>from which we easily compute the derivative with respect to $t$</p>
+
+
+
+\\begin{equation} 
+\\frac{dt'}{dt}=\\beta\\left(-\\frac{ v} {c^2}\\bra{{\\vb e}_1}\\ket{\\vb u}+1 \\right) \\label{pkl}
+\\end{equation}
+
+
+
+<p>We write equation (\\ref{nm}) explicitly, </p>
+
+
+
+\\begin{gather*}
+(\\beta \\ket{\\vb{e}_1,0}\\bra{\\vb{e}_1,0}  -\\ds\\frac{v}{c}\\beta \\ket{\\vb{e}_1,0}\\bra{\\vb{0},1}
++ \\ket{\\vb{e}_2,0}\\bra{\\vb{e}_2,0} 
++
+\\ket{\\vb{e}_3,0}\\bra{\\vb{e}_3,0} +
+-\\beta\\ds\\frac{v}{c} \\ket{\\vb{0},1}\\bra{\\vb{e}_1,0}+
+\\beta\\ket{\\vb{0},1}\\bra{\\vb{0},1}
+)\\cdot (\\ket{\\vb{u},0} +c  \\ket{\\vb{0},1} ) \\\\ 
+= \\\\  
+\\beta\\left(-\\frac{ v} {c^2}\\bra{{\\vb e}_1}\\ket{\\vb u}+1 \\right) (\\ket{\\vb{u'},0} +c  \\ket{\\vb{0},1})
+\\end{gather*}
+
+
+
+<p>which simplifies to,</p>
+
+
+
+\\begin{gather*} 
+\\beta \\ket{\\vb{e}_1,0}\\bra{\\vb{e}_1,0} \\ket{\\vb{u},0}
+-{v}\\beta \\ket{\\vb{e}_1,0} 
++\\ket{\\vb{e}_2,0}\\bra{\\vb{e}_2,0} \\ket{\\vb{u},0} 
++\\ket{\\vb{e}_3,0}\\bra{\\vb{e}_3,0} \\ket{\\vb{u},0}
+-\\beta\\ds\\frac{v}{c} \\ket{\\vb{0},1}\\bra{\\vb{e}_1,0} \\ket{\\vb{u},0}
++c\\beta\\ket{\\vb{0},1} \\\\
+ =  \\\\
+-\\beta\\frac{ v} {c^2}\\ket{\\vb{u'},0}\\bra{{\\vb e}_1}\\ket{\\vb u}
+-\\beta\\frac{ v} {c}\\ket{\\vb{0},1}\\bra{{\\vb e}_1}\\ket{\\vb u} +\\beta\\ket{\\vb{u'},0} 
++\\beta c\\ket{\\vb{0},1} 
+\\end{gather*}
+
+
+
+<p>and finally,</p>
+
+
+
+\\begin{equation} 
+\\beta \\ket{\\vb{e}_1 +\\frac{ v} {c^2}\\vb{u'},0}\\bra{{\\vb e}_1,0}\\ket{\\vb u,0}
++\\ket{\\vb{e}_2,0}\\bra{\\vb{e}_2,0} \\ket{\\vb{u},0} 
++\\ket{\\vb{e}_3,0}\\bra{\\vb{e}_3,0} \\ket{\\vb{u},0} =
+{v}\\beta \\ket{\\vb{e}_1,0} 
++\\beta\\ket{\\vb{u'},0} \\label{df}
+\\end{equation}
+
+
+
+<p>The problem with the above equation is that $\\vb u'$ appears both on the left and right sides, and, in order to separate the two velocities, we have to write
+ the above expression as the product of an operator depending only on $\\vb u'$, times $\\vb u$. </p>
+
+
+
+<p>The first step is to decompose $\\vb u'$ along the versors, </p>
+
+
+
+\\begin{equation}
+{\\vb u'} = u'_1\\ket{{\\vb e}_1,0} +
+u'_2\\ket{{\\vb e}_2,0} +u'_3\\ket{{\\vb e}_3,0} \\label{hj}
+\\end{equation}
+
+
+
+<p>so that equation (\\ref{df}) assumes the form,</p>
+
+
+
+\\begin{gather*} 
+\\left(\\beta \\left(1 +\\ds\\frac{ v} {c^2}u'_1\\right)\\,\\,\\ket{{\\vb e}_1,0}\\bra{{\\vb e}_1,0} + 
+\\beta\\frac{ v} {c^2}u'_2\\,\\,\\ket{{\\vb e}_2,0}\\bra{{\\vb e}_1,0}+
+\\beta\\ds\\frac{ v} {c^2}u'_3\\,\\,\\ket{{\\vb e}_3,0}\\bra{{\\vb e}_1,0} +\\ket{\\vb{e}_2,0}\\bra{\\vb{e}_2,0}  + \\ket{\\vb{e}_3,0}\\bra{\\vb{e}_3,0}
+ \\right)\\cdot\\ket{\\vb{u},0}
+\\\\ = \\\\
+{v}\\beta \\ket{\\vb{e}_1,0} 
++\\beta\\ket{\\vb{u'}}\\label{yu1}
+\\end{gather*}
+
+
+
+<p>We have on the right side of the equation an operator that only depends on $\\vb u'$,</p>
+
+
+
+\\begin{equation}
+\\beta \\left(1 +\\ds\\frac{ v} {c^2}u'_1,0\\right)\\,\\,\\ket{{\\vb e}_1,0}\\bra{{\\vb e}_1,0} +
+\\beta\\ds\\frac{ v} {c^2 }u'_2\\,\\,\\ket{{\\vb e}_2,0}\\bra{{\\vb e}_1,0}+\\beta\\ds\\frac{ v} {c^2}u'_3\\,\\,\\ket{{\\vb e}_3,0}\\bra{{\\vb e}_1,0} 
++ \\ket{\\vb{e}_2,0}\\bra{\\vb{e}_2,0}  +\\ket{\\vb{e}_3,0}\\bra{\\vb{e}_3,0}
+ \\end{equation}
+
+
+
+<p>which can be easily inverted as,</p>
+
+
+
+\\begin{equation}
+\\ds\\frac{1}{\\beta \\left( 1 +\\ds\\frac{ v} {c^2}u'_1\\right)}\\,\\,\\ket{{\\vb e}_1,0 }\\bra{{\\vb e}_1,0}  
+%
+\\ds-\\frac{ v} {c^2}\\frac{u'_2}{(1 +\\ds\\frac{ v} {c^2}u'_1)}\\,\\,\\ket{{\\vb e}_2,0}\\bra{{\\vb e}_1,0}  
+%
+\\ds-\\frac{ v} {c^2}\\frac{u'_3}{(1 +\\ds\\frac{ v} {c^2}u'_1)}\\,\\,\\ket{{\\vb e}_3,0}\\bra{{\\vb e}_1,0}+ \\ket{\\vb{e}_2,0}\\bra{\\vb{e}_2,0} +\\ket{\\vb{e}_3,0}\\bra{\\vb{e}_3,0}
+ \\end{equation}
+
+
+
+<p>We can express the velocity measured in $F$ as,</p>
+
+
+
+\\begin{equation}
+\\ket{\\vb{u},0}=
+\\left(
+\\ds\\frac{1}{\\beta (1 +\\ds\\frac{ v} {c^2} u'_1)}\\,\\,\\ket{{\\vb e}_1,0}\\bra{{\\vb e}_1,0}  
+%
+\\ds-\\frac{ v} {c^2}\\frac{u'_2}{(1 +\\ds\\frac{ v} {c^2}u'_1)}\\,\\,\\ket{{\\vb e}_2,0}\\bra{{\\vb e}_1,0} 
+%
+\\ds-\\frac{ v} {c^2}\\frac{u'_3}{(1 +\\ds\\frac{ v} {c^2}u'_1)}\\,\\,\\ket{{\\vb e}_3,0}\\bra{{\\vb e}_1,0}+ \\ket{\\vb{e}_2,0}\\bra{\\vb{e}_2,0} + \\ket{\\vb{e}_3,0}\\bra{\\vb{e}_3,0}
+\\right)\\cdot \\left({v}\\beta \\ket{\\vb{e}_1,0} 
++\\beta\\ket{\\vb{u'}}\\right)
+\\end{equation}
+
+
+
+<p>which finally simplifies to,</p>
+
+
+
+\\begin{equation}
+\\ket{\\vb{u},0}=
+\\ds \\frac{1}{(1 +\\ds\\frac{ v} {c^2}u'_1)} \\left(
+\\ds (v+u'_1)
+\\,\\,\\ket{{\\vb e}_1,0} -
+%
+\\ds\\sqrt{1-\\ds\\frac{v^2}{c^2}}\\; u'_2 \\;
+\\ket{\\vb{e}_2,0} -
+\\sqrt{1-\\ds\\frac{v^2}{c^2}} \\; u'_3 \\;
+\\ket{\\vb{e}_3,0}  \\right)
+ \\label{p12}
+\\end{equation}
+
+
+
+<p>Equation (\\ref{p12}) assumes a more elegant form  when we drop the explicit dependence on the time component </p>
+
+
+
+\\begin{equation}
+\\ket{\\vb{u}}= \\frac{1}{ 1 +\\ds\\frac{ \\bra{\\vb v}\\ket{\\vb{u'} }} {c^2}
+                        }
+\\left(
+\\ket{\\vb v} +
+%
+\\alpha_v \\ket{\\vb u'}
++\\left(1-\\alpha_v\\right)\\frac{ \\bra{\\vb u'}\\ket{\\vb v}}{v^2}\\ket{\\vb v}
+\\right)
+ \\label{nice} 
+\\end{equation}
+
+
+
+<p>where,</p>
+
+
+
+\\begin{align}
+\\ket{\\vb v}&amp;=v\\,\\, \\ket{\\vb{e}_1,0} \
+onumber\\\\
+\\alpha_v&amp;=\\frac{1}{\\beta}=\\ds\\sqrt{1-\\ds\\frac{v^2}{c^2}}\
+onumber
+\\end{align}
+
+
+
+<p>Considering the components of $u$  along the vectors $\\ket{\\vb{e}_1,0}, \\ket{\\vb{e}_2,0}$ and $\\ket{\\vb{e}_3,0}$</p>
+
+
+
+\\begin{equation}
+ 
+{\\vb u} = u_1\\ket{\\vb{e}_1,0} +u_2\\ket{\\vb{e}_2,0} +u_3\\ket{\\vb{e}_3,0} 
+\\end{equation}
+
+
+
+<p>equation ($\\ref{p12}$) assumes a lighter and more familiar form</p>
+
+
+
+\\begin{align}
+u_1  &amp;=   \\frac{u'_1+v}{1+\\ds\\frac{vu'}{c^2}}\
+onumber\\\\
+u_2 &amp; =   \\frac{\\sqrt{1-\\ds\\frac{v^2}{c^2}}}{1+\\ds\\frac{vu'_1}{c^2}}u'_2\
+onumber\\\\
+u_3  &amp;=  \\frac{\\sqrt{1-\\ds\\frac{v^2}{c^2}}}{1+\\ds\\frac{vu'_1}{c^2}}u'_3\\label{velComp}\\\\
+\\end{align}
+
+
+
+<h1>Composition of Accelerations</h1>
+
+
+
+<p>The composition of accelerations is computed by performing the time derivative of the velocity ($\\ref{nice}$)</p>
+
+
+
+\\begin{align*}
+\\ket{\\vb{a}}&amp;= -\\frac{1}{\\left( 1 +\\ds\\frac{ \\bra{\\vb v}\\ket{\\vb{u'} }} {c^2}\\right)^2}
+\\left(
+\\ket{\\vb v} +
+%
+\\alpha_v \\ket{\\vb u'}
++\\left(1-\\alpha_v\\right)\\frac{ \\bra{\\vb u'}\\ket{\\vb v}}{v^2}\\ket{\\vb v}
+\\right)\\frac{ \\bra{\\vb a'}\\ket{\\vb{v} }} {c^2}\\frac{dt'}{dt} \\\\
+&amp;+\\frac{1}{ 1 +\\ds\\frac{ \\bra{\\vb v}\\ket{\\vb{u'} }} {c^2}
+                        }
+\\left(
+
+%
+\\alpha_v \\ket{\\vb a'}
++\\left(1-\\alpha_v\\right)\\frac{ \\bra{\\vb a'}\\ket{\\vb v}}{v^2}\\ket{\\vb v}
+\\right)\\frac{dt'}{dt}
+\\end{align*}
+
+
+
+<p>The derivative $dt'/dt$ reads, using equation (\\ref{pkl})  and (\\ref{nice}),</p>
+
+
+
+\\begin{equation}
+\\frac{dt'}{dt} = \\frac{\\alpha}{1 +\\ds\\frac{ \\bra{\\vb v}\\ket{\\vb{u'} }} {c^2}}
+\\end{equation}
+
+
+
+<p>substituted in the  acceleration expressions $\\ket{\\vb a}$ yields</p>
+
+
+
+\\begin{align*}
+\\ket{\\vb{a}}&amp;= \\frac{\\alpha}{\\left( 1 +\\ds\\frac{ \\bra{\\vb v}\\ket{\\vb{u'} }} {c^2}\\right)^3}
+\\left[
+-\\left(
+\\ket{\\vb v} +
+%
+\\alpha_v \\ket{\\vb u'}
++\\left(1-\\alpha_v\\right)\\frac{ \\bra{\\vb u'}\\ket{\\vb v}}{v^2}\\ket{\\vb v}
+\\right)\\frac{ \\bra{\\vb a'}\\ket{\\vb{v} }} {c^2} \\right.  \\\\
+&amp;\\left.+( 1 +\\ds\\frac{ \\bra{\\vb v}\\ket{\\vb{u'} }} {c^2})
+                       
+\\left(
+
+%
+\\alpha_v \\ket{\\vb a'}
++\\left(1-\\alpha_v\\right)\\frac{ \\bra{\\vb a'}\\ket{\\vb v}}{v^2}\\ket{\\vb v}
+\\right) \\right]
+
+\\end{align*}
+
+
+
+<p>which simplifies to the final expression,</p>
+
+
+
+\\begin{equation}
+\\ket{\\vb{a}}= \\frac{\\alpha^2}{\\left( 1 +\\ds\\frac{ \\bra{\\vb v}\\ket{\\vb{u'} }} {c^2}\\right)^2} \\ket{\\vb a'} + \\;
+
+ \\frac{\\alpha^2(\\alpha-1)\\bra{\\vb a'}\\ket{\\vb v}}{v^2\\left( 1 +\\ds\\frac{ \\bra{\\vb v}\\ket{\\vb{u'} }} {c^2}\\right)^3} \\ket{\\vb v}\\:
+
+- \\frac{\\alpha^2 \\bra{\\vb a'}\\ket{\\vb v}}{c^2\\left( 1 +\\ds\\frac{ \\bra{\\vb v}\\ket{\\vb{u'} }} {c^2}\\right)^3}\\ket{\\vb u'}\\label{acc}
+\\end{equation}
+
+
+
+<h1>Transformation of Forces</h1>
+
+
+
+<p>The formula for the composition of accelerations gives easily the formula for the transformation of forces,</p>
+
+
+
+\\begin{equation}
+\\ket{\\vb{F}}= \\frac{\\alpha^2}{\\left( 1 +\\ds\\frac{ \\bra{\\vb v}\\ket{\\vb{u'} }} {c^2}\\right)^2} \\ket{\\vb F'} + \\;
+
+ \\frac{\\alpha^2(\\alpha-1)  \\bra{\\vb F'}\\ket{\\vb v}}{v^2\\left( 1 +\\ds\\frac{ \\bra{\\vb v}\\ket{\\vb{u'} }} {c^2}\\right)^3} \\ket{\\vb v}\\:
+
+- \\frac{\\alpha^2 \\bra{\\vb F'}\\ket{\\vb v}}{c^2\\left( 1 +\\ds\\frac{ \\bra{\\vb v}\\ket{\\vb{u'} }} {c^2}\\right)^3}\\ket{\\vb u'}\\label{forces}
+\\end{equation}
+
+
+
+<p>where $\\ket{\\vb F}=m\\ket{\\vb a}$ and $\\ket{\\vb F'}=m\\ket{\\vb a'}$ is the forces on a body of mass $m$ observed in $F$ and $F'$ respectively. The transformation of forces will be useful when deriving the Lorentz force on a charged particle moving in a magnetic body.</p>
