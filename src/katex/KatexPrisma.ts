@@ -368,11 +368,15 @@ export async function addEquation(latex: string, label: string): Promise<Functio
 
             //results changed
             if (updated) result = await updateEquationWithLabel(thisPage.getPageId(), _number, label, _latex, _html);
-
-            message = 'Equation' + c3 + c2 + ' ' + _latex + ' ' + latex + ' ' + _number + ' ' + thisPage.getEquationNumber()
+            if(result===null) {
+                return { result: fakeEquation, message: 'An unexpected error occourred in KATEX add equation' };
+            }
+            message = 'Equation' + c3 + c2 + ' ' + _latex + ' ' + latex + ' ' + _number + ' ' + thisPage.getEquationNumber();
 
             result['pageName'] = await convertToTitleCase(thisPage.getPageName());
+
         }
+
         return { result: result, message: message };
 
     } catch (error) {
