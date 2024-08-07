@@ -47,21 +47,10 @@ class pageAttributes {
 }
 
 try {
-var pagePromise: Promise<string> = Promise.reject(pageAttributes.NONSELECTED);
-} catch(error) {}
+    var pagePromise: Promise<string> = Promise.reject(pageAttributes.NONSELECTED);
+    await pagePromise;
+} catch (error) { }
 
-//////////////////// Generic Prisma Operation //////////////////
-type PrismaOperation = () => Promise<any>;
-async function handlePrismaOperation(operation: PrismaOperation) {
-
-    try {
-        const result = await operation();
-        return (result);
-    } catch (error) {
-        return error
-    }
-
-}
 
 //////////////////// isError //////////////////
 const isPrismaError = (error: any) => {
@@ -81,16 +70,16 @@ type EquationResult = {
     latex: string;
     html: string;
     number: number;
-    pageId:number;
+    pageId: number;
     pageName: string;
 };
 
-const fakeEquation:EquationResult =  {
+const fakeEquation: EquationResult = {
     label: '',
     latex: '',
     html: '',
     number: 0,
-    pageId:-1,
+    pageId: -1,
     pageName: ""
 }
 
@@ -148,7 +137,7 @@ const deletePage = async (pageName: string): Promise<any> => {
 
 
 //////////////////// Find equation from pageName and label //////////////////
-const findEquationWithLabel = async (label: string): Promise<EquationResult|null> => {
+const findEquationWithLabel = async (label: string): Promise<EquationResult | null> => {
     const equation = await prisma.equation.findUnique({
         where: {
             pageId_label: {
@@ -178,7 +167,7 @@ const findEquationWithLabel = async (label: string): Promise<EquationResult|null
 }
 
 //////////////////// Create an equation //////////////////
-const addEquationWithLabel = async (equationNumber: number, label: string, latex: string, html: string): Promise<EquationResult|null> => {
+const addEquationWithLabel = async (equationNumber: number, label: string, latex: string, html: string): Promise<EquationResult | null> => {
     const equation = await prisma.equation.create({
         data: {
             label: label,
@@ -211,7 +200,7 @@ const addEquationWithLabel = async (equationNumber: number, label: string, latex
 }
 
 //////////////////// Create an equation //////////////////
-const updateEquationWithLabel = async (pageId: number, equationNumber: number, label: string, latex: string, html: string): Promise<EquationResult|null> => {
+const updateEquationWithLabel = async (pageId: number, equationNumber: number, label: string, latex: string, html: string): Promise<EquationResult | null> => {
     const equation = await prisma.equation.update({
         where: {
             pageId_label: {
@@ -254,7 +243,7 @@ export async function deleteAllPages() {
 
     let result;
 
-    result = await handlePrismaOperation(() => eraseDb());
+    result = await eraseDb();
     if (isPrismaError(result)) {
         return getError(result);
     }
@@ -319,19 +308,19 @@ export async function selectPage(pageName: string) {
 
 
 //////////////////// Get-In Function: get an equation //////////////////
-export async function getEquation(label: string,pageName?:string): Promise<FunctionReturnType> {
+export async function getEquation(label: string, pageName?: string): Promise<FunctionReturnType> {
 
     try {
 
-        let result = await handlePrismaOperation(() => findEquationWithLabel(label));
+        let result = await findEquationWithLabel(label);
 
-        if(result===null) {
+        if (result === null) {
             return {
                 result: fakeEquation, message: "Label not defined"
             };
         }
 
-        return { result, message: "Label found"};
+        return { result, message: "Label found" };
 
     } catch (error) {
         if (error instanceof Error) {
@@ -339,14 +328,14 @@ export async function getEquation(label: string,pageName?:string): Promise<Funct
                 result: fakeEquation, message: error.message
             };
         } else if (typeof error === 'string') {
-            return {result:fakeEquation, message: error};
+            return { result: fakeEquation, message: error };
         } else {
             // If it's not an Error, we can decide how to handle it,
             // for example, by returning a generic message.
-            return {result: fakeEquation, message: 'An unexpected error occourred in KATEX add equation'};
+            return { result: fakeEquation, message: 'An unexpected error occourred in KATEX add equation' };
         }
     }
-    
+
 
 
 
@@ -364,13 +353,13 @@ export async function addEquation(latex: string, label: string): Promise<Functio
         let result;
         let html: string;
 
-        result = await handlePrismaOperation(() => findEquationWithLabel(label));
+        result = await findEquationWithLabel(label);
 
         if (result === null) {
 
             thisPage.addOneEquation();
             html = await renderLatex(latex);
-            result = await handlePrismaOperation(() => addEquationWithLabel(thisPage.getEquationNumber(), label, latex, html));
+            result = await addEquationWithLabel(thisPage.getEquationNumber(), label, latex, html);
             message = 'Equation created';
 
         } else {   /// equation is in the database, check whether is the same as before
@@ -399,7 +388,7 @@ export async function addEquation(latex: string, label: string): Promise<Functio
             }
 
             //results changed
-            if (updated) result = await handlePrismaOperation(() => updateEquationWithLabel(thisPage.getPageId(), _number, label, _latex, _html));
+            if (updated) result = await updateEquationWithLabel(thisPage.getPageId(), _number, label, _latex, _html);
 
             message = 'Equation' + c3 + c2 + ' ' + _latex + ' ' + latex + ' ' + _number + ' ' + thisPage.getEquationNumber();
         }
@@ -410,13 +399,13 @@ export async function addEquation(latex: string, label: string): Promise<Functio
     } catch (error) {
 
         if (error instanceof Error) {
-            return {result:fakeEquation, message: error.message};
+            return { result: fakeEquation, message: error.message };
         } else if (typeof error === 'string') {
-            return {result: fakeEquation, message: error};
+            return { result: fakeEquation, message: error };
         } else {
             // If it's not an Error, we can decide how to handle it,
             // for example, by returning a generic message.
-            return {result:fakeEquation, message: 'An unexpected error occourred in KATEX add equation'};
+            return { result: fakeEquation, message: 'An unexpected error occourred in KATEX add equation' };
         }
     }
 
