@@ -339,6 +339,9 @@ export async function addEquation(latex: string, label: string): Promise<Functio
             thisPage.addOneEquation();
             html = await renderLatex(latex);
             result = await addEquationWithLabel(thisPage.getEquationNumber(), label, latex, html);
+            if(result===null) {
+                return { result: fakeEquation, message: 'An unexpected error occourred in KATEX add equation CONDITION 1' };
+            }
             message = 'Equation created';
 
         } else {   /// equation is in the database, check whether is the same as before
@@ -369,7 +372,7 @@ export async function addEquation(latex: string, label: string): Promise<Functio
             //results changed
             if (updated) result = await updateEquationWithLabel(thisPage.getPageId(), _number, label, _latex, _html);
             if(result===null) {
-                return { result: fakeEquation, message: 'An unexpected error occourred in KATEX add equation' };
+                return { result: fakeEquation, message: 'An unexpected error occourred in KATEX add equation CONDITION 2' };
             }
             message = 'Equation' + c3 + c2 + ' ' + _latex + ' ' + latex + ' ' + _number + ' ' + thisPage.getEquationNumber();
 
@@ -388,7 +391,7 @@ export async function addEquation(latex: string, label: string): Promise<Functio
         } else {
             // If it's not an Error, we can decide how to handle it,
             // for example, by returning a generic message.
-            return { result: fakeEquation, message: 'An unexpected error occourred in KATEX add equation' };
+            return { result: fakeEquation, message: 'An unexpected error occourred in KATEX add equation CONDITION 3' };
         }
     }
 
