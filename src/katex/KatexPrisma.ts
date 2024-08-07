@@ -286,10 +286,10 @@ export async function selectPage(pageName: string) {
 
         let result;
 
-        result = await handlePrismaOperation(() => findPage(pageName));
+        result = await findPage(pageName);
 
         if (result === null) {
-            result = await handlePrismaOperation(() => createPage(pageName));
+            result = await createPage(pageName);
             message = 'Page created';
         }
 
