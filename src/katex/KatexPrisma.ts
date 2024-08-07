@@ -25,7 +25,6 @@ class pageAttributes {
     latex: string = '';
     html = '';
 
-
     constructor(pgName: string, pageId: number) {
         this.pageName = pgName;
         this.pageId = pageId;
@@ -46,10 +45,7 @@ class pageAttributes {
 
 }
 
-try {
-    var pagePromise: Promise<string> = Promise.reject(pageAttributes.NONSELECTED);
-    await pagePromise;
-} catch (error) { }
+
 
 
 //////////////////// isError //////////////////
@@ -234,7 +230,7 @@ const updateEquationWithLabel = async (pageId: number, equationNumber: number, l
     return null;
 }
 //////////////////// Local class for equation tracking //////////////////
-var thisPage: pageAttributes;
+var thisPage: pageAttributes = new pageAttributes(pageAttributes.NONSELECTED,-1);
 
 ////////////////////////////////////////////////////////// GET IN FUNCTIONS 
 
@@ -260,18 +256,6 @@ export async function selectPage(pageName: string) {
     let fail: any;
     let message = 'Page retrieved';
 
-    pagePromise = new Promise((resolve, rejects) => {
-        success = resolve;
-        fail = rejects;
-    });
-
-    const pageLoaded = () => {
-        success(pageAttributes.SELECTED)
-    }
-    const errorInPage = () => {
-        fail('error in page')
-    }
-
     try {
 
         let result;
@@ -285,13 +269,10 @@ export async function selectPage(pageName: string) {
 
         thisPage = new pageAttributes(pageName, result['id']);
 
-        pageLoaded();
-
         return { result: result, message: message };
 
     } catch (error) {
 
-        errorInPage();
         if (error instanceof Prisma.PrismaClientKnownRequestError ||
             error instanceof Prisma.PrismaClientUnknownRequestError ||
             error instanceof Prisma.PrismaClientRustPanicError ||
@@ -347,8 +328,6 @@ export async function addEquation(latex: string, label: string): Promise<Functio
 
     // waiting for the page to be set
     try {
-
-        await pagePromise;
 
         let result;
         let html: string;
