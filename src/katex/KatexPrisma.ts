@@ -46,8 +46,9 @@ class pageAttributes {
 
 }
 
-
+try {
 var pagePromise: Promise<string> = Promise.reject(pageAttributes.NONSELECTED);
+} catch(error) {}
 
 //////////////////// Generic Prisma Operation //////////////////
 type PrismaOperation = () => Promise<any>;
