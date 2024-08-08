@@ -24,7 +24,7 @@ export default async function Equation({ math, label }: Readonly<{ math: string,
         const rt = await addEquation(latex, label);
         html = rt.result['html'];
         pageName = rt.result['pageName']
-        message = rt.result['message']
+        message = 'Equation retrieved'
         signature = pageName + ': ' + label.replace(/\b\w/g, function (char) {
             return char.toUpperCase()
         })
