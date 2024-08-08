@@ -31,12 +31,13 @@ const pageName = 'time-and-space'
 export default async function Page() {
 
 
-  selectPage(pageName);
+  const rt = selectPage(pageName);
 
   return (
 
     <>
 
+      <div data-hidden-field={`${rt.message}`} \>
       <Stack spacing={24} className=" items-center space-y-6">
 
         <Container><h1 className='text-5xl'  >The Lorentz Transformation of Time and Space</h1></Container>
