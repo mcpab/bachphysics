@@ -12,24 +12,26 @@ export default async function Equation({ math, label }: Readonly<{ math: string,
     var html;
     let pageName;
     var signature;
-
+    var message;
+    
     var latex = "\\begin{equation*}" + math + "\\end{equation*}";
 
     if (label === undefined) {
         html = await renderLatex(latex);
-
+        message = 'Equation rendered';
     } else {
 
         const rt = await addEquation(latex, label);
         html = rt.result['html'];
         pageName = rt.result['pageName']
+        message = rt.result['message']
         signature = pageName + ': ' + label.replace(/\b\w/g, function (char) {
             return char.toUpperCase()
         })
 
     }
 
-    eq = <span dangerouslySetInnerHTML={{ __html: html }} />;
+    eq = <span data-hidden-field={`${message}`} dangerouslySetInnerHTML={{ __html: html }} />;
 
     const rrn = label === undefined ? eq : <BorderedDiv signature={signature}>{eq} </BorderedDiv>
 
