@@ -37,7 +37,7 @@ export default async function Page() {
 
     <>
 
-      <div data-hidden-field={`${rt.message}`} \>
+      <div data-hidden-field={`${rt.message}`} />
       <Stack spacing={24} className=" items-center space-y-6">
 
         <Container><h1 className='text-5xl'  >The Lorentz Transformation of Time and Space</h1></Container>
