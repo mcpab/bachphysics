@@ -20,7 +20,7 @@ export default async function Equation({ math, label,pageName }: Readonly<Equati
         const rt = await addEquation(latex, label, pageName);
         html = rt.result.html;
         message = rt.message;
-        signature = `${pageName}: ${label.replace(/\b\w/g, char => char.toUpperCase())}`;
+        signature = `${pageName}: ${label.replace(/-/g, ' ').replace(/\b\w/g, char => char.toUpperCase())}`;
     } else {
         // Both label and pageName are undefined
         html = await renderLatex(latex);
