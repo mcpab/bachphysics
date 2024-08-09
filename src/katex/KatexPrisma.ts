@@ -3,7 +3,7 @@
 const katex = require('katex');
 
 import { PrismaClient, Prisma } from '@prisma/client';
-
+import { EquationResult, FunctionReturnType, PageResult,PageReturnType } from './types';
 const prisma = new PrismaClient();
 
 async function convertToTitleCase(str: string) {
@@ -45,9 +45,6 @@ class pageAttributes {
 
 }
 
-
-
-
 //////////////////// isError //////////////////
 const isPrismaError = (error: any) => {
     return error instanceof Prisma.PrismaClientKnownRequestError ||
@@ -61,22 +58,6 @@ const getError = (error: Prisma.PrismaClientUnknownRequestError | Prisma.PrismaC
     return error.message;
 }
 
-type EquationResult = {
-    label: string;
-    latex: string;
-    html: string;
-    number: number;
-    pageId: number;
-    pageName: string;
-};
-
-
-// Define the structure of the entire return object
-type FunctionReturnType = {
-    result: EquationResult;
-    message: string;
-};
-
 const fakeEquation: EquationResult = {
     label: '',
     latex: '',
@@ -86,21 +67,18 @@ const fakeEquation: EquationResult = {
     pageName: ""
 }
 
-type PageResult = {
-    id: number,
-    pageName: string,
-    link: string
-}
-
-type PageReturnType = {
-    result: PageResult,
-    message: string
-}
 const fakePage: PageResult = {
     pageName: "",
     link: "",
     id: -1
 }
+
+function isFakePage(pageReturn: PageReturnType): boolean {
+    return pageReturn.result.id === fakePage.id &&
+        pageReturn.result.pageName === fakePage.pageName &&
+        pageReturn.result.link === fakePage.link;
+}
+
 //////////////////// Find Page //////////////////
 const findPage = async (pageName: string): Promise<PageResult | null> => {
     return await prisma.pages.findUnique({
@@ -246,7 +224,7 @@ const updateEquationWithLabel = async (pageId: number, equationNumber: number, l
     return null;
 }
 //////////////////// Local class for equation tracking //////////////////
-var thisPage: pageAttributes = new pageAttributes(pageAttributes.NONSELECTED,-1);
+var thisPage: pageAttributes = new pageAttributes(pageAttributes.NONSELECTED, -1);
 
 ////////////////////////////////////////////////////////// GET IN FUNCTIONS 
 
@@ -266,7 +244,7 @@ export async function deleteAllPages() {
 
 
 //////////////////// Get-In Function: select a page, very first function to be called //////////////////
-export async function selectPage(pageName: string) :Promise<PageReturnType> {
+async function selectPage(pageName: string): Promise<PageReturnType> {
 
     let success: any;
     let fail: any;
@@ -280,7 +258,11 @@ export async function selectPage(pageName: string) :Promise<PageReturnType> {
 
         if (result === null) {
             result = await createPage(pageName);
+            if (result == null) {
+                return { result: fakePage, message: 'Page did not exist and could not be created - strange!!' };
+            }
             message = 'Page created';
+            return { result: result, message: message };
         }
 
         thisPage = new pageAttributes(pageName, result['id']);
@@ -294,20 +276,36 @@ export async function selectPage(pageName: string) :Promise<PageReturnType> {
             error instanceof Prisma.PrismaClientRustPanicError ||
             error instanceof Prisma.PrismaClientValidationError ||
             error instanceof Prisma.PrismaClientInitializationError) {
-            return { result: fakePage, message:error.message};
+            return { result: fakePage, message: error.message };
         } else if (error instanceof Error) {
-            return { result: fakePage, message:error.message};
-        } else {
-            return { result: fakePage, message:'Unknown error in selectPage - you should NOT see this'}; 
+            return { result: fakePage, message: error.message };
         }
+
+        return { result: fakePage, message: 'Unknown error in selectPage - you should NOT see this' };
+
     }
 }
 
 
+
 //////////////////// Get-In Function: get an equation //////////////////
-export async function getEquation(label: string, pageName?: string): Promise<FunctionReturnType> {
+export async function getEquation(label: string, pageName: string): Promise<FunctionReturnType> {
 
     try {
+
+        let pageResult;
+
+        if (thisPage.getPageId() === -1) {
+
+            // page has not been selected
+            pageResult = await selectPage(pageName);
+
+            if (isFakePage(pageResult)) {
+                return {
+                    result: fakeEquation, message: pageResult.message
+                };
+            }
+        }
 
         let result = await findEquationWithLabel(label);
 
@@ -333,12 +331,9 @@ export async function getEquation(label: string, pageName?: string): Promise<Fun
         }
     }
 
-
-
-
 }
-//////////////////// Get-In Function: add an equation //////////////////
-export async function addEquation(latex: string, label: string): Promise<FunctionReturnType> {
+
+export async function addEquation(latex: string, label: string,pageName:string): Promise<FunctionReturnType> {
 
     let message = 'Equation retrieved';
 
@@ -348,6 +343,22 @@ export async function addEquation(latex: string, label: string): Promise<Functio
         let result;
         let html: string;
 
+        let pageResult;
+
+        if (thisPage.getPageId() === -1) {
+
+            // page has not been selected
+            pageResult = await selectPage(pageName);
+
+            if (isFakePage(pageResult)) {
+                return {
+                    result: fakeEquation, message: pageResult.message
+                };
+            }
+
+            message += pageResult.message+ " " + message;
+        }
+
         result = await findEquationWithLabel(label);
 
         if (result === null) {
@@ -355,7 +366,7 @@ export async function addEquation(latex: string, label: string): Promise<Functio
             thisPage.addOneEquation();
             html = await renderLatex(latex);
             result = await addEquationWithLabel(thisPage.getEquationNumber(), label, latex, html);
-            if(result===null) {
+            if (result === null) {
                 return { result: fakeEquation, message: 'An unexpected error occourred in KATEX add equation CONDITION 1' };
             }
             message = 'Equation created';
@@ -387,7 +398,7 @@ export async function addEquation(latex: string, label: string): Promise<Functio
 
             //results changed
             if (updated) result = await updateEquationWithLabel(thisPage.getPageId(), _number, label, _latex, _html);
-            if(result===null) {
+            if (result === null) {
                 return { result: fakeEquation, message: 'An unexpected error occourred in KATEX add equation CONDITION 2' };
             }
             message = 'Equation' + c3 + c2 + ' ' + _latex + ' ' + latex + ' ' + _number + ' ' + thisPage.getEquationNumber();

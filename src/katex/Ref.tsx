@@ -5,7 +5,7 @@ import { getEquation } from "./KatexPrisma";
 import { useEffect, useState } from "react";
 import BorderedDiv from "../BorderedDiv";
 
-export default function Ref({ label }: Readonly<{ label: string }>) {
+export default function Ref({ label ,pageName}: Readonly<{ label: string , pageName:string}>) {
 
 
     const [_label, _setLabel] = useState('');
@@ -21,7 +21,7 @@ export default function Ref({ label }: Readonly<{ label: string }>) {
         (async () => {
 
             setLoading(true); // Start loading
-            results = await getEquation(label);
+            results = await getEquation(label,pageName);
             setLoading(false); // Start loading
 
             _setLabel(results.result['label']);

@@ -20,7 +20,6 @@ import MediaAndText from '@/src/MediaAndTextGrid';
 import Divider from '@mui/material/Divider';
 
 import Math from '@/src/katex/Math';
-import { selectPage } from '@/src/katex/KatexPrisma';
 
 import { eq, mt, ref, mtx } from '@/src/katex/supportFunction';
 import MathSection from '@/src/katex/MathSection';
@@ -31,13 +30,11 @@ const pageName = 'time-and-space'
 export default async function Page() {
 
 
-  const rt = selectPage(pageName);
 
   return (
 
     <>
 
-      <div data-hidden-field={`${rt['message']}`} />
       <Stack spacing={24} className=" items-center space-y-6">
 
         <Container><h1 className='text-5xl'  >The Lorentz Transformation of Time and Space</h1></Container>
@@ -159,7 +156,7 @@ export default async function Page() {
           <MediaAndText imageSrc='/img/movingframes.jpg' imageSize={60} caption={<div>Fig 1:Photon Emission and Reflection in {mt("F'")}</div>}> The source is located at the origin of {mt("F'")} and the mirror is
             positioned at a fixed distance along an arbitrary direction.
             A photon is emitted at a time {mt("t'_{0}")},  it reaches the mirror at time {mt("t'_{1}")}   where it is reflected, and it arrives back at the source at time {mt("t'_{2}")}. As we assume that the clocks in {mt("F'")} are synchronized, the following relation holds true:
-            {eq("\\frac{1}{2}(t'_{0}+t'_{2}) = t'_{1} ", "clock synchronization")}
+            {eq("\\frac{1}{2}(t'_{0}+t'_{2}) = t'_{1} ","clock synchronization", pageName)}
 
           </MediaAndText>
 
@@ -206,7 +203,7 @@ export default async function Page() {
             A similar expression holds true for  {mt("t'_2")},
             {eq("t'_{2}=t'({\\vb v}\\, t_{0}) +  l(\\,\|{\\vb  c_{up}-\\vb v} \|^{-1}+ \|{\\vb  c_{down}-\\vb v} \|^{-1})  \\braket{ \\grad  t' | ({\\vb v},1)} +o(l^2)")}
 
-            Using the synchronization condition of {ref('sync')}, we arrive at the differential equation in {mt("t'")} (for {mt("l \\to 0")}),
+            Using the synchronization condition of {ref('clock synchronization',pageName)}, we arrive at the differential equation in {mt("t'")} (for {mt("l \\to 0")}),
 
             {eq("              \\braket{\\grad t'|\\vb w}=0              ")}
 
@@ -219,18 +216,18 @@ export default async function Page() {
 
             where {mt("{\\vb p}")} is a vector transforming the spatial coordinates and {mt("\\beta")} is the coefficient transforming time, we arrive at the linear equation in {mt("{\\vb p}")} and {mt("\\beta")}
 
-            {eq("{\\vb p}\\cdot [ {\\vb v}  (\|{\\vb  c_{up}-\\vb v} \|^{-1}+ \|{\\vb  c_{down}-\\vb v} \|^{-1}) - 2 {\\vb  c_{up}}\|{\\vb  c_{up}-\\vb v} \|^{-1}] + \\beta(\|{\\vb  c_{up}-\\vb v} \|^{-1} - \,\|{\\vb  c_{down}-\\vb v} \|^{-1}) =0", "condition on p")}
+            {eq("{\\vb p}\\cdot [ {\\vb v}  (\|{\\vb  c_{up}-\\vb v} \|^{-1}+ \|{\\vb  c_{down}-\\vb v} \|^{-1}) - 2 {\\vb  c_{up}}\|{\\vb  c_{up}-\\vb v} \|^{-1}] + \\beta(\|{\\vb  c_{up}-\\vb v} \|^{-1} - \,\|{\\vb  c_{down}-\\vb v} \|^{-1}) =0", "condition on p",pageName)}
 
           </section>
 
           <MediaAndText imageSrc='/img/fig1.png' imagePosition='right' imageSize={50} caption="Fig 3:The photon velocities">
 
-            The {ref("condition on p")}  can be further simplified if we look in detail to the direction of the vectors {mt("{\\vb v}")}, {mt("{\\vb c_{down}}")} and {mt("{\\vb c_{up}}")}.
+            The {ref("condition on p",pageName)}  can be further simplified if we look in detail to the direction of the vectors {mt("{\\vb v}")}, {mt("{\\vb c_{down}}")} and {mt("{\\vb c_{up}}")}.
             Since the photon in {mt("F'")} follows the same direction going to the mirror and back to the source, {mt("{\\vb c_{down} -\\vb v}")} and {mt("{\\vb c_{up}-\\vb v}")} are parallel, but have different magnitude;
             hence {mt("{\\vb c_{up}}")}, {mt("{\\vb c_{down}}")} and {mt("{\\vb v}")} are all in the same plane, see Fig (3).
             In the system of reference of three mutually orthogonal unit vectors {mt("{\\vb e}_1")}, {mt("{\\vb e}_2")}, and {mt("{\\vb e}_3")}, with {mt("{\\vb e}_1")} and {mt("{\\vb e}_2")} in the same plane of {mt("{\\vb c_{up}}")} and {mt("{\\vb v}")},
             and {mt("{\\vb e}_1")} in the same direction of {mt("\\bf v")}, the vector {mt("\\bf p")} has components,
-            {eq(" {\\vb p} = p_1{\\vb e_1} + p_2{\\vb e_2} + p_3 \\,{\\vb e_3}    ")} and equation  {ref('eq2')} simplifies to
+            {eq(" {\\vb p} = p_1{\\vb e_1} + p_2{\\vb e_2} + p_3 \\,{\\vb e_3}    ")} and equation  {ref("condition on p",pageName)} simplifies to
 
           </MediaAndText>
 
@@ -249,7 +246,7 @@ export default async function Page() {
 
             The transformation of time between {mt("F'")} and {mt("F")} becomes then
 
-            {eq("ct' = \\beta \\left(-\\frac{v} {c}{\\vb e}_1\\cdot\\vb x+ct \\right)", "transformation of time")}
+            {eq("ct' = \\beta \\left(-\\frac{v} {c}{\\vb e}_1\\cdot\\vb x+ct \\right)", "transformation of time",pageName)}
 
             where {mt("\\beta")} is a constant depending on the velocity.
 
@@ -276,9 +273,9 @@ export default async function Page() {
               "\\lambda_{2, 1} \\ket{\\vb{e}_2,0}\\bra{\\vb{e}_1,0} &+& \\lambda_{2, 2}\\ket{\\vb{e}_2,0}\\bra{\\vb{e}_2,0} &+&\\lambda_{2, 3}\\ket{\\vb{e}_2,0}\\bra{\\vb{e}_3,0}  &+&\\lambda_{2, 4}\\ket{\\vb{e}_2,0}\\bra{\\vb{0},1}",
 
               "\\lambda_{3, 1} \\ket{\\vb{e}_3,0}\\bra{\\vb{e}_1,0} &+& \\lambda_{3, 2}\\ket{\\vb{e}_3,0}\\bra{\\vb{e}_2,0} &+& \\lambda_{3, 3}\\ket{\\vb{e}_3,0}\\bra{\\vb{e}_3,0} &+& \\lambda_{3, 4}\\ket{\\vb{e}_3,0}\\bra{\\vb{0},1} ",
-              "\\lambda_{4, 1} \\ket{\\vb{0},1}\\bra{\\vb{e}_1,0}   &+& \\lambda_{4, 2}\\ket{\\vb{0},1}\\bra{\\vb{e}_2,0}   &+& \\lambda_{4, 3}\\ket{\\vb{0},1}\\bra{\\vb{e}_3,0}   &+&\\lambda_{4, 4}\\ket{\\vb{0},1}\\bra{\\vb{0},1} "), "general form of Lorentz transformation")}
+              "\\lambda_{4, 1} \\ket{\\vb{0},1}\\bra{\\vb{e}_1,0}   &+& \\lambda_{4, 2}\\ket{\\vb{0},1}\\bra{\\vb{e}_2,0}   &+& \\lambda_{4, 3}\\ket{\\vb{0},1}\\bra{\\vb{e}_3,0}   &+&\\lambda_{4, 4}\\ket{\\vb{0},1}\\bra{\\vb{0},1} "), "general form of Lorentz transformation",pageName)}
 
-            where {mt("\\lambda_{i,j}")} are sixteen free parameters. The  {ref('transformation of time')} can be utilized to identify some of the  {mt("\\lambda_{i,j}")} but not all of them:
+            where {mt("\\lambda_{i,j}")} are sixteen free parameters. The  {ref('transformation of time',pageName)} can be utilized to identify some of the  {mt("\\lambda_{i,j}")} but not all of them:
             assumptions need to be made on how events are observed in {mt("F")} and {mt("F'")} to restrict the possible choices for {mt("\\lambda_{i,j}")}.
 
           </section>
@@ -290,7 +287,7 @@ export default async function Page() {
 
             {eq("{\\bf \\Lambda}\\, x_4 \\ket{ \\vb{0},1} =x_4(\\lambda_{1, 4}\\ket{\\vb{e}_1,0}+\\lambda_{2, 4}\\ket{\\vb{e}_2,0} +\\lambda_{3, 4}\\ket{\\vb{e}_3,0} +\\lambda_{4, 4}\\ket{ \\vb{0},1})")}
 
-            but from the {ref('transformation of time')} there are only components along {mt("\\vb e_1")} and time, hence {mt("\\lambda_{2,4}=\\lambda_{3,4}=0")}.
+            but from the {ref('transformation of time',pageName)} there are only components along {mt("\\vb e_1")} and time, hence {mt("\\lambda_{2,4}=\\lambda_{3,4}=0")}.
           </section>
 
           <Divider> First assumption: preserve direction along {mt("\\vb e_1")} </Divider>
@@ -303,7 +300,7 @@ export default async function Page() {
             {eq("{\\bf \\Lambda}({\\vb v}) ( x_1\\ket{\\vb{e}_1,0} + x_4 \\ket{ \\vb{0},1}) = x_1\,(\\lambda_{1, 1}\\ket{\\vb{e}_1,0}+\\lambda_{2, 1}\\ket{\\vb{e}_2,0}" +
               "\\lambda_{3, 1}\\ket{\\vb{e}_3,0} +\\lambda_{4, 1}\\ket{ \\vb{0},1}) +x_4(\\lambda_{1, 4}\\ket{\\vb{e}_1,0} +\\lambda_{4, 4}\\ket{ \\vb{0},1})")}
 
-            this results in {mt("\\lambda_{2,1}=\\lambda_{3,1}=0")} to satisfy our assumption. The {ref('general form of Lorentz transformation')}  further simplifies as,
+            this results in {mt("\\lambda_{2,1}=\\lambda_{3,1}=0")} to satisfy our assumption. The {ref('general form of Lorentz transformation',pageName)}  further simplifies as,
 
             {eq(mtx("matrix", "\\lambda_{1, 1} \\ket{\\vb{e}_1,0}\\bra{\\vb{e}_1,0} & + & \\lambda_{1, 2}\\ket{\\vb{e}_1,0}\\bra{\\vb{e}_2,0}& + &\\lambda_{1, 3}\\ket{\\vb{e}_1,0}\\bra{\\vb{e}_3,0}& + &\\lambda_{1, 4}\\ket{\\vb{e}_1,0}\\bra{\\vb{0},1}",
 
@@ -334,10 +331,10 @@ export default async function Page() {
               "\\lambda_{4, 3}\\ket{\\vb{0},1}\\bra{\\vb{e}_3,0}& " +
               "\\lambda_{4, 4}\\ket{\\vb{0},1}\\bra{\\vb{0},1} "))}
 
-            Using the {ref('transformation of time')}, we arrive at the final functional form of {mt("{\\bf \\Lambda}({\\vb v})")}
+            Using the {ref('transformation of time',pageName)}, we arrive at the final functional form of {mt("{\\bf \\Lambda}({\\vb v})")}
 
             {eq("{\\bf \\Lambda}({\\vb v})= \\lambda_{1, 1} \\ket{\\vb{e}_1,0}\\bra{\\vb{e}_1,0} + \\lambda_{1, 4}\\ket{\\vb{e}_1,0}\\bra{\\vb{0},1}+ \\ket{\\vb{e}_2,0}\\bra{\\vb{e}_2,0}+ \\ket{\\vb{e}_3,0}\\bra{\\vb{e}_3,0} -\\beta\\frac{v} {c} \\ket{\\vb{0},1}\\bra{\\vb{e}_1,0}" +
-              "+\\beta \\ket{\\vb{0},1}\\bra{\\vb{0},1} ", "simplified Lorentz transformation")}
+              "+\\beta \\ket{\\vb{0},1}\\bra{\\vb{0},1} ", "simplified Lorentz transformation",pageName)}
 
             Finally, the constants {mt("\\lambda_{1,1}, \\lambda_{2,2}, \\lambda_{3,3},")} and {mt("\\beta")} must be positive to  prevent  axis reflection.
 
@@ -377,7 +374,7 @@ export default async function Page() {
 
             equivalent to,
 
-            {eq("\\bra{({\\vb n},1)}\\ket{{{\\bf \\Lambda}}^T{\\vb M} {{\\bf \\Lambda}}\\cdot({\\vb n} ,1)}=0", 'invariance of speed of light')}
+            {eq("\\bra{({\\vb n},1)}\\ket{{{\\bf \\Lambda}}^T{\\vb M} {{\\bf \\Lambda}}\\cdot({\\vb n} ,1)}=0", 'invariance of speed of light',pageName)}
             for all {mt("\\vb n")} such that  {mt("||\\vb n||=1")}.
 
             To solve the equation above we need {mt("{\\vb M} {{\\bf \\Lambda}}")}, which is {mt("{{\\bf \\Lambda}}")} with the time component changed sign,
@@ -407,7 +404,7 @@ export default async function Page() {
               "\\lambda_{3, 3}^2\\ket{\\vb{e}_3,0}\\bra{\\vb{e}_3,0} " +
               "+(\\lambda_{1, 4}^2-\\beta^2) \\ket{\\vb{0},1}\\bra{\\vb{0},1} "))}
 
-            and the equation for the {ref('invariance of speed of light')}  reads,
+            and the equation for the {ref('invariance of speed of light',pageName)}  reads,
 
             {eq("(\\lambda_{1, 1}^2-\\beta^2\\frac{v ^ 2} {c ^ 2}) n_1^2 + 2(\\lambda_{1, 1}\\lambda_{1, 4}+\\beta^2\\frac{v} {c})n_1+n_2^2 +n_3^2+(\\lambda_{1, 4}^2-\\beta^2) =0")}
 
@@ -440,7 +437,7 @@ export default async function Page() {
               "\\beta \\ket{\\vb{e}_1,0}\\bra{\\vb{e}_1,0}  -\\beta\\frac{v}{c}\\ket{\\vb{e}_1,0}\\bra{\\vb{0},1}+ " +
               "\\ket{\\vb{e}_2,0}\\bra{\\vb{e}_2,0}+\\ket{\\vb{e}_3,0}\\bra{\\vb{e}_3,0} " +
               "-\\beta\\frac{v} {c} \\ket{\\vb{0},1}\\bra{\\vb{e}_1,0} " +
-              "+\\beta \\ket{\\vb{0},1}\\bra{\\vb{0},1}", "Lorentz transformation")}
+              "+\\beta \\ket{\\vb{0},1}\\bra{\\vb{0},1}", "Lorentz transformation",pageName)}
 
             The inverse of {mt("\\bf \\Lambda(v)")} transforms the coordinates from {mt(" F'")} to {mt("F")} and can be readily obtained by exchanging the velocity sign, as it can be verified directly
 
@@ -448,7 +445,7 @@ export default async function Page() {
               "\\beta \\ket{\\vb{e}_1,0}\\bra{\\vb{e}_1,0}  +\\beta\\frac{v}{c}\\ket{\\vb{e}_1,0}\\bra{\\vb{0},1}+ " +
               "\\ket{\\vb{e}_2,0}\\bra{\\vb{e}_2,0}+\\ket{\\vb{e}_3,0}\\bra{\\vb{e}_3,0}" +
               "+\\beta\\frac{v} {c} \\ket{\\vb{0},1}\\bra{\\vb{e}_1,0}" +
-              "+\\beta \\ket{\\vb{0},1}\\bra{\\vb{0},1} ", "inverse of Lorentz transformation")}
+              "+\\beta \\ket{\\vb{0},1}\\bra{\\vb{0},1} ", "inverse of Lorentz transformation",pageName)}
 
             The Lorentz transformation written explicitly in terms of the velocity vector, as {mt(" \\ket{\\vb{e}_1,0}=\\ket{\\vb{v},0}/v")}, reads,
 
@@ -456,7 +453,7 @@ export default async function Page() {
               "\\frac{\\beta}{v ^ 2} \\ket{\\vb v,0}\\bra{\\vb{v},0}  -\\frac{\\beta}{c}\\ket{\\vb{v},0}\\bra{\\vb{0},1}+ " +
               "\\ket{\\vb{e}_2,0}\\bra{\\vb{e}_2,0}+\\ket{\\vb{e}_3,0}\\bra{\\vb{e}_3,0}" +
               "-\\frac{ \\beta} {c} \\ket{\\vb{0},1}\\bra{\\vb{v},0}" +
-              "+\\beta \\ket{\\vb{0},1}\\bra{\\vb{0},1} \\ ", "Lorentz transformation in velocity")}
+              "+\\beta \\ket{\\vb{0},1}\\bra{\\vb{0},1} \\ ", "Lorentz transformation in velocity",pageName)}
 
 
             When {mt("\\vb v")} has the direction of the x-axis, the transformation simplifies to the original Einstein formula
@@ -465,11 +462,11 @@ export default async function Page() {
             {eq(mtx("split", "x' &= \\beta(x-vt ) \\nonumber ",
               "y'&=y\\nonumber ",
               "z'&=z\\nonumber ",
-              "t'&= \\beta \\left(t-\\frac{v}{c ^ 2}x \\right)"), 'one-dimensional Lorentz transformation')}
+              "t'&= \\beta \\left(t-\\frac{v}{c ^ 2}x \\right)"), 'one-dimensional Lorentz transformation',pageName)}
 
             Finally, it can readily proven that the Lorentz transformation satisfies the condition {mt("{{\\bf \\Lambda}}^T{\\vb M} {{\\bf \\Lambda}}=\\vb M")}, hence {mt("\\Delta' s=\\Delta s")} for all events, not only those on a world line of a photon,
 
-            {eq("\\Delta s'^2 =   \\braket{\\vb  X' | \\vb M  \\vb  X'}= \\braket{{{\\bf \\Lambda}}\\vb{X}| {\\vb M} {{\\bf \\Lambda}}\\vb{X}}=\\braket{\\vb{X} |{{\\bf \\Lambda}}^T{\\vb M} {{\\bf \\Lambda}}\\vb{X}}=\\braket{\\vb{X}| {\\vb M} \\vb{X}}=\\Delta s", "invariance of spacetime interval")}
+            {eq("\\Delta s'^2 =   \\braket{\\vb  X' | \\vb M  \\vb  X'}= \\braket{{{\\bf \\Lambda}}\\vb{X}| {\\vb M} {{\\bf \\Lambda}}\\vb{X}}=\\braket{\\vb{X} |{{\\bf \\Lambda}}^T{\\vb M} {{\\bf \\Lambda}}\\vb{X}}=\\braket{\\vb{X}| {\\vb M} \\vb{X}}=\\Delta s", "invariance of spacetime interval",pageName)}
 
 
           </section>
