@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 
-import { deleteAllPages, addEquation, selectPage, getEquation } from '@/src/katex/KatexPrisma'
+import { deleteAllPages, addEquation, getEquation } from '@/src/katex/KatexPrisma'
 
 export async function GET(request: Request) {
 
@@ -20,11 +20,8 @@ export async function GET(request: Request) {
     if (command === 'erase') {
         const rt = await deleteAllPages();
         return NextResponse.json({ return: rt }, { status: 200 });
-    } else if (command === 'selectPage') {
-        const rt = await selectPage(pageName);
-        return NextResponse.json({ return: rt }, { status: 200 });
     } else if (command === 'addEquation') {
-        const rt = await addEquation(latex, label)
+        const rt = await addEquation(latex, label,pageName)
         return NextResponse.json({ return: rt }, { status: 200 });
 
     } else if (command === 'select') {
