@@ -12,6 +12,10 @@ export default async function Equation({ math, label,pageName }: Readonly<Equati
     var html='initial html';
     var signature;
     var message;
+
+    const frm = (sgn:string):string => {
+        return sgn.replace(/-/g, ' ').replace(/\b\w/g, char => char.toUpperCase())
+    }
     
     var latex = "\\begin{equation*}" + math + "\\end{equation*}";
 
@@ -20,7 +24,7 @@ export default async function Equation({ math, label,pageName }: Readonly<Equati
         const rt = await addEquation(latex, label, pageName);
         html = rt.result.html;
         message = rt.message;
-        signature = `${pageName}: ${label.replace(/-/g, ' ').replace(/\b\w/g, char => char.toUpperCase())}`;
+        signature = `${frm(pageName)}: ${frm(label)}`;
     } else {
         // Both label and pageName are undefined
         html = await renderLatex(latex);
