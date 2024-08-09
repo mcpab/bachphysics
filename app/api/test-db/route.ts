@@ -26,7 +26,7 @@ export async function GET(request: Request) {
 
     } else if (command === 'select') {
 
-        const rt = await getEquation(label); 
+        const rt = await getEquation(label,pageName); 
         return NextResponse.json({ return: rt }, { status: 200 });
     }
 
