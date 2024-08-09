@@ -70,6 +70,13 @@ type EquationResult = {
     pageName: string;
 };
 
+
+// Define the structure of the entire return object
+type FunctionReturnType = {
+    result: EquationResult;
+    message: string;
+};
+
 const fakeEquation: EquationResult = {
     label: '',
     latex: '',
@@ -79,14 +86,23 @@ const fakeEquation: EquationResult = {
     pageName: ""
 }
 
-// Define the structure of the entire return object
-type FunctionReturnType = {
-    result: EquationResult;
-    message: string;
-};
+type PageResult = {
+    id: number,
+    pageName: string,
+    link: string
+}
 
+type PageReturnType = {
+    result: PageResult,
+    message: string
+}
+const fakePage: PageResult = {
+    pageName: "",
+    link: "",
+    id: -1
+}
 //////////////////// Find Page //////////////////
-const findPage = async (pageName: string): Promise<any> => {
+const findPage = async (pageName: string): Promise<PageResult | null> => {
     return await prisma.pages.findUnique({
         where: {
             pageName: pageName,
@@ -100,7 +116,7 @@ const findPage = async (pageName: string): Promise<any> => {
 }
 
 //////////////////// Create Page //////////////////
-const createPage = async (pageName: string): Promise<any> => {
+const createPage = async (pageName: string): Promise<PageResult | null> => {
     return await prisma.pages.create({
         data: {
             pageName: pageName,
@@ -250,7 +266,7 @@ export async function deleteAllPages() {
 
 
 //////////////////// Get-In Function: select a page, very first function to be called //////////////////
-export async function selectPage(pageName: string) {
+export async function selectPage(pageName: string) :Promise<PageReturnType> {
 
     let success: any;
     let fail: any;
@@ -278,11 +294,11 @@ export async function selectPage(pageName: string) {
             error instanceof Prisma.PrismaClientRustPanicError ||
             error instanceof Prisma.PrismaClientValidationError ||
             error instanceof Prisma.PrismaClientInitializationError) {
-            throw new Error(error.message);
+            return { result: fakePage, message:error.message};
         } else if (error instanceof Error) {
-            throw error;
+            return { result: fakePage, message:error.message};
         } else {
-            throw new Error('Unknown error in selectPage - you should NOT see this')
+            return { result: fakePage, message:'Unknown error in selectPage - you should NOT see this'}; 
         }
     }
 }
@@ -426,6 +442,3 @@ export async function renderLatex(math: string, displayMode: boolean = true): Pr
 }
 
 //////////////////// END //////////////////
-
-
-
