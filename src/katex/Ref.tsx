@@ -1,58 +1,69 @@
 'use client'
 
 import LargePopup from "../LargePopup";
-import { getEquation } from "./KatexPrisma";
-import { useEffect, useState } from "react";
+import { getEquation } from "./KatexPrismaExceptions";
+import { useEffect, useState, useMemo } from "react";
 import BorderedDiv from "../BorderedDiv";
+import { handleError } from "./supportFunction";
+import { EquationResult } from "./types";
+import CustomContainer from "../Bordered_v1";
 
-export default function Ref({ label ,pageName}: Readonly<{ label: string , pageName:string}>) {
+interface RefProps {
+    label: string;
+    pageName: string;
+}
 
-
-    const [_label, _setLabel] = useState('');
+ 
+export default function Ref({ label, pageName }: Readonly<RefProps>) {
+    const [_label, _setLabel] = useState(label);
     const [_html, _setHtml] = useState('');
-    const [_pageName, _setPageName] = useState('');
+    const [_pageName, _setPageName] = useState(pageName);
     const [loading, setLoading] = useState(true);
-
-    var results;
-
+    const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
-
         (async () => {
-
-            setLoading(true); // Start loading
-            results = await getEquation(label,pageName);
-            setLoading(false); // Start loading
-
-            _setLabel(results.result['label']);
-            _setHtml(results.result['html']);
-            _setPageName(results.result['pageName']);
-
+            try {
+                setLoading(true);
+                const result: EquationResult = await getEquation({ label, pageName });
+                _setLabel(result.label);
+                _setHtml(result.html);
+                _setPageName(result.pageName);
+            } catch (error) {
+                console.log('error in Ref: ', handleError(error));
+                setError('Failed to load equation.');
+            } finally {
+                setLoading(false);
+            }
         })();
+    }, [label, pageName]);
 
+    const rt = useMemo(() => {
+        if (loading) {
+            return <span>Loading...</span>;
+        }
 
-    }, [label])
+        if (error) {
+            return <span className="text-red-500">{error}</span>;
+        }
 
-    if (loading) {
-        return <span>Loading...</span>;
-    }
+        if (_label === '') {
+            return <span className="bg-yellow-300 text-red-600">Label {label} not defined</span>;
+        }
 
-    var rt = <span className="bg-yellow-300 text-red-600">Label {label} not defined</span>
+        const eq = <span dangerouslySetInnerHTML={{ __html: _html }} />;
+        const signature = (_pageName + ": " + _label)
+            .replace(/-/g, ' ')
+            .replace(/\b\w/g, char => char.toUpperCase());
+           const zoom = <BorderedDiv signature={signature}>{eq}</BorderedDiv>;
+           // const zoom = <CustomContainer title={signature}>{eq}</CustomContainer>;
 
-    if (_label !== '') {
+        return (
+            <LargePopup inline={true} zoom={zoom}>
+                <span className="underline text-blue-500">{label}</span>
+            </LargePopup>
+        );
+    }, [loading, error, _label, _html, _pageName, label]);
 
-        let eq = <span dangerouslySetInnerHTML={{ __html: _html }} />;
-
-        let signature = (_pageName+": "+_label).replace(/-/g,' ').replace(/\b\w/g, function (char) {
-            return char.toUpperCase()
-        })
-        let zoom = <BorderedDiv signature={signature}>{eq} </BorderedDiv>
-
-        rt = <LargePopup inline={true} zoom={zoom}> <span className="underline text-blue-500">{label}</span>  </LargePopup>
-
-
-    }
-
-    return (<>{rt}</>)
-
+    return <>{rt}</>;
 }
