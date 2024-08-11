@@ -6,7 +6,7 @@ import { useEffect, useState, useMemo } from "react";
 import BorderedDiv from "../BorderedDiv";
 import { handleError } from "./supportFunction";
 import { EquationResult } from "./types";
-import CustomContainer from "../Bordered_v1";
+ 
 
 interface RefProps {
     label: string;
@@ -56,8 +56,7 @@ export default function Ref({ label, pageName }: Readonly<RefProps>) {
             .replace(/-/g, ' ')
             .replace(/\b\w/g, char => char.toUpperCase());
            const zoom = <BorderedDiv signature={signature}>{eq}</BorderedDiv>;
-           // const zoom = <CustomContainer title={signature}>{eq}</CustomContainer>;
-
+ 
         return (
             <LargePopup inline={true} zoom={zoom}>
                 <span className="underline text-blue-500">{label}</span>
