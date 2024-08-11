@@ -5,7 +5,7 @@ import { addEquation, renderLatex } from '@/src/katex/KatexPrismaExceptions'
 import BorderedDiv from '../BorderedDiv';
 import { EquationProps } from './types';
 import { handleError } from './supportFunction';
-import CustomContainer from '../Bordered_v1';
+ 
 
 export default async function Equation({ math, label, pageName }: Readonly<EquationProps>) {
     
