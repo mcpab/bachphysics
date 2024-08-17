@@ -1,35 +1,23 @@
-
 import Stack from '@mui/material/Stack';
 import 'katex/dist/katex.min.css';
-
 import Container from '@mui/material/Container';
 import Paper from '@mui/material/Paper';
-
-import 'katex/dist/katex.min.css';
-
 import Link from 'next/link';
-
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-
 import MediaAndText from '@/src/MediaAndTextGrid';
 import Divider from '@mui/material/Divider';
-
 import Math from '@/src/katex/Math';
-
 import { eq, mt, ref, mtx } from '@/src/katex/supportFunction';
 import MathSection from '@/src/katex/MathSection';
 
-const pageName = 'time-and-space'
-
+const pageName = 'time-and-space';
 
 export default async function Page() {
-
-
 
   return (
 
@@ -324,11 +312,11 @@ export default async function Page() {
               "x_3\,(\\lambda_{1, 3}\\ket{\\vb{e}_1,0}+\\lambda_{2, 3}\\ket{\\vb{e}_2,0} +\\lambda_{3, 3}\\ket{\\vb{e}_3,0}).")}
             Our assumptions is satisfied if {mt("\\lambda_{1,2}=\\lambda_{1,3}=\\lambda_{2,3}=\\lambda_{3,2}=0")} and {mt("\\lambda_{2,2}=\\lambda_{3,3}=1")}, which results in a further simplification of {mt("{\\bf \\Lambda}({\\vb v})")}:
 
-            {eq(mtx("matrix", "\\lambda_{1, 1} \\ket{\\vb{e}_1,0}\\bra{\\vb{e}_1,0} & &&\\lambda_{1, 4}\\ket{\\vb{e}_1,0}\\bra{\\vb{0},1} ",
-              "& \\ket{\\vb{e}_2,0}\\bra{\\vb{e}_2,0}& ",
-              "&& \\ket{\\vb{e}_3,0}\\bra{\\vb{e}_3,0}& ",
-              "\\lambda_{4, 1} \\ket{\\vb{0},1}\\bra{\\vb{e}_1,0} & \\lambda_{4, 2}\\ket{\\vb{0},1}\\bra{\\vb{e}_2,0}& " +
-              "\\lambda_{4, 3}\\ket{\\vb{0},1}\\bra{\\vb{e}_3,0}& " +
+            {eq(mtx("matrix", "\\lambda_{1, 1} \\ket{\\vb{e}_1,0}\\bra{\\vb{e}_1,0} & + & &\\lambda_{1, 4}\\ket{\\vb{e}_1,0}\\bra{\\vb{0},1} ",
+              "+& \\ket{\\vb{e}_2,0}\\bra{\\vb{e}_2,0}& ",
+              "&+& \\ket{\\vb{e}_3,0}\\bra{\\vb{e}_3,0}& ",
+              "\\lambda_{4, 1} \\ket{\\vb{0},1}\\bra{\\vb{e}_1,0} +& \\lambda_{4, 2}\\ket{\\vb{0},1}\\bra{\\vb{e}_2,0}+& " +
+              "\\lambda_{4, 3}\\ket{\\vb{0},1}\\bra{\\vb{e}_3,0}+& " +
               "\\lambda_{4, 4}\\ket{\\vb{0},1}\\bra{\\vb{0},1} "))}
 
             Using the {ref('transformation of time',pageName)}, we arrive at the final functional form of {mt("{\\bf \\Lambda}({\\vb v})")}
@@ -370,11 +358,11 @@ export default async function Page() {
 
             When we examine two events occurring along the trajectory of a photon (referred to as the photon’s world line), the spacetime interval, the spacetime interval {mt("\\Delta' s^2")} in {mt("F'")} must also be zero, assuming that the speed of light {mt("c")} remains invariant,
 
-            {eq(" \\bra{(c(t_2 - t_1){\\vb n},c(t_2-t_1))}\\ket{{{\\bf \\Lambda}}^T{\\vb M} {{\\bf \\Lambda}}\\cdot(c(t_2-t_1){\\vb n},c(t_2-t_1))}=0")}
+            {eq(" \\braket{(c(t_2 - t_1){\\vb n},c(t_2-t_1))}|{{{\\bf \\Lambda}}^T{\\vb M} {{\\bf \\Lambda}}\\cdot(c(t_2-t_1){\\vb n},c(t_2-t_1))}=0")}
 
             equivalent to,
 
-            {eq("\\bra{({\\vb n},1)}\\ket{{{\\bf \\Lambda}}^T{\\vb M} {{\\bf \\Lambda}}\\cdot({\\vb n} ,1)}=0", 'invariance of speed of light',pageName)}
+            {eq("\\braket{({\\vb n},1)}|{{{\\bf \\Lambda}}^T{\\vb M} {{\\bf \\Lambda}}\\cdot({\\vb n} ,1)}=0", 'invariance of speed of light',pageName)}
             for all {mt("\\vb n")} such that  {mt("||\\vb n||=1")}.
 
             To solve the equation above we need {mt("{\\vb M} {{\\bf \\Lambda}}")}, which is {mt("{{\\bf \\Lambda}}")} with the time component changed sign,

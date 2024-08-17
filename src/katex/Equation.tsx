@@ -5,7 +5,7 @@ import { addEquation, renderLatex,getEquation } from '@/src/katex/KatexPrismaExc
 import BorderedDiv from '../BorderedDiv';
 import { EquationProps } from './types';
 import { handleError } from './supportFunction';
- 
+import {  } from "./KatexPrismaExceptions";
 import { EquationResult } from './types';
 
 const formatSignature = (sgn: string | undefined): string => {
