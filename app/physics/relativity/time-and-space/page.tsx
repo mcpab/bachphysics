@@ -246,7 +246,7 @@ export default async function Page() {
 
             The transformation of time between {mt("F'")} and {mt("F")} becomes then
 
-            {eq("ct' = \\beta \\left(-\\frac{v} {c}{\\vb e}_1\\cdot\\vb x+ct \\right)", "transformation of time",pageName)}
+            {eq("ct' = \\beta \\left(-\\frac{v}{c} \\braket{{\\vb e}_1|\\vb x}+ct \\right)", "transformation of time",pageName)}
 
             where {mt("\\beta")} is a constant depending on the velocity.
 

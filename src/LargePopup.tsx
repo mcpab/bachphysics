@@ -22,11 +22,11 @@ export default function LargePopup({ inline = false, zoom, children }: Readonly<
     return (
         <>
             {cp}
-            <Popper id={id} open={open} anchorEl={anchor}>
+            <Popper id={id} open={open} anchorEl={anchor}  draggable="true">
                 <div className="relative scale-150">
                     <div onClick={handleClick}><CancelIcon className='fill-blue-500 absolute -top-2 right-0' sx={{ fontSize: 15 }} /></div>
                     {/* */}
-                    <div className=''>  <Paper elevation={3} className='m-2 p-5 justify-center '> {zoom ? zoom : children}</Paper></div>
+                    <div className=''>  <Paper elevation={3} sx={{p:0,m:0}} className='m-2 p-5 justify-center '> {zoom ? zoom : children}</Paper></div>
                     {/*  */}
                 </div>
             </Popper>

@@ -29,6 +29,23 @@ export default function Page() {
         </Container>
 
 
+
+        <Container>
+          <Paper elevation={3} className='p-10  space-y-10 text-black justify-center '> <h1>Composition of Velocities</h1>
+
+            <TextAndImage component={
+              <Stack>
+                <Link href='/physics/relativity/composition-of-velocities' className='text-inherit no-underline hover:text-blue-300' >  <h2> The Composition of Velocities</h2></Link>
+              
+                <p>The relativistic composition of velocities. 
+ </p>
+              </Stack>
+            }
+              image="/img/velocitiesComposition.jpg" heigth='h-48' />
+          </Paper>
+        </Container>
+
+
         <Container>
           <Paper elevation={3} className='p-10  space-y-10 text-black justify-center '> <h1>Electromagnetism</h1>
 

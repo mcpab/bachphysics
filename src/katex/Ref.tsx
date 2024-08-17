@@ -1,7 +1,7 @@
 'use client'
 
 import LargePopup from "../LargePopup";
-import { getEquation } from "./KatexPrisma";
+import { getEquation } from "./KatexPrismaExceptions";
 import { useEffect, useState } from "react";
 import BorderedDiv from "../BorderedDiv";
 
@@ -21,12 +21,12 @@ export default function Ref({ label ,pageName}: Readonly<{ label: string , pageN
         (async () => {
 
             setLoading(true); // Start loading
-            results = await getEquation(label,pageName);
+            results = await getEquation({label,pageName});
             setLoading(false); // Start loading
-
-            _setLabel(results.result['label']);
-            _setHtml(results.result['html']);
-            _setPageName(results.result['pageName']);
+            
+            _setLabel(results['label']);
+            _setHtml(results['html']);
+            _setPageName(results['pageName']);
 
         })();
 

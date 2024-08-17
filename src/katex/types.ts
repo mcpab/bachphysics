@@ -5,25 +5,19 @@ export type EquationResult = {
     number: number;
     pageId: number;
     pageName: string;
+    message: string
 };
 
 
-// Define the structure of the entire return object
-export type FunctionReturnType = {
-    result: EquationResult;
-    message: string;
-};
+ 
 
 export type PageResult = {
     id: number,
     pageName: string,
-    link: string
-}
-
-export type PageReturnType = {
-    result: PageResult,
+    link: string,
     message: string
 }
+ 
 
 export type EquationProps = 
   | { math: string; label: string; pageName: string } // Both label and pageName are defined
