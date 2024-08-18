@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-
+import { handleError } from '@/src/katex/supportFunction';
 import { deleteAllPages, addEquation, getEquation } from '@/src/katex/KatexPrismaExceptions'
 
 export async function GET(request: Request) {
@@ -17,20 +17,25 @@ export async function GET(request: Request) {
         return NextResponse.json("Invalid input", { status: 500 });
     }
 
-    if (command === 'erase') {
-        const rt = await deleteAllPages();
-        return NextResponse.json({ return: rt }, { status: 200 });
-    } else if (command === 'addEquation') {
-        const rt = await addEquation({latex, label,pageName})
-        return NextResponse.json({ return: rt }, { status: 200 });
+    try {
 
-    } else if (command === 'select') {
+        if (command === 'erase') {
+            const rt = await deleteAllPages();
+            return NextResponse.json({ return: rt }, { status: 200 });
+        } else if (command === 'addEquation') {
+            const rt = await addEquation({ latex, label, pageName })
+            return NextResponse.json({ return: rt }, { status: 200 });
 
-        const rt = await getEquation({label,pageName}); 
-        return NextResponse.json({ return: rt }, { status: 200 });
+        } else if (command === 'select') {
+
+            const rt = await getEquation({ label, pageName });
+            return NextResponse.json({ return: rt }, { status: 200 });
+        }
+
+        const rt = 'Command Not Defined'
+        return NextResponse.json({ rt }, { status: 200 });
+
+    } catch (error: any) {
+        return NextResponse.json({ error:handleError(error) }, { status: 500 });
     }
-
-    const rt = 'Command Not Defined'
-    return NextResponse.json({ rt }, { status: 200 });
-
 }

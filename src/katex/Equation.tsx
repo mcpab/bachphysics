@@ -5,7 +5,6 @@ import { addEquation, renderLatex,getEquation } from '@/src/katex/KatexPrismaExc
 import BorderedDiv from '../BorderedDiv';
 import { EquationProps } from './types';
 import { handleError } from './supportFunction';
-import {  } from "./KatexPrismaExceptions";
 import { EquationResult } from './types';
 
 const formatSignature = (sgn: string | undefined): string => {
@@ -62,7 +61,7 @@ export async function Equation({ label, pageName }: Readonly<{ label: string, pa
 
     try {
         const result: EquationResult = await getEquation({ label, pageName });
-        return EquationBlock({ label, pageName, html: result.html, message: result.message });
+        return EquationBlock({ label, pageName, html: result['html'], message: result['message'] });
 
     } catch (error) {
         return <div>Failed to load equation: {handleError(error)}</div>;

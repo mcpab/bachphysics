@@ -25,7 +25,7 @@ function eq(math: string, label?: string, pageName?: string): JSX.Element {
 }
 
 function get(label: string, pageName: string): JSX.Element {
-    return <LargePopup><Equation label={label} pageName={pageName}/></LargePopup>;
+    return <LargePopup> <Equation label={label} pageName={pageName}/></LargePopup>;
 
 }
 
