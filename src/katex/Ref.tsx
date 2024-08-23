@@ -20,14 +20,19 @@ export default function Ref({ label ,pageName}: Readonly<{ label: string , pageN
 
         (async () => {
 
-            setLoading(true); // Start loading
-            results = await getEquation({label,pageName});
-            setLoading(false); // Start loading
-            
-            _setLabel(results['label']);
-            _setHtml(results['html']);
-            _setPageName(results['pageName']);
-
+            try {
+                // Start loading
+                setLoading(true);
+                results = await getEquation({ label, pageName });
+                setLoading(false);
+                _setLabel(results['label']);
+                _setHtml(results['html']);
+                _setPageName(results['pageName']);
+            } catch (error) {
+                _setLabel('');
+                setLoading(false);
+            }    
+           
         })();
 
 
@@ -37,7 +42,7 @@ export default function Ref({ label ,pageName}: Readonly<{ label: string , pageN
         return <span>Loading...</span>;
     }
 
-    var rt = <span className="bg-yellow-300 text-red-600">Label {label} not defined</span>
+    var rt = <span className="bg-yellow-300 text-red-600">Label &#34;{label}&#34; not defined</span>
 
     if (_label !== '') {
 

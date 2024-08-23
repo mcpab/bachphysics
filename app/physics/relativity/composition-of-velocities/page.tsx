@@ -18,7 +18,7 @@ export default async function Page() {
 
             <Container><h1 className='text-5xl'  >Composition of Velocities</h1></Container>
 
-            <MathSection>
+            <MathSection title='Derivation of Composition of Velocities'>
                 <section>
 
                     In classical mechanics, a velocity  {mt("{\\vb u'}")} in the moving frame will be measured in the stationary frame as {mt("{\\vb u}={\\vb v}+{\\vb u'}")}, which is the well-known law of the parallelograms.
@@ -86,8 +86,6 @@ export default async function Page() {
                     {eq("\\left(\\frac{\\beta}{v^2}\\ket{\\vb v}\\bra{\\vb v}  + \\ket{\\vb{e}_2,0}\\bra{\\vb{e}_2,0} +  \\ket{\\vb{e}_3,0}\\bra{\\vb{e}_3,0}+ \\frac{\\beta}{c^2}\\ket{\\vb u'}\\bra{\\vb v}  \\right)\\ket{\\vb u} = " +
                         "\\beta\\left(\\ket{\\vb{u}'}+\\ket{\\vb{v}}\\right)")}
 
-
-
                     Further expanding the equation above in the components of {mt("\\ket{{\\vb u}'}")} , we get
                     {eq("\\left(\\beta \\left(1 +\\frac{ v} {c^2}u'_1\\right)\\,\\,\\ket{{\\vb e}_1,0}\\bra{{\\vb e}_1,0} + \\beta\\frac{ v} {c^2}u'_2\\,\\,\\ket{{\\vb e}_2,0}\\bra{{\\vb e}_1,0}+"
                         + "\\beta\\frac{ v} {c^2}u'_3\\,\\,\\ket{{\\vb e}_3,0}\\bra{{\\vb e}_1,0} +\\ket{\\vb{e}_2,0}\\bra{\\vb{e}_2,0}  + \\ket{\\vb{e}_3,0}\\bra{\\vb{e}_3,0}" +
@@ -126,6 +124,58 @@ export default async function Page() {
 
             </MathSection>
 
+            <MathSection title='Limit Formulas'>
+
+
+                In this section we are going to derive the limit formulas for the composition of velocities when one of the velocities approache the speed of light.
+                We start by considering the limit of the velocity composition formula {ref('Velocity Composition', pageName)} when the velocity {mt("\\ket{\\vb u'}")} approaches the speed of light.
+
+                <section>
+                    <h2> {mt("\\ket{{\\vb u}}")} Approaching Speed of Light</h2>
+
+                    We start by first considering the case where {mt("\\ket{{\\vb u}}")} approaches the speed of light {mt("c")} and we will determine the value that  {mt("\\ket{{\\vb u}'}")} reaches. To achieve this, we
+                    need to compute the module of {mt("\\ket{{\\vb u}'}")} from  {ref('Inverse Velocity Composition', pageName)}, which reads
+
+                    {eq(" u'^2 =\\frac{1}{\\left(1-\\frac{ \\braket{{\\vb v}|\\vb u}}{c^2}  \\right)^2} \\left( \\frac{\\braket{{\\vb u} |{\\vb v}}^2 }{c^2}+v^2 +\\frac{u^2}{\\beta^2}-2 \\braket{{\\vb u} |{\\vb v}}\\right) ")}
+
+                    when  {mt("\\ket{{\\vb u}}= c \\ket{{\\vb n}}")}, where {mt("\\ket{{\\vb n}}")} is a unitary vector, the equation above simplifies to
+
+                    {eq(" u'^2 =\\frac{c^2}{\\left(1-\\frac{ \\braket{{\\vb v}|\\vb n}}{c}  \\right)^2} \\left(1-\\frac{ \\braket{{\\vb v}|\\vb n}}{c}  \\right )^2 =c^2")}
+
+                    which implies that the velocity {mt("\\ket{{\\vb u}'}")} reaches the speed of light when {mt("\\ket{{\\vb u}}")} approaches the speed of light.
+
+                </section>
+
+                <section>
+                    <h2> {mt("\\ket{{\\vb u}'}")} Approaching Speed of Light</h2>
+
+                    Similarly, we can determine the limit of the velocity {mt("\\ket{{\\vb u}}")} when the velocity {mt("\\ket{{\\vb u}'}")} approaches the speed of light. From the velocity composition formula {ref('Velocity Composition', pageName)},
+                    the module of the velocity {mt("\\ket{{\\vb u}}")} reads,
+
+                    {eq(" u^2 =\\frac{1}{\\left(1+\\frac{ \\braket{{\\vb v}|\\vb u'}}{c^2}  \\right)^2} \\left( \\frac{\\braket{{\\vb u'} |{\\vb v}}^2 }{v^2}+v^2 +\\frac{u'^2}{\\beta^2}+2 \\braket{{\\vb u'} |{\\vb v}}\\right) ")}
+
+                    which is the same equation for the module of {mt("\\ket{{\\vb u}}")} with the sign of the velocity  {mt("\\ket{{\\vb v}}")} reversed.
+                    When  {mt("\\ket{{\\vb u}'}= c \\ket{{\\vb n}}")}, where {mt("\\ket{{\\vb n}}")} is a unitary vector, the equation above simplifies to
+
+                    {eq(" u^2 =\\frac{c^2}{\\left(1+\\frac{ \\braket{{\\vb v}|\\vb n}}{c}  \\right)^2} \\left(1+\\frac{ \\braket{{\\vb v}|\\vb n}}{c}  \\right )^2 =c^2")}
+
+                    which, also in this case, means that the velocity {mt("\\ket{{\\vb u}}")} reaches the speed of light when {mt("\\ket{{\\vb u}'}")} approaches the speed of light.
+
+                </section>
+
+
+                <section>
+                    <h2> {mt("\\ket{{\\vb v}}")} Approaching Speed of Light</h2>
+
+                    Following the same logic, when the velocity  {mt("\\ket{{\\vb v}}= c \\ket{{\\vb n}}")} , the module of the velocity {mt("\\ket{{\\vb u}}")} reads,
+
+                    {eq(" u^2 =\\frac{c^2}{\\left(1+\\frac{ \\braket{{\\vb u}'|\\vb n}}{c}  \\right)^2} \\left(1+\\frac{ \\braket{{\\vb u}'|\\vb n}}{c}  \\right )^2 =c^2")}
+
+                    independently of the value of the velocity {mt("\\ket{{\\vb u}'}")}.
+
+                </section>
+
+            </MathSection>
         </Stack >
 
     );

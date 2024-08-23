@@ -27,9 +27,8 @@ export default async function Page() {
 
         <Container><h1 className='text-5xl'  >The Lorentz Transformation of Time and Space</h1></Container>
 
-        <MathSection>
-
-          <h2  >Introduction</h2>
+        <MathSection title='Introduction'>
+ 
           <section>In his seminal article, Einstein elegantly derived the Lorentz transformation for time and space between systems moving at constant relative velocity. His original derivation assumed
             that the relative velocity was aligned with the <em>x</em>-axis, and implicitly considered the measurement of length perpendicular to this velocity direction
             to be consistent in both systems. In this section, we will follow Einstein reasoning and extend the derivation to a more general case—a boost in any arbitrary direction.</section>
@@ -65,9 +64,8 @@ export default async function Page() {
 
         </MathSection>
 
-        <MathSection>
+        <MathSection title='Synchronization of Clocks'>
 
-          <h2>Synchronization of Clocks</h2>
           <section>
             In  Special Relativity, the concept of clock synchronization assumes a pivotal role in developing the Lorentz transformation of time and space.
             Although seemingly straightforward, we will delve into a detailed explanation of this fundamental concept, as defining synchronization becomes essential for determining when events occur simultaneously.
@@ -129,10 +127,7 @@ export default async function Page() {
 
         </MathSection>
 
-        <MathSection>
-
-          <h1>Transformation of Time</h1>
-
+        <MathSection title='Transformation of Time'>
 
           <h2>The mirror Experiment</h2>
 
@@ -242,9 +237,8 @@ export default async function Page() {
 
         </MathSection>
 
-        <MathSection>
-
-          <h1>Transformation of Space</h1>
+        <MathSection title='Transformation of Space'>
+          
           <h2>General Form of the Lorentz Transformation</h2>
           <section>
 

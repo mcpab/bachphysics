@@ -1,7 +1,7 @@
 
 import Image from 'next/image';
 
-import Grid from '@mui/material/Unstable_Grid2';
+import Grid from '@mui/material/Grid'
 
 export default function TextAndImage({ component, image, heigth, imageOn = 'left' }: Readonly<{ component: React.ReactNode, image: string, heigth:string, imageOn?: 'left' | 'right' }>) {
 
