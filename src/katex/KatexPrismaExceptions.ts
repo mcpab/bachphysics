@@ -330,7 +330,11 @@ export async function renderLatex(math: string, displayMode: boolean = true): Pr
         "\\vb": "\\textbf",
         "\\vb*": "\\textbf",
         "\\grad": "\\nabla",
-        "\\ds": "\\,"
+        "\\ds": "\\,",
+        "\\pdv": "\\frac{\\partial #1}{\\partial #2}",
+        "\\curl": "\\nabla \\times",
+        "\\div": "\\nabla \\cdot",
+        "\\cross": "\\times",
     };
 
     try {

@@ -38,11 +38,11 @@ export const ref = (label: string, pageName: string) => {
     return <Ref label={label} pageName={pageName} />;
 }
 
-export const mtx = (mode: "none" | 'split' | "matrix" | "pmatrix" | "align" = "matrix", ...args: string[]): string => {
-    const gh1 = mode === "none" ? "" : "\\begin{" + mode + "} ";
-    const gh2 = mode === "none" ? "" : "\\end{" + mode + "} ";
+export const mtx = (mode: "none" | 'split' | "matrix" | "pmatrix" | "align" | "array" = "matrix", ...args: string[]): string => {
+    const gh1 = mode === "none" ? "" : "\\begin{" + mode + "*} ";
+    const gh2 = mode === "none" ? "" : "\\end{" + mode + "*} ";
 
-    return gh1 + args.join(' \\\\ ') + gh2;
+    return gh1 + args.join(' \\\\') + gh2;
 }
 
 export function handleError(error: any): string {

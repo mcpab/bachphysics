@@ -1,8 +1,5 @@
 
-import Stack from '@mui/material/Stack';
 import ImageAndTextGrid from '@/src/ImageAndTextGrid';
-import SectionContainer from '@/src/SectionContainer';
-import Container from '@mui/material/Container';
 import Link from 'next/link';
 
 export default function Page() {
@@ -30,7 +27,7 @@ export default function Page() {
           {
             imgPath: '/img/maxwellRel.jpg',
             component: (
-              styleText('The Relativistic Maxwell Equations', 'The formulation of the Maxwell equations for a general boost in an arbitrary direction.', '/physics/relativity/maxwell-relativistic')
+              styleText('The Relativistic Maxwell Equations', 'The formulation of the Maxwell equations for a general boost in an arbitrary direction.', '/physics/relativity/relativistic-maxwell-equations')
             ),
           },
         ]} />

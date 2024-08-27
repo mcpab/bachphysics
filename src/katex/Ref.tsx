@@ -53,7 +53,7 @@ export default function Ref({ label ,pageName}: Readonly<{ label: string , pageN
         })
         let zoom = <BorderedDiv signature={signature}>{eq} </BorderedDiv>
 
-        rt = <LargePopup inline={true} zoom={zoom}> <span className="underline text-blue-500">{label}</span>  </LargePopup>
+        rt = <LargePopup inline={true} zoom={zoom}> <span className="underline text-blue-500">{label.replace(/-/g,' ')}</span>  </LargePopup>
 
 
     }
