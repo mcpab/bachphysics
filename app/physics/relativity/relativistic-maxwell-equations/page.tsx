@@ -1,17 +1,7 @@
 import Stack from '@mui/material/Stack';
 import 'katex/dist/katex.min.css';
 import Container from '@mui/material/Container';
-import Paper from '@mui/material/Paper';
-import Link from 'next/link';
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import MediaAndText from '@/src/MediaAndTextGrid';
 import Divider from '@mui/material/Divider';
-import Math from '@/src/katex/Math';
 import { eq, mt, ref, mtx } from '@/src/katex/supportFunction';
 import MathSection from '@/src/katex/MathSection';
 
@@ -20,11 +10,12 @@ const pageName = 'relativistic-maxwell-equations';
 export default async function Page() {
 
     return (
+        <>
         <Stack spacing={24} className=" items-center space-y-6">
 
             <Container><h1 className='text-5xl'  >The Relativitic Maxwell Equations</h1></Container>
 
-            <MathSection title='Introduction'>
+            <MathSection title='Introduction' id='introduction'>
 
                 In this segment, we will explore the derivation of the Maxwell equations’ transformation for a general velocity boost in any given direction.
 
@@ -71,7 +62,8 @@ export default async function Page() {
                     </li>
                     <li> and finalling the curl of a vector field {mt("\\vb A")}
                         {eq("\\curl\\vb A= \\left(\\pdv{A_3}{x_2}-\\pdv{A_2}{x_3} \\right) \\vb e_1 - \\left(\\pdv{A_3}{x_1}-\\pdv{A_1}{x_3} \\right) \\vb e_2 + \\left(\\pdv{A_2}{x_1}-\\pdv{A_1}{x_2} \\right) \\vb e_3")}
-                        where {mt("\\vb e_1")}, {mt("\\vb e_2")} and {mt("\\vb e_3")} are unitary vectors along the three spatial axes. The divergence and the curl are assumed to be operators only for the spatial coordinates.
+
+                        where {mt("\\vb e_1")}, {mt("\\vb e_2")} and {mt("\\vb e_3")} are unitary vectors along the three spatial axes. 
                     </li>
                 </ul>
 
@@ -138,19 +130,19 @@ export default async function Page() {
                 The bra-ket formalism helps us here once again to compute the product of the Jacobian matrices. Any row {mt("j")} of {mt("\\grad_{x',t'}{\\vb A'} \\cdot {\\Lambda}(\\vb v)")} is the vector
 
                 {eq("\\bra{\\ds\\pdv{A'_j}{x'_1},\\ds\\pdv{A'_j}{x'_2}, \\ds\\pdv{A'_j}{x'_3} ,\\ds\\pdv{A'_j}{t'}} \\frac{\\beta}{v^2} \\ket{\\vb v,0}\\bra{\\vb{v},0}  -\\ds{\\beta}\\ket{\\vb{v},0}\\bra{\\vb{0},1}+" +
-                    "(\\vb{I'}-\\frac{1}{v^2}\\ket{\\vb{v},0}\\bra{\\vb{v},0})-\\frac{ \\beta} {c^2} \\ket{\\vb{0},1}\\bra{\\vb{v},0}+\\beta \\ket{\\vb{0},1}\\bra{\\vb{0},1}")}
+                    "(\\vb{I}-\\frac{1}{v^2}\\ket{\\vb{v},0}\\bra{\\vb{v},0})-\\frac{ \\beta} {c^2} \\ket{\\vb{0},1}\\bra{\\vb{v},0}+\\beta \\ket{\\vb{0},1}\\bra{\\vb{0},1}")}
 
-                which reads,
+                where {mt("\\vb{I}")} is the identity operator, and reads,
 
                 {eq("\\frac{\\beta}{v^2}\\braket{\\grad_{x'}{\\vb A'_j}|\\vb{v}}\\bra{\\vb{v},0}  -\\ds{\\beta}\\braket{\\grad_{x'}{\\vb A'_j}|\\vb{v}}\\bra{\\vb{0},1}+\\bra{\\grad_{x'}{\\vb A'_j},0}-\\frac{1}{v^2}\\braket{\\grad_{x'}{\\vb A'_j}|\\vb{v}}\\bra{\\vb{v},0}" +
                     "-\\frac{ \\beta} {c^2}  \\ds\\pdv{A'_j}{t'} \\bra{\\vb{v},0}+\\beta \\ds\\pdv{A'_j}{t'}\\bra{\\vb{0},1}")}
 
-                The spatial gradient of any of the component of the field {mt("\\vb A")}  computed in {mt("(\\vb x,t)= \\Lambda'(-\\vb v)(\\vb x',t')")}, reads
+                The spatial gradient of any of the component of the field {mt("\\vb A")}  computed in {mt("(\\vb x,t)= \\Lambda'(-\\vb v)(\\vb x',t')")}, is
 
                 {eq("\\grad_x{\\vb A}_j =  \\grad_{x'}{\\vb A'_j} +\\frac{\\beta-1}{v^2}\\braket{\\grad_{x'}{\\vb A'_j} |\\vb{v}}\\bra{\\vb{v}}  -\\frac{ \\beta} {c^2}  \\ds\\pdv{A'_j}{t'} \\bra{\\vb{v}}", "gradient-in-F", pageName)}
 
                 and the time derivative is
-                {eq("\\ds\\pdv{A_j}{t} = -\\ds{\\beta}\\braket{\\grad_{x'}{\\vb A'_j}|\\vb{v}} +\\ds\\beta\\pdv{A'_j}{t'}")}
+                {eq("\\ds\\pdv{A_j}{t} = -\\ds{\\beta}\\braket{\\grad_{x'}{\\vb A'_j}|\\vb{v}} +\\ds\\beta\\pdv{A'_j}{t'}", "time-derivative-in-F", pageName)}
 
                 where,
 
@@ -209,7 +201,7 @@ export default async function Page() {
 
                 which is in vector form easily recognizable as,
 
-                {eq("\\curl{\\vb A} = \\curl{\\vb A'}+ \\frac{\\beta-1}{v^2} {\\vb v}\\times (\\grad_{x'}\\vb A'\\cdot\\vb v)-\\frac{\\beta}{c^2}\\pdv{\\vb v \\times\\vb A'}{t'}")}
+                {eq("\\curl{\\vb A} = \\curl{\\vb A'}+ \\frac{\\beta-1}{v^2} {\\vb v}\\times (\\grad_{x'}\\vb A'\\cdot\\vb v)-\\frac{\\beta}{c^2}\\pdv{\\vb v \\times\\vb A'}{t'}", "curl-in-F", pageName)}
 
             </MathSection>
 
@@ -223,7 +215,7 @@ export default async function Page() {
 
                 {eq(mtx("align", "{\\vb B'} & = {\\vb B'}({\\vb x'},t') = {\\vb B}(\\; \\Lambda(-{\\vb v})({\\vb x'},t'))", "{\\vb E'} & = {\\vb E'}({\\vb x'},t') = {\\vb E}(\\; \\Lambda(-{\\vb v})({\\vb x'},t'))"))}
 
-                and fulfill the equations obtained by applying directly the Lorentz transformation to equations {ref("maxwell-equations-in-F", pageName)},
+                and fulfill the equations obtained by applying directly the Lorentz transformation to equations {ref("maxwell-equations-in-F", pageName)} (see section <strong>Transformation of Differential Operators</strong>),
 
                 {eq(mtx("align", "-\\beta (\\grad_{x'}\\vb B'\\cdot\\vb v) + \\beta \\pdv{\\vb B'}{t'} &=- \\curl{\\vb E'}- \\frac{\\beta-1}{v^2} {\\vb v}\\cross (\\grad_{x'}\\vb E'\\cdot\\vb v)+\\frac{\\beta}{c^2}\\pdv{\\vb v \\cross\\vb E'}{t'}",
                     "-\\frac{\\beta}{c^2} (\\grad_{x'}\\vb E'\\cdot\\vb v) + \\frac{\\beta}{c^2} \\pdv{\\vb E'}{t'} &= \\curl{\\vb B'}+ \\frac{\\beta-1}{v^2} {\\vb v}\\cross \\left(\\grad_{x'}\\vb B'\\cdot\\vb v\\right)-\\frac{\\beta}{c^2}\\pdv{\\vb v \\cross\\vb B'}{t'}"),
@@ -307,6 +299,7 @@ export default async function Page() {
             </MathSection>
 
         </Stack>
+        </>
     );
 
 }

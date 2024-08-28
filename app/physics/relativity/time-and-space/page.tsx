@@ -171,7 +171,7 @@ export default async function Page() {
 
             and formally, the events of emission, reflection and meeting the source again will be observed in {mt("F'")} as
 
-            {eq(mtx("split", "t'_{0}&=t'({\\vb v}\\, t_{0} ,t_{0})",
+            {eq(mtx("align", "t'_{0}&=t'({\\vb v}\\, t_{0} ,t_{0})",
               "t'_{1}&=t'({\\vb v}t_{0}+ l\\frac{\\vb c_{up} }{\|{\\vb  c_{up}-\\vb v} \|}  , t_{0} + \\frac{l}{\|{\\vb  c_{up}-\\vb v} \|} ) ",
               "t'_{2}&=t'( {\\vb v}t_{0}+{\\vb v}\\, l(\|{\\vb  c_{up}-\\vb v} \|^{-1}+ \\,\|{\\vb  c_{down}-\\vb v} \|^{-1}) ,  t_{0} + l(\\,\|{\\vb  c_{up}-\\vb v} \|^{-1}+ \\,\|{\\vb  c_{down}-\\vb v} \|^{-1})   ) "))}
 
@@ -207,7 +207,8 @@ export default async function Page() {
 
             The {ref("condition on p",pageName)}  can be further simplified if we look in detail to the direction of the vectors {mt("{\\vb v}")}, {mt("{\\vb c_{down}}")} and {mt("{\\vb c_{up}}")}.
             Since the photon in {mt("F'")} follows the same direction going to the mirror and back to the source, {mt("{\\vb c_{down} -\\vb v}")} and {mt("{\\vb c_{up}-\\vb v}")} are parallel, but have different magnitude;
-            hence {mt("{\\vb c_{up}}")}, {mt("{\\vb c_{down}}")} and {mt("{\\vb v}")} are all in the same plane, see Fig (3).
+            hence {mt("{\\vb c_{up}}")}, {mt("{\\vb c_{down}}")} and {mt("{\\vb v}")} are all in the same plane, see Fig (3). <br />
+
             In the system of reference of three mutually orthogonal unit vectors {mt("{\\vb e}_1")}, {mt("{\\vb e}_2")}, and {mt("{\\vb e}_3")}, with {mt("{\\vb e}_1")} and {mt("{\\vb e}_2")} in the same plane of {mt("{\\vb c_{up}}")} and {mt("{\\vb v}")},
             and {mt("{\\vb e}_1")} in the same direction of {mt("\\bf v")}, the vector {mt("\\bf p")} has components,
             {eq(" {\\vb p} = p_1{\\vb e_1} + p_2{\\vb e_2} + p_3 \\,{\\vb e_3}    ")} and equation  {ref("condition on p",pageName)} simplifies to
@@ -238,7 +239,7 @@ export default async function Page() {
         </MathSection>
 
         <MathSection title='Transformation of Space'>
-          
+
           <h2>General Form of the Lorentz Transformation</h2>
           <section>
 
@@ -409,7 +410,7 @@ export default async function Page() {
 
             which has the following admissible solutions,
 
-            {eq(mtx("split", "\\beta&=\\frac{1}{\\sqrt{1 -\\frac{v ^ 2}{c ^ 2} }} ",
+            {eq(mtx("align", "\\beta&=\\frac{1}{\\sqrt{1 -\\frac{v ^ 2}{c ^ 2} }} ",
               "\\lambda_{1, 1}&= \\beta  ",
               "\\lambda_{1, 4}&=-\\frac{v}{c}\\beta "))}
 
@@ -441,7 +442,7 @@ export default async function Page() {
             When {mt("\\vb v")} has the direction of the x-axis, the transformation simplifies to the original Einstein formula
 
 
-            {eq(mtx("split", "x' &= \\beta(x-vt ) \\nonumber ",
+            {eq(mtx("align", "x' &= \\beta(x-vt ) \\nonumber ",
               "y'&=y\\nonumber ",
               "z'&=z\\nonumber ",
               "t'&= \\beta \\left(t-\\frac{v}{c ^ 2}x \\right)"), 'one-dimensional Lorentz transformation',pageName)}
