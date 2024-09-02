@@ -1,8 +1,12 @@
 
 import ImageAndTextGrid from '@/src/ImageAndTextGrid';
 import Link from 'next/link';
+import { SectionType } from '@/src/types';
 
 export default function Page() {
+
+ 
+
   return (
     <>
 

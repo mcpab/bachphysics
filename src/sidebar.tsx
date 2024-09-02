@@ -1,57 +1,61 @@
+'use client'
+
+
 import React from 'react';
-import { Drawer, List, ListItem, ListItemText, Collapse, ListItemIcon, IconButton } from '@mui/material';
-import { ExpandLess, ExpandMore, Menu as MenuIcon } from '@mui/icons-material';
+import { Drawer, List, ListItem, ListItemText, IconButton } from '@mui/material';
 import { useState } from 'react';
-
-interface SubMenu {
-    id: string;
-    title: string;
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import Box from '@mui/material/Box';
+import Link from 'next/link';
+import { SectionType } from './types';
+import Button from '@mui/material/Button';
+interface SideBarProps {
+    mainSection: SectionType;
 }
 
-interface Menu {
-    id: string;
-    title: string;
-    submenus?: SubMenu[];
-}
+const Sidebar: React.FC<SideBarProps> = ({ mainSection }) => {
 
-interface SidebarProps {
-    menus: Menu[];
-    open: boolean;
-    onClose: () => void;
-}
+    const [open, setOpen] = useState<boolean>(false);
 
-const Sidebar: React.FC<SidebarProps> = ({ menus, open, onClose }) => {
-    const [openSubmenus, setOpenSubmenus] = useState<{ [key: string]: boolean }>({});
-
-    const handleToggleSubmenu = (id: string) => {
-        setOpenSubmenus((prev) => ({ ...prev, [id]: !prev[id] }));
+    const toggleDrawer = (newOpen: boolean) => () => {
+        setOpen(newOpen);
     };
 
+    const content = mainSection.subsections;
+
     return (
-        <Drawer anchor="left" open={open} onClose={onClose}>
-            <List>
-                {menus.map((menu) => (
-                    <React.Fragment key={menu.id}>
-                        <ListItem button onClick={() => handleToggleSubmenu(menu.id)}>
-                            <ListItemText primary={menu.title} />
-                            {menu.submenus ? (openSubmenus[menu.id] ? <ExpandLess /> : <ExpandMore />) : null}
-                        </ListItem>
-                        {menu.submenus && (
-                            <Collapse in={openSubmenus[menu.id]} timeout="auto" unmountOnExit>
-                                <List component="div" disablePadding>
-                                    {menu.submenus.map((submenu) => (
-                                        <ListItem button key={submenu.id} sx={{ pl: 4 }}>
-                                            <ListItemText primary={submenu.title} />
-                                        </ListItem>
-                                    ))}
-                                </List>
-                            </Collapse>
-                        )}
-                    </React.Fragment>
-                ))}
-            </List>
-        </Drawer>
-    );
+
+
+        <div className="relative flex flex-col sticky top-0 p-10">
+
+            <div className="flex flex-row justify-end items-center w-full">
+                <Button size="small" variant="contained" startIcon={<ChevronRightIcon />} onClick={toggleDrawer(true)} className='bg-white text-slate-500 hover:bg-slate-500 hover:text-white shadow-2xl'>
+                    Content
+                </Button></div>
+
+            <Drawer anchor="left" open={open} onClose={toggleDrawer(false)}>
+                <Box sx={{ width: 500 }} role="presentation" onClick={toggleDrawer(false)}>
+                    <List>
+                        {content.map((section,index) => (
+                            <React.Fragment key={index}>
+                                <ListItem>
+                                    <Link href={`#${section.id}`} className='no-underline text-black hover:text-blue-300' passHref>
+                                        <ListItemText primary={<b >{section.title}</b>} />
+                                    </Link>
+                                </ListItem>
+                                {section.subsections && section.subsections.map((subsection,index1) => (
+                                    <ListItem key={index+index1} sx={{ pl: 4 }}>
+                                        <Link href={`#${subsection.id}`} className='no-underline text-inherit hover:text-blue-300' passHref>
+                                            <ListItemText primary={<span >{subsection.title}</span>} />
+                                        </Link>
+                                    </ListItem>
+                                ))}
+                            </React.Fragment>
+                        ))}
+                    </List>
+                </Box>
+            </Drawer>
+        </div>);
 };
 
 export default Sidebar;

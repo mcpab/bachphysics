@@ -21,6 +21,11 @@ module.exports = {
         '180': '45rem',
         '280': '70rem'},
     },
+    fontSize: {
+      'h1': '2rem',
+      'h2': '1.5rem',
+      'title': '3rem'
+    },
     fontFamily: {
       sans: ['roboto', 'sans-serif'],
     },
