@@ -31,7 +31,7 @@ const SectionsMenusLayout: React.FC<SectionMenusLayoutProps> = ({ mainSection })
                 <Grid size={6}>
                     <Stack spacing={24} className=" items-center space-y-6">
 
-                        <h1 className='text-title'>{title}</h1>
+                        <h1 className='text-5xl'>{title}</h1>
 
                         <MainLayout sections={sections} />
 
@@ -93,7 +93,7 @@ const LocalSection: React.FC<LocalSectionProps> = ({ title, id, children }) => {
     return (
         <Paper elevation={3} className='p-10 leading-loose space-y-10 text-black justify-center'>
             <section id={id}>
-                <h1 className="text-h1">{title}</h1>
+                <h1 className="text-2xl">{title}</h1>
                 {children}
             </section>
         </Paper>
@@ -105,7 +105,7 @@ const LocalSubSection: React.FC<LocalSectionProps> = ({ title, id, children }) =
     return (
         <>
             <section id={id}>
-                <h2 className="text-h2">{title}</h2>
+                <h2 className="text-xl">{title}</h2>
                 {children}
             </section>
         </>
