@@ -10,7 +10,7 @@
  */
 import React from 'react';
 import Image from 'next/image';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 import Container from '@mui/material/Container';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
@@ -22,30 +22,30 @@ interface Item {
 }
 
 interface Props {
-    title: string;
+    title?: string;
     items: Item[];
 }
 
 const ImageAndTextGrid: React.FC<Props> = ({ title, items }) => {
     return (
-        <Container className='mx-auto my-5'> {/* Center the Container and add vertical margins */}
+        <Container className='mx-auto'> {/* Center the Container and add vertical margins */}
             <Paper elevation={3} className='p-10 space-y-10 text-black justify-center overflow-hidden'> {/* Add overflow-hidden to prevent content overflow */}
-                <Typography variant="h2" align="center" className='text-center'>{title}</Typography> {/* Render the title with larger font size */}
+               {title && <Typography variant="h2" align="center" className='text-center'>{title}</Typography>} {/* Render the title with larger font size */}
                 <Grid container spacing={1}>
                     {items.map((item, index) => (
-                        <Grid container item xs={12} key={index}>
-                            <Grid item xs={6}>
+                        <Grid container size={12} key={index}>
+                            <Grid size={6}>
                                 <div className="relative flex flex-col" style={{ height: '180px' }}> {/* Adjust height to make images bigger */}
                                     <Image src={item.imgPath} alt="" layout="fill" objectFit="contain" quality={100} />
                                 </div>
                             </Grid>
-                            <Grid item xs={6}>
+                            <Grid size={6}>
                                 <div className="relative flex flex-col">
                                     {item.component} {/* Render the 'text' as a React component */}
                                 </div>
                             </Grid>
                             {index < items.length - 1 && (
-                                <Grid item xs={12}>
+                                <Grid size={12}>
                                     <Divider variant="middle" className="my-10" /> {/* Add Divider between items */}
                                 </Grid>
                             )}

@@ -1,9 +1,16 @@
 
 import Image from 'next/image';
 
-import Grid from '@mui/material/Grid'
+import Grid from '@mui/material/Grid2'
 
-export default function TextAndImage({ component, image, heigth, imageOn = 'left' }: Readonly<{ component: React.ReactNode, image: string, heigth:string, imageOn?: 'left' | 'right' }>) {
+interface TextAndImageProps {
+    component: React.ReactNode;
+    image: string;
+    height: string;
+    imageOn?: 'left' | 'right';
+  }
+
+  const TextAndImage: React.FC<TextAndImageProps> = ({ component, image, height, imageOn = 'left' }) => {
 
     const img = <Image src={`${image}`} alt="" fill={true} quality={100} style={{ objectFit: 'contain' }} />;
 
@@ -14,15 +21,13 @@ export default function TextAndImage({ component, image, heigth, imageOn = 'left
     return (
 
         <>
-
-            <Grid container >
-                <Grid xs={4}><div className={`relative ${heigth} flex flex-col`}> {left}   </div> </Grid>
-                <Grid xs={8}><div className={`relative ${heigth} flex flex-col`}> {right}   </div> </Grid>
+            <Grid container spacing={2} >
+                <Grid size={4}><div className={`relative ${height} flex flex-col`}> {left}   </div> </Grid>
+                <Grid size={8}><div className={`relative ${height} flex flex-col`}> {right}   </div> </Grid>
             </Grid>
 
         </>
     );
-
-
-
 }
+
+export default TextAndImage;

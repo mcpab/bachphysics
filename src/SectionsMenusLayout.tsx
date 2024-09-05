@@ -6,7 +6,7 @@ import { SectionType } from "./types";
 import { Fragment } from "react";
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid2';
-
+import BreadMenu from "./BreadMenu";
 import Sidebar from "./sidebar";
 
 interface SectionMenusLayoutProps {
@@ -20,8 +20,6 @@ const SectionsMenusLayout: React.FC<SectionMenusLayoutProps> = ({ mainSection })
     const sections: SectionType[] = mainSection.subsections;
 
     return (<>
-
-
 
         <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={2}>

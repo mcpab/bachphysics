@@ -22,8 +22,9 @@ import Toolbar from '@mui/material/Toolbar';
 
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import BreadMenu from './BreadMenu';
 
-export default function Navigation({clerkKey}:Readonly<{clerkKey: string}>) {
+export default function Navigation({ clerkKey }: Readonly<{ clerkKey: string }>) {
 
     const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 
@@ -50,13 +51,13 @@ export default function Navigation({clerkKey}:Readonly<{clerkKey: string}>) {
                     onClose={handleClose}
 
                 >
-                    <MenuItem> <Link className='text-slate-700' href="/">Home</Link> </MenuItem>
-                    <MenuItem> <Link className='text-slate-700' href="/physics">Physics</Link></MenuItem>
+                    <MenuItem> <Link className='text-slate-700 text-sm' href="/">Home</Link> </MenuItem>
+                    <MenuItem> <Link className='text-slate-700 text-sm' href="/physics">Physics</Link></MenuItem>
                 </Menu>
 
                 <AppBar position="static" style={{ background: 'transparent', boxShadow: 'none' }} className="" >
                     <Toolbar>
-                        <Container className='flex flex-row flex-nowrap ' >
+                        <Container><div className='flex flex-row justify-between items-center w-full' >
                             <IconButton onClick={iconPressed}
                                 size="large"
                                 edge="start"
@@ -66,7 +67,8 @@ export default function Navigation({clerkKey}:Readonly<{clerkKey: string}>) {
                             >
                                 <MenuIcon className='text-slate-700' />
                             </IconButton >
-                            <Container className="flex grow justify-end">
+                            <div className='grow flex justify-center'> <BreadMenu /></div>
+                            <div className="flex justify-end shrink ">
                                 <SignedOut>
                                     <SignInButton>
                                         <Button className='text-slate-700' >Sign in</Button>
@@ -75,7 +77,8 @@ export default function Navigation({clerkKey}:Readonly<{clerkKey: string}>) {
                                 <SignedIn>
                                     <UserButton />
                                 </SignedIn>
-                            </Container>
+                            </div>
+                        </div>
                         </Container>
                     </Toolbar>
 
