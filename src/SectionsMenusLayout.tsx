@@ -20,7 +20,7 @@ const SectionsMenusLayout: React.FC<SectionMenusLayoutProps> = ({ mainSection })
 
     return (<>
 
-        <Box className="container mx-auto p-4">
+        <Box className=" mx-auto p-4">
             <Grid container spacing={2}>
                 <Grid size={3}>
                     <Sidebar mainSection={mainSection} />
