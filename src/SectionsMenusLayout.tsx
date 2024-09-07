@@ -6,7 +6,6 @@ import { SectionType } from "./types";
 import { Fragment } from "react";
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid2';
-import BreadMenu from "./BreadMenu";
 import Sidebar from "./sidebar";
 
 interface SectionMenusLayoutProps {
@@ -21,7 +20,7 @@ const SectionsMenusLayout: React.FC<SectionMenusLayoutProps> = ({ mainSection })
 
     return (<>
 
-        <Box sx={{ flexGrow: 1 }}>
+        <Box className="container mx-auto p-4">
             <Grid container spacing={2}>
                 <Grid size={3}>
                     <Sidebar mainSection={mainSection} />
@@ -29,7 +28,7 @@ const SectionsMenusLayout: React.FC<SectionMenusLayoutProps> = ({ mainSection })
                 <Grid size={6}>
                     <Stack spacing={24} className=" items-center space-y-6">
 
-                        <h1 className='text-5xl'>{title}</h1>
+                        <h1 className='text-5xl'>{title}</h1> 
 
                         <MainLayout sections={sections} />
 
@@ -89,7 +88,7 @@ interface LocalSectionProps {
 
 const LocalSection: React.FC<LocalSectionProps> = ({ title, id, children }) => {
     return (
-        <Paper elevation={3} className='p-10 leading-loose space-y-10 text-black justify-center'>
+        <Paper elevation={3} className='p-10 leading-loose space-y-10 text-black justify-center  max-w-full'>
             <section id={id}>
                 <h1 className="text-2xl">{title}</h1>
                 {children}
