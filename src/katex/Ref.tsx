@@ -48,7 +48,7 @@ export default function Ref({ label ,pageName}: Readonly<{ label: string , pageN
 
         let eq = <span dangerouslySetInnerHTML={{ __html: _html }} />;
 
-        let signature = (_pageName+": "+_label).replace(/-/g,' ').replace(/\b\w/g, function (char) {
+        let signature = ( _label).replace(/-/g,' ').replace(/\b\w/g, function (char) {
             return char.toUpperCase()
         })
         let zoom = <BorderedDiv signature={signature}>{eq} </BorderedDiv>

@@ -35,7 +35,7 @@ const SectionsMenusLayout: React.FC<SectionMenusLayoutProps> = ({ mainSection })
 
                     </Stack>
                 </Grid>
-                <Grid size={{sm:1,md:1,lg:1,xl:6}}>
+                <Grid size={{sm:1,md:1,lg:1,xl:3}}>
 
                 </Grid>
             </Grid>
@@ -86,13 +86,14 @@ interface LocalSectionProps {
     id: string;
     children: React.ReactNode;
 }
+import { Body2, Body1,H2,H3,H4,H5 } from "./TypographyStyles";
 
 const LocalSection: React.FC<LocalSectionProps> = ({ title, id, children }) => {
     return (
         <Paper elevation={3} className='p-10 leading-loose space-y-10 text-black justify-center  max-w-full'>
             <section id={id}>
-                <h1 className="text-2xl">{title}</h1>
-                {children}
+                <H4 sx={{ marginBottom: '30px' }}>{title}</H4>                 
+                <Body1 >{children}</Body1>
             </section>
         </Paper>
     );
@@ -103,8 +104,8 @@ const LocalSubSection: React.FC<LocalSectionProps> = ({ title, id, children }) =
     return (
         <>
             <section id={id}>
-                <h2 className="text-xl">{title}</h2>
-                {children}
+                <H5 sx={{ marginTop: '16px' , marginBottom: '30px' }}>{title}</H5>
+                <Body1 >{children}</Body1>
             </section>
         </>
     );

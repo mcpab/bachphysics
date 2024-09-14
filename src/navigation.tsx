@@ -11,20 +11,22 @@ import {
     SignedOut,
     UserButton
 } from '@clerk/nextjs';
-import type { AppProps } from "next/app";
+
 import Link from 'next/link'
-import Box from '@mui/material/Box';
 import AppBar from '@mui/material/AppBar';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
-
+import DirMenu from './DirMenu';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import BreadMenu from './BreadMenu';
 
+
 export default function Navigation({ clerkKey }: Readonly<{ clerkKey: string }>) {
+
+
 
     const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 
@@ -44,7 +46,8 @@ export default function Navigation({ clerkKey }: Readonly<{ clerkKey: string }>)
 
         <>
             <ClerkProvider publishableKey={`${clerkKey}`}>
-                <Menu
+                
+                {/*  <Menu
                     id="basic-menu"
                     anchorEl={anchorEl}
                     open={open}
@@ -53,20 +56,13 @@ export default function Navigation({ clerkKey }: Readonly<{ clerkKey: string }>)
                 >
                     <MenuItem> <Link className='text-slate-700 text-sm' href="/">Home</Link> </MenuItem>
                     <MenuItem> <Link className='text-slate-700 text-sm' href="/physics">Physics</Link></MenuItem>
-                </Menu>
+                </Menu> */}
 
                 <AppBar position="static" style={{ background: 'transparent', boxShadow: 'none' }} className="" >
                     <Toolbar>
                         <Container><div className='flex flex-row justify-between items-center w-full' >
-                            <IconButton onClick={iconPressed}
-                                size="large"
-                                edge="start"
-                                color="inherit"
-                                aria-label="menu"
-                                sx={{ mr: 2 }}
-                            >
-                                <MenuIcon className='text-slate-700' />
-                            </IconButton >
+                        <DirMenu  />
+
                             <div className='grow flex justify-center'> <BreadMenu /></div>
                             <div className="flex justify-end shrink ">
                                 <SignedOut>

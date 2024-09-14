@@ -1,11 +1,11 @@
-
-
-
 import { addEquation, renderLatex,getEquation } from '@/src/katex/KatexPrismaExceptions'
 import BorderedDiv from '../BorderedDiv';
 import { EquationProps } from './types';
 import { handleError } from './supportFunction';
 import { EquationResult } from './types';
+import Box from '@mui/material/Box';
+
+const equationSpacing = '30px';
 
 const formatSignature = (sgn: string | undefined): string => {
     if (sgn === undefined) {
@@ -45,13 +45,14 @@ export default async function RenderedEquation({ math, label, pageName }: Readon
 
 }
 
+
 export async function EquationBlock({ label, pageName, html, message  }: Readonly<{ label: string | undefined, pageName: string | undefined, html: string, message: string}>) {
 
     const signature = `${formatSignature(label)}`
     const equationElement = <span data-hidden-field={message} dangerouslySetInnerHTML={{ __html: html }} />;
     const renderedEquation = label === undefined ? equationElement : <div className='m-5'><BorderedDiv signature={signature}>{equationElement}</BorderedDiv> </div>;
 
-    return renderedEquation;
+    return <Box sx={{ marginBottom:equationSpacing, marginTop: equationSpacing}}> {renderedEquation} </Box>;
 }
 
 export async function Equation({ label, pageName}: Readonly<{ label: string, pageName: string}>) {

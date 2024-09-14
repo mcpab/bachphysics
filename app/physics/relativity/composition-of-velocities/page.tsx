@@ -1,5 +1,6 @@
 import Stack from '@mui/material/Stack';
 import 'katex/dist/katex.min.css';
+import '@/styles/katexCustom.css';
 import Container from '@mui/material/Container';
 import Link from 'next/link';
 import SectionsMenusLayout from '@/src/SectionsMenusLayout';

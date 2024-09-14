@@ -1,14 +1,38 @@
 import React from 'react';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+ 
 
 export default function BorderedDiv({ signature, children }: Readonly<{ signature?: string; children: React.ReactNode }>) {
+ 
     return (
-        <div className='border-solid rounded border-2 border-neutral-100 p-5 flex flex-col' {...(signature ? { id: signature } : {})}>
+        <Box
+            sx={{
+                border: '2px solid',
+                borderColor:  '#e0e0e0',
+                borderRadius: 1,
+                p: 2,
+                display: 'flex',
+                flexDirection: 'column',
+                position: 'relative',
+            }}
+            {...(signature ? { id: signature } : {})}
+        >
             {signature && (
-                <p className='text-sm float-left pt-0 pr-2 mt-[-30px] mr-0 mb-0 ml-[10px] bg-inherit'>
+                <Typography
+                    variant="subtitle2"
+                    sx={{
+                        position: 'absolute',
+                        top: '-12px',
+                        left: '10px',
+                        backgroundColor: 'white',
+                        padding: '0 4px',
+                    }}
+                >
                     {signature}
-                </p>
+                </Typography>
             )}
             {children}
-        </div>
+        </Box>
     );
 }

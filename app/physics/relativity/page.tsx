@@ -1,10 +1,11 @@
+'use client'
 
 import ImageAndTextGrid from '@/src/ImageAndTextGrid';
 import Link from 'next/link';
-import { Box, Container, Stack } from '@mui/material';
+import { Box } from '@mui/material';
 import Grid from '@mui/material/Grid2';
 import React from 'react';
-import Paper from '@mui/material/Paper';
+
 
 export default function Page() {
 
@@ -13,6 +14,7 @@ export default function Page() {
 
   return (
     <>
+      <ScreenSizeLogger />
       <Box height={80} />
       <LocalGrid title='Kinematics'>
         <ImageAndTextGrid
@@ -32,7 +34,7 @@ export default function Page() {
           ]} />
       </LocalGrid>
       <Box height={80} />
-      <LocalGrid title='Electro-Dynamics'>
+      <LocalGrid title='Electrodynamics'>
         <ImageAndTextGrid
           items={[
             {
@@ -50,13 +52,13 @@ export default function Page() {
   );
 }
 
+import { H6, Body2 } from '@/src/TypographyStyles'; // Importing H2 from TypographyStyles
 function styleText(title: string, description: string, link: string) {
   return (
-    <div>
-
-      <h2><Link href={link} className='text-inherit no-underline hover:text-blue-300'>{title}</Link></h2>
-      <p>{description}</p>
-    </div>
+    <>
+      <H6><Link href={link} className='text-inherit no-underline hover:text-blue-300'>{title}</Link></H6>
+      <Body2>{description}</Body2>
+    </>
   );
 }
 
@@ -71,16 +73,65 @@ const LocalGrid: React.FC<LocalGridProps> = ({ title, children }) => {
 
 
     <Grid container spacing={3}  >
-      <Grid size={3}>
-        <div className="flex flex-row sticky justify-end text-xl h-full flex-grow border-solid border-r-2 border-stone-400 border-t-0 border-b-0 border-l-0 p-10 text-stone-600">{title}</div>
+      <Grid size={{ sm: 1, md: 1, lg: 1, xl: 3 }}>
+        <Box
+          sx={{
+            display: { xl: 'flex' },
+            flexGrow: { xl: 1 },
+            position: 'sticky',
+            justifyContent: 'flex-end',             
+            height: '100%',
+            borderStyle: 'solid',
+            borderRightWidth: '2px',
+            borderColor: 'rgba(168, 162, 158)', // border-stone-400
+            borderTopWidth: 0,
+            borderBottomWidth: 0,
+            borderLeftWidth: 0,
+            padding: '2.5rem', // p-10
+            color: 'rgba(120, 113, 108)', // text-stone-600
+          }}
+        >
+          <Box sx={{ transform: { xs: 'rotate(90deg)', xl: 'rotate(0deg)' } }}>
+            <H6>{title}</H6>
+          </Box>
+        </Box>
+
       </Grid>
-      <Grid size={6} className='my-5 items-center'>
+      <Grid size={{ sm: 10, md: 10, lg: 10, xl: 6 }} className='my-5 items-center'>
         {children}
       </Grid>
-      <Grid size={3}>
+      <Grid size={{ sm: 1, md: 1, lg: 1, xl: 6 }}>
       </Grid>
     </Grid>
 
   );
 
 }
+
+import { useMediaQuery } from '@mui/material';
+import { useEffect } from 'react';
+
+const ScreenSizeLogger = () => {
+  const isXs = useMediaQuery('(max-width:600px)');
+  const isSm = useMediaQuery('(min-width:600px) and (max-width:960px)');
+  const isMd = useMediaQuery('(min-width:960px) and (max-width:1280px)');
+  const isLg = useMediaQuery('(min-width:1280px) and (max-width:1920px)');
+  const isXl = useMediaQuery('(min-width:1920px)');
+
+  useEffect(() => {
+    if (isXs) {
+      console.log('Screen size: Extra Small (xs)');
+    } else if (isSm) {
+      console.log('Screen size: Small (sm)');
+    } else if (isMd) {
+      console.log('Screen size: Medium (md)');
+    } else if (isLg) {
+      console.log('Screen size: Large (lg)');
+    } else if (isXl) {
+      console.log('Screen size: Extra Large (xl)');
+    }
+  }, [isXs, isSm, isMd, isLg, isXl]);
+
+  return <></>;
+};
+

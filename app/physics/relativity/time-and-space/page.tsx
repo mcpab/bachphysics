@@ -1,6 +1,4 @@
-import Stack from '@mui/material/Stack';
 import 'katex/dist/katex.min.css';
-import Container from '@mui/material/Container';
 import Paper from '@mui/material/Paper';
 import Link from 'next/link';
 import Table from '@mui/material/Table';
@@ -12,6 +10,7 @@ import TableRow from '@mui/material/TableRow';
 import MediaAndText from '@/src/MediaAndTextGrid';
 import Divider from '@mui/material/Divider';
 import Math from '@/src/katex/Math';
+import '@/styles/katexCustom.css';
 import { eq, mt, ref, mtx } from '@/src/katex/supportFunction';
  
 import Section from '@/src/katex/SectionClass';
@@ -79,7 +78,7 @@ export default async function Page() {
       A possible outcome of this experiment could be as per the  table below (units of time are not relevant in this discussion):
     
 
-    <TableContainer component={Paper}>
+    <TableContainer sx={{ marginTop: '25px',marginBottom:'25px' }} component={Paper}>
       <Table>
         <TableHead>
           <TableRow>
@@ -134,7 +133,7 @@ export default async function Page() {
      Let us explore the mirror experiment from the perspective of a new reference frame. In this scenario, the mirror and the emitting source are both at rest within a system of reference {mt("F'")}, which itself is in motion relative to another system of reference {mt("F")}.
       Observers in {mt("F")} measure time and distance as {mt("t")} and {mt("x_1,x_2,x_3")}, while observers in {mt("F")} measure time and distance as {mt("t'")} and {mt("x'_1,x'_2,x'_3")}. We assume that at time zero the origin of the systems coincide. 
 
-    <Divider className='text-sm'> Experiment Observed from {mt("F'")} </Divider>
+    <Divider  sx={{ marginTop: '25px',marginBottom:'25px' }}> Experiment Observed from {mt("F'")} </Divider>
 
     <MediaAndText imageSrc='/img/movingframes.jpg' imageSize={60} caption={<div>Fig 1:Photon Emission and Reflection in {mt("F'")}</div>}> The source is located at the origin of {mt("F'")} and the mirror is
       positioned at a fixed distance along an arbitrary direction.
@@ -143,7 +142,7 @@ export default async function Page() {
 
     </MediaAndText>
 
-    <Divider className='text-sm'> Experiment Observed from {mt("F")} </Divider>
+    <Divider  sx={{ marginTop: '25px',marginBottom:'25px' }}> Experiment Observed from {mt("F")} </Divider>
      Now we examine the three events—emission, reflection, and arrival back at the source—from the viewpoint of reference frame {mt("F")}.
       It is crucial to emphasize that all time, velocity, and distance quantities in this section <i>are assumed to be measured within the system of reference</i> {mt("F")}.
     
@@ -439,6 +438,7 @@ export default async function Page() {
   </>);
 
   let sectionsToRender: SectionType = sections.getSections();
+  
   return (
     <>
       <SectionsMenusLayout   mainSection={sectionsToRender} />

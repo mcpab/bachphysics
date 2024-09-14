@@ -1,7 +1,7 @@
 // Code for the page at /relativistic-maxwell-equations
 
 import 'katex/dist/katex.min.css';
-
+import '@/styles/katexCustom.css';
 import { eq, mt, ref, mtx } from '@/src/katex/supportFunction';
 import SectionsMenusLayout from '@/src/SectionsMenusLayout';
 import Section from '@/src/katex/SectionClass';
