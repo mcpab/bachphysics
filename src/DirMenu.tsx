@@ -102,7 +102,7 @@ const renderMenu = (items: MenuItem[], level: number, openCollapse: { [key: stri
                 <React.Fragment key={index}>
                     <ListItem sx={{ pl: level * 2 }}>
                         <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
-                            <Link href={item.path} className='no-underline text-black hover:text-blue-300' passHref   >
+                            <Link href={item.path} className='no-underline text-black hover:text-blue-300' >
                                 <Box sx={{ display: 'flex', alignItems: 'center' }} onClick={() => setOpen(false)}>
 
                                     {<IconPicker name={item.name} /> &&
