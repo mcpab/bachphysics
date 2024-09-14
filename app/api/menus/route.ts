@@ -11,7 +11,7 @@ interface MenuItem {
   children?: MenuItem[];
 }
 
-function generateMenu(dir:string, basePath = '\\'):MenuItem[] {
+function generateMenu(dir:string, basePath = '/'):MenuItem[] {
 
   const menu: MenuItem[] = [];
 
