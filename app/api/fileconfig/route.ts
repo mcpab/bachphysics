@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { findConfigFiles, ResultData } from '@/utils/findConfigFiles'; // Adjust the path as needed
+import path from 'path';
 
 export async function GET(req: NextRequest) {
 
@@ -8,12 +9,16 @@ export async function GET(req: NextRequest) {
   const dir = searchParams.get('dir');
   const fileName = searchParams.get('fileName');
 
+
+
   if (!dir || !fileName) {
     return NextResponse.json({ error: 'Invalid query parameters. Please provide "dir" and "fileName".' ,search:searchParams}, { status: 400 });
   }
 
+  const appDirectory = path.join(process.cwd(), 'app',dir); 
+
   try {
-    const results: ResultData[] = findConfigFiles(dir, fileName);
+    const results: ResultData[] = findConfigFiles(appDirectory, fileName);
     return NextResponse.json(results, { status: 200 });
   } catch (error) {
     if (error instanceof Error) {
