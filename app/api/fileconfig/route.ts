@@ -15,7 +15,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: 'Invalid query parameters. Please provide "dir" and "fileName".' ,search:searchParams}, { status: 400 });
   }
 
-  const appDirectory = path.join(process.cwd(), 'app',dir); 
+  const appDirectory = process.cwd()+ "/app/" + dir; // path.join(process.cwd(), 'app',dir); 
 
   try {
     const results: ResultData[] = findConfigFiles(appDirectory, fileName);
