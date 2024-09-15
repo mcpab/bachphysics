@@ -16,7 +16,7 @@ export default function Page() {
     <>
       <ScreenSizeLogger />
       <Box height={80} />
-      <LocalGrid title='Kinematics'>
+      <LocalGrid title='Dynamics'>
         <ImageAndTextGrid
           items={[
             {
@@ -56,7 +56,7 @@ import { H6, Body2 } from '@/src/TypographyStyles'; // Importing H2 from Typogra
 function styleText(title: string, description: string, link: string) {
   return (
     <>
-      <H6><Link href={link} className='text-inherit no-underline hover:text-blue-300'>{title}</Link></H6>
+      <H6><Link href={link} className='text-inherit no-underline hover:text-blue-30  '><b>{title}</b></Link></H6>
       <Body2>{description}</Body2>
     </>
   );

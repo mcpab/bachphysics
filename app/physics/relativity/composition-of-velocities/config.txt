@@ -1,0 +1,6 @@
+Title: The Composition of Velocities
+Content: The relativistic composition of velocities.
+Link: /physics/relativity/composition-of-velocities
+Image: /img/velocitiesComposition.jpg
+
+ 
