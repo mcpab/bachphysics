@@ -40,7 +40,7 @@ function generateMenu(dir:string, basePath = '/'):MenuItem[] {
 export async function GET(request: Request) {
   try {
     const menu = generateMenu(appDirectory);
-    return NextResponse.json({ menu: menu }, { status: 200 });
+    return NextResponse.json({ menu: menu, appDirectory }, { status: 200 });
   } catch (error) {
     return NextResponse.json({ error: error  }, { status: 500 });
   }
