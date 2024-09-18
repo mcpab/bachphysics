@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import { findConfigFiles, ResultData } from '@/utils/findConfigFiles'; // Adjust the path as needed
 import path from 'path';
 
+const appDirectory = path.join(process.cwd(), 'app'); 
+
 export async function GET(req: NextRequest) {
 
   const { searchParams } = new URL(req.url);

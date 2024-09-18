@@ -20,8 +20,6 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import IconPicker from './IconPicker'; // Importing IconPicker
 
 
-
-
 interface MenuItem {
     name: string;
     path: string;

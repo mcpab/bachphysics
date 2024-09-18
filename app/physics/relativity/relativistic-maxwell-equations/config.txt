@@ -1,5 +1,0 @@
-Title: The Relativistic Maxwell Equations
-Content:The formulation of the Maxwell equations for a general boost in an arbitrary direction.
-Link: /physics/relativity/relativistic-maxwell-equations
-Image: /img/maxwellRel.jpg
- 
