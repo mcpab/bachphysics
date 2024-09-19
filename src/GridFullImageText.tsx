@@ -28,7 +28,7 @@ const GridFullImageText: React.FC<LayoutComponent> = ({ results, title }) => {
 
                 {results.map((result, index) => (
 
-                    'error' in result ? (<p>Error: {result.error}</p>) :
+                    'error' in result ? (<p key={index}>Error: {result.error}</p>) :
                         (
                             <Box key={index}>
                                 <Cover height='h-180' image={result.image}>

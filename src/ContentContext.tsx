@@ -50,7 +50,7 @@ export const ContentSetter: React.FC<ContentSetterType> = ({sections}) => {
     useEffect(() => {
         console.log('Setting content:', sections);
         setContent(sections);
-    }, [sections]);
+    }, [sections,setContent]);
 
     return null;
 };

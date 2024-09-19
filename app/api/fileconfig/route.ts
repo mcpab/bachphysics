@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { findConfigFiles, ResultData } from '@/utils/findConfigFiles'; // Adjust the path as needed
+import { findConfigFiles } from '@/utils/findConfigFiles'; // Adjust the path as needed
 import path from 'path';
+import { ValidConfigFilesData, ConfigFilesData } from '@/src/interfaces/interfaces'; // Adjust the path as needed
 
 const appDirectory = path.join(process.cwd(), 'app'); 
 
@@ -20,7 +21,7 @@ export async function GET(req: NextRequest) {
   const appDirectory = process.cwd()+ "/app/" + dir; // path.join(process.cwd(), 'app',dir); 
 
   try {
-    const results: ResultData[] = findConfigFiles(appDirectory, fileName);
+    const results: ConfigFilesData[] = findConfigFiles(appDirectory, fileName);
     return NextResponse.json(results, { status: 200 });
   } catch (error) {
     if (error instanceof Error) {
