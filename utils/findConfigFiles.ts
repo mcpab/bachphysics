@@ -99,7 +99,7 @@ function findConfigFiles(dir: string, fileName: string, recursive: boolean = fal
  * 
  * @returns {ConfigFilesData | null} The parsed configuration data or an error object.
  */
-function parseConfigFile(filePath: string): ConfigFilesData | null {
+ function parseConfigFile(filePath: string): ConfigFilesData | null {
     let content: string;
     try {
         content = fs.readFileSync(filePath, 'utf-8');
@@ -140,4 +140,4 @@ function parseConfigFile(filePath: string): ConfigFilesData | null {
 
 
 
-export { findConfigFiles };
+export { findConfigFiles,parseConfigFile };

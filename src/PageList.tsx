@@ -48,7 +48,7 @@ const PageList: React.FC<PageListProps> = ({ title, dir, configFileName='pageRef
     const workinDir = process.cwd() + "/app/" + dir;
 
     const results: ConfigFilesData[] = findConfigFiles(workinDir, configFileName, recursive); // Fetch configuration files
-console.log('results', results);
+
     const sortedResults = results.sort((a, b) => {
         if ('order' in a && 'order' in b) {
             return a.order - b.order;

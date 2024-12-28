@@ -1,8 +1,10 @@
-'use client';
 
-import { useState } from 'react';
-
+/**
+ * @file navigation.tsx
+ * @description This file defines the Navigation component, which includes an AppBar with a directory menu, breadcrumb menu, and user authentication buttons using Clerk.
+ */
 import Container from '@mui/material/Container';
+import { generateMenu } from '@/utils/generateMenus';
 
 import {
     ClerkProvider,
@@ -12,56 +14,41 @@ import {
     UserButton
 } from '@clerk/nextjs';
 
-import Link from 'next/link'
+
 import AppBar from '@mui/material/AppBar';
 import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
+
 import Toolbar from '@mui/material/Toolbar';
 import DirMenu from './DirMenu';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
+
 import BreadMenu from './BreadMenu';
 
-
+/**
+ * @component Navigation
+ * @description A functional component that renders an AppBar with a directory menu, breadcrumb menu, and user authentication buttons.
+ * @param {Readonly<{ clerkKey: string }>} props - The props for the component.
+ * @returns {JSX.Element} The rendered component.
+ */
 export default function Navigation({ clerkKey }: Readonly<{ clerkKey: string }>) {
+    /**
+     * @constant {string} workinDir - The working directory path.
+     */
+    const workinDir = process.cwd() + "/app/";
 
-
-
-    const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
-
-    const open = Boolean(anchorEl);
-
-    const iconPressed = (event: React.MouseEvent<HTMLButtonElement>) => {
-
-        const rt = anchorEl == null ? event.currentTarget : null;
-        setAnchorEl(rt);
-    };
-
-    const handleClose = () => {
-        setAnchorEl(null);
-    }
+    /**
+     * @constant {MenuItem[]} menus - The generated menu items.
+     */
+    const menus = generateMenu(workinDir, 'pageRef.json');
 
     return (
 
         <>
             <ClerkProvider publishableKey={`${clerkKey}`}>
-                
-                {/*  <Menu
-                    id="basic-menu"
-                    anchorEl={anchorEl}
-                    open={open}
-                    onClose={handleClose}
-
-                >
-                    <MenuItem> <Link className='text-slate-700 text-sm' href="/">Home</Link> </MenuItem>
-                    <MenuItem> <Link className='text-slate-700 text-sm' href="/physics">Physics</Link></MenuItem>
-                </Menu> */}
 
                 <AppBar position="static" style={{ background: 'transparent', boxShadow: 'none' }} className="" >
                     <Toolbar>
                         <Container><div className='flex flex-row justify-between items-center w-full' >
-                        <DirMenu  />
+                        <DirMenu menus={menus} />
 
                             <div className='grow flex justify-center'> <BreadMenu /></div>
                             <div className="flex justify-end shrink ">
@@ -77,12 +64,7 @@ export default function Navigation({ clerkKey }: Readonly<{ clerkKey: string }>)
                         </div>
                         </Container>
                     </Toolbar>
-
-
                 </AppBar>
-
-
-
             </ClerkProvider>
         </>
     );

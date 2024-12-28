@@ -1,8 +1,10 @@
+/**
+ * @file GridFullImageText.tsx
+ * @description This file defines the GridFullImageText component, which displays a grid of images with text overlays.
+ * Each grid item can either display an error message or an image with a title that links to a specified URL.
+ */
+
 import React from 'react';
-import Grid from '@mui/material/Grid2';
-import Paper from '@mui/material/Paper';
-import Image from 'next/image';
-import { H2, H6, Body2 } from '@/src/TypographyStyles';
 import { Box } from '@mui/material';
 import Link from 'next/link';
 import Stack from '@mui/material/Stack';
@@ -11,9 +13,15 @@ import { LayoutComponent } from './interfaces/interfaces';
 import Cover from './Cover';
 import { H1 } from '@/src/TypographyStyles';
 
-
-
-
+/**
+ * @component GridFullImageText
+ * @description A functional component that renders a grid of images with text overlays.
+ * Each grid item can either display an error message or an image with a title that links to a specified URL.
+ * @param {LayoutComponent} props - The props for the component.
+ * @param {Array} props.results - An array of result objects to be displayed in the grid.
+ * @param {string} props.title - The title to be displayed at the top of the grid.
+ * @returns {JSX.Element} The rendered component.
+ */
 const GridFullImageText: React.FC<LayoutComponent> = ({ results, title }) => {
 
     return (
@@ -21,7 +29,7 @@ const GridFullImageText: React.FC<LayoutComponent> = ({ results, title }) => {
         <>
 
             <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-                <H2 sx={{ padding: 5 }}>{title}</H2>
+                <H1 sx={{ padding: 5 }}>{title}</H1>
             </Box >
 
             <Stack spacing={4} className="flex justify-center content-center grow">

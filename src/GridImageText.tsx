@@ -3,7 +3,7 @@ import React from 'react';
 import Grid from '@mui/material/Grid2';
 import Paper from '@mui/material/Paper';
 import Image from 'next/image';
-import { H2, H6, Body2 } from '@/src/TypographyStyles';
+import { H1,H2, H6, Body2 } from '@/src/TypographyStyles';
 import { Box } from '@mui/material';
 import Link from 'next/link';
 import Stack from '@mui/material/Stack';
@@ -52,7 +52,7 @@ const GridImageText: React.FC<LayoutComponent> = ({ results, title }) => {
 
                     {/* title section */}
                 </Grid> <Grid size={12} sx={{ display: 'flex', justifyContent: 'center' }}>
-                    <H2 sx={{ padding: 5 }}>{title}</H2>
+                    <H1 sx={{ padding: 5 }}>{title}</H1>
                 </Grid>
 
                 {/* Empty Grid for spacing Left*/}

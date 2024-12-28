@@ -375,7 +375,9 @@ export default async function Page() {
 
     {eq("(\\lambda_{1, 1}^2-\\beta^2\\frac{v ^ 2} {c ^ 2}) n_1^2 + 2(\\lambda_{1, 1}\\lambda_{1, 4}+\\beta^2\\frac{v} {c})n_1+n_2^2 +n_3^2+(\\lambda_{1, 4}^2-\\beta^2) =0")}
 
-    Choosing {mt("n_2")} or {mt("n_3=1")} and {mt("n_1=0")},
+      The above equation is identically zero for all {mt("\\vb n")} such that {mt("||\\vb n||=1")} only if,
+
+{/*     Choosing {mt("n_2")} or {mt("n_3=1")} and {mt("n_1=0")},
 
     {eq("(\\lambda_{1, 4}^2-\\beta^2) =-1")}
 
@@ -386,7 +388,8 @@ export default async function Page() {
       "+(\\lambda_{1, 4}^2-\\beta^2) =0\\end{gather*} ")}
 
     and we arrive at the system of equations
-
+ */}
+ 
     {eq(mtx("matrix",
       "\\lambda_{1, 1}^2-\\beta^2\\displaystyle\\frac{v ^ 2} {c ^ 2} &= 1",
       "\\lambda_{1, 1}\\lambda_{1, 4}+\\beta^2\\displaystyle\\frac{v} {c} & =0",

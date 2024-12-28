@@ -1,8 +1,13 @@
+/**
+ * @file DirMenu.tsx
+ * @description This file defines the DirMenu component, a collapsible menu using Material-UI components.
+ * The menu can be toggled open and closed, and individual menu items can be expanded or collapsed.
+ */
+
 'use client';
 import React, { useState, useEffect } from 'react';
 import Typography from '@mui/material/Typography';
 import Link from 'next/link';
-import { Icon, MenuItem } from '@mui/material';
 
 import { IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -18,37 +23,64 @@ import ExpandMore from '@mui/icons-material/ExpandMore';
 import Box from '@mui/material/Box';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import IconPicker from './IconPicker'; // Importing IconPicker
+import { MenuItem } from './interfaces/interfaces';
 
-
-interface MenuItem {
-    name: string;
-    path: string;
-    children?: MenuItem[];
+/**
+ * @interface DirMenuProps
+ * @description Defines the structure of the props for the DirMenu component.
+ * @property {MenuItem[]} menus - An array of MenuItem objects representing the menu structure.
+ */
+interface DirMenuProps {
+    menus: MenuItem[];
 }
 
-const DirMenu: React.FC = () => {
+/**
+ * @function sortMenus
+ * @description Recursively sorts the menus array and its subarrays based on the 'order' property.
+ * @param {MenuItem[]} menus - The array of menu items to sort.
+ * @returns {MenuItem[]} The sorted array of menu items.
+ */
+const sortMenus = (menus: MenuItem[]): MenuItem[] => {
+    return menus
+        .map(menu => ({
+            ...menu,
+            children: sortMenus(menu.children || [])
+        }))
+        .sort((a, b) => (a.order ?? Infinity) - (b.order ?? Infinity));
+};
 
-    const [menu, setMenu] = useState<MenuItem[]>([]);
+/**
+ * @component DirMenu
+ * @description A functional component that renders a collapsible menu using Material-UI components.
+ * @param {DirMenuProps} props - The props for the component.
+ * @returns {JSX.Element} The rendered component.
+ */
+const DirMenu: React.FC<DirMenuProps> = ({ menus }) => {
+
+    /**
+     * @state {boolean} open - A boolean state to track whether the drawer is open or closed.
+     */
     const [open, setOpen] = useState<boolean>(false);
+
+    /**
+     * @state {object} openCollapse - An object state to track the open/close state of individual collapsible menu items.
+     */
     const [openCollapse, setOpenCollapse] = useState<{ [key: string]: boolean }>({});
 
-    useEffect(() => {
-        async function fetchMenu() {
-            const response = await fetch('/api/menus');
-            if (!response.ok) {
-                console.log('Failed to fetch menu');
-            }
-            const data = await response.json();
-            setMenu(data['menu']);
-            console.log('res', data['menu']);
-        }
-        fetchMenu();
-    }, []);
-
+    /**
+     * @function iconPressed
+     * @description Toggles the open state of the drawer.
+     * @param {React.MouseEvent<HTMLButtonElement>} event - The mouse event.
+     */
     const iconPressed = (event: React.MouseEvent<HTMLButtonElement>) => {
         setOpen(!open);
     };
 
+    /**
+     * @function handleToggle
+     * @description Toggles the open/close state of individual collapsible menu items.
+     * @param {string} path - The path of the menu item to toggle.
+     */
     const handleToggle = (path: string) => {
         setOpenCollapse(prevState => ({
             ...prevState,
@@ -56,7 +88,10 @@ const DirMenu: React.FC = () => {
         }));
     };
 
-    const items = menu;
+
+    // Sort the menus array before rendering
+    const sortedMenus = sortMenus(menus);
+
     return (
         <>
             <IconButton onClick={iconPressed}
@@ -80,7 +115,7 @@ const DirMenu: React.FC = () => {
                         </ListSubheader>
                     }
                 >
-                    <Typography variant="h6" sx={{ padding: '16px' }}> {renderMenu(items, 0, openCollapse, handleToggle, setOpen)}</Typography>
+                    <Typography variant="h6" sx={{ padding: '16px' }}> {renderMenu(sortedMenus, 0, openCollapse, handleToggle, setOpen)}</Typography>
                 </List>
 
             </Drawer>
