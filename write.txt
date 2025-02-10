@@ -1,0 +1,1 @@
+m \rho (t) \sin (\phi (t)) \left(\rho (t) \theta ''(t) \sin (\phi (t))+2 \left(\theta '(t)+\omega \right) \left(\rho '(t) \sin (\phi (t))+\rho   (t) \phi '(t) \cos (\phi (t))\right)\right)=0

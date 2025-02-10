@@ -10,6 +10,8 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import Box from '@mui/material/Box';
 import MediaAndText from '@/src/MediaAndTextGrid';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import CircleIcon from '@mui/icons-material/Circle';
 
 const pageName = 'kinematics-of-rigid-body-motion';
 
@@ -143,7 +145,7 @@ export default function Page() {
 
         An orthogonal transformation in three dimension will have the eigenvalues +1 or -1, and {mt("\\lambda = e^{i\\theta}")} and {mt("\\lambda = e^{-i\\theta}")}.
 
-        The eigenvectors corresponding to the eigenvalue +1  are the vectors that remain unchanged under the transformation, forming the rotation axis. 
+        The eigenvectors corresponding to the eigenvalue +1  are the vectors that remain unchanged under the transformation, forming the rotation axis.
         Conversely, the eigenvectors corresponding to the eigenvalue −1 are the vectors that are reflected under the transformation.
 
         In physics, we assume that an orthogonal transformation varies continuously with the parameter  {mt("\\theta")} the rotation angle. This angle typically depends on time and describes the evolution of the rotated reference system relative to the fixed axis.
@@ -575,12 +577,297 @@ export default function Page() {
 
         {eq("\\boldsymbol \\omega = (1-\\cos(\\theta)) \\,\\,\\dot{\\vb n}\\times\\vb n + \\sin(\\theta)\\dot{\\vb n} + \\dot\\theta\\vb n", "Angular velocity with rotating axis", pageName)}
 
-        The formula above can be verified using symbolic computation software. It is recommended to express {mt(" {\\vb n}")} in polar coordinates to 
+        The formula above can be verified using symbolic computation software. It is recommended to express {mt(" {\\vb n}")} in polar coordinates to
         automatically satisfy the orthogonality condition {mt(" {\\vb n}\\cdot \\dot{\\vb n}=0")} and ensure the preservation of the modulus of the vector {mt(" {\\vb n}")}.
 
     </>);
 
+    let equationsOfMotion = sections.addSection('Equations of Motion in a rotating frame');
 
+    equationsOfMotion.setContent(<>
+
+        In this section, we will thoroughly derive the equations of motion for a body in a rotating frame of reference with respect to a fixed one. We will limit our
+        discussion to cases of constant angular velocity. The equations of motion will be expressed within the rotating frame, introducing the Coriolis and centrifugal forces that emerge in these scenarios.
+
+        A detailed analysis of these forces will be conducted in the context of a body motion on the surface of a rotating sphere, with particular emphasis on the implications of Earth rotation.
+
+
+        In this section we will derive the equations of motion for a body moving in a rotating frame of reference. We assume that the angular velocity is constant, and we start from the
+        equation giving the rate of change of a vector in the fixed frame, above{ref('rate of change: inverse', pageName)}.
+        <br /><br />
+
+        We compute the second time derivative of the position vector {mt("\\vb r")} in the fixed frame, and we consider its components in the rotating frame {mt("\\vb r'")},
+
+        {eq("\\frac{d^2\\vb r(t)}{dt^2} = \\frac{ d\\vb A^\\top}{dt}\\left( \\boldsymbol \\omega \\times \\vb r' + \\frac{d\\vb r'}{dt}\\right) + \\vb A^\\top\\left( \\boldsymbol \\omega \\times \\frac{d\\vb r'}{dt} + \\frac{d^2\\vb r'}{dt^2} \\right)")}
+
+        From the orthogonality of the rotation matrix, {mt("\\vb A^\\top \\vb A = \\vb I")}:
+
+        {eq("\\frac{d\\vb A^\\top}{dt}\\vb A + \\vb A \\frac{d\\vb A^\\top}{dt} = 0")}
+
+        we obtain:
+
+        {eq("\\frac{d\\vb A^\\top}{dt} = -\\vb A^\\top \\frac{d\\vb A}{dt} \\vb A^\\top")}
+
+        Inserting this expression in the equation above, and using the distributive property of the cross product for orthogonal matrices,
+
+        {eq(mtx("align", "\\frac{d^2\\vb r(t)}{dt^2} &= - \\vb A^\\top \\frac{d\\vb A}{dt} \\vb A^\\top \\left( \\boldsymbol \\omega \\times \\vb r' + \\frac{d\\vb r'}{dt}\\right) + \\vb A^\\top\\left( \\boldsymbol \\omega \\times \\frac{d\\vb r'}{dt} + \\frac{d^2\\vb r'}{dt^2} \\right)", " &= - \\vb A^\\top \\frac{d\\vb A}{dt} \\left( \\vb A^\\top \\boldsymbol \\omega \\times \\vb A^\\top \\vb r' + \\vb A^\\top \\frac{d\\vb r'}{dt}\\right) + \\vb A^\\top\\left( \\boldsymbol \\omega \\times \\frac{d\\vb r'}{dt} + \\frac{d^2\\vb r'}{dt^2} \\right)", " &= - \\vb A^\\top \\left( \\vb A \\left( \\vb A^\\top \\boldsymbol \\omega \\times \\vb A^\\top \\vb r' + \\vb A^\\top \\frac{d\\vb r'}{dt}\\right)\\right)\\times \\boldsymbol \\omega + \\vb A^\\top\\left( \\boldsymbol \\omega \\times \\frac{d\\vb r'}{dt} + \\frac{d^2\\vb r'}{dt^2} \\right)", " &= - \\vb A^\\top \\left( \\boldsymbol \\omega \\times \\vb r' + \\frac{d\\vb r'}{dt}\\right)\\times \\boldsymbol \\omega + \\vb A^\\top\\left( \\boldsymbol \\omega \\times \\frac{d\\vb r'}{dt} + \\frac{d^2\\vb r'}{dt^2} \\right)"))}
+
+        we arrive at the  equation:
+
+        {eq("\\vb A \\frac{d^2\\vb r(t)}{dt^2} = \\boldsymbol \\omega \\times (\\boldsymbol \\omega \\times \\vb r') + 2 \\boldsymbol \\omega \\times \\frac{d\\vb r'}{dt} + \\frac{d^2\\vb r'}{dt^2}.")}
+
+        Defining the acceleration in the fixed frame as {mt("\\vb a = \\frac{d^2\\vb r(t)}{dt^2}")}, and the acceleration in the rotating frame as {mt("\\vb a' = \\frac{d^2\\vb r'(t)}{dt^2}")}, we obtain the equation of motion:
+
+        {eq("\\vb a' = -\\boldsymbol \\omega \\times (\\boldsymbol \\omega \\times \\vb r') - 2 \\boldsymbol \\omega \\times \\frac{d\\vb r'}{dt} + \\vb A \\vb a.", "Equation of motion in rotating frame", pageName)}
+
+        The equation above is the fundamental equation of motion for a body in a rotating frame of reference. It includes the Coriolis and centrifugal forces, which are essential for understanding the dynamics of a body in a rotating system.
+
+        The centrifugal force {mt("\\vb F_\\text{cf}")} on a body of mass {mt("m")} is the term
+
+        {eq("\\vb F_\\text{cf}=- m \\boldsymbol \\omega \\times (\\boldsymbol \\omega \\times \\vb r') = - m (\\boldsymbol \\omega \\braket{\\boldsymbol \\omega | \\vb r'} -\\boldsymbol \\omega^2 \\vb r')", "Centrifugal force", pageName)}
+
+        which has   a magnitude proportional to the square of the angular velocity, and it is directed radially outward from the axis of rotation.
+        The Coriolis force is the term dependent on the body velocity  ,
+
+        {eq("F_{\\text{cor}} = -2 m \\boldsymbol \\omega \\times \\frac{d\\vb r'}{dt} ", "Coriolis force", pageName)}
+
+        which arises from the movement of the body in the rotating frame and is perpendicular to the velocity of the body. <br></br>
+
+    </>);
+
+    let lagrange = equationsOfMotion.addSection('Lagrange Equations of Motion in a Rotating Frame');
+
+    lagrange.setContent(<>
+
+        In this section and the next, we will shorten the symbol of time derivative {mt("da/dt")} to {mt("\\dot a")} to simplify the equations. Further, we will assume that all quantities are in the rotating frame, and  {mt("\\vb r")} represents
+        the position vector in such a frame. <br></br>
+        The equations of motion in a rotating frame can be expressed using Lagrangian mechanics.
+        The Lagrangian is defined as the difference between the kinetic and potential energies of the system, given by:
+
+        {eq("{L} = T - V")}
+
+        where {mt("T")} is the kinetic energy and {mt("V")} is the potential of the forces in the system. <br></br>
+        The centrifugal force admits a potential {mt("V_{\\text{cf}}")}  calculated as:
+
+        {eq("V_{\\text{cf}} =    \\frac{m}{2}  ( - \\braket{\\vb r|\\vb r}\\braket{\\boldsymbol \\omega | \\boldsymbol \\omega  } + \\braket{\\boldsymbol \\omega | \\vb r  }^2 )")}
+
+        thus,
+
+        {eq("\\vb F_{\\text{cf}} = - \\frac{\\partial V_{\\text{cf}}}{\\partial\\vb r}")}
+
+        The Coriolis force, similarly to the Lorentz force in electromagnetism, admits a generalized potential {mt("V_{\\text{cor}}")} determined as,
+
+        {eq("V_{\\text{cor}} = - m  \\braket{ \\boldsymbol \\omega \\cross \\vb r|\\dot{  \\vb  r} }")}
+
+        so that the Coriolis force derives from a generalized potential:
+
+        {eq("\\vb F_{\\text{cor}} =  \\frac{d}{dt}\\frac{\\partial V_{\\text{cor}}}{\\partial \\dot{ \\vb r} }- \\frac{\\partial V_{\\text{cor}}}{\\partial\\vb r}")}
+
+        Consequently, the Lagrangian of the system becomes:
+
+        {eq("{L} =  \\frac{1}{2} m \\braket{\\dot{ \\vb r}|\\dot{ \\vb r}}  +\\frac{m}{2}  ( - \\braket{\\vb r|\\vb r}\\braket{\\boldsymbol \\omega | \\boldsymbol \\omega  } + \\braket{\\boldsymbol \\omega | \\vb r  }^2 ) - m  \\braket{ \\boldsymbol \\omega \\cross \\vb r| \\vb v}")}
+
+        The Lagrange equations of motion are given by:
+
+        {eq("\\frac{d}{dt} \\frac{\\partial L}{\\partial \\dot{ \\vb r}} - \\frac{\\partial L}{\\partial \\vb r} = 0")}
+
+        The first term of the Lagrangian gives the equation:
+
+        {eq("\\frac{d}{dt} \\frac{\\partial L}{\\partial \\dot{ \\vb r}} = m \\dot{ \\vb r}")}
+
+        The second term of the Lagrangian gives the equation:
+
+        {eq("\\frac{\\partial L}{\\partial \\vb r} = - m \\boldsymbol \\omega \\times (\\boldsymbol \\omega \\times \\vb r) - 2 m \\boldsymbol \\omega \\times \\dot{\\vb r}")}
+
+        The Lagrange equations of motion in a rotating frame are then given by:
+
+        {eq("\\ddot{\\vb r} = - \\boldsymbol \\omega \\times (\\boldsymbol \\omega \\times \\vb r) - 2 \\boldsymbol \\omega \\times \\dot{\\vb r}")}
+
+        which is the equation of motion for the Coriolis and centrifugal forces in a rotating frame of reference. <br></br>
+
+        It has to be noted that a conservative force in the inertial frame is not necessarily conservative in the rotating frame. A simple example can be easily constructed by considering a constant force in the plane {mt("z=0")} of the inertial frame such as:
+
+        {eq("\\vb F = F_x \\vb i + F_y \\vb j")}
+
+        where {mt("F_x")} and {mt("F_y")} are constants and {mt("\\vb i")}, {mt("\\vb j")} are the unit vectors of the inertial frame. The force in a frame rotating with constant angular velocity {mt("\\omega")} around the axis {mt("z")} is given by:
+
+        {eq("\\vb F' =  \\begin{pmatrix} \\cos \\omega t &  \\sin  \\omega t & 0 \\\\ -\\sin  \\omega t & \\cos  \\omega t & 0 \\\\ 0 & 0 & 1 \\end{pmatrix} \\vb F" +
+            " = (F_x \\cos(\\omega t) +F_y \\sin(\\omega t) )\\vb i' +(-F_x \\sin(\\omega t) + F_y \\cos(\\omega t) )\\vb j'")}
+
+        where {mt("\\vb i'")}, {mt("\\vb j'")} are the unit vectors of the rotating frame. The force in the rotating frame is time-dependent, and it does not have a
+        generalized potential as it does not explicitly depend on the velocity. Each case will have to be considered individually to determine whether the dynamics can be described in a Lagrangian formalism,
+        and in general the equations of motion {ref('Equation of motion in rotating frame', pageName)} will have to be used. <br></br>
+
+    </>);
+
+    let coriolis = sections.addSection('Centrifugal and Coriolis Forces on Earth');
+
+    coriolis.setContent(<>
+
+        In this section, we will explore the Coriolis and centrifugal forces near the Earth surface. We will focus on a reference frame fixed to the Earth, where the {mt("z")} axis runs
+        from the South Pole to the North Pole, with positive direction from South to North. The {mt("x")} and {mt("y")} axes can be
+        positioned arbitrarily within the plane perpendicular to the {mt("z")} axis, provided the right orientation is ensured. The origin of this reference system is at Earth center.
+
+        Earth angular velocity is along the {mt("z")} axis of the fixed reference system, and the same direction will be preserved in the rotating system as,
+
+        {eq("\\boldsymbol \\omega = \\omega \\vb k")}
+
+        where {mt("\\omega")} is the angular velocity of the Earth equal to {mt("7.29 \\times 10^{-5} \\, \\text{s}^{-1}")}.
+        <br />
+
+        We will be interested in the motion of a body on in the vicinity of the Earth surface, and the ideal coordinates to describe such a motion are
+        the spherical coordinates {mt("(\\rho,\\theta,\\phi)")}, such that,
+
+        {eq(mtx('align', "x &= \\rho  \\sin \\phi \\cos \\theta ", "y &= \\rho  \\sin \\phi \\sin \\theta ", "z &= \\rho \\cos \\phi "))}
+
+        where {mt("r\\ge 0")} is the radial distance from the center of the reference system, {mt("0\\le\\theta\\le2\\pi")} is the azimuthal angle, and {mt("-0\\le\\phi\\le\\pi")} is the polar angle.
+        Associated with the spherical coordinates are the unit vectors {mt("\\vb e_r")}, {mt("\\vb e_\\theta")}, and {mt("\\vb e_\\phi")} given by,
+
+        {eq(mtx('align', "\\vb e_\\rho &= \\sin\\phi \\cos \\theta \\vb i + \\sin \\phi \\sin \\theta \\vb j + \\cos \\phi \\vb k",
+            "\\vb e_\\theta &= -\\sin \\theta \\vb i + \\cos \\theta \\vb j ",
+            "\\vb e_\\phi &= \\cos \\phi \\cos \\theta \\vb i + \\cos \\phi \\sin \\theta \\vb j - \\sin\\phi \\vb k"))}
+
+        where {mt("\\vb i")}, {mt("\\vb j")}, and {mt("\\vb k")} are the unit vectors of the rotating reference system along the {mt("x")}, {mt("y")}, and {mt("z")} axes, respectively.
+        <br />
+
+        The unit vectors define a local orthonormal basis, and they are related to the latitude and longitude of the Earth,
+
+        <List>
+            <ListItem sx={{ minWidth: 'auto', marginRight: '4px' }} >
+            <ListItemIcon> <CircleIcon sx={{ fontSize: '.5rem' }} /> </ListItemIcon>
+                {mt("\\vb e_r")} : Radial unit vector pointing outward from the center of the Earth, through the observer position.
+            </ListItem>
+            <ListItem sx={{ minWidth: 'auto', marginRight: '4px' }} >
+            <ListItemIcon> <CircleIcon sx={{ fontSize: '.5rem' }} /> </ListItemIcon>
+                {mt("\\vb e_\\theta")} :Points tangentially along lines of latitude towards the east.
+            </ListItem>
+            <ListItem sx={{ minWidth: 'auto', marginRight: '4px' }} >
+            <ListItemIcon> <CircleIcon sx={{ fontSize: '.5rem' }} /> </ListItemIcon>
+                {mt("\\vb e_\\phi")} :  Points tangentially along lines of longitude towards the South Pole.
+            </ListItem>
+        </List>
+    </>);
+
+
+    let centrifugalForce = coriolis.addSection('Forces in Spherical Coordinates');
+
+    centrifugalForce.setContent(<>
+
+        In the rotating frame there are three forces acting on the body: the gravitational force, the centrifugal force, and the Coriolis force. <br></br><br></br>
+
+        <List>
+            <ListItem sx={{ minWidth: 'auto', marginRight: '4px' }}>
+                <ListItemIcon> <CircleIcon sx={{ fontSize: '.5rem' }} /> </ListItemIcon>
+                The gravitational force is directed radially inward and is given by,
+            </ListItem>
+
+            {eq("\\vb F_\\text{g} = -mg \\vb e_\\rho")}
+
+            where {mt("m")} is the mass of the body and {mt("g")} is the acceleration due to gravity.
+            <ListItem sx={{ minWidth: 'auto', marginRight: '4px' }}>
+                <ListItemIcon> <CircleIcon sx={{ fontSize: '.5rem' }} /> </ListItemIcon>
+                The centrifugal force is directed radially outward from the axis of rotation and in polar coordinates it is given by the formula:
+            </ListItem>
+
+            {eq("\\vb F_\\text{cf} = m \\omega ^2 \\rho  (  \\sin ^2(\\phi ) \\vb e_r + \\sin (\\phi  ) \\cos (\\phi  ) \\vb e_\\phi )", "Centrifugal force in polar coordinates", pageName)}
+            <ListItem sx={{ minWidth: 'auto', marginRight: '4px' }}>
+                <ListItemIcon> <CircleIcon sx={{ fontSize: '.5rem' }} /> </ListItemIcon>
+                The Coriolis force is perpendicular to the velocity of the body and is given by the formula:
+            </ListItem>
+            {eq("\\vb F_\\text{cor} = m \\omega  (2  \\rho \\theta ' \\sin ^2(\\phi ) \\vb e_r  -2   \\left(\\rho ' \\sin (\\phi (t))+\\rho   \\phi '  \\cos (\\phi  )\\right) \\vb e_\\theta + \\rho \\theta '  \\sin (2 \\phi )  \\vb e_\\phi)",
+                "Coriolis force in polar coordinates", pageName)}
+        </List>
+
+        Before proceeding, it is interesting to consider the total force acting on the body in the rotating frame without the gravitational force, which is given by,
+
+        {eq("\\vb F =  m \\omega  \\rho (t) \\sin ^2(\\phi (t)) \\left(2 \\theta '(t)+\\omega \\right) \\vb e_r  -2 m \\omega  \\left(\\rho '(t) \\sin (\\phi (t))+\\rho (t) \\phi '(t) \\cos (\\phi (t))\\right) \\vb e_\\theta +m \\omega  \\rho (t) \\sin (\\phi (t)) \\cos (\\phi (t)) \\left(2 \\theta '(t)+\\omega \\right) \\vb e_\\phi",)}
+
+        We now consider two cases, one where the body is a rest in the inertial frame, and one where the total force is zero in the rotating frame. <br></br>
+
+        In the first case, we know that the body appears in the rotating frame to be moving of uniform circular motion. The question is how this dynamics can arise as a result of the centrifugal and Coriolis force.
+        The body in the rotating frame will appear to have an angular velocity {mt("\\dot\\theta = -\\omega")}, and the other two velocities {mt("\\dot\\rho")} and {mt("\\dot\\phi")} are zero. Under these conditions, the total force acting on the body is given by,
+
+        {eq("\\vb F =  - m \\omega ^2 \\rho  (  \\sin ^2(\\phi ) \\vb e_r + \\sin (\\phi  ) \\cos (\\phi  ) \\vb e_\\phi )",)}
+
+        which is a centripetal force equal to exactly the centrifugal force: the Coriolis force is the one that counterbalance the centrifugal force and is responsible for the rotation in the non-inertial frame.<br />
+
+        In the second case, we want to find a condition under which the total force is zero in the rotating frame. It is readily found, that it is sufficient that {mt("\\dot\\rho=0")} and {mt("\\dot\\phi=0")} and {mt("\\dot\\theta = -\\omega/2")}, for the total force to be zero. Under these conditions, the body in the rotating frame will appear to rotate counterclockwise with an angular velocity equal to half the angular velocity
+        of the rotating frame. It is a very interesting result: the total force on the body is zero but the body is neither at rest nor moving of uniform rectilinear motion.
+        This effect is another manifestation of the non-inertial characteristics of the centrifugal and Coriolis forces. <br></br>
+
+    </>);
+
+    let lagrange2 = coriolis.addSection('Lagrangian in Spherical Coordinates');
+
+    lagrange2.setContent(<>
+
+        We will now dive into the formulation of the Lagrangian of the system in spherical coordinates. The potential of the gravitational force in spherical coordinates is given by,
+
+        {eq("V_g = mg\\,\\rho(t) ")}
+
+        the potential of the centrifugal force is given by,
+
+        {eq("V_{cf} = -\\frac{1}{2} m \\omega ^2 \\rho (t)^2 \\sin ^2(\\phi (t))")}
+
+        and finally the potential of the Coriolis force is given by,
+
+        {eq("V_{cor} = -m \\omega  \\rho (t)^2 \\theta '(t) \\sin ^2(\\phi (t)). ")}
+
+        The kinetic energy is given by,
+
+        {eq("T = \\frac{1}{2} m \\left(\\rho (t)^2 \\left(\\theta '(t)^2 \\sin ^2(\\phi (t))+\\phi '(t)^2\\right)+\\rho '(t)^2\\right)")}
+
+        and Lagrangian of the system is then given by,
+
+        {eq("L =  \\frac{1}{2} m \\left(-2 g \\rho (t)+\\rho (t)^2 \\left(\\sin ^2(\\phi (t)) \\left(\\theta '(t)+\\omega \\right)^2+\\phi '(t)^2\\right)+\\rho '(t)^2\\right). ")}
+
+        The full equations of motions are given by the Euler Lagrange equations of motion,
+
+
+        {eq(mtx('matrix', " g+\\rho (t) \\left(-\\sin ^2(\\phi (t)) \\left(\\theta '(t)+\\omega \\right)^2-\\phi '(t)^2\\right)+\\rho ''(t)=0 ",
+            " \\rho (t) \\left(2 \\phi ''(t)-\\sin (2 \\phi (t)) \\left(\\theta '(t)+\\omega \\right)^2\\right)+4 \\rho '(t) \\phi '(t)=0 ",
+            "\\rho (t) \\theta ''(t) \\sin (\\phi (t))+2 \\left(\\theta '(t)+\\omega \\right) \\left(\\rho '(t) \\sin (\\phi (t))+\\rho (t) \\phi '(t) \\cos (\\phi (t))\\right)=0 "
+        ), "Full equations of motion in polar coordinates", pageName)}
+
+        {/*   In order to find an approximate solution to the equations of motion, it is useful to define non dimensional units of time and space,
+
+        {eq(mtx('align', "\\tau &= \\omega t", " \\rho &= \\frac{r}{r_0} "))}
+
+        where {mt("r_0")} is a characteristic length scale of the problem, and {mt("\\omega")} is the angular velocity. The non dimensional equations of motion are then given by,
+
+        {eq(mtx("pmatrix", " \\ddot \\rho - \\cos(\\phi)^2\\rho(1+\\dot\\theta)^2 -\\rho\\dot\\phi^2 + \\frac{g}{\\omega^2 r_0} =0",
+            " \\cos(\\phi)\\rho\\ddot \\theta  +2(1+\\dot\\theta)(\\cos(\\phi)\\dot\\rho-\\sin(\\phi)\\rho\\dot\\phi)=0",
+            "\\rho\\ddot \\phi + \\cos(\\phi) \\sin(\\phi) \\rho (1+\\dot\\theta )^2   + 2\\dot\\rho\\dot\\phi =0"
+        ), "Non dimensional equations of motion in polar coordinates", pageName)}
+
+        where the time derivative is with respect to the non dimensional time {mt("\\tau")}. */}
+
+    </>);
+
+    /*  let linearizedEquations = coriolis.addSection('Linearized Equations of Motion');
+ 
+     linearizedEquations.setContent(<>
+ 
+         The non dimensional equations of motions can be linearized by assuming that the angular and radial displacements are small during the dynamics of interest. If we consider the motion of an object on the earth surface,
+         covering a distance {mt("d")} of a few kilometers in any radial or angular direction, the net angular and radial displacements would be approximately,
+ 
+         {eq("\\Delta \\approx \\frac{d}{r_0}")}
+ 
+         which is in the order of {mt("\\Delta \\approx 10^{-3}")}, when considering the earth radius of {mt("6371m")}. Under these assumptions, we can assume that the dynamical variables are such that,
+ 
+         {eq(mtx('align', "\\rho &= 1 + \\hat\\rho", "  \\theta &= \\theta_0+ \\hat\\theta", "  \\phi &= \\phi_0 + \\hat\\phi"))}
+ 
+         where {mt("\\hat\\rho, \\hat\\theta,\\hat\\phi \\ll 1")}  .
+ 
+         The linearized equations of motion are then given by,
+ 
+ 
+         {eq(mtx('align', " \\ddot \\rho - \\rho(1+\\dot\\theta)^2 - \\dot\\phi^2 + \\frac{g}{\\omega^2 r_0} =0",
+             " \\rho\\ddot \\theta +2(1+\\dot\\theta)(\\dot\\rho-\\sin(\\phi)\\rho\\dot\\phi)=0",
+             "\\rho\\ddot \\phi +  \\sin(\\phi) \\rho (1+\\dot\\theta )^2   + 2\\dot\\rho\\dot\\phi =0"
+         ), "Linearized equations of motion in polar coordinates", pageName)}
+     </>);
+  */
     let sectionsToRender: SectionType = sections.getSections();
 
     return (
@@ -590,80 +877,3 @@ export default function Page() {
     );
 
 }
-
-
-
-{/* 
-
-
-        <p>In the previous section we have shown that an infinitesimal rotation can be represented by a vector {mt("\\boldsymbol \\Omega = (d\\Omega_1, d\\Omega_2, d\\Omega_3)")}. We will now show that {mt("\\boldsymbol \\Omega")} transforms
-            as a regular {mt("R^3")} vector under a similarity transformation.</p>
-
-        Let us consider a rotation matrix {mt("\\vb A = \\vb I + \\epsilon")}, where {mt("\\epsilon")} is a skew-symmetric matrix of the form,
-
-        {eq("\\epsilon = \\begin{pmatrix} 0 & d\\Omega_3 & -d\\Omega_2 \\\\ -d\\Omega_3 & 0 & d\\Omega_1 \\\\ d\\Omega_2 & -d\\Omega_1 & 0 \\end{pmatrix}")}
-
-        and an orthogonal transformation {mt("\\vb B")}. The transformed matrix {mt("\\vb A' = \\vb B \\vb A \\vb B^\\top")} has the form,
-
-        {eq("\\vb A' = \\vb B (\\vb I + \\epsilon) \\vb B^\\top = \\vb B \\vb B^\\top + \\vb B \\epsilon \\vb B^\\top = \\vb I + \\vb B \\epsilon \\vb B^\\top = I + \\epsilon'")}
-
-        where the matrix {mt("\\epsilon' = \\vb B \\epsilon \\vb B^\\top")} is also skew-symmetric, as it can be readily verified that,
-
-        {eq("(\\epsilon')^\\top = (\\vb B \\epsilon \\vb B^\\top)^\\top = \\vb B \\epsilon^\\top \\vb B^\\top = -\\vb B \\epsilon \\vb B^\\top = -\\epsilon'")}
-
-
-
-        Given that the matrix {mt("{\\bf B}")} is orthogonal, there exist three orthogonal unit vectors {mt("\\bf v_1")}, {mt("\\bf v_2")}, and {mt("\\bf v_3")}:
-
-        {eq(mtx("align", "{\\bf v}_i \\cdot {\\bf v}_j = \\delta_{ij}  "))}
-
-        which define a reference system in the rotated coordinates.
-
-        The matrix {mt("\\bf B")} can be written as:
-
-        {eq("\\bf B=\\begin{pmatrix} {\\bf v}_1 \\\\ {\\bf v}_2 \\\\ {\\bf v}_3 \\end{pmatrix}")}
-
-        where the vectors {mt("\\bf v_i")} are row vectors. The transpose of {mt("\\bf B")} is readily obtained as:
-
-        {eq("{\\bf B}^{\\top}=\\left[ {\\bf v}_1^\\top , {\\bf v}_2^\\top , {\\bf v}_3^\\top \\right]")}
-
-        where the vectors {mt("{\\bf v}_i")} are now the columns of {mt("\\bf B^\\top")}.
-
-        The product of {mt("\\bf \\boldsymbol\\epsilon B^\\top")} is the matrix with columns:
-
-        {eq("{\\bf \\boldsymbol \\epsilon B^{\\top}} = \\left[{\\bf v}_1 \\times d\\boldsymbol \\Omega {\\bf v}_2 \\times d\\boldsymbol \\Omega {\\bf v}_3 \\times d\\boldsymbol \\Omega\\right]")}
-
-
-        and, for illustration, the matrix {mt("\\bf \\boldsymbol B\\boldsymbol \\epsilon B^\\top")} is explicitly written below:
-
-        {eq("\\bf B\\boldsymbol \\epsilon B^\\top=\\begin{pmatrix} {\\bf v}_1\\cdot({\\bf v}_1\\times d\\boldsymbol \\Omega) & {\\bf v}_1\\cdot({\\bf v}_2\\times d\\boldsymbol \\Omega) &{\\bf v}_1\\cdot({\\bf v}_3\\times d\\boldsymbol \\Omega) \\\\"
-            + " {\\bf v}_2\\cdot({\\bf v}_1\\times d\\boldsymbol \\Omega) & {\\bf v}_2\\cdot({\\bf v}_2\\times d\\boldsymbol \\Omega) &{\\bf v}_2\\cdot({\\bf v}_3\\times d\\boldsymbol \\Omega) \\\\" +
-            " {\\bf v}_3\\cdot({\\bf v}_1\\times d\\boldsymbol \\Omega) & {\\bf v}_3\\cdot({\\bf v}_2\\times d\\boldsymbol \\Omega) &{\\bf v}_3\\cdot({\\bf v}_3\\times d\\boldsymbol \\Omega) \\end{pmatrix}")}
-
-        The antisymmetry of the matrix is evident as the diagonal elements are zero:
-
-        {eq("{\\bf v}_i\\cdot({\\bf v}_i\\times d\\boldsymbol \\Omega) =0")}
-
-        and the off-diagonal elements are opposite because of the properties of the scalar triple product:
-
-        {eq(" {\\bf v}_i\\cdot({\\bf v}_j\\times d\\boldsymbol \\Omega) = - {\\bf v}_j\\cdot({\\bf v}_i\\times d\\boldsymbol \\Omega) ")}
-
-        The components of {mt("d\\boldsymbol \\Omega'")} are by definition:
-
-        {eq(mtx("align", "d\\Omega'_1 &= {\\bf v}_2\\cdot({\\bf v}_3\\times d\\boldsymbol \\Omega) = d\\boldsymbol \\Omega\\cdot({\\bf v}_2\\times {\\bf v}_3) ",
-            "d\\Omega'_2 &= {\\bf v}_3\\cdot({\\bf v}_1\\times d\\boldsymbol \\Omega) = d\\boldsymbol \\Omega\\cdot({\\bf v}_3\\times {\\bf v}_1) ",
-            "d\\Omega'_3 &= {\\bf v}_1\\cdot({\\bf v}_2\\times d\\boldsymbol \\Omega) = d\\boldsymbol \\Omega\\cdot({\\bf v}_1\\times {\\bf v}_2) "))}
-
-        As the determinant of {mt("\\bf B")} assumes the values {mt("\\pm 1")}:
-
-        {eq(" |{\\bf B}| = {\\bf v}_1\\cdot ({\\bf v}_2\\times {\\bf v}_3) = \\pm 1")}
-
-        depending on the orientation of the vectors {mt("{\\bf v}_i")} in the rotated coordinate system, equation (1) becomes:
-
-        {eq(mtx("align", "d\\Omega'_1 &= |{\\bf B}|\\, d\\boldsymbol\\Omega\\cdot{\\bf v}_1 ",
-            "d\\Omega'_2 &= |{\\bf B}|\\, d\\boldsymbol\\Omega\\cdot{\\bf v}_2 ",
-            "d\\Omega'_3 &= |{\\bf B}|\\, d\\boldsymbol\\Omega\\cdot{\\bf v}_3 "))}
-
-        or equivalently,
-
-        {eq("d\\boldsymbol\\Omega' = |{\\bf B}| \\,\,{\\bf B}\\, d\\boldsymbol\\Omega.")} */}
