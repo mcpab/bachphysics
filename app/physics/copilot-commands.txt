@@ -10,3 +10,4 @@ Meeting ID: 233 061 541 894
 Passcode: fm2Ph64q
 
 
+change \\phi' into \\dot \\phi: (\\\\\w+)\s*'\s*
