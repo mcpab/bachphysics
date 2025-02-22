@@ -704,7 +704,13 @@ export default function Page() {
 
     coriolis.setContent(<>
 
-        In this section, we will explore the Coriolis and centrifugal forces near the Earth surface. We will focus on a reference frame fixed to the Earth, where the {mt("z")} axis runs
+        In this section, we will delve into the Coriolis and centrifugal forces near Earth surface. However, we will significantly simplify the discussion by assuming that Earth is a perfect sphere.
+        In reality, Earth is slightly flattened at the poles and bulging at the equator. These deviations play a crucial role in the dynamics of
+        the atmosphere and oceans and are important for understanding the Coriolis effect.
+        However, these complexities are beyond the scope of this discussion. Our goal here is to explore the mathematical formalism of the Coriolis and centrifugal
+        forces in an idealized scenario, providing a clear starting point for those interested in the more realistic case. <br></br>
+
+        We will focus on a reference frame fixed to the Earth, where the {mt("z")} axis runs
         from the South Pole to the North Pole, with positive direction from South to North. The {mt("x")} and {mt("y")} axes can be
         positioned arbitrarily within the plane perpendicular to the {mt("z")} axis, provided the right orientation is ensured. The origin of this reference system is at Earth center.
 
@@ -732,35 +738,35 @@ export default function Page() {
         <br />
 
         The unit vectors define a local orthonormal basis, and they mantain the orientation of the reference system {mt("x")}, {mt("y")} and {mt("x")},
-        
+
         {eq(mtx('align', "\\vb e_\\theta \\times \\vb e_\\rho &= \\vb e_\\phi",
             "\\vb e_\\phi \\times \\vb e_\\theta &= \\vb e_\\rho",
             "\\vb e_\\rho \\times \\vb e_\\phi &= \\vb e_\\theta"
         ))}
-        
-         and they are related to the latitude and longitude of the Earth,
+
+        and they are related to the latitude and longitude of the Earth,
 
         <List>
             <ListItem sx={{ minWidth: 'auto', marginRight: '4px' }} >
-            <ListItemIcon> <CircleIcon sx={{ fontSize: '.5rem' }} /> </ListItemIcon>
+                <ListItemIcon> <CircleIcon sx={{ fontSize: '.5rem' }} /> </ListItemIcon>
                 {mt("\\vb e_r")} : Radial unit vector pointing outward from the center of the Earth, through the observer position.
             </ListItem>
             <ListItem sx={{ minWidth: 'auto', marginRight: '4px' }} >
-            <ListItemIcon> <CircleIcon sx={{ fontSize: '.5rem' }} /> </ListItemIcon>
+                <ListItemIcon> <CircleIcon sx={{ fontSize: '.5rem' }} /> </ListItemIcon>
                 {mt("\\vb e_\\theta")} :Points tangentially along lines of latitude towards the east.
             </ListItem>
             <ListItem sx={{ minWidth: 'auto', marginRight: '4px' }} >
-            <ListItemIcon> <CircleIcon sx={{ fontSize: '.5rem' }} /> </ListItemIcon>
+                <ListItemIcon> <CircleIcon sx={{ fontSize: '.5rem' }} /> </ListItemIcon>
                 {mt("\\vb e_\\phi")} :  Points tangentially along lines of longitude towards the South Pole.
             </ListItem>
         </List>
 
 
-        The position vector in spherical coordinates,
+        The position vector in spherical coordinates is,
 
-        {eq("\\vb r = \\rho \\vb e_\\rho")} 
+        {eq("\\vb r = \\rho \\vb e_\\rho")}
 
-        and the angular velocity is given by,
+        and the angular velocity is represented by,
 
         {eq("\\boldsymbol \\omega = \\omega( \\cos(\\phi) \\vb e_\\rho - \\sin(\\phi) \\vb e_\\phi).")}
 
@@ -775,7 +781,7 @@ export default function Page() {
 
     centrifugalForce.setContent(<>
 
-        In the rotating frame there are three forces acting on the body: the gravitational force, the centrifugal force, and the Coriolis force. <br></br><br></br>
+        In the rotating frame there are three forces acting on the body: the gravitational force, the centrifugal force, and the Coriolis force. <br></br> 
 
         <List>
             <ListItem sx={{ minWidth: 'auto', marginRight: '4px' }}>
@@ -788,16 +794,16 @@ export default function Page() {
             where {mt("m")} is the mass of the body and {mt("g")} is the acceleration due to gravity.
             <ListItem sx={{ minWidth: 'auto', marginRight: '4px' }}>
                 <ListItemIcon> <CircleIcon sx={{ fontSize: '.5rem' }} /> </ListItemIcon>
-                The centrifugal force is directed radially outward from the axis of rotation and in polar coordinates it is given by the formula:
+                The centrifugal force is directed radially outward from the axis of rotation and in polar coordinates it is represented by the formula:
             </ListItem>
 
             {eq("\\vb F_\\text{cf} = m \\omega ^2 \\rho  (  \\sin ^2(\\phi ) \\vb e_\\rho + \\sin (\\phi  ) \\cos (\\phi  ) \\vb e_\\phi )", "Centrifugal force in polar coordinates", pageName)}
             <ListItem sx={{ minWidth: 'auto', marginRight: '4px' }}>
                 <ListItemIcon> <CircleIcon sx={{ fontSize: '.5rem' }} /> </ListItemIcon>
-                The Coriolis force is perpendicular to the velocity of the body and is given by the formula:
+                The Coriolis force is perpendicular to the velocity of the body and is quantified by the formula:
             </ListItem>
 
-                            
+
             {eq(mtx('align', "\\vb F_\\text{cor} &= -2 m \\boldsymbol \\omega \\times \\dot{\\vb r}= -2 m \\omega( \\cos(\\phi) \\vb e_\\rho - \\sin(\\phi) \\vb e_\\phi)\\times (\\dot\\rho \\vb e_\\rho + \\rho \\dot\\theta \\sin(\\phi) \\vb e_\\theta + \\rho  \\dot\\phi \\vb e_\\phi)",
                 "&= -2 m \\omega( \\rho\\dot\\theta\\sin(\\phi)\\cos(\\phi) \\vb e_\\rho\\times\\vb e_\\theta +(\\cos(\\phi)\\rho\\dot\\phi + \\sin(\\phi)\\dot\\rho) \\vb e_\\rho\\times\\vb e_\\phi - \\sin(\\phi)^2\\rho\\dot\\theta \\vb e_\\phi\\times\\vb e_\\theta )",
                 "& = -2 m \\omega( -\\rho\\dot\\theta\\sin(\\phi)\\cos(\\phi) \\vb e_\\phi +(\\cos(\\phi)\\rho\\dot\\phi + \\sin(\\phi)\\dot\\rho) \\vb e_\\theta - \\sin(\\phi)^2\\rho\\dot\\theta \\vb e_\\rho )",
@@ -809,21 +815,22 @@ export default function Page() {
                 "Coriolis force in polar coordinates", pageName)}
         </List>
 
-        Before proceeding, it is interesting to consider the total force acting on the body in the rotating frame without the gravitational force, which is given by,
+        Before proceeding, it is interesting to consider the total force acting on the body in the rotating frame without the gravitational force,  
 
-        {eq(mtx('align',"\\vb F =  m \\omega  \\rho (t) \\sin ^2(\\phi (t)) \\left(2 \\dot \\theta(t)+\\omega \\right) \\vb e_r  &-2 m \\omega  \\left(\\dot \\rho(t) \\sin (\\phi (t))+\\rho (t) \\dot \\phi(t) \\cos (\\phi (t))\\right) \\vb e_\\theta+",
-        "&+m \\omega  \\rho (t) \\sin (\\phi (t)) \\cos (\\phi (t)) \\left(2 \dot \\theta(t)+\\omega \\right) \\vb e_\\phi"))}
+        {eq(mtx('align', "\\vb F =  m \\omega  \\rho (t) \\sin ^2(\\phi (t)) \\left(2 \\dot \\theta(t)+\\omega \\right) \\vb e_r  &-2 m \\omega  \\left(\\dot \\rho(t) \\sin (\\phi (t))+\\rho (t) \\dot \\phi(t) \\cos (\\phi (t))\\right) \\vb e_\\theta+",
+            "&+m \\omega  \\rho (t) \\sin (\\phi (t)) \\cos (\\phi (t)) \\left(2 \dot \\theta(t)+\\omega \\right) \\vb e_\\phi"))}
 
         We now consider two cases, one where the body is a rest in the inertial frame, and one where the total force is zero in the rotating frame. <br></br>
 
         In the first case, we know that the body appears in the rotating frame to be moving of uniform circular motion. The question is how this dynamics can arise as a result of the centrifugal and Coriolis force.
-        The body in the rotating frame will appear to have an angular velocity {mt("\\dot\\theta = -\\omega")}, and the other two velocities {mt("\\dot\\rho")} and {mt("\\dot\\phi")} are zero. Under these conditions, the total force acting on the body is given by,
+        The body in the rotating frame will appear to have an angular velocity {mt("\\dot\\theta = -\\omega")}, and the other two velocities {mt("\\dot\\rho")} and {mt("\\dot\\phi")} are zero. Under these conditions, the total force acting on the body is  ,
 
         {eq("\\vb F =  - m \\omega ^2 \\rho  (  \\sin ^2(\\phi ) \\vb e_r + \\sin (\\phi  ) \\cos (\\phi  ) \\vb e_\\phi )",)}
 
         which is a centripetal force equal to exactly the centrifugal force: the Coriolis force is the one that counterbalance the centrifugal force and is responsible for the rotation in the non-inertial frame.<br />
 
-        In the second case, we want to find a condition under which the total force is zero in the rotating frame. It is readily found, that it is sufficient that {mt("\\dot\\rho=0")} and {mt("\\dot\\phi=0")} and {mt("\\dot\\theta = -\\omega/2")}, for the total force to be zero. Under these conditions, the body in the rotating frame will appear to rotate counterclockwise with an angular velocity equal to half the angular velocity
+        In the second case, we want to find a condition under which the total force is zero in the rotating frame. It is readily found, that it is sufficient that {mt("\\dot\\rho=0")} and {mt("\\dot\\phi=0")} and {mt("\\dot\\theta = -\\omega/2")}, for the total force to be zero. 
+        Under these conditions, the body in the rotating frame will appear to rotate counterclockwise with an angular velocity equal to half the angular velocity
         of the rotating frame. It is a very interesting result: the total force on the body is zero but the body is neither at rest nor moving of uniform rectilinear motion.
         This effect is another manifestation of the non-inertial characteristics of the centrifugal and Coriolis forces. <br></br>
 
@@ -837,36 +844,58 @@ export default function Page() {
 
         {eq("V_g = mg\\,\\rho(t) ")}
 
-        the potential of the centrifugal force is given by,
+        the potential of the centrifugal force is  ,
 
-        {eq("V_{cf} = -\\frac{1}{2} m \\omega ^2 \\rho (t)^2 \\sin ^2(\\phi (t))")}
+        {eq("V_\\text{cf} = -\\frac{1}{2} m \\omega ^2 \\rho (t)^2 \\sin ^2(\\phi (t))")}
 
-        and finally the potential of the Coriolis force is given by,
+        and finally the potential of the Coriolis force is represented by,
 
-        {eq("V_{cor} = -m \\omega  \\rho (t)^2 \dot \\theta(t) \\sin ^2(\\phi (t)). ")}
+        {eq("V_\\text{cor} = -m \\omega  \\rho (t)^2 \\dot \\theta(t) \\sin ^2(\\phi (t)). ")}
 
-        The kinetic energy is given by,
+        It is important to note that the potential of the Coriolis force is the generalized potential when expressed in spherical coordinates, such that,
 
-        {eq("T = \\frac{1}{2} m \\left(\\rho (t)^2 \\left(\dot \\theta(t)^2 \\sin ^2(\\phi (t))+\dot \\phi(t)^2\\right)+\\dot \\rho(t)^2\\right)")}
+        {eq( mtx('align', "\\frac{d}{dt}\\frac{\\partial V_\\text{cor}}{\\partial \\dot \\theta} - \\frac{\\partial V_\\text{cor}}{\\partial \\theta} &= \\braket{ {\\vb F}_\\text{cor}  | \\frac{\\partial {\\vb r}}{\\partial \\theta}}",
+            " \\frac{d}{dt}\\frac{\\partial V_\\text{cor}}{\\partial \\dot \\phi} - \\frac{\\partial V_\\text{cor}}{\\partial \\phi} &= \\braket{ {\\vb F}_\\text{cor}  | \\frac{\\partial {\\vb r}}{\\partial \\phi}}",
+            "\\frac{d}{dt}\\frac{\\partial V_\\text{cor}}{\\partial \\dot \\rho} - \\frac{\\partial V_\\text{cor}}{\\partial \\rho} &= \\braket{ {\\vb F}_\\text{cor}  | \\frac{\\partial {\\vb r}}{\\partial \\rho}}"
+        ))}
 
-        and Lagrangian of the system is then given by,
+        and similar equations hold for the centrifugal force,
+
+        {eq(mtx('align', " - \\frac{\\partial V_\\text{cf}}{\\partial \\theta} &= \\braket{ {\\vb F}_\\text{cf}  | \\frac{\\partial {\\vb r}}{\\partial \\theta}}",
+            "  - \\frac{\\partial V_\\text{cf}}{\\partial \\phi} &= \\braket{ {\\vb F}_\\text{cf}  | \\frac{\\partial {\\vb r}}{\\partial \\phi}}",
+            " - \\frac{\\partial V_\\text{cf}}{\\partial \\rho} &= \\braket{ {\\vb F}_\\text{cf}  | \\frac{\\partial {\\vb r}}{\\partial \\rho}}"
+        ))}
+
+        where the velocity dependent terms are absent as the centrifugal force is not velocity dependent. 
+
+        The kinetic energy reads,
+
+        {eq("T = \\frac{1}{2} m \\left(\\rho (t)^2 \\left(\\dot \\theta(t)^2 \\sin ^2(\\phi (t))+\\dot \\phi(t)^2\\right)+\\dot \\rho(t)^2\\right)")}
+
+        and Lagrangian of the system is defined by the equation,
 
         {eq("L =  \\frac{1}{2} m \\left(-2 g \\rho (t)+\\rho (t)^2 \\left(\\sin ^2(\\phi (t)) \\left(\\dot \\theta(t)+\\omega \\right)^2+\\dot \\phi(t)^2\\right)+\\dot \\rho(t)^2\\right). ")}
 
-        The full equations of motions are given by the Euler Lagrange equations of motion,
+        The full equations of motions can be represented by the Euler Lagrange equations of motion,
 
+        {eq(mtx('align', "\\frac{d}{dt} \\frac{\\partial L}{\\partial \\dot \\rho} - \\frac{\\partial L}{\\partial \\rho} &= 0",
+            "\\frac{d}{dt} \\frac{\\partial L}{\\partial \\dot \\phi} - \\frac{\\partial L}{\\partial \\phi} &= 0",
+            "\\frac{d}{dt} \\frac{\\partial L}{\\partial \\dot \\theta} - \\frac{\\partial L}{\\partial \\theta} &= 0"
+        ))}
+
+        which gives the equations of motion in spherical coordinates,
 
         {eq(mtx('matrix', " g+\\rho (t) \\left(-\\sin ^2(\\phi (t)) \\left(\\dot \\theta(t)+\\omega \\right)^2-\\dot \\phi(t)^2\\right)+\\ddot\\rho(t)=0 ",
             " \\rho (t) \\left(2 \\ddot \\phi(t)-\\sin (2 \\phi (t)) \\left(\\dot \\theta(t)+\\omega \\right)^2\\right)+4 \\dot \\rho(t) \\dot \\phi(t)=0 ",
             "\\rho (t) \\ddot  \\theta(t) \\sin (\\phi (t))+2 \\left(\\dot \\theta(t)+\\omega \\right) \\left(\\dot \\rho(t) \\sin (\\phi (t))+\\rho (t) \\dot \\phi(t) \\cos (\\phi (t))\\right)=0 "
         ), "Full equations of motion in polar coordinates", pageName)}
 
-   
+
 
     </>);
 
 
-    
+
     let sectionsToRender: SectionType = sections.getSections();
 
     return (
@@ -877,7 +906,7 @@ export default function Page() {
 
 }
 
-     {/*   In order to find an approximate solution to the equations of motion, it is useful to define non dimensional units of time and space,
+{/*   In order to find an approximate solution to the equations of motion, it is useful to define non dimensional units of time and space,
 
         {eq(mtx('align', "\\tau &= \\omega t", " \\rho &= \\frac{r}{r_0} "))}
 
@@ -892,27 +921,27 @@ export default function Page() {
 
 
 
-        /*  let linearizedEquations = coriolis.addSection('Linearized Equations of Motion');
+/*  let linearizedEquations = coriolis.addSection('Linearized Equations of Motion');
  
-     linearizedEquations.setContent(<>
+linearizedEquations.setContent(<>
  
-         The non dimensional equations of motions can be linearized by assuming that the angular and radial displacements are small during the dynamics of interest. If we consider the motion of an object on the earth surface,
-         covering a distance {mt("d")} of a few kilometers in any radial or angular direction, the net angular and radial displacements would be approximately,
+ The non dimensional equations of motions can be linearized by assuming that the angular and radial displacements are small during the dynamics of interest. If we consider the motion of an object on the earth surface,
+ covering a distance {mt("d")} of a few kilometers in any radial or angular direction, the net angular and radial displacements would be approximately,
  
-         {eq("\\Delta \\approx \\frac{d}{r_0}")}
+ {eq("\\Delta \\approx \\frac{d}{r_0}")}
  
-         which is in the order of {mt("\\Delta \\approx 10^{-3}")}, when considering the earth radius of {mt("6371m")}. Under these assumptions, we can assume that the dynamical variables are such that,
+ which is in the order of {mt("\\Delta \\approx 10^{-3}")}, when considering the earth radius of {mt("6371m")}. Under these assumptions, we can assume that the dynamical variables are such that,
  
-         {eq(mtx('align', "\\rho &= 1 + \\hat\\rho", "  \\theta &= \\theta_0+ \\hat\\theta", "  \\phi &= \\phi_0 + \\hat\\phi"))}
+ {eq(mtx('align', "\\rho &= 1 + \\hat\\rho", "  \\theta &= \\theta_0+ \\hat\\theta", "  \\phi &= \\phi_0 + \\hat\\phi"))}
  
-         where {mt("\\hat\\rho, \\hat\\theta,\\hat\\phi \\ll 1")}  .
+ where {mt("\\hat\\rho, \\hat\\theta,\\hat\\phi \\ll 1")}  .
  
-         The linearized equations of motion are then given by,
+ The linearized equations of motion are then given by,
  
  
-         {eq(mtx('align', " \\ddot \\rho - \\rho(1+\\dot\\theta)^2 - \\dot\\phi^2 + \\frac{g}{\\omega^2 r_0} =0",
-             " \\rho\\ddot \\theta +2(1+\\dot\\theta)(\\dot\\rho-\\sin(\\phi)\\rho\\dot\\phi)=0",
-             "\\rho\\ddot \\phi +  \\sin(\\phi) \\rho (1+\\dot\\theta )^2   + 2\\dot\\rho\\dot\\phi =0"
-         ), "Linearized equations of motion in polar coordinates", pageName)}
-     </>);
-  */
+ {eq(mtx('align', " \\ddot \\rho - \\rho(1+\\dot\\theta)^2 - \\dot\\phi^2 + \\frac{g}{\\omega^2 r_0} =0",
+     " \\rho\\ddot \\theta +2(1+\\dot\\theta)(\\dot\\rho-\\sin(\\phi)\\rho\\dot\\phi)=0",
+     "\\rho\\ddot \\phi +  \\sin(\\phi) \\rho (1+\\dot\\theta )^2   + 2\\dot\\rho\\dot\\phi =0"
+ ), "Linearized equations of motion in polar coordinates", pageName)}
+</>);
+*/
