@@ -781,7 +781,7 @@ export default function Page() {
 
     centrifugalForce.setContent(<>
 
-        In the rotating frame there are three forces acting on the body: the gravitational force, the centrifugal force, and the Coriolis force. <br></br> 
+        In the rotating frame there are three forces acting on the body: the gravitational force, the centrifugal force, and the Coriolis force. <br></br>
 
         <List>
             <ListItem sx={{ minWidth: 'auto', marginRight: '4px' }}>
@@ -797,7 +797,7 @@ export default function Page() {
                 The centrifugal force is directed radially outward from the axis of rotation and in polar coordinates it is represented by the formula:
             </ListItem>
 
-            {eq("\\vb F_\\text{cf} = m \\omega ^2 \\rho  (  \\sin ^2(\\phi ) \\vb e_\\rho + \\sin (\\phi  ) \\cos (\\phi  ) \\vb e_\\phi )", "Centrifugal force in polar coordinates", pageName)}
+            {eq("\\vb F_\\text{cf} = m \\omega ^2 \\rho  (  \\sin ^2(\\phi ) \\vb e_\\rho + \\sin (\\phi  ) \\cos (\\phi  ) \\vb e_\\phi )", "Centrifugal force in spherical coordinates", pageName)}
             <ListItem sx={{ minWidth: 'auto', marginRight: '4px' }}>
                 <ListItemIcon> <CircleIcon sx={{ fontSize: '.5rem' }} /> </ListItemIcon>
                 The Coriolis force is perpendicular to the velocity of the body and is quantified by the formula:
@@ -812,13 +812,13 @@ export default function Page() {
             which gives the final formula,
 
             {eq("\\vb F_\\text{cor} = m \\omega  (2  \\rho \\dot\\theta \\sin ^2(\\phi ) \\vb e_r  -2   \\left(\\dot\\rho  \\sin (\\phi (t))+\\rho   \\dot\\phi  \\cos (\\phi  )\\right) \\vb e_\\theta + \\rho \\dot\\theta   \\sin (2 \\phi )  \\vb e_\\phi)",
-                "Coriolis force in polar coordinates", pageName)}
+                "Coriolis force in spherical coordinates", pageName)}
         </List>
 
-        Before proceeding, it is interesting to consider the total force acting on the body in the rotating frame without the gravitational force,  
+        Before proceeding, it is interesting to consider the total force acting on the body in the rotating frame without the gravitational force,
 
         {eq(mtx('align', "\\vb F =  m \\omega  \\rho (t) \\sin ^2(\\phi (t)) \\left(2 \\dot \\theta(t)+\\omega \\right) \\vb e_r  &-2 m \\omega  \\left(\\dot \\rho(t) \\sin (\\phi (t))+\\rho (t) \\dot \\phi(t) \\cos (\\phi (t))\\right) \\vb e_\\theta+",
-            "&+m \\omega  \\rho (t) \\sin (\\phi (t)) \\cos (\\phi (t)) \\left(2 \dot \\theta(t)+\\omega \\right) \\vb e_\\phi"))}
+            "&+m \\omega  \\rho (t) \\sin (\\phi (t)) \\cos (\\phi (t)) \\left(2 \\dot \\theta(t)+\\omega \\right) \\vb e_\\phi"))}
 
         We now consider two cases, one where the body is a rest in the inertial frame, and one where the total force is zero in the rotating frame. <br></br>
 
@@ -829,7 +829,7 @@ export default function Page() {
 
         which is a centripetal force equal to exactly the centrifugal force: the Coriolis force is the one that counterbalance the centrifugal force and is responsible for the rotation in the non-inertial frame.<br />
 
-        In the second case, we want to find a condition under which the total force is zero in the rotating frame. It is readily found, that it is sufficient that {mt("\\dot\\rho=0")} and {mt("\\dot\\phi=0")} and {mt("\\dot\\theta = -\\omega/2")}, for the total force to be zero. 
+        In the second case, we want to find a condition under which the total force is zero in the rotating frame. It is readily found, that it is sufficient that {mt("\\dot\\rho=0")} and {mt("\\dot\\phi=0")} and {mt("\\dot\\theta = -\\omega/2")}, for the total force to be zero.
         Under these conditions, the body in the rotating frame will appear to rotate counterclockwise with an angular velocity equal to half the angular velocity
         of the rotating frame. It is a very interesting result: the total force on the body is zero but the body is neither at rest nor moving of uniform rectilinear motion.
         This effect is another manifestation of the non-inertial characteristics of the centrifugal and Coriolis forces. <br></br>
@@ -854,7 +854,7 @@ export default function Page() {
 
         It is important to note that the potential of the Coriolis force is the generalized potential when expressed in spherical coordinates, such that,
 
-        {eq( mtx('align', "\\frac{d}{dt}\\frac{\\partial V_\\text{cor}}{\\partial \\dot \\theta} - \\frac{\\partial V_\\text{cor}}{\\partial \\theta} &= \\braket{ {\\vb F}_\\text{cor}  | \\frac{\\partial {\\vb r}}{\\partial \\theta}}",
+        {eq(mtx('align', "\\frac{d}{dt}\\frac{\\partial V_\\text{cor}}{\\partial \\dot \\theta} - \\frac{\\partial V_\\text{cor}}{\\partial \\theta} &= \\braket{ {\\vb F}_\\text{cor}  | \\frac{\\partial {\\vb r}}{\\partial \\theta}}",
             " \\frac{d}{dt}\\frac{\\partial V_\\text{cor}}{\\partial \\dot \\phi} - \\frac{\\partial V_\\text{cor}}{\\partial \\phi} &= \\braket{ {\\vb F}_\\text{cor}  | \\frac{\\partial {\\vb r}}{\\partial \\phi}}",
             "\\frac{d}{dt}\\frac{\\partial V_\\text{cor}}{\\partial \\dot \\rho} - \\frac{\\partial V_\\text{cor}}{\\partial \\rho} &= \\braket{ {\\vb F}_\\text{cor}  | \\frac{\\partial {\\vb r}}{\\partial \\rho}}"
         ))}
@@ -866,7 +866,7 @@ export default function Page() {
             " - \\frac{\\partial V_\\text{cf}}{\\partial \\rho} &= \\braket{ {\\vb F}_\\text{cf}  | \\frac{\\partial {\\vb r}}{\\partial \\rho}}"
         ))}
 
-        where the velocity dependent terms are absent as the centrifugal force is not velocity dependent. 
+        where the velocity dependent terms are absent as the centrifugal force is not velocity dependent.
 
         The kinetic energy reads,
 
@@ -876,25 +876,182 @@ export default function Page() {
 
         {eq("L =  \\frac{1}{2} m \\left(-2 g \\rho (t)+\\rho (t)^2 \\left(\\sin ^2(\\phi (t)) \\left(\\dot \\theta(t)+\\omega \\right)^2+\\dot \\phi(t)^2\\right)+\\dot \\rho(t)^2\\right). ")}
 
-        The full equations of motions can be represented by the Euler Lagrange equations of motion,
+        The full equations of motions can be derived from the Euler Lagrange equations of motion,
 
         {eq(mtx('align', "\\frac{d}{dt} \\frac{\\partial L}{\\partial \\dot \\rho} - \\frac{\\partial L}{\\partial \\rho} &= 0",
             "\\frac{d}{dt} \\frac{\\partial L}{\\partial \\dot \\phi} - \\frac{\\partial L}{\\partial \\phi} &= 0",
             "\\frac{d}{dt} \\frac{\\partial L}{\\partial \\dot \\theta} - \\frac{\\partial L}{\\partial \\theta} &= 0"
         ))}
 
-        which gives the equations of motion in spherical coordinates,
+        which result in the system of non-linear ordinary differential equations,
 
         {eq(mtx('matrix', " g+\\rho (t) \\left(-\\sin ^2(\\phi (t)) \\left(\\dot \\theta(t)+\\omega \\right)^2-\\dot \\phi(t)^2\\right)+\\ddot\\rho(t)=0 ",
             " \\rho (t) \\left(2 \\ddot \\phi(t)-\\sin (2 \\phi (t)) \\left(\\dot \\theta(t)+\\omega \\right)^2\\right)+4 \\dot \\rho(t) \\dot \\phi(t)=0 ",
             "\\rho (t) \\ddot  \\theta(t) \\sin (\\phi (t))+2 \\left(\\dot \\theta(t)+\\omega \\right) \\left(\\dot \\rho(t) \\sin (\\phi (t))+\\rho (t) \\dot \\phi(t) \\cos (\\phi (t))\\right)=0 "
         ), "Full equations of motion in polar coordinates", pageName)}
 
+    </>);
 
+    let linearizedEquations = coriolis.addSection('Linearized Equations of Motion');
+    linearizedEquations.setContent(<>
+
+        We consider now the motion of an object covering distances over the Earth surface much smaller than Earth radius {mt("R")} in any direction. We will assume the dynamics is in a neighborhood of
+        the position identified by spherical coordinates {mt("(\\rho_0,\\theta_0,\\phi_0)")},
+
+        {eq("\\vb r_0 = \\rho_0 \\vb e_{\\rho_0}")}
+
+        where {eq("\\rho_0 \\approx R.")}
+
+        Around this position a local system of reference  can be constructed by the unit vectors {mt("\\vb e_{\\rho_0}")}, {mt("\\vb e_{\\theta_0}")}, and {mt("\\vb e_{\\phi_0}")}
+        as,
+
+        {eq(mtx('align', " \\vb e_{\\rho_0} &= \\sin\\phi_0 \\cos \\theta_0 \\vb i + \\sin \\phi_0 \\sin \\theta_0 \\vb j + \\cos \\phi_0 \\vb k",
+            " \\vb e_{\\theta_0}& = -\\sin \\theta_0 \\vb i + \\cos \\theta_0 \\vb j ",
+            "   \\vb e_{\\phi_0} &= \\cos \\phi_0 \\cos \\theta_0 \\vb i + \\cos \\phi_0 \\sin \\theta_0 \\vb j - \\sin\\phi_0 \\vb k"))}
+
+        and a point in the vicinity of the position {mt("\\vb r_0")} has spherical  coordinates {mt("(\\rho_0 +\\delta \\rho,\\theta_0 + \\delta \\theta ,\\phi_0 + \\delta \\phi)")} and position,
+
+        {eq("\\vb r = (\\rho_0 +\\delta \\rho) \\vb e_{\\rho_0 +\\delta \\rho} =  (\\rho_0 +\\delta \\rho) \\left( \\sin(\\phi + \\delta\\phi )\\cos(\\theta + \\delta \\theta )\\vb i +  \\sin(\\phi + \\delta\\phi )\\sin(\\theta + \\delta \\theta )\\vb j + \\cos(\\phi+\\delta\\phi) \\vb k \\right) ")}
+
+        which up to first order reads,
+
+        {eq("\\vb r = \\vb r_0  + \\delta \\rho \\vb e_{\\rho_0} + \\rho_0 \\sin(\\phi_0) \\delta \\theta \\vb e_{\\theta_0} + \\rho_0  \\delta \\phi \\vb e_{\\phi_0}.")}
+
+
+        It is interesting to note that the term {mt("\\rho_0 \\sin(\\phi_0) \\delta \\theta")} represents the displacement by the angle {mt("\\delta \\theta")} at the latitude {mt("\\phi_0")} on the sphere of radius {mt("\\rho_0 \\sin(\\phi_0) ")} centered on
+        and perpendicular to the {mt("\\vb k")} axis, while the angular displacement in {mt("\\phi")} <br />
+
+        Under the assumption that {mt("||\\vb r -\\vb r_0 || \\ll R")}, we have for the displacements in each direction,
+
+        {eq(mtx('align', "\\delta \\rho & \\ll \\rho_0 & &",
+            "\\rho_0 \\delta \\phi & \\ll \\rho_0 &\\text{or} &  \\quad \\delta \\phi  \\ll 1 ",
+            "\\rho_0 \\sin(\\phi_0) &\\delta \\theta \\ll \\rho_0 &\\text{or}& \\quad \\sin(\\phi_0) \\delta \\theta \\ll 1  "))}
+
+        We will therefore assume that the dynamics can be described by spherical coordinates such as,
+
+        {eq(mtx('align', " \\rho_0 +  \\rho(t)", " \\theta_0+  \\theta(t)", "    \\phi_0 +  \\phi(t)"))}
+
+        where at all times
+
+        {eq(mtx('align', "\\rho(t) & \\ll \\rho_0 ",
+            "  \\phi(t) & \\ll 1 ",
+            "\\sin(\\phi_0)   \\theta(t)& \\ll 1.  "))}
+
+        We have dropped the symbol {mt("\\delta")} for the displacements, in order to make the notation less heavy. <br></br>
+
+        The equations of motion {ref('Full equations of motion in polar coordinates', pageName)} can be expressed in terms of the displacements {mt("(\\rho(t),\\theta(t),\\phi(t))")} as,
+
+        {eq(mtx('matrix', " \\ddot \\rho - \\rho_0(\\sin(\\phi_0)^2\\rho(t)(\\dot\\theta(t)+\\omega)^2 +\\rho_0^2\\dot\\phi(t)^2) + g =0 ",
+            " \\rho_0\\ddot \\theta +2\\rho_0(\\dot\\theta(t)+\\omega)(\\dot\\rho(t)\\sin(\\phi_0) +\\rho_0 \\dot\\phi(t) \\cos(\\phi_0))=0 ",
+            "\\rho_0\\ddot \\phi +  \\sin(\\phi_0) \\rho_0^2 (\\dot\\theta(t)+\\omega )^2   + 2\\dot\\rho(t)\\dot\\phi(t) =0 "
+        ))}
+
+        and simplify to the first order in the displacements as,
+
+        {eq(mtx('matrix', "\\ddot\\rho(t)&=&- g + \\omega ^2\\rho_0 \\sin ^2(\\phi_0) &+\\omega ^2\\sin ^2(\\phi_0) \\rho(t)& + \\omega ^2\\rho_0  \\sin (2 \\phi_0)\\,\\phi(t)&+2  \\omega  \\rho_0\\sin ^2(\\phi_0)\\,\\,\\dot \\theta(t)   ",
+            "2 \\rho_0\\ddot \\phi(t)&=&  \\omega ^2\\rho_0 \\sin (2 \\phi_0) &+ \\omega ^2\\sin (2 \\phi_0)\\rho(t)&+2 \\omega ^2\\rho_0 \\cos (2 \\phi_0) \\phi(t)& +2  \\omega\\rho_0  \\sin (2 \\phi_0)\\dot \\theta(t) ",
+            "\\rho_0 \\sin (\\phi_0)\\ddot \\theta(t)&=& & -2 \\omega  \\sin (\\phi_0)\\dot \\rho(t)&- 2 \\omega  \\rho_0 \\cos (\\phi_0)\\dot \\phi(t)"
+        ))}
+
+        The Earth angular velocity and the radius have values,
+
+        {eq(mtx('align', "\\omega &= 7.29 \\times 10^{-5} \\, \\text{s}^{-1}", "R &= 6371 \\, \\text{km}"))}
+
+        and the term {mt("\\omega^2\\rho_0 \\sin(\\phi_0)^2")} assumes the value,
+
+        {eq("\\omega^2\\rho_0 \\sin^2(\\phi_0) = 0.0339 \\,   \\sin^2(\\phi_0) \\,\\,m/s^2  ")}
+
+        which is orders of magnitude smaller than the gravitational acceleration {mt("g=9.81 m/s^2")} and can be neglected in the equations of motion, which can be simplified as,
+
+        {eq(mtx('matrix', "\\ddot\\rho(t)&=&- g   &+\\omega ^2\\sin ^2(\\phi_0) \\rho(t)& + \\omega ^2\\rho_0  \\sin (2 \\phi_0)\\,\\phi(t)&+2  \\omega  \\rho_0\\sin ^2(\\phi_0)\\,\\,\\dot \\theta(t)   ",
+            "2 \\rho_0\\ddot \\phi(t)&=&  \\omega ^2\\rho_0 \\sin (2 \\phi_0) &+ \\omega ^2\\sin (2 \\phi_0)\\rho(t)&+2 \\omega ^2\\rho_0 \\cos (2 \\phi_0) \\phi(t)& +2  \\omega\\rho_0  \\sin (2 \\phi_0)\\dot \\theta(t) ",
+            "\\rho_0 \\sin (\\phi_0)\\ddot \\theta(t)&=& & -2 \\omega  \\sin (\\phi_0)\\dot \\rho(t)&- 2 \\omega  \\rho_0 \\cos (\\phi_0)\\dot \\phi(t)"
+        ))}
+
+        Defining dimensional variables of length as,
+
+        {eq(mtx('align', "x = \\rho_0 \\phi", "y = \\rho_0 \\sin(\\phi_0) \\theta", "z =\\rho"))}
+
+        and defining the symbols for a local system of reference as,
+
+        {eq(mtx('align', "{\\vb e}_z &= \\vb e_{\\rho_0}  ",
+            "{\\vb e}_y&=\\vb e_{\\theta_0}  ",
+            " {\\vb e}_x&= \\vb e_{\\phi_0} "))}
+
+        the linearized equations of motion can be expressed as,
+
+        {eq(mtx('matrix', "\\ddot z &=&- g   &+\\omega ^2\\sin ^2(\\phi_0) z & + \\omega ^2  \\sin (2 \\phi_0)\\, x &+2  \\omega   \\sin(\\phi_0) \\dot y  ",
+            "2  \\ddot x &=&  \\omega ^2\\rho_0 \\sin (2 \\phi_0) &+ \\omega ^2\\sin (2 \\phi_0) z &+2 \\omega ^2  \\cos (2 \\phi_0) x & +4 \\omega \\cos (\\phi_0) \\dot y",
+            " \\ddot y &=& & -2 \\omega  \\sin (\\phi_0)\\dot z &- 2 \\omega   \\cos (\\phi_0)\\dot x"), "Linearized equations of motion in polar coordinates", pageName)}
+
+        <br></br>
 
     </>);
 
 
+    let foucault = coriolis.addSection('Foucault Pendulum');
+
+    foucault.setContent(<>
+
+        In this section, we will derive the equations of motion for the Foucault pendulum, applying several simplifying assumptions to streamline the process. Our aim is to provide a first-order derivation,
+        leaving more rigorous analyses for the reader to explore independently. <br></br>
+        The Foucault pendulum is a straightforward experiment that illustrates the Earth rotation. It consists of a heavy mass   {mt("m")} suspended at a latitude {mt("\\phi_0")} by a long wire or rod of length {mt("l")} , free to oscillate in any direction.
+        Over time, the plane of the pendulum oscillation rotates due to the Coriolis force acting upon it.
+
+        <br></br>
+
+        To derive the equations of motion for the Foucault pendulum, we begin with the equations {ref('Linearized equations of motion in polar coordinates', pageName)}.
+        We then disregard the {mt("\\omega^2")} terms caused by the centrifugal force, as they are significantly smaller than the terms
+        involving {mt("\\omega")} generated by the Coriolis force. Under this assumption, we arrive at the equations:
+
+        {eq(mtx('matrix', "\\ddot z &=&- g   +2  \\omega   \\sin(\\phi_0) \\dot y  ",
+            "  \\ddot x &=&    \\omega \\cos (\\phi_0) \\dot y",
+            " \\ddot y &=&  -2 \\omega  \\sin (\\phi_0)\\dot z - 2 \\omega   \\cos (\\phi_0)\\dot x"))}
+
+        From the equation above we can derive the total force acting on the body as,
+
+        {eq(mtx('align', "\\vb F_\\text{total} =  m \\begin{pmatrix} \\ddot z \\\\ \\ddot x \\\\ \\ddot y \\end{pmatrix} = m \\begin{pmatrix} -g +2  \\omega   \\sin(\\phi_0) \\dot y \\\\  \\omega \\cos (\\phi_0) \\dot y \\\\ -2 \\omega  \\sin (\\phi_0)\\dot z - 2 \\omega   \\cos (\\phi_0)\\dot x  \\end{pmatrix}"))}
+
+        and the Coriolis component of the total force is,
+
+        {eq(mtx('align', "\\vb F_\\text{cor} =   m \\begin{pmatrix} \\ddot z \\\\ \\ddot x \\\\ \\ddot y \\end{pmatrix} = m \\begin{pmatrix} +2  \\omega   \\sin(\\phi_0) \\dot y \\\\  \\omega \\cos (\\phi_0) \\dot y \\\\ -2 \\omega  \\sin (\\phi_0)\\dot z - 2 \\omega   \\cos (\\phi_0)\\dot x  \\end{pmatrix}"))}
+
+        which has a generalized potential as,
+
+        {eq("V_\\text{Cor} = -m \\braket{ \\boldsymbol \\omega \\times \\vb p |\\dot  { \\vb p}} ")}
+
+        where the angular velocity  {mt("\\boldsymbol \\omega")} of the Earth in this system of reference is
+
+        {eq("\\boldsymbol \\omega = \\omega ( - \\sin(\\phi_0)\\vb e_x + \\cos(\\phi_0) \\vb e_z) ")}
+
+        and the position vector {mt("\\vb p")} is given by {mt("\\vb p = x \\vb e_x + y \\vb e_y + z \\vb e_z")}.
+
+        The Lagrangian of the system, including the gravitational force, is given by,
+
+        {eq(mtx("align", "L =\\frac{1}{2} m\\left(\\dot x (t)^2+\\dot y(t)^2+\\dot z(t)^2\\right)-m\\omega    (y(t)\\left(\\cos (\\phi_0) \\dot x(t)+\\sin (\\phi_0)   \\dot z(t)\\right)", "-\\dot y(t) (\\cos (\\phi_0) x(t)+\\sin (\\phi_0)   z(t))  + m g z(t)"))}
+
+        Utilizing a local system of spherical coordinates in the system {mt("(x,y,z)")}, with a constant radius {mt("\\rho=l")}  we can express the Lagrangian as,
+
+        {eq(mtx("align", "L = \\frac{1}{2} l m (l  (\\dot \\theta(t) (\\sin ^2(\\phi (t)) (2 \\omega  \\cos (\\phi_0)+\\dot \\theta(t) +\\omega  \\sin   (\\phi_0) \\cos (\\theta (t)) \\sin (2 \\phi (t)) )",
+            "+2 \\omega  \\sin (\\phi_0) \\sin (\\theta (t))\\dot \\phi(t)+\\dot \\phi(t)^2 )-2   g \\cos (\\phi (t)) )."))}
+
+        The Euler equations of motion are finally given by,
+        {eq(mtx("align", " \\phi (t) \\dot{\\phi}(t) \\left(\\omega  \\cos   (\\phi_0)+\\dot \\theta(t)\\right)=0",
+            "l \\phi(t)\\dot \\theta(t)   \\left(2 \\omega  \\cos (\\phi_0)+\\dot \\theta(t)\\right)=l    \\ddot \\phi(t)+g \\phi(t) "))}
+
+        which is equivalent to the equations,
+
+        {eq(mtx("align", "\\ddot \\phi (t) &= \\left( -\\frac{g}{l} - \\omega^2\\cos^2(\\phi_0) \\right) \\phi(t)",
+            " \\dot\\theta(t) &=  -\\omega \\cos(\\phi_0)."))}
+
+        The equation in {mt("\\phi(t)")} is a simple harmonic oscillator with a frequency of {mt("\\omega_\\phi = \\sqrt{\\frac{g}{l}}")}, if the higher order terms in {mt("\\omega^2\\cos^2(\\phi_0) ")} are removed.
+        The equation in {mt("\\theta(t)")} is a constant angular velocity which represent the precession of the Foucault pendulum. In the northern hemisphere, the precession is counterclockwise as {mt("\\phi\\lt\\pi/2")}, while in the southern hemisphere it is clockwise.
+        The period of the precession is given by,
+        {eq("\\tau = \\frac{2\\pi}{\\omega \\lvert\\cos(\\phi_0)\\lvert}= \\frac{24}{\\lvert\\cos(\\phi_0)\\lvert} \\,\\,h = \\frac{24}{\\sin(\\phi'_0)} \\,\\,h")}
+
+        where the last equation is obtained by substituting {mt("\\omega = 2\\pi/24h")}, and {mt("\\phi'_0")} is the geographical latitude of the pendulum. The maximum value of the period is at the North and South poles, 
+        it decreases when the pendulum approaches the equator where the period is zero.
+    </>);
 
     let sectionsToRender: SectionType = sections.getSections();
 
