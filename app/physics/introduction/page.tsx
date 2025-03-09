@@ -43,7 +43,7 @@ export default function Page() {
       <MediaAndText imageSrc='/img/a-c-a3XdceJ8tA0-unsplash.jpg' imageSize={50} caption="" imagePosition='left'>
         <p>
           Physics is an incredibly vast field, and this project will only be able to cover some of its fundamental aspects. The topics selected for this project are those that the authors
-          find personally most interesting and important. Some topics were chosen because the authors tutored students on specific subjects, such as the kinematics of rigid bodies, which led them to derive the Foucault Pendulum equation.
+          find personally most interesting and important. Some topics were chosen because the authors tutored students on specific subjects, such as the kinematics of rigid bodies, which led them to derive the Foucault Pendulum equation - a topic he was always interested in.
 
           Another example is the derivation of the Lorentz equations of special relativity. The authors read Einstein  original 1905 paper and admired his genius in deriving the equations.
           However, they felt that additional work could be done to extend his formalism to a more general case.
@@ -85,8 +85,7 @@ export default function Page() {
           Undergraduate physics students at the beginning of their studies might find some sections particularly difficult. To fully benefit from this project, it is highly recommended that readers have a good grasp of linear algebra,
           multivariable calculus, and general physics principles. These mathematical tools are essential for understanding the complex derivations and concepts presented.
 
-          The project is designed to bridge the gap between theoretical knowledge and practical application, offering a deeper insight into the mechanics of physics. By providing detailed explanations and
-          derivations, the authors hope to make advanced topics more accessible to those with the necessary foundational knowledge.
+          By providing detailed explanations and derivations, the authors hope to make advanced topics more accessible to those with the necessary foundational knowledge.
 
         </p>
 
