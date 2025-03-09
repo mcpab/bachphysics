@@ -110,7 +110,7 @@ export default function Page() {
       </p>
       <MediaAndText imageSrc='/img/Kellie Ffrench--12.jpg' imageSize={50} caption="" imagePosition='left'>
         <Box my={5} />
-        <b>Dr. Rer. Nat Marco Claudio Pio Brunelli </b> holds a PhD in Physics with top honors from the University of Stuttgart, Germany. He completed his undergraduate studies in Physics,
+        <b>Dr. Rer. Nat. Marco Claudio Pio Brunelli </b> holds a PhD in Physics with top honors from the University of Stuttgart, Germany. He completed his undergraduate studies in Physics,
         graduating Magna Cum Laude from the University of Bologna, Italy. Currently, he works as a director at a German multinational company, where he leads projects
         at the forefront of technology development. Dr. Brunelli is a passionate physicist and mathematician who loves to share his knowledge with others.
       </MediaAndText>
