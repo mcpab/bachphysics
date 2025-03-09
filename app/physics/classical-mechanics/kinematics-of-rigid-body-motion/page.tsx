@@ -1012,30 +1012,31 @@ export default function Page() {
 
         {eq(mtx('align', "\\vb F_\\text{total} =  m \\begin{pmatrix} \\ddot z \\\\ \\ddot x \\\\ \\ddot y \\end{pmatrix} = m \\begin{pmatrix} -g +2  \\omega   \\sin(\\phi_0) \\dot y \\\\  \\omega \\cos (\\phi_0) \\dot y \\\\ -2 \\omega  \\sin (\\phi_0)\\dot z - 2 \\omega   \\cos (\\phi_0)\\dot x  \\end{pmatrix}"))}
 
-        and the Coriolis component of the total force is,
+        the Coriolis component of the total force is,
 
         {eq(mtx('align', "\\vb F_\\text{cor} =   m \\begin{pmatrix} \\ddot z \\\\ \\ddot x \\\\ \\ddot y \\end{pmatrix} = m \\begin{pmatrix} +2  \\omega   \\sin(\\phi_0) \\dot y \\\\  \\omega \\cos (\\phi_0) \\dot y \\\\ -2 \\omega  \\sin (\\phi_0)\\dot z - 2 \\omega   \\cos (\\phi_0)\\dot x  \\end{pmatrix}"))}
 
         which has a generalized potential as,
 
-        {eq("V_\\text{Cor} = -m \\braket{ \\boldsymbol \\omega \\times \\vb p |\\dot  { \\vb p}} ")}
+        {eq("V_\\text{Cor} = -m \\braket{ \\boldsymbol \\omega \\times \\vb p |\\dot  { \\vb p}}. ")}
 
-        where the angular velocity  {mt("\\boldsymbol \\omega")} of the Earth in this system of reference is
+        In the equation above the angular velocity  {mt("\\boldsymbol \\omega")} of the Earth is considered in this system of reference and it is given by,
 
         {eq("\\boldsymbol \\omega = \\omega ( - \\sin(\\phi_0)\\vb e_x + \\cos(\\phi_0) \\vb e_z) ")}
 
         and the position vector {mt("\\vb p")} is given by {mt("\\vb p = x \\vb e_x + y \\vb e_y + z \\vb e_z")}.
 
-        The Lagrangian of the system, including the gravitational force, is given by,
+        The Lagrangian of the system, including the gravitational force reads,
 
         {eq(mtx("align", "L =\\frac{1}{2} m\\left(\\dot x (t)^2+\\dot y(t)^2+\\dot z(t)^2\\right)-m\\omega    (y(t)\\left(\\cos (\\phi_0) \\dot x(t)+\\sin (\\phi_0)   \\dot z(t)\\right)", "-\\dot y(t) (\\cos (\\phi_0) x(t)+\\sin (\\phi_0)   z(t))  + m g z(t)"))}
 
-        Utilizing a local system of spherical coordinates in the system {mt("(x,y,z)")}, with a constant radius {mt("\\rho=l")}  we can express the Lagrangian as,
+        Utilizing a local system of spherical coordinates with constant radius {mt("(\\rho=l,\\theta,\\phi)")} in the system {mt("(x,y,z)")}, we can express the Lagrangian as,
 
         {eq(mtx("align", "L = \\frac{1}{2} l m (l  (\\dot \\theta(t) (\\sin ^2(\\phi (t)) (2 \\omega  \\cos (\\phi_0)+\\dot \\theta(t) +\\omega  \\sin   (\\phi_0) \\cos (\\theta (t)) \\sin (2 \\phi (t)) )",
             "+2 \\omega  \\sin (\\phi_0) \\sin (\\theta (t))\\dot \\phi(t)+\\dot \\phi(t)^2 )-2   g \\cos (\\phi (t)) )."))}
 
-        The Euler equations of motion are finally given by,
+        The Euler equations of motion derived from the Lagrangian above read,
+
         {eq(mtx("align", " \\phi (t) \\dot{\\phi}(t) \\left(\\omega  \\cos   (\\phi_0)+\\dot \\theta(t)\\right)=0",
             "l \\phi(t)\\dot \\theta(t)   \\left(2 \\omega  \\cos (\\phi_0)+\\dot \\theta(t)\\right)=l    \\ddot \\phi(t)+g \\phi(t) "))}
 
@@ -1044,8 +1045,8 @@ export default function Page() {
         {eq(mtx("align", "\\ddot \\phi (t) &= \\left( -\\frac{g}{l} - \\omega^2\\cos^2(\\phi_0) \\right) \\phi(t)",
             " \\dot\\theta(t) &=  -\\omega \\cos(\\phi_0)."))}
 
-        The equation in {mt("\\phi(t)")} is a simple harmonic oscillator with a frequency of {mt("\\omega_\\phi = \\sqrt{\\frac{g}{l}}")}, if the higher order terms in {mt("\\omega^2\\cos^2(\\phi_0) ")} are removed.
-        The equation in {mt("\\theta(t)")} is a constant angular velocity which represent the precession of the Foucault pendulum. In the northern hemisphere, the precession is counterclockwise as {mt("\\phi\\lt\\pi/2")}, while in the southern hemisphere it is clockwise.
+        The equation in {mt("\\phi(t)")} is a simple harmonic oscillator with a frequency of {mt("\\omega_\\phi = \\sqrt{{g}/{l}}")}, if the higher order terms in {mt("\\omega^2\\cos^2(\\phi_0) ")} are removed.
+        The equation of motion for {mt("\\theta(t)")} is a constant angular velocity which represent the precession of the Foucault pendulum. In the northern hemisphere, the precession is counterclockwise as {mt("\\phi\\lt\\pi/2")}, while in the southern hemisphere it is clockwise.
         The period of the precession is given by,
         {eq("\\tau = \\frac{2\\pi}{\\omega \\lvert\\cos(\\phi_0)\\lvert}= \\frac{24}{\\lvert\\cos(\\phi_0)\\lvert} \\,\\,h = \\frac{24}{\\sin(\\phi'_0)} \\,\\,h")}
 
