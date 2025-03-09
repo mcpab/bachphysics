@@ -1040,7 +1040,7 @@ export default function Page() {
         {eq(mtx("align", " \\phi (t) \\dot{\\phi}(t) \\left(\\omega  \\cos   (\\phi_0)+\\dot \\theta(t)\\right)=0",
             "l \\phi(t)\\dot \\theta(t)   \\left(2 \\omega  \\cos (\\phi_0)+\\dot \\theta(t)\\right)=l    \\ddot \\phi(t)+g \\phi(t) "))}
 
-        which is equivalent to the equations,
+        which are equivalent to the equations,
 
         {eq(mtx("align", "\\ddot \\phi (t) &= \\left( -\\frac{g}{l} - \\omega^2\\cos^2(\\phi_0) \\right) \\phi(t)",
             " \\dot\\theta(t) &=  -\\omega \\cos(\\phi_0)."))}
