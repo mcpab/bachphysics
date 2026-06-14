@@ -34,6 +34,7 @@
 # If you don't want sourcemaps in Git:
 **/*.map
 **/*.d.ts.map
+tsconfig.tsbuildinfo
 
 # ─────────────────────────────────────────────────────────────
 # Misc
