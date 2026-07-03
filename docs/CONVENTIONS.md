@@ -28,9 +28,12 @@ Good:
 
 ```ts
 import Box from '@mui/material/Box';
+```
 
+Bad:
+
+```ts
 import { Box } from '@mui/material';
-
 ```
 
 Edits:

@@ -1,0 +1,10 @@
+{
+  "javascript.preferences.autoImportSpecifierExcludeRegexes": [
+    "^@mui/material$",
+    "^@mui/icons-material$"
+  ],
+  "typescript.preferences.autoImportSpecifierExcludeRegexes": [
+    "^@mui/material$",
+    "^@mui/icons-material$"
+  ]
+}

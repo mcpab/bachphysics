@@ -4,10 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbo",
+    "prebuild": "pnpm validate:figure-dimensions",
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "latex:layout:ts": "node --experimental-strip-types ./scripts/compileLibraryLatexLayoutToTs.ts",
+    "validate:figure-dimensions": "node --experimental-strip-types ./scripts/validateFigureDimensions.ts"
   },
   "dependencies": {
     "@emotion/cache": "^11.14.0",

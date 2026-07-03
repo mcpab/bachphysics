@@ -1,0 +1,274 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{hyperref}
+
+% Shorthand for displaystyle fractions inside inline math
+\newcommand{\ds}{\displaystyle}
+\newcommand{\ip}[2]{\langle #1 \mid #2 \rangle}
+
+\title{Composition of Velocities}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+% ============================================================
+\section{Derivation of Composition of Velocities}
+% ============================================================
+
+In classical mechanics, a velocity $\vb{u}'$ in the moving frame will be measured in the
+stationary frame as $\vb{u} = \vb{v} + \vb{u}'$, which is the well-known law of the
+parallelograms. In relativity, the parallelogram formula holds only for velocities well below
+the speed of light, and the composition of velocities needs to account for the fact that no
+speed can be measured which is faster than the speed of light.
+
+We will use the same reference systems as defined in the section on the Transformation of
+Time and Space. We consider the general motion of a body in $F'$ described by the four-vector
+\begin{equation}
+  \ket{\vb{x}', 0} + ct'\ket{\vb{0}, 1}
+\end{equation}
+where we assume that $\vb{x}' = \vb{x}'(t')$. The motion of the body observed in $F$ is
+given by the Lorentz transformation
+\begin{equation}
+  \boldsymbol{\Lambda}(\vb{v})\left(\ket{\vb{x}, 0} + ct\ket{\vb{0}, 1}\right)
+  = \ket{\vb{x}', 0} + ct'\ket{\vb{0}, 1}
+\end{equation}
+where $\boldsymbol{\Lambda}(\vb{v})$ is the Lorentz transformation in velocity
+(see \textit{The Transformation of Time and Space}, eq.~for the Lorentz transformation in
+velocity):
+\begin{equation}
+  \boldsymbol{\Lambda}(\vb{v}) =
+    \frac{\beta}{v^2}\ket{\vb{v},0}\bra{\vb{v},0}
+    - \frac{\beta}{c}\ket{\vb{v},0}\bra{\vb{0},1}
+    + \ket{\vb{e}_2,0}\bra{\vb{e}_2,0}
+    + \ket{\vb{e}_3,0}\bra{\vb{e}_3,0}
+    - \frac{\beta}{c}\ket{\vb{0},1}\bra{\vb{v},0}
+    + \beta\ket{\vb{0},1}\bra{\vb{0},1}
+  \label{eq:composition_Lorentz_in_velocity}
+\end{equation}
+and $\vb{x} = \vb{x}(t)$. The velocity of the body in $F$ is given by the derivative of the
+position vector with respect to time:
+\begin{equation}
+  \boldsymbol{\Lambda}(\vb{v})\,\frac{d}{dt}\!\left(\ket{\vb{x},0} + ct\ket{\vb{0},1}\right)
+  = \frac{d}{dt}\!\left(\ket{\vb{x}',0} + ct'\ket{\vb{0},1}\right)
+\end{equation}
+
+From the transformation of time and space (see \textit{The Transformation of Time and Space}):
+\begin{equation}
+  ct' = \beta\!\left(-\frac{v}{c}\ip{\vb{e}_1}{\vb{x}} + ct\right)
+\end{equation}
+we can compute the relation between the velocities $\vb{u}$ and $\vb{u}'$ in $F$ and $F'$
+respectively,
+\begin{equation}
+  \boldsymbol{\Lambda}(\vb{v})\bigl(\ket{\vb{u},0} + c\ket{\vb{0},1}\bigr)
+  = \beta\!\left(1 - \frac{\ip{\vb{v}}{\vb{u}}}{c^2}\right)
+    \bigl(\ket{\vb{u}',0} + c\ket{\vb{0},1}\bigr)
+\end{equation}
+which, using the Lorentz transformation in velocity \eqref{eq:composition_Lorentz_in_velocity}, reads
+\begin{equation}
+  \begin{aligned}
+    &\beta\!\left(\frac{\ip{\vb{v}}{\vb{u}}}{v^2} - 1\right)\ket{\vb{v},0}
+    + \ket{\vb{e}_2,0}\ip{\vb{e}_2}{\vb{u}}
+    + \ket{\vb{e}_3,0}\ip{\vb{e}_3}{\vb{u}}
+    + \ket{\vb{0},1}\,\beta c\!\left(1 - \frac{\ip{\vb{v}}{\vb{u}}}{c^2}\right) \\
+    &= \beta\!\left(1 - \frac{\ip{\vb{v}}{\vb{u}}}{c^2}\right)
+       \bigl(\ket{\vb{u}',0} + c\ket{\vb{0},1}\bigr)
+  \end{aligned}
+\end{equation}
+and simplifies to,
+\begin{equation}
+  \beta\!\left(\frac{\ip{\vb{v}}{\vb{u}}}{v^2} - 1\right)\ket{\vb{v},0}
+  + \ket{\vb{e}_2,0}\ip{\vb{e}_2}{\vb{u}}
+  + \ket{\vb{e}_3,0}\ip{\vb{e}_3}{\vb{u}}
+  = \beta\!\left(1 - \frac{\ip{\vb{v}}{\vb{u}}}{c^2}\right)\ket{\vb{u}',0}
+\end{equation}
+
+The equation above can be written in a more compact form as,
+\begin{equation}
+  \beta\,\frac{\ip{\vb{v}}{\vb{u}}}{v^2}\ket{\vb{v},0}
+  - \beta\ket{\vb{v},0}
+  - \frac{\ip{\vb{v}}{\vb{u}}}{v^2}\ket{\vb{v},0}
+  + \ket{\vb{u}}
+  = \beta\!\left(1 - \frac{\ip{\vb{v}}{\vb{u}}}{c^2}\right)\ket{\vb{u}',0}
+\end{equation}
+or,
+\begin{equation}
+  (\beta - 1)\frac{\ip{\vb{v}}{\vb{u}}}{v^2}\ket{\vb{v},0}
+  - \beta\ket{\vb{v},0}
+  + \ket{\vb{u}}
+  = \beta\!\left(1 - \frac{\ip{\vb{v}}{\vb{u}}}{c^2}\right)\ket{\vb{u}',0}
+  \label{eq:velocities_relationship}
+\end{equation}
+from which we readily obtain the velocity $\ket{\vb{u}'}$ as,
+\begin{equation}
+  \ket{\vb{u}',0} = \frac{1}{\displaystyle 1 - \frac{\ip{\vb{v}}{\vb{u}}}{c^2}}
+  \left(
+    \frac{\beta-1}{\beta}\,\frac{\ip{\vb{v}}{\vb{u}}}{v^2}\ket{\vb{v},0}
+    - \ket{\vb{v},0}
+    + \frac{\ket{\vb{u},0}}{\beta}
+  \right).
+  \label{eq:inverse_velocity_composition}
+\end{equation}
+
+The velocity $\ket{\vb{u}}$ can be easily expressed in terms of the velocity $\ket{\vb{u}'}$
+by exchanging the roles of $\ket{\vb{u}}$ and $\ket{\vb{u}'}$ in the equation above, and
+changing the sign of the velocity.
+
+As an exercise, we will derive the same result in a more general way by inverting the equation
+above. We start by factoring the velocity $\ket{\vb{u}}$ in \eqref{eq:velocities_relationship}
+and express the equation as an operator on the velocity $\ket{\vb{u}}$,
+\begin{equation}
+  \left(
+    \frac{\beta}{v^2}\ket{\vb{v}}\bra{\vb{v}}
+    + \ket{\vb{e}_2,0}\bra{\vb{e}_2,0}
+    + \ket{\vb{e}_3,0}\bra{\vb{e}_3,0}
+    + \frac{\beta}{c^2}\ket{\vb{u}'}\bra{\vb{v}}
+  \right)\ket{\vb{u}}
+  = \beta\bigl(\ket{\vb{u}'} + \ket{\vb{v}}\bigr)
+\end{equation}
+
+Further expanding the equation above in the components of $\ket{\vb{u}'}$, we get
+\begin{equation}
+  \begin{aligned}
+    \Bigl(
+      &\beta\!\left(1 + \frac{v}{c^2}u'_1\right)\ket{\vb{e}_1,0}\bra{\vb{e}_1,0}
+      + \beta\,\frac{v}{c^2}u'_2\,\ket{\vb{e}_2,0}\bra{\vb{e}_1,0}
+      + \beta\,\frac{v}{c^2}u'_3\,\ket{\vb{e}_3,0}\bra{\vb{e}_1,0} \\
+      &+ \ket{\vb{e}_2,0}\bra{\vb{e}_2,0}
+      + \ket{\vb{e}_3,0}\bra{\vb{e}_3,0}
+    \Bigr)\cdot\ket{\vb{u},0}
+    = \beta\bigl(\ket{\vb{u}'} + \ket{\vb{v}}\bigr)
+  \end{aligned}
+\end{equation}
+
+The operator,
+\begin{equation}
+  \beta\!\left(1 + \frac{v}{c^2}u'_1\right)\ket{\vb{e}_1,0}\bra{\vb{e}_1,0}
+  + \beta\,\frac{v}{c^2}u'_2\,\ket{\vb{e}_2,0}\bra{\vb{e}_1,0}
+  + \beta\,\frac{v}{c^2}u'_3\,\ket{\vb{e}_3,0}\bra{\vb{e}_1,0}
+  + \ket{\vb{e}_2,0}\bra{\vb{e}_2,0}
+  + \ket{\vb{e}_3,0}\bra{\vb{e}_3,0}
+\end{equation}
+can be easily inverted as,
+\begin{equation}
+  \begin{aligned}
+    &\frac{1}{\displaystyle\beta\!\left(1 + \frac{v}{c^2}u'_1\right)}
+      \ket{\vb{e}_1,0}\bra{\vb{e}_1,0}
+    - \frac{v}{c^2}\frac{u'_2}{\displaystyle 1 + \frac{v}{c^2}u'_1}
+      \ket{\vb{e}_2,0}\bra{\vb{e}_1,0} \\
+    &- \frac{v}{c^2}\frac{u'_3}{\displaystyle 1 + \frac{v}{c^2}u'_1}
+      \ket{\vb{e}_3,0}\bra{\vb{e}_1,0}
+    + \ket{\vb{e}_2,0}\bra{\vb{e}_2,0}
+    + \ket{\vb{e}_3,0}\bra{\vb{e}_3,0}
+  \end{aligned}
+\end{equation}
+
+We can express the velocity $\ket{\vb{u}}$ as,
+\begin{equation}
+  \begin{aligned}
+    \ket{\vb{u},0} =\;
+    &\left(
+      \frac{1}{\displaystyle\beta\!\left(1 + \frac{v}{c^2}u'_1\right)}
+        \ket{\vb{e}_1,0}\bra{\vb{e}_1,0}
+      - \frac{v}{c^2}\frac{u'_2}{\displaystyle 1 + \frac{v}{c^2}u'_1}
+        \ket{\vb{e}_2,0}\bra{\vb{e}_1,0} \right.\\
+    &\left.
+      - \frac{v}{c^2}\frac{u'_3}{\displaystyle 1 + \frac{v}{c^2}u'_1}
+        \ket{\vb{e}_3,0}\bra{\vb{e}_1,0}
+      + \ket{\vb{e}_2,0}\bra{\vb{e}_2,0}
+      + \ket{\vb{e}_3,0}\bra{\vb{e}_3,0}
+    \right) \\[0.4em]
+    &\cdot\left(v\beta\ket{\vb{e}_1,0} + \beta\ket{\vb{u}'}\right)
+  \end{aligned}
+\end{equation}
+which finally simplifies to,
+\begin{equation}
+  \ket{\vb{u},0} = \frac{1}{\displaystyle 1 + \frac{v}{c^2}u'_1}
+  \left(
+    (v + u'_1)\ket{\vb{e}_1,0}
+    - \sqrt{1 - \frac{v^2}{c^2}}\,u'_2\,\ket{\vb{e}_2,0}
+    - \sqrt{1 - \frac{v^2}{c^2}}\,u'_3\,\ket{\vb{e}_3,0}
+  \right)
+\end{equation}
+
+By dropping the explicit time dependence, we can write the above equation in a more elegant
+form as,
+\begin{equation}
+  \ket{\vb{u}} =
+  \frac{1}{\displaystyle 1 + \frac{\ip{\vb{v}}{\vb{u}'}}{c^2}}
+  \left(
+    \frac{\beta - 1}{\beta}\,\frac{\ip{\vb{u}'}{\vb{v}}}{v^2}\ket{\vb{v}}
+    + \ket{\vb{v}}
+    + \frac{\ket{\vb{u}'}}{\beta}
+  \right)
+  \label{eq:velocity_composition}
+\end{equation}
+
+% ============================================================
+\section{Limit Formulas}
+% ============================================================
+
+In this section we are going to derive the limit formulas for the composition of velocities
+when one of the velocities approaches the speed of light. We start by considering the limit
+of the velocity composition formula \eqref{eq:velocity_composition} when the velocity
+$\ket{\vb{u}'}$ approaches the speed of light.
+
+\subsection{$\ket{\vb{u}}$ Approaching Speed of Light}
+
+We start by first considering the case where $\ket{\vb{u}}$ approaches the speed of light
+$c$ and we will determine the value that $\ket{\vb{u}'}$ reaches. To achieve this, we need
+to compute the modulus of $\ket{\vb{u}'}$ from \eqref{eq:inverse_velocity_composition},
+which reads:
+\begin{equation}
+  u'^2 = \frac{1}{\displaystyle\left(1 - \frac{\ip{\vb{v}}{\vb{u}}}{c^2}\right)^2}
+  \left(
+    \frac{\ip{\vb{u}}{\vb{v}}^2}{c^2} + v^2 + \frac{u^2}{\beta^2}
+    - 2\ip{\vb{u}}{\vb{v}}
+  \right)
+\end{equation}
+
+When $\ket{\vb{u}} = c\ket{\vb{n}}$, where $\ket{\vb{n}}$ is a unit vector, the equation
+above simplifies to
+\begin{equation}
+  u'^2 = \frac{c^2}{\displaystyle\left(1 - \frac{\ip{\vb{v}}{\vb{n}}}{c}\right)^2}
+  \left(1 - \frac{\ip{\vb{v}}{\vb{n}}}{c}\right)^2 = c^2
+\end{equation}
+which implies that the velocity $\ket{\vb{u}'}$ reaches the speed of light when $\ket{\vb{u}}$
+approaches the speed of light.
+
+\subsection{$\ket{\vb{u}'}$ Approaching Speed of Light}
+
+Similarly, we can determine the limit of the velocity $\ket{\vb{u}}$ when the velocity
+$\ket{\vb{u}'}$ approaches the speed of light. From the velocity composition formula
+\eqref{eq:velocity_composition}, the modulus of the velocity $\ket{\vb{u}}$ reads,
+\begin{equation}
+  u^2 = \frac{1}{\displaystyle\left(1 + \frac{\ip{\vb{v}}{\vb{u}'}}{c^2}\right)^2}
+  \left(
+    \frac{\ip{\vb{u}'}{\vb{v}}^2}{v^2} + v^2 + \frac{u'^2}{\beta^2}
+    + 2\ip{\vb{u}'}{\vb{v}}
+  \right)
+\end{equation}
+which is the same equation for the modulus of $\ket{\vb{u}}$ with the sign of the velocity
+$\ket{\vb{v}}$ reversed. When $\ket{\vb{u}'} = c\ket{\vb{n}}$, where $\ket{\vb{n}}$ is a
+unit vector, the equation above simplifies to
+\begin{equation}
+  u^2 = \frac{c^2}{\displaystyle\left(1 + \frac{\ip{\vb{v}}{\vb{n}}}{c}\right)^2}
+  \left(1 + \frac{\ip{\vb{v}}{\vb{n}}}{c}\right)^2 = c^2
+\end{equation}
+which, also in this case, means that the velocity $\ket{\vb{u}}$ reaches the speed of light
+when $\ket{\vb{u}'}$ approaches the speed of light.
+
+\subsection{$\ket{\vb{v}}$ Approaching Speed of Light}
+
+Following the same logic, when the velocity $\ket{\vb{v}} = c\ket{\vb{n}}$, the modulus of
+the velocity $\ket{\vb{u}}$ reads,
+\begin{equation}
+  u^2 = \frac{c^2}{\displaystyle\left(1 + \frac{\ip{\vb{u}'}{\vb{n}}}{c}\right)^2}
+  \left(1 + \frac{\ip{\vb{u}'}{\vb{n}}}{c}\right)^2 = c^2
+\end{equation}
+independently of the value of the velocity $\ket{\vb{u}'}$.
+
+\end{document}

@@ -3,22 +3,14 @@
 import '@mcpab/mui-theme/mui-augment';
 import { createSiteTheme } from '@mcpab/mui-theme';
 import { ThemeProvider } from '@mui/material/styles';
-import { Inter, STIX_Two_Text } from 'next/font/google';
 import CssBaseline from '@mui/material/CssBaseline';
-import { brown, blueGrey, grey } from '@mui/material/colors';
-//
+import { brown, grey } from '@mui/material/colors';
 
-const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-});
+const interfaceFontFamily = 'var(--font-inter)';
+const contentFontFamily = 'var(--font-stix-two-text)';
 
-const stixTwoText = STIX_Two_Text({
-  subsets: ['latin'],
-  display: 'swap',
-});
-
-//
+const backGroundColor = grey[900];
+const paperColor = grey[800];
 
 export const theme = createSiteTheme({
   preset: {
@@ -26,17 +18,23 @@ export const theme = createSiteTheme({
       mode: 'dark',
 
       background: {
-        default: blueGrey[900],
-        paper: brown[50],
+        default: backGroundColor,
+        paper: paperColor,
       },
 
       text: {
-        primary: blueGrey[900],
-        secondary: blueGrey[700],
+        primary: '#f1ebe4',
+        secondary: '#d0c5ba',
+      },
+
+      divider: 'rgba(241, 235, 228, 0.22)',
+
+      action: {
+        hover: 'rgba(241, 235, 228, 0.07)',
       },
 
       primary: {
-        main: brown[50],
+        main: brown[100],
       },
 
       secondary: {
@@ -45,47 +43,49 @@ export const theme = createSiteTheme({
     },
 
     typography: {
-      fontFamily: inter.style.fontFamily,
+      fontFamily: interfaceFontFamily,
 
-      h1: { fontFamily: stixTwoText.style.fontFamily },
-      h2: { fontFamily: stixTwoText.style.fontFamily },
-      h3: { fontFamily: stixTwoText.style.fontFamily },
-      h4: { fontFamily: stixTwoText.style.fontFamily },
+      h1: { fontFamily: contentFontFamily },
+      h2: { fontFamily: contentFontFamily },
+      h3: { fontFamily: contentFontFamily },
+      h4: { fontFamily: contentFontFamily },
 
       narrative: {
-        fontFamily: stixTwoText.style.fontFamily,
+        fontFamily: contentFontFamily,
       },
       lead: {
-        fontFamily: stixTwoText.style.fontFamily,
+        fontFamily: contentFontFamily,
       },
       quote: {
-        fontFamily: stixTwoText.style.fontFamily,
+        fontFamily: contentFontFamily,
       },
 
       button: {
-        fontFamily: inter.style.fontFamily,
+        fontFamily: interfaceFontFamily,
       },
       caption: {
-        fontFamily: inter.style.fontFamily,
+        fontFamily: interfaceFontFamily,
       },
       eyebrow: {
-        fontFamily: inter.style.fontFamily,
+        fontFamily: interfaceFontFamily,
       },
       finePrint: {
-        fontFamily: inter.style.fontFamily,
+        fontFamily: interfaceFontFamily,
       },
       strapline: {
-        fontFamily: inter.style.fontFamily,
+        fontFamily: interfaceFontFamily,
       },
     },
     components: {
       MuiCssBaseline: {
         styleOverrides: {
           html: {
-            backgroundColor: grey[900],
+            backgroundColor: backGroundColor,
+            fontFamily: interfaceFontFamily,
           },
           body: {
-            backgroundColor: grey[900]
+            backgroundColor: backGroundColor,
+            fontFamily: interfaceFontFamily,
           },
         },
       },

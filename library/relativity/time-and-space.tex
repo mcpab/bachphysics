@@ -1,0 +1,651 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+
+\newcommand{\ip}[2]{\langle #1 \mid #2 \rangle}
+
+\title{The Transformation of Time and Space}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+ 
+% ============================================================
+\section{Introduction}
+% ============================================================
+
+In his seminal article, Einstein elegantly derived the Lorentz transformation for time and
+space between systems moving at constant relative velocity. His original derivation assumed
+that the relative velocity was aligned with the $x$-axis, and implicitly considered the
+measurement of length perpendicular to this velocity direction to be consistent in both
+systems. In this section, we will follow Einstein's reasoning and extend the derivation to a
+more general case---a boost in any arbitrary direction. Our goals are as follows:
+
+\begin{enumerate}
+  \item \textbf{General Boost Transformation:}
+    \begin{itemize}
+      \item We will derive the Lorentz transformation for a general boost, where the relative
+            velocity is represented by an arbitrary vector.
+      \item This broader approach allows us to handle boosts in any direction, not just along
+            the $x$-axis.
+    \end{itemize}
+  \item \textbf{Preserving Length Perpendicular to Velocity:}
+    \begin{itemize}
+      \item We will explicitly discuss the conditions that ensure the preservation of lengths
+            perpendicular to the velocity direction.
+      \item This consideration is crucial for maintaining consistency across reference frames.
+    \end{itemize}
+  \item \textbf{Time Transformation via Clock Synchronization:}
+    \begin{itemize}
+      \item Following Einstein's original method, we will derive the transformation of time
+            based on clock synchronization.
+      \item This step lays the foundation for our subsequent analysis.
+    \end{itemize}
+  \item \textbf{Lorentz Transformation for Time and Space:}
+    \begin{itemize}
+      \item Leveraging the invariance of the speed of light, we will derive a concise
+            expression for both time and space transformations.
+    \end{itemize}
+\end{enumerate}
+
+\textbf{Assumptions and Prerequisites:} We assume that readers are familiar with advanced
+calculus, linear algebra, and the fundamental principles of Special Relativity. We will make
+use of the bra-ket notation, which readers can get familiar with at
+\url{https://en.wikipedia.org/wiki/Bra\%E2\%80\%93ket_notation}.
+
+% ============================================================
+\section{Synchronization of Clocks}
+% ============================================================
+
+In Special Relativity, the concept of clock synchronization assumes a pivotal role in
+developing the Lorentz transformation of time and space. Although seemingly straightforward,
+we will delve into a detailed explanation of this fundamental concept, as defining
+synchronization becomes essential for determining when events occur simultaneously.
+
+Let us delve into the starting point of our exploration. Imagine two observers, A and B, both
+at rest within the same reference system but positioned at different locations. These
+observers, A and B, each have their own clocks, measuring time independently.
+
+Now, let us imagine an experiment where a photon is emitted from A, travels to B, and gets
+reflected back to its origin in A. Observer A records the time of emission as $t_1$, while
+observer B notes the time of reflection as $t_2$. Finally, A marks the time of the photon
+arrival as $t_3$. We assume that both A and B have access to each other's time recordings
+(for example they would exchange data after the experiment). A possible outcome of this
+experiment could be as per the table below (units of time are not relevant in this
+discussion):
+
+\begin{center}
+\begin{tabular}{ccc}
+\toprule
+Time in A & Time in B & Event \\
+\midrule
+1 & 2 & Emission, $t_1 = 1$ \\
+3 & 4 & Reflection, $t_2 = 4$ \\
+5 & 6 & Arrival, $t_3 = 5$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+If the observer at point B used the time difference $t_2 - t_1$ to compute the time needed
+for the photon to reach B, they would obtain an incorrect result of 3 instead of the actual
+value of 2. More worrisome, the time difference $(t_3 - t_2)$ would be 1, indicating a
+relative motion of the two observers who are at rest in the same reference system. These
+discrepancies occur because the two clocks are not synchronized.
+
+The way for B to synchronize their clock with A is to record the time stamp $t_1$, wait for
+the photon to get back to A, ask A for $t_3$, and set the clock in B such that:
+\begin{equation}
+  t_2 - t_1 = t_3 - t_2
+  \label{eq:clock_synchronization}
+\end{equation}
+which is realized in this case by setting their clock back 1 unit.
+
+The synchronization of clocks is essential for determining how time and space are measured
+when we consider events observed by two systems of reference now in motion with respect to
+each other. This is the subject of the next sections.
+
+% ============================================================
+\section{Transformation of Time}
+% ============================================================
+
+In this section we will derive the equation for the transformation of time between two
+systems of reference moving at constant relative velocity.
+
+\subsection{The Mirror Experiment}
+
+Let us explore the mirror experiment from the perspective of a new reference frame. In this
+scenario, the mirror and the emitting source are both at rest within a system of reference
+$F'$, which itself is in motion relative to another system of reference $F$. Observers in $F$
+measure time and distance as $t$ and $x_1, x_2, x_3$, while observers in $F'$ measure time
+and distance as $t'$ and $x'_1, x'_2, x'_3$. We assume that at time zero the origin of the
+systems coincide.
+
+\subsubsection*{Experiment Observed from $F'$}
+
+The source is located at the origin of $F'$ and the mirror is positioned at a fixed distance
+along an arbitrary direction. A photon is emitted at a time $t'_0$, it reaches the mirror at
+time $t'_1$ where it is reflected, and it arrives back at the source at time $t'_2$.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.6\textwidth]{movingframes.jpg}
+  \caption{Fig~1: Photon Emission and Reflection in $F'$}
+\end{figure}
+
+As we assume that the clocks in $F'$ are synchronized, the following relation holds true:
+\begin{equation}
+  \frac{1}{2}(t'_0 + t'_2) = t'_1
+  \label{eq:clock_synchronization_Fprime}
+\end{equation}
+
+\subsubsection*{Experiment Observed from $F$}
+
+Now we examine the three events---emission, reflection, and arrival back at the source---from
+the viewpoint of reference frame $F$. It is crucial to emphasize that all time, velocity, and
+distance quantities in this section \textit{are assumed to be measured within the system of
+reference} $F$.
+
+The photon is emitted from the source at time $t_0$ and at the position $\vb{v}\, t_0$ where
+$\vb{v}$ is the velocity of $F'$ measured from $F$.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.6\textwidth]{movingframes1.jpg}
+  \caption{Fig~2: Velocities and positions of the photon seen from $F$}
+\end{figure}
+
+The photon travels to the mirror with speed $\vb{c}_{up} = \vb{c}_1 + \vb{v}$, and it
+reaches it at a time:
+\begin{equation}
+  t_1 = t_0 + \frac{l}{|\vb{c}_1|} = t_0 + \frac{l}{|\vb{c}_{up} - \vb{v}|}
+\end{equation}
+where $l$ is the distance of the mirror from the source measured from $F$, and $\vb{c}_1$ is
+the photon velocity in $F'$ as observed in $F$. When the photon reaches the mirror its
+position will be
+\begin{equation}
+  \vb{v}\, t_1 + (\vb{c}_{up} - \vb{v})(t_1 - t_0)
+  = \vb{v}\, t_0 + l\,\frac{\vb{c}_{up}}{|\vb{c}_{up} - \vb{v}|}
+\end{equation}
+
+The time $t_2$ when the photon reaches the source back again is
+\begin{equation}
+  t_2 = t_1 + \frac{l}{|\vb{c}_{down} - \vb{v}|}
+      = t_0 + \frac{l}{|\vb{c}_{up} - \vb{v}|} + \frac{l}{|\vb{c}_{down} - \vb{v}|}
+\end{equation}
+where $\vb{c}_{down}$ is the photon velocity returning to the source. The position of the
+photon when it meets the source is,
+\begin{equation}
+  \vb{v}\, t_2 = \vb{v}\, t_0
+    + \vb{v}\, \frac{l}{|\vb{c}_{up} - \vb{v}|}
+    + \frac{l}{|\vb{c}_{down} - \vb{v}|}.
+\end{equation}
+
+To derive the Lorentz transformation, we will assume the existence of a functional
+relationship between $t'$ and $t$,
+\begin{align}
+  t' &: F \rightarrow \mathbb{R} \\
+  t' &= t'(\vb{x}, t)
+\end{align}
+and formally, the events of emission, reflection and meeting the source again will be observed
+in $F'$ as
+\begin{align}
+  t'_0 &= t'(\vb{v}\, t_0,\; t_0) \\
+  t'_1 &= t'\!\left(
+    \vb{v}\, t_0 + l\,\frac{\vb{c}_{up}}{|\vb{c}_{up} - \vb{v}|},\;
+    t_0 + \frac{l}{|\vb{c}_{up} - \vb{v}|}
+  \right) \\
+  t'_2 &= t'\!\left(
+    \vb{v}\, t_0 + \vb{v}\, l
+      \bigl(|\vb{c}_{up} - \vb{v}|^{-1} + |\vb{c}_{down} - \vb{v}|^{-1}\bigr),\;
+    t_0 + l\bigl(|\vb{c}_{up} - \vb{v}|^{-1} + |\vb{c}_{down} - \vb{v}|^{-1}\bigr)
+  \right)
+\end{align}
+
+Expanding the function $f(l): \mathbb{R} \rightarrow \mathbb{R}$,
+\begin{equation}
+  f(l) = t'\!\left(
+    \vb{v}\, t_0 + l\,\frac{\vb{c}_{up}}{|\vb{c}_{up} - \vb{v}|},\;
+    t_0 + \frac{l}{|\vb{c}_{up} - \vb{v}|}
+  \right)
+\end{equation}
+in Taylor series around zero we obtain,
+\begin{equation}
+  t'_1 = t'(\vb{v}\, t_0,\; t_0)
+    + l\,|\vb{c}_{up} - \vb{v}|^{-1}
+      \ip{\grad t'}{(\vb{c}_{up}, 1)} + o(l^2).
+\end{equation}
+
+A similar expression holds true for $t'_2$,
+\begin{equation}
+  t'_2 = t'(\vb{v}\, t_0)
+    + l\bigl(|\vb{c}_{up} - \vb{v}|^{-1} + |\vb{c}_{down} - \vb{v}|^{-1}\bigr)
+      \ip{\grad t'}{(\vb{v}, 1)} + o(l^2)
+\end{equation}
+
+Using the synchronization condition of \eqref{eq:clock_synchronization_Fprime}, we arrive at
+the differential equation in $t'$ (for $l \to 0$),
+\begin{equation}
+  \ip{\grad t'}{\vb{w}} = 0
+\end{equation}
+where,
+\begin{equation}
+  \vb{w} = \Bigl(
+    \vb{v}\bigl(|\vb{c}_{up} - \vb{v}|^{-1} + |\vb{c}_{down} - \vb{v}|^{-1}\bigr)
+    - 2\vb{c}_{up}|\vb{c}_{up} - \vb{v}|^{-1},\;
+    |\vb{c}_{up} - \vb{v}|^{-1} - |\vb{c}_{down} - \vb{v}|^{-1}
+  \Bigr).
+\end{equation}
+
+Assuming a linear relationship between the time in $F'$ and the coordinates in $F$ as,
+\begin{equation}
+  t' = \vb{p} \cdot \vb{x} + \beta\, t
+\end{equation}
+where $\vb{p}$ is a vector transforming the spatial coordinates and $\beta$ is the coefficient
+transforming time, we arrive at the linear equation in $\vb{p}$ and $\beta$
+\begin{equation}
+  \vb{p} \cdot \bigl[
+    \vb{v}(|\vb{c}_{up} - \vb{v}|^{-1} + |\vb{c}_{down} - \vb{v}|^{-1})
+    - 2\vb{c}_{up}|\vb{c}_{up} - \vb{v}|^{-1}
+  \bigr]
+  + \beta\bigl(|\vb{c}_{up} - \vb{v}|^{-1} - |\vb{c}_{down} - \vb{v}|^{-1}\bigr) = 0
+  \label{eq:condition_on_p}
+\end{equation}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{fig1.png}
+  \caption{Fig~3: The photon velocities}
+\end{figure}
+
+Equation~\eqref{eq:condition_on_p} can be further simplified if we look in detail at the
+direction of the vectors $\vb{v}$, $\vb{c}_{down}$ and $\vb{c}_{up}$. Since the photon in
+$F'$ follows the same direction going to the mirror and back to the source,
+$\vb{c}_{down} - \vb{v}$ and $\vb{c}_{up} - \vb{v}$ are parallel, but have different
+magnitude; hence $\vb{c}_{up}$, $\vb{c}_{down}$ and $\vb{v}$ are all in the same plane, see
+Fig.~3.
+
+In the system of reference of three mutually orthogonal unit vectors $\vb{e}_1$, $\vb{e}_2$,
+and $\vb{e}_3$, with $\vb{e}_1$ and $\vb{e}_2$ in the same plane of $\vb{c}_{up}$ and
+$\vb{v}$, and $\vb{e}_1$ in the same direction of $\mathbf{v}$, the vector $\mathbf{p}$ has
+components,
+\begin{equation}
+  \vb{p} = p_1\,\vb{e}_1 + p_2\,\vb{e}_2 + p_3\,\vb{e}_3
+\end{equation}
+and equation~\eqref{eq:condition_on_p} simplifies to
+\begin{equation}
+  p_1\, v\bigl(|\vb{c}_{up} - \vb{v}|^{-1} + |\vb{c}_{down} - \vb{v}|^{-1}\bigr)
+  - 2c(p_1\cos\alpha + p_2\sin\alpha)|\vb{c}_{up} - \vb{v}|^{-1}
+  + \beta\bigl(|\vb{c}_{up} - \vb{v}|^{-1} - |\vb{c}_{down} - \vb{v}|^{-1}\bigr) = 0
+\end{equation}
+as $p_3$ can be set to zero as it is orthogonal to the plane of $\vb{c}_{down}$ and $\vb{v}$.
+From
+\begin{equation}
+  \cos\alpha = \frac{c^2 + v^2 - |\vb{c}_{up} - \vb{v}|^2}{2vc}
+\end{equation}
+we arrive at
+\begin{equation}
+  p_1\,\frac{c^2}{v} + \beta
+  + p_2\,\frac{2c\sin\alpha\,|\vb{c}_{up} - \vb{v}|}{|\vb{c}_{up} - \vb{v}| - |\vb{c}_{down} - \vb{v}|}
+  = 0 \quad \forall\, \alpha, v
+\end{equation}
+which has solutions
+\begin{align}
+  p_1 &= -\beta\,\frac{v}{c^2} \\
+  p_2 &= 0
+\end{align}
+
+The transformation of time between $F'$ and $F$ becomes then
+\begin{equation}
+  ct' = \beta\!\left(-\frac{v}{c}\ip{\vb{e}_1}{\vb{x}} + ct\right)
+  \label{eq:transformation_of_time}
+\end{equation}
+where $\beta$ is a constant depending on the velocity.
+
+% ============================================================
+\section{Transformation of Space}
+% ============================================================
+
+\subsection{General Form of the Lorentz Transformation}
+
+The Lorentz transformation describes how the coordinates and the time of the same event
+observed in $F$ and $F'$ are related to each other, and it is assumed to be linear
+\begin{equation}
+  \vb{X}' = \boldsymbol{\Lambda}(\vb{v})\,\vb{X}
+\end{equation}
+where $\boldsymbol{\Lambda}(\vb{v})$ is a matrix depending only on the velocity vector
+$\vb{v}$, and $\vb{X}$ is the so-called four-vector
+\begin{equation}
+  \vb{X} = (x_1, x_2, x_3, ct).
+\end{equation}
+A four-vector can be represented as a sum of ket vectors formed from a unitary triplet of
+orthogonal vectors $\vb{e}_1$, $\vb{e}_2$ and $\vb{e}_3$, with $\vb{e}_1$ chosen parallel to
+$\vb{v}$:
+\begin{equation}
+  \vb{X} = x_1\ket{\vb{e}_1, 0} + x_2\ket{\vb{e}_2, 0} + x_3\ket{\vb{e}_3, 0}
+           + ct\ket{\vb{0}, 1}
+\end{equation}
+and the Lorentz transformation $\boldsymbol{\Lambda}(\vb{v})$ in its most general form
+becomes
+\begin{equation}
+  \begin{aligned}
+    \boldsymbol{\Lambda}(\vb{v}) =\;
+      &\lambda_{1,1}\ket{\vb{e}_1,0}\bra{\vb{e}_1,0}
+      + \lambda_{1,2}\ket{\vb{e}_1,0}\bra{\vb{e}_2,0}
+      + \lambda_{1,3}\ket{\vb{e}_1,0}\bra{\vb{e}_3,0}
+      + \lambda_{1,4}\ket{\vb{e}_1,0}\bra{\vb{0},1} \\
+    +\;&\lambda_{2,1}\ket{\vb{e}_2,0}\bra{\vb{e}_1,0}
+      + \lambda_{2,2}\ket{\vb{e}_2,0}\bra{\vb{e}_2,0}
+      + \lambda_{2,3}\ket{\vb{e}_2,0}\bra{\vb{e}_3,0}
+      + \lambda_{2,4}\ket{\vb{e}_2,0}\bra{\vb{0},1} \\
+    +\;&\lambda_{3,1}\ket{\vb{e}_3,0}\bra{\vb{e}_1,0}
+      + \lambda_{3,2}\ket{\vb{e}_3,0}\bra{\vb{e}_2,0}
+      + \lambda_{3,3}\ket{\vb{e}_3,0}\bra{\vb{e}_3,0}
+      + \lambda_{3,4}\ket{\vb{e}_3,0}\bra{\vb{0},1} \\
+    +\;&\lambda_{4,1}\ket{\vb{0},1}\bra{\vb{e}_1,0}
+      + \lambda_{4,2}\ket{\vb{0},1}\bra{\vb{e}_2,0}
+      + \lambda_{4,3}\ket{\vb{0},1}\bra{\vb{e}_3,0}
+      + \lambda_{4,4}\ket{\vb{0},1}\bra{\vb{0},1}
+  \end{aligned}
+  \label{eq:general_Lorentz}
+\end{equation}
+where $\lambda_{i,j}$ are sixteen free parameters. The transformation of time
+\eqref{eq:transformation_of_time} can be utilized to identify some of the $\lambda_{i,j}$ but
+not all of them: assumptions need to be made on how events are observed in $F$ and $F'$ to
+restrict the possible choices for $\lambda_{i,j}$.
+
+\subsection{The Transformation of Time}
+
+The transformation $\boldsymbol{\Lambda}(\vb{v})$ applied to a four-vector with only a time
+component $\vb{X} = x_4\ket{\vb{0},1}$ gives,
+\begin{equation}
+  \boldsymbol{\Lambda}\, x_4\ket{\vb{0},1}
+  = x_4\!\left(
+      \lambda_{1,4}\ket{\vb{e}_1,0}
+    + \lambda_{2,4}\ket{\vb{e}_2,0}
+    + \lambda_{3,4}\ket{\vb{e}_3,0}
+    + \lambda_{4,4}\ket{\vb{0},1}
+  \right)
+\end{equation}
+but from the transformation of time \eqref{eq:transformation_of_time} there are only
+components along $\vb{e}_1$ and time, hence $\lambda_{2,4} = \lambda_{3,4} = 0$.
+
+\subsection{First Assumption: Preserve Direction Along $\vb{e}_1$}
+
+The first assumption we make is that the direction $\vb{e}_1$ is invariant, meaning that an
+event in $F$ with components only along $\vb{e}_1$ will not have components along the other
+directions in $F'$. Given an event
+$\vb{X} = x_1\ket{\vb{e}_1, 0} + x_4\ket{\vb{0}, 1}$, its transformation in $F'$ will be,
+\begin{equation}
+  \begin{aligned}
+    \boldsymbol{\Lambda}(\vb{v})\bigl(x_1\ket{\vb{e}_1,0} + x_4\ket{\vb{0},1}\bigr)
+    &= x_1\!\left(
+        \lambda_{1,1}\ket{\vb{e}_1,0}
+      + \lambda_{2,1}\ket{\vb{e}_2,0}
+      + \lambda_{3,1}\ket{\vb{e}_3,0}
+      + \lambda_{4,1}\ket{\vb{0},1}
+    \right) \\
+    &\quad + x_4\!\left(\lambda_{1,4}\ket{\vb{e}_1,0} + \lambda_{4,4}\ket{\vb{0},1}\right)
+  \end{aligned}
+\end{equation}
+this results in $\lambda_{2,1} = \lambda_{3,1} = 0$ to satisfy our assumption.
+The general form \eqref{eq:general_Lorentz} further simplifies as,
+\begin{equation}
+  \begin{aligned}
+    \boldsymbol{\Lambda}(\vb{v}) =\;
+      &\lambda_{1,1}\ket{\vb{e}_1,0}\bra{\vb{e}_1,0}
+      + \lambda_{1,2}\ket{\vb{e}_1,0}\bra{\vb{e}_2,0}
+      + \lambda_{1,3}\ket{\vb{e}_1,0}\bra{\vb{e}_3,0}
+      + \lambda_{1,4}\ket{\vb{e}_1,0}\bra{\vb{0},1} \\
+    +\;&\lambda_{2,2}\ket{\vb{e}_2,0}\bra{\vb{e}_2,0}
+      + \lambda_{2,3}\ket{\vb{e}_2,0}\bra{\vb{e}_3,0} \\
+    +\;&\lambda_{3,2}\ket{\vb{e}_3,0}\bra{\vb{e}_2,0}
+      + \lambda_{3,3}\ket{\vb{e}_3,0}\bra{\vb{e}_3,0} \\
+    +\;&\lambda_{4,1}\ket{\vb{0},1}\bra{\vb{e}_1,0}
+      + \lambda_{4,2}\ket{\vb{0},1}\bra{\vb{e}_2,0}
+      + \lambda_{4,3}\ket{\vb{0},1}\bra{\vb{e}_3,0}
+      + \lambda_{4,4}\ket{\vb{0},1}\bra{\vb{0},1}
+  \end{aligned}
+\end{equation}
+
+\subsection{Second Assumption: Invariance Orthogonal to $\vb{e}_1$}
+
+The second assumption needed is that the spatial components along $\ket{\vb{e}_2,0}$ and
+$\ket{\vb{e}_3,0}$ of any event preserve their direction and length under
+$\boldsymbol{\Lambda}(\vb{v})$. For an event
+$\vb{X} = x_2\ket{\vb{e}_2, 0} + x_3\ket{\vb{e}_3, 0}$, the corresponding event in $F'$
+will be,
+\begin{equation}
+  \begin{aligned}
+    \boldsymbol{\Lambda}(\vb{v})\bigl(x_2\ket{\vb{e}_2,0} + x_3\ket{\vb{e}_3,0}\bigr)
+    &= x_2\!\left(
+        \lambda_{1,2}\ket{\vb{e}_1,0}
+      + \lambda_{2,2}\ket{\vb{e}_2,0}
+      + \lambda_{3,2}\ket{\vb{e}_3,0}
+    \right) \\
+    &\quad + x_3\!\left(
+        \lambda_{1,3}\ket{\vb{e}_1,0}
+      + \lambda_{2,3}\ket{\vb{e}_2,0}
+      + \lambda_{3,3}\ket{\vb{e}_3,0}
+    \right).
+  \end{aligned}
+\end{equation}
+Our assumption is satisfied if $\lambda_{1,2} = \lambda_{1,3} = \lambda_{2,3} = \lambda_{3,2}
+= 0$ and $\lambda_{2,2} = \lambda_{3,3} = 1$, which results in a further simplification of
+$\boldsymbol{\Lambda}(\vb{v})$:
+\begin{equation}
+  \begin{aligned}
+    \boldsymbol{\Lambda}(\vb{v}) =\;
+      &\lambda_{1,1}\ket{\vb{e}_1,0}\bra{\vb{e}_1,0}
+      + \lambda_{1,4}\ket{\vb{e}_1,0}\bra{\vb{0},1} \\
+    +\;&\ket{\vb{e}_2,0}\bra{\vb{e}_2,0} \\
+    +\;&\ket{\vb{e}_3,0}\bra{\vb{e}_3,0} \\
+    +\;&\lambda_{4,1}\ket{\vb{0},1}\bra{\vb{e}_1,0}
+      + \lambda_{4,2}\ket{\vb{0},1}\bra{\vb{e}_2,0}
+      + \lambda_{4,3}\ket{\vb{0},1}\bra{\vb{e}_3,0}
+      + \lambda_{4,4}\ket{\vb{0},1}\bra{\vb{0},1}
+  \end{aligned}
+\end{equation}
+
+Using the transformation of time \eqref{eq:transformation_of_time}, we arrive at the final
+functional form of $\boldsymbol{\Lambda}(\vb{v})$
+\begin{equation}
+  \begin{aligned}
+    \boldsymbol{\Lambda}(\vb{v}) =\;
+      &\lambda_{1,1}\ket{\vb{e}_1,0}\bra{\vb{e}_1,0}
+      + \lambda_{1,4}\ket{\vb{e}_1,0}\bra{\vb{0},1}
+      + \ket{\vb{e}_2,0}\bra{\vb{e}_2,0}
+      + \ket{\vb{e}_3,0}\bra{\vb{e}_3,0} \\
+      &- \beta\,\frac{v}{c}\ket{\vb{0},1}\bra{\vb{e}_1,0}
+      + \beta\ket{\vb{0},1}\bra{\vb{0},1}
+  \end{aligned}
+  \label{eq:simplified_Lorentz}
+\end{equation}
+Finally, the constants $\lambda_{1,1}$, $\lambda_{2,2}$, $\lambda_{3,3}$, and $\beta$ must be
+positive to prevent axis reflection.
+
+\subsection{Third Assumption: Invariance of Light Speed}
+
+In Special Relativity the spacetime interval between two events $(x_1, y_1, z_1, ct_1)$ and
+$(x_2, y_2, z_2, ct_2)$ is defined as
+\begin{equation}
+  \Delta s^2 = (x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2 - c^2(t_2 - t_1)^2
+\end{equation}
+and can be written in bi-linear form as
+\begin{equation}
+  \Delta s^2 = \ip{\vb{X}}{\vb{M}\,\vb{X}}
+\end{equation}
+where $\vb{X} = (x_2 - x_1,\; y_2 - y_1,\; z_2 - z_1,\; c(t_2 - t_1))$ and
+\begin{equation}
+  \vb{M} =
+  \begin{pmatrix}
+    1 & 0 & 0 &  0 \\
+    0 & 1 & 0 &  0 \\
+    0 & 0 & 1 &  0 \\
+    0 & 0 & 0 & -1
+  \end{pmatrix}
+\end{equation}
+
+A spacetime interval measured in $F'$ is linked to the same interval in $F$ by the Lorentz
+transformation
+\begin{equation}
+  \Delta s'^2
+  = \ip{\vb{X}'}{\vb{M}\,\vb{X}'}
+  = \ip{\boldsymbol{\Lambda}\vb{X}}{\vb{M}\,\boldsymbol{\Lambda}\vb{X}}
+  = \ip{\vb{X}}{\boldsymbol{\Lambda}^T\vb{M}\,\boldsymbol{\Lambda}\,\vb{X}}
+\end{equation}
+
+In the system $F$ we consider a photon moving along a unit vector $\vb{n}$. The photon at
+time $t_1$ is in the position $\vb{x}_1$, and moves to the position
+$\vb{x}_1 + \vb{n}\,c(t_2 - t_1)$ at the time $t_2$. The spacetime interval in $F$ of the
+two events is identically zero,
+\begin{equation}
+  \Delta s^2 = c^2(t_2 - t_1)^2\|\vb{n}\|^2 - c^2(t_2 - t_1)^2 = 0
+\end{equation}
+
+When we examine two events occurring along the trajectory of a photon (referred to as the
+photon's world line), the spacetime interval $\Delta' s^2$ in $F'$ must also be zero, assuming
+that the speed of light $c$ remains invariant,
+\begin{equation}
+  \ip{
+    \bigl(c(t_2-t_1)\vb{n},\; c(t_2-t_1)\bigr)
+  }{
+    \boldsymbol{\Lambda}^T\vb{M}\,\boldsymbol{\Lambda}
+    \cdot\bigl(c(t_2-t_1)\vb{n},\; c(t_2-t_1)\bigr)
+  } = 0
+\end{equation}
+equivalent to,
+\begin{equation}
+  \ip{(\vb{n},1)}{\boldsymbol{\Lambda}^T\vb{M}\,\boldsymbol{\Lambda}\cdot(\vb{n},1)}
+  = 0
+  \label{eq:invariance_light_speed}
+\end{equation}
+for all $\vb{n}$ such that $\|\vb{n}\| = 1$.
+
+To solve the equation above we need $\vb{M}\,\boldsymbol{\Lambda}$, which is
+$\boldsymbol{\Lambda}$ with the time component's sign changed,
+\begin{equation}
+  \begin{aligned}
+    \vb{M}\,\boldsymbol{\Lambda}(\vb{v}) =\;
+      &\lambda_{1,1}\ket{\vb{e}_1,0}\bra{\vb{e}_1,0}
+      + \lambda_{1,4}\ket{\vb{e}_1,0}\bra{\vb{0},1}
+      + \lambda_{2,2}\ket{\vb{e}_2,0}\bra{\vb{e}_2,0}
+      + \lambda_{3,3}\ket{\vb{e}_3,0}\bra{\vb{e}_3,0} \\
+      &+ \beta\,\frac{v}{c}\ket{\vb{0},1}\bra{\vb{e}_1,0}
+      - \beta\ket{\vb{0},1}\bra{\vb{0},1}
+  \end{aligned}
+\end{equation}
+
+and $\boldsymbol{\Lambda}^T$ is readily obtained by exchanging the bra and ket vectors,
+\begin{equation}
+  \begin{aligned}
+    \boldsymbol{\Lambda}(\vb{v})^T =\;
+      &\lambda_{1,1}\ket{\vb{e}_1,0}\bra{\vb{e}_1,0}
+      + \lambda_{1,4}\ket{\vb{0},1}\bra{\vb{e}_1,0}
+      + \lambda_{2,2}\ket{\vb{e}_2,0}\bra{\vb{e}_2,0}
+      + \lambda_{3,3}\ket{\vb{e}_3,0}\bra{\vb{e}_3,0} \\
+      &- \beta\,\frac{v}{c}\ket{\vb{e}_1,0}\bra{\vb{0},1}
+      + \beta\ket{\vb{0},1}\bra{\vb{0},1}
+  \end{aligned}
+\end{equation}
+
+The product $\boldsymbol{\Lambda}(\vb{v})^T\vb{M}\,\boldsymbol{\Lambda}(\vb{v})$ is
+\begin{equation}
+  \begin{aligned}
+    &\left(\lambda_{1,1}^2 - \beta^2\frac{v^2}{c^2}\right)\ket{\vb{e}_1,0}\bra{\vb{e}_1,0} \\
+    +\;&\left(\lambda_{1,1}\lambda_{1,4} + \beta^2\frac{v}{c}\right)
+      \bigl(\ket{\vb{0},1}\bra{\vb{e}_1,0} + \ket{\vb{e}_1,0}\bra{\vb{0},1}\bigr) \\
+    +\;&\lambda_{2,2}^2\ket{\vb{e}_2,0}\bra{\vb{e}_2,0}
+      + \lambda_{3,3}^2\ket{\vb{e}_3,0}\bra{\vb{e}_3,0} \\
+    +\;&\left(\lambda_{1,4}^2 - \beta^2\right)\ket{\vb{0},1}\bra{\vb{0},1}
+  \end{aligned}
+\end{equation}
+
+and the equation for the invariance of speed of light \eqref{eq:invariance_light_speed} reads,
+\begin{equation}
+  \left(\lambda_{1,1}^2 - \beta^2\frac{v^2}{c^2}\right)n_1^2
+  + 2\left(\lambda_{1,1}\lambda_{1,4} + \beta^2\frac{v}{c}\right)n_1
+  + n_2^2 + n_3^2
+  + \left(\lambda_{1,4}^2 - \beta^2\right) = 0
+\end{equation}
+
+The above equation is identically zero for all $\vb{n}$ such that $\|\vb{n}\| = 1$ only if,
+\begin{align}
+  \lambda_{1,1}^2 - \beta^2\displaystyle\frac{v^2}{c^2} &= 1 \\
+  \lambda_{1,1}\lambda_{1,4} + \beta^2\displaystyle\frac{v}{c} &= 0 \\
+  \lambda_{1,4}^2 - \beta^2 &= -1
+\end{align}
+which has the following admissible solutions,
+\begin{align}
+  \beta         &= \frac{1}{\displaystyle\sqrt{1 - \frac{v^2}{c^2}}} \\
+  \lambda_{1,1} &= \beta \\
+  \lambda_{1,4} &= -\frac{v}{c}\,\beta
+\end{align}
+
+The Lorentz transformation takes the final form
+\begin{equation}
+  \boldsymbol{\Lambda}(\vb{v}) =
+    \beta\ket{\vb{e}_1,0}\bra{\vb{e}_1,0}
+    - \beta\,\frac{v}{c}\ket{\vb{e}_1,0}\bra{\vb{0},1}
+    + \ket{\vb{e}_2,0}\bra{\vb{e}_2,0}
+    + \ket{\vb{e}_3,0}\bra{\vb{e}_3,0}
+    - \beta\,\frac{v}{c}\ket{\vb{0},1}\bra{\vb{e}_1,0}
+    + \beta\ket{\vb{0},1}\bra{\vb{0},1}
+  \label{eq:Lorentz_transformation}
+\end{equation}
+
+The inverse of $\boldsymbol{\Lambda}(\vb{v})$ transforms the coordinates from $F'$ to $F$ and
+can be readily obtained by exchanging the velocity sign, as it can be verified directly:
+\begin{equation}
+  \boldsymbol{\Lambda}^{-1}(\vb{v}) = \boldsymbol{\Lambda}(-\vb{v}) =
+    \beta\ket{\vb{e}_1,0}\bra{\vb{e}_1,0}
+    + \beta\,\frac{v}{c}\ket{\vb{e}_1,0}\bra{\vb{0},1}
+    + \ket{\vb{e}_2,0}\bra{\vb{e}_2,0}
+    + \ket{\vb{e}_3,0}\bra{\vb{e}_3,0}
+    + \beta\,\frac{v}{c}\ket{\vb{0},1}\bra{\vb{e}_1,0}
+    + \beta\ket{\vb{0},1}\bra{\vb{0},1}
+  \label{eq:Lorentz_inverse}
+\end{equation}
+
+The Lorentz transformation written explicitly in terms of the velocity vector, using
+$\ket{\vb{e}_1,0} = \ket{\vb{v},0}/v$, reads,
+\begin{equation}
+  \boldsymbol{\Lambda}(\vb{v}) =
+    \frac{\beta}{v^2}\ket{\vb{v},0}\bra{\vb{v},0}
+    - \frac{\beta}{c}\ket{\vb{v},0}\bra{\vb{0},1}
+    + \ket{\vb{e}_2,0}\bra{\vb{e}_2,0}
+    + \ket{\vb{e}_3,0}\bra{\vb{e}_3,0}
+    - \frac{\beta}{c}\ket{\vb{0},1}\bra{\vb{v},0}
+    + \beta\ket{\vb{0},1}\bra{\vb{0},1}
+  \label{eq:Lorentz_in_velocity}
+\end{equation}
+
+When $\vb{v}$ has the direction of the $x$-axis, the transformation simplifies to the original
+Einstein formula:
+\begin{align}
+  x' &= \beta(x - vt)               \nonumber \\
+  y' &= y                            \nonumber \\
+  z' &= z                            \nonumber \\
+  t' &= \beta\!\left(t - \frac{v}{c^2}x\right)
+  \label{eq:Lorentz_1d}
+\end{align}
+
+Finally, it can readily be proven that the Lorentz transformation satisfies the condition
+$\boldsymbol{\Lambda}^T\vb{M}\,\boldsymbol{\Lambda} = \vb{M}$, hence $\Delta' s = \Delta s$
+for all events, not only those on a world line of a photon:
+\begin{equation}
+  \Delta s'^2
+  = \ip{\vb{X}'}{\vb{M}\,\vb{X}'}
+  = \ip{\boldsymbol{\Lambda}\vb{X}}{\vb{M}\,\boldsymbol{\Lambda}\vb{X}}
+  = \ip{\vb{X}}{\boldsymbol{\Lambda}^T\vb{M}\,\boldsymbol{\Lambda}\,\vb{X}}
+  = \ip{\vb{X}}{\vb{M}\,\vb{X}}
+  = \Delta s
+  \label{eq:spacetime_interval_invariance}
+\end{equation}
+
+\end{document}
