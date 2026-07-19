@@ -17,6 +17,10 @@ const sharedRuntimeAliases = {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  experimental: {
+    // The default persistent cache grows disproportionately for generated LaTeX AST modules.
+    turbopackFileSystemCacheForDev: false,
+  },
   images: {
     qualities: [70, 75],
   },

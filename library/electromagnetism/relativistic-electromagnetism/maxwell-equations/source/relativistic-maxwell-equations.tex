@@ -1,0 +1,763 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{hyperref}
+
+\newcommand{\ds}{\displaystyle}
+
+\title{The Relativistic Maxwell Equations}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+
+% ============================================================
+\section{Introduction}
+% ============================================================
+In this segment, we derive the transformation of Maxwell's equations under a Lorentz boost in
+an arbitrary direction.
+
+Modern treatments almost invariably rely on the language of four-vectors and tensors, through
+which the relativistic covariance of Maxwell's equations follows naturally. While this
+formalism is undoubtedly the most elegant framework for relativistic electrodynamics, it often
+conceals the multivariable calculus underlying the transformation of the familiar differential
+operators.
+
+Our approach follows a different path. Inspired by Einstein's original derivation, we work
+entirely within the framework of classical multivariable calculus, extending the analysis from
+boosts along the coordinate axes to a Lorentz boost in an arbitrary direction. Although this
+approach is considerably longer than the tensor derivation, it exposes every intermediate step
+and makes explicit how the gradient, divergence, curl, and time derivative transform between
+inertial reference frames. Understanding these transformations in detail provides valuable
+intuition for the geometric ideas that the tensor formalism later encapsulates.
+
+We begin by introducing the multivariable calculus identities required throughout the chapter.
+We then derive the transformation laws for the differential operators under a Lorentz
+transformation. Finally, these results are combined to obtain the relativistic form of
+Maxwell's equations in a charge-free vacuum.
+
+\subsection{Definitions and Useful Formulas from Multivariate Calculus}
+
+We will consider a stationary system of reference where the coordinates of an event are
+represented by the four-vector $(x_1, x_2, x_3, t)$, and a moving frame where the same event
+has coordinates $x'_1, x'_2, x'_3, t'$. The fourth coordinate in both four-vectors has units
+of time, not space, as the mathematics of the Maxwell equations derivation keeps the notation considerably 
+lighter throughout the derivation.
+
+A vector field $\vb{A}$ is a three-dimensional valued function acting on a four-vector,
+\[
+  \begin{gathered}
+    \vb{A}(x_1, x_2, x_3, t) \\
+    \vb{A}: \mathbb{R}^4 \to \mathbb{R}^3
+  \end{gathered}
+\]
+
+A few differential operators of $\vb{A}$ are extensively used in the derivation below and
+deserve to be explicitly defined to minimize confusion when the notation will get a little
+heavy, as it often does in the derivation of the relativistic Maxwell equations.
+
+\begin{itemize}
+  \item The Jacobian on the spatial dimensions and time:
+  \[
+    \nabla \vb{A}_{x,t} =
+    \begin{pmatrix}
+      \pdv{A_1}{x_1} & \pdv{A_1}{x_2} & \pdv{A_1}{x_3} & \pdv{A_1}{t} \\[6pt]
+      \pdv{A_2}{x_1} & \pdv{A_2}{x_2} & \pdv{A_2}{x_3} & \pdv{A_2}{t} \\[6pt]
+      \pdv{A_3}{x_1} & \pdv{A_3}{x_2} & \pdv{A_3}{x_3} & \pdv{A_3}{t}
+    \end{pmatrix}
+  \]
+
+  \item The Jacobian on the spatial dimensions:
+  \[
+    \nabla \vb{A}_{x} =
+    \begin{pmatrix}
+      \pdv{A_1}{x_1} & \pdv{A_1}{x_2} & \pdv{A_1}{x_3} \\[6pt]
+      \pdv{A_2}{x_1} & \pdv{A_2}{x_2} & \pdv{A_2}{x_3} \\[6pt]
+      \pdv{A_3}{x_1} & \pdv{A_3}{x_2} & \pdv{A_3}{x_3}
+    \end{pmatrix}
+  \]
+
+\item The product of the spatial Jacobian with a vector $\vb{v}$, typically the
+      relative velocity between two inertial frames:
+\[
+  \nabla_x\vb{A}\,\vb{v}
+  =
+  \begin{pmatrix}
+    \pdv{A_1}{x_1}v_1+\pdv{A_1}{x_2}v_2+\pdv{A_1}{x_3}v_3 \\[6pt]
+    \pdv{A_2}{x_1}v_1+\pdv{A_2}{x_2}v_2+\pdv{A_2}{x_3}v_3 \\[6pt]
+    \pdv{A_3}{x_1}v_1+\pdv{A_3}{x_2}v_2+\pdv{A_3}{x_3}v_3
+  \end{pmatrix}.
+\]
+
+  \item The divergence of a vector field $\vb{A}$:
+  \[
+    \div \vb{A} = \pdv{A_1}{x_1} + \pdv{A_2}{x_2} + \pdv{A_3}{x_3}
+  \]
+
+  \item And finally the curl of a vector field $\vb{A}$:
+  \[
+    \curl \vb{A} =
+      \left(\pdv{A_3}{x_2} - \pdv{A_2}{x_3}\right)\vb{e}_1
+      - \left(\pdv{A_3}{x_1} - \pdv{A_1}{x_3}\right)\vb{e}_2
+      + \left(\pdv{A_2}{x_1} - \pdv{A_1}{x_2}\right)\vb{e}_3
+  \]
+  where $\vb{e}_1$, $\vb{e}_2$ and $\vb{e}_3$ are unit vectors along the three spatial axes.
+\end{itemize}
+
+A few identities from calculus are key to derive the relativistic Maxwell equations, and they
+are listed below:
+
+\begin{itemize}
+  \item The divergence and the curl of the cross product of a constant vector $\vb{v}$ and a
+        field $\vb{A}$:
+  \begin{equation}
+    \begin{aligned}
+      \curl(\vb{v} \cross \vb{A}) &= -\nabla_x \vb{A} \cdot \vb{v} + (\div \vb{A})\,\vb{v} \\
+      \div(\vb{v} \cross \vb{A})  &= -\ip{\vb{v}}{\curl \vb{A}}
+    \end{aligned}
+    \label{eq:divergence_curl_cross_product}
+  \end{equation}
+
+  \item The curl of the triple product of a constant vector $\vb{v}$ with a field $\vb{A}$,
+        which has two different expressions, the latter derived with the use of the equations
+        above:
+  \begin{equation}
+    \begin{aligned}
+      \curl\bigl(\vb{v} \cross (\vb{v} \cross \vb{A})\bigr)
+        &= \curl\bigl(\ip{\vb{v}}{\vb{A}}\vb{v} - v^2\vb{A}\bigr) \\[4pt]
+      \curl\bigl(\vb{v} \cross (\vb{v} \cross \vb{A})\bigr)
+        &= -\nabla_x(\vb{v} \cross \vb{A}) \cdot \vb{v}
+           + \div(\vb{v} \cross \vb{A})\,\vb{v} \\
+        &= -\vb{v} \cross (\nabla_x \vb{A} \cdot \vb{v})
+           - \ip{\vb{v}}{\curl \vb{A}}\,\vb{v}
+    \end{aligned}
+    \label{eq:curl_triple_product}
+  \end{equation}
+\end{itemize}
+
+% ============================================================
+\section{Transformation of Differential Operators}
+% ============================================================
+
+Before deriving the relativistic Maxwell equations, we first determine how the differential operators transform under a 
+Lorentz transformation. We remind the reader of the definition,  
+
+\[
+\gamma=\frac{1}{\sqrt{1-\frac{v^2}{c^2}}}.
+\]
+
+We consider a field $\vb{A}$ in $F$,
+
+\[
+  \begin{gathered}
+    \vb{A} = A(x_1, x_2, x_3, t) \\
+    \vb{A}: \mathbb{R}^4 \to \mathbb{R}^3
+  \end{gathered}
+\]
+
+which we compose with the inverse of the Lorentz transformation from $F'$ to $F$ (see
+\textit{The Transformation of Time and Space}) obtaining a field $\vb{A}'$ defined on the
+space $F'$,
+
+\begin{align}
+  \vb{A}' &= \vb{A} \circ \boldsymbol{\Lambda}(-\vb{v}) \\
+  \vb{A}' &= \vb{A}'(\vb{x}', t') = \vb{A}\bigl(\boldsymbol{\Lambda}(-\vb{v})(\vb{x}', t')\bigr) \nonumber \\
+  \vb{A}' &: \mathbb{R}^4 \to \mathbb{R}^3 \nonumber
+\end{align}
+
+Since the Maxwell equations are in $F$ coordinates, we need to understand how the partial
+derivatives of the field $\vb{A}'$ transform under the Lorentz transformation, which we are
+able to compute from the Jacobian chain rule,
+
+\[
+  \nabla_{x',t'}\vb{A}' = \nabla_{x,t}\vb{A} \cdot \nabla_{x',t'}\bigl(\boldsymbol{\Lambda}(-\vb{v})(\vb{x}',t')\bigr)
+\]
+
+where $\nabla_{x',t'}\vb{A}'$ and $\nabla_{x,t}\vb{A}$ are the Jacobians of $\vb{A}'$ and
+$\vb{A}$ respectively, computed in their own coordinate systems.
+
+The Lorentz transformation is linear, hence the Jacobian is $\Lambda$, and the chain rule
+becomes, in coordinate form,
+
+\[
+  \begin{pmatrix}
+    \ds\pdv{A'_1}{x'_1} & \ds\pdv{A'_1}{x'_2} & \ds\pdv{A'_1}{x'_3} & \ds\pdv{A'_1}{t'} \\[8pt]
+    \ds\pdv{A'_2}{x'_1} & \ds\pdv{A'_2}{x'_2} & \ds\pdv{A'_2}{x'_3} & \ds\pdv{A'_2}{t'} \\[8pt]
+    \ds\pdv{A'_3}{x'_1} & \ds\pdv{A'_3}{x'_2} & \ds\pdv{A'_3}{x'_3} & \ds\pdv{A'_3}{t'}
+  \end{pmatrix}
+  =
+  \begin{pmatrix}
+    \ds\pdv{A_1}{x_1} & \ds\pdv{A_1}{x_2} & \ds\pdv{A_1}{x_3} & \ds\pdv{A_1}{t} \\[8pt]
+    \ds\pdv{A_2}{x_1} & \ds\pdv{A_2}{x_2} & \ds\pdv{A_2}{x_3} & \ds\pdv{A_2}{t} \\[8pt]
+    \ds\pdv{A_3}{x_1} & \ds\pdv{A_3}{x_2} & \ds\pdv{A_3}{x_3} & \ds\pdv{A_3}{t}
+  \end{pmatrix}
+  \cdot\, \Lambda(-\vb{v})
+\]
+
+To get to the partial derivatives of $\vb{A}$ we need to invert the equation above,
+\[
+  \begin{pmatrix}
+    \ds\pdv{A'_1}{x'_1} & \ds\pdv{A'_1}{x'_2} & \ds\pdv{A'_1}{x'_3} & \ds\pdv{A'_1}{t'} \\[8pt]
+    \ds\pdv{A'_2}{x'_1} & \ds\pdv{A'_2}{x'_2} & \ds\pdv{A'_2}{x'_3} & \ds\pdv{A'_2}{t'} \\[8pt]
+    \ds\pdv{A'_3}{x'_1} & \ds\pdv{A'_3}{x'_2} & \ds\pdv{A'_3}{x'_3} & \ds\pdv{A'_3}{t'}
+  \end{pmatrix}
+  \cdot\,\Lambda(\vb{v})
+  =
+  \begin{pmatrix}
+    \ds\pdv{A_1}{x_1} & \ds\pdv{A_1}{x_2} & \ds\pdv{A_1}{x_3} & \ds\pdv{A_1}{t} \\[8pt]
+    \ds\pdv{A_2}{x_1} & \ds\pdv{A_2}{x_2} & \ds\pdv{A_2}{x_3} & \ds\pdv{A_2}{t} \\[8pt]
+    \ds\pdv{A_3}{x_1} & \ds\pdv{A_3}{x_2} & \ds\pdv{A_3}{x_3} & \ds\pdv{A_3}{t}
+  \end{pmatrix}
+\]
+
+The bra-ket formalism helps us here once again to compute the product of the Jacobian
+matrices. Any row $j$ of $\nabla_{x',t'}\vb{A}' \cdot \Lambda(\vb{v})$ is the vector
+\[
+  \begin{aligned}
+    &\bra{\ds\pdv{A'_j}{x'_1},\, \ds\pdv{A'_j}{x'_2},\, \ds\pdv{A'_j}{x'_3},\, \ds\pdv{A'_j}{t'}}
+    \left[
+      \frac{\gamma}{v^2}\ket{\vb{v},0}\bra{\vb{v},0}
+      - \gamma\ket{\vb{v},0}\bra{\vb{0},1} \right.\\
+    &\left.
+      + \left(\vb{I} - \frac{1}{v^2}\ket{\vb{v},0}\bra{\vb{v},0}\right)
+      - \frac{\gamma}{c^2}\ket{\vb{0},1}\bra{\vb{v},0}
+      + \gamma\ket{\vb{0},1}\bra{\vb{0},1}
+    \right]
+  \end{aligned}
+\]
+where $\vb{I}$ is the identity operator, and reads,
+\[
+  \begin{aligned}
+    &\frac{\gamma}{v^2}\ip{\nabla_{x'}\vb{A}'_j}{\vb{v}}\bra{\vb{v},0}
+    - \gamma\ip{\nabla_{x'}\vb{A}'_j}{\vb{v}}\bra{\vb{0},1}
+    + \bra{\nabla_{x'}\vb{A}'_j,\,0} \\
+    &- \frac{1}{v^2}\ip{\nabla_{x'}\vb{A}'_j}{\vb{v}}\bra{\vb{v},0}
+    - \frac{\gamma}{c^2}\ds\pdv{A'_j}{t'}\bra{\vb{v},0}
+    + \gamma\ds\pdv{A'_j}{t'}\bra{\vb{0},1}
+  \end{aligned}
+\]
+
+The spatial gradient of any component of the field $\vb{A}$ computed at
+$(\vb{x},t) = \Lambda(-\vb{v})(\vb{x}',t')$ is,
+\begin{equation}
+  \nabla_x \vb{A}_j = \nabla_{x'}\vb{A}'_j
+    + \frac{\gamma-1}{v^2}\ip{\nabla_{x'}\vb{A}'_j}{\vb{v}}\bra{\vb{v}}
+    - \frac{\gamma}{c^2}\ds\pdv{A'_j}{t'}\bra{\vb{v}}
+  \label{eq:gradient_in_F}
+\end{equation}
+and the time derivative is
+\begin{equation}
+  \pdv{A_j}{t} = -\gamma\ip{\nabla_{x'}\vb{A}'_j}{\vb{v}} + \gamma\pdv{A'_j}{t'}
+  \label{eq:time_derivative_in_F}
+\end{equation}
+where,
+
+\begin{align}
+  \nabla_{x'}\vb{A}'_j &= \bra{\ds\pdv{A'_j}{x'_1},\, \ds\pdv{A'_j}{x'_2},\, \ds\pdv{A'_j}{x'_3}} \\
+  \nabla_x \vb{A}_j    &= \bra{\ds\pdv{A_j}{x_1},\, \ds\pdv{A_j}{x_2},\, \ds\pdv{A_j}{x_3}}
+\end{align}
+
+Equations \eqref{eq:gradient_in_F} and \eqref{eq:time_derivative_in_F} provide the transformation law for the first-order 
+partial derivatives of any vector field. 
+We now use these expressions to derive the transformation laws for the differential operators appearing in Maxwell's equations.
+\subsection{Divergence in $F$ and $F'$}
+
+We now use \eqref{eq:gradient_in_F} to compute the divergence of the field $\vb{A}$ in $F$,
+\begin{align}
+  \pdv{A_1}{x_1} &= \pdv{A'_1}{x'_1}
+    + \frac{\gamma-1}{v^2}\ip{\nabla_{x'}\vb{A}'_1}{\vb{v}}v_1
+    - \frac{\gamma}{c^2}\pdv{A'_1}{t'}v_1 \\
+  \pdv{A_2}{x_2} &= \pdv{A'_2}{x'_2}
+    + \frac{\gamma-1}{v^2}\ip{\nabla_{x'}\vb{A}'_2}{\vb{v}}v_2
+    - \frac{\gamma}{c^2}\pdv{A'_2}{t'}v_2 \\
+  \pdv{A_3}{x_3} &= \pdv{A'_3}{x'_3}
+    + \frac{\gamma-1}{v^2}\ip{\nabla_{x'}\vb{A}'_3}{\vb{v}}v_3
+    - \frac{\gamma}{c^2}\pdv{A'_3}{t'}v_3
+\end{align}
+
+To derive an expression for the field divergence, we expand the scalar products in the
+equation above and group the terms on the partial derivative along each coordinate. We will
+work out the details for the first equation, as the others are identically derived by just
+changing the indexes.
+\[
+  \begin{aligned}
+    \pdv{A_1}{x_1} &= \pdv{A'_1}{x'_1}
+      + \frac{\gamma-1}{v^2}\ip{\nabla_{x'}\vb{A}'_1}{\vb{v}}v_1
+      - \frac{\gamma}{c^2}\pdv{A'_1}{t'}v_1 \\
+    &= \pdv{A'_1}{x'_1}
+      + \frac{\gamma-1}{v^2}\!\left(
+          \pdv{A'_1}{x'_1}v_1 + \pdv{A'_1}{x'_2}v_2 + \pdv{A'_1}{x'_3}v_3
+        \right)v_1
+      - \frac{\gamma}{c^2}\pdv{A'_1}{t'}v_1 \\
+    &= \left(1 + \frac{\gamma-1}{v^2}v_1^2\right)\pdv{A'_1}{x'_1}
+      + \frac{\gamma-1}{v^2}\!\left(
+          \pdv{(A'_1 v_1)}{x'_2}v_2 + \pdv{(A'_1 v_1)}{x'_3}v_3
+        \right)
+      - \frac{\gamma}{c^2}\pdv{(A'_1 v_1)}{t'}
+  \end{aligned}
+\]
+
+The divergence of the field in $F$ is,
+\[
+  \begin{aligned}
+    &\pdv{A_1}{x_1} + \pdv{A_2}{x_2} + \pdv{A_3}{x_3} \\
+    &\quad= \left(1 + \frac{\gamma-1}{v^2}v_1^2\right)\pdv{A'_1}{x'_1}
+      + \frac{\gamma-1}{v^2}\!\left(\pdv{(A'_1 v_1)}{x'_2}v_2 + \pdv{(A'_1 v_1)}{x'_3}v_3\right)
+      - \frac{\gamma}{c^2}\pdv{(A'_1 v_1)}{t'} \\
+    &\quad+ \left(1 + \frac{\gamma-1}{v^2}v_2^2\right)\pdv{A'_2}{x'_2}
+      + \frac{\gamma-1}{v^2}\!\left(\pdv{(A'_2 v_2)}{x'_1}v_1 + \pdv{(A'_2 v_2)}{x'_3}v_3\right)
+      - \frac{\gamma}{c^2}\pdv{(A'_2 v_2)}{t'} \\
+    &\quad+ \left(1 + \frac{\gamma-1}{v^2}v_3^2\right)\pdv{A'_3}{x'_3}
+      + \frac{\gamma-1}{v^2}\!\left(\pdv{(A'_3 v_3)}{x'_1}v_1 + \pdv{(A'_3 v_3)}{x'_2}v_2\right)
+      - \frac{\gamma}{c^2}\pdv{(A'_3 v_3)}{t'}
+  \end{aligned}
+\]
+
+By grouping the terms by the components of the field $\vb{A}$, we obtain the divergence of
+the field $\vb{A}$ in $F$,
+\[
+  \begin{aligned}
+    &\pdv{A_1}{x_1} + \pdv{A_2}{x_2} + \pdv{A_3}{x_3} \\
+    &= \pdv{A'_1}{x'_1} + \pdv{A'_2}{x'_2} + \pdv{A'_3}{x'_3} \\
+    &\quad + \frac{\gamma-1}{v^2}\!\left(\pdv{A'_1}{x'_1}v_1 + \pdv{A'_1}{x'_2}v_2 + \pdv{A'_1}{x'_3}v_3\right)v_1 \\
+    &\quad + \frac{\gamma-1}{v^2}\!\left(\pdv{A'_2}{x'_1}v_1 + \pdv{A'_2}{x'_2}v_2 + \pdv{A'_2}{x'_3}v_3\right)v_2 \\
+    &\quad + \frac{\gamma-1}{v^2}\!\left(\pdv{A'_3}{x'_1}v_1 + \pdv{A'_3}{x'_2}v_2 + \pdv{A'_3}{x'_3}v_3\right)v_3 \\
+    &\quad - \frac{\gamma}{c^2}\pdv{(A'_1 v_1 + A'_2 v_2 + A'_3 v_3)}{t'}
+  \end{aligned}
+\]
+
+We get the compact equation for the transformation of the divergence of $\vb{A}$ to $\vb{A}'$,
+\[
+  \div \vb{A}
+  =
+  \div \vb{A}'
+  + \frac{\gamma-1}{v^2}
+    \ip{\nabla_{x'}\vb{A}'\,\vb v}{\vb v}
+  - \frac{\gamma}{c^2}
+    \pdv{\ip{\vb{A}'}{\vb{v}}}{t'}
+\]
+
+If we consider a divergence-free field $\vb{A}$ in $F$, the equation above gives an important
+condition on the divergence of $\vb{A}'$,
+
+\begin{equation}
+  \div \vb{A}'
+  =
+  -\frac{\gamma-1}{v^2}
+    \ip{\nabla_{x'}\vb{A}'\,\vb v}{\vb v}
+  + \frac{\gamma}{c^2}
+    \pdv{\ip{\vb{A}'}{\vb{v}}}{t'}
+  \label{eq:divergence_in_Fprime}
+\end{equation}
+
+\subsection{Curl in $F$ and $F'$}
+
+The other operator needed for the Maxwell equations is the curl,
+\[
+  \begin{aligned}
+    (\curl \vb{A})_1 &= \pdv{A_3}{x_2} - \pdv{A_2}{x_3} \\
+      &= \pdv{A'_3}{x'_2}
+        + \frac{\gamma-1}{v^2}\ip{\nabla_{x'}\vb{A}'_3}{\vb{v}}v_2
+        - \frac{\gamma}{c^2}\pdv{A'_3}{t'}v_2 \\
+      &\quad - \pdv{A'_2}{x'_3}
+        - \frac{\gamma-1}{v^2}\ip{\nabla_{x'}\vb{A}'_2}{\vb{v}}v_3
+        + \frac{\gamma}{c^2}\pdv{A'_2}{t'}v_3 \\[6pt]
+   (\curl \vb{A})_2 &= -\pdv{A_3}{x_1} + \pdv{A_1}{x_3} \\
+  &= -\pdv{A'_3}{x'_1}
+    - \frac{\gamma-1}{v^2}
+      \ip{\nabla_{x'}\vb{A}'_3}{\vb{v}}v_1
+    + \frac{\gamma}{c^2}\pdv{A'_3}{t'}v_1 \\
+  &\quad + \pdv{A'_1}{x'_3}
+    + \frac{\gamma-1}{v^2}
+      \ip{\nabla_{x'}\vb{A}'_1}{\vb{v}}v_3
+    - \frac{\gamma}{c^2}\pdv{A'_1}{t'}v_3 \\[6pt]
+    (\curl \vb{A})_3 &= \pdv{A_2}{x_1} - \pdv{A_1}{x_2} \\
+      &= \pdv{A'_2}{x'_1}
+        + \frac{\gamma-1}{v^2}\ip{\nabla_{x'}\vb{A}'_2}{\vb{v}}v_1
+        - \frac{\gamma}{c^2}\pdv{A'_2}{t'}v_1 \\
+      &\quad - \pdv{A'_1}{x'_2}
+        - \frac{\gamma-1}{v^2}\ip{\nabla_{x'}\vb{A}'_1}{\vb{v}}v_2
+        + \frac{\gamma}{c^2}\pdv{A'_1}{t'}v_2
+  \end{aligned}
+\]
+
+which is in vector form easily recognisable as,
+
+\begin{equation}
+  \curl \vb{A}
+  =
+  \curl \vb{A}'
+  + \frac{\gamma-1}{v^2}\,
+    \vb v \cross
+    \left(
+      \nabla_{x'}\vb A'\,\vb v
+    \right)
+  - \frac{\gamma}{c^2}
+    \pdv{\vb v\cross\vb A'}{t'}
+  \label{eq:curl_in_F}
+\end{equation}
+
+% ============================================================
+\section{The Relativistic Maxwell Equations}
+% ============================================================
+
+We consider an electric field $\vb{E}$ and a magnetic field $\vb{B}$ in a region of the
+system of reference $F$ free of charges and currents. The Maxwell equations in this case are
+
+\begin{equation}
+    \begin{aligned}
+      \pdv{\vb{B}}{t} &= -\curl \vb{E} \\
+      \pdv{\vb{E}}{t} &= c^2 \curl \vb{B} \\
+      \div \vb{B}     &= 0 \\
+      \div \vb{E}     &= 0
+    \end{aligned}   
+  \label{eq:maxwell_in_F}
+\end{equation}
+
+The fields $\vb{B}'$ and $\vb{E}'$, obtained by applying the composition of the Lorentz
+transformation are,
+
+\begin{align}
+  \vb{B}' &= \vb{B}'(\vb{x}',t') = \vb{B}\bigl(\Lambda(-\vb{v})(\vb{x}',t')\bigr) \\
+  \vb{E}' &= \vb{E}'(\vb{x}',t') = \vb{E}\bigl(\Lambda(-\vb{v})(\vb{x}',t')\bigr)
+\end{align}
+
+and fulfill the equations obtained by applying directly the Lorentz transformation to
+equations \eqref{eq:maxwell_in_F} (see section \textbf{Transformation of Differential
+Operators}),
+
+\begin{equation}
+  \begin{aligned}
+    -\gamma\nabla_{x'}\vb{B}'\,\vb{v}
+    + \gamma\pdv{\vb{B}'}{t'}
+    &=
+    -\curl \vb{E}'
+    - \frac{\gamma-1}{v^2}\,
+      \vb{v}\cross\left(\nabla_{x'}\vb{E}'\,\vb{v}\right)
+    + \frac{\gamma}{c^2}
+      \pdv{\vb{v}\cross\vb{E}'}{t'},
+    \\
+    -\frac{\gamma}{c^2}\nabla_{x'}\vb{E}'\,\vb{v}
+    + \frac{\gamma}{c^2}\pdv{\vb{E}'}{t'}
+    &=
+    \curl \vb{B}'
+    + \frac{\gamma-1}{v^2}\,
+      \vb{v}\cross\left(\nabla_{x'}\vb{B}'\,\vb{v}\right)
+    - \frac{\gamma}{c^2}
+      \pdv{\vb{v}\cross\vb{B}'}{t'}.
+  \end{aligned}
+  \label{eq:maxwell_transformed}
+\end{equation}
+
+Since the equations at hand do not conform to the standard form of Maxwell's equations, the
+fields denoted by $\vb{B}'$ and $\vb{E}'$ do not represent the transformed electric and
+magnetic fields we seek. Substantial effort is required to manipulate these equations into the
+correct form that yields the desired fields.
+
+We outline below the steps required to derive the relativistic Maxwell equations in a vacuum,
+starting with the equations above and manipulating them to obtain the correct form.
+
+ 
+\subsection{Step 1: Divergence-Free Fields}
+
+Taking the scalar product of equations \eqref{eq:maxwell_transformed} with the velocity
+$\vb{v}$ gives
+
+\begin{align}
+  -\gamma\ip{\nabla_{x'}\vb{B}'\,\vb{v}}{\vb{v}}
+    + \gamma\pdv{\ip{\vb{B}'}{\vb{v}}}{t'}
+    &= -\ip{\curl \vb{E}'}{\vb{v}},
+    \\
+  -\frac{\gamma}{c^2}\ip{\nabla_{x'}\vb{E}'\,\vb{v}}{\vb{v}}
+    + \frac{\gamma}{c^2}\pdv{\ip{\vb{E}'}{\vb{v}}}{t'}
+    &= \ip{\curl \vb{B}'}{\vb{v}}.
+\end{align}
+
+Together with the divergence-free condition \eqref{eq:divergence_in_Fprime}, these equations
+give useful expressions for the divergences of $\vb{B}'$ and $\vb{E}'$:
+
+\begin{align}
+  \div \vb{B}'
+    &=
+    \frac{\gamma-1}{\gamma v^2}
+    \left(
+      \pdv{\ip{\vb{B}'}{\vb{v}}}{t'}
+      -
+      \ip{\curl \vb{E}'}{\vb{v}}
+    \right),
+    \\
+  \div \vb{E}'
+    &=
+    \frac{\gamma-1}{\gamma v^2}
+    \left(
+      \pdv{\ip{\vb{E}'}{\vb{v}}}{t'}
+      +
+      c^2\ip{\curl \vb{B}'}{\vb{v}}
+    \right).
+\end{align}
+
+The terms $\nabla_{x'}\vb{B}'\,\vb{v}$ and
+$\nabla_{x'}\vb{E}'\,\vb{v}$ on the left-hand side of
+\eqref{eq:maxwell_transformed} can be substituted using
+\eqref{eq:divergence_curl_cross_product}. Using also the expressions for the divergences of
+$\vb{B}'$ and $\vb{E}'$ just obtained, we find
+\begin{equation}
+  \begin{aligned}
+    \pdv{}{t'}\!\left(
+        \gamma\,\vb{B}'
+        -
+        \frac{\gamma-1}{v^2}\ip{\vb{B}'}{\vb{v}}\vb{v}
+        -
+        \frac{\gamma}{c^2}\vb{v}\cross\vb{E}'
+      \right)
+    &=
+      -\gamma\curl(\vb{v}\cross\vb{B}')
+      -
+      \curl\vb{E}'
+      \\
+    &\quad
+      -
+      \frac{\gamma-1}{v^2}
+      \ip{\curl\vb{E}'}{\vb{v}}\vb{v}
+      -
+      \frac{\gamma-1}{v^2}\,
+      \vb{v}\cross
+      \left(
+        \nabla_{x'}\vb{E}'\,\vb{v}
+      \right),
+    \\[6pt]
+    \pdv{}{t'}\!\left(
+        \gamma\,\vb{E}'
+        -
+        \frac{\gamma-1}{v^2}\ip{\vb{E}'}{\vb{v}}\vb{v}
+        +
+        \gamma\,\vb{v}\cross\vb{B}'
+      \right)
+    &=
+      -\gamma\curl(\vb{v}\cross\vb{E}')
+      +
+      \curl(c^2\vb{B}')
+      \\
+    &\quad
+      +
+      \frac{\gamma-1}{v^2}
+      \ip{\curl(c^2\vb{B}')}{\vb{v}}\vb{v}
+      +
+      \frac{\gamma-1}{v^2}\,
+      \vb{v}\cross
+      \left(
+        \nabla_{x'}(c^2\vb{B}')\,\vb{v}
+      \right).
+  \end{aligned}
+  \label{eq:divergence_free_fields}
+\end{equation}
+
+We are nearing the solution. It is now necessary to evaluate the curl of the triple
+cross product.
+ 
+\subsection{Step 2: The Curl of the Triple Product}
+
+Equations \eqref{eq:divergence_free_fields} bring us closer to the solution. On the
+left-hand side, we have the partial derivatives with respect to $t'$ of two fields. On the
+right-hand side, several terms are already expressed as curls, but the following terms are
+not:
+\[
+  -\frac{\gamma-1}{v^2}\ip{\curl \vb{E}'}{\vb{v}}\vb{v}
+  -
+  \frac{\gamma-1}{v^2}\,
+  \vb{v}\cross
+  \left(
+    \nabla_{x'}\vb{E}'\,\vb{v}
+  \right).
+\]
+
+The key to the solution is the curl of the triple cross product, given by
+\eqref{eq:curl_triple_product}:
+
+\[
+  \begin{aligned}
+    \curl\bigl(\vb{v}\cross(\vb{v}\cross\vb{E}')\bigr)
+    &=
+    \curl\bigl(
+      \ip{\vb{v}}{\vb{E}'}\vb{v}
+      -
+      v^2\vb{E}'
+    \bigr)
+    \\
+    &=
+    -\vb{v}\cross
+    \left(
+      \nabla_{x'}\vb{E}'\,\vb{v}
+    \right)
+    -
+    \ip{\vb{v}}{\curl\vb{E}'}\vb{v}.
+  \end{aligned}
+\]
+
+Substitution into \eqref{eq:divergence_free_fields} finally yields equations having the
+same differential-operator form as \eqref{eq:maxwell_in_F}, but now expressed in the
+coordinates of $F'$:
+\begin{equation}
+  \begin{aligned}
+    \pdv{}{t'}\!\left(
+        \gamma\,\vb{B}'
+        -
+        (\gamma-1)
+        \ip{\vb{B}'}{\frac{\vb{v}}{v}}
+        \frac{\vb{v}}{v}
+        -
+        \frac{\gamma}{c^2}\vb{v}\cross\vb{E}'
+      \right)
+    &=
+    -\curl\!\left(
+        \gamma\,\vb{E}'
+        -
+        (\gamma-1)
+        \ip{\vb{E}'}{\tfrac{\vb{v}}{v}}
+        \tfrac{\vb{v}}{v}
+        +
+        \gamma\,\vb{v}\cross\vb{B}'
+      \right),
+    \\[6pt]
+    \pdv{}{t'}\!\left(
+        \gamma\,\vb{E}'
+        -
+        (\gamma-1)
+        \ip{\vb{E}'}{\frac{\vb{v}}{v}}
+        \frac{\vb{v}}{v}
+        +
+        \gamma\,\vb{v}\cross\vb{B}'
+      \right)
+    &=
+    c^2\curl\!\left(
+        \gamma\,\vb{B}'
+        -
+        (\gamma-1)
+        \ip{\vb{B}'}{\tfrac{\vb{v}}{v}}
+        \tfrac{\vb{v}}{v}
+        -
+        \frac{\gamma}{c^2}\vb{v}\cross\vb{E}'
+      \right).
+  \end{aligned}
+  \label{eq:pre_final_maxwell}
+\end{equation}
+
+Hence, by the principle of relativity, the electric and magnetic fields measured in $F'$
+must be
+
+\begin{align}
+  \vb{B}_{F'}
+  &=
+  \phi(\vb{v})\left(
+      \gamma\,\vb{B}'
+      -
+      (\gamma-1)
+      \ip{\vb{B}'}{\tfrac{\vb{v}}{v}}
+      \tfrac{\vb{v}}{v}
+      -
+      \frac{\gamma}{c^2}\vb{v}\cross\vb{E}'
+    \right),
+  \\
+  \vb{E}_{F'}
+  &=
+  \phi(\vb{v})\left(
+      \gamma\,\vb{E}'
+      -
+      (\gamma-1)
+      \ip{\vb{E}'}{\tfrac{\vb{v}}{v}}
+      \tfrac{\vb{v}}{v}
+      +
+      \gamma\,\vb{v}\cross\vb{B}'
+    \right),
+\end{align}
+
+where $\phi(\vb{v})$ is a scalar function of the boost velocity.
+
+The possible values of $\phi(\vb{v})$ can be constrained by requiring that a boost by
+$\vb{v}$ followed by the inverse boost $-\vb{v}$ reproduce the original fields:
+
+\begin{align}
+  \vb{B}
+  &=
+  \phi(-\vb{v})\left(
+      \gamma\,\vb{B}_{F'}
+      -
+      (\gamma-1)
+      \ip{\vb{B}_{F'}}{\tfrac{\vb{v}}{v}}
+      \tfrac{\vb{v}}{v}
+      +
+      \frac{\gamma}{c^2}\vb{v}\cross\vb{E}_{F'}
+    \right),
+  \\
+  \vb{E}
+  &=
+  \phi(-\vb{v})\left(
+      \gamma\,\vb{E}_{F'}
+      -
+      (\gamma-1)
+      \ip{\vb{E}_{F'}}{\tfrac{\vb{v}}{v}}
+      \tfrac{\vb{v}}{v}
+      -
+      \gamma\,\vb{v}\cross\vb{B}_{F'}
+    \right).
+\end{align}
+
+This gives
+\[
+  \phi(-\vb{v})\phi(\vb{v})=1.
+\]
+
+By spatial isotropy, the scalar $\phi$ can depend only on the magnitude of the boost
+velocity, and therefore
+\[
+  \phi(-\vb{v})=\phi(\vb{v}).
+\]
+Consequently,
+\[
+  \phi(\vb{v})^2=1.
+\]
+
+The transformed fields must approach the original fields as $\vb{v}\to\vb{0}$:
+
+\begin{align}
+  \lim_{\vb{v}\to\vb{0}}\vb{B}_{F'} &= \vb{B},
+  \\
+  \lim_{\vb{v}\to\vb{0}}\phi(\vb{v}) &= 1.
+\end{align}
+Continuity therefore selects
+\[
+  \phi(\vb{v})=1.
+\]
+
+The final transformation laws for the electric and magnetic fields are
+\begin{equation}
+  \begin{aligned}
+    \vb{B}_{F'}
+    &=
+    \gamma\,\vb{B}
+    -
+    (\gamma-1)
+    \ip{\vb{B}}{\tfrac{\vb{v}}{v}}
+    \tfrac{\vb{v}}{v}
+    -
+    \frac{\gamma}{c^2}\,
+    \vb{v}\cross\vb{E},
+    \\
+    \vb{E}_{F'}
+    &=
+    \gamma\,\vb{E}
+    -
+    (\gamma-1)
+    \ip{\vb{E}}{\tfrac{\vb{v}}{v}}
+    \tfrac{\vb{v}}{v}
+    -
+    \gamma\,\vb{v}\cross\vb{B}.
+  \end{aligned}
+  \label{eq:relativistic_maxwell}
+\end{equation}
+ 
+
+\end{document}

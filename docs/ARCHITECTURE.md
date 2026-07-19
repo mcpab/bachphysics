@@ -16,6 +16,24 @@ rendering
 
 Keep each stage independent.
 
+## Publishing Corpus
+
+`library/` is the source corpus. `app/` is the website renderer. Scientific content should
+remain independent of Next.js routing.
+
+Each essay is organized by its editorial field, topic, and essay identity:
+
+```text
+library/<field>/<topic>/<essay>/
+├── source/       # Human-authored LaTeX
+├── generated/    # Compiled layout AST and label index
+└── assets/       # Figures and other essay-local media, when present
+```
+
+Website routes may use different public slugs, but they import compiled documents from this
+corpus rather than owning scientific source material. Offline compilation reads from
+`source/` and writes deterministic artifacts to the neighboring `generated/` directory.
+
 ## Goals
 
 - SSR-first

@@ -2,6 +2,8 @@ import { spawnSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 
+import { readImageDimensions } from "./lib/readImageDimensions.ts";
+
 type ResolvedLatexDocument = {
   inputPath: string;
   documentId: string;
@@ -18,7 +20,7 @@ function usage(): string {
     "",
     "Examples:",
     "  pnpm latex:layout:ts time-and-space",
-    "  pnpm latex:layout:ts library/relativity/time-and-space",
+    "  pnpm latex:layout:ts library/relativity/special-relativity/time-and-space/source/time-and-space",
   ].join("\n");
 }
 
@@ -131,6 +133,48 @@ function resolveKatexPackageRoot(): string {
   return fs.realpathSync(packageLinkPath);
 }
 
+function addFigureDimensions(
+  outputLayoutPath: string,
+  assetsDirectory: string,
+): void {
+  const moduleSource = fs.readFileSync(outputLayoutPath, "utf8");
+  const figureSourcePattern = /^(\s*)type: "figure",\n(\s*)src: ("(?:[^"\\]|\\.)*"),$/gm;
+  let figureCount = 0;
+
+  const moduleSourceWithDimensions = moduleSource.replace(
+    figureSourcePattern,
+    (figureProperties, _typeIndent: string, propertyIndent: string, sourceLiteral: string) => {
+      figureCount += 1;
+      const figureSource = JSON.parse(sourceLiteral) as string;
+      const assetPath = path.resolve(assetsDirectory, figureSource);
+      const relativeAssetPath = path.relative(assetsDirectory, assetPath);
+
+      // Generated figure paths must not be able to escape their essay's asset directory.
+      if (relativeAssetPath.startsWith("..") || path.isAbsolute(relativeAssetPath)) {
+        throw new Error(`Figure source points outside the asset directory: ${figureSource}`);
+      }
+
+      const dimensions = readImageDimensions(assetPath);
+      if (!dimensions) {
+        throw new Error(
+          `Could not read dimensions for figure ${figureSource} at ${assetPath}`,
+        );
+      }
+
+      return [
+        figureProperties,
+        `${propertyIndent}width: ${dimensions.width},`,
+        `${propertyIndent}height: ${dimensions.height},`,
+      ].join("\n");
+    },
+  );
+
+  if (figureCount > 0) {
+    fs.writeFileSync(outputLayoutPath, moduleSourceWithDimensions);
+    console.log(`Added intrinsic dimensions to ${figureCount} figure(s).`);
+  }
+}
+
 function main(): void {
   const args = process.argv.slice(2).filter((arg) => arg !== "--");
   const inputArg = args[0];
@@ -143,7 +187,14 @@ function main(): void {
   assertLibraryExists();
 
   const document = resolveLatexDocument(inputArg);
-  const outputBasePath = document.inputPath.replace(/\.tex$/, "");
+  const sourceDirectory = path.dirname(document.inputPath);
+  const outputDirectory = path.basename(sourceDirectory) === "source"
+    ? path.join(path.dirname(sourceDirectory), "generated")
+    : sourceDirectory;
+  const outputBasePath = path.join(
+    outputDirectory,
+    path.parse(document.inputPath).name,
+  );
   const outputLayoutPath = `${outputBasePath}.layout.ast.ts`;
   const outputLabelIndexPath = `${outputBasePath}.labelIndex.ts`;
 
@@ -177,7 +228,12 @@ function main(): void {
     process.exit(1);
   }
 
-  process.exit(result.status ?? 1);
+  if (result.status !== 0) {
+    process.exit(result.status ?? 1);
+  }
+
+  const assetsDirectory = path.join(path.dirname(sourceDirectory), "assets");
+  addFigureDimensions(outputLayoutPath, assetsDirectory);
 }
 
 main();

@@ -1,0 +1,941 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+
+\title{The Transformation of Time and Space}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+ 
+% ============================================================
+\section{Introduction}
+% ============================================================
+
+The Lorentz transformation is one of the cornerstones of modern physics. It
+relates the measurements of space and time performed by different inertial
+observers and underlies virtually every aspect of Special Relativity. Because
+of its fundamental importance, it is often introduced early and presented
+directly in matrix form. While this approach is efficient, it can leave the
+reader with little physical intuition as to why the transformation has the form
+it does or what it actually means. \par
+
+In this section we revisit Einstein's original derivation, extending it from
+the special case of motion along a coordinate axis to an arbitrary boost
+direction. Rather than starting from the final matrix, we derive the Lorentz
+transformation from simple physical assumptions, making explicit every step of
+the argument. Along the way, we will emphasize an important conceptual point
+that is often left implicit: the Lorentz transformation does not determine what
+different observers measure, but rather relates the independent measurements
+performed in different inertial reference frames.\par
+
+ Einstein original derivation considered the special case in which the relative
+ velocity is aligned with the x-axis, so that directions perpendicular to the motion remain unchanged by construction. 
+In this section, we follow Einstein's reasoning and extend the derivation to an arbitrary boost direction. Our goals are as follows:
+
+\begin{enumerate}
+  \item \textbf{General Boost Transformation:}
+    \begin{itemize}
+      \item We derive the Lorentz transformation for a general boost, where the relative
+            velocity is represented by an arbitrary vector.
+      \item This broader approach allows us to handle boosts in any direction, not just along
+            the $x$-axis.
+    \end{itemize}
+  \item \textbf{Transverse Length Invariance:}
+    \begin{itemize}
+      \item We explicitly discuss the conditions that ensure the preservation of lengths
+            perpendicular to the velocity direction.
+      \item This consideration is crucial for maintaining consistency across reference frames.
+    \end{itemize}
+  \item \textbf{Time Transformation via Clock Synchronization:}
+    \begin{itemize}
+      \item Following Einstein's original method, we will derive the transformation of time
+            based on clock synchronization.
+      \item This step lays the foundation for our subsequent analysis.
+    \end{itemize}
+  \item \textbf{Lorentz Transformation for Time and Space:}
+    \begin{itemize}
+      \item Using the invariance of the speed of light, we obtain compact expressions for the transformations of both space and time.
+    \end{itemize}
+\end{enumerate}
+
+\textbf{Assumptions and Prerequisites:} We assume that readers are familiar with advanced
+calculus, linear algebra, and the fundamental principles of Special Relativity.  \par
+
+\textbf{Notation}. We use Dirac's bra-ket notation as a compact language for vectors, dual vectors, and linear operators. 
+Despite its widespread association with quantum mechanics, the notation is purely linear-algebraic 
+and is equally applicable to Euclidean and spacetime vector spaces. 
+Readers unfamiliar with the notation may consult any standard reference; for a concise introduction, 
+see the Wikipedia article on bra-ket notation. \url{https://en.wikipedia.org/wiki/Bra\%E2\%80\%93ket_notation}. \par
+
+Although the Lorentz transformation is often presented directly in matrix form,
+deriving it from Einstein's original arguments provides valuable physical
+insight into the geometric structure of spacetime and, perhaps more
+importantly, into the operational meaning of the transformation itself. Once
+this viewpoint is established, many of the central ideas of Special Relativity,
+including proper time, four-vectors, and relativistic dynamics, follow
+more easily. 
+
+% ============================================================
+\section{Synchronization of Clocks}
+% ============================================================
+
+In Special Relativity, the concept of clock synchronization plays a fundamental role in
+developing the Lorentz transformation of time and space. Although seemingly straightforward,
+this concept deserves careful discussion, as defining
+synchronization becomes essential for determining when events occur simultaneously.
+
+We begin with a simple thought experiment. Imagine two observers, A and B, both
+at rest within the same reference system but positioned at different locations. These
+observers, A and B, each have their own clocks, measuring time independently.
+
+Consider an experiment where a photon is emitted from A, travels to B, and gets
+reflected back to its origin in A. Observer A records the time of emission as $t_1$, while
+observer B notes the time of reflection as $t_2$. Finally, A marks the time of the photon
+arrival as $t_3$. We assume that, after the experiment, the two observers compare the times recorded on their respective clocks
+(for example they would exchange data after the experiment). A possible outcome is shown in the table below (units of time are not relevant in this
+discussion): 
+
+\begin{center}
+\begin{tabular}{ccc}
+\toprule
+Time in A & Time in B & Event \\
+\midrule
+1 & 2 & Emission, $t_1 = 1$ \\
+3 & 4 & Reflection, $t_2 = 4$ \\
+5 & 6 & Arrival, $t_3 = 5$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+If the observer at point B used the time difference $t_2 - t_1$ to compute the time needed
+for the photon to reach B, they would obtain an incorrect result of 3 instead of the actual
+value of 2. More worrisome, the time difference $(t_3 - t_2)$ would be 1, falsely suggesting that the two 
+observers are not at rest with respect to one another. These
+discrepancies occur because the two clocks are not synchronized.
+
+The way for B to synchronize their clock with A is to record the time stamp $t_1$, wait for
+the photon to get back to A, ask A for $t_3$, and set the clock in B such that:
+\begin{equation}
+  t_2 - t_1 = t_3 - t_2
+  \label{eq:clock_synchronization}
+\end{equation}
+
+which is realized in this case by setting their clock back 1 unit. This requirement defines Einstein synchronization.
+
+Having established a procedure for synchronizing clocks within a single inertial frame, we can now 
+investigate how space and time measurements compare between two 
+inertial frames in relative motion. This leads directly to the Lorentz transformation. 
+This is the subject of the next sections.
+
+% ============================================================
+\section{Transformation of Time}
+% ============================================================
+
+In this section we will derive the equation for the transformation of time between two
+systems of reference moving with constant relative velocity. 
+
+\subsection{The Mirror Experiment}
+
+We now examine the mirror experiment from the perspective of a new reference frame. In this
+scenario, the mirror and the emitting source are both at rest within a system of reference
+$F'$, which itself is in motion relative to another system of reference $F$. Observers in $F$ assign to each event a time $t$ and a position
+$\vb x=(x_1,x_2,x_3)$, while observers in $F'$ assign the corresponding
+quantities $t'$ and $\vb x'=(x'_1,x'_2,x'_3)$. We choose the origins of the two reference frames to coincide at 
+$t=t'=0$.
+
+\subsubsection*{Experiment Observed from $F'$}
+
+The source is located at the origin of $F'$ and the mirror is positioned at a fixed location in an
+ arbitrary direction from the source. A photon is emitted at a time $t'_0$; it reaches the mirror at
+time $t'_1$ where it is reflected, and it arrives back at the source at time $t'_2$.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.6\textwidth]{mirror.png}
+  \caption{Figure 1: Mirror experiment viewed in the reference frame $F'$. The source and mirror are at rest, while the photon propagates along an arbitrary direction.}
+\end{figure}
+
+As we assume that the clocks in $F'$ are synchronized, the following relation holds true:
+\begin{equation}
+  \frac{1}{2}(t'_0 + t'_2) = t'_1
+  \label{eq:clock_synchronization_moving}
+\end{equation}
+
+\subsubsection*{Experiment Observed from $F$}
+
+Now we examine the three events---emission, reflection, and arrival back at the source--- from
+the viewpoint of reference frame $F$. It is crucial to emphasize that all time, velocity, and
+distance quantities in this section \textit{are assumed to be measured within the system of
+reference} $F$.
+
+The photon is emitted from the source at time $t_0$ and at the position $\vb{v}\, t_0$ where
+$\vb{v}$ is the velocity of $F'$ measured from $F$.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.6\textwidth]{movingframes1.jpg}
+  \caption{Figure 2: Velocities and positions of the photon seen from $F$}
+\end{figure}
+
+The photon travels to the mirror with speed $\vb{c}_{up} = \vb{c}_1 + \vb{v}$, and it
+reaches it at a time:
+\[
+  t_1 = t_0 + \frac{l}{|\vb{c}_1|} = t_0 + \frac{l}{|\vb{c}_{up} - \vb{v}|}
+\]
+
+where $l$ is the distance between the source and the mirror measured
+simultaneously in $F$ at the time of emission.
+We assume that the source and mirror remain at a fixed distance $l$ from one another throughout the experiment. 
+The vector $\vb c_1$ denotes the photon velocity relative to the moving frame $F'$, expressed in the coordinates of $F$.
+When the photon reaches the mirror, its position will be
+\[
+  \vb{v}\, t_1 + (\vb{c}_{up} - \vb{v})(t_1 - t_0)
+  = \vb{v}\, t_0 + l\,\frac{\vb{c}_{up}}{|\vb{c}_{up} - \vb{v}|}
+\]
+
+The time $t_2$ when the photon reaches the source back again is
+\[
+  t_2 = t_1 + \frac{l}{|\vb{c}_{down} - \vb{v}|}
+      = t_0 + \frac{l}{|\vb{c}_{up} - \vb{v}|} + \frac{l}{|\vb{c}_{down} - \vb{v}|}
+\]
+where $\vb{c}_{down}$ is the photon velocity returning to the source. \par
+
+The position of the photon when it meets the source is,
+\[
+  \vb{v}\, t_2
+  =
+  \vb{v}\, t_0
+  +
+  \vb{v}\,\frac{l}{|\vb{c}_{up}-\vb{v}|}
+  +
+  \vb{v}\,\frac{l}{|\vb{c}_{down}-\vb{v}|}.
+\]
+
+To derive the Lorentz transformation, we postulate the existence of a
+real-valued function on the events described in the reference frame $F$,
+\begin{align}
+  t' &: F \longrightarrow \mathbb{R}, \\
+  t' &= t'(\vb{x},t),
+\end{align}
+where $(\vb{x},t)$ are the coordinates assigned in $F$ to a given event.
+
+Formally, the events of emission, reflection and meeting the source again will be observed
+in $F'$ as
+\begin{align}
+  t'_0 &= t'(\vb{v}\, t_0,\; t_0) \\
+  t'_1 &= t'\!\left(
+    \vb{v}\, t_0 + l\,\frac{\vb{c}_{up}}{|\vb{c}_{up} - \vb{v}|},\;
+    t_0 + \frac{l}{|\vb{c}_{up} - \vb{v}|}
+  \right) \\
+  t'_2 &= t'\!\left(
+    \vb{v}\, t_0 + \vb{v}\, l
+      \bigl(|\vb{c}_{up} - \vb{v}|^{-1} + |\vb{c}_{down} - \vb{v}|^{-1}\bigr),\;
+    t_0 + l\bigl(|\vb{c}_{up} - \vb{v}|^{-1} + |\vb{c}_{down} - \vb{v}|^{-1}\bigr)
+  \right)
+\end{align}
+ 
+Expanding the function
+\[
+  f(l)
+  =
+  t'\!\left(
+    \vb{v}\,t_0
+    +
+    l\,\frac{\vb{c}_{up}}
+      {|\vb{c}_{up}-\vb{v}|},
+    \;
+    t_0
+    +
+    \frac{l}{|\vb{c}_{up}-\vb{v}|}
+  \right)
+\]
+in a Taylor series around $l=0$, we obtain
+\[
+  t'_1
+  =
+  t'(\vb{v}\,t_0,t_0)
+  +
+  l\,|\vb{c}_{up}-\vb{v}|^{-1}
+  \ip{
+    \grad t'(\vb{v}\,t_0,t_0)
+  }{
+    (\vb{c}_{up},1)
+  }
+  +
+  o(l).
+\]
+
+A similar expansion holds for $t'_2$:
+\[
+  t'_2
+  =
+  t'(\vb{v}\,t_0,t_0)
+  +
+  l\bigl(
+    |\vb{c}_{up}-\vb{v}|^{-1}
+    +
+    |\vb{c}_{down}-\vb{v}|^{-1}
+  \bigr)
+  \ip{
+    \grad t'(\vb{v}\,t_0,t_0)
+  }{
+    (\vb{v},1)
+  }
+  +
+  o(l).
+\]
+
+Using the synchronization condition
+\eqref{eq:clock_synchronization_moving} and taking the limit $l\to0$,
+we obtain
+\[
+  \ip{\grad t'}{\vb{w}}=0,
+\]
+where
+\[
+  \vb{w}
+  =
+  \Bigl(
+    \vb{v}\bigl(
+      |\vb{c}_{up}-\vb{v}|^{-1}
+      +
+      |\vb{c}_{down}-\vb{v}|^{-1}
+    \bigr)
+    -
+    2\vb{c}_{up}|\vb{c}_{up}-\vb{v}|^{-1},
+    \;
+    |\vb{c}_{down}-\vb{v}|^{-1}
+    -
+    |\vb{c}_{up}-\vb{v}|^{-1}
+  \Bigr).
+\]
+
+Assuming a linear relationship between the time in $F'$ and the coordinates in $F$ as,
+\[
+  t' = \vb{p} \cdot \vb{x} + \gamma\, t
+\]
+
+where $\vb{p}$ is a vector transforming the spatial coordinates and $\gamma$ is the coefficient
+transforming time, we arrive at the linear equation in $\vb{p}$ and $\gamma$
+
+\begin{equation}
+  \vb{p} \cdot \bigl[
+    2\vb{c}_{up}|\vb{c}_{up}-\vb{v}|^{-1}
+    -
+    \vb{v}\bigl(
+      |\vb{c}_{up}-\vb{v}|^{-1}
+      +
+      |\vb{c}_{down}-\vb{v}|^{-1}
+    \bigr)
+  \bigr]
+  +
+  \gamma\bigl(
+    |\vb{c}_{up}-\vb{v}|^{-1}
+    -
+    |\vb{c}_{down}-\vb{v}|^{-1}
+  \bigr)
+  =0.
+  \label{eq:condition_on_p}
+\end{equation}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{fig1.png}
+\caption{Fig. 3. Geometric construction relating the photon velocities and the boost velocity.}
+\end{figure}
+
+Equation \eqref{eq:condition_on_p} can be further simplified by examining
+the directions of the vectors $\vb v$, $\vb c_{down}$, and
+$\vb c_{up}$. Since the photon in $F'$ returns along the same line on
+which it traveled toward the mirror, the vectors
+$\vb c_{down}-\vb v$ and $\vb c_{up}-\vb v$ are collinear and
+oppositely directed, although their magnitudes need not be equal.
+Consequently, $\vb c_{up}$, $\vb c_{down}$, and $\vb v$ all lie in the
+same plane, as shown in Fig.~3.
+
+In the system of reference of three mutually orthogonal unit vectors $\vb{e}_1$, $\vb{e}_2$,
+and $\vb{e}_3$, with $\vb{e}_1$ and $\vb{e}_2$ in the same plane of $\vb{c}_{up}$ and
+$\vb{v}$, and $\vb{e}_1$ in the same direction as $\mathbf{v}$, the vector $\mathbf{p}$ has
+components, 
+
+\[
+  \vb{p} = p_1\,\vb{e}_1 + p_2\,\vb{e}_2 + p_3\,\vb{e}_3
+\]
+
+and equation \eqref{eq:condition_on_p} simplifies to
+
+\[
+  p_1\, v\bigl(|\vb{c}_{up} - \vb{v}|^{-1} + |\vb{c}_{down} - \vb{v}|^{-1}\bigr)
+  - 2c(p_1\cos\alpha + p_2\sin\alpha)|\vb{c}_{up} - \vb{v}|^{-1}
+  + \gamma\bigl(|\vb{c}_{up} - \vb{v}|^{-1} - |\vb{c}_{down} - \vb{v}|^{-1}\bigr) = 0
+\]
+
+Since the direction of the photon is arbitrary, we choose $\vb e_2$ in
+the direction of the component of $\vb p$ orthogonal to $\vb v$. With
+this choice, $\vb p$ lies in the plane spanned by $\vb e_1$ and
+$\vb e_2$, and therefore $p_3=0$.
+
+From
+\[
+  \cos\alpha = \frac{c^2 + v^2 - |\vb{c}_{up} - \vb{v}|^2}{2vc}
+\]
+we arrive at
+\[
+  p_1\,\frac{c^2}{v} + \gamma
+  + p_2\,\frac{2c\sin\alpha\,|\vb{c}_{up} - \vb{v}|}{|\vb{c}_{up} - \vb{v}| - |\vb{c}_{down} - \vb{v}|}
+  = 0 \quad \forall\, \alpha, v
+\]
+which has solutions
+\begin{align}
+  p_1 &= -\gamma\,\frac{v}{c^2} \\
+  p_2 &= 0
+\end{align}
+
+The transformation of time between $F'$ and $F$ becomes then
+\begin{equation}
+  ct' = \gamma\!\left(-\frac{v}{c}\ip{\vb{e}_1}{\vb{x}} + ct\right)
+  \label{eq:transformation_of_time}
+\end{equation}
+where $\gamma$ depends only on the relative velocity between the two frames.
+
+% ============================================================
+\section{Transformation of Space}
+% ============================================================
+
+\subsection{The Most General Linear Transformation}
+
+The Lorentz transformation describes how the coordinates and the time of the same event
+observed in $F$ and $F'$ are related to each other. We postulate that the transformation is linear,
+
+\[
+  \vb{X}' = \boldsymbol{\Lambda}(\vb{v})\,\vb{X}
+\]
+
+where $\boldsymbol{\Lambda}(\vb{v})$ is a matrix depending only on the velocity vector
+$\vb{v}$, and $\vb{X}$ is the four-vector
+\[
+  \vb{X} = (x_1, x_2, x_3, ct).
+\]
+
+A four-vector can be expanded in the basis formed by the mutually
+orthogonal unit vectors $\vb{e}_1$, $\vb{e}_2$ and $\vb{e}_3$, with $\vb{e}_1$ chosen parallel to
+$\vb{v}$:
+
+\[
+  \vb{X} = x_1\ket{\vb{e}_1, 0} + x_2\ket{\vb{e}_2, 0} + x_3\ket{\vb{e}_3, 0}
+           + ct\ket{\vb{0}, 1}
+\]
+
+and the Lorentz transformation $\boldsymbol{\Lambda}(\vb{v})$ in its most general form
+becomes
+
+\begin{equation}
+  \begin{aligned}
+    \boldsymbol{\Lambda}(\vb{v}) =\;
+      &\lambda_{1,1}\ket{\vb{e}_1,0}\bra{\vb{e}_1,0}
+      + \lambda_{1,2}\ket{\vb{e}_1,0}\bra{\vb{e}_2,0}
+      + \lambda_{1,3}\ket{\vb{e}_1,0}\bra{\vb{e}_3,0}
+      + \lambda_{1,4}\ket{\vb{e}_1,0}\bra{\vb{0},1} \\
+    +\;&\lambda_{2,1}\ket{\vb{e}_2,0}\bra{\vb{e}_1,0}
+      + \lambda_{2,2}\ket{\vb{e}_2,0}\bra{\vb{e}_2,0}
+      + \lambda_{2,3}\ket{\vb{e}_2,0}\bra{\vb{e}_3,0}
+      + \lambda_{2,4}\ket{\vb{e}_2,0}\bra{\vb{0},1} \\
+    +\;&\lambda_{3,1}\ket{\vb{e}_3,0}\bra{\vb{e}_1,0}
+      + \lambda_{3,2}\ket{\vb{e}_3,0}\bra{\vb{e}_2,0}
+      + \lambda_{3,3}\ket{\vb{e}_3,0}\bra{\vb{e}_3,0}
+      + \lambda_{3,4}\ket{\vb{e}_3,0}\bra{\vb{0},1} \\
+    +\;&\lambda_{4,1}\ket{\vb{0},1}\bra{\vb{e}_1,0}
+      + \lambda_{4,2}\ket{\vb{0},1}\bra{\vb{e}_2,0}
+      + \lambda_{4,3}\ket{\vb{0},1}\bra{\vb{e}_3,0}
+      + \lambda_{4,4}\ket{\vb{0},1}\bra{\vb{0},1}
+  \end{aligned}
+  \label{eq:general_Lorentz}
+\end{equation}
+
+where $\lambda_{i,j}$ are, at this stage, arbitrary. The transformation of time
+\eqref{eq:transformation_of_time} can be utilized to identify some of the $\lambda_{i,j}$ but
+not all of them: additional physical assumptions are required on how events are observed in $F$ and $F'$ to
+restrict the possible choices for $\lambda_{i,j}$.
+
+\subsection{Determining the Time Transformation}
+
+The transformation $\boldsymbol{\Lambda}(\vb{v})$ applied to a four-vector with only a time
+component $\vb{X} = x_4\ket{\vb{0},1}$ gives,
+\[
+  \boldsymbol{\Lambda}\, x_4\ket{\vb{0},1}
+  = x_4\!\left(
+      \lambda_{1,4}\ket{\vb{e}_1,0}
+    + \lambda_{2,4}\ket{\vb{e}_2,0}
+    + \lambda_{3,4}\ket{\vb{e}_3,0}
+    + \lambda_{4,4}\ket{\vb{0},1}
+  \right)
+\]
+
+From the previously derived transformation of time
+\eqref{eq:transformation_of_time}, the image of a four-vector having only
+a temporal component contains only a component parallel to
+$\ket{\vb{e}_1,0}$ and a temporal component. Hence it cannot have
+components along $\ket{\vb{e}_2,0}$ or $\ket{\vb{e}_3,0}$, and therefore
+
+
+\[
+\lambda_{2,4}=\lambda_{3,4}=0.
+\]
+
+\subsection{First Assumption: Preservation of the Longitudinal Direction}
+
+The first assumption we make is that the subspace spanned by the direction
+$\vb e_1$ and the time direction is invariant. Thus, an event in $F$ with
+spatial components only along $\vb e_1$ will not acquire components along
+$\vb e_2$ or $\vb e_3$ when observed in $F'$. Given an event
+
+$\vb{X} = x_1\ket{\vb{e}_1, 0} + x_4\ket{\vb{0}, 1}$, its transformation in $F'$ will be,
+\[
+  \begin{aligned}
+    \boldsymbol{\Lambda}(\vb{v})\bigl(x_1\ket{\vb{e}_1,0} + x_4\ket{\vb{0},1}\bigr)
+    &= x_1\!\left(
+        \lambda_{1,1}\ket{\vb{e}_1,0}
+      + \lambda_{2,1}\ket{\vb{e}_2,0}
+      + \lambda_{3,1}\ket{\vb{e}_3,0}
+      + \lambda_{4,1}\ket{\vb{0},1}
+    \right) \\
+    &\quad + x_4\!\left(\lambda_{1,4}\ket{\vb{e}_1,0} + \lambda_{4,4}\ket{\vb{0},1}\right)
+  \end{aligned}
+\]
+
+Since this condition must hold for every value of $x_1$, the coefficients
+of the basis vectors $\ket{\vb{e}_2,0}$ and $\ket{\vb{e}_3,0}$ must vanish.
+Hence,
+\[
+  \lambda_{2,1}=\lambda_{3,1}=0.
+\]
+
+The general form \eqref{eq:general_Lorentz} further simplifies as,
+\[
+  \begin{aligned}
+    \boldsymbol{\Lambda}(\vb{v}) =\;
+      &\lambda_{1,1}\ket{\vb{e}_1,0}\bra{\vb{e}_1,0}
+      + \lambda_{1,2}\ket{\vb{e}_1,0}\bra{\vb{e}_2,0}
+      + \lambda_{1,3}\ket{\vb{e}_1,0}\bra{\vb{e}_3,0}
+      + \lambda_{1,4}\ket{\vb{e}_1,0}\bra{\vb{0},1} \\
+    +\;&\lambda_{2,2}\ket{\vb{e}_2,0}\bra{\vb{e}_2,0}
+      + \lambda_{2,3}\ket{\vb{e}_2,0}\bra{\vb{e}_3,0} \\
+    +\;&\lambda_{3,2}\ket{\vb{e}_3,0}\bra{\vb{e}_2,0}
+      + \lambda_{3,3}\ket{\vb{e}_3,0}\bra{\vb{e}_3,0} \\
+    +\;&\lambda_{4,1}\ket{\vb{0},1}\bra{\vb{e}_1,0}
+      + \lambda_{4,2}\ket{\vb{0},1}\bra{\vb{e}_2,0}
+      + \lambda_{4,3}\ket{\vb{0},1}\bra{\vb{e}_3,0}
+      + \lambda_{4,4}\ket{\vb{0},1}\bra{\vb{0},1}
+  \end{aligned}
+\]
+
+\subsection{Second Assumption: Invariance Orthogonal to the Boost Direction}
+
+The second assumption needed is that the spatial components along $\ket{\vb{e}_2,0}$ and
+$\ket{\vb{e}_3,0}$ of any event preserve their direction and length under
+$\boldsymbol{\Lambda}(\vb{v})$. 
+
+For an event $\vb{X} = x_2\ket{\vb{e}_2, 0} + x_3\ket{\vb{e}_3, 0}$, the corresponding event in $F'$ will be,
+
+\[
+  \begin{aligned}
+    \boldsymbol{\Lambda}(\vb{v})
+    \bigl(
+      x_2\ket{\vb{e}_2,0}
+      +
+      x_3\ket{\vb{e}_3,0}
+    \bigr)
+    &=
+    x_2\!\left(
+        \lambda_{1,2}\ket{\vb{e}_1,0}
+      + \lambda_{2,2}\ket{\vb{e}_2,0}
+      + \lambda_{3,2}\ket{\vb{e}_3,0}
+      + \lambda_{4,2}\ket{\vb{0},1}
+    \right)
+    \\
+    &\quad
+    +
+    x_3\!\left(
+        \lambda_{1,3}\ket{\vb{e}_1,0}
+      + \lambda_{2,3}\ket{\vb{e}_2,0}
+      + \lambda_{3,3}\ket{\vb{e}_3,0}
+      + \lambda_{4,3}\ket{\vb{0},1}
+    \right).
+  \end{aligned}
+\]
+
+Our assumption therefore requires $\lambda_{1,2} = \lambda_{1,3} = \lambda_{2,3} = \lambda_{3,2}
+= 0$ and $\lambda_{2,2} = \lambda_{3,3} = 1$, which results in a further simplification of
+$\boldsymbol{\Lambda}(\vb{v})$:
+\[
+  \begin{aligned}
+    \boldsymbol{\Lambda}(\vb{v}) =\;
+      &\lambda_{1,1}\ket{\vb{e}_1,0}\bra{\vb{e}_1,0}
+      + \lambda_{1,4}\ket{\vb{e}_1,0}\bra{\vb{0},1} \\
+    +\;&\ket{\vb{e}_2,0}\bra{\vb{e}_2,0} \\
+    +\;&\ket{\vb{e}_3,0}\bra{\vb{e}_3,0} \\
+    +\;&\lambda_{4,1}\ket{\vb{0},1}\bra{\vb{e}_1,0}
+      + \lambda_{4,2}\ket{\vb{0},1}\bra{\vb{e}_2,0}
+      + \lambda_{4,3}\ket{\vb{0},1}\bra{\vb{e}_3,0}
+      + \lambda_{4,4}\ket{\vb{0},1}\bra{\vb{0},1}
+  \end{aligned}
+\]
+
+Using the previously derived  \eqref{eq:transformation_of_time}, we identify
+
+\[
+  \lambda_{4,1}=-\gamma\frac{v}{c},
+  \qquad
+  \lambda_{4,2}=\lambda_{4,3}=0,
+  \qquad
+  \lambda_{4,4}=\gamma.
+\]
+
+We therefore arrive at the final functional form of
+$\boldsymbol{\Lambda}(\vb{v})$:
+
+\begin{equation}
+  \begin{aligned}
+    \boldsymbol{\Lambda}(\vb{v}) =\;
+      &\lambda_{1,1}\ket{\vb{e}_1,0}\bra{\vb{e}_1,0}
+      + \lambda_{1,4}\ket{\vb{e}_1,0}\bra{\vb{0},1}
+      + \ket{\vb{e}_2,0}\bra{\vb{e}_2,0}
+      + \ket{\vb{e}_3,0}\bra{\vb{e}_3,0} \\
+      &- \gamma\,\frac{v}{c}\ket{\vb{0},1}\bra{\vb{e}_1,0}
+      + \gamma\ket{\vb{0},1}\bra{\vb{0},1}
+  \end{aligned}
+  \label{eq:simplified_Lorentz}
+\end{equation}
+
+Finally, the coefficients $\lambda_{1,1}$ and $\gamma$ must be positive
+to preserve the orientation of the longitudinal spatial axis and the direction of increasing time.
+
+\subsection{Third Assumption: Invariance of Light Speed}
+
+In Special Relativity the spacetime interval between two events $(x_1, y_1, z_1, ct_1)$ and
+$(x_2, y_2, z_2, ct_2)$ is defined as
+
+\[
+  \Delta s^2 = (x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2 - c^2(t_2 - t_1)^2
+\]
+
+and can be written in bi-linear form as
+
+\[
+  \Delta s^2 = \ip{\vb{X}}{\vb{M}\,\vb{X}}
+\]
+
+where $\vb{X} = (x_2 - x_1,\; y_2 - y_1,\; z_2 - z_1,\; c(t_2 - t_1))$ and
+\[
+  \vb{M} =
+  \begin{pmatrix}
+    1 & 0 & 0 &  0 \\
+    0 & 1 & 0 &  0 \\
+    0 & 0 & 1 &  0 \\
+    0 & 0 & 0 & -1
+  \end{pmatrix}
+\]
+
+A spacetime interval measured in $F'$ is linked to the same interval in $F$ by the Lorentz
+transformation
+
+\[
+  \Delta s'^2
+  = \ip{\vb{X}'}{\vb{M}\,\vb{X}'}
+  = \ip{\boldsymbol{\Lambda}\vb{X}}{\vb{M}\,\boldsymbol{\Lambda}\vb{X}}
+  = \ip{\vb{X}}{\boldsymbol{\Lambda}^T\vb{M}\,\boldsymbol{\Lambda}\,\vb{X}}
+\]
+
+In the system $F$ we consider a photon moving along a unit vector $\vb{n}$. The photon at
+time $t_1$ is in the position $\vb{x}_1$, and moves to the position
+$\vb{x}_1 + \vb{n}\,c(t_2 - t_1)$ at the time $t_2$. 
+
+Since $||\vb n||=1$ the spacetime between the two events is identically zero,
+
+\[
+  \Delta s^2 = c^2(t_2 - t_1)^2\|\vb{n}\|^2 - c^2(t_2 - t_1)^2 = 0
+\]
+
+
+When we examine two events occurring along the trajectory of a photon (referred to as the
+photon's world line), the spacetime interval $\Delta' s^2$ in $F'$ must also be zero, assuming
+that the speed of light $c$ remains invariant,
+\[
+  \ip{
+    \bigl(c(t_2-t_1)\vb{n},\; c(t_2-t_1)\bigr)
+  }{
+    \boldsymbol{\Lambda}^T\vb{M}\,\boldsymbol{\Lambda}
+    \cdot\bigl(c(t_2-t_1)\vb{n},\; c(t_2-t_1)\bigr)
+  } = 0
+\]
+equivalent to,
+\begin{equation}
+  \ip{(\vb{n},1)}{\boldsymbol{\Lambda}^T\vb{M}\,\boldsymbol{\Lambda}\cdot(\vb{n},1)}
+  = 0
+  \label{eq:invariance_light_speed}
+\end{equation}
+for all $\vb{n}$ such that $\|\vb{n}\| = 1$.
+
+To solve the equation above, we need $\vb{M}\,\boldsymbol{\Lambda}$, which is
+$\boldsymbol{\Lambda}$ with the time component's sign changed,
+\[
+  \begin{aligned}
+    \vb{M}\,\boldsymbol{\Lambda}(\vb{v}) =\;
+      &\lambda_{1,1}\ket{\vb{e}_1,0}\bra{\vb{e}_1,0}
+      + \lambda_{1,4}\ket{\vb{e}_1,0}\bra{\vb{0},1}
+      + \lambda_{2,2}\ket{\vb{e}_2,0}\bra{\vb{e}_2,0}
+      + \lambda_{3,3}\ket{\vb{e}_3,0}\bra{\vb{e}_3,0} \\
+      &+ \gamma\,\frac{v}{c}\ket{\vb{0},1}\bra{\vb{e}_1,0}
+      - \gamma\ket{\vb{0},1}\bra{\vb{0},1}
+  \end{aligned}
+\]
+
+and $\boldsymbol{\Lambda}^T$ is readily obtained by interchanging the bra and ket vectors,
+\[
+  \begin{aligned}
+    \boldsymbol{\Lambda}(\vb{v})^T =\;
+      &\lambda_{1,1}\ket{\vb{e}_1,0}\bra{\vb{e}_1,0}
+      + \lambda_{1,4}\ket{\vb{0},1}\bra{\vb{e}_1,0}
+      + \lambda_{2,2}\ket{\vb{e}_2,0}\bra{\vb{e}_2,0}
+      + \lambda_{3,3}\ket{\vb{e}_3,0}\bra{\vb{e}_3,0} \\
+      &- \gamma\,\frac{v}{c}\ket{\vb{e}_1,0}\bra{\vb{0},1}
+      + \gamma\ket{\vb{0},1}\bra{\vb{0},1}
+  \end{aligned}
+\]
+
+
+
+The operator $\boldsymbol{\Lambda}(\vb{v})^T\vb{M}\,\boldsymbol{\Lambda}(\vb{v})$ is
+\[
+  \begin{aligned}
+    &\left(\lambda_{1,1}^2 - \gamma^2\frac{v^2}{c^2}\right)\ket{\vb{e}_1,0}\bra{\vb{e}_1,0} \\
+    +\;&\left(\lambda_{1,1}\lambda_{1,4} + \gamma^2\frac{v}{c}\right)
+      \bigl(\ket{\vb{0},1}\bra{\vb{e}_1,0} + \ket{\vb{e}_1,0}\bra{\vb{0},1}\bigr) \\
+    +\;&\lambda_{2,2}^2\ket{\vb{e}_2,0}\bra{\vb{e}_2,0}
+      + \lambda_{3,3}^2\ket{\vb{e}_3,0}\bra{\vb{e}_3,0} \\
+    +\;&\left(\lambda_{1,4}^2 - \gamma^2\right)\ket{\vb{0},1}\bra{\vb{0},1}
+  \end{aligned}
+\]
+
+and the equation for the invariance of speed of light \eqref{eq:invariance_light_speed} reads,
+\[
+  \left(\lambda_{1,1}^2 - \gamma^2\frac{v^2}{c^2}\right)n_1^2
+  + 2\left(\lambda_{1,1}\lambda_{1,4} + \gamma^2\frac{v}{c}\right)n_1
+  + n_2^2 + n_3^2
+  + \left(\lambda_{1,4}^2 - \gamma^2\right) = 0
+\]
+
+The above equation is identically zero for all $\vb{n}$ such that $\|\vb{n}\| = 1$ only if,
+
+\begin{align}
+  \lambda_{1,1}^2 - \gamma^2\displaystyle\frac{v^2}{c^2} &= 1 \\
+  \lambda_{1,1}\lambda_{1,4} + \gamma^2\displaystyle\frac{v}{c} &= 0 \\
+  \lambda_{1,4}^2 - \gamma^2 &= -1
+\end{align}
+
+which admits the following solution, continuously connected to the
+identity transformation at $v=0$:
+\begin{align}
+  \gamma
+  &=
+  \frac{1}{\sqrt{1-\frac{v^2}{c^2}}},
+  \\
+  \lambda_{1,1}
+  &=
+  \gamma,
+  \\
+  \lambda_{1,4}
+  &=
+  -\gamma\frac{v}{c}.
+\end{align}
+
+The Lorentz transformation takes the final form
+
+\begin{equation}
+  \begin{aligned}
+    \boldsymbol{\Lambda}(\vb{v}) =\;
+      &\gamma\ket{\vb{e}_1,0}\bra{\vb{e}_1,0}
+      - \gamma\,\frac{v}{c}
+        \ket{\vb{e}_1,0}\bra{\vb{0},1}
+      + \ket{\vb{e}_2,0}\bra{\vb{e}_2,0}
+      + \ket{\vb{e}_3,0}\bra{\vb{e}_3,0}
+      \\
+      &- \gamma\,\frac{v}{c}
+        \ket{\vb{0},1}\bra{\vb{e}_1,0}
+      + \gamma\ket{\vb{0},1}\bra{\vb{0},1}.
+  \end{aligned}
+  \label{eq:Lorentz_transformation}
+\end{equation}
+
+The inverse of $\boldsymbol{\Lambda}(\vb{v})$ transforms coordinates from
+$F'$ to $F$. It is obtained by reversing the boost velocity and can be
+verified directly:
+
+\begin{equation}
+  \boldsymbol{\Lambda}^{-1}(\vb{v}) = \boldsymbol{\Lambda}(-\vb{v}) =
+    \gamma\ket{\vb{e}_1,0}\bra{\vb{e}_1,0}
+    + \gamma\,\frac{v}{c}\ket{\vb{e}_1,0}\bra{\vb{0},1}
+    + \ket{\vb{e}_2,0}\bra{\vb{e}_2,0}
+    + \ket{\vb{e}_3,0}\bra{\vb{e}_3,0}
+    + \gamma\,\frac{v}{c}\ket{\vb{0},1}\bra{\vb{e}_1,0}
+    + \gamma\ket{\vb{0},1}\bra{\vb{0},1}
+  \label{eq:Lorentz_inverse}
+\end{equation}
+
+The Lorentz transformation written explicitly in terms of the velocity vector, using
+$\ket{\vb{e}_1,0} = \ket{\vb{v},0}/v$, reads,
+\begin{equation}
+  \boldsymbol{\Lambda}(\vb{v}) =
+    \frac{\gamma}{v^2}\ket{\vb{v},0}\bra{\vb{v},0}
+    - \frac{\gamma}{c}\ket{\vb{v},0}\bra{\vb{0},1}
+    + \ket{\vb{e}_2,0}\bra{\vb{e}_2,0}
+    + \ket{\vb{e}_3,0}\bra{\vb{e}_3,0}
+    - \frac{\gamma}{c}\ket{\vb{0},1}\bra{\vb{v},0}
+    + \gamma\ket{\vb{0},1}\bra{\vb{0},1}
+  \label{eq:Lorentz_in_velocity}
+\end{equation}
+
+When $\vb{v}$ has the direction of the $x$-axis, the transformation simplifies to the original
+Einstein formula:
+\begin{align}
+  x' &= \gamma(x - vt)               \nonumber \\
+  y' &= y                            \nonumber \\
+  z' &= z                            \nonumber \\
+  t' &= \gamma\!\left(t - \frac{v}{c^2}x\right)
+  \label{eq:Lorentz_1d}
+\end{align}
+
+Finally, one readily verifies that the Lorentz transformation satisfies the condition
+$\boldsymbol{\Lambda}^T\vb{M}\,\boldsymbol{\Lambda} = \vb{M}$, hence $\Delta s'^2=\Delta s^2$ for every pair of events, not only for
+events lying on the worldline of a photon:
+
+\begin{equation}
+  \Delta s'^2
+  = \ip{\vb{X}'}{\vb{M}\,\vb{X}'}
+  = \ip{\boldsymbol{\Lambda}\vb{X}}
+        {\vb{M}\,\boldsymbol{\Lambda}\vb{X}}
+  = \ip{\vb{X}}
+        {\boldsymbol{\Lambda}^T\vb{M}\,
+         \boldsymbol{\Lambda}\,\vb{X}}
+  = \ip{\vb{X}}{\vb{M}\,\vb{X}}
+  = \Delta s^2.
+  \label{eq:spacetime_interval_invariance}
+\end{equation}
+
+\section{A Final Remark on the Meaning of the Lorentz Transformation}
+
+When studying the Lorentz transformation, it is important to keep in mind a simple—perhaps 
+obvious—but surprisingly often unstated point.\par
+
+Each inertial reference frame possesses its own system of clocks and rulers.
+Observers at rest in the frame $F$ measure space and time using their own clocks
+and rulers, while observers at rest in $F'$ perform the same measurements using
+their own independent instruments. The uniform motion of one frame relative to
+the other does not physically modify either system. This principle was already
+implicit in Galilean relativity and remains equally valid in Special Relativity.\par
+
+Imagine that we remain on Earth, going about our everyday lives, while an alien
+spacecraft flies past us at a speed approaching that of light. Suppose that the
+alien civilization is familiar with our way of measuring time. Through previous
+encounters with humanity, they know what we mean by a second, a minute, an
+hour, and a day.\par
+
+Nothing unusual would happen from our perspective when the aliens fly by. Our
+clocks would continue to tick at their normal rate, our rulers would retain
+their usual lengths, and the laws of physics would proceed exactly as they
+always have. To us, there is nothing remarkable about our relative motion with
+respect to the alien spacecraft. In fact, we would not even know that an alien
+spacecraft was observing our motion. We would wake up, go to work,
+build telescopes, and perform experiments exactly as we always have. Our clocks
+would continue to tick normally, our rulers would retain their usual lengths,
+and the space and time we measure would simply describe the universe in which
+we live.\par
+
+The situation is exactly the same for the crew aboard the alien spacecraft.
+They, too, carry their own clocks and rulers, and from their perspective it is
+our planet that is rushing past at enormous speed. Their clocks tick normally,
+their rulers do not contract, and the physical world they experience is every
+bit as ordinary as ours. Each observer naturally believes that their own clocks
+and rulers describe the world correctly, and they are both right.\par
+
+The alien observers, however, would describe our world very differently. They
+would conclude that one of our days lasts much longer than twenty-four hours,
+and that our cars, airplanes, and every object moving with the Earth are
+contracted along the direction of motion, as we shall derive in the following
+chapters.\par
+
+What the alien observers \textbf{can} do is make sense of these apparently very
+long days by using the Lorentz transformation. Since they know the relative
+velocity between our two reference frames, they can compute how long our days
+actually last \textbf{for us}. They would then conclude that one day measured by
+our own clocks --- our \emph{proper time} --- is exactly twenty-four hours, even though they \textbf{measure} a much longer time interval
+\emph{for} the same process in their own reference frame. The Lorentz transformation therefore allows them to translate
+their description of our measurements into the measurements made by our own
+clocks and rulers. \par
+
+It is important to appreciate the role of the Lorentz transformation in this
+process. The alien observers never directly measure the passage of time on our
+clocks. What they measure is the duration of one of our days according to
+\emph{their} own clocks. Likewise, we never directly measure the passage of
+time on theirs. Every observer performs measurements using only the clocks and
+rulers belonging to their own reference frame.
+
+The purpose of the Lorentz transformation is therefore not to determine what an
+observer measures. Those measurements are obtained directly by experiment.
+Rather, its role is to reconcile the independent measurements performed in the
+two reference frames, allowing each observer to infer what the other observer
+measures using their own clocks and rulers. \par
+
+Interestingly, if one of us were able to observe the alien spacecraft as it
+passed by, we would describe their world in exactly the same way. We would
+conclude that their days are much longer than ours and that distances along the
+direction of motion are contracted. Each observer therefore regards the other
+reference frame as exhibiting time dilation and length contraction, yet both
+descriptions are equally valid. \par
+
+This is a profound departure from our own experience. Contrary to the
+Newtonian view, there exists no preferred or absolute frame of reference against
+which motion can be measured. There exists no hidden or absolute reference frame from which one could 
+decide whether our description or that of the alien observers is the "correct" one. 
+\par
+
+The Lorentz transformation should therefore not be interpreted as imposing a
+relationship between the physical clocks or rulers belonging to the two
+reference frames. Rather, it provides the mathematical rule that relates the
+coordinates assigned by the two observers to the \emph{same spacetime event}. 
+The transformation does not constrain the
+independent evolution of time or space within either frame; it simply
+relates two different descriptions of one physical reality. \par
+
+This distinction is essential. The Lorentz transformation is fundamentally a
+transformation between coordinate systems, not a law describing how clocks
+or rulers physically change because of motion. The phenomena of time
+dilation, length contraction, and the relativity of simultaneity arise only
+when comparing measurements of specific physical processes performed in
+different inertial frames through these coordinate transformations. \par
+
+ 
+There is, however, one final viewpoint that deserves special attention. Besides the reference frames
+$F$ and $F'$, every physical object carries with it its own rest frame. This
+frame is not privileged in any universal sense, but it is privileged for the
+object itself: it is the frame in which the object remains at rest and in which
+its own clocks measure the passage of its history. The time measured by these
+clocks is called the \emph{proper time}. Proper time is one of the fundamental quantities of Special Relativity and 
+will become the natural parameter describing the history of every physical system throughout the chapters that follow. \par
+
+It is worth emphasizing one final conceptual point. \par
+
+Every observer performs measurements using only the clocks and rulers at rest
+in their own reference frame. The Lorentz transformation does not determine
+those measurements; they are obtained directly by experiment. Its purpose is to
+relate the independent measurements performed in different inertial reference
+frames. \par
+
+\end{document}

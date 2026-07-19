@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbo",
+    "dev": "concurrently --kill-others --names next,latex --prefix-colors blue,magenta \"pnpm dev:next\" \"pnpm dev:latex\"",
+    "dev:next": "next dev --turbo",
+    "dev:latex": "node --experimental-strip-types ./scripts/watchLibraryLatex.ts",
     "prebuild": "pnpm validate:figure-dimensions",
     "build": "next build",
     "start": "next start",
@@ -30,6 +32,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "concurrently": "^10.0.3",
     "eslint": "^9",
     "eslint-config-next": "^16.0.0",
     "typescript": "^5.9.3"

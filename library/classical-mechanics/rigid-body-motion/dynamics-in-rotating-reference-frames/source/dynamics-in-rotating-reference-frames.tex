@@ -1,0 +1,243 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\newcommand{\ds}{\displaystyle}
+
+\title{Dynamics in Rotating Reference Frames}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+% ============================================================
+\section{Introduction}
+% ============================================================
+
+This essay develops the dynamics observed in a rotating reference frame. We begin with the
+kinematical relations required to compare time derivatives in inertial and rotating frames,
+then derive the acceleration transformation and the inertial forces that follow from it.
+
+\subsection{Kinematical Preliminaries}
+
+Let $\vb{A}(t)$ be the orthogonal matrix that maps the components of a vector in the inertial
+frame to its components in the rotating frame:
+\begin{equation}
+  \vb{g}'(t) = \vb{A}(t)\,\vb{g}(t),
+  \qquad
+  \vb{g}(t) = \vb{A}^{\top}(t)\,\vb{g}'(t).
+  \label{rotating-frames:frame-transformation}
+\end{equation}
+The angular velocity is defined from the infinitesimal rotation vector by
+\begin{equation}
+  \boldsymbol{\omega} = \lim_{\Delta t\to0}\frac{d\boldsymbol{\Omega}}{\Delta t}.
+  \label{rotating-frames:angular-velocity-definition}
+\end{equation}
+The corresponding time-derivative rule is
+\begin{equation}
+  \frac{d\vb{g}}{dt}
+  = \vb{A}^{\top}(t)\!\left(
+      \boldsymbol{\omega}\times\vb{g}' + \frac{d\vb{g}'}{dt}
+    \right).
+  \label{rotating-frames:time-derivative-rule}
+\end{equation}
+These relations are the only results from rigid-body kinematics needed below.
+
+% ============================================================
+\section{Equations of Motion in a Rotating Frame}
+% ============================================================
+
+In this section, we will thoroughly derive the equations of motion for a body in a rotating
+frame of reference with respect to a fixed one. We will limit our discussion to cases of
+constant angular velocity. The equations of motion will be expressed within the rotating
+frame, introducing the Coriolis and centrifugal forces that emerge in these scenarios.
+
+We start from the equation giving the rate of change of a vector in the fixed frame
+\eqref{rotating-frames:time-derivative-rule}. We compute the second time derivative of the position vector
+$\vb{r}$ in the fixed frame, and we consider its components in the rotating frame $\vb{r}'$:
+\begin{equation}
+  \frac{d^2\vb{r}(t)}{dt^2} =
+    \frac{d\vb{A}^\top}{dt}\!\left(\boldsymbol{\omega}\times\vb{r}' + \frac{d\vb{r}'}{dt}\right)
+    + \vb{A}^\top\!\left(\boldsymbol{\omega}\times\frac{d\vb{r}'}{dt} + \frac{d^2\vb{r}'}{dt^2}\right)
+\end{equation}
+
+From the orthogonality of the rotation matrix, $\vb{A}^\top\vb{A} = \vb{I}$:
+\begin{equation}
+  \frac{d\vb{A}^\top}{dt}\,\vb{A} + \vb{A}\,\frac{d\vb{A}^\top}{dt} = 0
+\end{equation}
+we obtain:
+\begin{equation}
+  \frac{d\vb{A}^\top}{dt} = -\vb{A}^\top\frac{d\vb{A}}{dt}\,\vb{A}^\top
+\end{equation}
+
+Inserting this expression in the equation above, and using the distributive property of the
+cross product for orthogonal matrices,
+\begin{equation}
+  \begin{aligned}
+    \frac{d^2\vb{r}(t)}{dt^2}
+    &= -\vb{A}^\top\frac{d\vb{A}}{dt}\,\vb{A}^\top
+       \!\left(\boldsymbol{\omega}\times\vb{r}' + \frac{d\vb{r}'}{dt}\right)
+       + \vb{A}^\top\!\left(\boldsymbol{\omega}\times\frac{d\vb{r}'}{dt} + \frac{d^2\vb{r}'}{dt^2}\right) \\
+    &= -\vb{A}^\top\frac{d\vb{A}}{dt}
+       \!\left(\vb{A}^\top\boldsymbol{\omega}\times\vb{A}^\top\vb{r}'
+         + \vb{A}^\top\frac{d\vb{r}'}{dt}\right)
+       + \vb{A}^\top\!\left(\boldsymbol{\omega}\times\frac{d\vb{r}'}{dt} + \frac{d^2\vb{r}'}{dt^2}\right) \\
+    &= -\vb{A}^\top\!\left(\vb{A}\!\left(\vb{A}^\top\boldsymbol{\omega}\times\vb{A}^\top\vb{r}'
+         + \vb{A}^\top\frac{d\vb{r}'}{dt}\right)\right)\times\boldsymbol{\omega}
+       + \vb{A}^\top\!\left(\boldsymbol{\omega}\times\frac{d\vb{r}'}{dt} + \frac{d^2\vb{r}'}{dt^2}\right) \\
+    &= -\vb{A}^\top\!\left(\boldsymbol{\omega}\times\vb{r}' + \frac{d\vb{r}'}{dt}\right)\times\boldsymbol{\omega}
+       + \vb{A}^\top\!\left(\boldsymbol{\omega}\times\frac{d\vb{r}'}{dt} + \frac{d^2\vb{r}'}{dt^2}\right)
+  \end{aligned}
+\end{equation}
+
+we arrive at the equation:
+\begin{equation}
+  \vb{A}\,\frac{d^2\vb{r}(t)}{dt^2} =
+    \boldsymbol{\omega}\times(\boldsymbol{\omega}\times\vb{r}')
+    + 2\boldsymbol{\omega}\times\frac{d\vb{r}'}{dt}
+    + \frac{d^2\vb{r}'}{dt^2}.
+\end{equation}
+
+Defining the acceleration in the fixed frame as $\vb{a} = \frac{d^2\vb{r}(t)}{dt^2}$, and
+the acceleration in the rotating frame as $\vb{a}' = \frac{d^2\vb{r}'(t)}{dt^2}$, we obtain
+the equation of motion:
+\begin{equation}
+  \vb{a}' = -\boldsymbol{\omega}\times(\boldsymbol{\omega}\times\vb{r}')
+    - 2\boldsymbol{\omega}\times\frac{d\vb{r}'}{dt}
+    + \vb{A}\,\vb{a}
+  \label{rotating-frames:acceleration-transformation}
+\end{equation}
+
+The centrifugal force $\vb{F}_\text{cf}$ on a body of mass $m$ is the term
+\begin{equation}
+  \vb{F}_\text{cf} = -m\boldsymbol{\omega}\times(\boldsymbol{\omega}\times\vb{r}')
+    = -m\bigl(\boldsymbol{\omega}\ip{\boldsymbol{\omega}}{\vb{r}'} - \omega^2\vb{r}'\bigr)
+  \label{rotating-frames:centrifugal-force}
+\end{equation}
+which has a magnitude proportional to the square of the angular velocity, and is directed
+radially outward from the axis of rotation. The Coriolis force is the term dependent on the
+body velocity,
+\begin{equation}
+  F_\text{cor} = -2m\boldsymbol{\omega}\times\frac{d\vb{r}'}{dt}
+  \label{rotating-frames:coriolis-force}
+\end{equation}
+which arises from the movement of the body in the rotating frame and is perpendicular to the
+velocity of the body.
+
+\subsection{Generalization to Time-Dependent Angular Velocity}
+
+The original document assumes constant angular velocity. For completeness, we record the
+standard extension needed when the angular velocity of the frame varies with time. Applying
+the time-derivative rule to $\boldsymbol{\omega}\times\vb{r}'$ gives
+\begin{equation}
+  \vb{a}' = \vb{A}\,\vb{a}
+    - \boldsymbol{\omega}\times(\boldsymbol{\omega}\times\vb{r}')
+    - 2\boldsymbol{\omega}\times\frac{d\vb{r}'}{dt}
+    - \dot{\boldsymbol{\omega}}\times\vb{r}'.
+  \label{rotating-frames:variable-angular-velocity-acceleration}
+\end{equation}
+The additional term corresponds to the Euler force
+\begin{equation}
+  \vb{F}_\text{Euler}
+    = -m\dot{\boldsymbol{\omega}}\times\vb{r}'.
+  \label{rotating-frames:euler-force}
+\end{equation}
+This is the only dynamical term in this essay that was not present in the original document.
+
+\subsection{Lagrange Equations of Motion in a Rotating Frame}
+
+In this section and the next, we will shorten the symbol of time derivative $da/dt$ to
+$\dot{a}$ to simplify the equations. Further, we will assume that all quantities are in the
+rotating frame, and $\vb{r}$ represents the position vector in such a frame.
+
+The equations of motion in a rotating frame can be expressed using Lagrangian mechanics. The
+Lagrangian is defined as the difference between the kinetic and potential energies of the
+system:
+\begin{equation}
+  L = T - V
+\end{equation}
+where $T$ is the kinetic energy and $V$ is the potential of the forces in the system.
+
+The centrifugal force admits a potential $V_\text{cf}$ calculated as:
+\begin{equation}
+  V_\text{cf} = \frac{m}{2}\bigl(-\ip{\vb{r}}{\vb{r}}\ip{\boldsymbol{\omega}}{\boldsymbol{\omega}}
+    + \ip{\boldsymbol{\omega}}{\vb{r}}^2\bigr)
+\end{equation}
+thus,
+\begin{equation}
+  \vb{F}_\text{cf} = -\frac{\partial V_\text{cf}}{\partial\vb{r}}
+\end{equation}
+
+The Coriolis force, similarly to the Lorentz force in electromagnetism, admits a generalized
+potential $V_\text{cor}$ determined as,
+\begin{equation}
+  V_\text{cor} = -m\ip{\boldsymbol{\omega}\times\vb{r}}{\dot{\vb{r}}}
+\end{equation}
+so that the Coriolis force derives from a generalized potential:
+\begin{equation}
+  \vb{F}_\text{cor} = \frac{d}{dt}\frac{\partial V_\text{cor}}{\partial\dot{\vb{r}}}
+    - \frac{\partial V_\text{cor}}{\partial\vb{r}}
+\end{equation}
+
+Consequently, the Lagrangian of the system becomes:
+\begin{equation}
+  L = \frac{1}{2}m\ip{\dot{\vb{r}}}{\dot{\vb{r}}}
+    + \frac{m}{2}\bigl(-\ip{\vb{r}}{\vb{r}}\ip{\boldsymbol{\omega}}{\boldsymbol{\omega}}
+      + \ip{\boldsymbol{\omega}}{\vb{r}}^2\bigr)
+    - m\ip{\boldsymbol{\omega}\times\vb{r}}{\vb{v}}
+\end{equation}
+
+The Lagrange equations of motion are given by:
+\begin{equation}
+  \frac{d}{dt}\frac{\partial L}{\partial\dot{\vb{r}}} - \frac{\partial L}{\partial\vb{r}} = 0
+\end{equation}
+
+The first term of the Lagrangian gives:
+\begin{equation}
+  \frac{d}{dt}\frac{\partial L}{\partial\dot{\vb{r}}} = m\dot{\vb{r}}
+\end{equation}
+
+The second term of the Lagrangian gives:
+\begin{equation}
+  \frac{\partial L}{\partial\vb{r}} = -m\boldsymbol{\omega}\times(\boldsymbol{\omega}\times\vb{r})
+    - 2m\boldsymbol{\omega}\times\dot{\vb{r}}
+\end{equation}
+
+The Lagrange equations of motion in a rotating frame are then:
+\begin{equation}
+  \ddot{\vb{r}} = -\boldsymbol{\omega}\times(\boldsymbol{\omega}\times\vb{r})
+    - 2\boldsymbol{\omega}\times\dot{\vb{r}}
+\end{equation}
+
+It has to be noted that a conservative force in the inertial frame is not necessarily
+conservative in the rotating frame. A simple example can be easily constructed by considering
+a constant force in the plane $z=0$ of the inertial frame such as:
+\begin{equation}
+  \vb{F} = F_x\,\vb{i} + F_y\,\vb{j}
+\end{equation}
+where $F_x$ and $F_y$ are constants and $\vb{i}$, $\vb{j}$ are the unit vectors of the
+inertial frame. The force in a frame rotating with constant angular velocity $\omega$ around
+the axis $z$ is given by:
+\begin{equation}
+  \vb{F}' =
+  \begin{pmatrix}
+    \cos\omega t  & \sin\omega t & 0 \\
+    -\sin\omega t & \cos\omega t & 0 \\
+    0             & 0            & 1
+  \end{pmatrix}
+  \vb{F}
+  = (F_x\cos(\omega t) + F_y\sin(\omega t))\,\vb{i}'
+  + (-F_x\sin(\omega t) + F_y\cos(\omega t))\,\vb{j}'
+\end{equation}
+where $\vb{i}'$, $\vb{j}'$ are the unit vectors of the rotating frame. The force in the
+rotating frame is time-dependent, and does not have a generalized potential as it does not
+explicitly depend on the velocity. Each case will have to be considered individually to
+determine whether the dynamics can be described in a Lagrangian formalism, and in general the
+equations of motion \eqref{rotating-frames:acceleration-transformation} will have to be used.
+
+% ============================================================
+\end{document}

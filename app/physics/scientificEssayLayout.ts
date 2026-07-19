@@ -27,5 +27,28 @@ export const scientificEssayLayout = {
   subsectionContentMarginTop: 0,
   chapterTitleSx: {
     fontSize: "clamp(2.5rem, 5.5vw, 4.8rem)",
-  }
+  },
+
+  sectionNumberingPolicy: {
+    separator: ".",
+
+    section: {
+      style: "upper-roman",
+      numbered: true,
+      suffix: ".",
+    },
+
+    subsection: {
+      style: "decimal",
+      numbered: true,
+      includeAncestors:false,
+      suffix:'.'
+    },
+
+    subsubsection: {
+      style: "decimal",
+      numbered: false,
+    },
+  },
+
 } satisfies LatexDocumentLayoutConfig;
