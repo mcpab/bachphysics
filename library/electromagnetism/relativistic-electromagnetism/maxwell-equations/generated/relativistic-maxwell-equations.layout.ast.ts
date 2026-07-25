@@ -184,7 +184,7 @@ export const latexDocument = {
                   {
                     id: "text-26",
                     type: "text",
-                    body: "of time, not space, as the mathematics of the Maxwell equations derivation keeps the notation considerably "
+                    body: "of time, not space, as the mathematics of the Maxwell equations derivation keeps the notation considerably"
                   },
                   {
                     id: "text-27",
@@ -720,9 +720,23 @@ export const latexDocument = {
                 ]
               }
             }
-          ]
+          ],
+          numbering: {
+            path: [
+              1,
+              1,
+              0
+            ]
+          }
         }
-      ]
+      ],
+      numbering: {
+        path: [
+          1,
+          0,
+          0
+        ]
+      }
     },
     {
       id: "section-2",
@@ -749,12 +763,12 @@ export const latexDocument = {
               {
                 id: "text-59",
                 type: "text",
-                body: "Before deriving the relativistic Maxwell equations, we first determine how the differential operators transform under a "
+                body: "Before deriving the relativistic Maxwell equations, we first determine how the differential operators transform under a"
               },
               {
                 id: "text-60",
                 type: "text",
-                body: "Lorentz transformation. We remind the reader of the definition,  "
+                body: "Lorentz transformation. We remind the reader of the definition,"
               }
             ]
           }
@@ -1366,12 +1380,12 @@ export const latexDocument = {
               {
                 id: "text-99",
                 type: "text",
-                body: "provide the transformation law for the first-order "
+                body: "provide the transformation law for the first-order"
               },
               {
                 id: "text-100",
                 type: "text",
-                body: "partial derivatives of any vector field. "
+                body: "partial derivatives of any vector field."
               },
               {
                 id: "text-101",
@@ -1758,7 +1772,14 @@ export const latexDocument = {
                 ]
               }
             }
-          ]
+          ],
+          numbering: {
+            path: [
+              2,
+              1,
+              0
+            ]
+          }
         },
         {
           id: "subsection-3",
@@ -1855,9 +1876,23 @@ export const latexDocument = {
                 ]
               }
             }
-          ]
+          ],
+          numbering: {
+            path: [
+              2,
+              2,
+              0
+            ]
+          }
         }
-      ]
+      ],
+      numbering: {
+        path: [
+          2,
+          0,
+          0
+        ]
+      }
     },
     {
       id: "section-3",
@@ -2374,7 +2409,14 @@ export const latexDocument = {
                 ]
               }
             }
-          ]
+          ],
+          numbering: {
+            path: [
+              3,
+              1,
+              0
+            ]
+          }
         },
         {
           id: "subsection-5",
@@ -2908,9 +2950,23 @@ export const latexDocument = {
                 ]
               }
             }
-          ]
+          ],
+          numbering: {
+            path: [
+              3,
+              2,
+              0
+            ]
+          }
         }
-      ]
+      ],
+      numbering: {
+        path: [
+          3,
+          0,
+          0
+        ]
+      }
     }
   ]
 } as const satisfies LatexNodeMap["latexDocument"];

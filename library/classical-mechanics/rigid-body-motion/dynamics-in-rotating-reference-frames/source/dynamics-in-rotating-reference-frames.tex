@@ -18,26 +18,32 @@
 \section{Introduction}
 % ============================================================
 
-This essay develops the dynamics observed in a rotating reference frame. We begin with the
-kinematical relations required to compare time derivatives in inertial and rotating frames,
-then derive the acceleration transformation and the inertial forces that follow from it.
+This essay develops the dynamics of particles as observed in a rotating reference frame.
+We begin by recalling the kinematical relations required
+to compare time derivatives in inertial and rotating frames, then derive the transformation
+ of the acceleration and the inertial forces that arise from it.
 
 \subsection{Kinematical Preliminaries}
 
 Let $\vb{A}(t)$ be the orthogonal matrix that maps the components of a vector in the inertial
 frame to its components in the rotating frame:
+
 \begin{equation}
   \vb{g}'(t) = \vb{A}(t)\,\vb{g}(t),
   \qquad
   \vb{g}(t) = \vb{A}^{\top}(t)\,\vb{g}'(t).
   \label{rotating-frames:frame-transformation}
 \end{equation}
-The angular velocity is defined from the infinitesimal rotation vector by
+
+The angular velocity vector is defined as the time derivative of the infinitesimal rotation vector,
+
 \begin{equation}
   \boldsymbol{\omega} = \lim_{\Delta t\to0}\frac{d\boldsymbol{\Omega}}{\Delta t}.
   \label{rotating-frames:angular-velocity-definition}
 \end{equation}
-The corresponding time-derivative rule is
+
+The corresponding transformation law for time derivatives is
+
 \begin{equation}
   \frac{d\vb{g}}{dt}
   = \vb{A}^{\top}(t)\!\left(
@@ -45,38 +51,39 @@ The corresponding time-derivative rule is
     \right).
   \label{rotating-frames:time-derivative-rule}
 \end{equation}
-These relations are the only results from rigid-body kinematics needed below.
+
+
+These equations summarize all the results from rigid-body kinematics required in the remainder of this essay.
 
 % ============================================================
 \section{Equations of Motion in a Rotating Frame}
 % ============================================================
 
-In this section, we will thoroughly derive the equations of motion for a body in a rotating
-frame of reference with respect to a fixed one. We will limit our discussion to cases of
-constant angular velocity. The equations of motion will be expressed within the rotating
-frame, introducing the Coriolis and centrifugal forces that emerge in these scenarios.
+In this section we derive the equations of motion of a particle as observed in a rotating frame of reference
+with respect to an inertial one.We restrict our discussion to the case of constant angular velocity. The resulting equations
+ introduce the Coriolis and centrifugal forces that arise in a rotating frame.\par
 
-We start from the equation giving the rate of change of a vector in the fixed frame
-\eqref{rotating-frames:time-derivative-rule}. We compute the second time derivative of the position vector
-$\vb{r}$ in the fixed frame, and we consider its components in the rotating frame $\vb{r}'$:
-\begin{equation}
+We begin with the transformation law for time derivatives, Eq. \eqref{rotating-frames:time-derivative-rule}.
+Differentiating once more gives the second derivative of the position vector in the inertial frame,
+
+\[
   \frac{d^2\vb{r}(t)}{dt^2} =
     \frac{d\vb{A}^\top}{dt}\!\left(\boldsymbol{\omega}\times\vb{r}' + \frac{d\vb{r}'}{dt}\right)
     + \vb{A}^\top\!\left(\boldsymbol{\omega}\times\frac{d\vb{r}'}{dt} + \frac{d^2\vb{r}'}{dt^2}\right)
-\end{equation}
+\]
 
 From the orthogonality of the rotation matrix, $\vb{A}^\top\vb{A} = \vb{I}$:
-\begin{equation}
+\[
   \frac{d\vb{A}^\top}{dt}\,\vb{A} + \vb{A}\,\frac{d\vb{A}^\top}{dt} = 0
-\end{equation}
+\]
 we obtain:
-\begin{equation}
+\[
   \frac{d\vb{A}^\top}{dt} = -\vb{A}^\top\frac{d\vb{A}}{dt}\,\vb{A}^\top
-\end{equation}
+\]
 
-Inserting this expression in the equation above, and using the distributive property of the
-cross product for orthogonal matrices,
-\begin{equation}
+Inserting this expression in the equation above, and using the invariance of the cross product under proper orthogonal transformations,,
+
+\[
   \begin{aligned}
     \frac{d^2\vb{r}(t)}{dt^2}
     &= -\vb{A}^\top\frac{d\vb{A}}{dt}\,\vb{A}^\top
@@ -92,19 +99,21 @@ cross product for orthogonal matrices,
     &= -\vb{A}^\top\!\left(\boldsymbol{\omega}\times\vb{r}' + \frac{d\vb{r}'}{dt}\right)\times\boldsymbol{\omega}
        + \vb{A}^\top\!\left(\boldsymbol{\omega}\times\frac{d\vb{r}'}{dt} + \frac{d^2\vb{r}'}{dt^2}\right)
   \end{aligned}
-\end{equation}
+\]
 
 we arrive at the equation:
-\begin{equation}
+
+\[
   \vb{A}\,\frac{d^2\vb{r}(t)}{dt^2} =
     \boldsymbol{\omega}\times(\boldsymbol{\omega}\times\vb{r}')
     + 2\boldsymbol{\omega}\times\frac{d\vb{r}'}{dt}
     + \frac{d^2\vb{r}'}{dt^2}.
-\end{equation}
+\]
 
-Defining the acceleration in the fixed frame as $\vb{a} = \frac{d^2\vb{r}(t)}{dt^2}$, and
-the acceleration in the rotating frame as $\vb{a}' = \frac{d^2\vb{r}'(t)}{dt^2}$, we obtain
-the equation of motion:
+Introducing the inertial acceleration $\vb{a} = \frac{d^2\vb{r}(t)}{dt^2}$, and
+the acceleration measured in the rotating frame as $\vb{a}' = \frac{d^2\vb{r}'(t)}{dt^2}$, we obtain
+the acceleration transformation:
+
 \begin{equation}
   \vb{a}' = -\boldsymbol{\omega}\times(\boldsymbol{\omega}\times\vb{r}')
     - 2\boldsymbol{\omega}\times\frac{d\vb{r}'}{dt}
@@ -112,117 +121,196 @@ the equation of motion:
   \label{rotating-frames:acceleration-transformation}
 \end{equation}
 
-The centrifugal force $\vb{F}_\text{cf}$ on a body of mass $m$ is the term
+Equation \eqref{rotating-frames:acceleration-transformation} is purely kinematical.
+No dynamical assumptions have been introduced yet. By applying Newton's second law
+to the rotating frame, we identify
+
+\[
+\mathbf F' = m\mathbf a',
+\]
+
+and Eq. \eqref{rotating-frames:acceleration-transformation} becomes
+
+\begin{equation}
+  \vb{F}' = -m\boldsymbol{\omega}\times(\boldsymbol{\omega}\times\vb{r}')
+    - 2 m \boldsymbol{\omega}\times\frac{d\vb{r}'}{dt}
+    + m\vb{A}\,\vb{a}
+  \label{rotating-frames:forces-transformation}
+\end{equation}
+
+In this equation there are terms that originate entirely from the kinematics of
+the rotating frame. They are interpreted as apparent forces and are responsible
+for the distinctive dynamics observed in non-inertial reference frames.
+
+\subsection{The Centrifugal Force}
+
+The centrifugal force is the first term of equation \eqref{rotating-frames:forces-transformation},
+
 \begin{equation}
   \vb{F}_\text{cf} = -m\boldsymbol{\omega}\times(\boldsymbol{\omega}\times\vb{r}')
-    = -m\bigl(\boldsymbol{\omega}\ip{\boldsymbol{\omega}}{\vb{r}'} - \omega^2\vb{r}'\bigr)
+    = m\bigl( \omega^2\vb{r}'-\boldsymbol{\omega}\ip{\boldsymbol{\omega}}{\vb{r}'} \bigr)
   \label{rotating-frames:centrifugal-force}
 \end{equation}
-which has a magnitude proportional to the square of the angular velocity, and is directed
-radially outward from the axis of rotation. The Coriolis force is the term dependent on the
-body velocity,
+
+which has a magnitude proportional to the square of the angular velocity, and is directed perpendicular to
+ the rotation axis and away from it. This force depends only on the angular velocity of the rotating frame
+  and on the position of the body. It is independent of the body's velocity in the rotating frame. \par
+
+The centrifugal force admits the potential
+\[
+  V_\text{cf}
+  =
+  \frac{m}{2}
+  \left(
+    -\ip{\vb r'}{\vb r'}\,
+    \ip{\boldsymbol\omega}{\boldsymbol\omega}
+    +
+    \ip{\boldsymbol\omega}{\vb r'}^2
+  \right),
+\]
+
+and it is therefore a conservative force, since
+
+\[
+  \vb F_\text{cf}
+  =
+  -\grad_{\vb r'} V_\text{cf}.
+\]
+
+\subsection{The Coriolis Force}
+
+The Coriolis force is the term proportional to the velocity of the body in the
+rotating frame appearing in equation \eqref{rotating-frames:forces-transformation},
+
+
 \begin{equation}
-  F_\text{cor} = -2m\boldsymbol{\omega}\times\frac{d\vb{r}'}{dt}
+  {\vb F}_\text{cor} = -2m\boldsymbol{\omega}\times\frac{d\vb{r}'}{dt}
   \label{rotating-frames:coriolis-force}
 \end{equation}
-which arises from the movement of the body in the rotating frame and is perpendicular to the
-velocity of the body.
 
-\subsection{Generalization to Time-Dependent Angular Velocity}
+This force arises only from the motion of the body with respect to the rotating
+frame. Since it is always perpendicular to the velocity, it performs no work on
+the body. \par
 
-The original document assumes constant angular velocity. For completeness, we record the
-standard extension needed when the angular velocity of the frame varies with time. Applying
-the time-derivative rule to $\boldsymbol{\omega}\times\vb{r}'$ gives
-\begin{equation}
-  \vb{a}' = \vb{A}\,\vb{a}
-    - \boldsymbol{\omega}\times(\boldsymbol{\omega}\times\vb{r}')
-    - 2\boldsymbol{\omega}\times\frac{d\vb{r}'}{dt}
-    - \dot{\boldsymbol{\omega}}\times\vb{r}'.
-  \label{rotating-frames:variable-angular-velocity-acceleration}
-\end{equation}
-The additional term corresponds to the Euler force
-\begin{equation}
-  \vb{F}_\text{Euler}
-    = -m\dot{\boldsymbol{\omega}}\times\vb{r}'.
-  \label{rotating-frames:euler-force}
-\end{equation}
-This is the only dynamical term in this essay that was not present in the original document.
+
+The Coriolis force has the same mathematical structure as the Lorentz force in
+electromagnetism. Although it is not conservative, since it depends explicitly on the velocity,
+it can nevertheless be derived from the generalized potential $V_\text{cor}$ determined as,
+
+\[
+  V_\text{cor} = -m\ip{\boldsymbol{\omega}\times\vb{r}'}{\dot{\vb{r}'}}
+\]
+
+so that the Coriolis force derives from a generalized potential:
+
+\[
+  \vb{F}_\text{cor} = \frac{d}{dt}\frac{\partial V_\text{cor}}{\partial\dot{\vb{r}'}}
+    - \frac{\partial V_\text{cor}}{\partial\vb{r}'}
+\]
+
+To verify that the generalized potential indeed reproduces the Coriolis force,
+we use the cyclic permutation identity of the scalar triple product,
+
+\[
+  \ip{\vb a\times\vb b}{\vb c}
+  =
+  \ip{\vb b\times\vb c}{\vb a}
+  =
+  \ip{\vb c\times\vb a}{\vb b},
+\]
+
+to rewrite the scalar product so that the vector with respect to which the
+gradient is taken appears directly in the scalar product rather than in the
+cross product. This allows the required derivatives with respect to
+$\vb r$ and $\dot{\vb r}$ to be computed immediately. \par
+
+Unlike an ordinary potential, a generalized potential may depend explicitly on
+both the position and the velocity of the body. Such potentials naturally arise
+in systems whose forces are linear in the velocity, such as the Coriolis force
+and the Lorentz force in electromagnetism.
 
 \subsection{Lagrange Equations of Motion in a Rotating Frame}
 
-In this section and the next, we will shorten the symbol of time derivative $da/dt$ to
-$\dot{a}$ to simplify the equations. Further, we will assume that all quantities are in the
-rotating frame, and $\vb{r}$ represents the position vector in such a frame.
+In the remainder of this section, we will denote the time derivative $da/dt$ to
+$\dot{a}$ to simplify the equations. Unless otherwise stated, all vectors will be expressed in the rotating frame,
+and $\vb r$ will denote the position vector in that frame. In this section
+we would like to briefly touch on the functional form of the Lagrangian
+ in the rotating frame of a body subject to \textbf{zero net force  in the inertial frame}  \par
 
-The equations of motion in a rotating frame can be expressed using Lagrangian mechanics. The
-Lagrangian is defined as the difference between the kinetic and potential energies of the
-system:
-\begin{equation}
+The Lagrangian is obtained by adding to the kinetic energy all potential contributions, including generalized potentials when present.
+
+\[
   L = T - V
-\end{equation}
-where $T$ is the kinetic energy and $V$ is the potential of the forces in the system.
+\]
 
-The centrifugal force admits a potential $V_\text{cf}$ calculated as:
-\begin{equation}
-  V_\text{cf} = \frac{m}{2}\bigl(-\ip{\vb{r}}{\vb{r}}\ip{\boldsymbol{\omega}}{\boldsymbol{\omega}}
-    + \ip{\boldsymbol{\omega}}{\vb{r}}^2\bigr)
-\end{equation}
-thus,
-\begin{equation}
-  \vb{F}_\text{cf} = -\frac{\partial V_\text{cf}}{\partial\vb{r}}
-\end{equation}
+As the centrifugal and Coriolis forces admit potentials,  the Lagrangian of the system reads:
 
-The Coriolis force, similarly to the Lorentz force in electromagnetism, admits a generalized
-potential $V_\text{cor}$ determined as,
-\begin{equation}
-  V_\text{cor} = -m\ip{\boldsymbol{\omega}\times\vb{r}}{\dot{\vb{r}}}
-\end{equation}
-so that the Coriolis force derives from a generalized potential:
-\begin{equation}
-  \vb{F}_\text{cor} = \frac{d}{dt}\frac{\partial V_\text{cor}}{\partial\dot{\vb{r}}}
-    - \frac{\partial V_\text{cor}}{\partial\vb{r}}
-\end{equation}
-
-Consequently, the Lagrangian of the system becomes:
-\begin{equation}
+\[
   L = \frac{1}{2}m\ip{\dot{\vb{r}}}{\dot{\vb{r}}}
-    + \frac{m}{2}\bigl(-\ip{\vb{r}}{\vb{r}}\ip{\boldsymbol{\omega}}{\boldsymbol{\omega}}
-      + \ip{\boldsymbol{\omega}}{\vb{r}}^2\bigr)
-    - m\ip{\boldsymbol{\omega}\times\vb{r}}{\vb{v}}
-\end{equation}
+    +\frac{m}{2}\bigl(
+      \ip{\vb{r}}{\vb{r}}\ip{\boldsymbol{\omega}}{\boldsymbol{\omega}}
+      - \ip{\boldsymbol{\omega}}{\vb{r}}^2
+    \bigr)
+    + m\ip{\boldsymbol{\omega}\times\vb{r}}{\dot{\vb{r}}}.
+\]
 
 The Lagrange equations of motion are given by:
-\begin{equation}
+
+\[
   \frac{d}{dt}\frac{\partial L}{\partial\dot{\vb{r}}} - \frac{\partial L}{\partial\vb{r}} = 0
-\end{equation}
+\]
 
 The first term of the Lagrangian gives:
-\begin{equation}
-  \frac{d}{dt}\frac{\partial L}{\partial\dot{\vb{r}}} = m\dot{\vb{r}}
-\end{equation}
+
+\[
+  \frac{d}{dt}\frac{\partial L}{\partial\dot{\vb{r}}} = m\ddot{\vb{r}} + m{\boldsymbol \omega} \times \dot{\vb{r}}
+\]
 
 The second term of the Lagrangian gives:
-\begin{equation}
-  \frac{\partial L}{\partial\vb{r}} = -m\boldsymbol{\omega}\times(\boldsymbol{\omega}\times\vb{r})
-    - 2m\boldsymbol{\omega}\times\dot{\vb{r}}
-\end{equation}
 
-The Lagrange equations of motion in a rotating frame are then:
-\begin{equation}
-  \ddot{\vb{r}} = -\boldsymbol{\omega}\times(\boldsymbol{\omega}\times\vb{r})
-    - 2\boldsymbol{\omega}\times\dot{\vb{r}}
-\end{equation}
+\[
+  \frac{\partial L}{\partial\vb{r}} = m (\boldsymbol{\omega}^2 {\vb r} -\ip{\boldsymbol{\omega}}{\vb r}\boldsymbol{\omega} ) +
+  m\dot{\vb{r}}\times \boldsymbol{\omega}
+\]
+The Lagrange equations of motion in the rotating frame are therefore
+
+\[
+  m\ddot{\vb r}
+  + 2m\boldsymbol{\omega}\times\dot{\vb r}
+  + m\left(
+    \ip{\boldsymbol{\omega}}{\vb r}\boldsymbol{\omega}
+    - \omega^2\vb r
+  \right)
+  = 0.
+\]
+
+Dividing by $m$, we obtain
+
+\[
+  \ddot{\vb r}
+  =
+  -2\boldsymbol{\omega}\times\dot{\vb r}
+  + \omega^2\vb r
+  - \ip{\boldsymbol{\omega}}{\vb r}\boldsymbol{\omega},
+\]
+
+which is identical to equation
+\eqref{rotating-frames:acceleration-transformation}.
+\par
 
 It has to be noted that a conservative force in the inertial frame is not necessarily
 conservative in the rotating frame. A simple example can be easily constructed by considering
 a constant force in the plane $z=0$ of the inertial frame such as:
-\begin{equation}
+
+\[
   \vb{F} = F_x\,\vb{i} + F_y\,\vb{j}
-\end{equation}
+\]
+
 where $F_x$ and $F_y$ are constants and $\vb{i}$, $\vb{j}$ are the unit vectors of the
 inertial frame. The force in a frame rotating with constant angular velocity $\omega$ around
 the axis $z$ is given by:
-\begin{equation}
+
+\[
   \vb{F}' =
   \begin{pmatrix}
     \cos\omega t  & \sin\omega t & 0 \\
@@ -232,12 +320,531 @@ the axis $z$ is given by:
   \vb{F}
   = (F_x\cos(\omega t) + F_y\sin(\omega t))\,\vb{i}'
   + (-F_x\sin(\omega t) + F_y\cos(\omega t))\,\vb{j}'
-\end{equation}
+\]
+
 where $\vb{i}'$, $\vb{j}'$ are the unit vectors of the rotating frame. The force in the
 rotating frame is time-dependent, and does not have a generalized potential as it does not
 explicitly depend on the velocity. Each case will have to be considered individually to
 determine whether the dynamics can be described in a Lagrangian formalism, and in general the
 equations of motion \eqref{rotating-frames:acceleration-transformation} will have to be used.
 
-% ============================================================
+The existence of a Lagrangian for the inertial forces provides an elegant alternative formulation
+of the dynamics in rotating reference frames. Nevertheless, when additional external forces are present,
+each case must be analyzed individually to determine whether a Lagrangian description exists
+or whether the equations of motion must instead be used directly.
+
+% ============================================================\
+
+\section{Life in a Rotating Reference Frame}
+
+The dynamics of rotating reference frames is often counterintuitive, and even situations with which
+we are very familiar become surprisingly subtle when examined in detail. One such example is the carousel. \par
+
+If you are an observer at rest in the inertial frame fixed to the Earth, life is quite simple for you. All people standing in front of
+the carousel are not moving and you see the people on the carousel going moving in circles around the centre of
+rotation of the carousel, which has an angular velocity $\boldsymbol{\omega}$ parallel to the axis perpendicular to the Earth
+surface, which we call ${\vb e}_z$. \par
+
+If you are on the carousel, reality is more complicated
+ First, you have to hold on to something in order not to fly away. You clearly perceive and measure a force that pushes
+ you away from the center of rotation, whose magnitude increases with your distance from the center.
+
+Furthermore, you see the people standing on the Earth moving around you in circles with constant angular velocity.
+ This is quite a strange observation, because you cannot explain why they are not pushed away by the same force that you yourself must resist in order not to fly away.
+  Even more interestingly, if something anchored to the carousel for
+some reason slips away, it also starts to go in circle although following a more complicated dynamics as the people on the Earth.\par
+
+The resolution of these apparent paradoxes lies in the combined action of the centrifugal and Coriolis forces in the rotating frame.\par
+
+Consider a person standing on the Earth. Since the Earth is at rest in the
+inertial frame, its position vector $\vb g(t)$ is constant in time, and therefore
+
+\[
+  \frac{d\vb g}{dt}=0.
+\]
+
+Using the transformation law relating the components of a vector in the fixed
+and rotating frames,
+
+\[
+  \frac{d\vb g}{dt}
+  =
+  A^{-1}(t)
+  \left(
+    \boldsymbol{\omega}\times\vb g'
+    +
+    \frac{d\vb g'}{dt}
+  \right),
+\]
+
+we conclude that
+
+\[
+  \frac{d\vb g'}{dt}
+  =
+  -\,\boldsymbol{\omega}\times\vb g'.
+\]
+
+Thus, an observer on the carousel sees every point fixed on the Earth moving
+with a velocity equal to the opposite of the local rotational velocity of the
+carousel.
+
+The differential equation
+
+\[
+  \frac{d\vb g'}{dt}
+  =
+  -\boldsymbol{\omega}\times\vb g'
+\]
+
+can be solved explicitly. We seek a solution of the form
+
+\[
+  \vb g'(t)
+  =
+  \vb k\,e^{-i\alpha t},
+\]
+
+where $\vb k$ is a complex constant vector. Substituting into the differential
+equation gives
+
+\[
+  i\alpha\vb k
+  =
+  -\boldsymbol{\omega}\times\vb k.
+\]
+
+Writing the complex vector as
+
+\[
+  \vb k
+  =
+  \vb a+i\vb b,
+\]
+
+with $\vb a$ and $\vb b$ real vectors, we obtain
+
+\[
+  i\alpha(\vb a+i\vb b)
+  =
+  -\boldsymbol{\omega}\times(\vb a+i\vb b),
+\]
+
+which, upon separating the real and imaginary parts, yields
+
+\[
+\begin{aligned}
+  \alpha\vb a &= -\,\boldsymbol{\omega}\times\vb b,
+  \\
+  \alpha\vb b &= \phantom{-}\boldsymbol{\omega}\times\vb a.
+\end{aligned}
+\]
+
+The second equation implies
+
+\[
+  \vb b
+  =
+  \frac{1}{\alpha}
+  \boldsymbol{\omega}\times\vb a.
+\]
+
+ Substituting the expression for $\vb b$ into the first equation yields
+
+\[
+  \alpha\vb a
+  =
+  -\frac{1}{\alpha}
+  \boldsymbol{\omega}\times
+  \left(
+    \boldsymbol{\omega}\times\vb a
+  \right),
+\]
+
+or equivalently,
+
+\[
+  \alpha^2\vb a
+  =
+  -\boldsymbol{\omega}\times
+  \left(
+    \boldsymbol{\omega}\times\vb a
+  \right).
+\]
+
+Using the vector identity
+
+\[
+  \vb u\times(\vb v\times\vb w)
+  =
+  \ip{\vb u}{\vb w}\vb v
+  -
+  \ip{\vb u}{\vb v}\vb w,
+\]
+
+we obtain
+
+\[
+  \alpha^2\vb a
+  =
+  -\left(
+    \ip{\boldsymbol{\omega}}{\vb a}\boldsymbol{\omega}
+    -
+    \omega^2\vb a
+  \right),
+\]
+
+which may be rewritten as
+
+\[
+  \left(
+    \alpha^2-\omega^2
+  \right)\vb a
+  +
+  \ip{\boldsymbol{\omega}}{\vb a}\boldsymbol{\omega}
+  =
+  0.
+\]
+
+Since the two vectors $\vb a$ and $\boldsymbol{\omega}$ are linearly
+independent, the above equation implies
+
+\[
+  \alpha^2=\omega^2,
+  \qquad
+  \ip{\boldsymbol{\omega}}{\vb a}=0.
+\]
+
+Hence,
+
+\[
+  \alpha=\pm\omega,
+\]
+
+The general solution is therefore given by
+
+\[
+  \vb g'(t)
+  =
+  \left(
+    \vb a
+    +
+    \frac{i}{\alpha}\,
+    \boldsymbol{\omega}\times\vb a
+  \right)
+  e^{-i\alpha t}
+  +
+  \vb g_0',
+  \qquad
+  \alpha=\pm\omega,
+\]
+
+where $\vb g_0'$ is any constant vector parallel to
+$\boldsymbol{\omega}$.
+
+To obtain a more explicit expression, we define the orthonormal basis
+
+\[
+  \vb a=a\,\vb e_x,
+  \qquad
+  \boldsymbol{\omega}=\omega\,\vb e_z,
+\]
+
+where $\vb e_x$ is chosen along the direction of $\vb a$ and
+$\vb e_z$ is parallel to the axis of rotation. Since
+
+\[
+  \vb e_y=\vb e_z\times\vb e_x,
+\]
+
+we obtain
+
+\[
+  \boldsymbol{\omega}\times\vb a
+  =
+  \omega a\,\vb e_y,
+\]
+
+and the solution becomes
+
+\[
+  \vb g'(t)
+  =
+  a
+  \left(
+    \vb e_x
+    +
+    i\frac{\omega}{\alpha}\vb e_y
+  \right)
+  e^{-i\alpha t}
+  +
+  \vb g_0'.
+\]
+
+The physical solutions are obtained by taking the real part of the complex
+solutions. Using
+
+\[
+  e^{-i\alpha t}
+  =
+  \cos(\alpha t)-i\sin(\alpha t),
+\]
+
+we find
+
+\[
+\begin{aligned}
+  \vb g'(t)
+  &=
+  \Re\left[
+    a\left(
+      \vb e_x
+      -
+      i\frac{\omega}{\alpha}\vb e_y
+    \right)
+    e^{-i\alpha t}
+  \right]
+  +
+  \vb g'_0
+  \\
+  &=
+  a\left[
+    \cos(\alpha t)\vb e_x
+    -
+    \frac{\omega}{\alpha}
+    \sin(\alpha t)\vb e_y
+  \right]
+  +
+  \vb g'_0,
+\end{aligned}
+\]
+
+where $\vb g'_0$ is constant and parallel to the axis of rotation.
+
+For $\alpha=\omega$, this gives
+
+\[
+  \vb g'(t)
+  =
+  a\left[
+    \cos(\omega t)\vb e_x
+    -
+    \sin(\omega t)\vb e_y
+  \right]
+  +
+  \vb g'_0.
+\]
+
+For $\alpha=-\omega$, we obtain
+
+\[
+\begin{aligned}
+  \vb g'(t)
+  &=
+  a\left[
+    \cos(-\omega t)\vb e_x
+    -
+    \frac{\omega}{-\omega}
+    \sin(-\omega t)\vb e_y
+  \right]
+  +
+  \vb g'_0
+  \\
+  &=
+  a\left[
+    \cos(\omega t)\vb e_x
+    -
+    \sin(\omega t)\vb e_y
+  \right]
+  +
+  \vb g'_0.
+\end{aligned}
+\]
+
+Thus, both values of $\alpha$ produce the same real solution.
+
+The same result can be obtained directly from the rotation matrix. Consider,
+for simplicity, a point whose position in the fixed frame is
+
+\[
+  \vb g=a\vb e_x+\vb g_0,
+\]
+
+where $\vb g_0$ is parallel to the axis of rotation. Its components in the
+rotating frame are obtained by applying the rotation matrix $A(t)$:
+
+\[
+\begin{aligned}
+  \vb g'(t)
+  &=
+  A(t)\vb g
+  \\
+  &=
+  a
+  \begin{pmatrix}
+    \cos(\omega t) & \sin(\omega t) & 0 \\
+    -\sin(\omega t) & \cos(\omega t) & 0 \\
+    0 & 0 & 1
+  \end{pmatrix}
+  \begin{pmatrix}
+    1\\
+    0\\
+    0
+  \end{pmatrix}
+  +
+  \vb g_0
+  \\
+  &=
+  a\left[
+    \cos(\omega t)\vb e_x
+    -
+    \sin(\omega t)\vb e_y
+  \right]
+  +
+  \vb g_0.
+\end{aligned}
+\]
+
+This is precisely the same solution obtained from the differential equation
+
+\[
+  \frac{d\vb g'}{dt}
+  =
+  -\boldsymbol{\omega}\times\vb g'.
+\]
+
+Now that we have determined the trajectory of a person standing on the Earth
+as observed from the rotating frame, we can compute the centrifugal force
+acting on this person,
+
+\[
+  \vb F_\text{cf}
+  =
+  m\omega^2\vb g'(t),
+\]
+
+where we have used the fact that the solution satisfies
+
+\[
+  \ip{\boldsymbol{\omega}}{\vb g'}=0.
+\]
+
+The Coriolis force is,
+
+\[
+\begin{aligned}
+  \vb F_\text{cor}
+  &=
+  -2m\boldsymbol{\omega}\times
+  \frac{d\vb g'}{dt}
+  \\
+  &=
+  2m\boldsymbol{\omega}\times
+  \left(
+    \boldsymbol{\omega}\times\vb g'
+  \right),
+\end{aligned}
+\]
+
+where we have used
+
+\[
+  \frac{d\vb g'}{dt}
+  =
+  -\boldsymbol{\omega}\times\vb g'.
+\]
+
+Since $\vb g'$ is orthogonal to $\boldsymbol{\omega}$, we obtain
+
+\[
+\begin{aligned}
+  \vb F_\text{cor}
+  &=
+  -2m\omega^2\vb g'(t).
+\end{aligned}
+\]
+
+The total apparent force acting on the person in the rotating frame is therefore
+
+\[
+\begin{aligned}
+  \vb F_\text{tot}
+  &=
+  \vb F_\text{cf}
+  +
+  \vb F_\text{cor}
+  \\
+  &=
+  m\omega^2\vb g'(t)
+  -
+  2m\omega^2\vb g'(t)
+  \\
+  &=
+  -m\omega^2\vb g'(t).
+\end{aligned}
+\]
+
+This is precisely the centripetal force required to keep the person on the Earth
+moving on the circular trajectory observed from the rotating frame.\par
+
+\subsection{A Final Comment}
+
+At this point it is worth pausing to discuss a few important conceptual points
+that, although implicit throughout our derivation, play a fundamental role in
+the dynamics of rotating reference frames. \par
+
+
+So far, we have assumed that Newton's first principle of dynamics holds in the
+rotating frame. An observer standing on the carousel could verify this
+experimentally by measuring the force required to keep a mass $m$ at rest at
+different positions on the carousel. The measured force would be precisely the
+centrifugal force. Likewise, the observer could measure the force required to
+keep a body moving with constant velocity. Repeating this experiment for
+different velocities would allow the observer to determine the combined action
+of the centrifugal and Coriolis forces. The fact that such experiments can be
+performed and lead to well-defined force fields is a remarkable property of
+rotating frames and is by no means obvious. \par
+
+Once these force fields have been determined - assuming no other forces are
+present - the observer can predict the motion of any body from its initial
+conditions by solving Newton's second law or, equivalently, the Lagrange
+equations. Thus, in the rotating frame, Newton's second law, Hamilton's
+principle, the Lagrange equations, and the Hamilton equations remain perfectly
+valid descriptions of the dynamics. \par
+
+What would nevertheless surprise the observer is that the apparent forces do
+not satisfy Newton's third principle of dynamics. In particular, there is no
+body in the universe on which acts a force equal and opposite to the
+centrifugal force. This lack of an action-reaction pair is one of the reasons
+why the centrifugal and Coriolis forces are referred to as \emph{apparent}
+forces. \par
+
+In classical mechanics, inertial reference frames are precisely those in
+which Newton's three principles of dynamics hold. The rotating frame considered in this
+chapter is therefore not an inertial frame. Remarkably, by introducing the centrifugal
+and Coriolis forces, Newton's first and second principles can be restored, allowing
+the dynamics to be described exactly as in an inertial frame. Newton's third principle,
+however, cannot be recovered: there is no body on which acts a force equal and opposite to the centrifugal or Coriolis
+force. This is one of the defining characteristics of apparent forces. \par
+
+  One should not conclude that every force that fails to satisfy
+  the simple action-reaction principle is therefore an apparent force.
+   The Lorentz force on a charge moving in a magnetic field provides an important counterexample.
+   Unlike the centrifugal and Coriolis forces, the Lorentz
+  force cannot be eliminated by changing the reference frame. It represents a
+   genuine physical interaction and therefore belongs to a completely different category. \par
+
+There is, however, an even deeper reason why these forces are regarded as
+apparent. The Lorentz force
+ is fundamentally different from the centrifugal and Coriolis forces. No
+change of coordinates can eliminate the Lorentz force, since it originates from
+the electromagnetic interaction and, in special relativity, arises from the
+transformation of the electric field of the charge in its rest frame. The
+centrifugal and Coriolis forces, on the other hand, can be made to disappear
+completely simply by observing the same motion from an inertial frame, such as
+the frame of an observer standing on the Earth. It is this dependence on the
+choice of reference frame that ultimately distinguishes apparent forces from
+genuine physical interactions.
+
+
 \end{document}

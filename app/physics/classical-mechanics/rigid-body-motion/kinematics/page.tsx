@@ -1,25 +1,13 @@
 'use client'
-import { NextLinkLike } from '@/app/components/NextLinkLike';
-import { NextImageAdapter } from '@/src/components/NextImageAdapter';
-import { ReferenceEnhancer } from '@mcpab/katex/client';
-import {
-    createLatexRendererContextValue,
-    LatexHostContext,
-    LatexRendererContext,
-    type LatexHostContextValue,
-    RenderLatexDocument,
-} from '@mcpab/katex/react';
-import { latexDocument as rigidBodyKinematics } from '@/library/classical-mechanics/rigid-body-motion/kinematics/generated/rigid-body-kinematics.layout.ast';
 import { labelIndex } from '@/library/classical-mechanics/rigid-body-motion/kinematics/generated/rigid-body-kinematics.labelIndex';
-import { PageFrame } from '@/app/components/PageFrame';
-import { scientificEssayLayout } from "@/app/physics/scientificEssayLayout";
+import { latexDocument } from '@/library/classical-mechanics/rigid-body-motion/kinematics/generated/rigid-body-kinematics.layout.ast';
 
+import Essay from '@/app/components/Essay';
 import {
-    ChapterFrontMatter,
-    type ChapterFrontMatterProps,
+    type ChapterFrontMatterProps
 } from "@mcpab/katex/react";
 
-export const rigidBodyMotionFrontMatter = {
+export const frontMatter = {
     eyebrow: "Classical Mechanics",
 
     title: "The Kinematics of Rigid Body Motion",
@@ -38,41 +26,13 @@ export const rigidBodyMotionFrontMatter = {
     ],
 
     topics: [
-        "Orthogonal transformations",
-        "Finite rotations",
-        "Infinitesimal rotations",
-        "Angular velocity",
-        "Rotating reference frames",
     ],
 } satisfies ChapterFrontMatterProps;
 
 export default function RigidBodyMotion(): React.ReactElement {
 
-    const latexRendererContextValue = createLatexRendererContextValue({
-    })
-
-    const latexHostContextValue: LatexHostContextValue = {
-        ImageComponent: NextImageAdapter,
-        resolveAssetSrc: (src) => `/img/${src}`,
-        LinkComponent: NextLinkLike,
-    };
-
-
     return (
-
-        <LatexRendererContext.Provider value={latexRendererContextValue}>
-            <LatexHostContext.Provider value={latexHostContextValue}>
-                <PageFrame>
-                    <RenderLatexDocument latexDocument={rigidBodyKinematics} layoutConfig={scientificEssayLayout}
-                        frontMatter={
-                            <ChapterFrontMatter {...rigidBodyMotionFrontMatter} />
-                        } />
-                    <ReferenceEnhancer labelIndex={labelIndex} />
-                </PageFrame>
-            </LatexHostContext.Provider>
-        </LatexRendererContext.Provider>
+        <Essay frontMatter={frontMatter} labelIndex={labelIndex} latexDocument={latexDocument} />
     )
-
-
 
 }

@@ -813,7 +813,14 @@ export const latexDocument = {
           }
         }
       ],
-      subsections: []
+      subsections: [],
+      numbering: {
+        path: [
+          1,
+          0,
+          0
+        ]
+      }
     },
     {
       id: "section-2",
@@ -1023,7 +1030,7 @@ export const latexDocument = {
               {
                 id: "text-65",
                 type: "text",
-                body: "is the integration variable.  "
+                body: "is the integration variable."
               },
               {
                 id: "text-66",
@@ -1176,7 +1183,7 @@ export const latexDocument = {
               {
                 id: "text-76",
                 type: "text",
-                body: "perpendicular to the velocity. Let us define the unitary vector in the direction of the particle velocity, "
+                body: "perpendicular to the velocity. Let us define the unitary vector in the direction of the particle velocity,"
               }
             ]
           }
@@ -1607,12 +1614,12 @@ export const latexDocument = {
               {
                 id: "text-94",
                 type: "text",
-                body: "However, not both algebraic solutions are admissible. "
+                body: "However, not both algebraic solutions are admissible."
               },
               {
                 id: "text-95",
                 type: "text",
-                body: "We now prove which of the two algebraic solutions is admissible.  "
+                body: "We now prove which of the two algebraic solutions is admissible."
               },
               {
                 id: "text-96",
@@ -2097,7 +2104,7 @@ export const latexDocument = {
               {
                 id: "text-120",
                 type: "text",
-                body: "Thus the only admissible solution is the root with the minus sign, "
+                body: "Thus the only admissible solution is the root with the minus sign,"
               }
             ]
           }
@@ -2710,9 +2717,23 @@ export const latexDocument = {
                 ]
               }
             }
-          ]
+          ],
+          numbering: {
+            path: [
+              2,
+              1,
+              0
+            ]
+          }
         }
-      ]
+      ],
+      numbering: {
+        path: [
+          2,
+          0,
+          0
+        ]
+      }
     },
     {
       id: "section-3",
@@ -2739,7 +2760,7 @@ export const latexDocument = {
               {
                 id: "text-157",
                 type: "text",
-                body: "The integral can now be evaluated immediately, yielding "
+                body: "The integral can now be evaluated immediately, yielding"
               }
             ]
           }
@@ -3020,7 +3041,7 @@ export const latexDocument = {
               {
                 id: "text-177",
                 type: "text",
-                body: "once more, defining "
+                body: "once more, defining"
               }
             ]
           }
@@ -3088,7 +3109,7 @@ export const latexDocument = {
               {
                 id: "text-180",
                 type: "text",
-                body: "and the vector potential is, "
+                body: "and the vector potential is,"
               }
             ]
           }
@@ -3103,7 +3124,7 @@ export const latexDocument = {
               {
                 id: "equation-17",
                 type: "equation",
-                body: "{\\vb A} = {\\vb v} \\phi = {\\vb v} \\frac{\n    q \n  }{\n    \\sqrt{\n      \\left(1-\\beta^2\\right)r_\\perp^2\n      +\n      \\mu^2\n    }\n  }.",
+                body: "{\\vb A} = {\\vb v} \\phi = {\\vb v} \\frac{\n    q\n  }{\n    \\sqrt{\n      \\left(1-\\beta^2\\right)r_\\perp^2\n      +\n      \\mu^2\n    }\n  }.",
                 label: "eq:vector_potential_uniform_motion",
                 html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:2.2376em;vertical-align:-0.8688em;\"></span><span class=\"mord\"><span class=\"mtable\"><span class=\"col-align-c\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3688em;\"><span style=\"top:-3.3688em;\"><span class=\"pstrut\" style=\"height:3.1076em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">A</span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">v</span></span></span><span class=\"mord mathnormal\">ϕ</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">v</span></span></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.1076em;\"><span style=\"top:-2.1777em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord sqrt\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.9323em;\"><span class=\"svg-align\" style=\"top:-3.2em;\"><span class=\"pstrut\" style=\"height:3.2em;\"></span><span class=\"mord\" style=\"padding-left:1em;\"><span class=\"minner\"><span class=\"mopen delimcenter\" style=\"top:0em;\">(</span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0528em;\">β</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7401em;\"><span style=\"top:-2.989em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mclose delimcenter\" style=\"top:0em;\">)</span></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">r</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7959em;\"><span style=\"top:-2.3987em;margin-left:-0.0278em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mrel mtight\">⊥</span></span></span><span style=\"top:-3.0448em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3013em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">μ</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7401em;\"><span style=\"top:-2.989em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span></span></span><span style=\"top:-2.8923em;\"><span class=\"pstrut\" style=\"height:3.2em;\"></span><span class=\"hide-tail\" style=\"min-width:1.02em;height:1.28em;\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"400em\" height=\"1.28em\" viewBox=\"0 0 400000 1296\" preserveAspectRatio=\"xMinYMin slice\"><path d=\"M263,681c0.7,0,18,39.7,52,119\nc34,79.3,68.167,158.7,102.5,238c34.3,79.3,51.8,119.3,52.5,120\nc340,-704.7,510.7,-1060.3,512,-1067\nl0 -0\nc4.7,-7.3,11,-11,19,-11\nH40000v40H1012.3\ns-271.3,567,-271.3,567c-38.7,80.7,-84,175,-136,283c-52,108,-89.167,185.3,-111.5,232\nc-22.3,46.7,-33.8,70.3,-34.5,71c-4.7,4.7,-12.3,7,-23,7s-12,-1,-12,-1\ns-109,-253,-109,-253c-72.7,-168,-109.3,-252,-110,-252c-10.7,8,-22,16.7,-34,26\nc-22,17.3,-33.3,26,-34,26s-26,-26,-26,-26s76,-59,76,-59s76,-60,76,-60z\nM1001 80h400000v40h-400000z\"/></svg></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3077em;\"><span></span></span></span></span></span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">q</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.13em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mord\">.</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8688em;\"><span></span></span></span></span></span></span></span></span></span></span></span>"
               }
@@ -3762,9 +3783,23 @@ export const latexDocument = {
                 ]
               }
             }
-          ]
+          ],
+          numbering: {
+            path: [
+              3,
+              1,
+              0
+            ]
+          }
         }
-      ]
+      ],
+      numbering: {
+        path: [
+          3,
+          0,
+          0
+        ]
+      }
     },
     {
       id: "section-4",
@@ -3891,7 +3926,7 @@ export const latexDocument = {
               {
                 id: "text-216",
                 type: "text",
-                body: "The magnetic field is "
+                body: "The magnetic field is"
               }
             ]
           }
@@ -3995,7 +4030,7 @@ export const latexDocument = {
               {
                 id: "text-220",
                 type: "text",
-                body: "so "
+                body: "so"
               }
             ]
           }
@@ -4144,7 +4179,14 @@ export const latexDocument = {
           }
         }
       ],
-      subsections: []
+      subsections: [],
+      numbering: {
+        path: [
+          4,
+          0,
+          0
+        ]
+      }
     },
     {
       id: "section-5",
@@ -4186,7 +4228,7 @@ export const latexDocument = {
               {
                 id: "text-231",
                 type: "text",
-                body: "it follows immediately that the electric and "
+                body: "it follows immediately that the electric and"
               },
               {
                 id: "text-232",
@@ -4284,7 +4326,7 @@ export const latexDocument = {
               {
                 id: "text-235",
                 type: "text",
-                body: "where "
+                body: "where"
               }
             ]
           }
@@ -4299,7 +4341,7 @@ export const latexDocument = {
               {
                 id: "displayMath-66",
                 type: "displayMath",
-                body: "\\alpha = \\frac{\n    q(1-\\beta^2) \n  }{\n    \\left[\n      (r_\\parallel-vt)^2\n      +\n      (1-\\beta^2)r_\\perp^2\n    \\right]^{3/2}\n  },",
+                body: "\\alpha = \\frac{\n    q(1-\\beta^2)\n  }{\n    \\left[\n      (r_\\parallel-vt)^2\n      +\n      (1-\\beta^2)r_\\perp^2\n    \\right]^{3/2}\n  },",
                 html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0037em;\">α</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:2.8642em;vertical-align:-1.3731em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.4911em;\"><span style=\"top:-2.11em;\"><span class=\"pstrut\" style=\"height:3.1279em;\"></span><span class=\"mord\"><span class=\"minner\"><span class=\"minner\"><span class=\"mopen delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size1\">[</span></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">r</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3448em;\"><span style=\"top:-2.5198em;margin-left:-0.0278em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mrel mtight\">∥</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3552em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\"><span class=\"mclose\">)</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7401em;\"><span style=\"top:-2.989em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0528em;\">β</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7401em;\"><span style=\"top:-2.989em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">r</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7959em;\"><span style=\"top:-2.3987em;margin-left:-0.0278em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mrel mtight\">⊥</span></span></span><span style=\"top:-3.0448em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3013em;\"><span></span></span></span></span></span></span><span class=\"mclose delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size1\">]</span></span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.1279em;\"><span style=\"top:-3.3029em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">3/2</span></span></span></span></span></span></span></span></span></span></span><span style=\"top:-3.3579em;\"><span class=\"pstrut\" style=\"height:3.1279em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.8049em;\"><span class=\"pstrut\" style=\"height:3.1279em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">q</span><span class=\"mopen\">(</span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0528em;\">β</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3731em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mpunct\">,</span></span></span></span></span>"
               }
             ]
@@ -4419,7 +4461,7 @@ export const latexDocument = {
               {
                 id: "text-240",
                 type: "text",
-                body: "shows that the energy flux is symmetric about the direction of the "
+                body: "shows that the energy flux is symmetric about the direction of the"
               },
               {
                 id: "text-241",
@@ -4441,7 +4483,14 @@ export const latexDocument = {
           }
         }
       ],
-      subsections: []
+      subsections: [],
+      numbering: {
+        path: [
+          5,
+          0,
+          0
+        ]
+      }
     }
   ]
 } as const satisfies LatexNodeMap["latexDocument"];

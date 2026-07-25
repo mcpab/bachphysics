@@ -1,20 +1,10 @@
 'use client';
 
-import { NextLinkLike } from '@/app/components/NextLinkLike';
-import { PageFrame } from '@/app/components/PageFrame';
-import { scientificEssayLayout } from '@/app/physics/scientificEssayLayout';
-import { latexDocument } from '@/library/electromagnetism/relativistic-electromagnetism/maxwell-equations/generated/relativistic-maxwell-equations.layout.ast';
+import Essay from '@/app/components/Essay';
 import { labelIndex } from '@/library/electromagnetism/relativistic-electromagnetism/maxwell-equations/generated/relativistic-maxwell-equations.labelIndex';
-import { NextImageAdapter } from '@/src/components/NextImageAdapter';
-import { ReferenceEnhancer } from '@mcpab/katex/client';
+import { latexDocument } from '@/library/electromagnetism/relativistic-electromagnetism/maxwell-equations/generated/relativistic-maxwell-equations.layout.ast';
 import {
-    ChapterFrontMatter,
-    createLatexRendererContextValue,
-    LatexHostContext,
-    LatexRendererContext,
-    type ChapterFrontMatterProps,
-    type LatexHostContextValue,
-    RenderLatexDocument,
+    type ChapterFrontMatterProps
 } from '@mcpab/katex/react';
 
 const frontMatter = {
@@ -30,33 +20,12 @@ const frontMatter = {
         'Maxwell\'s equations in vacuum',
     ],
     topics: [
-        'Differential identities for vector fields',
-        'Transformation of divergence and curl',
-        'Electromagnetic field transformations',
-        'Lorentz covariance of Maxwell\'s equations',
     ],
 } satisfies ChapterFrontMatterProps;
 
 export default function MaxwellEquations(): React.ReactElement {
-    const latexRendererContextValue = createLatexRendererContextValue({});
-    const latexHostContextValue: LatexHostContextValue = {
-        ImageComponent: NextImageAdapter,
-        resolveAssetSrc: (src) => `/img/${src}`,
-        LinkComponent: NextLinkLike,
-    };
 
     return (
-        <LatexRendererContext.Provider value={latexRendererContextValue}>
-            <LatexHostContext.Provider value={latexHostContextValue}>
-                <PageFrame>
-                    <RenderLatexDocument
-                        latexDocument={latexDocument}
-                        layoutConfig={scientificEssayLayout}
-                        frontMatter={<ChapterFrontMatter {...frontMatter} />}
-                    />
-                    <ReferenceEnhancer labelIndex={labelIndex} />
-                </PageFrame>
-            </LatexHostContext.Provider>
-        </LatexRendererContext.Provider>
+          <Essay frontMatter={frontMatter} labelIndex={labelIndex} latexDocument={latexDocument} />
     );
 }
