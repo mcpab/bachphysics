@@ -1,37 +1,39 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import { ThemeProvider } from '@mui/material/styles';
-import theme from '../src/theme';
-import Navigation from '../src/navigation';
-import { StyledEngineProvider } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
-import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
 
-export const metadata: Metadata = {
-  title: "Music, Physics and Friends",
-  description: "Music, Physics and Friends",
-};
+import { AppThemeProvider } from './AppThemeProvider';
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v16-appRouter';
+import { Inter, STIX_Two_Text } from 'next/font/google';
+import '@mcpab/katex/styles/global.css';
+import './globals.css';
+import { AppShell } from './components/AppShell';
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+});
+
+const stixTwoText = STIX_Two_Text({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-stix-two-text',
+});
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>): React.ReactElement {
   return (
-    <html lang="en">
-      <CssBaseline />
-      <body className="font-sans flex flex-col bg-[url('/img/bg7.jpg')]">
-      <AppRouterCacheProvider>
-        <StyledEngineProvider injectFirst>
-          <ThemeProvider theme={theme}>
-            <Navigation clerkKey="pk_test_d2l0dHktY2FyaWJvdS0yNC5jbGVyay5hY2NvdW50cy5kZXYk" />
-            <main className="font-sans flex flex-col">
-              {children}
-            </main>
-          </ThemeProvider>
-        </StyledEngineProvider>
+
+    <html lang="en" className={`${inter.variable} ${stixTwoText.variable}`}>
+      <body>
+        <AppRouterCacheProvider>
+          <AppThemeProvider>
+            <AppShell>{children}</AppShell>
+          </AppThemeProvider>
         </AppRouterCacheProvider>
       </body>
     </html>
+
   );
 }

@@ -1,0 +1,956 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\newcommand{\ds}{\displaystyle}
+
+\title{The Kinematics of Rigid Body Motion}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+
+% ============================================================
+\section{Introduction}
+% ============================================================
+
+In this essay, we explore the kinematics of rigid-body motion, focusing on bodies for which
+the distance between any two material points remains constant. Our goal is to derive the
+principal equations carefully, even at the risk of appearing pedantic, so that every
+assumption and convention remains explicit.\par
+
+We will cover the following topics:
+
+\begin{itemize}
+\item \textbf{Basic Properties of Orthogonal Transformations:} We will outline some
+fundamental properties of orthogonal transformations in a vector space $V$ of
+dimension $n$, endowed with a positive-definite scalar product. In particular, we
+will discuss how these transformations preserve lengths and angles between vectors,
+a property central to their role in rigid-body motion.
+
+\item \textbf{Rotations in Three Dimensions:} We will then consider the particularly
+important case of rotations in three-dimensional space. We will examine how rotation
+matrices are constructed and how they are related to the existence of a rotation
+axis.
+
+\item \textbf{Infinitesimal Rotations:} From our analysis of three-dimensional rotations,
+we will introduce the concept of an infinitesimal rotation. This involves
+small-angle approximations and the use of skew-symmetric matrices to represent
+infinitesimal changes in orientation. We will discuss their properties and their role
+in deriving the kinematic equations of rigid-body motion.
+
+\item \textbf{Transformation of Vectors Between Reference Frames:} Building upon
+infinitesimal rotations, we will derive the general relation between the time
+derivatives of a vector measured in fixed and rotating reference frames. We will
+make explicit how the descriptions in the two frames are related and establish the
+mathematical framework needed for these transformations.
+
+\item \textbf{Angular Velocity:} Finally, we will derive the angular velocity vector and
+examine rotations about both fixed and time-dependent axes.
+\end{itemize}
+
+% ============================================================
+\section{Orthogonal Transformations}
+% ============================================================
+
+In this section we will review some basic properties of orthogonal transformations in a
+vector space $V$ over the complex numbers $\mathbb{C}$ of dimension $n$, which is endowed with
+a scalar product generalized for complex vectors:
+
+\[
+  \ip{\vb{x}}{\vb{y}} = x_i\,\overline{y}_i
+\]
+
+where $\vb{x} = (x_1, x_2, \ldots, x_n)$ and $\vb{y} = (y_1, y_2, \ldots, y_n)$ are complex
+vectors in $V$, and $\overline{y}$ denotes the complex conjugate of $y$. The scalar product
+is positive-defined, which means that it satisfies the following properties:
+
+\[
+  \begin{gathered}
+    \ip{\vb{x}}{\vb{y}} = \overline{\ip{\vb{y}}{\vb{x}}} \\
+    \ip{\vb{x}}{\vb{x}} \geq 0 \\
+    \ip{\vb{x}}{\vb{x}} = 0 \iff \vb{x} = \vb{0}
+  \end{gathered}
+\]
+
+Although the vector space is defined over $\mathbb{C}$, we shall consider only matrices with real coefficients.
+Consequently, all transformations discussed here are orthogonal rather than unitary.
+The complex scalar product is introduced only because it provides the natural setting
+for discussing the eigenvalues and eigenvectors of orthogonal matrices.
+
+\begin{itemize}
+  \item \textbf{Definition}: Orthogonal transformations are linear transformations that
+        preserve the scalar product, and play a crucial role in the theory of rigid body
+        motion. A linear transformation $\vb{A}$ of $V$ onto itself,
+
+        \[
+          \vb{A}: V \to V
+        \]
+
+        is orthogonal if it preserves the scalar product between any two vectors.,
+
+        \[
+          \ip{\vb{x}'}{\vb{y}'} = \ip{\vb{A}\vb{x}}{\vb{A}\vb{y}} = \ip{\vb{x}}{\vb{y}}
+        \]
+        for all $\vb{x}, \vb{y} \in V$.
+
+  \item \textbf{Symmetry and Inverse:} From the properties of matrices and scalar products,
+        we can write the above equation as
+        \[
+          \ip{\vb{A}\vb{x}}{\vb{A}\vb{x}} = \ip{\vb{x}}{\vb{A}^\top\vb{A}\vb{x}} = \ip{\vb{x}}{\vb{x}}
+        \]
+        which results in,
+        \begin{equation}
+          \begin{gathered}
+            \vb{A}^\top\vb{A} = \vb{A}\vb{A}^\top = \vb{I} \\
+            \vb{A}^{-1} = \vb{A}^\top
+          \end{gathered}
+          \label{kinematics:orthogonal-condition}
+        \end{equation}
+        where $\vb{I}$ is the identity matrix. The inverse of an orthogonal transformation is
+        the transpose of the matrix itself. As a note: if the matrix $\vb{A}$ had complex
+        elements, then the transpose would be replaced by the conjugate transpose
+        $\bar{A}^\top$:
+        \[
+          \ip{\vb{A}\vb{x}}{\vb{A}\vb{x}} = \ip{\vb{x}}{\bar{A}^\top\vb{A}\vb{x}} = \ip{\vb{x}}{\vb{x}}
+        \]
+
+  \item \textbf{Orthogonality of rows and columns}: Considering the row and column vectors
+        $\vb{v}_i$ and $\vb{a}_i$ forming the matrix $\vb{A}$, we can write the above
+        equation as
+        \[
+          \begin{gathered}
+            \ip{\vb{v}_i}{\vb{v}_j} = \delta_{ij} \\
+            \ip{\vb{a}_i}{\vb{a}_j} = \delta_{ij}
+          \end{gathered}
+        \]
+        which is equivalent to requiring that the rows and the columns vectors are a set of
+        orthonormal vectors. The vectors $\vb{v}_i$ represent the components of the unit
+        vectors that define the direction of the coordinate axes in the rotated system,
+        relative to the unit vectors of the reference system.
+
+  \item \textbf{Property of eigenvalues}: The eigenvector $\vb{v}$ corresponding to the
+        eigenvalue $\lambda$ will preserve its length under the orthogonal transformation:
+
+        \[
+          \ip{\vb{v}}{\vb{v}} = \ip{\vb{A}\vb{v}}{\vb{A}\vb{v}} = \lambda\overline{\lambda}\ip{\vb{v}}{\vb{v}}
+        \]
+
+        which implies that the eigenvalues are complex numbers on the complex unit circle of
+        the form $\lambda = e^{i\theta}$, and they always come in pairs, as
+        $\lambda = e^{-i\theta}$ is an eigenvalue as well. If $n$ is even, then one eigenvalue
+        is either $+1$ or $-1$.
+
+  \item \textbf{Property of eigenvectors}: the eigenvectors $\vb{v}_1$ and $\vb{v}_2$
+        corresponding to different eigenvalues $\lambda_1$ and $\lambda_2$ are orthogonal to
+        each other. The proof of this property is straightforward, as we can write
+        \[
+          \ip{\vb{v}_1}{\vb{v}_2} = \ip{\vb{A}\vb{v}_1}{\vb{A}\vb{v}_2} = \lambda_1\overline{\lambda_2}\ip{\vb{v}_1}{\vb{v}_2}
+        \]
+        which can only be true if $\ip{\vb{v}_1}{\vb{v}_2} = 0$, as the eigenvalues are
+        complex numbers on the unit circle different from zero.
+
+  \item \textbf{Property of determinant} From $\det(\vb{A}) = \det(\vb{A}^\top)$ it follows
+        that,
+        \[
+          \det(\vb{A})^2 = 1
+        \]
+        which implies that the determinant of an orthogonal matrix is either $+1$ or $-1$.
+        As we will see in the next section, the former corresponds to proper rotations, while
+        the latter corresponds to improper rotations or reflections.
+
+  \item \textbf{The Othogonal Group} The set of orthogonal matrices forms a group under matrix multiplication:
+     \begin{itemize}
+      \item Multiplying any two orthogonal matrices $\vb{A}$ and $\vb{B}$ gives again an orthogonal matrix,
+      \[
+        \ip{\vb{A}\vb{B}\vb{x}}{\vb{A}\vb{B}\vb{y}} = \ip{\vb{x}}{(\vb{A}\vb{B})^T\vb{A}\vb{B}\vb{y}}
+        =\ip{\vb{x}}{\vb{B}^T\vb{A}^T\vb{A}\vb{B}\vb{y}} = \ip{\vb{x}}{ \vb{y}}
+      \]
+      as $(\vb{A}\vb{B})^T=\vb{B}^T\vb{A}^T$.
+      \item Every orthogonal matrix has an inverse, which is the transposed matrix.
+      \item The identity element is the identity matrix $\vb I$.
+      \item The matrix multiplication is associative.
+      \end{itemize}
+      The subset of orthogonal matrices with determinant $+1$ forms a subgroup of the orthogonal
+group, called the \textbf{special orthogonal group} and denoted by $SO(n)$. This group
+describes proper rotations.
+  \item \textbf{Interpretation of orthogonal transformation} It is important to note that
+        an orthogonal transformation can be seen in either of two ways:
+        \begin{itemize}
+          \item a \textbf{passive} transformation, where the components of the \textbf{same}
+                vector are expressed in different bases;
+          \item an \textbf{active} transformation, where a vector is actively transformed into
+                a \textbf{new one} in the same reference system.
+        \end{itemize}
+        We will observe that in three dimensions, these two interpretations result in rotations
+        that correspond to inverse rotations.
+
+\end{itemize}
+
+% ============================================================
+\section{Rotations in Three Dimensions}
+% ============================================================
+
+An orthogonal transformation in three dimensions always possesses one real eigenvalue, equal to either +1 or −1.
+ The remaining two eigenvalues are either the complex-conjugate pair $\lambda = e^{i\theta}$ and $\lambda = e^{-i\theta}$,
+ or another pair of $\pm 1$.
+
+The eigenvectors corresponding to the eigenvalue $+1$ are the vectors that remain unchanged
+under the transformation, forming the rotation axis. Conversely, the eigenvectors
+corresponding to the eigenvalue $-1$ are the vectors that are reflected under the
+transformation.
+
+In physics, we assume that an orthogonal transformation varies continuously with the
+parameter $\theta$ the rotation angle. This angle typically depends on time and describes the
+evolution of the rotated reference system relative to the fixed reference frame. When the rotation angle
+is zero, the reference systems coincide, and the transformation is the identity. Since the eigenvalue associated
+with the rotation axis cannot change continuously from +1 to −1, we restrict our attention
+to the connected component of the identity, namely the proper rotations.
+
+\subsection{Rotation Around the Principal Axes}
+
+Before deriving the general form of a rotation around any axis, we will consider the rotation
+around the $z$-axis. In Fig~1 such a rotation is illustrated.
+ The rotation matrix $\vb{A}_z(\theta)$ in this case is given by,
+
+\[
+  \vb{A}_z(\theta) =
+  \begin{pmatrix}
+    \cos\theta  & \sin\theta & 0 \\
+    -\sin\theta & \cos\theta & 0 \\
+    0           & 0          & 1
+  \end{pmatrix}
+\]
+
+where $\theta$ is the rotation angle. The derivation of the matrix $\vb{A}_z(\theta)$ is
+straightforward, as the row vectors are obviously the components of the unit vectors of the
+rotated system in the reference system. The matrix $\vb{A}_z(\theta)$ is orthogonal, as it
+satisfies the properties of an orthogonal matrix, and it is easy to verify that the
+determinant is $+1$. It is important to emphasize that the matrix $\vb{A}_z(\theta)$
+represents a passive transformation, where the components of the same vector are expressed
+in different bases, and the rotated reference system is turned by an angle $\theta$
+\textbf{counterclockwise} around the $z$-axis.
+
+When $\vb{A}_z(\theta)$ is interpreted in an \textbf{active} case, the rotation will be
+\textbf{clockwise} around the $z$-axis. This can be readily verified by considering the
+effect of applying $\vb{A}_z(\theta)$ to a vector
+$\vb{v} = (r\cos\phi,\, r\sin\phi,\, z)$,
+\[
+  \vb{A}_z(\theta)\,\vb{v} =
+  \begin{pmatrix}
+    \cos\theta  & \sin\theta & 0 \\
+    -\sin\theta & \cos\theta & 0 \\
+    0           & 0          & 1
+  \end{pmatrix}
+  \begin{pmatrix} r\cos\phi \\ r\sin\phi \\ z \end{pmatrix}
+  =
+  \begin{pmatrix} r\cos(\phi-\theta) \\ r\sin(\phi-\theta) \\ z \end{pmatrix}
+\]
+
+which corresponds to decreasing the polar angle $\phi$ by the angle $\theta$. If the active
+rotation in practical applications needs to be counterclockwise, the angle $\theta$ must be
+negative.
+
+The rotation matrix around the $x$-axis is given by,
+\[
+  \vb{A}_x(\theta) =
+  \begin{pmatrix}
+    1 & 0           & 0          \\
+    0 & \cos\theta  & \sin\theta \\
+    0 & -\sin\theta & \cos\theta
+  \end{pmatrix}
+\]
+and the one around the $y$-axis is given by,
+\[
+  \vb{A}_y(\theta) =
+  \begin{pmatrix}
+    \cos\theta  & 0 & \sin\theta \\
+    0           & 1 & 0          \\
+    -\sin\theta & 0 & \cos\theta
+  \end{pmatrix}
+\]
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.45\textwidth]{rotated1.png}
+  \caption{Fig~1: Rotation of an angle $\theta$ around the $z$ axis.}
+\end{figure}
+
+
+
+\subsection{Rotation Around a General Axis}
+
+The formula for a change of coordinates as a result of a rotation around an arbitrary axis
+defined by the unit vector $\vb{n} = (n_x, n_y, n_z)$, with $\ip{\vb{n}}{\vb{n}} = 1$
+and an angle $\theta$, is called the Rodrigues formula. While there are numerous
+well-documented methods to derive this formula available in various resources, we will revisit
+the derivation process, explaining the steps in detail.
+
+Our goal is to find the components of the rotated unit vectors $\vb{e}'_i$ in the reference
+system $\vb{e}_i$ as a function of the components of the unit vector $\vb{n}$ and the angle
+$\theta$. These components will form the \textbf{rows} of the matrix describing the change of
+coordinates.
+
+A unit vector $\vb{e}_i$ in the fixed reference system can be decomposed into the component
+$\vb{e}_i^{||}$ and $\vb{e}_i^{\perp}$ respectively parallel and perpendicular to $\vb{n}$:
+
+\begin{align}
+  \vb{e}_i &= \vb{e}_i^{||} + \vb{e}_i^{\perp} \\
+  \vb{e}_i^{||} &= \ip{\vb{e}_i}{\vb{n}}\,\vb{n} \\
+  \vb{e}_i^{\perp} &= \vb{e}_i - \vb{e}_i^{||} = \vb{e}_i - \ip{\vb{e}_i}{\vb{n}}\,\vb{n}
+\end{align}
+
+The component $\vb{e}_i^{||}$ is parallel to the rotation axis, and it will not change under
+the rotation. The component $\vb{e}_i^{\perp}$ is perpendicular to the rotation axis, and it
+will rotate by an angle $\theta$ around the axis $\vb{n}$, into a new vector
+$\vb{e}_i^{'\perp}$. Considering the unit vector along
+$\vb{n} \times \vb{e}_i^{\perp} = \vb{n} \times \vb{e}_i$,
+
+\[
+  \frac{\vb{n} \times \vb{e}_i^{\perp}}{|\vb{n} \times \vb{e}_i^{\perp}|}
+  = \frac{\vb{n} \times \vb{e}_i}{|\vb{n} \times \vb{e}_i|}
+\]
+
+and $\vb{e}_i^{\perp}$,
+
+\[
+  \frac{\vb{e}_i^{\perp}}{|\vb{e}_i^{\perp}|}
+  = \frac{\vb{e}_i - \ip{\vb{e}_i}{\vb{n}}\,\vb{n}}{\sqrt{1 - \ip{\vb{e}_i}{\vb{n}}^2}}
+\]
+
+applying the two-dimensional rotation formula in the plane orthogonal to $\vb{n}$, we can write the
+rotated vector as,
+\[
+  \vb{e}_i^{'\perp} =
+  \left(
+    \cos\theta\,\frac{\vb{e}_i - \ip{\vb{e}_i}{\vb{n}}}{\sqrt{1 - \ip{\vb{e}_i}{\vb{n}}^2}}
+    - \sin\theta\,\frac{\vb{n} \times \vb{e}_i}{|\vb{n} \times \vb{e}_i|}
+  \right)\sqrt{1 - \ip{\vb{e}_i}{\vb{n}}^2}
+\]
+as the norm of the vector $\vb{e}_i^{\perp}$ remains constant. The vector
+$\vb{n} \times \vb{e}_i$ contains only the components of $\vb{n}$ of index different from
+$i$, as it can be easily verified by the definition of the cross product,
+
+\[
+  (\vb{n} \times \vb{e}_i)_j = \epsilon_{jkp}\, n_k\,(e_i)_p = \epsilon_{jkp}\, n_k\,\delta_{ip} = \epsilon_{jki}\, n_k
+\]
+
+where $\epsilon_{ijk}$ is the Levi-Civita tensor. The norm of the vector $\vb{n} \times \vb{e}_i$ is given by,
+
+\begin{align}
+  |\vb{n} \times \vb{e}_i| &= \sqrt{n_k^2 + n_p^2}, \quad k, p \neq i \\
+                            &= \sqrt{1 - \ip{\vb{e}_i}{\vb{n}}^2}
+\end{align}
+
+The components of the rotated unit vectors $\vb{e}'_i$ with respect to the reference frame
+are then given by,
+\[
+  \vb{e}'_i = \ip{\vb{e}_i}{\vb{n}}\,\vb{n}
+    +\cos\theta\bigl(
+\vb e_i
+-
+\ip{\vb e_i}{\vb n}\,\vb n
+\bigr)
+    + \sin\theta\,(\vb{e}_i \times \vb{n})
+\]
+
+The matrix $\vb{A}(\vb{n}, \theta)$ which describes the transformation of a vector's
+components with respect to a reference system rotated around an axis $\vb{n}$ by an angle
+$\theta$, is obtained by evaluating the above equation for each unit vector $\vb{e}_i$ in
+the reference system. The components of the vectors $\vb{e}'_i$ with respect to $\vb{e}_i$
+are the rows of the matrix $\vb{A}(\vb{n}, \theta)$:
+
+\begin{equation}
+  \vb{A}(\vb{n},\theta) = \cos(\theta)\,\vb{I} + (1-\cos(\theta))\ket{\vb{n}}\bra{\vb{n}}
+    + \sin(\theta)\,(\cdot) \times \vb{n}
+  \label{kinematics:rodrigues-formula}
+\end{equation}
+
+where $(\cdot)$ is the placeholder for a vector. The three terms respectively leave unchanged the component parallel to
+the rotation axis, rotate the perpendicular component, and generate the component orthogonal to both.\par
+
+The explicit matrix form of the equation above is,
+
+\[
+  \vb{A}(\vb{n},\theta) =
+  \begin{pmatrix}
+    n_x^2(1-\cos\theta)+\cos\theta        & n_x n_y(1-\cos\theta)+n_z\sin\theta   & n_x n_z(1-\cos\theta)-n_y\sin\theta \\
+    n_y n_x(1-\cos\theta)-n_z\sin\theta   & n_y^2(1-\cos\theta)+\cos\theta        & n_y n_z(1-\cos\theta)+n_x\sin\theta \\
+    n_z n_x(1-\cos\theta)+n_y\sin\theta   & n_z n_y(1-\cos\theta)-n_x\sin\theta   & n_z^2(1-\cos\theta)+\cos\theta
+  \end{pmatrix}
+\]
+
+It is important to emphasize again that the above transformation represents a passive
+rotation, meaning that the components of the same vector are expressed in different bases.
+The same matrix, if interpreted as an active transformation, corresponds to the inverse rotation.
+
+
+
+
+
+% ============================================================
+\section{Infinitesimal Rotations}
+% ============================================================
+
+\subsection{Definition}
+
+In the previous section, we demonstrated that a rotation in three dimensions can be uniquely
+identified by a unit vector $\vb{n}$ and an angle $\theta$.
+
+It is natural to ask
+whether the group of orthogonal matrices $SO(3)$, is isomorphic to the vector space
+$\mathbb{R}^3$. This choice is motivated by the fact that every rotation in three dimensions has only three degrees of
+fredome:  the two independent components of the  rotation axis, and the rotation angle.\par
+
+There are several obstacles with defining properly such a isomorphism, as we will soon see, but we will first start by assuming
+simply that such a an isomorphism $f$ exists, between the group $SO(3)$ with matrix multiplication
+and the group $\mathbb{R}^3$ with the the regular vector addition:
+
+\[
+  f: SO(3) \to \mathbb{R}^3
+\]
+
+For such an isomorphism to exist, it must be a single-valued function, it must preserve the group operation:
+
+\[
+  f(\vb{A}\vb{B}) = f(\vb{A}) + f(\vb{B})
+\]
+
+and it has to be one-to-one and surjective. The one-to-one conditions requires that,
+
+\[
+  \forall\; \vb{R}_1, \vb{R}_2 \in SO(3),\quad
+  f(\vb{R}_1) = f(\vb{R}_2) \implies \vb{R}_1 = \vb{R}_2.
+\]
+
+Considering two rotations $\vb{A} \in SO(3)$ and $\vb{B} \in SO(3)$, we know that rotations
+do not commute,
+
+\[
+  \vb{A}\vb{B} \neq \vb{B}\vb{A}
+\]
+
+However, their images under the mapping $f$ are the same,
+
+\[
+  f(\vb{A}\vb{B}) = f(\vb{A}) + f(\vb{B}) = f(\vb{B}) + f(\vb{A}) = f(\vb{B}\vb{A})
+\]
+
+due to the commutativity of the vector space $\mathbb{R}^3$. Thus, it is evident that such a
+mapping cannot be one-to-one. Therefore, since the group $SO(3)$ is not commutative, whereas the group
+$(\mathbb{R}^3,+)$ is commutative, no group isomorphism between the two can exist. \par
+
+
+We must consider a different approach and we will now introduce the concept of infinitesimal
+rotations, which are rotations that commute to the first order.
+
+Let us consider two rotation matrices $\vb{A}$ and $\vb{B}$ such that,
+
+\begin{align}
+  \vb{A} &= \vb{I} + \epsilon_1 \\
+  \vb{B} &= \vb{I} + \epsilon_2
+\end{align}
+
+where $\epsilon_1$ and $\epsilon_2$ are infinitesimal matrices such that
+products of infinitesimal quantities are neglected. The product of $\vb{A}$ and $\vb{B}$
+is,
+
+\[
+  \vb{A}\vb{B} = (\vb{I}+\epsilon_1)(\vb{I}+\epsilon_2) = \vb{I} + \epsilon_1 + \epsilon_2 + \epsilon_1\epsilon_2 = \vb{I} + \epsilon_1 + \epsilon_2
+\]
+
+which is the same as the product of $\vb{B}$ and $\vb{A}$. Hence, for so-called infinitesimal
+rotations, the commutativity property holds.
+
+For a general infinitesimal rotation $\vb{A} = \vb{I} + \epsilon$, the orthogonal condition
+$\vb{A}^T\vb{A} = \vb{I}$ implies that the matrix $\epsilon$ is skew-symmetric, as it
+satisfies the property
+
+\[
+  \epsilon^\top = -\epsilon.
+\]
+
+A skew-symmetric matrix has zero diagonal elements, and the off-diagonal elements satisfy the
+property $\epsilon_{ij} = -\epsilon_{ji}$, and assumes the general form,
+\[
+  \epsilon =
+  \begin{pmatrix}
+    0           &  d\Omega_3 & -d\Omega_2 \\
+    -d\Omega_3  &  0         &  d\Omega_1 \\
+    d\Omega_2   & -d\Omega_1 &  0
+  \end{pmatrix}
+\]
+
+A change of coordinates of a vector $\vb{r}$ under an infinitesimal rotation
+$\vb{A} = \vb{I} + \epsilon$ is given by,
+\[
+  \vb{r}' = \vb{A}\vb{r} = (\vb{I} + \epsilon)\vb{r} = \vb{r} + \epsilon\vb{r}
+           = \vb{r} + \vb{r} \times \boldsymbol{d\Omega}
+\]
+as it can be readily verified that,
+\[
+  \epsilon\vb{r} =
+  \begin{pmatrix}
+    0           &  d\Omega_3 & -d\Omega_2 \\
+    -d\Omega_3  &  0         &  d\Omega_1 \\
+    d\Omega_2   & -d\Omega_1 &  0
+  \end{pmatrix}
+  \begin{pmatrix} x \\ y \\ z \end{pmatrix}
+  =
+  \begin{pmatrix}
+    d\Omega_3 y - d\Omega_2 z \\
+    -d\Omega_3 x + d\Omega_1 z \\
+    d\Omega_2 x - d\Omega_1 y
+  \end{pmatrix}
+  = \vb{r} \times d\boldsymbol{\Omega}
+\]
+where $\vb{r} = (x,y,z)$ and $d\boldsymbol{\Omega} = (d\Omega_1, d\Omega_2, d\Omega_3)$.
+The infinitesimal vector $d\boldsymbol{\Omega}$ therefore completely characterizes the infinitesimal rotation.
+
+Since infinitesimal rotations commute to first order, the obstruction encountered for finite
+rotations disappears. It is therefore possible to identify each infinitesimal rotation
+uniquely with a vector in $\mathbb{R}^3$.
+
+We now evaluate the form of the matrix \eqref{kinematics:rodrigues-formula} for a value of the angle
+$\theta$ that is infinitesimally small. We find that the matrix is given by,
+\[
+  \vb{R}(\vb{n}, d\theta) = \vb{I} + d\theta
+  \begin{pmatrix}
+    0     &  n_z  & -n_y \\
+    -n_z  &  0    &  n_x \\
+    n_y   & -n_x  &  0
+  \end{pmatrix}
+\]
+This allows us to identify,
+\[
+  \epsilon = d\theta
+  \begin{pmatrix}
+    0     &  n_z  & -n_y \\
+    -n_z  &  0    &  n_x \\
+    n_y   & -n_x  &  0
+  \end{pmatrix}
+\]
+as the infinitesimal rotation matrix, and the vector
+\[
+  d\boldsymbol{\Omega} = d\theta\,(n_x, n_y, n_z)
+\]
+as the vector defining the infinitesimal rotation.
+
+\subsection{Similarity Transformation of Infinitesimal Rotations}
+
+In the previous section, we have shown that an infinitesimal rotation can be characterized by
+a vector $\boldsymbol{\Omega} = (d\Omega_1, d\Omega_2, d\Omega_3)$. We will now show that
+$\boldsymbol{\Omega}$ transforms as a regular $\mathbb{R}^3$ vector under a similarity
+transformation.
+
+Let us consider a rotation matrix $\vb{A} = \vb{I} + \epsilon$, where $\epsilon$ is a
+skew-symmetric matrix of the form,
+\[
+  \epsilon =
+  \begin{pmatrix}
+    0           &  d\Omega_3 & -d\Omega_2 \\
+    -d\Omega_3  &  0         &  d\Omega_1 \\
+    d\Omega_2   & -d\Omega_1 &  0
+  \end{pmatrix}
+\]
+
+The representation of $\vb{A}$ in the coordinate system defined by an orthogonal
+transformation $\mathbf{B}$, is $\vb{A}' = \mathbf{B}\vb{A}\mathbf{B}^\top$ and it has the
+form,
+\[
+  \vb{A}' = \mathbf{B}(\vb{I}+\epsilon)\mathbf{B}^\top
+           = \mathbf{B}\mathbf{B}^\top + \mathbf{B}\epsilon\mathbf{B}^\top
+           = \vb{I} + \mathbf{B}\epsilon\mathbf{B}^\top
+           = I + \epsilon'
+\]
+
+The matrix $\epsilon' = \mathbf{B}\epsilon\mathbf{B}^\top$ is skew-symmetric, as it can be
+readily verified that,
+\[
+  (\epsilon')^\top = (\mathbf{B}\epsilon\mathbf{B}^\top)^\top
+                   = \mathbf{B}\epsilon^\top\mathbf{B}^\top
+                   = -\mathbf{B}\epsilon\mathbf{B}^\top = -\epsilon'
+\]
+
+Given that the matrix $\mathbf{B}$ is orthogonal, there exist three orthogonal unit vectors
+$\mathbf{v}_1$, $\mathbf{v}_2$, and $\mathbf{v}_3$:
+
+\[
+  \mathbf{v}_i \cdot \mathbf{v}_j = \delta_{ij}
+\]
+
+which define a reference system in the rotated coordinates. The matrix $\mathbf{B}$ can be
+written as:
+
+\[
+  \mathbf{B} =
+  \begin{pmatrix} \mathbf{v}_1 \\ \mathbf{v}_2 \\ \mathbf{v}_3 \end{pmatrix}
+\]
+
+where the vectors $\mathbf{v}_i$ are row vectors. The transpose of $\mathbf{B}$ is readily
+obtained as:
+
+\[
+  \mathbf{B}^\top = \bigl[\mathbf{v}_1^\top,\; \mathbf{v}_2^\top,\; \mathbf{v}_3^\top\bigr]
+\]
+where the vectors $\mathbf{v}_i$ are now the columns of $\mathbf{B}^\top$.
+
+The product $\boldsymbol{\epsilon}\mathbf{B}^\top$ is the matrix with columns:
+\[
+  \boldsymbol{\epsilon}\mathbf{B}^\top =
+  \bigl[\mathbf{v}_1 \times d\boldsymbol{\Omega},\;
+        \mathbf{v}_2 \times d\boldsymbol{\Omega},\;
+        \mathbf{v}_3 \times d\boldsymbol{\Omega}\bigr]
+\]
+
+and, for illustration, the matrix $\mathbf{B}\boldsymbol{\epsilon}\mathbf{B}^\top$ is
+explicitly written below:
+
+\[
+  \mathbf{B}\boldsymbol{\epsilon}\mathbf{B}^\top =
+  \begin{pmatrix}
+    \mathbf{v}_1\cdot(\mathbf{v}_1\times d\boldsymbol{\Omega}) &
+    \mathbf{v}_1\cdot(\mathbf{v}_2\times d\boldsymbol{\Omega}) &
+    \mathbf{v}_1\cdot(\mathbf{v}_3\times d\boldsymbol{\Omega}) \\
+    \mathbf{v}_2\cdot(\mathbf{v}_1\times d\boldsymbol{\Omega}) &
+    \mathbf{v}_2\cdot(\mathbf{v}_2\times d\boldsymbol{\Omega}) &
+    \mathbf{v}_2\cdot(\mathbf{v}_3\times d\boldsymbol{\Omega}) \\
+    \mathbf{v}_3\cdot(\mathbf{v}_1\times d\boldsymbol{\Omega}) &
+    \mathbf{v}_3\cdot(\mathbf{v}_2\times d\boldsymbol{\Omega}) &
+    \mathbf{v}_3\cdot(\mathbf{v}_3\times d\boldsymbol{\Omega})
+  \end{pmatrix}
+\]
+
+The antisymmetry of the matrix is evident as the diagonal elements are zero:
+
+\[
+  \mathbf{v}_i\cdot(\mathbf{v}_i\times d\boldsymbol{\Omega}) = 0
+\]
+
+and the off-diagonal elements are opposite because of the properties of the scalar triple
+product:
+
+\[
+  \mathbf{v}_i\cdot(\mathbf{v}_j\times d\boldsymbol{\Omega}) =
+  -\mathbf{v}_j\cdot(\mathbf{v}_i\times d\boldsymbol{\Omega})
+\]
+
+The components of $d\boldsymbol{\Omega}'$ are by definition:
+
+\begin{align}
+  d\Omega'_1 &= \mathbf{v}_2\cdot(\mathbf{v}_3\times d\boldsymbol{\Omega})
+              = d\boldsymbol{\Omega}\cdot(\mathbf{v}_2\times\mathbf{v}_3) \\
+  d\Omega'_2 &= \mathbf{v}_3\cdot(\mathbf{v}_1\times d\boldsymbol{\Omega})
+              = d\boldsymbol{\Omega}\cdot(\mathbf{v}_3\times\mathbf{v}_1) \\
+  d\Omega'_3 &= \mathbf{v}_1\cdot(\mathbf{v}_2\times d\boldsymbol{\Omega})
+              = d\boldsymbol{\Omega}\cdot(\mathbf{v}_1\times\mathbf{v}_2)
+\end{align}
+
+These are simply the independent entries of the transformed skew-symmetric matrix.
+As the determinant of $\mathbf{B}$ assumes the values $\pm 1$:
+\[
+  |\mathbf{B}| = \mathbf{v}_1\cdot(\mathbf{v}_2\times\mathbf{v}_3) = \pm 1
+\]
+depending on the orientation of the vectors $\mathbf{v}_i$ in the rotated coordinate system,
+the equations become:
+\begin{align}
+  d\Omega'_1 &= |\mathbf{B}|\; d\boldsymbol{\Omega}\cdot\mathbf{v}_1 \\
+  d\Omega'_2 &= |\mathbf{B}|\; d\boldsymbol{\Omega}\cdot\mathbf{v}_2 \\
+  d\Omega'_3 &= |\mathbf{B}|\; d\boldsymbol{\Omega}\cdot\mathbf{v}_3
+\end{align}
+
+where we have made use of the property of the scalar triple product. Equation
+
+\[
+  d\boldsymbol{\Omega}' = |\mathbf{B}|\;\mathbf{B}\,d\boldsymbol{\Omega}.
+\]
+
+shows that, under proper orthogonal transformations ($|\mathbf{B}|=1$), the
+infinitesimal rotation vector transforms exactly as an ordinary vector.
+Under improper orthogonal transformations ($|\mathbf{B}|=-1$), it acquires an
+additional sign and therefore transforms as an axial vector (or pseudovector).
+
+% ============================================================
+\section{Rate of Change of a Vector}
+% ============================================================
+
+In this section, we will examine how the coordinates of a given vector change over time in
+two different reference systems: one that is fixed and another that rotates with respect to
+the fixed one. Although this result is well known, we shall derive it in detail in order to make
+ explicit the meaning of each term appearing in the equations of motion.
+ This will ensure that it is clear which components are being referenced in
+the general equation of motion.
+
+To understand this better, consider a vector in a fixed reference frame and how its
+components might appear different in a rotating frame. The rotating frame itself can change
+its orientation with time, adding complexity to the motion of the vector. By carefully
+deriving the equations, we can delineate the contributions from both the intrinsic change of
+the vector and the effect of the rotating frame.
+
+We will start by defining the vector in the fixed frame and introduce the rotational matrix
+that relates the rotating frame to the fixed frame. We will then derive the time derivative
+of the vector in both frames and show how they are connected.
+
+Let us consider a time-dependent vector $\vb{g} = \vb{g}(t)$ in a fixed reference frame,
+and its components in a rotating frame $\vb{g}' = \vb{g}'(t)$. We will assume that the
+components in the two different reference systems change as per a rotation matrix $\vb{A}(t)$,
+which is also time-dependent:
+\[
+  \vb{g}'(t) = \vb{A}(t)\,\vb{g}(t)
+\]
+
+The time derivative of the vector in the rotating frame is given by,
+\[
+  \frac{d\vb{g}'(t)}{dt} = \frac{d\vb{A}(t)}{dt}\,\vb{g}(t) + \vb{A}(t)\,\frac{d\vb{g}(t)}{dt}
+\]
+
+and the time derivative of the matrix $\vb{A}(t)$ at time $t_0$ is formally defined as,
+\[
+  \frac{d\vb{A}(t)}{dt} = \lim_{\Delta t \to 0}\frac{\vb{A}(t+\Delta t) - \vb{A}(t)}{\Delta t}.
+\]
+
+The operator $\vb{A}(t+\Delta t)$ is the composition of two rotations: one from the fixed
+frame to the rotating frame at time $t$, and the other being the infinitesimal rotation from
+the rotating frame at time $t + dt$:
+\[
+  \vb{A}(t+\Delta t) = (\vb{I} + \epsilon)\,\vb{A}(t)
+\]
+
+and the derivative of the operator $\vb{A}(t)$ is then given by,
+\[
+  \frac{d\vb{A}(t)}{dt}
+  = \lim_{\Delta t\to 0}
+    \frac{(\vb{I}+\epsilon)\vb{A}(t)-\vb{A}(t)}{\Delta t}
+  = \lim_{\Delta t\to 0}
+    \frac{\epsilon\,\vb{A}(t)}{\Delta t}.
+\]
+
+To determine the action of this operator, let $\vb{x}$ be an arbitrary vector.
+Since the infinitesimal matrix $\epsilon$ acts on the vector after it has already
+been transformed by $\vb{A}(t)$, we have
+
+\[
+  \frac{d\vb{A}(t)}{dt}\,\vb{x}
+  =
+  \lim_{\Delta t\to 0}
+  \frac{\epsilon\!\left(\vb{A}(t)\vb{x}\right)}{\Delta t}
+  =
+  \lim_{\Delta t\to 0}
+  \frac{\left(\vb{A}(t)\vb{x}\right)\times d\boldsymbol{\Omega}}{\Delta t}
+  =
+  \left(\vb{A}(t)\vb{x}\right)\times\boldsymbol{\omega},
+\]
+
+where
+
+\[
+  \boldsymbol{\omega}
+  =
+  \lim_{\Delta t\to 0}
+  \frac{d\boldsymbol{\Omega}}{\Delta t}
+\]
+
+is the \textbf{angular velocity}. Since the above relation holds for every vector
+$\vb{x}$, we may write
+
+\[
+  \frac{d\vb{A}(t)}{dt}
+  =
+  \vb{A}(t)\,(\cdot)\times\boldsymbol{\omega},
+\]
+
+where $(\cdot)$ denotes the placeholder for the vector on which the operator acts.
+where,
+
+\[
+  \boldsymbol{\omega} = \lim_{\Delta t\to 0}\frac{d\boldsymbol{\Omega}}{\Delta t}
+\]
+and $(\cdot)$ denotes the placeholder for a vector. $\boldsymbol{\omega}$ is the
+\textbf{angular velocity}. The final formula for the rate of change of the vector in the
+rotating frame is then given by the following equivalent equations:
+
+\begin{equation}
+  \begin{aligned}
+  \frac{d\vb{g}'(t)}{dt}
+    &= \bigl(\vb{A}(t)\,\vb{g}(t)\bigr) \times \boldsymbol{\omega}
+       + \vb{A}(t)\,\frac{d\vb{g}(t)}{dt} \nonumber \\
+    &= \vb{g}'(t) \times \boldsymbol{\omega} + \vb{A}(t)\,\frac{d\vb{g}(t)}{dt} \nonumber \\
+    &= \vb{A}(t)\!\left(\vb{g}(t) \times \bigl(\vb{A}(t)^\top\boldsymbol{\omega}\bigr)
+       + \frac{d\vb{g}(t)}{dt}\right)
+         \end{aligned}
+  \label{kinematics:rotating-frame-derivative}
+\end{equation}
+
+where in the last equation, the distributive property of matrix multiplication for orthogonal
+matrices regarding the cross product has been utilized.
+
+A similar formula can be derived for the rate of change of the vector in the fixed frame,
+since $\vb{g}(t) = \vb{A}^\top(t)\,\vb{g}'(t)$. Multiplying \eqref{kinematics:rotating-frame-derivative} by
+$\vb{A}^\top(t)$ from the left, we obtain,
+
+\begin{equation}
+  \begin{aligned}
+    \frac{d\vb{g}(t)}{dt}
+      &= \bigl(\vb{A}^{\top}(t)\boldsymbol{\omega}\bigr)
+         \times \vb{g}(t)
+         + \vb{A}^{\top}(t)\frac{d\vb{g}'(t)}{dt} \\
+      &= \vb{A}^{\top}(t)\left(
+           \boldsymbol{\omega}\times\vb{g}'(t)
+           + \frac{d\vb{g}'(t)}{dt}
+         \right).
+  \end{aligned}
+  \label{kinematics:inertial-frame-derivative}
+\end{equation}
+
+\subsection{Poisson Formulas}
+
+Let us consider a set of unit vectors $\vb e'_i$ fixed in the rotating frame, and let
+$\vb e_i$ denote the corresponding vectors expressed in the fixed frame. Since the
+components $\vb e'_i$ are constant in the rotating frame, equation
+\eqref{kinematics:rotating-frame-derivative} gives
+
+\[
+  0
+  =
+  \vb e'_i\times\boldsymbol{\omega}
+  +
+  \vb A\,\frac{d\vb e_i}{dt}.
+\]
+
+The quantity
+
+\[
+  \frac{d\vb{e}'_i}{dt}
+\]
+
+does \emph{not} denote the ordinary time derivative of the components
+$\vb{e}'_i$, which are constant in the rotating reference frame. Instead,
+throughout this section we define it as the components, expressed in the
+rotating frame, of the physical time derivative of the basis vector:
+\[
+  \frac{d\vb{e}'_i}{dt}
+  \equiv
+  \vb{A}\,\frac{d\vb{e}_i}{dt}.
+\]
+
+With this definition, the previous equation becomes
+\[
+  \frac{d\vb{e}'_i}{dt}
+  =
+  \boldsymbol{\omega}\times\vb{e}'_i,
+\]
+
+which is the Poisson formula.
+\subsection{Components of the Angular Velocity}
+
+Let us consider the Poisson formula for the unit vector $\vb{e}'_1$,
+
+\[
+  \boldsymbol{\omega} \times \vb{e}'_1 = \frac{d\vb{e}'_1}{dt}
+\]
+
+Taking the scalar product of both sides with $\vb e'_2$, we obtain, we obtain the
+component of the angular velocity along the $\vb{e}'_3$ vector:
+
+\begin{align}
+  \vb{e}'_2 \cdot \bigl(\boldsymbol{\omega} \times \vb{e}'_1\bigr)
+    &= \vb{e}'_2 \cdot \frac{d\vb{e}'_1}{dt} \\
+  \boldsymbol{\omega} \cdot (\vb{e}'_1 \times \vb{e}'_2)
+    &= \vb{e}'_2 \cdot \frac{d\vb{e}'_1}{dt} \\
+  \boldsymbol{\omega} \cdot \vb{e}'_3
+    &= \vb{e}'_2 \cdot \frac{d\vb{e}'_1}{dt}
+\end{align}
+
+Similar formulas can be derived for the other components of the angular velocity, and we
+ultimately obtain:
+\begin{align}
+  \omega_1 &= \vb{e}'_2 \cdot \frac{d\vb{e}'_3}{dt} \\
+  \omega_2 &= \vb{e}'_3 \cdot \frac{d\vb{e}'_1}{dt} \\
+  \omega_3 &= \vb{e}'_1 \cdot \frac{d\vb{e}'_2}{dt}
+\end{align}
+
+and in vector form,
+\begin{equation}
+  \boldsymbol{\omega} =
+    \left(\vb{e}'_2 \cdot \frac{d\vb{e}'_3}{dt}\right)\vb{e}'_1
+  + \left(\vb{e}'_3 \cdot \frac{d\vb{e}'_1}{dt}\right)\vb{e}'_2
+  + \left(\vb{e}'_1 \cdot \frac{d\vb{e}'_2}{dt}\right)\vb{e}'_3
+  \label{kinematics:angular-velocity-components}
+\end{equation}
+
+Equation \eqref{kinematics:angular-velocity-components} shows that the angular
+velocity is completely determined by the time evolution of the orthonormal basis
+attached to the rotating reference frame.
+
+% ============================================================
+\section{Relevant Examples of Angular Velocity}
+% ============================================================
+
+In this section, we will present several examples of angular velocity in a rotating system.
+We begin with the case of a rigid body rotating about a fixed axis, and then consider the more
+general situation in which the axis of rotation also varies with time.
+
+\subsection{Rotation around a Fixed Axis}
+
+In this section, we will assume that a rigid body is rotating around a fixed axis $\vb{n}$
+by an angle $\theta = \theta(t)$. The time derivative of the rotation matrix
+$\vb{A}(\vb{n}, \theta(t))$ from \eqref{kinematics:rodrigues-formula} is given by:
+\[
+  \frac{d\vb{A}(\vb{n},\theta(t))}{dt} =
+  \bigl(-\sin(\theta)\,\vb{I} + \sin(\theta)\ket{\vb{n}}\bra{\vb{n}} + \cos(\theta)\,(\cdot)\times\vb{n}\bigr)\,\dot\theta
+\]
+
+It can be readily verified that:
+\[
+  \frac{d\vb{A}(\vb{n},\theta(t))}{dt} = \bigl(\vb{A}(\vb{n},\theta(t))\,(\cdot)\bigr) \times \boldsymbol{\omega}
+\]
+where the angular velocity in the rotating frame is given by:
+\begin{equation}
+  \boldsymbol{\omega} = \dot\theta\,\vb{n}.
+  \label{kinematics:fixed-axis-angular-velocity}
+\end{equation}
+
+Since the rotation axis is invariant under the transformation,
+\[
+  \vb{A}(\vb{n},\theta)\,\vb{n}=\vb{n},
+\]
+the components of the angular velocity are identical in both the fixed and
+rotating reference frames.
+
+\subsection{Rotation around a Rotating Axis}
+
+The formula for the angular velocity when the axis of rotation is also changing in time can be
+derived following the same steps as in the previous example. The derivation is algebraically involved,
+so we present the final result for the angular velocity in the rotating frame:
+
+\begin{equation}
+  \boldsymbol{\omega} = (1-\cos(\theta))\,\dot{\vb{n}}\times\vb{n}
+    + \sin(\theta)\,\dot{\vb{n}} + \dot\theta\,\vb{n}
+  \label{kinematics:moving-axis-angular-velocity}
+\end{equation}
+
+The last term represents the contribution due to the variation of the rotation
+angle, whereas the first two terms arise from the time dependence of the
+rotation axis. \par
+
+The formula above can be verified using symbolic computation software. It is convenient to express
+$\vb n$ in polar coordinates, which automatically
+enforces the constraint
+
+\[
+  \vb n\cdot\dot{\vb n}=0,
+\]
+
+ensuring that $\|\vb n\|=1$ at all times. \par
+
+The kinematical relations derived in this chapter provide the foundation for the study of
+dynamics in rotating reference frames. In the next chapter, we will derive the fictitious forces that arise in non-inertial
+systems, including the centrifugal and Coriolis forces, and apply these results to the motion of bodies on the rotating Earth.
+
+% ============================================================
+\end{document}

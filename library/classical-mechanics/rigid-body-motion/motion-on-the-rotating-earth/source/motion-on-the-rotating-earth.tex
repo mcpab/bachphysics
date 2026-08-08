@@ -1,0 +1,532 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\newcommand{\ds}{\displaystyle}
+
+\title{Motion on the Rotating Earth}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+% ============================================================
+\section{Rotating-Frame Preliminaries}
+% ============================================================
+
+For a reference frame rotating with constant angular velocity
+$\boldsymbol{\omega}$, the acceleration measured in the rotating frame is
+
+\begin{equation}
+  \vb{a}'
+  =
+  \vb{A}\,\vb{a}
+  -
+  \boldsymbol{\omega}\times
+  (\boldsymbol{\omega}\times\vb{r}')
+  -
+  2\boldsymbol{\omega}\times
+  \frac{d\vb{r}'}{dt}.
+  \label{earth:acceleration-transformation}
+\end{equation}
+
+The corresponding inertial forces are therefore the centrifugal force,
+
+\begin{equation}
+  \vb{F}_{\mathrm{cf}}
+  =
+  -m\boldsymbol{\omega}\times
+  (\boldsymbol{\omega}\times\vb{r}'),
+  \label{earth:centrifugal-force-general}
+\end{equation}
+
+and the Coriolis force,
+
+\begin{equation}
+  \vb{F}_{\mathrm{cor}}
+  =
+  -2m\boldsymbol{\omega}\times
+  \frac{d\vb{r}'}{dt}.
+  \label{earth:coriolis-force-general}
+\end{equation}
+
+These expressions, derived in the previous essay, provide the rotating-frame
+dynamics used throughout the derivation of the Foucault pendulum.
+% ============================================================
+\section{Centrifugal and Coriolis Forces on Earth}
+% ============================================================
+
+In this section we study the centrifugal and Coriolis forces near the Earth's surface. 
+To keep the analysis as transparent as possible, we model the Earth as a perfect sphere. 
+Although this approximation neglects effects such as the Earth's oblateness, it captures the essential
+ physics and provides a convenient setting for deriving the 
+ mathematical expressions used throughout this essay.
+
+We consider a reference frame fixed to the Earth with origin at its center. 
+The $z$-axis points from the South Pole toward the North Pol 
+ to the North Pole, with positive direction from South to North. Earth's angular velocity
+is along the $z$ axis:
+
+\begin{equation}
+  \boldsymbol{\omega} = \omega\,\vb{k}
+  \label{earth:angular-velocity}
+\end{equation}
+
+where $\omega$ is the angular velocity of the Earth equal to $7.29\times10^{-5}\,\text{s}^{-1}$.
+
+We will be interested in the motion of a body in the vicinity of the Earth surface, and the
+ideal coordinates to describe such a motion are the spherical coordinates $(\rho, \theta,
+\phi)$, such that,
+
+\begin{align}
+  x &= \rho\sin\phi\cos\theta \\
+  y &= \rho\sin\phi\sin\theta \\
+  z &= \rho\cos\phi
+\end{align}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics{sphericalCoordinates1.png}
+  \caption{Earth-fixed spherical coordinates.}
+\end{figure}
+
+where $\rho \geq 0$ is the radial distance from the center of the reference system,
+$0 \leq \theta \leq 2\pi$ is the azimuthal angle, and $0 \leq \phi \leq \pi$ is the polar
+angle. Associated with the spherical coordinates are the unit vectors $\vb{e}_r$,
+$\vb{e}_\theta$, and $\vb{e}_\phi$ given by,
+
+\begin{align}
+  \vb{e}_\rho   &= \sin\phi\cos\theta\,\vb{i} + \sin\phi\sin\theta\,\vb{j} + \cos\phi\,\vb{k} \\
+  \vb{e}_\theta &= -\sin\theta\,\vb{i} + \cos\theta\,\vb{j} \\
+  \vb{e}_\phi   &= \cos\phi\cos\theta\,\vb{i} + \cos\phi\sin\theta\,\vb{j} - \sin\phi\,\vb{k}
+\end{align}
+
+where $\vb{i}$, $\vb{j}$, and $\vb{k}$ are the unit vectors of the rotating reference system
+along the $x$, $y$, and $z$ axes, respectively.
+
+The unit vectors define a local orthonormal basis and maintain the orientation of the
+reference system:
+
+\begin{align}
+  \vb{e}_\theta \times \vb{e}_\rho &= \vb{e}_\phi \\
+  \vb{e}_\phi   \times \vb{e}_\theta &= \vb{e}_\rho \\
+  \vb{e}_\rho   \times \vb{e}_\phi &= \vb{e}_\theta
+\end{align}
+
+and they are related to the latitude and longitude of the Earth:
+
+\begin{itemize}
+  \item $\vb{e}_\rho$: Radial unit vector pointing outward from the center of the Earth,
+        through the point under consideration.
+  \item $\vb{e}_\theta$: Points tangentially along lines of latitude towards the east.
+  \item $\vb{e}_\phi$: Points tangentially along lines of longitude towards the South Pole.
+\end{itemize}
+
+The position vector in spherical coordinates is,
+
+\[
+  \vb{r} = \rho\,\vb{e}_\rho
+\]
+
+and the angular velocity is represented by,
+
+\[
+  \boldsymbol{\omega} = \omega\bigl(\cos(\phi)\,\vb{e}_\rho - \sin(\phi)\,\vb{e}_\phi\bigr).
+\]
+
+and finally the velocity of the body in spherical coordinates is given by,
+
+\[
+  \dot{\vb{r}} = \dot\rho\,\vb{e}_\rho + \rho\dot\theta\sin(\phi)\,\vb{e}_\theta
+    + \rho\dot\phi\,\vb{e}_\phi
+\]
+
+Since the Earth's surface is naturally described by 
+spherical coordinates, expressing both the angular velocity and the particle
+ velocity in the local spherical basis considerably simplifies the derivation
+  of the centrifugal and Coriolis forces.
+
+\subsection{Forces in Spherical Coordinates}
+
+In the rotating frame the body is subject to three forces: the gravitational force, the
+centrifugal force, and the Coriolis force.
+
+\begin{itemize}
+  \item The gravitational force is directed radially inward and is given by,
+  \[
+    \vb{F}_\text{g} = -mg\,\vb{e}_\rho
+  \]
+
+  where $m$ is the mass of the body and $g$ is the acceleration due to gravity.
+
+  \item The centrifugal force is directed radially outward from the axis of rotation and in
+        spherical coordinates it is represented by the formula:
+
+  \begin{equation}
+    \vb{F}_\text{cf} = m\omega^2\rho\bigl(\sin^2(\phi)\,\vb{e}_\rho
+      + \sin(\phi)\cos(\phi)\,\vb{e}_\phi\bigr)
+    \label{earth:centrifugal-force-spherical}
+  \end{equation}
+
+  \item The Coriolis force is perpendicular to the velocity of the body and is quantified by
+        the formula:
+
+  \begin{align}
+    \vb{F}_\text{cor}
+    &= -2m\boldsymbol{\omega}\times\dot{\vb{r}}
+     = -2m\omega\bigl(\cos(\phi)\,\vb{e}_\rho - \sin(\phi)\,\vb{e}_\phi\bigr)
+       \times\bigl(\dot\rho\,\vb{e}_\rho + \rho\dot\theta\sin(\phi)\,\vb{e}_\theta + \rho\dot\phi\,\vb{e}_\phi\bigr) \nonumber \\
+    &= -2m\omega\bigl(\rho\dot\theta\sin(\phi)\cos(\phi)\,\vb{e}_\rho\times\vb{e}_\theta
+       + (\cos(\phi)\rho\dot\phi + \sin(\phi)\dot\rho)\,\vb{e}_\rho\times\vb{e}_\phi
+       - \sin^2(\phi)\rho\dot\theta\,\vb{e}_\phi\times\vb{e}_\theta\bigr) \nonumber \\
+    &= -2m\omega\bigl(-\rho\dot\theta\sin(\phi)\cos(\phi)\,\vb{e}_\phi
+       + (\cos(\phi)\rho\dot\phi + \sin(\phi)\dot\rho)\,\vb{e}_\theta
+       - \sin^2(\phi)\rho\dot\theta\,\vb{e}_\rho\bigr)
+  \end{align}
+
+  which simplifies to,
+
+  \begin{equation}
+    \vb{F}_\text{cor} = m\omega\bigl(
+      2\rho\dot\theta\sin^2(\phi)\,\vb{e}_\rho
+      - 2(\dot\rho\sin(\phi) + \rho\dot\phi\cos(\phi))\,\vb{e}_\theta
+      + \rho\dot\theta\sin(2\phi)\,\vb{e}_\phi\bigr)
+    \label{earth:coriolis-force-spherical}
+  \end{equation}
+\end{itemize}
+
+Before proceeding, it is instructive to examine the combined inertial 
+force obtained by adding the centrifugal and Coriolis contributions.,
+
+\[
+  \begin{aligned}
+    \vb{F} &= m\omega\rho(t)\sin^2(\phi(t))\bigl(2\dot\theta(t)+\omega\bigr)\,\vb{e}_\rho \\
+    &\quad - 2m\omega\bigl(\dot\rho(t)\sin(\phi(t)) + \rho(t)\dot\phi(t)\cos(\phi(t))\bigr)\,\vb{e}_\theta \\
+    &\quad + m\omega\rho(t)\sin(\phi(t))\cos(\phi(t))\bigl(2\dot\theta(t)+\omega\bigr)\,\vb{e}_\phi
+  \end{aligned}
+\]
+
+One particularly interesting situation emerge from these expressions, which corresponds to a body at rest in the inertial frame. \par
+
+A body at rest in the inertial frame appears in the rotating frame to move with angular velocity
+$\dot\theta=-\omega$, while $\dot\rho=\dot\phi=0$. Under these conditions, the combined inertial force is
+
+\[
+  \vb{F} = -m\omega^2\rho\bigl(\sin^2(\phi)\,\vb{e}_\rho + \sin(\phi)\cos(\phi)\,\vb{e}_\phi\bigr)
+\]
+
+The Coriolis force is therefore equal to twice the centrifugal force
+ in magnitude and points in the opposite direction. Their resultant is an 
+ inward force equal to the negative of the centrifugal force. This 
+resultant produces the centripetal acceleration observed in the rotating
+ frame as the body appears to revolve around the Earth's axis with  velocity $-\omega$.\par
+
+In the second case, it is readily verified that the inertial force vanishes when
+$\dot\rho = 0$, $\dot\phi = 0$, and $\dot\theta = -\omega/2$. Thus, although the body
+appears to rotate uniformly in the rotating frame with an angular velocity equal to half
+that of the Earth (in the opposite direction), the centrifugal and Coriolis forces exactly
+cancel one another.
+
+\subsection{Lagrangian in Spherical Coordinates}
+
+We now formulate the dynamics of the system in spherical coordinates. Under the assumption
+that the gravitational acceleration $g$ is constant and directed radially inward, the
+gravitational potential is
+
+\[
+V_g = mg\rho.
+\]
+
+The centrifugal force derives from the position-dependent potential
+
+\[
+V_{\mathrm{cf}}
+=
+-\frac{1}{2}m\omega^2\rho^2\sin^2(\phi).
+\]
+
+The Coriolis force cannot be derived from an ordinary position-dependent potential. It can,
+however, be represented by the velocity-dependent generalized potential
+
+\[
+V_{\mathrm{cor}}
+=
+-m\omega\rho^2\dot\theta\sin^2(\phi).
+\]
+
+Indeed, for each generalized coordinate
+$q_i\in\{\rho,\phi,\theta\}$, it satisfies
+
+\[
+\frac{d}{dt}
+\frac{\partial V_{\mathrm{cor}}}{\partial\dot q_i}
+-
+\frac{\partial V_{\mathrm{cor}}}{\partial q_i}
+=
+\left\langle
+\vb F_{\mathrm{cor}}
+\,\middle|\,
+\frac{\partial\vb r}{\partial q_i}
+\right\rangle.
+\]
+
+Explicitly,
+
+\begin{align}
+  \frac{d}{dt}\frac{\partial V_\text{cor}}{\partial\dot\theta}
+    - \frac{\partial V_\text{cor}}{\partial\theta}
+    &= \left\langle\vb{F}_\text{cor}\,\middle|\,\frac{\partial\vb{r}}{\partial\theta}\right\rangle, \\
+  \frac{d}{dt}\frac{\partial V_\text{cor}}{\partial\dot\phi}
+    - \frac{\partial V_\text{cor}}{\partial\phi}
+    &= \left\langle\vb{F}_\text{cor}\,\middle|\,\frac{\partial\vb{r}}{\partial\phi}\right\rangle, \\
+  \frac{d}{dt}\frac{\partial V_\text{cor}}{\partial\dot\rho}
+    - \frac{\partial V_\text{cor}}{\partial\rho}
+    &= \left\langle\vb{F}_\text{cor}\,\middle|\,\frac{\partial\vb{r}}{\partial\rho}\right\rangle.
+\end{align}
+
+Similarly, the centrifugal potential satisfies
+
+\begin{align}
+  -\frac{\partial V_\text{cf}}{\partial\theta}
+    &= \left\langle\vb{F}_\text{cf}\,\middle|\,\frac{\partial\vb{r}}{\partial\theta}\right\rangle, \\
+  -\frac{\partial V_\text{cf}}{\partial\phi}
+    &= \left\langle\vb{F}_\text{cf}\,\middle|\,\frac{\partial\vb{r}}{\partial\phi}\right\rangle, \\
+  -\frac{\partial V_\text{cf}}{\partial\rho}
+    &= \left\langle\vb{F}_\text{cf}\,\middle|\,\frac{\partial\vb{r}}{\partial\rho}\right\rangle.
+\end{align}
+
+The kinetic energy is
+
+\[
+T
+=
+\frac{1}{2}m
+\left(
+\dot\rho^2
++
+\rho^2\dot\phi^2
++
+\rho^2\dot\theta^2\sin^2(\phi)
+\right).
+\]
+
+The Lagrangian is therefore
+
+\[
+L
+=
+T
+-
+V_g
+-
+V_{\mathrm{cf}}
+-
+V_{\mathrm{cor}},
+\]
+
+or, after combining the terms,
+
+\[
+L
+=
+\frac{1}{2}m
+\left(
+-2g\rho
++
+\rho^2
+\left(
+\sin^2(\phi)(\dot\theta+\omega)^2
++
+\dot\phi^2
+\right)
++
+\dot\rho^2
+\right).
+\]
+
+The appearance of the combination $(\dot\theta+\omega)$ has a direct physical interpretation:
+it is the angular velocity of the body with respect to the inertial frame.
+
+The equations of motion follow from the Euler--Lagrange equations,
+
+\begin{align}
+  \frac{d}{dt}\frac{\partial L}{\partial\dot\rho}
+    -\frac{\partial L}{\partial\rho}
+    &=0, \\
+  \frac{d}{dt}\frac{\partial L}{\partial\dot\phi}
+    -\frac{\partial L}{\partial\phi}
+    &=0, \\
+  \frac{d}{dt}\frac{\partial L}{\partial\dot\theta}
+    -\frac{\partial L}{\partial\theta}
+    &=0.
+\end{align}
+
+Since the Lagrangian does not depend explicitly on $\theta$, this coordinate is cyclic and
+its conjugate momentum is conserved,
+
+\[
+m\rho^2\sin^2(\phi)\bigl(\dot\theta+\omega\bigr)
+=
+\text{constant}.
+\]
+
+Expanding the Euler--Lagrange equations yields the nonlinear system
+
+\begin{equation}
+  \begin{gathered}
+    g
+    -\rho
+      \left(
+        \sin^2(\phi)(\dot\theta+\omega)^2
+        +
+        \dot\phi^2
+      \right)
+    +
+    \ddot\rho
+    =0,
+    \\[0.4em]
+    \rho
+    \left(
+      2\ddot\phi
+      -
+      \sin(2\phi)(\dot\theta+\omega)^2
+    \right)
+    +
+    4\dot\rho\dot\phi
+    =0,
+    \\[0.4em]
+    \rho\ddot\theta\sin(\phi)
+    +
+    2(\dot\theta+\omega)
+    \left(
+      \dot\rho\sin(\phi)
+      +
+      \rho\dot\phi\cos(\phi)
+    \right)
+    =0.
+  \end{gathered}
+  \label{earth:spherical-equations-of-motion}
+\end{equation}
+
+\subsection{Linearized Equations of Motion}
+
+We consider now the motion of an object covering distances over the Earth surface much
+smaller than Earth radius $R$ in any direction. We will assume the dynamics is in a
+neighbourhood of the position identified by spherical coordinates $(\rho_0, \theta_0, \phi_0)$,
+
+\[
+  \vb{r}_0 = \rho_0\,\vb{e}_{\rho_0}
+\]
+
+where $\rho_0 \approx R$.
+
+Around this position a local system of reference can be constructed by the unit vectors
+$\vb{e}_{\rho_0}$, $\vb{e}_{\theta_0}$, and $\vb{e}_{\phi_0}$ as,
+\begin{align}
+  \vb{e}_{\rho_0}   &= \sin\phi_0\cos\theta_0\,\vb{i} + \sin\phi_0\sin\theta_0\,\vb{j} + \cos\phi_0\,\vb{k} \\
+  \vb{e}_{\theta_0} &= -\sin\theta_0\,\vb{i} + \cos\theta_0\,\vb{j} \\
+  \vb{e}_{\phi_0}   &= \cos\phi_0\cos\theta_0\,\vb{i} + \cos\phi_0\sin\theta_0\,\vb{j} - \sin\phi_0\,\vb{k}
+\end{align}
+
+and a point in the vicinity of the position $\vb{r}_0$ has spherical coordinates
+$(\rho_0+\delta\rho,\;\theta_0+\delta\theta,\;\phi_0+\delta\phi)$ and position,
+
+ 
+\[
+  \vb{r}
+  =
+  (\rho_0+\delta\rho)\,
+  \vb{e}_{\rho}
+  (\theta_0+\delta\theta,\phi_0+\delta\phi).
+\]
+
+
+which up to first order reads,
+\[
+  \vb{r} = \vb{r}_0
+    + \delta\rho\,\vb{e}_{\rho_0}
+    + \rho_0\sin(\phi_0)\,\delta\theta\,\vb{e}_{\theta_0}
+    + \rho_0\,\delta\phi\,\vb{e}_{\phi_0}.
+\]
+
+Under the assumption that $\|\vb{r} - \vb{r}_0\| \ll R$, we have for the displacements in
+each direction,
+\begin{align}
+  \delta\rho &\ll \rho_0 \\
+  \rho_0\,\delta\phi &\ll \rho_0 \quad\text{or}\quad \delta\phi \ll 1 \\
+  \rho_0\sin(\phi_0)\,\delta\theta &\ll \rho_0 \quad\text{or}\quad \sin(\phi_0)\,\delta\theta \ll 1
+\end{align}
+
+We will therefore assume that the dynamics can be described by the perturbations,
+\[
+  \bigl(\rho_0 + \rho(t),\quad \theta_0 + \theta(t),\quad \phi_0 + \phi(t)\bigr)
+\]
+where at all times $\rho(t) \ll \rho_0$, $\phi(t) \ll 1$, and
+$\sin(\phi_0)\,\theta(t) \ll 1$.
+
+The equations of motion \eqref{earth:spherical-equations-of-motion} can be expressed in terms of the
+displacements $(\rho(t), \theta(t), \phi(t))$ and simplified to first order as,
+
+
+\begin{equation}
+  \begin{alignedat}{6}
+       \ddot\rho(t) &=& -g
+      &+\omega^2\rho_0\sin^2(\phi_0)
+      &+\omega^2\sin^2(\phi_0)\,\rho(t)
+      &+\omega^2\rho_0\sin(2\phi_0)\,\phi(t)
+      &+2\omega\rho_0\sin^2(\phi_0)\,\dot\theta(t) \\
+    2\rho_0\ddot\phi(t) &=& \omega^2\rho_0\sin(2\phi_0)
+      &+\omega^2\sin(2\phi_0)\,\rho(t)
+      &+2\omega^2\rho_0\cos(2\phi_0)\,\phi(t)
+      &+2\omega\rho_0\sin(2\phi_0)\,\dot\theta(t) \\
+    \rho_0\sin(\phi_0)\ddot\theta(t) &=&
+      &-2\omega\sin(\phi_0)\,\dot\rho(t)
+      &-2\omega\rho_0\cos(\phi_0)\,\dot\phi(t)
+  \end{alignedat}
+  \label{earth:linearized-spherical-equations}
+\end{equation}
+
+Defining dimensional variables of length as,
+
+\begin{align}
+  x &= \rho_0\,\phi & y &= \rho_0\sin(\phi_0)\,\theta & z &= \rho
+\end{align}
+
+and defining a local coordinate system as,
+
+\begin{align}
+  \vb{e}_z &= \vb{e}_{\rho_0} &
+  \vb{e}_y &= \vb{e}_{\theta_0} &
+  \vb{e}_x &= \vb{e}_{\phi_0}
+\end{align}
+
+the linearized equations of motion can be expressed as,
+\begin{equation}
+  \begin{aligned}
+    \ddot{z}
+    &=
+    -g
+    +\omega^2\rho_0\sin^2\phi_0
+    +\omega^2\sin^2\phi_0\,z
+    +\omega^2\sin(2\phi_0)\,x
+    +2\omega\sin\phi_0\,\dot{y},
+    \\
+    \ddot{x}
+    &=
+    \frac{1}{2}\omega^2\rho_0\sin(2\phi_0)
+    +\frac{1}{2}\omega^2\sin(2\phi_0)\,z
+    +\omega^2\cos(2\phi_0)\,x
+    +2\omega\cos\phi_0\,\dot{y},
+    \\
+    \ddot{y}
+    &=
+    -2\omega\sin\phi_0\,\dot{z}
+    -2\omega\cos\phi_0\,\dot{x}.
+  \end{aligned}
+  \label{earth:local-cartesian-equations}
+\end{equation}
+
+\end{document}

@@ -1,36 +1,75 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# ─────────────────────────────────────────────────────────────
+# Dependencies (all packages)
+# ─────────────────────────────────────────────────────────────
+**/node_modules/
+.pnp.cjs
+.pnp.loader.mjs
+.yarn/*
+!.yarn/patches/
+!.yarn/plugins/
+!.yarn/releases/
+!.yarn/sdks/
+!.yarn/versions/
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-.yarn/install-state.gz
+# pnpm store (rarely inside repo, but safe to ignore if present)
+.pnpm-store/
 
-# testing
-/coverage
+# ─────────────────────────────────────────────────────────────
+# Testing & coverage
+# ─────────────────────────────────────────────────────────────
+**/coverage/
 
-# next.js
-/.next/
-/out/
+# ─────────────────────────────────────────────────────────────
+# Next.js
+# ─────────────────────────────────────────────────────────────
+**/.next/
+**/out/
 
-# production
-/build
+# ─────────────────────────────────────────────────────────────
+# Production / build artifacts (all packages)
+# ─────────────────────────────────────────────────────────────
+**/build/
+**/dist/
 
-# misc
+# If you don't want sourcemaps in Git:
+**/*.map
+**/*.d.ts.map
+tsconfig.tsbuildinfo
+
+# ─────────────────────────────────────────────────────────────
+# Misc
+# ─────────────────────────────────────────────────────────────
 .DS_Store
+Thumbs.db
 *.pem
 
-# debug
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 
-# local env files
-.env*.local
+# ─────────────────────────────────────────────────────────────
+# Local env files (keep examples)
+# ─────────────────────────────────────────────────────────────
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# vercel
-.vercel
+# If you keep template env files:
+!**/.env.example
+!**/.env.template
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# ─────────────────────────────────────────────────────────────
+# Vercel, Turborepo, etc.
+# ─────────────────────────────────────────────────────────────
+.vercel/
+.turbo/
+
+# Latex
+*.aux
+*.log
+*.out
+*.pdf

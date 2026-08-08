@@ -1,0 +1,376 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="1200"
+  height="820"
+  viewBox="0 0 1200 820"
+>
+  <defs>
+    <marker
+      id="arrow-black"
+      markerWidth="10"
+      markerHeight="10"
+      refX="8"
+      refY="3"
+      orient="auto"
+      markerUnits="strokeWidth"
+    >
+      <path d="M0,0 L0,6 L9,3 z" fill="#111111"/>
+    </marker>
+
+    <marker
+      id="arrow-blue"
+      markerWidth="10"
+      markerHeight="10"
+      refX="8"
+      refY="3"
+      orient="auto"
+      markerUnits="strokeWidth"
+    >
+      <path d="M0,0 L0,6 L9,3 z" fill="#1257b8"/>
+    </marker>
+
+    <marker
+      id="arrow-purple"
+      markerWidth="10"
+      markerHeight="10"
+      refX="8"
+      refY="3"
+      orient="auto"
+      markerUnits="strokeWidth"
+    >
+      <path d="M0,0 L0,6 L9,3 z" fill="#5120bf"/>
+    </marker>
+
+    <marker
+      id="arrow-green"
+      markerWidth="10"
+      markerHeight="10"
+      refX="8"
+      refY="3"
+      orient="auto"
+      markerUnits="strokeWidth"
+    >
+      <path d="M0,0 L0,6 L9,3 z" fill="#15803d"/>
+    </marker>
+
+    <linearGradient id="mirror-gradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#dceeff"/>
+      <stop offset="55%" stop-color="#8fc0ef"/>
+      <stop offset="100%" stop-color="#4a88c7"/>
+    </linearGradient>
+
+    <style>
+      .axis {
+        stroke: #111111;
+        stroke-width: 2.2;
+        fill: none;
+        marker-end: url(#arrow-black);
+      }
+
+      .axis-prime {
+        stroke: #1257b8;
+        stroke-width: 2.2;
+        fill: none;
+        marker-end: url(#arrow-blue);
+      }
+
+      .velocity {
+        stroke: #111111;
+        stroke-width: 3;
+        fill: none;
+        marker-end: url(#arrow-black);
+      }
+
+      .motion-guide {
+        stroke: #267b9d;
+        stroke-width: 3;
+        stroke-dasharray: 11 9;
+        fill: none;
+      }
+
+      .photon-out {
+        stroke: #5120bf;
+        stroke-width: 3;
+        fill: none;
+        marker-end: url(#arrow-purple);
+      }
+
+      .photon-return-arrow {
+        stroke: #15803d;
+        stroke-width: 3;
+        fill: none;
+        marker-end: url(#arrow-green);
+      }
+
+      .label {
+        font-family: "Times New Roman", serif;
+        font-size: 25px;
+        fill: #111111;
+      }
+
+      .label-blue {
+        font-family: "Times New Roman", serif;
+        font-size: 25px;
+        fill: #1257b8;
+      }
+
+      .small {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        fill: #111111;
+      }
+
+      .small-blue {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        fill: #1257b8;
+      }
+
+      .small-purple {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        fill: #5120bf;
+      }
+
+      .small-green {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        fill: #15803d;
+      }
+
+      .frame-label {
+        font-family: "Times New Roman", serif;
+        font-size: 34px;
+        font-style: italic;
+        font-weight: bold;
+      }
+
+      .caption {
+        font-family: "Times New Roman", serif;
+        font-size: 21px;
+        fill: #111111;
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="820" fill="#ffffff"/>
+
+  <!-- ===================================================== -->
+  <!-- Frame F -->
+  <!-- ===================================================== -->
+
+  <circle cx="105" cy="595" r="5" fill="#111111"/>
+
+  <line class="axis" x1="105" y1="595" x2="365" y2="595"/>
+  <line class="axis" x1="105" y1="595" x2="105" y2="285"/>
+  <line class="axis" x1="105" y1="595" x2="45" y2="675"/>
+
+  <text class="label" x="372" y="611">x</text>
+  <text class="label" x="91" y="270">y</text>
+  <text class="label" x="27" y="700">z</text>
+
+  <text class="label" x="72" y="585">O</text>
+  <text class="frame-label" x="145" y="330">F</text>
+
+  <text class="label" x="112" y="635">
+    t = t′ = 0
+  </text>
+
+  <!-- Velocity vector -->
+  <line class="velocity" x1="105" y1="595" x2="312" y2="480"/>
+
+  <text class="label" x="212" y="470" font-style="italic" font-weight="bold">v</text>
+
+  <text class="small" x="255" y="530">velocity of F′</text>
+  <text class="small" x="255" y="556">relative to F</text>
+
+  <!-- Direction of motion between origins -->
+  <line class="motion-guide" x1="325" y1="470" x2="505" y2="370"/>
+
+  <!-- ===================================================== -->
+  <!-- Frame F' -->
+  <!-- ===================================================== -->
+
+  <circle cx="510" cy="367" r="7" fill="#1257b8"/>
+
+  <line class="axis-prime" x1="510" y1="367" x2="865" y2="367"/>
+  <line class="axis-prime" x1="510" y1="367" x2="510" y2="70"/>
+  <line class="axis-prime" x1="510" y1="367" x2="420" y2="470"/>
+
+  <text class="label-blue" x="875" y="383">x′</text>
+  <text class="label-blue" x="496" y="56">y′</text>
+  <text class="label-blue" x="396" y="495">z′</text>
+
+  <text class="label" x="468" y="350">O′</text>
+  <text class="frame-label" x="548" y="110" fill="#1257b8">F′</text>
+
+  <!-- Source -->
+  <circle cx="510" cy="415" r="8" fill="#1257b8"/>
+
+  <line x1="510" y1="392" x2="510" y2="382" stroke="#1257b8" stroke-width="2"/>
+  <line x1="510" y1="438" x2="510" y2="448" stroke="#1257b8" stroke-width="2"/>
+  <line x1="487" y1="415" x2="477" y2="415" stroke="#1257b8" stroke-width="2"/>
+  <line x1="533" y1="415" x2="543" y2="415" stroke="#1257b8" stroke-width="2"/>
+
+  <line x1="494" y1="399" x2="486" y2="391" stroke="#1257b8" stroke-width="2"/>
+  <line x1="526" y1="431" x2="534" y2="439" stroke="#1257b8" stroke-width="2"/>
+  <line x1="526" y1="399" x2="534" y2="391" stroke="#1257b8" stroke-width="2"/>
+  <line x1="494" y1="431" x2="486" y2="439" stroke="#1257b8" stroke-width="2"/>
+
+  <text class="small" x="479" y="475">source</text>
+  <text class="small-blue" x="447" y="501">(at rest in F′)</text>
+
+  <!-- Mirror -->
+  <rect
+    x="855"
+    y="112"
+    width="28"
+    height="78"
+    fill="url(#mirror-gradient)"
+    stroke="#111111"
+    stroke-width="1.8"
+  />
+
+  <text class="small" x="823" y="78">mirror</text>
+  <text class="small-blue" x="790" y="103">(at rest in F′)</text>
+
+  <!-- ===================================================== -->
+  <!-- Straight photon paths -->
+  <!-- ===================================================== -->
+
+  <!-- Outgoing ray -->
+  <line
+    class="photon-out"
+    x1="510"
+    y1="367"
+    x2="855"
+    y2="150"
+  />
+
+  <!-- Mid-line arrow on outgoing ray -->
+  <line
+    class="photon-out"
+    x1="660"
+    y1="273"
+    x2="690"
+    y2="254"
+  />
+
+  <!-- Return arrows share the same physical path and point back toward the source. -->
+  <line
+    class="photon-return-arrow"
+    x1="795"
+    y1="188"
+    x2="760"
+    y2="210"
+  />
+  <line
+    class="photon-return-arrow"
+    x1="635"
+    y1="288"
+    x2="600"
+    y2="310"
+  />
+
+  <!-- Photon labels -->
+  <g transform="rotate(-32 690 220)">
+    <text class="small" x="625" y="212">photon path</text>
+    <text class="small-purple" x="637" y="237">(outgoing)</text>
+    <text class="small-green" x="730" y="237">(return)</text>
+  </g>
+
+  <!-- Distance label -->
+  <text class="label" x="755" y="250" font-size="34" font-style="italic">L</text>
+  <text class="small-blue" x="700" y="274">(constant in F′)</text>
+
+  <!-- ===================================================== -->
+  <!-- Event legend -->
+  <!-- ===================================================== -->
+
+  <rect
+    x="892"
+    y="112"
+    width="298"
+    height="225"
+    rx="8"
+    fill="#ffffff"
+    stroke="#222222"
+    stroke-width="1.5"
+  />
+
+  <text class="small-blue" x="912" y="145">
+    In F′ (source and mirror at rest):
+  </text>
+
+  <circle cx="930" cy="182" r="4" fill="#5120bf"/>
+  <text class="small" x="947" y="189">Emission at t′₀</text>
+
+  <circle cx="930" cy="219" r="4" fill="#5120bf"/>
+  <text class="small" x="947" y="226">Reflection at t′₁</text>
+
+  <circle cx="930" cy="256" r="4" fill="#5120bf"/>
+  <text class="small" x="947" y="263">Return at t′₂</text>
+
+  <line x1="925" y1="294" x2="978" y2="294" stroke="#5120bf" stroke-width="3"/>
+  <text class="small" x="992" y="301">photon (outgoing)</text>
+
+  <line
+    class="photon-return-arrow"
+    x1="925"
+    y1="322"
+    x2="978"
+    y2="322"
+  />
+  <text class="small-green" x="992" y="329">photon (return)</text>
+
+  <!-- ===================================================== -->
+  <!-- Synchronization equation -->
+  <!-- ===================================================== -->
+
+  <rect
+    x="760"
+    y="500"
+    width="370"
+    height="110"
+    rx="10"
+    fill="#f7fbff"
+    stroke="#1257b8"
+    stroke-width="1.7"
+  />
+
+  <text
+    class="small-blue"
+    x="790"
+    y="535"
+    font-size="21"
+  >
+    Clocks in F′ are synchronized:
+  </text>
+
+  <!-- Build a stacked fraction explicitly so its appearance does not depend on a Unicode glyph. -->
+  <g class="label">
+    <text x="854" y="565" font-size="18" text-anchor="middle">1</text>
+    <line x1="845" y1="572" x2="863" y2="572" stroke="#111111" stroke-width="1.4"/>
+    <text x="854" y="591" font-size="18" text-anchor="middle">2</text>
+    <text x="870" y="583" font-size="30">(t′₀ + t′₂) = t′₁</text>
+  </g>
+
+  <!-- ===================================================== -->
+  <!-- Bottom captions -->
+  <!-- ===================================================== -->
+
+  <text class="caption" x="48" y="760">
+    Frame F: F′ moves with velocity <tspan font-style="italic" font-weight="bold">v</tspan>
+  </text>
+  <text class="caption" x="115" y="790">
+    (arbitrary direction)
+  </text>
+
+  <text class="caption" x="470" y="715">
+    Frame F′: source and mirror are at rest
+  </text>
+  <text class="caption" x="470" y="745">
+    Photon travels along an arbitrary direction
+  </text>
+</svg>

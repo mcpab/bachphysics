@@ -1,0 +1,10 @@
+allowBuilds:
+  '@swc/core': true
+  esbuild: true
+  sharp: true
+  unrs-resolver: true
+minimumReleaseAgeExclude:
+  - '@mcpab/gridcss@0.4.1'
+  - '@mcpab/katex@0.1.2'
+  - '@mcpab/mui-theme@0.1.1'
+  - '@mcpab/web-blocks@0.2.2'
