@@ -1,7 +1,7 @@
 'use client'
 import { NextLinkLike } from '@/app/components/NextLinkLike';
 import { NextImageAdapter } from '@/src/components/NextImageAdapter';
-import { ReferenceEnhancer } from '@mcpab/katex/client';
+import { FigureEnhancer, ReferenceEnhancer } from '@mcpab/katex/client';
 import {
     createLatexRendererContextValue,
     LatexHostContext,
@@ -69,6 +69,7 @@ export default function RigidBodyMotion(): React.ReactElement {
                             <ChapterFrontMatter {...frontMatter} />
                         } />
                     <ReferenceEnhancer labelIndex={labelIndex} />
+                    <FigureEnhancer />
                 </PageFrame>
             </LatexHostContext.Provider>
         </LatexRendererContext.Provider>

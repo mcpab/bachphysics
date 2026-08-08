@@ -79,6 +79,12 @@ export function SiteMenu() {
                                         type: 'link',
                                         label: 'Motion on the Rotating Earth',
                                     },
+                                    {
+                                        id: 'foucault-pendulum',
+                                        href: '/physics/classical-mechanics/rigid-body-motion/foucault-pendulum',
+                                        type: 'link',
+                                        label: 'The Foucault Pendulum',
+                                    },
                                 ],
                             },
                             {

@@ -16,6 +16,11 @@ const rigidBodyEssays = [
         title: 'Motion on the Rotating Earth',
         description: 'Applies rotating-frame dynamics to motion near Earth\'s surface and examines the observable effects of Earth\'s rotation.',
     },
+    {
+        href: '/physics/classical-mechanics/rigid-body-motion/foucault-pendulum',
+        title: 'The Foucault Pendulum',
+        description: 'Derives the constrained motion of the Foucault pendulum and explains the slow precession of its oscillation plane.',
+    },
 ] as const;
 
 export default function RigidBodyMotion(): React.ReactElement {
@@ -23,8 +28,8 @@ export default function RigidBodyMotion(): React.ReactElement {
         <PhysicsTopicOverview
             title='Rigid Body Motion'
             description={[
-                'The theory of rigid body motion is developed through three essays intended to be read in sequence. Each essay establishes the ideas and notation used by the next.',
-                'The sequence begins with the geometry of rotations and rotating coordinate systems, proceeds to dynamics in rotating reference frames, and concludes by applying those ideas to motion near the Earth\'s surface.',
+                'The theory of rigid body motion is developed through four essays intended to be read in sequence. Each essay establishes the ideas and notation used by the next.',
+                'The sequence begins with the geometry of rotations and rotating coordinate systems, proceeds to dynamics in rotating reference frames, applies those ideas to motion near the Earth\'s surface, and concludes with the Foucault pendulum.',
             ]}
             essays={rigidBodyEssays}
         />

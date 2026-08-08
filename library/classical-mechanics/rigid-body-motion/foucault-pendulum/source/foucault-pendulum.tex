@@ -1,0 +1,1594 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\newcommand{\ds}{\displaystyle}
+
+\title{The Foucault Pendulum}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+The equations needed below are obtained in the preceding essay \href{/physics/classical-mechanics/rigid-body-motion/motion-on-the-rotating-earth}{Motion on the Rotating Earth} by linearizing
+the equations of motion near a point on the Earth's surface. Defining dimensional
+variables of length as  
+
+\begin{align}
+  x &= \rho_0\,\phi & y &= \rho_0\sin(\phi_0)\,\theta & z &= \rho
+\end{align}
+
+and defining a local coordinate system as
+
+\begin{align}
+  \vb{e}_z &= \vb{e}_{\rho_0} &
+  \vb{e}_y &= \vb{e}_{\theta_0} &
+  \vb{e}_x &= \vb{e}_{\phi_0}
+\end{align}
+
+the linearized equations of motion are
+
+\begin{equation}
+  \begin{aligned}
+    \ddot{z}
+    &=
+    -g
+    +\omega^2\rho_0\sin^2\phi_0
+    +\omega^2\sin^2\phi_0\,z
+    +\omega^2\sin(2\phi_0)\,x
+    +2\omega\sin\phi_0\,\dot{y},
+    \\
+    \ddot{x}
+    &=
+    \frac{1}{2}\omega^2\rho_0\sin(2\phi_0)
+    +\frac{1}{2}\omega^2\sin(2\phi_0)\,z
+    +\omega^2\cos(2\phi_0)\,x
+    +2\omega\cos\phi_0\,\dot{y},
+    \\
+    \ddot{y}
+    &=
+    -2\omega\sin\phi_0\,\dot{z}
+    -2\omega\cos\phi_0\,\dot{x}.
+  \end{aligned}
+  \label{earth:local-cartesian-equations}
+\end{equation}
+
+\section{The Foucault Pendulum}
+
+In this section, we derive the equations of motion of the Foucault pendulum by
+applying several simplifying assumptions. The Foucault pendulum is one of the
+most elegant experiments demonstrating the rotation of the Earth. It consists of
+a heavy mass $m$ suspended by a long wire or rigid rod of length $l$, free to
+oscillate in any vertical plane. As the pendulum oscillates, the plane of motion
+slowly rotates with respect to the Earth due to the Coriolis force.
+
+Before proceeding, it is useful to estimate the relative magnitude of the terms
+appearing in the equations of motion. The angular velocity of the Earth is
+
+\[
+  \omega
+  =
+  \frac{2\pi}{T_{\mathrm{sid}}}
+  =
+  \frac{2\pi}{86\,164\ \mathrm{s}}
+  \approx
+  7.2921\times10^{-5}\ \mathrm{s}^{-1},
+\]
+
+where $T_{\mathrm{sid}}$ denotes one sidereal day.
+
+For a typical Foucault pendulum with length between $15\,\mathrm{m}$ and
+$30\,\mathrm{m}$, the natural angular frequency is
+
+\[
+  \omega_0
+  =
+  \sqrt{\frac{g}{l}}
+  \approx
+  0.57\text{--}0.81\ \mathrm{s}^{-1},
+\]
+
+and therefore
+
+\[
+  \frac{\omega}{\omega_0}
+  =
+  \omega\sqrt{\frac{l}{g}}
+  \sim
+  10^{-4}.
+\]
+
+The Coriolis terms in the equations of motion are proportional to $\omega$,
+whereas the centrifugal corrections are proportional to $\omega^2$. We shall
+therefore retain only terms up to first order in the Earth's angular velocity,
+neglecting all terms of order $\omega^2$. Equation
+\eqref{earth:local-cartesian-equations} consequently reduces to
+
+\begin{equation}
+  \begin{aligned}
+    \ddot{x}
+      &=
+      2\omega\cos(\phi_0)\,\dot{y},
+      \\
+    \ddot{y}
+      &=
+      -2\omega\sin(\phi_0)\,\dot{z}
+      -2\omega\cos(\phi_0)\,\dot{x},
+      \\
+    \ddot{z}
+      &=
+      -g
+      +2\omega\sin(\phi_0)\,\dot{y}.
+  \end{aligned}
+  \label{earth:first-order-local-equations}
+\end{equation}
+
+These equations describe the motion of a particle subjected only to gravity and
+the Coriolis force. The constraint force exerted by the pendulum wire will be
+introduced in the next section.
+
+Introducing the position vector
+
+\[
+  \vb{p}
+  =
+  x\,\vb{e}_x
+  +
+  y\,\vb{e}_y
+  +
+  z\,\vb{e}_z,
+\]
+
+the Coriolis force can be written in vector form as
+
+\[
+  \vb{F}_{\mathrm{cor}}
+  =
+  -2m\,
+  \boldsymbol{\omega}
+  \times
+  \dot{\vb{p}},
+\]
+
+where the Earth's angular velocity expressed in the local Cartesian basis
+introduced in the previous section is
+
+\[
+  \boldsymbol{\omega}
+  =
+  \omega
+  \left(
+      -\sin(\phi_0)\,\vb{e}_x
+      +
+      \cos(\phi_0)\,\vb{e}_z
+  \right).
+\]
+
+Explicitly,
+
+\[
+  \vb{F}_{\mathrm{cor}}
+  =
+  m
+  \begin{pmatrix}
+      2\omega\cos(\phi_0)\,\dot{y}
+      \\
+      -2\omega\sin(\phi_0)\,\dot{z}
+      -
+      2\omega\cos(\phi_0)\,\dot{x}
+      \\
+      2\omega\sin(\phi_0)\,\dot{y}
+  \end{pmatrix}.
+\]
+
+The Coriolis force admits the generalized potential
+
+\[
+  V_{\mathrm{cor}}
+  =
+  -m
+  \,
+  \ip{\boldsymbol{\omega}\times\vb{p}}
+     {\dot{\vb{p}}},
+\]
+
+which, in local Cartesian coordinates, becomes
+
+\[
+  V_{\mathrm{cor}}
+  =
+  m\omega
+  \left(
+      y\cos(\phi_0)\dot{x}
+      -
+      \bigl(
+          \sin(\phi_0)z
+          +
+          \cos(\phi_0)x
+      \bigr)
+      \dot{y}
+      +
+      \sin(\phi_0)y\dot{z}
+  \right).
+\]
+
+Including gravity, the corresponding Lagrangian is therefore
+
+\[
+  \begin{aligned}
+    L
+    &=
+    \frac12m
+    \left(
+        \dot{x}^{\,2}
+        +
+        \dot{y}^{\,2}
+        +
+        \dot{z}^{\,2}
+    \right)
+    \\[0.4em]
+    &\quad
+    -
+    m\omega
+    \Bigl[
+        y
+        \bigl(
+            \cos(\phi_0)\dot{x}
+            +
+            \sin(\phi_0)\dot{z}
+        \bigr)
+        -
+        \dot{y}
+        \bigl(
+            \cos(\phi_0)x
+            +
+            \sin(\phi_0)z
+        \bigr)
+    \Bigr]
+    -
+    mgz.
+  \end{aligned}
+\]
+  \subsection{Introducing the Pendulum Constraint}
+
+The equations derived so far describe the motion of a free particle in the rotating
+frame of the Earth. To obtain the equations of motion of the Foucault pendulum,
+we must now introduce the geometric constraint imposed by the rigid wire.
+
+One possible approach would be to introduce spherical coordinates centred at the
+point of suspension. In these coordinates the pendulum constraint is automatically
+satisfied by fixing the radial coordinate equal to the length of the pendulum.
+However, this choice is not particularly convenient. The equilibrium configuration
+of the pendulum corresponds to the bob hanging vertically below the point of
+suspension, which is precisely the pole of the spherical coordinate system. At this
+point the azimuthal angle becomes undefined, making spherical coordinates poorly
+suited for the linearization that follows.
+
+Instead, we retain the local Cartesian coordinates $(x,y,z)$ introduced in the
+previous section. We choose the origin of this coordinate system to coincide with
+the equilibrium position of the pendulum bob. Consequently, the point of
+suspension has coordinates
+ 
+\[
+(0,0,l),  
+\]
+
+where \(l\) denotes the length of the pendulum.
+
+\begin{figure}[h] 
+  \centering
+  \includegraphics {pendulum.png}
+  \caption{Local Cartesian coordinates of the pendulum.}
+\end{figure}
+
+The motion of the bob is therefore constrained to remain on the sphere of radius
+\(l\) centred at the point of suspension. The corresponding holonomic constraint
+is
+
+\[
+g(x,y,z)
+=
+x^2+y^2+(z-l)^2-l^2
+=
+0.
+\]
+
+We introduce a Lagrange multiplier \(\lambda(t)\) and define the augmented
+Lagrangian
+
+\[
+F 
+=
+L 
+-
+\lambda\,g .
+\]
+
+The equations of motion for the generalized coordinates
+\[
+q_i=(x,y,z)
+\]
+are
+
+\[
+\frac{d}{dt}
+\left(
+\frac{\partial F}{\partial \dot q_i}
+\right)
+-
+\frac{\partial F}{\partial q_i}
+=
+0.
+\]
+
+These equations are supplemented by the constraint
+
+\[
+g(x,y,z)=0.
+\]
+
+Applying the Euler--Lagrange equations to the augmented Lagrangian immediately yields
+
+\begin{equation}
+\left\{
+\begin{aligned}
+m\ddot{x}
+-2m\omega\cos(\phi_0)\,\dot{y}
+-2\lambda x
+&=0,
+\\[0.4em]
+m\ddot{y}
++
+2m\omega
+\left(
+\cos(\phi_0)\,\dot{x}
++
+\sin(\phi_0)\,\dot{z}
+\right)
+-
+2\lambda y
+&=0,
+\\[0.4em]
+m\ddot{z}
+-
+2m\omega\sin(\phi_0)\,\dot{y}
++
+mg
+-
+2\lambda(z-l)
+&=0,
+\\[0.4em]
+x^2+y^2+(z-l)^2
+&=
+l^2.
+\end{aligned}
+\right.
+\label{eq:foucault-constrained}
+\end{equation}
+
+\subsection{Gravity Only Case}
+
+Before considering the complete system, it is useful to make a short detour and
+examine the pendulum in the absence of the Earth's rotation. This simpler case
+will clarify both the role of the Lagrange multiplier and the linearization of the
+constraint around the equilibrium configuration.
+
+Setting \(\omega=0\), the constrained equations of motion become
+
+\begin{equation}
+  \left\{
+  \begin{aligned}
+    m\ddot{x}-2\lambda x
+    &=0,
+    \\
+    m\ddot{y}-2\lambda y
+    &=0,
+    \\
+    m\ddot{z}+mg-2\lambda(z-l)
+    &=0,
+    \\
+    x^2+y^2+(z-l)^2
+    &=l^2.
+  \end{aligned}
+  \right.
+  \label{eq:pendulum-gravity-constrained}
+\end{equation}
+
+The equilibrium position of the bob is
+
+\[
+  x=y=z=0.
+\]
+
+We therefore consider small oscillations around this configuration and write
+
+\[
+  z=\delta z,
+  \qquad
+  |\delta z|\ll l.
+\]
+
+Expanding the constraint gives
+
+\[
+  x^2+y^2+z^2-2lz=0.
+\]
+
+Since \(z\ll l\), the term \(z^2\) can be neglected, and the constraint reduces to
+
+\begin{equation}
+  x^2+y^2=2lz.
+  \label{eq:pendulum-linearized-constraint}
+\end{equation}
+
+
+\begin{figure}[h] 
+  \centering
+  \includegraphics {secondOrderZ1.png}
+  \caption{Why the vertical displacement is second order.}
+\end{figure}
+
+
+This relation shows that, if \(x\) and \(y\) are treated as first-order
+displacements, then \(z\) is a second-order quantity:
+
+\[
+  z
+  =
+  \frac{x^2+y^2}{2l}.
+\]
+
+We now eliminate the Lagrange multiplier from the equations for \(y\) and \(z\).
+Multiplying the equation for \(y\) by \(z-l\), multiplying the equation for \(z\)
+by \(y\), and subtracting the latter from the former, we obtain
+
+\[
+  m\ddot{y}(z-l)
+  -
+  m\ddot{z}\,y
+  -
+  mgy
+  =
+  0.
+\]
+
+Equivalently,
+
+\[
+  -ml\ddot{y}
+  +
+  mz\ddot{y}
+  -
+  m\ddot{z}\,y
+  -
+  mgy
+  =
+  0.
+\]
+
+The displacement \(z\) and its derivatives are of second order in the horizontal
+oscillation amplitude. Consequently, the terms \(z\ddot{y}\) and
+\(\ddot{z}\,y\) are of higher order and can be neglected in the linear
+approximation. We are therefore left with
+
+\[
+  -ml\ddot{y}-mgy=0,
+\]
+
+or
+
+\begin{equation}
+  \ddot{y}+\frac{g}{l}y=0.
+  \label{eq:pendulum-y-equation}
+\end{equation}
+
+Repeating the same procedure with the equations for \(x\) and \(z\) gives
+
+\begin{equation}
+  \ddot{x}+\frac{g}{l}x=0.
+  \label{eq:pendulum-x-equation}
+\end{equation}
+
+Thus, to first order in the horizontal displacements, the two components of the
+motion satisfy the independent harmonic-oscillator equations
+
+\begin{equation}
+  \left\{
+  \begin{aligned}
+    \ddot{x}+\frac{g}{l}x&=0,
+    \\
+    \ddot{y}+\frac{g}{l}y&=0.
+  \end{aligned}
+  \right.
+  \label{eq:ordinary-pendulum-linearized}
+\end{equation}
+
+The corresponding natural angular frequency is
+
+\[
+  \omega_0=\sqrt{\frac{g}{l}}.
+\]
+
+\subsection{Linearized Equations}
+
+We now return to the complete equations of motion, including the Coriolis force,
+and repeat the same procedure used in the gravity-only case.
+
+We begin with the equations for \(y\) and \(z\),
+
+\[
+  m\ddot{y}
+  +
+  2m\omega
+  \left(
+    \cos\phi_0\,\dot{x}
+    +
+    \sin\phi_0\,\dot{z}
+  \right)
+  -
+  2\lambda y
+  =
+  0,
+\]
+
+and
+
+\[
+  m\ddot{z}
+  -
+  2m\omega\sin\phi_0\,\dot{y}
+  +
+  mg
+  -
+  2\lambda(z-l)
+  =
+  0.
+\]
+
+Multiplying the first equation by \(z-l\), the second by \(y\), and
+subtracting the latter from the former, we eliminate the Lagrange multiplier
+and obtain
+
+\[
+  \begin{aligned}
+    m\ddot{y}(z-l)
+    &+
+    2m\omega
+    \left(
+      \cos\phi_0\,\dot{x}
+      +
+      \sin\phi_0\,\dot{z}
+    \right)(z-l)
+    \\
+    &-
+    m\ddot{z}\,y
+    +
+    2m\omega\sin\phi_0\,\dot{y}\,y
+    -
+    mgy
+    =
+    0.
+  \end{aligned}
+\]
+
+As in the gravity-only case, we consider small vertical displacements around
+the equilibrium position. We therefore use
+
+\[
+  z-l\simeq-l
+\]
+
+and neglect \(z\), \(\dot z\), and \(\ddot z\), since they are of higher
+order in the horizontal oscillation amplitude. The equation consequently
+reduces to
+
+\[
+  -ml\ddot{y}
+  -
+  2m\omega l\cos\phi_0\,\dot{x}
+  +
+  2m\omega\sin\phi_0\,y\dot{y}
+  -
+  mgy
+  =
+  0.
+\]
+
+Dividing by \(-ml\), we obtain
+
+\begin{equation}
+  \ddot{y}
+  +
+  2\omega\cos\phi_0\,\dot{x}
+  -
+  \frac{2\omega}{l}\sin\phi_0\,y\dot{y}
+  +
+  \frac{g}{l}y
+  =
+  0.
+  \label{eq:foucault-y-partially-linearized}
+\end{equation}
+
+We proceed in the same way with the equations for \(x\) and \(z\).
+Multiplying the equation for \(x\) by \(z-l\), the equation for \(z\) by
+\(x\), and subtracting, gives
+
+\[
+  \begin{aligned}
+    m\ddot{x}(z-l)
+    &-
+    2m\omega\cos\phi_0\,\dot{y}(z-l)
+    -
+    m\ddot{z}\,x
+    \\
+    &+
+    2m\omega\sin\phi_0\,x\dot{y}
+    -
+    mgx
+    =
+    0.
+  \end{aligned}
+\]
+
+Using again \(z-l\simeq-l\) and neglecting \(\ddot z\), we find
+
+\[
+  -ml\ddot{x}
+  +
+  2m\omega l\cos\phi_0\,\dot{y}
+  +
+  2m\omega\sin\phi_0\,x\dot{y}
+  -
+  mgx
+  =
+  0,
+\]
+
+and therefore
+
+\begin{equation}
+  \ddot{x}
+  -
+  2\omega\cos\phi_0\,\dot{y}
+  -
+  \frac{2\omega}{l}\sin\phi_0\,x\dot{y}
+  +
+  \frac{g}{l}x
+  =
+  0.
+  \label{eq:foucault-x-partially-linearized}
+\end{equation}
+
+The constraint must still be imposed. Its leading nonvanishing approximation
+around the equilibrium position is
+
+\[
+  x^2+y^2+z^2-2lz=0
+  \qquad\Longrightarrow\qquad
+  2lz=x^2+y^2,
+\]
+
+where \(z^2\) has been neglected with respect to \(2lz\).
+
+We therefore obtain the partially linearized constrained system
+
+\begin{equation}
+  \left\{
+  \begin{aligned}
+    \ddot{y}
+    +
+    2\omega\cos\phi_0\,\dot{x}
+    -
+    \frac{2\omega}{l}\sin\phi_0\,y\dot{y}
+    +
+    \frac{g}{l}y
+    &=
+    0,
+    \\[0.5em]
+    \ddot{x}
+    -
+    2\omega\cos\phi_0\,\dot{y}
+    -
+    \frac{2\omega}{l}\sin\phi_0\,x\dot{y}
+    +
+    \frac{g}{l}x
+    &=
+    0,
+    \\[0.5em]
+    2lz
+    &=
+    x^2+y^2.
+  \end{aligned}
+  \right.
+  \label{eq:foucault-partially-linearized-system}
+\end{equation}
+
+We now complete the linearization of the equations of motion. Let the horizontal
+displacements \(x\) and \(y\) be small compared with the length of the pendulum,
+
+\[
+  |x|\ll l,
+  \qquad
+  |y|\ll l.
+\]
+
+The velocities \(\dot{x}\) and \(\dot{y}\) are of the same perturbative order as
+the corresponding displacements. Consequently, the mixed terms
+
+\[
+  x\dot{y},
+  \qquad
+  y\dot{y}
+\]
+
+are of second order in the oscillation amplitude and can be neglected in the
+linear approximation.
+
+The equations of motion then reduce to
+
+\begin{equation}
+  \left\{
+  \begin{aligned}
+    \ddot{y}
+    +
+    2\omega\cos\phi_0\,\dot{x}
+    +
+    \frac{g}{l}y
+    &=
+    0,
+    \\[0.4em]
+    \ddot{x}
+    -
+    2\omega\cos\phi_0\,\dot{y}
+    +
+    \frac{g}{l}x
+    &=
+    0,
+    \\[0.4em]
+    2lz
+    &=
+    x^2+y^2.
+  \end{aligned}
+  \right.
+  \label{eq:foucault-linearized-equations}
+\end{equation}
+
+\subsection{Solution of the Equations of Motion}
+
+We transform the second-order system into an equivalent first-order system by
+introducing the auxiliary variables
+
+\[
+u=\dot{x},
+\qquad
+v=\dot{y}.
+\]
+
+
+The vertical constraint no longer enters explicitly into the horizontal equations
+of motion and will therefore be omitted in what follows. It can always be
+recovered afterwards from
+
+\[
+2lz=x^2+y^2.
+\]
+Defining
+
+\[
+\alpha=2\omega\cos\phi_0,
+\qquad
+\beta=\frac{g}{l},
+\]
+
+the equations become
+
+\[
+\left\{
+\begin{aligned}
+\dot{x} &= u,\\
+\dot{y} &= v,\\
+\dot{u} &= \alpha v-\beta x,\\
+\dot{v} &= -\alpha u-\beta y.
+\end{aligned}
+\right.
+\]
+
+The system can now be written in matrix form as
+
+\[
+\frac{d}{dt}
+\begin{pmatrix}
+x\\
+y\\
+u\\
+v
+\end{pmatrix}
+=
+\begin{pmatrix}
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1\\
+-\beta & 0 & 0 & \alpha\\
+0 & -\beta & -\alpha & 0
+\end{pmatrix}
+\begin{pmatrix}
+x\\
+y\\
+u\\
+v
+\end{pmatrix}.
+\]
+
+The general solution of this system is determined by the eigenvalues and
+eigenvectors of the coefficient matrix. A straightforward calculation shows
+that the four eigenvalues are
+
+\begin{align}
+  \gamma_{1,2} &= \pm i\omega_1, \\
+  \gamma_{3,4} &= \pm i\omega_2,
+\end{align}
+
+where
+
+\begin{align}
+  \omega_1
+  &=
+  \sqrt{
+    \frac{
+      \alpha^2
+      +
+      2\beta
+      +
+      \alpha\sqrt{\alpha^2+4\beta}
+    }{2}
+  },
+  \\
+  \omega_2
+  &=
+  \sqrt{
+    \frac{
+      \alpha^2
+      +
+      2\beta
+      -
+      \alpha\sqrt{\alpha^2+4\beta}
+    }{2}
+  }.
+\end{align}
+
+The system therefore possesses four distinct eigenvalues corresponding to two
+independent oscillation frequencies.
+
+It is worth observing that, in the absence of the Coriolis force
+(\(\alpha=0\)), the two frequencies become equal,
+
+\[
+\omega_1=\omega_2=\sqrt{\beta}=\sqrt{\frac{g}{l}},
+\]
+
+and the eigenvalues become doubly degenerate. The Coriolis force therefore
+removes this degeneracy, splitting the single natural frequency of the
+ordinary pendulum into two distinct oscillation frequencies.\par
+
+
+\begin{figure}[h] 
+  \centering
+  \includegraphics {frequenciesSplitting1.png}
+  \caption{Splitting of the normal-mode frequencies by the Coriolis force.}
+\end{figure}
+
+We now determine the corresponding eigenvectors. Since the procedure is
+identical for each eigenvalue, we derive only the first one in detail.
+
+For the eigenvalue
+
+\[
+\gamma_1=i\omega_1,
+\]
+
+the eigenvalue equation
+
+\[
+(A-\gamma_1 I)\vb{v}_1=0
+\]
+
+reads
+
+\[
+\begin{pmatrix}
+i\omega_1 & 0 & -1 & 0 \\
+0 & i\omega_1 & 0 & -1 \\
+\beta & 0 & i\omega_1 & -\alpha \\
+0 & \beta & \alpha & i\omega_1
+\end{pmatrix}
+\begin{pmatrix}
+x\\
+y\\
+u\\
+v
+\end{pmatrix}
+=
+\begin{pmatrix}
+0\\
+0\\
+0\\
+0
+\end{pmatrix}.
+\]
+
+The first two equations immediately give
+
+\[
+u=i\omega_1x,
+\qquad
+v=i\omega_1y.
+\]
+
+Substituting these expressions into the third equation yields
+
+\[
+(\beta-\omega_1^2)x
+=
+i\alpha\omega_1\,y,
+\]
+
+or
+
+\[
+y
+=
+i\,
+\frac{\omega_1^2-\beta}{\alpha\omega_1}
+\,x.
+\]
+
+Since eigenvectors are defined up to an arbitrary multiplicative constant, we
+choose
+
+\[
+x=1.
+\]
+
+The corresponding eigenvector is therefore
+
+\[
+ 
+\vb{v}_1
+=
+\begin{pmatrix}
+1\\[0.8em]
+i\dfrac{\omega_1^2-\beta}{\alpha\omega_1}\\[1.0em]
+i\omega_1\\[0.8em]
+\dfrac{\beta-\omega_1^2}{\alpha}
+\end{pmatrix}
+ 
+\]
+For convenience, we introduce the quantities
+
+\[
+\eta_1
+=
+\frac{\omega_1^2-\beta}{\alpha\omega_1},
+\qquad
+\eta_2
+=
+\frac{\omega_2^2-\beta}{\alpha\omega_2}.
+\]
+
+The corresponding eigenvectors are
+
+\[
+\vb{v}_1=
+\begin{pmatrix}
+1\\
+i\eta_1\\
+i\omega_1\\
+-\omega_1\eta_1
+\end{pmatrix},
+\qquad
+\vb{v}_3=
+\begin{pmatrix}
+1\\
+i\eta_2\\
+i\omega_2\\
+-\omega_2\eta_2
+\end{pmatrix},
+\]
+
+while the remaining two eigenvectors are simply their complex conjugates,
+
+\[
+\vb{v}_2=\overline{\vb{v}}_1,
+\qquad
+\vb{v}_4=\overline{\vb{v}}_3.
+\]
+
+The general solution of the system can therefore be written as
+
+\[
+\begin{pmatrix}
+x\\
+y\\
+u\\
+v
+\end{pmatrix}
+=
+c_1\vb{v}_1e^{i\omega_1t}
++
+c_2\vb{v}_2e^{-i\omega_1t}
++
+c_3\vb{v}_3e^{i\omega_2t}
++
+c_4\vb{v}_4e^{-i\omega_2t},
+\]
+
+where the constants \(c_1,c_2,c_3,c_4\) are determined by the initial
+conditions.
+
+To illustrate the motion, we consider the pendulum released from rest after a
+small displacement \(d\) along the \(x\)-axis,
+
+\[
+\begin{pmatrix}
+x(0)\\
+y(0)\\
+u(0)\\
+v(0)
+\end{pmatrix}
+=
+\begin{pmatrix}
+d\\
+0\\
+0\\
+0
+\end{pmatrix}
+\]
+
+This choice is not restrictive. Since the equations of motion are invariant
+under rotations in the horizontal plane, any other initial displacement can be
+obtained from this solution by a suitable rotation of the coordinate system.
+
+Imposing these initial conditions uniquely determines the coefficients
+\(c_1,c_2,c_3,c_4\). After straightforward algebra, the horizontal motion is
+found to be
+
+\begin{align}
+x(t)
+&=
+\frac{d}{2}
+\left[
+\frac{\alpha}{\sqrt{\alpha^2+4\beta}}
+\left(
+\cos(\omega_2t)
+-
+\cos(\omega_1t)
+\right)
++
+\cos(\omega_1t)
++
+\cos(\omega_2t)
+\right],
+\\[0.8em]
+y(t)
+&=
+\frac{d}{\sqrt{\alpha^2+4\beta}}
+\left[
+\omega_1\sin(\omega_2t)
+-
+\omega_2\sin(\omega_1t)
+\right].
+\end{align}
+ 
+The expressions obtained above can be rewritten in a more revealing form, in
+which the half-sum and half-difference of the two eigenfrequencies appear
+explicitly.
+
+We begin with the expression for \(y(t)\),
+
+\[
+  y(t)
+  =
+  \frac{d}{\sqrt{\alpha^2+4\beta}}
+  \left[
+    \omega_1\sin(\omega_2t)
+    -
+    \omega_2\sin(\omega_1t)
+  \right].
+\]
+
+The quantity inside the brackets can be rearranged as
+
+\[
+  \begin{aligned}
+    \omega_1\sin(\omega_2t)
+    -
+    \omega_2\sin(\omega_1t)
+    &=
+    \frac{\omega_1-\omega_2}{2}
+    \left[
+      \sin(\omega_1t)
+      +
+      \sin(\omega_2t)
+    \right]
+    \\
+    &\quad
+    -
+    \frac{\omega_1+\omega_2}{2}
+    \left[
+      \sin(\omega_1t)
+      -
+      \sin(\omega_2t)
+    \right].
+  \end{aligned}
+\]
+
+We now use the sum-to-product identities
+
+\[
+  \sin a+\sin b
+  =
+  2\sin\left(\frac{a+b}{2}\right)
+  \cos\left(\frac{a-b}{2}\right),
+\]
+
+and
+
+\[
+  \sin a-\sin b
+  =
+  2\cos\left(\frac{a+b}{2}\right)
+  \sin\left(\frac{a-b}{2}\right).
+\]
+
+It follows that
+
+\[
+  \begin{aligned}
+    y(t)
+    &=
+    \frac{d}{\sqrt{\alpha^2+4\beta}}
+    \Biggl[
+      (\omega_1-\omega_2)
+      \cos\left(
+        \frac{\omega_1-\omega_2}{2}\,t
+      \right)
+      \sin\left(
+        \frac{\omega_1+\omega_2}{2}\,t
+      \right)
+      \\
+      &\hspace{7em}
+      -
+      (\omega_1+\omega_2)
+      \cos\left(
+        \frac{\omega_1+\omega_2}{2}\,t
+      \right)
+      \sin\left(
+        \frac{\omega_1-\omega_2}{2}\,t
+      \right)
+    \Biggr].
+  \end{aligned}
+\]
+
+We proceed in the same way with \(x(t)\),
+
+\[
+  x(t)
+  =
+  \frac{d}{2}
+  \left[
+    \frac{\alpha}{\sqrt{\alpha^2+4\beta}}
+    \left(
+      \cos(\omega_2t)-\cos(\omega_1t)
+    \right)
+    +
+    \cos(\omega_1t)+\cos(\omega_2t)
+  \right].
+\]
+
+Using the identities
+
+\[
+  \cos a+\cos b
+  =
+  2\cos\left(\frac{a+b}{2}\right)
+  \cos\left(\frac{a-b}{2}\right),
+\]
+
+and
+
+\[
+  \cos b-\cos a
+  =
+  2\sin\left(\frac{a+b}{2}\right)
+  \sin\left(\frac{a-b}{2}\right),
+\]
+
+we find
+
+\[
+  \begin{aligned}
+    x(t)
+    &=
+    d
+    \Biggl[
+      \cos\left(
+        \frac{\omega_1-\omega_2}{2}\,t
+      \right)
+      \cos\left(
+        \frac{\omega_1+\omega_2}{2}\,t
+      \right)
+      \\
+      &\hspace{5em}
+      +
+      \frac{\alpha}{\sqrt{\alpha^2+4\beta}}
+      \sin\left(
+        \frac{\omega_1-\omega_2}{2}\,t
+      \right)
+      \sin\left(
+        \frac{\omega_1+\omega_2}{2}\,t
+      \right)
+    \Biggr].
+  \end{aligned}
+\]
+
+The solution can therefore be written in the final form
+
+\begin{equation}
+  \left\{
+  \begin{aligned}
+    x(t)
+    &=
+    d
+    \Biggl[
+      \cos\left(
+        \frac{\omega_1-\omega_2}{2}\,t
+      \right)
+      \cos\left(
+        \frac{\omega_1+\omega_2}{2}\,t
+      \right)
+      \\
+      &\hspace{5em}
+      +
+      \frac{\alpha}{\sqrt{\alpha^2+4\beta}}
+      \sin\left(
+        \frac{\omega_1-\omega_2}{2}\,t
+      \right)
+      \sin\left(
+        \frac{\omega_1+\omega_2}{2}\,t
+      \right)
+    \Biggr],
+    \\[0.8em]
+    y(t)
+    &=
+    \frac{d}{\sqrt{\alpha^2+4\beta}}
+    \Biggl[
+      (\omega_1-\omega_2)
+      \cos\left(
+        \frac{\omega_1-\omega_2}{2}\,t
+      \right)
+      \sin\left(
+        \frac{\omega_1+\omega_2}{2}\,t
+      \right)
+      \\
+      &\hspace{5em}
+      -
+      (\omega_1+\omega_2)
+      \cos\left(
+        \frac{\omega_1+\omega_2}{2}\,t
+      \right)
+      \sin\left(
+        \frac{\omega_1-\omega_2}{2}\,t
+      \right)
+    \Biggr].
+  \end{aligned}
+  \right.
+  \label{eq:foucault-sum-difference-solution}
+\end{equation}
+
+We now examine the behavior of the two eigenfrequencies when the Coriolis
+coupling is small. Since
+
+\[
+  \alpha=2\omega\cos\phi_0
+\]
+
+is much smaller than the natural frequency of the pendulum, we expand
+\(\omega_1\) and \(\omega_2\) around \(\alpha=0\).
+
+At \(\alpha=0\), both frequencies reduce to
+
+\[
+  \omega_1(0)
+  =
+  \omega_2(0)
+  =
+  \sqrt{\beta}.
+\]
+
+For the first frequency,
+
+\[
+  \omega_1
+  =
+  \sqrt{
+    \frac{
+      \alpha^2
+      +
+      2\beta
+      +
+      \alpha\sqrt{\alpha^2+4\beta}
+    }{2}
+  },
+\]
+
+and its derivative at \(\alpha=0\) is
+
+\[
+  \left.
+  \frac{d\omega_1}{d\alpha}
+  \right|_{\alpha=0}
+  =
+  \frac{1}{2}.
+\]
+
+Similarly,
+
+\[
+  \omega_2
+  =
+  \sqrt{
+    \frac{
+      \alpha^2
+      +
+      2\beta
+      -
+      \alpha\sqrt{\alpha^2+4\beta}
+    }{2}
+  },
+\]
+
+and
+
+\[
+  \left.
+  \frac{d\omega_2}{d\alpha}
+  \right|_{\alpha=0}
+  =
+  -\frac{1}{2}.
+\]
+
+The Taylor expansions to first order in \(\alpha\) are therefore
+
+\begin{align}
+  \omega_1
+  &=
+  \sqrt{\beta}
+  +
+  \frac{\alpha}{2}
+  +
+  O(\alpha^2),
+  \\
+  \omega_2
+  &=
+  \sqrt{\beta}
+  -
+  \frac{\alpha}{2}
+  +
+  O(\alpha^2).
+\end{align}
+
+It follows immediately that
+
+\begin{align}
+  \omega_1+\omega_2
+  &=
+  2\sqrt{\beta}
+  +
+  O(\alpha^2),
+  \\
+  \omega_1-\omega_2
+  &=
+  \alpha
+  +
+  O(\alpha^3).
+\end{align}
+
+Thus, to the required order,
+
+\[
+  \frac{\omega_1+\omega_2}{2}
+  \simeq
+  \sqrt{\beta},
+  \qquad
+  \frac{\omega_1-\omega_2}{2}
+  \simeq
+  \frac{\alpha}{2}.
+\]
+
+Substituting these expressions into
+\eqref{eq:foucault-sum-difference-solution}, we obtain
+
+\begin{equation}
+  \left\{
+  \begin{aligned}
+    x(t)
+    &\simeq
+    d
+    \Biggl[
+      \cos\left(\frac{\alpha}{2}t\right)
+      \cos\left(\sqrt{\beta}\,t\right)
+      +
+      \frac{\alpha}{\sqrt{\alpha^2+4\beta}}\,
+      \sin\left(\frac{\alpha}{2}t\right)
+      \sin\left(\sqrt{\beta}\,t\right)
+    \Biggr],
+    \\[0.8em]
+    y(t)
+    &\simeq
+    \frac{d}{\sqrt{\alpha^2+4\beta}}
+    \Biggl[
+      \alpha
+      \cos\left(\frac{\alpha}{2}t\right)
+      \sin\left(\sqrt{\beta}\,t\right)
+      \\
+      &\hspace{9em}
+      -
+      2\sqrt{\beta}\,
+      \cos\left(\sqrt{\beta}\,t\right)
+      \sin\left(\frac{\alpha}{2}t\right)
+    \Biggr].
+  \end{aligned}
+  \right.
+  \label{eq:foucault-frequency-expanded-solution}
+\end{equation}
+
+We now perform the final simplification. Since
+
+\[
+  \frac{\alpha}{\sqrt{\alpha^2+4\beta}}
+  \simeq
+  \frac{\alpha}{2\sqrt{\beta}}
+  \ll 1,
+\]
+
+the second term in \(x(t)\) is a small correction to its leading term and can
+be neglected. Similarly, in the expression for \(y(t)\), the term proportional
+to \(\alpha\) is negligible compared with the term proportional to
+\(2\sqrt{\beta}\). We also use
+
+\[
+  \sqrt{\alpha^2+4\beta}
+  \simeq
+  2\sqrt{\beta}.
+\]
+
+It is important, however, not to expand the functions
+
+\[
+  \cos\left(\frac{\alpha}{2}t\right),
+  \qquad
+  \sin\left(\frac{\alpha}{2}t\right),
+\]
+
+because their variation occurs over the long time scale associated with the
+precession of the pendulum.
+
+The horizontal motion therefore reduces to
+
+\begin{equation}
+  \left\{
+  \begin{aligned}
+    x(t)
+    &=
+    d
+    \cos\left(\frac{\alpha}{2}t\right)
+    \cos\left(\sqrt{\beta}\,t\right),
+    \\[0.5em]
+    y(t)
+    &=
+    -d
+    \sin\left(\frac{\alpha}{2}t\right)
+    \cos\left(\sqrt{\beta}\,t\right).
+  \end{aligned}
+  \right.
+  \label{eq:foucault-final-solution-alpha-beta}
+\end{equation}
+
+Recalling that
+
+\[
+  \alpha=2\omega\cos\phi_0,
+  \qquad
+  \beta=\frac{g}{l},
+\]
+
+we finally obtain
+
+\begin{equation}
+  \left\{
+  \begin{aligned}
+    x(t)
+    &=
+    d
+    \cos\left(\omega\cos\phi_0\,t\right)
+    \cos\left(\sqrt{\frac{g}{l}}\,t\right),
+    \\[0.5em]
+    y(t)
+    &=
+    -d
+    \sin\left(\omega\cos\phi_0\,t\right)
+    \cos\left(\sqrt{\frac{g}{l}}\,t\right).
+  \end{aligned}
+  \right.
+  \label{eq:foucault-final-solution}
+\end{equation}
+
+\subsection{Precession of the Oscillation Direction}
+
+The form of the solution admits a particularly simple geometric
+interpretation. Introducing the rotation matrix
+
+\[
+R(\vartheta)
+=
+\begin{pmatrix}
+\cos\vartheta & -\sin\vartheta\\
+\sin\vartheta & \cos\vartheta
+\end{pmatrix},
+\]
+
+the horizontal motion can be written as
+
+\begin{equation}
+  \begin{pmatrix}
+    x(t)\\
+    y(t)
+  \end{pmatrix}
+  =
+  R\left(-\omega\cos\phi_0\,t\right)
+  \begin{pmatrix}
+    d\cos\left(\sqrt{\frac{g}{l}}\,t\right)\\
+    0
+  \end{pmatrix}.
+  \label{eq:foucault-rotating-direction}
+\end{equation}
+
+The pendulum therefore performs a rapid oscillation with angular frequency
+
+\[
+\sqrt{\frac{g}{l}},
+\]
+
+along the horizontal unit vector
+
+\[
+\vb n(t)
+=
+\cos\left(\omega\cos\phi_0\,t\right)\vb e_x
+-
+\sin\left(\omega\cos\phi_0\,t\right)\vb e_y.
+\]
+
+This direction rotates slowly with angular velocity
+
+\[
+-\omega\cos\phi_0.
+\]
+
+Together with the local vertical direction, \(\vb n(t)\) determines the
+instantaneous plane of oscillation of the pendulum. It is in this precise
+sense that the plane of oscillation is said to rotate relative to the Earth.
+
+The underlying dynamical mechanism, however, is the splitting of the two
+circular normal modes by the Coriolis force. In the absence of the Earth's
+rotation, the two modes have the same frequency. The Coriolis coupling removes
+this degeneracy, and the gradual accumulation of their relative phase produces
+the slow precession of the oscillation direction.
+
+
+\end{document}

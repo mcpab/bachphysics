@@ -1,4 +1,4 @@
-import type { LatexNodeMap } from "../../../../../../../packages/mcpab-katek/src/latex/ParsedNode.ts";
+import type { LatexNodeMap } from "@mcpab/katex";
 
 export const latexDocument = {
   id: "document-1",

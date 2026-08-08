@@ -42,7 +42,7 @@ export default function Physics(): React.ReactElement {
             </BannerStatic>} >
 
             <Typography variant='caption'>
-                Hero image: a page from Newton's manuscript on the method of fluxions.
+                Hero image: a page from Newton&apos;s manuscript on the method of fluxions.
             </Typography>
 
             <LeadText>

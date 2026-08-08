@@ -1,4 +1,4 @@
-import type { LatexReferenceIndex } from "../../../../../../../packages/mcpab-katek/src/latex/latexReferenceIndex.ts";
+import type { LatexReferenceIndex } from "@mcpab/katex/reference";
 
 export const labelIndex = {
   "eq:divergence_curl_cross_product": {
