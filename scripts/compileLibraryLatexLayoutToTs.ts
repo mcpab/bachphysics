@@ -117,20 +117,24 @@ function resolveLatexDocument(inputArg: string): ResolvedLatexDocument {
   return resolveSlugInput(inputArg);
 }
 
-function resolveKatexPackageRoot(): string {
-  const packageLinkPath = path.join(
+function resolveKatexCompilerPath(): string {
+  const compilerPath = path.join(
     projectRoot,
     "node_modules",
-    "@mcpab",
-    "katex",
+    ".bin",
+    process.platform === "win32"
+      ? "mcpab-katex-compile.cmd"
+      : "mcpab-katex-compile",
   );
 
-  if (!fs.existsSync(packageLinkPath)) {
-    console.error("Could not find @mcpab/katex in node_modules.");
+  if (!fs.existsSync(compilerPath)) {
+    console.error(
+      "Could not find the @mcpab/katex compiler. Run pnpm install first.",
+    );
     process.exit(1);
   }
 
-  return fs.realpathSync(packageLinkPath);
+  return compilerPath;
 }
 
 function addFigureDimensions(
@@ -200,25 +204,18 @@ function main(): void {
 
   fs.mkdirSync(path.dirname(outputLayoutPath), { recursive: true });
 
-  const katexPackageRoot = resolveKatexPackageRoot();
-  const compilerPath = path.join(
-    katexPackageRoot,
-    "scripts",
-    "compileLatexLayoutToTs.ts",
-  );
+  const compilerPath = resolveKatexCompilerPath();
 
   const result = spawnSync(
-    process.execPath,
+    compilerPath,
     [
-      "--experimental-strip-types",
-      compilerPath,
       document.inputPath,
       outputLayoutPath,
       document.documentId,
       outputLabelIndexPath,
     ],
     {
-      cwd: katexPackageRoot,
+      cwd: projectRoot,
       stdio: "inherit",
     },
   );
