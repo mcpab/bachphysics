@@ -28,6 +28,12 @@ export function SiteMenu() {
                 label: 'about'
             },
             {
+                id: 'colophon',
+                href: '/colophon',
+                type: 'link',
+                label: 'colophon'
+            },
+            {
                 id: 'physics',
                 type: 'group',
                 label: 'Physics',
@@ -62,10 +68,10 @@ export function SiteMenu() {
                                         label: 'Overview',
                                     },
                                     {
-                                        id: 'rigid-body-kinematics',
-                                        href: '/physics/classical-mechanics/rigid-body-motion/kinematics',
+                                        id: 'kinematics-of-rotations',
+                                        href: '/physics/classical-mechanics/rigid-body-motion/kinematics-of-rotations',
                                         type: 'link',
-                                        label: 'Kinematics',
+                                        label: 'Kinematics of Rotations',
                                     },
                                     {
                                         id: 'rotating-frame-dynamics',

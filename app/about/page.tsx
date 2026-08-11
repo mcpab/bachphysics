@@ -62,7 +62,8 @@ export default function AboutPage(): React.ReactElement {
                     overflow: 'hidden',
                 }}
                 imageConf={{
-                    mode: 'contain'
+                    mode: 'contain',
+                    sizes: '(max-width: 899px) calc(100vw - 64px), (max-width: 1200px) 46vw, 552px',
                 }}
                 gap={{ unit: '%', value: 2 }}
             />

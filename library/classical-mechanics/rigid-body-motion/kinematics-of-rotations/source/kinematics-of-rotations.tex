@@ -7,56 +7,55 @@
 
 \newcommand{\ds}{\displaystyle}
 
-\title{The Kinematics of Rigid Body Motion}
+\title{The Kinematics of Rotations}
 \author{}
 \date{}
 
 \begin{document}
 \maketitle
 
-
 % ============================================================
 \section{Introduction}
 % ============================================================
 
-In this essay, we explore the kinematics of rigid-body motion, focusing on bodies for which
-the distance between any two material points remains constant. Our goal is to derive the
-principal equations carefully, even at the risk of appearing pedantic, so that every
-assumption and convention remains explicit.\par
-
-We will cover the following topics:
+In this essay we will explore the kinematics of rotations. A more general discussion of
+the possible motions of a rigid body will be left to a future essay. Here we will cover
+the following topics:
 
 \begin{itemize}
-\item \textbf{Basic Properties of Orthogonal Transformations:} We will outline some
-fundamental properties of orthogonal transformations in a vector space $V$ of
-dimension $n$, endowed with a positive-definite scalar product. In particular, we
-will discuss how these transformations preserve lengths and angles between vectors,
-a property central to their role in rigid-body motion.
 
-\item \textbf{Rotations in Three Dimensions:} We will then consider the particularly
-important case of rotations in three-dimensional space. We will examine how rotation
-matrices are constructed and how they are related to the existence of a rotation
-axis.
+\item \textbf{Basic Properties of Orthogonal Transformations:}
+We will review the properties of orthogonal transformations, which preserve distances
+while leaving the origin fixed and therefore provide the natural mathematical description
+of rigid rotations.
 
-\item \textbf{Infinitesimal Rotations:} From our analysis of three-dimensional rotations,
-we will introduce the concept of an infinitesimal rotation. This involves
-small-angle approximations and the use of skew-symmetric matrices to represent
-infinitesimal changes in orientation. We will discuss their properties and their role
-in deriving the kinematic equations of rigid-body motion.
+\item \textbf{Rotations in Three Dimensions:}
+We will specialize to three-dimensional space and derive the representation of finite
+rotations about both principal and arbitrary axes.
 
-\item \textbf{Transformation of Vectors Between Reference Frames:} Building upon
-infinitesimal rotations, we will derive the general relation between the time
-derivatives of a vector measured in fixed and rotating reference frames. We will
-make explicit how the descriptions in the two frames are related and establish the
-mathematical framework needed for these transformations.
+\item \textbf{Infinitesimal Rotations:}
+We will then study infinitesimal changes of orientation and show how they can be represented
+by a vector.
 
-\item \textbf{Angular Velocity:} Finally, we will derive the angular velocity vector and
-examine rotations about both fixed and time-dependent axes.
+\item \textbf{Angular Velocity:}
+From infinitesimal rotations we will introduce the angular velocity vector, which describes
+the instantaneous rate of change of orientation.
+
+\item \textbf{Transformation of Vectors Between Reference Frames:}
+Using angular velocity, we will derive the relation between the time derivatives of a vector
+measured in fixed and rotating reference frames, and examine rotations about fixed and
+time-dependent axes.
+
 \end{itemize}
-
+ 
 % ============================================================
 \section{Orthogonal Transformations}
 % ============================================================
+
+As we highligthed in the introduction, we are interested in understanding the mathematical
+transformations that leave one point, or a set of point lying on a axis invariant, while
+keeping the distance between points in space invariant. Such transformations are
+called Orthogonal transformations. \par
 
 In this section we will review some basic properties of orthogonal transformations in a
 vector space $V$ over the complex numbers $\mathbb{C}$ of dimension $n$, which is endowed with

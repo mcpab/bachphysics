@@ -39,8 +39,7 @@ export function SiteFooter() {
         >
             <StandardStack size="compact">
                 <FinePrint><strong>Essays</strong></FinePrint>
-                <FinePrint> Mathematics</FinePrint>
-                <FinePrint> Physics</FinePrint>
+                <NextMuiLink href='/physics'> <FinePrint> Physics</FinePrint></NextMuiLink>
 
             </StandardStack>
         </Box>
@@ -59,7 +58,7 @@ export function SiteFooter() {
             <StandardStack size="compact">
                 <NextMuiLink href='/about'> <FinePrint><strong> About</strong> </FinePrint></NextMuiLink> 
                 <FinePrint>Contact</FinePrint>
-                <FinePrint>Colophon</FinePrint>
+                <NextMuiLink href='/colophon'> <FinePrint><strong> Colophon</strong> </FinePrint></NextMuiLink> 
                 <FinePrint>RSS</FinePrint>
             </StandardStack>
         </Box>
