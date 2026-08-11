@@ -3,6 +3,7 @@ import { MediaText, StandardStack } from '@mcpab/web-blocks';
 import Typography from '@mui/material/Typography';
 import { PageFrame } from '../components/PageFrame';
 import { LeadText } from '../components/TextComponents';
+import Box from '@mui/material/Box';
 
 export default function AboutPage(): React.ReactElement {
 
@@ -27,9 +28,7 @@ export default function AboutPage(): React.ReactElement {
                 I received a Laurea in Physics from the University of Bologna and a
                 Ph.D. in Theoretical Physics from the University of Stuttgart. My
                 professional career has been spent at the intersection of science,
-                engineering, and technology. I currently lead the Predictive Analytics
-                team within the Corporate AI department at Siemens Energy, where I have
-                worked for many years at the forefront of technological innovation.
+                engineering, and technology.
             </LeadText>
 
             <LeadText>
@@ -56,6 +55,18 @@ export default function AboutPage(): React.ReactElement {
                 image="/img/MarcoAbout.jpg"
                 message={aboutMessage}
                 textSplit={{ preset: '50-50' }}
+                caption={
+                    <Box
+                        component="span"
+                        sx={{
+                            display: 'block',
+                            pt: 1,
+                            textAlign: 'center',
+                        }}
+                    >
+                        Marco Brunelli, PhD — Founder and author of BachPhysics.
+                    </Box>
+                }
                 pad
                 sx={{
                     minHeight: { xs: 420, md: 520 },
