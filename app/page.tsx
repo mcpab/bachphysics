@@ -19,7 +19,7 @@ export default function HomePage(): React.ReactElement {
         filter: 'saturate(0.45) brightness(0.65) contrast(1.05)'
       }} size='md' >
         <MainTitle
-          title='Bach and Physics' subtitle='Notes on Mathematics, Physics, and Harmony'
+          title='Bach and Physics' subtitle='Notes on Mathematics and Physics'
           autoCapitalize={false}
           slotProps={{
             title: {
