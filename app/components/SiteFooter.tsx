@@ -13,15 +13,16 @@ export function SiteFooter() {
         <Box
             sx={{
                 width: '100%',
-                maxWidth: { xs: '100%', md: 320 },
+                maxWidth: { xs: '100%', md: 370 },
                 pr: { md: 3 },
+                    mx: 'auto',
             }}
         >
             <StandardStack size="compact">
                 <NextMuiLink href='/'><FinePrint><strong>Bach and Physics</strong></FinePrint></NextMuiLink>
                 <Box>
                     <FinePrint> <strong>Notes on Mathematics, Physics, and Harmony</strong></FinePrint>
-                    <FinePrint>The essays collected here explore the mathematical structure of nature and music through the lens of physics.</FinePrint>
+                    <FinePrint>A collection of essays on physics, mathematics, and the ideas that connect them.</FinePrint>
                 </Box>
             </StandardStack>
         </Box>
@@ -32,15 +33,14 @@ export function SiteFooter() {
             sx={{
                 width: '100%',
                 display: 'flex',
-                justifyContent: 'cnter',
+                justifyContent: 'center',
                 textAlign: 'left',
                 paddingBottom: 2
             }}
         >
-            <StandardStack size="compact">
+            <StandardStack size="compact" sx={{ width: 'fit-content' }}>
                 <FinePrint><strong>Essays</strong></FinePrint>
                 <NextMuiLink href='/physics'> <FinePrint> Physics</FinePrint></NextMuiLink>
-
             </StandardStack>
         </Box>
     );
@@ -50,15 +50,16 @@ export function SiteFooter() {
             sx={{
                 width: '100%',
                 display: 'flex',
-                justifyContent: 'cnter',
+                justifyContent: 'center',
                 textAlign: 'left',
                 paddingBottom: 2
             }}
         >
-            <StandardStack size="compact">
-                <NextMuiLink href='/about'> <FinePrint><strong> About</strong> </FinePrint></NextMuiLink> 
+            <StandardStack size="compact" sx={{ width: 'fit-content' }}>
+                <FinePrint><strong> Site</strong> </FinePrint>
+                <NextMuiLink href='/about'> <FinePrint>About</FinePrint></NextMuiLink> 
+                <NextMuiLink href='/colophon'> <FinePrint>  Colophon </FinePrint></NextMuiLink> 
                 <FinePrint>Contact</FinePrint>
-                <NextMuiLink href='/colophon'> <FinePrint><strong> Colophon</strong> </FinePrint></NextMuiLink> 
                 <FinePrint>RSS</FinePrint>
             </StandardStack>
         </Box>

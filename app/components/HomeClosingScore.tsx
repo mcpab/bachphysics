@@ -1,9 +1,9 @@
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
 import Image from "next/image";
 
 import bachScore from "@/public/img/bach_art_of_fugue.png";
+import { NoteText, Strapline } from "./TextComponents";
 
 export function HomeClosingScore() {
     return (
@@ -40,9 +40,7 @@ export function HomeClosingScore() {
                         />
                     </Box>
 
-                    <Typography
-                        variant="h5"
-                        component="p"
+                    <Strapline
                         sx={{
                             mt: { xs: 4, md: 5 },
                             fontWeight: 600,
@@ -50,21 +48,17 @@ export function HomeClosingScore() {
                         }}
                     >
                         Notes on Mathematics, Physics, and Harmony
-                    </Typography>
+                    </Strapline>
 
-                    <Typography
-                        variant="body1"
+                    <NoteText
                         sx={{
                             mt: 2,
                             mx: "auto",
-                            maxWidth: "48ch",
                             color: "text.secondary",
                         }}
                     >
-                        A quiet closing cadence for essays written in the hope that others
-                        may find joy, wonder, and illumination in the study of nature,
-                        mathematics, and music.
-                    </Typography>
+                       A closing cadence for essays shaped by mathematics, physics, and music.
+                    </NoteText>
                 </Box>
             </Container>
         </Box>

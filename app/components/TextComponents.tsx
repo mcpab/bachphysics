@@ -11,6 +11,10 @@ export function LeadText(props: NoteTextProps): React.ReactElement {
   return <Typography variant="lead" component="p" {...props} />;
 }
 
+export function Strapline(props: NoteTextProps): React.ReactElement {
+  return <Typography variant="strapline" component="p" {...props} />;
+}
+
 export function FinePrint(props: NoteTextProps): React.ReactElement {
   return <Typography variant="finePrint" component="p" {...props} />;
 }

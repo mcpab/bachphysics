@@ -1,12 +1,12 @@
 import {
     PageTitle,
     StandardStack,
-    SubsectionTitle
+    SubsectionTitle,
+    SubsubsectionTitle
 } from '@mcpab/web-blocks';
 import Box from '@mui/material/Box';
 import { PageFrame } from '../components/PageFrame';
-import { LeadText } from '../components/TextComponents';
-import Typography from '@mui/material/Typography';
+import { LeadText, NoteText } from '../components/TextComponents';
 import { NextImageAdapter } from '@/src/components/NextImageAdapter';
 
 export default function ColophonPage(): React.ReactElement {
@@ -34,7 +34,7 @@ export default function ColophonPage(): React.ReactElement {
                 </PageTitle>
 
                 <StandardStack size="large">
-                    <Typography variant='narrative' >How Bach and Physics is written, typeset, and built.</Typography>
+                    <NoteText>How Bach and Physics is written, typeset, and built.</NoteText>
 
                     <Box component="section">
                         <SubsectionTitle sx={{ mb: 1.5 }}>Motivation</SubsectionTitle>
@@ -49,7 +49,7 @@ export default function ColophonPage(): React.ReactElement {
                         <LeadText>
                             Second, the site was designed to be as lightweight and responsive as possible.
                             Since LaTeX essays are essentially static documents, there is little reason to parse
-                            and construct them in the reader's browser. A custom LaTeX-to-React compiler was
+                            and construct them in the reader&apos;s browser. A custom LaTeX-to-React compiler was
                             therefore developed to process the documents ahead
                             of time and generate the React representation used to produce the final static pages.
                             Only the small number of components that require interaction are hydrated in the browser.
@@ -71,9 +71,9 @@ export default function ColophonPage(): React.ReactElement {
                             work of the author and the role of AI throughout the project.
                         </LeadText>
 
-                        <Typography variant="h6" sx={{ mt: 4, mb: 1.5 }}>
+                        <SubsubsectionTitle sx={{ mt: 4, mb: 1.5 }}>
                             Scientific Content
-                        </Typography>
+                        </SubsubsectionTitle>
 
                         <LeadText>
                             The physics and mathematics presented in the essays are the work of
@@ -91,9 +91,9 @@ export default function ColophonPage(): React.ReactElement {
                             converting handwritten notes and screenshots into LaTeX.
                         </LeadText>
 
-                        <Typography variant="h6" sx={{ mt: 4, mb: 1.5 }}>
+                        <SubsubsectionTitle sx={{ mt: 4, mb: 1.5 }}>
                             Software
-                        </Typography>
+                        </SubsubsectionTitle>
 
                         <LeadText>
                             The software architecture of Bach and Physics was designed by the author
@@ -105,8 +105,9 @@ export default function ColophonPage(): React.ReactElement {
 
                         <LeadText>
                             Among the systems developed for the project are a general-purpose
-                            LaTeX-to-React compiler built around KaTeX, reusable React building
-                            blocks, and a flexible layout system based on CSS Grid.
+                            LaTeX-to-React publishing system using Ohm for parsing and KaTeX for
+                            mathematical typesetting, reusable React building blocks, and a flexible
+                            layout system based on CSS Grid.
                         </LeadText>
 
                         <LeadText>
@@ -125,9 +126,9 @@ export default function ColophonPage(): React.ReactElement {
                             architecture and the critical components of the system.
                         </LeadText>
 
-                        <Typography variant="h6" sx={{ mt: 4, mb: 1.5 }}>
+                        <SubsubsectionTitle sx={{ mt: 4, mb: 1.5 }}>
                             Figures, Design, and Language
-                        </Typography>
+                        </SubsubsectionTitle>
 
                         <LeadText>
                             AI has played a more direct role in other aspects of the project.
@@ -169,9 +170,9 @@ export default function ColophonPage(): React.ReactElement {
 
                         <LeadText>
                             Bach and Physics uses a custom publishing system developed specifically
-                            for the site by the author. The LaTeX source
-                            is parsed using an Ohm grammar and converted into a structured abstract
-                            syntax tree (AST), which is then transformed into React components for
+                            for the site by the author. The LaTeX source is parsed with Ohm,
+                            using a custom grammar that converts the supported document structures into a
+                            semantic abstract syntax tree (AST), which is then transformed into React components for
                             publication on the web.
                         </LeadText>
 
