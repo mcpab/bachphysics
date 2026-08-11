@@ -1,6 +1,6 @@
 'use client'
-import { labelIndex } from '@/library/classical-mechanics/rigid-body-motion/kinematics/generated/rigid-body-kinematics.labelIndex';
-import { latexDocument } from '@/library/classical-mechanics/rigid-body-motion/kinematics/generated/rigid-body-kinematics.layout.ast';
+import { labelIndex } from '@/library/classical-mechanics/rigid-body-motion/kinematics-of-rotations/generated/kinematics-of-rotations.labelIndex';
+import { latexDocument } from '@/library/classical-mechanics/rigid-body-motion/kinematics-of-rotations/generated/kinematics-of-rotations.layout.ast';
 
 import Essay from '@/app/components/Essay';
 import {
@@ -10,7 +10,7 @@ import {
 export const frontMatter = {
     eyebrow: "Classical Mechanics",
 
-    title: "The Kinematics of Rigid Body Motion",
+    title: "The Kinematics of Rotations",
 
     subtitle:
         "Orthogonal transformations, finite and infinitesimal rotations, angular velocity, and rotating reference frames.",

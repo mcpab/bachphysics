@@ -15,7 +15,7 @@ export default function HomePage(): React.ReactElement {
         objectPosition: '20% 23%',
         transform: 'translateX(-5%) scale(1.30)',
         priority: true,
-        overlayColor: 'rgba(12, 11, 10, 0.72)',
+        overlayColor: 'rgba(12, 11, 10, 0.3)',
         filter: 'saturate(0.45) brightness(0.65) contrast(1.05)'
       }} size='md' >
         <MainTitle

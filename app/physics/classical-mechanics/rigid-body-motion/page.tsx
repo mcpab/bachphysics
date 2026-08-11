@@ -2,8 +2,8 @@ import { PhysicsTopicOverview } from '../../components/PhysicsTopicOverview';
 
 const rigidBodyEssays = [
     {
-        href: '/physics/classical-mechanics/rigid-body-motion/kinematics',
-        title: 'The Kinematics of Rigid Body Motion',
+        href: '/physics/classical-mechanics/rigid-body-motion/kinematics-of-rotations',
+        title: 'The Kinematics of Rotations',
         description: 'Develops the geometry of rigid body motion, including orthogonal transformations, finite and infinitesimal rotations, angular velocity, and rotating reference frames.',
     },
     {

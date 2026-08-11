@@ -30,43 +30,23 @@ export const latexDocument = {
               {
                 id: "text-2",
                 type: "text",
-                body: "In this essay, we explore the kinematics of rigid-body motion, focusing on bodies for which"
+                body: "In this essay we will explore the kinematics of rotations. A more general discussion of"
               },
               {
                 id: "text-3",
                 type: "text",
-                body: "the distance between any two material points remains constant. Our goal is to derive the"
+                body: "the possible motions of a rigid body will be left to a future essay. Here we will cover"
               },
               {
                 id: "text-4",
                 type: "text",
-                body: "principal equations carefully, even at the risk of appearing pedantic, so that every"
-              },
-              {
-                id: "text-5",
-                type: "text",
-                body: "assumption and convention remains explicit."
+                body: "the following topics:"
               }
             ]
           }
         },
         {
           id: "contentLayoutGroup-2",
-          type: "contentLayoutGroup",
-          children: {
-            id: "layoutInlineGroup-3",
-            type: "layoutInlineGroup",
-            children: [
-              {
-                id: "text-6",
-                type: "text",
-                body: "We will cover the following topics:"
-              }
-            ]
-          }
-        },
-        {
-          id: "contentLayoutGroup-3",
           type: "contentLayoutGroup",
           children: {
             id: "layoutBlockNodeGroup-1",
@@ -81,10 +61,10 @@ export const latexDocument = {
                     type: "item",
                     content: [
                       {
-                        id: "contentLayoutGroup-4",
+                        id: "contentLayoutGroup-3",
                         type: "contentLayoutGroup",
                         children: {
-                          id: "layoutInlineGroup-4",
+                          id: "layoutInlineGroup-3",
                           type: "layoutInlineGroup",
                           children: [
                             {
@@ -93,51 +73,19 @@ export const latexDocument = {
                               type: "textbf"
                             },
                             {
+                              id: "text-5",
+                              type: "text",
+                              body: "We will review the properties of orthogonal transformations, which preserve distances"
+                            },
+                            {
+                              id: "text-6",
+                              type: "text",
+                              body: "while leaving the origin fixed and therefore provide the natural mathematical description"
+                            },
+                            {
                               id: "text-7",
                               type: "text",
-                              body: "We will outline some"
-                            },
-                            {
-                              id: "text-8",
-                              type: "text",
-                              body: "fundamental properties of orthogonal transformations in a vector space "
-                            },
-                            {
-                              id: "inlineMath-1",
-                              type: "inlineMath",
-                              body: "V",
-                              html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.2222em;\">V</span></span></span></span>"
-                            },
-                            {
-                              id: "text-9",
-                              type: "text",
-                              body: "of"
-                            },
-                            {
-                              id: "text-10",
-                              type: "text",
-                              body: "dimension "
-                            },
-                            {
-                              id: "inlineMath-2",
-                              type: "inlineMath",
-                              body: "n",
-                              html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>"
-                            },
-                            {
-                              id: "text-11",
-                              type: "text",
-                              body: ", endowed with a positive-definite scalar product. In particular, we"
-                            },
-                            {
-                              id: "text-12",
-                              type: "text",
-                              body: "will discuss how these transformations preserve lengths and angles between vectors,"
-                            },
-                            {
-                              id: "text-13",
-                              type: "text",
-                              body: "a property central to their role in rigid-body motion."
+                              body: "of rigid rotations."
                             }
                           ]
                         }
@@ -149,10 +97,10 @@ export const latexDocument = {
                     type: "item",
                     content: [
                       {
-                        id: "contentLayoutGroup-5",
+                        id: "contentLayoutGroup-4",
                         type: "contentLayoutGroup",
                         children: {
-                          id: "layoutInlineGroup-5",
+                          id: "layoutInlineGroup-4",
                           type: "layoutInlineGroup",
                           children: [
                             {
@@ -161,24 +109,14 @@ export const latexDocument = {
                               type: "textbf"
                             },
                             {
-                              id: "text-14",
+                              id: "text-8",
                               type: "text",
-                              body: "We will then consider the particularly"
+                              body: "We will specialize to three-dimensional space and derive the representation of finite"
                             },
                             {
-                              id: "text-15",
+                              id: "text-9",
                               type: "text",
-                              body: "important case of rotations in three-dimensional space. We will examine how rotation"
-                            },
-                            {
-                              id: "text-16",
-                              type: "text",
-                              body: "matrices are constructed and how they are related to the existence of a rotation"
-                            },
-                            {
-                              id: "text-17",
-                              type: "text",
-                              body: "axis."
+                              body: "rotations about both principal and arbitrary axes."
                             }
                           ]
                         }
@@ -190,10 +128,10 @@ export const latexDocument = {
                     type: "item",
                     content: [
                       {
-                        id: "contentLayoutGroup-6",
+                        id: "contentLayoutGroup-5",
                         type: "contentLayoutGroup",
                         children: {
-                          id: "layoutInlineGroup-6",
+                          id: "layoutInlineGroup-5",
                           type: "layoutInlineGroup",
                           children: [
                             {
@@ -202,29 +140,14 @@ export const latexDocument = {
                               type: "textbf"
                             },
                             {
-                              id: "text-18",
+                              id: "text-10",
                               type: "text",
-                              body: "From our analysis of three-dimensional rotations,"
+                              body: "We will then study infinitesimal changes of orientation and show how they can be represented"
                             },
                             {
-                              id: "text-19",
+                              id: "text-11",
                               type: "text",
-                              body: "we will introduce the concept of an infinitesimal rotation. This involves"
-                            },
-                            {
-                              id: "text-20",
-                              type: "text",
-                              body: "small-angle approximations and the use of skew-symmetric matrices to represent"
-                            },
-                            {
-                              id: "text-21",
-                              type: "text",
-                              body: "infinitesimal changes in orientation. We will discuss their properties and their role"
-                            },
-                            {
-                              id: "text-22",
-                              type: "text",
-                              body: "in deriving the kinematic equations of rigid-body motion."
+                              body: "by a vector."
                             }
                           ]
                         }
@@ -236,41 +159,26 @@ export const latexDocument = {
                     type: "item",
                     content: [
                       {
-                        id: "contentLayoutGroup-7",
+                        id: "contentLayoutGroup-6",
                         type: "contentLayoutGroup",
                         children: {
-                          id: "layoutInlineGroup-7",
+                          id: "layoutInlineGroup-6",
                           type: "layoutInlineGroup",
                           children: [
                             {
-                              body: "Transformation of Vectors Between Reference Frames:",
+                              body: "Angular Velocity:",
                               id: "textbf-4",
                               type: "textbf"
                             },
                             {
-                              id: "text-23",
+                              id: "text-12",
                               type: "text",
-                              body: "Building upon"
+                              body: "From infinitesimal rotations we will introduce the angular velocity vector, which describes"
                             },
                             {
-                              id: "text-24",
+                              id: "text-13",
                               type: "text",
-                              body: "infinitesimal rotations, we will derive the general relation between the time"
-                            },
-                            {
-                              id: "text-25",
-                              type: "text",
-                              body: "derivatives of a vector measured in fixed and rotating reference frames. We will"
-                            },
-                            {
-                              id: "text-26",
-                              type: "text",
-                              body: "make explicit how the descriptions in the two frames are related and establish the"
-                            },
-                            {
-                              id: "text-27",
-                              type: "text",
-                              body: "mathematical framework needed for these transformations."
+                              body: "the instantaneous rate of change of orientation."
                             }
                           ]
                         }
@@ -282,26 +190,31 @@ export const latexDocument = {
                     type: "item",
                     content: [
                       {
-                        id: "contentLayoutGroup-8",
+                        id: "contentLayoutGroup-7",
                         type: "contentLayoutGroup",
                         children: {
-                          id: "layoutInlineGroup-8",
+                          id: "layoutInlineGroup-7",
                           type: "layoutInlineGroup",
                           children: [
                             {
-                              body: "Angular Velocity:",
+                              body: "Transformation of Vectors Between Reference Frames:",
                               id: "textbf-5",
                               type: "textbf"
                             },
                             {
-                              id: "text-28",
+                              id: "text-14",
                               type: "text",
-                              body: "Finally, we will derive the angular velocity vector and"
+                              body: "Using angular velocity, we will derive the relation between the time derivatives of a vector"
                             },
                             {
-                              id: "text-29",
+                              id: "text-15",
                               type: "text",
-                              body: "examine rotations about both fixed and time-dependent axes."
+                              body: "measured in fixed and rotating reference frames, and examine rotations about fixed and"
+                            },
+                            {
+                              id: "text-16",
+                              type: "text",
+                              body: "time-dependent axes."
                             }
                           ]
                         }
@@ -327,17 +240,47 @@ export const latexDocument = {
       id: "section-2",
       type: "section",
       title: {
-        id: "layoutInlineGroup-9",
+        id: "layoutInlineGroup-8",
         type: "layoutInlineGroup",
         children: [
           {
-            id: "text-30",
+            id: "text-17",
             type: "text",
             body: "Orthogonal Transformations"
           }
         ]
       },
       intro: [
+        {
+          id: "contentLayoutGroup-8",
+          type: "contentLayoutGroup",
+          children: {
+            id: "layoutInlineGroup-9",
+            type: "layoutInlineGroup",
+            children: [
+              {
+                id: "text-18",
+                type: "text",
+                body: "As we highligthed in the introduction, we are interested in understanding the mathematical"
+              },
+              {
+                id: "text-19",
+                type: "text",
+                body: "transformations that leave one point, or a set of point lying on a axis invariant, while"
+              },
+              {
+                id: "text-20",
+                type: "text",
+                body: "keeping the distance between points in space invariant. Such transformations are"
+              },
+              {
+                id: "text-21",
+                type: "text",
+                body: "called Orthogonal transformations. "
+              }
+            ]
+          }
+        },
         {
           id: "contentLayoutGroup-9",
           type: "contentLayoutGroup",
@@ -346,50 +289,50 @@ export const latexDocument = {
             type: "layoutInlineGroup",
             children: [
               {
-                id: "text-31",
+                id: "text-22",
                 type: "text",
                 body: "In this section we will review some basic properties of orthogonal transformations in a"
               },
               {
-                id: "text-32",
+                id: "text-23",
                 type: "text",
                 body: "vector space "
               },
               {
-                id: "inlineMath-3",
+                id: "inlineMath-1",
                 type: "inlineMath",
                 body: "V",
                 html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.2222em;\">V</span></span></span></span>"
               },
               {
-                id: "text-33",
+                id: "text-24",
                 type: "text",
                 body: "over the complex numbers "
               },
               {
-                id: "inlineMath-4",
+                id: "inlineMath-2",
                 type: "inlineMath",
                 body: "\\mathbb{C}",
                 html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">C</span></span></span></span>"
               },
               {
-                id: "text-34",
+                id: "text-25",
                 type: "text",
                 body: "of dimension "
               },
               {
-                id: "inlineMath-5",
+                id: "inlineMath-3",
                 type: "inlineMath",
                 body: "n",
                 html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>"
               },
               {
-                id: "text-35",
+                id: "text-26",
                 type: "text",
                 body: ", which is endowed with"
               },
               {
-                id: "text-36",
+                id: "text-27",
                 type: "text",
                 body: "a scalar product generalized for complex vectors:"
               }
@@ -420,72 +363,72 @@ export const latexDocument = {
             type: "layoutInlineGroup",
             children: [
               {
-                id: "text-37",
+                id: "text-28",
                 type: "text",
                 body: "where "
               },
               {
-                id: "inlineMath-6",
+                id: "inlineMath-4",
                 type: "inlineMath",
                 body: "\\vb{x} = (x_1, x_2, \\ldots, x_n)",
                 html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">x</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>"
               },
               {
-                id: "text-38",
+                id: "text-29",
                 type: "text",
                 body: "and "
               },
               {
-                id: "inlineMath-7",
+                id: "inlineMath-5",
                 type: "inlineMath",
                 body: "\\vb{y} = (y_1, y_2, \\ldots, y_n)",
                 html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6389em;vertical-align:-0.1944em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">y</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">y</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">y</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">y</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>"
               },
               {
-                id: "text-39",
+                id: "text-30",
                 type: "text",
                 body: "are complex"
               },
               {
-                id: "text-40",
+                id: "text-31",
                 type: "text",
                 body: "vectors in "
               },
               {
-                id: "inlineMath-8",
+                id: "inlineMath-6",
                 type: "inlineMath",
                 body: "V",
                 html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.2222em;\">V</span></span></span></span>"
               },
               {
-                id: "text-41",
+                id: "text-32",
                 type: "text",
                 body: ", and "
               },
               {
-                id: "inlineMath-9",
+                id: "inlineMath-7",
                 type: "inlineMath",
                 body: "\\overline{y}",
                 html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.825em;vertical-align:-0.1944em;\"></span><span class=\"mord overline\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6306em;\"><span style=\"top:-3em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">y</span></span></span><span style=\"top:-3.5506em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"overline-line\" style=\"border-bottom-width:0.04em;\"></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1944em;\"><span></span></span></span></span></span></span></span></span>"
               },
               {
-                id: "text-42",
+                id: "text-33",
                 type: "text",
                 body: "denotes the complex conjugate of "
               },
               {
-                id: "inlineMath-10",
+                id: "inlineMath-8",
                 type: "inlineMath",
                 body: "y",
                 html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">y</span></span></span></span>"
               },
               {
-                id: "text-43",
+                id: "text-34",
                 type: "text",
                 body: ". The scalar product"
               },
               {
-                id: "text-44",
+                id: "text-35",
                 type: "text",
                 body: "is positive-defined, which means that it satisfies the following properties:"
               }
@@ -516,33 +459,33 @@ export const latexDocument = {
             type: "layoutInlineGroup",
             children: [
               {
-                id: "text-45",
+                id: "text-36",
                 type: "text",
                 body: "Although the vector space is defined over "
               },
               {
-                id: "inlineMath-11",
+                id: "inlineMath-9",
                 type: "inlineMath",
                 body: "\\mathbb{C}",
                 html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">C</span></span></span></span>"
               },
               {
-                id: "text-46",
+                id: "text-37",
                 type: "text",
                 body: ", we shall consider only matrices with real coefficients."
               },
               {
-                id: "text-47",
+                id: "text-38",
                 type: "text",
                 body: "Consequently, all transformations discussed here are orthogonal rather than unitary."
               },
               {
-                id: "text-48",
+                id: "text-39",
                 type: "text",
                 body: "The complex scalar product is introduced only because it provides the natural setting"
               },
               {
-                id: "text-49",
+                id: "text-40",
                 type: "text",
                 body: "for discussing the eigenvalues and eigenvectors of orthogonal matrices."
               }
@@ -577,39 +520,39 @@ export const latexDocument = {
                               type: "textbf"
                             },
                             {
-                              id: "text-50",
+                              id: "text-41",
                               type: "text",
                               body: ": Orthogonal transformations are linear transformations that"
                             },
                             {
-                              id: "text-51",
+                              id: "text-42",
                               type: "text",
                               body: "preserve the scalar product, and play a crucial role in the theory of rigid body"
                             },
                             {
-                              id: "text-52",
+                              id: "text-43",
                               type: "text",
                               body: "motion. A linear transformation "
                             },
                             {
-                              id: "inlineMath-12",
+                              id: "inlineMath-10",
                               type: "inlineMath",
                               body: "\\vb{A}",
                               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">A</span></span></span></span></span>"
                             },
                             {
-                              id: "text-53",
+                              id: "text-44",
                               type: "text",
                               body: "of "
                             },
                             {
-                              id: "inlineMath-13",
+                              id: "inlineMath-11",
                               type: "inlineMath",
                               body: "V",
                               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.2222em;\">V</span></span></span></span>"
                             },
                             {
-                              id: "text-54",
+                              id: "text-45",
                               type: "text",
                               body: "onto itself,"
                             }
@@ -640,7 +583,7 @@ export const latexDocument = {
                           type: "layoutInlineGroup",
                           children: [
                             {
-                              id: "text-55",
+                              id: "text-46",
                               type: "text",
                               body: "is orthogonal if it preserves the scalar product between any two vectors.,"
                             }
@@ -671,18 +614,18 @@ export const latexDocument = {
                           type: "layoutInlineGroup",
                           children: [
                             {
-                              id: "text-56",
+                              id: "text-47",
                               type: "text",
                               body: "for all "
                             },
                             {
-                              id: "inlineMath-14",
+                              id: "inlineMath-12",
                               type: "inlineMath",
                               body: "\\vb{x}, \\vb{y} \\in V",
                               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7335em;vertical-align:-0.1944em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">x</span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">y</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.2222em;\">V</span></span></span></span>"
                             },
                             {
-                              id: "text-57",
+                              id: "text-48",
                               type: "text",
                               body: "."
                             }
@@ -708,12 +651,12 @@ export const latexDocument = {
                               type: "textbf"
                             },
                             {
-                              id: "text-58",
+                              id: "text-49",
                               type: "text",
                               body: "From the properties of matrices and scalar products,"
                             },
                             {
-                              id: "text-59",
+                              id: "text-50",
                               type: "text",
                               body: "we can write the above equation as"
                             }
@@ -744,7 +687,7 @@ export const latexDocument = {
                           type: "layoutInlineGroup",
                           children: [
                             {
-                              id: "text-60",
+                              id: "text-51",
                               type: "text",
                               body: "which results in,"
                             }
@@ -776,50 +719,50 @@ export const latexDocument = {
                           type: "layoutInlineGroup",
                           children: [
                             {
-                              id: "text-61",
+                              id: "text-52",
                               type: "text",
                               body: "where "
                             },
                             {
-                              id: "inlineMath-15",
+                              id: "inlineMath-13",
                               type: "inlineMath",
                               body: "\\vb{I}",
                               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">I</span></span></span></span></span>"
                             },
                             {
-                              id: "text-62",
+                              id: "text-53",
                               type: "text",
                               body: "is the identity matrix. The inverse of an orthogonal transformation is"
                             },
                             {
-                              id: "text-63",
+                              id: "text-54",
                               type: "text",
                               body: "the transpose of the matrix itself. As a note: if the matrix "
                             },
                             {
-                              id: "inlineMath-16",
+                              id: "inlineMath-14",
                               type: "inlineMath",
                               body: "\\vb{A}",
                               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">A</span></span></span></span></span>"
                             },
                             {
-                              id: "text-64",
+                              id: "text-55",
                               type: "text",
                               body: "had complex"
                             },
                             {
-                              id: "text-65",
+                              id: "text-56",
                               type: "text",
                               body: "elements, then the transpose would be replaced by the conjugate transpose"
                             },
                             {
-                              id: "inlineMath-17",
+                              id: "inlineMath-15",
                               type: "inlineMath",
                               body: "\\bar{A}^\\top",
                               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8491em;\"></span><span class=\"mord\"><span class=\"mord accent\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8201em;\"><span style=\"top:-3em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord mathnormal\">A</span></span><span style=\"top:-3.2523em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"accent-body\" style=\"left:-0.1111em;\"><span class=\"mord\">ˉ</span></span></span></span></span></span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8491em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">⊤</span></span></span></span></span></span></span></span></span></span></span>"
                             },
                             {
-                              id: "text-66",
+                              id: "text-57",
                               type: "text",
                               body: ":"
                             }
@@ -861,45 +804,45 @@ export const latexDocument = {
                               type: "textbf"
                             },
                             {
-                              id: "text-67",
+                              id: "text-58",
                               type: "text",
                               body: ": Considering the row and column vectors"
                             },
                             {
-                              id: "inlineMath-18",
+                              id: "inlineMath-16",
                               type: "inlineMath",
                               body: "\\vb{v}_i",
                               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5944em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">v</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3117em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
                             },
                             {
-                              id: "text-68",
+                              id: "text-59",
                               type: "text",
                               body: "and "
                             },
                             {
-                              id: "inlineMath-19",
+                              id: "inlineMath-17",
                               type: "inlineMath",
                               body: "\\vb{a}_i",
                               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5944em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">a</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3117em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
                             },
                             {
-                              id: "text-69",
+                              id: "text-60",
                               type: "text",
                               body: "forming the matrix "
                             },
                             {
-                              id: "inlineMath-20",
+                              id: "inlineMath-18",
                               type: "inlineMath",
                               body: "\\vb{A}",
                               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">A</span></span></span></span></span>"
                             },
                             {
-                              id: "text-70",
+                              id: "text-61",
                               type: "text",
                               body: ", we can write the above"
                             },
                             {
-                              id: "text-71",
+                              id: "text-62",
                               type: "text",
                               body: "equation as"
                             }
@@ -930,33 +873,33 @@ export const latexDocument = {
                           type: "layoutInlineGroup",
                           children: [
                             {
-                              id: "text-72",
+                              id: "text-63",
                               type: "text",
                               body: "which is equivalent to requiring that the rows and the columns vectors are a set of"
                             },
                             {
-                              id: "text-73",
+                              id: "text-64",
                               type: "text",
                               body: "orthonormal vectors. The vectors "
                             },
                             {
-                              id: "inlineMath-21",
+                              id: "inlineMath-19",
                               type: "inlineMath",
                               body: "\\vb{v}_i",
                               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5944em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">v</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3117em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
                             },
                             {
-                              id: "text-74",
+                              id: "text-65",
                               type: "text",
                               body: "represent the components of the unit"
                             },
                             {
-                              id: "text-75",
+                              id: "text-66",
                               type: "text",
                               body: "vectors that define the direction of the coordinate axes in the rotated system,"
                             },
                             {
-                              id: "text-76",
+                              id: "text-67",
                               type: "text",
                               body: "relative to the unit vectors of the reference system."
                             }
@@ -982,34 +925,34 @@ export const latexDocument = {
                               type: "textbf"
                             },
                             {
-                              id: "text-77",
+                              id: "text-68",
                               type: "text",
                               body: ": The eigenvector "
                             },
                             {
-                              id: "inlineMath-22",
+                              id: "inlineMath-20",
                               type: "inlineMath",
                               body: "\\vb{v}",
                               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">v</span></span></span></span></span>"
                             },
                             {
-                              id: "text-78",
+                              id: "text-69",
                               type: "text",
                               body: "corresponding to the"
                             },
                             {
-                              id: "text-79",
+                              id: "text-70",
                               type: "text",
                               body: "eigenvalue "
                             },
                             {
-                              id: "inlineMath-23",
+                              id: "inlineMath-21",
                               type: "inlineMath",
                               body: "\\lambda",
                               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">λ</span></span></span></span>"
                             },
                             {
-                              id: "text-80",
+                              id: "text-71",
                               type: "text",
                               body: "will preserve its length under the orthogonal transformation:"
                             }
@@ -1040,72 +983,72 @@ export const latexDocument = {
                           type: "layoutInlineGroup",
                           children: [
                             {
-                              id: "text-81",
+                              id: "text-72",
                               type: "text",
                               body: "which implies that the eigenvalues are complex numbers on the complex unit circle of"
                             },
                             {
-                              id: "text-82",
+                              id: "text-73",
                               type: "text",
                               body: "the form "
                             },
                             {
-                              id: "inlineMath-24",
+                              id: "inlineMath-22",
                               type: "inlineMath",
                               body: "\\lambda = e^{i\\theta}",
                               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">λ</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8491em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">e</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8491em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">i</span><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0278em;\">θ</span></span></span></span></span></span></span></span></span></span></span></span>"
                             },
                             {
-                              id: "text-83",
+                              id: "text-74",
                               type: "text",
                               body: ", and they always come in pairs, as"
                             },
                             {
-                              id: "inlineMath-25",
+                              id: "inlineMath-23",
                               type: "inlineMath",
                               body: "\\lambda = e^{-i\\theta}",
                               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">λ</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8491em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">e</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8491em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">−</span><span class=\"mord mathnormal mtight\">i</span><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0278em;\">θ</span></span></span></span></span></span></span></span></span></span></span></span>"
                             },
                             {
-                              id: "text-84",
+                              id: "text-75",
                               type: "text",
                               body: "is an eigenvalue as well. If "
                             },
                             {
-                              id: "inlineMath-26",
+                              id: "inlineMath-24",
                               type: "inlineMath",
                               body: "n",
                               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>"
                             },
                             {
-                              id: "text-85",
+                              id: "text-76",
                               type: "text",
                               body: "is even, then one eigenvalue"
                             },
                             {
-                              id: "text-86",
+                              id: "text-77",
                               type: "text",
                               body: "is either "
                             },
                             {
-                              id: "inlineMath-27",
+                              id: "inlineMath-25",
                               type: "inlineMath",
                               body: "+1",
                               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"></span><span class=\"mord\">+</span><span class=\"mord\">1</span></span></span></span>"
                             },
                             {
-                              id: "text-87",
+                              id: "text-78",
                               type: "text",
                               body: "or "
                             },
                             {
-                              id: "inlineMath-28",
+                              id: "inlineMath-26",
                               type: "inlineMath",
                               body: "-1",
                               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"></span><span class=\"mord\">−</span><span class=\"mord\">1</span></span></span></span>"
                             },
                             {
-                              id: "text-88",
+                              id: "text-79",
                               type: "text",
                               body: "."
                             }
@@ -1131,56 +1074,56 @@ export const latexDocument = {
                               type: "textbf"
                             },
                             {
-                              id: "text-89",
+                              id: "text-80",
                               type: "text",
                               body: ": the eigenvectors "
                             },
                             {
-                              id: "inlineMath-29",
+                              id: "inlineMath-27",
                               type: "inlineMath",
                               body: "\\vb{v}_1",
                               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5944em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">v</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
                             },
                             {
-                              id: "text-90",
+                              id: "text-81",
+                              type: "text",
+                              body: "and "
+                            },
+                            {
+                              id: "inlineMath-28",
+                              type: "inlineMath",
+                              body: "\\vb{v}_2",
+                              html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5944em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">v</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
+                            },
+                            {
+                              id: "text-82",
+                              type: "text",
+                              body: "corresponding to different eigenvalues "
+                            },
+                            {
+                              id: "inlineMath-29",
+                              type: "inlineMath",
+                              body: "\\lambda_1",
+                              html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8444em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">λ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
+                            },
+                            {
+                              id: "text-83",
                               type: "text",
                               body: "and "
                             },
                             {
                               id: "inlineMath-30",
                               type: "inlineMath",
-                              body: "\\vb{v}_2",
-                              html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5944em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">v</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
-                            },
-                            {
-                              id: "text-91",
-                              type: "text",
-                              body: "corresponding to different eigenvalues "
-                            },
-                            {
-                              id: "inlineMath-31",
-                              type: "inlineMath",
-                              body: "\\lambda_1",
-                              html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8444em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">λ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
-                            },
-                            {
-                              id: "text-92",
-                              type: "text",
-                              body: "and "
-                            },
-                            {
-                              id: "inlineMath-32",
-                              type: "inlineMath",
                               body: "\\lambda_2",
                               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8444em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">λ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
                             },
                             {
-                              id: "text-93",
+                              id: "text-84",
                               type: "text",
                               body: "are orthogonal to"
                             },
                             {
-                              id: "text-94",
+                              id: "text-85",
                               type: "text",
                               body: "each other. The proof of this property is straightforward, as we can write"
                             }
@@ -1211,23 +1154,23 @@ export const latexDocument = {
                           type: "layoutInlineGroup",
                           children: [
                             {
-                              id: "text-95",
+                              id: "text-86",
                               type: "text",
                               body: "which can only be true if "
                             },
                             {
-                              id: "inlineMath-33",
+                              id: "inlineMath-31",
                               type: "inlineMath",
                               body: "\\ip{\\vb{v}_1}{\\vb{v}_2} = 0",
                               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">⟨</span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">v</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">∣</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">v</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">⟩</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0</span></span></span></span>"
                             },
                             {
-                              id: "text-96",
+                              id: "text-87",
                               type: "text",
                               body: ", as the eigenvalues are"
                             },
                             {
-                              id: "text-97",
+                              id: "text-88",
                               type: "text",
                               body: "complex numbers on the unit circle different from zero."
                             }
@@ -1253,23 +1196,23 @@ export const latexDocument = {
                               type: "textbf"
                             },
                             {
-                              id: "text-98",
+                              id: "text-89",
                               type: "text",
                               body: "From "
                             },
                             {
-                              id: "inlineMath-34",
+                              id: "inlineMath-32",
                               type: "inlineMath",
                               body: "\\det(\\vb{A}) = \\det(\\vb{A}^\\top)",
                               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mop\">det</span><span class=\"mopen\">(</span><span class=\"mord text\"><span class=\"mord textbf\">A</span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.1751em;vertical-align:-0.25em;\"></span><span class=\"mop\">det</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">A</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.9251em;\"><span style=\"top:-3.139em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">⊤</span></span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>"
                             },
                             {
-                              id: "text-99",
+                              id: "text-90",
                               type: "text",
                               body: "it follows"
                             },
                             {
-                              id: "text-100",
+                              id: "text-91",
                               type: "text",
                               body: "that,"
                             }
@@ -1300,39 +1243,39 @@ export const latexDocument = {
                           type: "layoutInlineGroup",
                           children: [
                             {
-                              id: "text-101",
+                              id: "text-92",
                               type: "text",
                               body: "which implies that the determinant of an orthogonal matrix is either "
                             },
                             {
-                              id: "inlineMath-35",
+                              id: "inlineMath-33",
                               type: "inlineMath",
                               body: "+1",
                               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"></span><span class=\"mord\">+</span><span class=\"mord\">1</span></span></span></span>"
                             },
                             {
-                              id: "text-102",
+                              id: "text-93",
                               type: "text",
                               body: "or "
                             },
                             {
-                              id: "inlineMath-36",
+                              id: "inlineMath-34",
                               type: "inlineMath",
                               body: "-1",
                               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"></span><span class=\"mord\">−</span><span class=\"mord\">1</span></span></span></span>"
                             },
                             {
-                              id: "text-103",
+                              id: "text-94",
                               type: "text",
                               body: "."
                             },
                             {
-                              id: "text-104",
+                              id: "text-95",
                               type: "text",
                               body: "As we will see in the next section, the former corresponds to proper rotations, while"
                             },
                             {
-                              id: "text-105",
+                              id: "text-96",
                               type: "text",
                               body: "the latter corresponds to improper rotations or reflections."
                             }
@@ -1358,7 +1301,7 @@ export const latexDocument = {
                               type: "textbf"
                             },
                             {
-                              id: "text-106",
+                              id: "text-97",
                               type: "text",
                               body: "The set of orthogonal matrices forms a group under matrix multiplication:"
                             }
@@ -1388,29 +1331,29 @@ export const latexDocument = {
                                         type: "layoutInlineGroup",
                                         children: [
                                           {
-                                            id: "text-107",
+                                            id: "text-98",
                                             type: "text",
                                             body: "Multiplying any two orthogonal matrices "
                                           },
                                           {
-                                            id: "inlineMath-37",
+                                            id: "inlineMath-35",
                                             type: "inlineMath",
                                             body: "\\vb{A}",
                                             html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">A</span></span></span></span></span>"
                                           },
                                           {
-                                            id: "text-108",
+                                            id: "text-99",
                                             type: "text",
                                             body: "and "
                                           },
                                           {
-                                            id: "inlineMath-38",
+                                            id: "inlineMath-36",
                                             type: "inlineMath",
                                             body: "\\vb{B}",
                                             html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">B</span></span></span></span></span>"
                                           },
                                           {
-                                            id: "text-109",
+                                            id: "text-100",
                                             type: "text",
                                             body: "gives again an orthogonal matrix,"
                                           }
@@ -1441,18 +1384,18 @@ export const latexDocument = {
                                         type: "layoutInlineGroup",
                                         children: [
                                           {
-                                            id: "text-110",
+                                            id: "text-101",
                                             type: "text",
                                             body: "as "
                                           },
                                           {
-                                            id: "inlineMath-39",
+                                            id: "inlineMath-37",
                                             type: "inlineMath",
                                             body: "(\\vb{A}\\vb{B})^T=\\vb{B}^T\\vb{A}^T",
                                             html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0913em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord text\"><span class=\"mord textbf\">A</span></span><span class=\"mord text\"><span class=\"mord textbf\">B</span></span><span class=\"mclose\"><span class=\"mclose\">)</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.1389em;\">T</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.9173em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">B</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.9173em;\"><span style=\"top:-3.139em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.1389em;\">T</span></span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">A</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.9173em;\"><span style=\"top:-3.139em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.1389em;\">T</span></span></span></span></span></span></span></span></span></span></span>"
                                           },
                                           {
-                                            id: "text-111",
+                                            id: "text-102",
                                             type: "text",
                                             body: "."
                                           }
@@ -1473,7 +1416,7 @@ export const latexDocument = {
                                         type: "layoutInlineGroup",
                                         children: [
                                           {
-                                            id: "text-112",
+                                            id: "text-103",
                                             type: "text",
                                             body: "Every orthogonal matrix has an inverse, which is the transposed matrix."
                                           }
@@ -1494,18 +1437,18 @@ export const latexDocument = {
                                         type: "layoutInlineGroup",
                                         children: [
                                           {
-                                            id: "text-113",
+                                            id: "text-104",
                                             type: "text",
                                             body: "The identity element is the identity matrix "
                                           },
                                           {
-                                            id: "inlineMath-40",
+                                            id: "inlineMath-38",
                                             type: "inlineMath",
                                             body: "\\vb I",
                                             html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">I</span></span></span></span></span>"
                                           },
                                           {
-                                            id: "text-114",
+                                            id: "text-105",
                                             type: "text",
                                             body: "."
                                           }
@@ -1526,7 +1469,7 @@ export const latexDocument = {
                                         type: "layoutInlineGroup",
                                         children: [
                                           {
-                                            id: "text-115",
+                                            id: "text-106",
                                             type: "text",
                                             body: "The matrix multiplication is associative."
                                           }
@@ -1548,23 +1491,23 @@ export const latexDocument = {
                           type: "layoutInlineGroup",
                           children: [
                             {
-                              id: "text-116",
+                              id: "text-107",
                               type: "text",
                               body: "The subset of orthogonal matrices with determinant "
                             },
                             {
-                              id: "inlineMath-41",
+                              id: "inlineMath-39",
                               type: "inlineMath",
                               body: "+1",
                               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"></span><span class=\"mord\">+</span><span class=\"mord\">1</span></span></span></span>"
                             },
                             {
-                              id: "text-117",
+                              id: "text-108",
                               type: "text",
                               body: "forms a subgroup of the orthogonal"
                             },
                             {
-                              id: "text-118",
+                              id: "text-109",
                               type: "text",
                               body: "group, called the "
                             },
@@ -1574,23 +1517,23 @@ export const latexDocument = {
                               type: "textbf"
                             },
                             {
-                              id: "text-119",
+                              id: "text-110",
                               type: "text",
                               body: "and denoted by "
                             },
                             {
-                              id: "inlineMath-42",
+                              id: "inlineMath-40",
                               type: "inlineMath",
                               body: "SO(n)",
                               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0576em;\">S</span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">O</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">n</span><span class=\"mclose\">)</span></span></span></span>"
                             },
                             {
-                              id: "text-120",
+                              id: "text-111",
                               type: "text",
                               body: ". This group"
                             },
                             {
-                              id: "text-121",
+                              id: "text-112",
                               type: "text",
                               body: "describes proper rotations."
                             }
@@ -1616,12 +1559,12 @@ export const latexDocument = {
                               type: "textbf"
                             },
                             {
-                              id: "text-122",
+                              id: "text-113",
                               type: "text",
                               body: "It is important to note that"
                             },
                             {
-                              id: "text-123",
+                              id: "text-114",
                               type: "text",
                               body: "an orthogonal transformation can be seen in either of two ways:"
                             }
@@ -1651,7 +1594,7 @@ export const latexDocument = {
                                         type: "layoutInlineGroup",
                                         children: [
                                           {
-                                            id: "text-124",
+                                            id: "text-115",
                                             type: "text",
                                             body: "a "
                                           },
@@ -1661,7 +1604,7 @@ export const latexDocument = {
                                             type: "textbf"
                                           },
                                           {
-                                            id: "text-125",
+                                            id: "text-116",
                                             type: "text",
                                             body: "transformation, where the components of the "
                                           },
@@ -1671,7 +1614,7 @@ export const latexDocument = {
                                             type: "textbf"
                                           },
                                           {
-                                            id: "text-126",
+                                            id: "text-117",
                                             type: "text",
                                             body: "vector are expressed in different bases;"
                                           }
@@ -1692,7 +1635,7 @@ export const latexDocument = {
                                         type: "layoutInlineGroup",
                                         children: [
                                           {
-                                            id: "text-127",
+                                            id: "text-118",
                                             type: "text",
                                             body: "an "
                                           },
@@ -1702,12 +1645,12 @@ export const latexDocument = {
                                             type: "textbf"
                                           },
                                           {
-                                            id: "text-128",
+                                            id: "text-119",
                                             type: "text",
                                             body: "transformation, where a vector is actively transformed into"
                                           },
                                           {
-                                            id: "text-129",
+                                            id: "text-120",
                                             type: "text",
                                             body: "a "
                                           },
@@ -1717,7 +1660,7 @@ export const latexDocument = {
                                             type: "textbf"
                                           },
                                           {
-                                            id: "text-130",
+                                            id: "text-121",
                                             type: "text",
                                             body: "in the same reference system."
                                           }
@@ -1739,12 +1682,12 @@ export const latexDocument = {
                           type: "layoutInlineGroup",
                           children: [
                             {
-                              id: "text-131",
+                              id: "text-122",
                               type: "text",
                               body: "We will observe that in three dimensions, these two interpretations result in rotations"
                             },
                             {
-                              id: "text-132",
+                              id: "text-123",
                               type: "text",
                               body: "that correspond to inverse rotations."
                             }
@@ -1776,7 +1719,7 @@ export const latexDocument = {
         type: "layoutInlineGroup",
         children: [
           {
-            id: "text-133",
+            id: "text-124",
             type: "text",
             body: "Rotations in Three Dimensions"
           }
@@ -1791,133 +1734,133 @@ export const latexDocument = {
             type: "layoutInlineGroup",
             children: [
               {
-                id: "text-134",
+                id: "text-125",
                 type: "text",
                 body: "An orthogonal transformation in three dimensions always possesses one real eigenvalue, equal to either +1 or −1."
               },
               {
-                id: "text-135",
+                id: "text-126",
                 type: "text",
                 body: "The remaining two eigenvalues are either the complex-conjugate pair "
               },
               {
-                id: "inlineMath-43",
+                id: "inlineMath-41",
                 type: "inlineMath",
                 body: "\\lambda = e^{i\\theta}",
                 html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">λ</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8491em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">e</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8491em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">i</span><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0278em;\">θ</span></span></span></span></span></span></span></span></span></span></span></span>"
               },
               {
-                id: "text-136",
+                id: "text-127",
                 type: "text",
                 body: "and "
               },
               {
-                id: "inlineMath-44",
+                id: "inlineMath-42",
                 type: "inlineMath",
                 body: "\\lambda = e^{-i\\theta}",
                 html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">λ</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8491em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">e</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8491em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">−</span><span class=\"mord mathnormal mtight\">i</span><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0278em;\">θ</span></span></span></span></span></span></span></span></span></span></span></span>"
               },
               {
-                id: "text-137",
+                id: "text-128",
                 type: "text",
                 body: ","
               },
               {
-                id: "text-138",
+                id: "text-129",
                 type: "text",
                 body: "or another pair of "
               },
               {
-                id: "inlineMath-45",
+                id: "inlineMath-43",
                 type: "inlineMath",
                 body: "\\pm 1",
                 html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"></span><span class=\"mord\">±</span><span class=\"mord\">1</span></span></span></span>"
               },
               {
-                id: "text-139",
+                id: "text-130",
                 type: "text",
                 body: "."
               },
               {
-                id: "text-140",
+                id: "text-131",
                 type: "text",
                 body: "The eigenvectors corresponding to the eigenvalue "
               },
               {
-                id: "inlineMath-46",
+                id: "inlineMath-44",
                 type: "inlineMath",
                 body: "+1",
                 html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"></span><span class=\"mord\">+</span><span class=\"mord\">1</span></span></span></span>"
               },
               {
-                id: "text-141",
+                id: "text-132",
                 type: "text",
                 body: "are the vectors that remain unchanged"
               },
               {
-                id: "text-142",
+                id: "text-133",
                 type: "text",
                 body: "under the transformation, forming the rotation axis. Conversely, the eigenvectors"
               },
               {
-                id: "text-143",
+                id: "text-134",
                 type: "text",
                 body: "corresponding to the eigenvalue "
               },
               {
-                id: "inlineMath-47",
+                id: "inlineMath-45",
                 type: "inlineMath",
                 body: "-1",
                 html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"></span><span class=\"mord\">−</span><span class=\"mord\">1</span></span></span></span>"
               },
               {
-                id: "text-144",
+                id: "text-135",
                 type: "text",
                 body: "are the vectors that are reflected under the"
               },
               {
-                id: "text-145",
+                id: "text-136",
                 type: "text",
                 body: "transformation."
               },
               {
-                id: "text-146",
+                id: "text-137",
                 type: "text",
                 body: "In physics, we assume that an orthogonal transformation varies continuously with the"
               },
               {
-                id: "text-147",
+                id: "text-138",
                 type: "text",
                 body: "parameter "
               },
               {
-                id: "inlineMath-48",
+                id: "inlineMath-46",
                 type: "inlineMath",
                 body: "\\theta",
                 html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">θ</span></span></span></span>"
               },
               {
-                id: "text-148",
+                id: "text-139",
                 type: "text",
                 body: "the rotation angle. This angle typically depends on time and describes the"
               },
               {
-                id: "text-149",
+                id: "text-140",
                 type: "text",
                 body: "evolution of the rotated reference system relative to the fixed reference frame. When the rotation angle"
               },
               {
-                id: "text-150",
+                id: "text-141",
                 type: "text",
                 body: "is zero, the reference systems coincide, and the transformation is the identity. Since the eigenvalue associated"
               },
               {
-                id: "text-151",
+                id: "text-142",
                 type: "text",
                 body: "with the rotation axis cannot change continuously from +1 to −1, we restrict our attention"
               },
               {
-                id: "text-152",
+                id: "text-143",
                 type: "text",
                 body: "to the connected component of the identity, namely the proper rotations."
               }
@@ -1934,7 +1877,7 @@ export const latexDocument = {
             type: "layoutInlineGroup",
             children: [
               {
-                id: "text-153",
+                id: "text-144",
                 type: "text",
                 body: "Rotation Around the Principal Axes"
               }
@@ -1949,39 +1892,39 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-154",
+                    id: "text-145",
                     type: "text",
                     body: "Before deriving the general form of a rotation around any axis, we will consider the rotation"
                   },
                   {
-                    id: "text-155",
+                    id: "text-146",
                     type: "text",
                     body: "around the "
                   },
                   {
-                    id: "inlineMath-49",
+                    id: "inlineMath-47",
                     type: "inlineMath",
                     body: "z",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.044em;\">z</span></span></span></span>"
                   },
                   {
-                    id: "text-156",
+                    id: "text-147",
                     type: "text",
                     body: "-axis. In Fig~1 such a rotation is illustrated."
                   },
                   {
-                    id: "text-157",
+                    id: "text-148",
                     type: "text",
                     body: "The rotation matrix "
                   },
                   {
-                    id: "inlineMath-50",
+                    id: "inlineMath-48",
                     type: "inlineMath",
                     body: "\\vb{A}_z(\\theta)",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">A</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.044em;\">z</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">θ</span><span class=\"mclose\">)</span></span></span></span>"
                   },
                   {
-                    id: "text-158",
+                    id: "text-149",
                     type: "text",
                     body: "in this case is given by,"
                   }
@@ -2012,41 +1955,73 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-159",
+                    id: "text-150",
                     type: "text",
                     body: "where "
                   },
                   {
-                    id: "inlineMath-51",
+                    id: "inlineMath-49",
                     type: "inlineMath",
                     body: "\\theta",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">θ</span></span></span></span>"
                   },
                   {
-                    id: "text-160",
+                    id: "text-151",
                     type: "text",
                     body: "is the rotation angle. The derivation of the matrix "
                   },
                   {
-                    id: "inlineMath-52",
+                    id: "inlineMath-50",
                     type: "inlineMath",
                     body: "\\vb{A}_z(\\theta)",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">A</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.044em;\">z</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">θ</span><span class=\"mclose\">)</span></span></span></span>"
                   },
                   {
-                    id: "text-161",
+                    id: "text-152",
                     type: "text",
                     body: "is"
                   },
                   {
-                    id: "text-162",
+                    id: "text-153",
                     type: "text",
                     body: "straightforward, as the row vectors are obviously the components of the unit vectors of the"
                   },
                   {
-                    id: "text-163",
+                    id: "text-154",
                     type: "text",
                     body: "rotated system in the reference system. The matrix "
+                  },
+                  {
+                    id: "inlineMath-51",
+                    type: "inlineMath",
+                    body: "\\vb{A}_z(\\theta)",
+                    html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">A</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.044em;\">z</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">θ</span><span class=\"mclose\">)</span></span></span></span>"
+                  },
+                  {
+                    id: "text-155",
+                    type: "text",
+                    body: "is orthogonal, as it"
+                  },
+                  {
+                    id: "text-156",
+                    type: "text",
+                    body: "satisfies the properties of an orthogonal matrix, and it is easy to verify that the"
+                  },
+                  {
+                    id: "text-157",
+                    type: "text",
+                    body: "determinant is "
+                  },
+                  {
+                    id: "inlineMath-52",
+                    type: "inlineMath",
+                    body: "+1",
+                    html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"></span><span class=\"mord\">+</span><span class=\"mord\">1</span></span></span></span>"
+                  },
+                  {
+                    id: "text-158",
+                    type: "text",
+                    body: ". It is important to emphasize that the matrix "
                   },
                   {
                     id: "inlineMath-53",
@@ -2055,49 +2030,17 @@ export const latexDocument = {
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">A</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.044em;\">z</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">θ</span><span class=\"mclose\">)</span></span></span></span>"
                   },
                   {
-                    id: "text-164",
-                    type: "text",
-                    body: "is orthogonal, as it"
-                  },
-                  {
-                    id: "text-165",
-                    type: "text",
-                    body: "satisfies the properties of an orthogonal matrix, and it is easy to verify that the"
-                  },
-                  {
-                    id: "text-166",
-                    type: "text",
-                    body: "determinant is "
-                  },
-                  {
-                    id: "inlineMath-54",
-                    type: "inlineMath",
-                    body: "+1",
-                    html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"></span><span class=\"mord\">+</span><span class=\"mord\">1</span></span></span></span>"
-                  },
-                  {
-                    id: "text-167",
-                    type: "text",
-                    body: ". It is important to emphasize that the matrix "
-                  },
-                  {
-                    id: "inlineMath-55",
-                    type: "inlineMath",
-                    body: "\\vb{A}_z(\\theta)",
-                    html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">A</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.044em;\">z</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">θ</span><span class=\"mclose\">)</span></span></span></span>"
-                  },
-                  {
-                    id: "text-168",
+                    id: "text-159",
                     type: "text",
                     body: "represents a passive transformation, where the components of the same vector are expressed"
                   },
                   {
-                    id: "text-169",
+                    id: "text-160",
                     type: "text",
                     body: "in different bases, and the rotated reference system is turned by an angle "
                   },
                   {
-                    id: "inlineMath-56",
+                    id: "inlineMath-54",
                     type: "inlineMath",
                     body: "\\theta",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">θ</span></span></span></span>"
@@ -2108,7 +2051,54 @@ export const latexDocument = {
                     type: "textbf"
                   },
                   {
-                    id: "text-170",
+                    id: "text-161",
+                    type: "text",
+                    body: "around the "
+                  },
+                  {
+                    id: "inlineMath-55",
+                    type: "inlineMath",
+                    body: "z",
+                    html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.044em;\">z</span></span></span></span>"
+                  },
+                  {
+                    id: "text-162",
+                    type: "text",
+                    body: "-axis."
+                  },
+                  {
+                    id: "text-163",
+                    type: "text",
+                    body: "When "
+                  },
+                  {
+                    id: "inlineMath-56",
+                    type: "inlineMath",
+                    body: "\\vb{A}_z(\\theta)",
+                    html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">A</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.044em;\">z</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">θ</span><span class=\"mclose\">)</span></span></span></span>"
+                  },
+                  {
+                    id: "text-164",
+                    type: "text",
+                    body: "is interpreted in an "
+                  },
+                  {
+                    body: "active",
+                    id: "textbf-20",
+                    type: "textbf"
+                  },
+                  {
+                    id: "text-165",
+                    type: "text",
+                    body: "case, the rotation will be"
+                  },
+                  {
+                    body: "clockwise",
+                    id: "textbf-21",
+                    type: "textbf"
+                  },
+                  {
+                    id: "text-166",
                     type: "text",
                     body: "around the "
                   },
@@ -2119,14 +2109,14 @@ export const latexDocument = {
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.044em;\">z</span></span></span></span>"
                   },
                   {
-                    id: "text-171",
+                    id: "text-167",
                     type: "text",
-                    body: "-axis."
+                    body: "-axis. This can be readily verified by considering the"
                   },
                   {
-                    id: "text-172",
+                    id: "text-168",
                     type: "text",
-                    body: "When "
+                    body: "effect of applying "
                   },
                   {
                     id: "inlineMath-58",
@@ -2135,65 +2125,18 @@ export const latexDocument = {
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">A</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.044em;\">z</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">θ</span><span class=\"mclose\">)</span></span></span></span>"
                   },
                   {
-                    id: "text-173",
-                    type: "text",
-                    body: "is interpreted in an "
-                  },
-                  {
-                    body: "active",
-                    id: "textbf-20",
-                    type: "textbf"
-                  },
-                  {
-                    id: "text-174",
-                    type: "text",
-                    body: "case, the rotation will be"
-                  },
-                  {
-                    body: "clockwise",
-                    id: "textbf-21",
-                    type: "textbf"
-                  },
-                  {
-                    id: "text-175",
-                    type: "text",
-                    body: "around the "
-                  },
-                  {
-                    id: "inlineMath-59",
-                    type: "inlineMath",
-                    body: "z",
-                    html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.044em;\">z</span></span></span></span>"
-                  },
-                  {
-                    id: "text-176",
-                    type: "text",
-                    body: "-axis. This can be readily verified by considering the"
-                  },
-                  {
-                    id: "text-177",
-                    type: "text",
-                    body: "effect of applying "
-                  },
-                  {
-                    id: "inlineMath-60",
-                    type: "inlineMath",
-                    body: "\\vb{A}_z(\\theta)",
-                    html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">A</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.044em;\">z</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">θ</span><span class=\"mclose\">)</span></span></span></span>"
-                  },
-                  {
-                    id: "text-178",
+                    id: "text-169",
                     type: "text",
                     body: "to a vector"
                   },
                   {
-                    id: "inlineMath-61",
+                    id: "inlineMath-59",
                     type: "inlineMath",
                     body: "\\vb{v} = (r\\cos\\phi,\\, r\\sin\\phi,\\, z)",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">v</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">r</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mop\">cos</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">ϕ</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">r</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mop\">sin</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">ϕ</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.044em;\">z</span><span class=\"mclose\">)</span></span></span></span>"
                   },
                   {
-                    id: "text-179",
+                    id: "text-170",
                     type: "text",
                     body: ","
                   }
@@ -2224,66 +2167,66 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-180",
+                    id: "text-171",
                     type: "text",
                     body: "which corresponds to decreasing the polar angle "
                   },
                   {
-                    id: "inlineMath-62",
+                    id: "inlineMath-60",
                     type: "inlineMath",
                     body: "\\phi",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">ϕ</span></span></span></span>"
                   },
                   {
-                    id: "text-181",
+                    id: "text-172",
                     type: "text",
                     body: "by the angle "
                   },
                   {
-                    id: "inlineMath-63",
+                    id: "inlineMath-61",
                     type: "inlineMath",
                     body: "\\theta",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">θ</span></span></span></span>"
                   },
                   {
-                    id: "text-182",
+                    id: "text-173",
                     type: "text",
                     body: ". If the active"
                   },
                   {
-                    id: "text-183",
+                    id: "text-174",
                     type: "text",
                     body: "rotation in practical applications needs to be counterclockwise, the angle "
                   },
                   {
-                    id: "inlineMath-64",
+                    id: "inlineMath-62",
                     type: "inlineMath",
                     body: "\\theta",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">θ</span></span></span></span>"
                   },
                   {
-                    id: "text-184",
+                    id: "text-175",
                     type: "text",
                     body: "must be"
                   },
                   {
-                    id: "text-185",
+                    id: "text-176",
                     type: "text",
                     body: "negative."
                   },
                   {
-                    id: "text-186",
+                    id: "text-177",
                     type: "text",
                     body: "The rotation matrix around the "
                   },
                   {
-                    id: "inlineMath-65",
+                    id: "inlineMath-63",
                     type: "inlineMath",
                     body: "x",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span></span></span></span>"
                   },
                   {
-                    id: "text-187",
+                    id: "text-178",
                     type: "text",
                     body: "-axis is given by,"
                   }
@@ -2314,18 +2257,18 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-188",
+                    id: "text-179",
                     type: "text",
                     body: "and the one around the "
                   },
                   {
-                    id: "inlineMath-66",
+                    id: "inlineMath-64",
                     type: "inlineMath",
                     body: "y",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">y</span></span></span></span>"
                   },
                   {
-                    id: "text-189",
+                    id: "text-180",
                     type: "text",
                     body: "-axis is given by,"
                   }
@@ -2356,29 +2299,29 @@ export const latexDocument = {
                       type: "layoutInlineGroup",
                       children: [
                         {
-                          id: "text-190",
+                          id: "text-181",
                           type: "text",
                           body: "Fig~1: Rotation of an angle "
                         },
                         {
-                          id: "inlineMath-67",
+                          id: "inlineMath-65",
                           type: "inlineMath",
                           body: "\\theta",
                           html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">θ</span></span></span></span>"
                         },
                         {
-                          id: "text-191",
+                          id: "text-182",
                           type: "text",
                           body: "around the "
                         },
                         {
-                          id: "inlineMath-68",
+                          id: "inlineMath-66",
                           type: "inlineMath",
                           body: "z",
                           html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.044em;\">z</span></span></span></span>"
                         },
                         {
-                          id: "text-192",
+                          id: "text-183",
                           type: "text",
                           body: "axis."
                         }
@@ -2405,7 +2348,7 @@ export const latexDocument = {
             type: "layoutInlineGroup",
             children: [
               {
-                id: "text-193",
+                id: "text-184",
                 type: "text",
                 body: "Rotation Around a General Axis"
               }
@@ -2420,109 +2363,109 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-194",
+                    id: "text-185",
                     type: "text",
                     body: "The formula for a change of coordinates as a result of a rotation around an arbitrary axis"
                   },
                   {
-                    id: "text-195",
+                    id: "text-186",
                     type: "text",
                     body: "defined by the unit vector "
                   },
                   {
-                    id: "inlineMath-69",
+                    id: "inlineMath-67",
                     type: "inlineMath",
                     body: "\\vb{n} = (n_x, n_y, n_z)",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">n</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0361em;vertical-align:-0.2861em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\">n</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">x</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">n</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0359em;\">y</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2861em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">n</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.044em;\">z</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>"
                   },
                   {
-                    id: "text-196",
+                    id: "text-187",
                     type: "text",
                     body: ", with "
                   },
                   {
-                    id: "inlineMath-70",
+                    id: "inlineMath-68",
                     type: "inlineMath",
                     body: "\\ip{\\vb{n}}{\\vb{n}} = 1",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">⟨</span><span class=\"mord text\"><span class=\"mord textbf\">n</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">∣</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">n</span></span><span class=\"mclose\">⟩</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">1</span></span></span></span>"
                   },
                   {
-                    id: "text-197",
+                    id: "text-188",
                     type: "text",
                     body: "and an angle "
                   },
                   {
-                    id: "inlineMath-71",
+                    id: "inlineMath-69",
                     type: "inlineMath",
                     body: "\\theta",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">θ</span></span></span></span>"
                   },
                   {
-                    id: "text-198",
+                    id: "text-189",
                     type: "text",
                     body: ", is called the Rodrigues formula. While there are numerous"
                   },
                   {
-                    id: "text-199",
+                    id: "text-190",
                     type: "text",
                     body: "well-documented methods to derive this formula available in various resources, we will revisit"
                   },
                   {
-                    id: "text-200",
+                    id: "text-191",
                     type: "text",
                     body: "the derivation process, explaining the steps in detail."
                   },
                   {
-                    id: "text-201",
+                    id: "text-192",
                     type: "text",
                     body: "Our goal is to find the components of the rotated unit vectors "
                   },
                   {
-                    id: "inlineMath-72",
+                    id: "inlineMath-70",
                     type: "inlineMath",
                     body: "\\vb{e}'_i",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0106em;vertical-align:-0.2587em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-2.4413em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2587em;\"><span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-202",
+                    id: "text-193",
                     type: "text",
                     body: "in the reference"
                   },
                   {
-                    id: "text-203",
+                    id: "text-194",
                     type: "text",
                     body: "system "
                   },
                   {
-                    id: "inlineMath-73",
+                    id: "inlineMath-71",
                     type: "inlineMath",
                     body: "\\vb{e}_i",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5944em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3117em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-204",
+                    id: "text-195",
                     type: "text",
                     body: "as a function of the components of the unit vector "
                   },
                   {
-                    id: "inlineMath-74",
+                    id: "inlineMath-72",
                     type: "inlineMath",
                     body: "\\vb{n}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">n</span></span></span></span></span>"
                   },
                   {
-                    id: "text-205",
+                    id: "text-196",
                     type: "text",
                     body: "and the angle"
                   },
                   {
-                    id: "inlineMath-75",
+                    id: "inlineMath-73",
                     type: "inlineMath",
                     body: "\\theta",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">θ</span></span></span></span>"
                   },
                   {
-                    id: "text-206",
+                    id: "text-197",
                     type: "text",
                     body: ". These components will form the "
                   },
@@ -2532,61 +2475,61 @@ export const latexDocument = {
                     type: "textbf"
                   },
                   {
-                    id: "text-207",
+                    id: "text-198",
                     type: "text",
                     body: "of the matrix describing the change of"
                   },
                   {
-                    id: "text-208",
+                    id: "text-199",
                     type: "text",
                     body: "coordinates."
                   },
                   {
-                    id: "text-209",
+                    id: "text-200",
                     type: "text",
                     body: "A unit vector "
                   },
                   {
-                    id: "inlineMath-76",
+                    id: "inlineMath-74",
                     type: "inlineMath",
                     body: "\\vb{e}_i",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5944em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3117em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-210",
+                    id: "text-201",
                     type: "text",
                     body: "in the fixed reference system can be decomposed into the component"
                   },
                   {
-                    id: "inlineMath-77",
+                    id: "inlineMath-75",
                     type: "inlineMath",
                     body: "\\vb{e}_i^{||}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.3217em;vertical-align:-0.2769em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.0448em;\"><span style=\"top:-2.4231em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span><span style=\"top:-3.2198em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">∣∣</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2769em;\"><span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-211",
+                    id: "text-202",
                     type: "text",
                     body: "and "
                   },
                   {
-                    id: "inlineMath-78",
+                    id: "inlineMath-76",
                     type: "inlineMath",
                     body: "\\vb{e}_i^{\\perp}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.1078em;vertical-align:-0.2587em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8491em;\"><span style=\"top:-2.4413em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mrel mtight\">⊥</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2587em;\"><span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-212",
+                    id: "text-203",
                     type: "text",
                     body: "respectively parallel and perpendicular to "
                   },
                   {
-                    id: "inlineMath-79",
+                    id: "inlineMath-77",
                     type: "inlineMath",
                     body: "\\vb{n}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">n</span></span></span></span></span>"
                   },
                   {
-                    id: "text-213",
+                    id: "text-204",
                     type: "text",
                     body: ":"
                   }
@@ -2617,83 +2560,83 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-214",
+                    id: "text-205",
                     type: "text",
                     body: "The component "
                   },
                   {
-                    id: "inlineMath-80",
+                    id: "inlineMath-78",
                     type: "inlineMath",
                     body: "\\vb{e}_i^{||}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.3217em;vertical-align:-0.2769em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.0448em;\"><span style=\"top:-2.4231em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span><span style=\"top:-3.2198em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">∣∣</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2769em;\"><span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-215",
+                    id: "text-206",
                     type: "text",
                     body: "is parallel to the rotation axis, and it will not change under"
                   },
                   {
-                    id: "text-216",
+                    id: "text-207",
                     type: "text",
                     body: "the rotation. The component "
                   },
                   {
-                    id: "inlineMath-81",
+                    id: "inlineMath-79",
                     type: "inlineMath",
                     body: "\\vb{e}_i^{\\perp}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.1078em;vertical-align:-0.2587em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8491em;\"><span style=\"top:-2.4413em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mrel mtight\">⊥</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2587em;\"><span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-217",
+                    id: "text-208",
                     type: "text",
                     body: "is perpendicular to the rotation axis, and it"
                   },
                   {
-                    id: "text-218",
+                    id: "text-209",
                     type: "text",
                     body: "will rotate by an angle "
                   },
                   {
-                    id: "inlineMath-82",
+                    id: "inlineMath-80",
                     type: "inlineMath",
                     body: "\\theta",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">θ</span></span></span></span>"
                   },
                   {
-                    id: "text-219",
+                    id: "text-210",
                     type: "text",
                     body: "around the axis "
                   },
                   {
-                    id: "inlineMath-83",
+                    id: "inlineMath-81",
                     type: "inlineMath",
                     body: "\\vb{n}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">n</span></span></span></span></span>"
                   },
                   {
-                    id: "text-220",
+                    id: "text-211",
                     type: "text",
                     body: ", into a new vector"
                   },
                   {
-                    id: "inlineMath-84",
+                    id: "inlineMath-82",
                     type: "inlineMath",
                     body: "\\vb{e}_i^{'\\perp}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.2011em;vertical-align:-0.2587em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.9425em;\"><span style=\"top:-2.4413em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8278em;\"><span style=\"top:-2.931em;margin-right:0.0714em;\"><span class=\"pstrut\" style=\"height:2.5em;\"></span><span class=\"sizing reset-size3 size1 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mrel mtight\">⊥</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2587em;\"><span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-221",
+                    id: "text-212",
                     type: "text",
                     body: ". Considering the unit vector along"
                   },
                   {
-                    id: "inlineMath-85",
+                    id: "inlineMath-83",
                     type: "inlineMath",
                     body: "\\vb{n} \\times \\vb{e}_i^{\\perp} = \\vb{n} \\times \\vb{e}_i",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">n</span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.1078em;vertical-align:-0.2587em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8491em;\"><span style=\"top:-2.4413em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mrel mtight\">⊥</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2587em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">n</span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.5944em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3117em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-222",
+                    id: "text-213",
                     type: "text",
                     body: ","
                   }
@@ -2724,18 +2667,18 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-223",
+                    id: "text-214",
                     type: "text",
                     body: "and "
                   },
                   {
-                    id: "inlineMath-86",
+                    id: "inlineMath-84",
                     type: "inlineMath",
                     body: "\\vb{e}_i^{\\perp}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.1078em;vertical-align:-0.2587em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8491em;\"><span style=\"top:-2.4413em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mrel mtight\">⊥</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2587em;\"><span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-224",
+                    id: "text-215",
                     type: "text",
                     body: ","
                   }
@@ -2766,23 +2709,23 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-225",
+                    id: "text-216",
                     type: "text",
                     body: "applying the two-dimensional rotation formula in the plane orthogonal to "
                   },
                   {
-                    id: "inlineMath-87",
+                    id: "inlineMath-85",
                     type: "inlineMath",
                     body: "\\vb{n}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">n</span></span></span></span></span>"
                   },
                   {
-                    id: "text-226",
+                    id: "text-217",
                     type: "text",
                     body: ", we can write the"
                   },
                   {
-                    id: "text-227",
+                    id: "text-218",
                     type: "text",
                     body: "rotated vector as,"
                   }
@@ -2813,51 +2756,51 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-228",
+                    id: "text-219",
                     type: "text",
                     body: "as the norm of the vector "
                   },
                   {
-                    id: "inlineMath-88",
+                    id: "inlineMath-86",
                     type: "inlineMath",
                     body: "\\vb{e}_i^{\\perp}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.1078em;vertical-align:-0.2587em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8491em;\"><span style=\"top:-2.4413em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mrel mtight\">⊥</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2587em;\"><span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-229",
+                    id: "text-220",
                     type: "text",
                     body: "remains constant. The vector"
                   },
                   {
-                    id: "inlineMath-89",
+                    id: "inlineMath-87",
                     type: "inlineMath",
                     body: "\\vb{n} \\times \\vb{e}_i",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">n</span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.5944em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3117em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-230",
+                    id: "text-221",
                     type: "text",
                     body: "contains only the components of "
                   },
                   {
-                    id: "inlineMath-90",
+                    id: "inlineMath-88",
                     type: "inlineMath",
                     body: "\\vb{n}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">n</span></span></span></span></span>"
                   },
                   {
-                    id: "text-231",
+                    id: "text-222",
                     type: "text",
                     body: "of index different from"
                   },
                   {
-                    id: "inlineMath-91",
+                    id: "inlineMath-89",
                     type: "inlineMath",
                     body: "i",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6595em;\"></span><span class=\"mord mathnormal\">i</span></span></span></span>"
                   },
                   {
-                    id: "text-232",
+                    id: "text-223",
                     type: "text",
                     body: ", as it can be easily verified by the definition of the cross product,"
                   }
@@ -2888,29 +2831,29 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-233",
+                    id: "text-224",
                     type: "text",
                     body: "where "
                   },
                   {
-                    id: "inlineMath-92",
+                    id: "inlineMath-90",
                     type: "inlineMath",
                     body: "\\epsilon_{ijk}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7167em;vertical-align:-0.2861em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">ϵ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3361em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0572em;\">ij</span><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0315em;\">k</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2861em;\"><span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-234",
+                    id: "text-225",
                     type: "text",
                     body: "is the Levi-Civita tensor. The norm of the vector "
                   },
                   {
-                    id: "inlineMath-93",
+                    id: "inlineMath-91",
                     type: "inlineMath",
                     body: "\\vb{n} \\times \\vb{e}_i",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">n</span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.5944em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3117em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-235",
+                    id: "text-226",
                     type: "text",
                     body: "is given by,"
                   }
@@ -2941,23 +2884,23 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-236",
+                    id: "text-227",
                     type: "text",
                     body: "The components of the rotated unit vectors "
                   },
                   {
-                    id: "inlineMath-94",
+                    id: "inlineMath-92",
                     type: "inlineMath",
                     body: "\\vb{e}'_i",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0106em;vertical-align:-0.2587em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-2.4413em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2587em;\"><span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-237",
+                    id: "text-228",
                     type: "text",
                     body: "with respect to the reference frame"
                   },
                   {
-                    id: "text-238",
+                    id: "text-229",
                     type: "text",
                     body: "are then given by,"
                   }
@@ -2988,47 +2931,74 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-239",
+                    id: "text-230",
                     type: "text",
                     body: "The matrix "
                   },
                   {
-                    id: "inlineMath-95",
+                    id: "inlineMath-93",
                     type: "inlineMath",
                     body: "\\vb{A}(\\vb{n}, \\theta)",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">A</span></span><span class=\"mopen\">(</span><span class=\"mord text\"><span class=\"mord textbf\">n</span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">θ</span><span class=\"mclose\">)</span></span></span></span>"
                   },
                   {
-                    id: "text-240",
+                    id: "text-231",
                     type: "text",
                     body: "which describes the transformation of a vector's"
                   },
                   {
-                    id: "text-241",
+                    id: "text-232",
                     type: "text",
                     body: "components with respect to a reference system rotated around an axis "
                   },
                   {
-                    id: "inlineMath-96",
+                    id: "inlineMath-94",
                     type: "inlineMath",
                     body: "\\vb{n}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">n</span></span></span></span></span>"
                   },
                   {
-                    id: "text-242",
+                    id: "text-233",
                     type: "text",
                     body: "by an angle"
                   },
                   {
-                    id: "inlineMath-97",
+                    id: "inlineMath-95",
                     type: "inlineMath",
                     body: "\\theta",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">θ</span></span></span></span>"
                   },
                   {
-                    id: "text-243",
+                    id: "text-234",
                     type: "text",
                     body: ", is obtained by evaluating the above equation for each unit vector "
+                  },
+                  {
+                    id: "inlineMath-96",
+                    type: "inlineMath",
+                    body: "\\vb{e}_i",
+                    html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5944em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3117em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
+                  },
+                  {
+                    id: "text-235",
+                    type: "text",
+                    body: "in"
+                  },
+                  {
+                    id: "text-236",
+                    type: "text",
+                    body: "the reference system. The components of the vectors "
+                  },
+                  {
+                    id: "inlineMath-97",
+                    type: "inlineMath",
+                    body: "\\vb{e}'_i",
+                    html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0106em;vertical-align:-0.2587em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-2.4413em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2587em;\"><span></span></span></span></span></span></span></span></span></span>"
+                  },
+                  {
+                    id: "text-237",
+                    type: "text",
+                    body: "with respect to "
                   },
                   {
                     id: "inlineMath-98",
@@ -3037,45 +3007,18 @@ export const latexDocument = {
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5944em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3117em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-244",
-                    type: "text",
-                    body: "in"
-                  },
-                  {
-                    id: "text-245",
-                    type: "text",
-                    body: "the reference system. The components of the vectors "
-                  },
-                  {
-                    id: "inlineMath-99",
-                    type: "inlineMath",
-                    body: "\\vb{e}'_i",
-                    html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0106em;vertical-align:-0.2587em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-2.4413em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2587em;\"><span></span></span></span></span></span></span></span></span></span>"
-                  },
-                  {
-                    id: "text-246",
-                    type: "text",
-                    body: "with respect to "
-                  },
-                  {
-                    id: "inlineMath-100",
-                    type: "inlineMath",
-                    body: "\\vb{e}_i",
-                    html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5944em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3117em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
-                  },
-                  {
-                    id: "text-247",
+                    id: "text-238",
                     type: "text",
                     body: "are the rows of the matrix "
                   },
                   {
-                    id: "inlineMath-101",
+                    id: "inlineMath-99",
                     type: "inlineMath",
                     body: "\\vb{A}(\\vb{n}, \\theta)",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">A</span></span><span class=\"mopen\">(</span><span class=\"mord text\"><span class=\"mord textbf\">n</span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">θ</span><span class=\"mclose\">)</span></span></span></span>"
                   },
                   {
-                    id: "text-248",
+                    id: "text-239",
                     type: "text",
                     body: ":"
                   }
@@ -3107,23 +3050,23 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-249",
+                    id: "text-240",
                     type: "text",
                     body: "where "
                   },
                   {
-                    id: "inlineMath-102",
+                    id: "inlineMath-100",
                     type: "inlineMath",
                     body: "(\\cdot)",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">⋅</span><span class=\"mclose\">)</span></span></span></span>"
                   },
                   {
-                    id: "text-250",
+                    id: "text-241",
                     type: "text",
                     body: "is the placeholder for a vector. The three terms respectively leave unchanged the component parallel to"
                   },
                   {
-                    id: "text-251",
+                    id: "text-242",
                     type: "text",
                     body: "the rotation axis, rotate the perpendicular component, and generate the component orthogonal to both."
                   }
@@ -3138,7 +3081,7 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-252",
+                    id: "text-243",
                     type: "text",
                     body: "The explicit matrix form of the equation above is,"
                   }
@@ -3169,17 +3112,17 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-253",
+                    id: "text-244",
                     type: "text",
                     body: "It is important to emphasize again that the above transformation represents a passive"
                   },
                   {
-                    id: "text-254",
+                    id: "text-245",
                     type: "text",
                     body: "rotation, meaning that the components of the same vector are expressed in different bases."
                   },
                   {
-                    id: "text-255",
+                    id: "text-246",
                     type: "text",
                     body: "The same matrix, if interpreted as an active transformation, corresponds to the inverse rotation."
                   }
@@ -3212,7 +3155,7 @@ export const latexDocument = {
         type: "layoutInlineGroup",
         children: [
           {
-            id: "text-256",
+            id: "text-247",
             type: "text",
             body: "Infinitesimal Rotations"
           }
@@ -3228,7 +3171,7 @@ export const latexDocument = {
             type: "layoutInlineGroup",
             children: [
               {
-                id: "text-257",
+                id: "text-248",
                 type: "text",
                 body: "Definition"
               }
@@ -3243,71 +3186,71 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-258",
+                    id: "text-249",
                     type: "text",
                     body: "In the previous section, we demonstrated that a rotation in three dimensions can be uniquely"
                   },
                   {
-                    id: "text-259",
+                    id: "text-250",
                     type: "text",
                     body: "identified by a unit vector "
                   },
                   {
-                    id: "inlineMath-103",
+                    id: "inlineMath-101",
                     type: "inlineMath",
                     body: "\\vb{n}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">n</span></span></span></span></span>"
                   },
                   {
-                    id: "text-260",
+                    id: "text-251",
                     type: "text",
                     body: "and an angle "
                   },
                   {
-                    id: "inlineMath-104",
+                    id: "inlineMath-102",
                     type: "inlineMath",
                     body: "\\theta",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">θ</span></span></span></span>"
                   },
                   {
-                    id: "text-261",
+                    id: "text-252",
                     type: "text",
                     body: "."
                   },
                   {
-                    id: "text-262",
+                    id: "text-253",
                     type: "text",
                     body: "It is natural to ask"
                   },
                   {
-                    id: "text-263",
+                    id: "text-254",
                     type: "text",
                     body: "whether the group of orthogonal matrices "
                   },
                   {
-                    id: "inlineMath-105",
+                    id: "inlineMath-103",
                     type: "inlineMath",
                     body: "SO(3)",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0576em;\">S</span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">O</span><span class=\"mopen\">(</span><span class=\"mord\">3</span><span class=\"mclose\">)</span></span></span></span>"
                   },
                   {
-                    id: "text-264",
+                    id: "text-255",
                     type: "text",
                     body: ", is isomorphic to the vector space"
                   },
                   {
-                    id: "inlineMath-106",
+                    id: "inlineMath-104",
                     type: "inlineMath",
                     body: "\\mathbb{R}^3",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">R</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">3</span></span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-265",
+                    id: "text-256",
                     type: "text",
                     body: ". This choice is motivated by the fact that every rotation in three dimensions has only three degrees of"
                   },
                   {
-                    id: "text-266",
+                    id: "text-257",
                     type: "text",
                     body: "fredome:  the two independent components of the  rotation axis, and the rotation angle."
                   }
@@ -3322,50 +3265,50 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-267",
+                    id: "text-258",
                     type: "text",
                     body: "There are several obstacles with defining properly such a isomorphism, as we will soon see, but we will first start by assuming"
                   },
                   {
-                    id: "text-268",
+                    id: "text-259",
                     type: "text",
                     body: "simply that such a an isomorphism "
                   },
                   {
-                    id: "inlineMath-107",
+                    id: "inlineMath-105",
                     type: "inlineMath",
                     body: "f",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1076em;\">f</span></span></span></span>"
                   },
                   {
-                    id: "text-269",
+                    id: "text-260",
                     type: "text",
                     body: "exists, between the group "
                   },
                   {
-                    id: "inlineMath-108",
+                    id: "inlineMath-106",
                     type: "inlineMath",
                     body: "SO(3)",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0576em;\">S</span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">O</span><span class=\"mopen\">(</span><span class=\"mord\">3</span><span class=\"mclose\">)</span></span></span></span>"
                   },
                   {
-                    id: "text-270",
+                    id: "text-261",
                     type: "text",
                     body: "with matrix multiplication"
                   },
                   {
-                    id: "text-271",
+                    id: "text-262",
                     type: "text",
                     body: "and the group "
                   },
                   {
-                    id: "inlineMath-109",
+                    id: "inlineMath-107",
                     type: "inlineMath",
                     body: "\\mathbb{R}^3",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">R</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">3</span></span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-272",
+                    id: "text-263",
                     type: "text",
                     body: "with the the regular vector addition:"
                   }
@@ -3396,7 +3339,7 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-273",
+                    id: "text-264",
                     type: "text",
                     body: "For such an isomorphism to exist, it must be a single-valued function, it must preserve the group operation:"
                   }
@@ -3427,7 +3370,7 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-274",
+                    id: "text-265",
                     type: "text",
                     body: "and it has to be one-to-one and surjective. The one-to-one conditions requires that,"
                   }
@@ -3458,34 +3401,34 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-275",
+                    id: "text-266",
                     type: "text",
                     body: "Considering two rotations "
                   },
                   {
-                    id: "inlineMath-110",
+                    id: "inlineMath-108",
                     type: "inlineMath",
                     body: "\\vb{A} \\in SO(3)",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7252em;vertical-align:-0.0391em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">A</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0576em;\">S</span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">O</span><span class=\"mopen\">(</span><span class=\"mord\">3</span><span class=\"mclose\">)</span></span></span></span>"
                   },
                   {
-                    id: "text-276",
+                    id: "text-267",
                     type: "text",
                     body: "and "
                   },
                   {
-                    id: "inlineMath-111",
+                    id: "inlineMath-109",
                     type: "inlineMath",
                     body: "\\vb{B} \\in SO(3)",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7252em;vertical-align:-0.0391em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">B</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0576em;\">S</span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">O</span><span class=\"mopen\">(</span><span class=\"mord\">3</span><span class=\"mclose\">)</span></span></span></span>"
                   },
                   {
-                    id: "text-277",
+                    id: "text-268",
                     type: "text",
                     body: ", we know that rotations"
                   },
                   {
-                    id: "text-278",
+                    id: "text-269",
                     type: "text",
                     body: "do not commute,"
                   }
@@ -3516,18 +3459,18 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-279",
+                    id: "text-270",
                     type: "text",
                     body: "However, their images under the mapping "
                   },
                   {
-                    id: "inlineMath-112",
+                    id: "inlineMath-110",
                     type: "inlineMath",
                     body: "f",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1076em;\">f</span></span></span></span>"
                   },
                   {
-                    id: "text-280",
+                    id: "text-271",
                     type: "text",
                     body: "are the same,"
                   }
@@ -3558,45 +3501,45 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-281",
+                    id: "text-272",
                     type: "text",
                     body: "due to the commutativity of the vector space "
                   },
                   {
-                    id: "inlineMath-113",
+                    id: "inlineMath-111",
                     type: "inlineMath",
                     body: "\\mathbb{R}^3",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">R</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">3</span></span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-282",
+                    id: "text-273",
                     type: "text",
                     body: ". Thus, it is evident that such a"
                   },
                   {
-                    id: "text-283",
+                    id: "text-274",
                     type: "text",
                     body: "mapping cannot be one-to-one. Therefore, since the group "
                   },
                   {
-                    id: "inlineMath-114",
+                    id: "inlineMath-112",
                     type: "inlineMath",
                     body: "SO(3)",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0576em;\">S</span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">O</span><span class=\"mopen\">(</span><span class=\"mord\">3</span><span class=\"mclose\">)</span></span></span></span>"
                   },
                   {
-                    id: "text-284",
+                    id: "text-275",
                     type: "text",
                     body: "is not commutative, whereas the group"
                   },
                   {
-                    id: "inlineMath-115",
+                    id: "inlineMath-113",
                     type: "inlineMath",
                     body: "(\\mathbb{R}^3,+)",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0641em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathbb\">R</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">3</span></span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">+</span><span class=\"mclose\">)</span></span></span></span>"
                   },
                   {
-                    id: "text-285",
+                    id: "text-276",
                     type: "text",
                     body: "is commutative, no group isomorphism between the two can exist. "
                   }
@@ -3611,39 +3554,39 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-286",
+                    id: "text-277",
                     type: "text",
                     body: "We must consider a different approach and we will now introduce the concept of infinitesimal"
                   },
                   {
-                    id: "text-287",
+                    id: "text-278",
                     type: "text",
                     body: "rotations, which are rotations that commute to the first order."
                   },
                   {
-                    id: "text-288",
+                    id: "text-279",
                     type: "text",
                     body: "Let us consider two rotation matrices "
                   },
                   {
-                    id: "inlineMath-116",
+                    id: "inlineMath-114",
                     type: "inlineMath",
                     body: "\\vb{A}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">A</span></span></span></span></span>"
                   },
                   {
-                    id: "text-289",
+                    id: "text-280",
                     type: "text",
                     body: "and "
                   },
                   {
-                    id: "inlineMath-117",
+                    id: "inlineMath-115",
                     type: "inlineMath",
                     body: "\\vb{B}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">B</span></span></span></span></span>"
                   },
                   {
-                    id: "text-290",
+                    id: "text-281",
                     type: "text",
                     body: "such that,"
                   }
@@ -3674,56 +3617,56 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-291",
+                    id: "text-282",
                     type: "text",
                     body: "where "
                   },
                   {
-                    id: "inlineMath-118",
+                    id: "inlineMath-116",
                     type: "inlineMath",
                     body: "\\epsilon_1",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5806em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">ϵ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-292",
+                    id: "text-283",
+                    type: "text",
+                    body: "and "
+                  },
+                  {
+                    id: "inlineMath-117",
+                    type: "inlineMath",
+                    body: "\\epsilon_2",
+                    html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5806em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">ϵ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
+                  },
+                  {
+                    id: "text-284",
+                    type: "text",
+                    body: "are infinitesimal matrices such that"
+                  },
+                  {
+                    id: "text-285",
+                    type: "text",
+                    body: "products of infinitesimal quantities are neglected. The product of "
+                  },
+                  {
+                    id: "inlineMath-118",
+                    type: "inlineMath",
+                    body: "\\vb{A}",
+                    html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">A</span></span></span></span></span>"
+                  },
+                  {
+                    id: "text-286",
                     type: "text",
                     body: "and "
                   },
                   {
                     id: "inlineMath-119",
                     type: "inlineMath",
-                    body: "\\epsilon_2",
-                    html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5806em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">ϵ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
-                  },
-                  {
-                    id: "text-293",
-                    type: "text",
-                    body: "are infinitesimal matrices such that"
-                  },
-                  {
-                    id: "text-294",
-                    type: "text",
-                    body: "products of infinitesimal quantities are neglected. The product of "
-                  },
-                  {
-                    id: "inlineMath-120",
-                    type: "inlineMath",
-                    body: "\\vb{A}",
-                    html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">A</span></span></span></span></span>"
-                  },
-                  {
-                    id: "text-295",
-                    type: "text",
-                    body: "and "
-                  },
-                  {
-                    id: "inlineMath-121",
-                    type: "inlineMath",
                     body: "\\vb{B}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">B</span></span></span></span></span>"
                   },
                   {
-                    id: "text-296",
+                    id: "text-287",
                     type: "text",
                     body: "is,"
                   }
@@ -3754,77 +3697,77 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-297",
+                    id: "text-288",
                     type: "text",
                     body: "which is the same as the product of "
                   },
                   {
-                    id: "inlineMath-122",
+                    id: "inlineMath-120",
                     type: "inlineMath",
                     body: "\\vb{B}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">B</span></span></span></span></span>"
                   },
                   {
-                    id: "text-298",
+                    id: "text-289",
                     type: "text",
                     body: "and "
                   },
                   {
-                    id: "inlineMath-123",
+                    id: "inlineMath-121",
                     type: "inlineMath",
                     body: "\\vb{A}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">A</span></span></span></span></span>"
                   },
                   {
-                    id: "text-299",
+                    id: "text-290",
                     type: "text",
                     body: ". Hence, for so-called infinitesimal"
                   },
                   {
-                    id: "text-300",
+                    id: "text-291",
                     type: "text",
                     body: "rotations, the commutativity property holds."
                   },
                   {
-                    id: "text-301",
+                    id: "text-292",
                     type: "text",
                     body: "For a general infinitesimal rotation "
                   },
                   {
-                    id: "inlineMath-124",
+                    id: "inlineMath-122",
                     type: "inlineMath",
                     body: "\\vb{A} = \\vb{I} + \\epsilon",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">A</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7694em;vertical-align:-0.0833em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">I</span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">ϵ</span></span></span></span>"
                   },
                   {
-                    id: "text-302",
+                    id: "text-293",
                     type: "text",
                     body: ", the orthogonal condition"
                   },
                   {
-                    id: "inlineMath-125",
+                    id: "inlineMath-123",
                     type: "inlineMath",
                     body: "\\vb{A}^T\\vb{A} = \\vb{I}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.9173em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">A</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.9173em;\"><span style=\"top:-3.139em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.1389em;\">T</span></span></span></span></span></span></span></span><span class=\"mord text\"><span class=\"mord textbf\">A</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">I</span></span></span></span></span>"
                   },
                   {
-                    id: "text-303",
+                    id: "text-294",
                     type: "text",
                     body: "implies that the matrix "
                   },
                   {
-                    id: "inlineMath-126",
+                    id: "inlineMath-124",
                     type: "inlineMath",
                     body: "\\epsilon",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">ϵ</span></span></span></span>"
                   },
                   {
-                    id: "text-304",
+                    id: "text-295",
                     type: "text",
                     body: "is skew-symmetric, as it"
                   },
                   {
-                    id: "text-305",
+                    id: "text-296",
                     type: "text",
                     body: "satisfies the property"
                   }
@@ -3855,23 +3798,23 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-306",
+                    id: "text-297",
                     type: "text",
                     body: "A skew-symmetric matrix has zero diagonal elements, and the off-diagonal elements satisfy the"
                   },
                   {
-                    id: "text-307",
+                    id: "text-298",
                     type: "text",
                     body: "property "
                   },
                   {
-                    id: "inlineMath-127",
+                    id: "inlineMath-125",
                     type: "inlineMath",
                     body: "\\epsilon_{ij} = -\\epsilon_{ji}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7167em;vertical-align:-0.2861em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">ϵ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3117em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0572em;\">ij</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2861em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8694em;vertical-align:-0.2861em;\"></span><span class=\"mord\">−</span><span class=\"mord\"><span class=\"mord mathnormal\">ϵ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3117em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0572em;\">j</span><span class=\"mord mathnormal mtight\">i</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2861em;\"><span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-308",
+                    id: "text-299",
                     type: "text",
                     body: ", and assumes the general form,"
                   }
@@ -3902,29 +3845,29 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-309",
+                    id: "text-300",
                     type: "text",
                     body: "A change of coordinates of a vector "
                   },
                   {
-                    id: "inlineMath-128",
+                    id: "inlineMath-126",
                     type: "inlineMath",
                     body: "\\vb{r}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">r</span></span></span></span></span>"
                   },
                   {
-                    id: "text-310",
+                    id: "text-301",
                     type: "text",
                     body: "under an infinitesimal rotation"
                   },
                   {
-                    id: "inlineMath-129",
+                    id: "inlineMath-127",
                     type: "inlineMath",
                     body: "\\vb{A} = \\vb{I} + \\epsilon",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">A</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7694em;vertical-align:-0.0833em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">I</span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">ϵ</span></span></span></span>"
                   },
                   {
-                    id: "text-311",
+                    id: "text-302",
                     type: "text",
                     body: "is given by,"
                   }
@@ -3955,7 +3898,7 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-312",
+                    id: "text-303",
                     type: "text",
                     body: "as it can be readily verified that,"
                   }
@@ -3986,76 +3929,76 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-313",
+                    id: "text-304",
                     type: "text",
                     body: "where "
                   },
                   {
-                    id: "inlineMath-130",
+                    id: "inlineMath-128",
                     type: "inlineMath",
                     body: "\\vb{r} = (x,y,z)",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">r</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">y</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.044em;\">z</span><span class=\"mclose\">)</span></span></span></span>"
                   },
                   {
-                    id: "text-314",
+                    id: "text-305",
                     type: "text",
                     body: "and "
                   },
                   {
-                    id: "inlineMath-131",
+                    id: "inlineMath-129",
                     type: "inlineMath",
                     body: "d\\boldsymbol{\\Omega} = (d\\Omega_1, d\\Omega_2, d\\Omega_3)",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">d</span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathbf\">Ω</span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">d</span><span class=\"mord\"><span class=\"mord\">Ω</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">d</span><span class=\"mord\"><span class=\"mord\">Ω</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">d</span><span class=\"mord\"><span class=\"mord\">Ω</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">3</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>"
                   },
                   {
-                    id: "text-315",
+                    id: "text-306",
                     type: "text",
                     body: "."
                   },
                   {
-                    id: "text-316",
+                    id: "text-307",
                     type: "text",
                     body: "The infinitesimal vector "
                   },
                   {
-                    id: "inlineMath-132",
+                    id: "inlineMath-130",
                     type: "inlineMath",
                     body: "d\\boldsymbol{\\Omega}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">d</span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathbf\">Ω</span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-317",
+                    id: "text-308",
                     type: "text",
                     body: "therefore completely characterizes the infinitesimal rotation."
                   },
                   {
-                    id: "text-318",
+                    id: "text-309",
                     type: "text",
                     body: "Since infinitesimal rotations commute to first order, the obstruction encountered for finite"
                   },
                   {
-                    id: "text-319",
+                    id: "text-310",
                     type: "text",
                     body: "rotations disappears. It is therefore possible to identify each infinitesimal rotation"
                   },
                   {
-                    id: "text-320",
+                    id: "text-311",
                     type: "text",
                     body: "uniquely with a vector in "
                   },
                   {
-                    id: "inlineMath-133",
+                    id: "inlineMath-131",
                     type: "inlineMath",
                     body: "\\mathbb{R}^3",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">R</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">3</span></span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-321",
+                    id: "text-312",
                     type: "text",
                     body: "."
                   },
                   {
-                    id: "text-322",
+                    id: "text-313",
                     type: "text",
                     body: "We now evaluate the form of the matrix "
                   },
@@ -4065,18 +4008,18 @@ export const latexDocument = {
                     body: "kinematics:rodrigues-formula"
                   },
                   {
-                    id: "text-323",
+                    id: "text-314",
                     type: "text",
                     body: "for a value of the angle"
                   },
                   {
-                    id: "inlineMath-134",
+                    id: "inlineMath-132",
                     type: "inlineMath",
                     body: "\\theta",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">θ</span></span></span></span>"
                   },
                   {
-                    id: "text-324",
+                    id: "text-315",
                     type: "text",
                     body: "that is infinitesimally small. We find that the matrix is given by,"
                   }
@@ -4107,7 +4050,7 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-325",
+                    id: "text-316",
                     type: "text",
                     body: "This allows us to identify,"
                   }
@@ -4138,7 +4081,7 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-326",
+                    id: "text-317",
                     type: "text",
                     body: "as the infinitesimal rotation matrix, and the vector"
                   }
@@ -4169,7 +4112,7 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-327",
+                    id: "text-318",
                     type: "text",
                     body: "as the vector defining the infinitesimal rotation."
                   }
@@ -4193,7 +4136,7 @@ export const latexDocument = {
             type: "layoutInlineGroup",
             children: [
               {
-                id: "text-328",
+                id: "text-319",
                 type: "text",
                 body: "Similarity Transformation of Infinitesimal Rotations"
               }
@@ -4208,82 +4151,82 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-329",
+                    id: "text-320",
                     type: "text",
                     body: "In the previous section, we have shown that an infinitesimal rotation can be characterized by"
                   },
                   {
-                    id: "text-330",
+                    id: "text-321",
                     type: "text",
                     body: "a vector "
                   },
                   {
-                    id: "inlineMath-135",
+                    id: "inlineMath-133",
                     type: "inlineMath",
                     body: "\\boldsymbol{\\Omega} = (d\\Omega_1, d\\Omega_2, d\\Omega_3)",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathbf\">Ω</span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">d</span><span class=\"mord\"><span class=\"mord\">Ω</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">d</span><span class=\"mord\"><span class=\"mord\">Ω</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">d</span><span class=\"mord\"><span class=\"mord\">Ω</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">3</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>"
                   },
                   {
-                    id: "text-331",
+                    id: "text-322",
                     type: "text",
                     body: ". We will now show that"
                   },
                   {
-                    id: "inlineMath-136",
+                    id: "inlineMath-134",
                     type: "inlineMath",
                     body: "\\boldsymbol{\\Omega}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathbf\">Ω</span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-332",
+                    id: "text-323",
                     type: "text",
                     body: "transforms as a regular "
                   },
                   {
-                    id: "inlineMath-137",
+                    id: "inlineMath-135",
                     type: "inlineMath",
                     body: "\\mathbb{R}^3",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">R</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">3</span></span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-333",
+                    id: "text-324",
                     type: "text",
                     body: "vector under a similarity"
                   },
                   {
-                    id: "text-334",
+                    id: "text-325",
                     type: "text",
                     body: "transformation."
                   },
                   {
-                    id: "text-335",
+                    id: "text-326",
                     type: "text",
                     body: "Let us consider a rotation matrix "
                   },
                   {
-                    id: "inlineMath-138",
+                    id: "inlineMath-136",
                     type: "inlineMath",
                     body: "\\vb{A} = \\vb{I} + \\epsilon",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">A</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7694em;vertical-align:-0.0833em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">I</span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">ϵ</span></span></span></span>"
                   },
                   {
-                    id: "text-336",
+                    id: "text-327",
                     type: "text",
                     body: ", where "
                   },
                   {
-                    id: "inlineMath-139",
+                    id: "inlineMath-137",
                     type: "inlineMath",
                     body: "\\epsilon",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">ϵ</span></span></span></span>"
                   },
                   {
-                    id: "text-337",
+                    id: "text-328",
                     type: "text",
                     body: "is a"
                   },
                   {
-                    id: "text-338",
+                    id: "text-329",
                     type: "text",
                     body: "skew-symmetric matrix of the form,"
                   }
@@ -4314,50 +4257,50 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-339",
+                    id: "text-330",
                     type: "text",
                     body: "The representation of "
                   },
                   {
-                    id: "inlineMath-140",
+                    id: "inlineMath-138",
                     type: "inlineMath",
                     body: "\\vb{A}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">A</span></span></span></span></span>"
                   },
                   {
-                    id: "text-340",
+                    id: "text-331",
                     type: "text",
                     body: "in the coordinate system defined by an orthogonal"
                   },
                   {
-                    id: "text-341",
+                    id: "text-332",
                     type: "text",
                     body: "transformation "
                   },
                   {
-                    id: "inlineMath-141",
+                    id: "inlineMath-139",
                     type: "inlineMath",
                     body: "\\mathbf{B}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord mathbf\">B</span></span></span></span>"
                   },
                   {
-                    id: "text-342",
+                    id: "text-333",
                     type: "text",
                     body: ", is "
                   },
                   {
-                    id: "inlineMath-142",
+                    id: "inlineMath-140",
                     type: "inlineMath",
                     body: "\\vb{A}' = \\mathbf{B}\\vb{A}\\mathbf{B}^\\top",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8279em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">A</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8279em;\"><span style=\"top:-3.139em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8491em;\"></span><span class=\"mord mathbf\">B</span><span class=\"mord text\"><span class=\"mord textbf\">A</span></span><span class=\"mord\"><span class=\"mord mathbf\">B</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8491em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">⊤</span></span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-343",
+                    id: "text-334",
                     type: "text",
                     body: "and it has the"
                   },
                   {
-                    id: "text-344",
+                    id: "text-335",
                     type: "text",
                     body: "form,"
                   }
@@ -4388,23 +4331,23 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-345",
+                    id: "text-336",
                     type: "text",
                     body: "The matrix "
                   },
                   {
-                    id: "inlineMath-143",
+                    id: "inlineMath-141",
                     type: "inlineMath",
                     body: "\\epsilon' = \\mathbf{B}\\epsilon\\mathbf{B}^\\top",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">ϵ</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8491em;\"></span><span class=\"mord mathbf\">B</span><span class=\"mord mathnormal\">ϵ</span><span class=\"mord\"><span class=\"mord mathbf\">B</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8491em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">⊤</span></span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-346",
+                    id: "text-337",
                     type: "text",
                     body: "is skew-symmetric, as it can be"
                   },
                   {
-                    id: "text-347",
+                    id: "text-338",
                     type: "text",
                     body: "readily verified that,"
                   }
@@ -4435,51 +4378,51 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-348",
+                    id: "text-339",
                     type: "text",
                     body: "Given that the matrix "
                   },
                   {
-                    id: "inlineMath-144",
+                    id: "inlineMath-142",
                     type: "inlineMath",
                     body: "\\mathbf{B}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord mathbf\">B</span></span></span></span>"
                   },
                   {
-                    id: "text-349",
+                    id: "text-340",
                     type: "text",
                     body: "is orthogonal, there exist three orthogonal unit vectors"
                   },
                   {
-                    id: "inlineMath-145",
+                    id: "inlineMath-143",
                     type: "inlineMath",
                     body: "\\mathbf{v}_1",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5944em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathbf\" style=\"margin-right:0.016em;\">v</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.016em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-350",
+                    id: "text-341",
                     type: "text",
                     body: ", "
                   },
                   {
-                    id: "inlineMath-146",
+                    id: "inlineMath-144",
                     type: "inlineMath",
                     body: "\\mathbf{v}_2",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5944em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathbf\" style=\"margin-right:0.016em;\">v</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.016em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-351",
+                    id: "text-342",
                     type: "text",
                     body: ", and "
                   },
                   {
-                    id: "inlineMath-147",
+                    id: "inlineMath-145",
                     type: "inlineMath",
                     body: "\\mathbf{v}_3",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5944em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathbf\" style=\"margin-right:0.016em;\">v</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.016em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">3</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-352",
+                    id: "text-343",
                     type: "text",
                     body: ":"
                   }
@@ -4510,23 +4453,23 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-353",
+                    id: "text-344",
                     type: "text",
                     body: "which define a reference system in the rotated coordinates. The matrix "
                   },
                   {
-                    id: "inlineMath-148",
+                    id: "inlineMath-146",
                     type: "inlineMath",
                     body: "\\mathbf{B}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord mathbf\">B</span></span></span></span>"
                   },
                   {
-                    id: "text-354",
+                    id: "text-345",
                     type: "text",
                     body: "can be"
                   },
                   {
-                    id: "text-355",
+                    id: "text-346",
                     type: "text",
                     body: "written as:"
                   }
@@ -4557,34 +4500,34 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-356",
+                    id: "text-347",
                     type: "text",
                     body: "where the vectors "
                   },
                   {
-                    id: "inlineMath-149",
+                    id: "inlineMath-147",
                     type: "inlineMath",
                     body: "\\mathbf{v}_i",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5944em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathbf\" style=\"margin-right:0.016em;\">v</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3117em;\"><span style=\"top:-2.55em;margin-left:-0.016em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-357",
+                    id: "text-348",
                     type: "text",
                     body: "are row vectors. The transpose of "
                   },
                   {
-                    id: "inlineMath-150",
+                    id: "inlineMath-148",
                     type: "inlineMath",
                     body: "\\mathbf{B}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord mathbf\">B</span></span></span></span>"
                   },
                   {
-                    id: "text-358",
+                    id: "text-349",
                     type: "text",
                     body: "is readily"
                   },
                   {
-                    id: "text-359",
+                    id: "text-350",
                     type: "text",
                     body: "obtained as:"
                   }
@@ -4615,45 +4558,45 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-360",
+                    id: "text-351",
                     type: "text",
                     body: "where the vectors "
                   },
                   {
-                    id: "inlineMath-151",
+                    id: "inlineMath-149",
                     type: "inlineMath",
                     body: "\\mathbf{v}_i",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5944em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathbf\" style=\"margin-right:0.016em;\">v</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3117em;\"><span style=\"top:-2.55em;margin-left:-0.016em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-361",
+                    id: "text-352",
                     type: "text",
                     body: "are now the columns of "
                   },
                   {
-                    id: "inlineMath-152",
+                    id: "inlineMath-150",
                     type: "inlineMath",
                     body: "\\mathbf{B}^\\top",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8491em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">B</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8491em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">⊤</span></span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-362",
+                    id: "text-353",
                     type: "text",
                     body: "."
                   },
                   {
-                    id: "text-363",
+                    id: "text-354",
                     type: "text",
                     body: "The product "
                   },
                   {
-                    id: "inlineMath-153",
+                    id: "inlineMath-151",
                     type: "inlineMath",
                     body: "\\boldsymbol{\\epsilon}\\mathbf{B}^\\top",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8491em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\">ϵ</span></span></span><span class=\"mord\"><span class=\"mord mathbf\">B</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8491em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">⊤</span></span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-364",
+                    id: "text-355",
                     type: "text",
                     body: "is the matrix with columns:"
                   }
@@ -4684,23 +4627,23 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-365",
+                    id: "text-356",
                     type: "text",
                     body: "and, for illustration, the matrix "
                   },
                   {
-                    id: "inlineMath-154",
+                    id: "inlineMath-152",
                     type: "inlineMath",
                     body: "\\mathbf{B}\\boldsymbol{\\epsilon}\\mathbf{B}^\\top",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8491em;\"></span><span class=\"mord mathbf\">B</span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\">ϵ</span></span></span><span class=\"mord\"><span class=\"mord mathbf\">B</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8491em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">⊤</span></span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-366",
+                    id: "text-357",
                     type: "text",
                     body: "is"
                   },
                   {
-                    id: "text-367",
+                    id: "text-358",
                     type: "text",
                     body: "explicitly written below:"
                   }
@@ -4731,7 +4674,7 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-368",
+                    id: "text-359",
                     type: "text",
                     body: "The antisymmetry of the matrix is evident as the diagonal elements are zero:"
                   }
@@ -4762,12 +4705,12 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-369",
+                    id: "text-360",
                     type: "text",
                     body: "and the off-diagonal elements are opposite because of the properties of the scalar triple"
                   },
                   {
-                    id: "text-370",
+                    id: "text-361",
                     type: "text",
                     body: "product:"
                   }
@@ -4798,18 +4741,18 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-371",
+                    id: "text-362",
                     type: "text",
                     body: "The components of "
                   },
                   {
-                    id: "inlineMath-155",
+                    id: "inlineMath-153",
                     type: "inlineMath",
                     body: "d\\boldsymbol{\\Omega}'",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8279em;\"></span><span class=\"mord mathnormal\">d</span><span class=\"mord\"><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathbf\">Ω</span></span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8279em;\"><span style=\"top:-3.139em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-372",
+                    id: "text-363",
                     type: "text",
                     body: "are by definition:"
                   }
@@ -4840,34 +4783,34 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-373",
+                    id: "text-364",
                     type: "text",
                     body: "These are simply the independent entries of the transformed skew-symmetric matrix."
                   },
                   {
-                    id: "text-374",
+                    id: "text-365",
                     type: "text",
                     body: "As the determinant of "
                   },
                   {
-                    id: "inlineMath-156",
+                    id: "inlineMath-154",
                     type: "inlineMath",
                     body: "\\mathbf{B}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord mathbf\">B</span></span></span></span>"
                   },
                   {
-                    id: "text-375",
+                    id: "text-366",
                     type: "text",
                     body: "assumes the values "
                   },
                   {
-                    id: "inlineMath-157",
+                    id: "inlineMath-155",
                     type: "inlineMath",
                     body: "\\pm 1",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"></span><span class=\"mord\">±</span><span class=\"mord\">1</span></span></span></span>"
                   },
                   {
-                    id: "text-376",
+                    id: "text-367",
                     type: "text",
                     body: ":"
                   }
@@ -4898,23 +4841,23 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-377",
+                    id: "text-368",
                     type: "text",
                     body: "depending on the orientation of the vectors "
                   },
                   {
-                    id: "inlineMath-158",
+                    id: "inlineMath-156",
                     type: "inlineMath",
                     body: "\\mathbf{v}_i",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5944em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathbf\" style=\"margin-right:0.016em;\">v</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3117em;\"><span style=\"top:-2.55em;margin-left:-0.016em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-378",
+                    id: "text-369",
                     type: "text",
                     body: "in the rotated coordinate system,"
                   },
                   {
-                    id: "text-379",
+                    id: "text-370",
                     type: "text",
                     body: "the equations become:"
                   }
@@ -4945,7 +4888,7 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-380",
+                    id: "text-371",
                     type: "text",
                     body: "where we have made use of the property of the scalar triple product. Equation"
                   }
@@ -4976,44 +4919,44 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-381",
+                    id: "text-372",
                     type: "text",
                     body: "shows that, under proper orthogonal transformations ("
                   },
                   {
-                    id: "inlineMath-159",
+                    id: "inlineMath-157",
                     type: "inlineMath",
                     body: "|\\mathbf{B}|=1",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">∣</span><span class=\"mord mathbf\">B</span><span class=\"mord\">∣</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">1</span></span></span></span>"
                   },
                   {
-                    id: "text-382",
+                    id: "text-373",
                     type: "text",
                     body: "), the"
                   },
                   {
-                    id: "text-383",
+                    id: "text-374",
                     type: "text",
                     body: "infinitesimal rotation vector transforms exactly as an ordinary vector."
                   },
                   {
-                    id: "text-384",
+                    id: "text-375",
                     type: "text",
                     body: "Under improper orthogonal transformations ("
                   },
                   {
-                    id: "inlineMath-160",
+                    id: "inlineMath-158",
                     type: "inlineMath",
                     body: "|\\mathbf{B}|=-1",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">∣</span><span class=\"mord mathbf\">B</span><span class=\"mord\">∣</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"></span><span class=\"mord\">−</span><span class=\"mord\">1</span></span></span></span>"
                   },
                   {
-                    id: "text-385",
+                    id: "text-376",
                     type: "text",
                     body: "), it acquires an"
                   },
                   {
-                    id: "text-386",
+                    id: "text-377",
                     type: "text",
                     body: "additional sign and therefore transforms as an axial vector (or pseudovector)."
                   }
@@ -5046,7 +4989,7 @@ export const latexDocument = {
         type: "layoutInlineGroup",
         children: [
           {
-            id: "text-387",
+            id: "text-378",
             type: "text",
             body: "Rate of Change of a Vector"
           }
@@ -5061,125 +5004,125 @@ export const latexDocument = {
             type: "layoutInlineGroup",
             children: [
               {
-                id: "text-388",
+                id: "text-379",
                 type: "text",
                 body: "In this section, we will examine how the coordinates of a given vector change over time in"
               },
               {
-                id: "text-389",
+                id: "text-380",
                 type: "text",
                 body: "two different reference systems: one that is fixed and another that rotates with respect to"
               },
               {
-                id: "text-390",
+                id: "text-381",
                 type: "text",
                 body: "the fixed one. Although this result is well known, we shall derive it in detail in order to make"
               },
               {
-                id: "text-391",
+                id: "text-382",
                 type: "text",
                 body: "explicit the meaning of each term appearing in the equations of motion."
               },
               {
-                id: "text-392",
+                id: "text-383",
                 type: "text",
                 body: "This will ensure that it is clear which components are being referenced in"
               },
               {
-                id: "text-393",
+                id: "text-384",
                 type: "text",
                 body: "the general equation of motion."
               },
               {
-                id: "text-394",
+                id: "text-385",
                 type: "text",
                 body: "To understand this better, consider a vector in a fixed reference frame and how its"
               },
               {
-                id: "text-395",
+                id: "text-386",
                 type: "text",
                 body: "components might appear different in a rotating frame. The rotating frame itself can change"
               },
               {
-                id: "text-396",
+                id: "text-387",
                 type: "text",
                 body: "its orientation with time, adding complexity to the motion of the vector. By carefully"
               },
               {
-                id: "text-397",
+                id: "text-388",
                 type: "text",
                 body: "deriving the equations, we can delineate the contributions from both the intrinsic change of"
               },
               {
-                id: "text-398",
+                id: "text-389",
                 type: "text",
                 body: "the vector and the effect of the rotating frame."
               },
               {
-                id: "text-399",
+                id: "text-390",
                 type: "text",
                 body: "We will start by defining the vector in the fixed frame and introduce the rotational matrix"
               },
               {
-                id: "text-400",
+                id: "text-391",
                 type: "text",
                 body: "that relates the rotating frame to the fixed frame. We will then derive the time derivative"
               },
               {
-                id: "text-401",
+                id: "text-392",
                 type: "text",
                 body: "of the vector in both frames and show how they are connected."
               },
               {
-                id: "text-402",
+                id: "text-393",
                 type: "text",
                 body: "Let us consider a time-dependent vector "
               },
               {
-                id: "inlineMath-161",
+                id: "inlineMath-159",
                 type: "inlineMath",
                 body: "\\vb{g} = \\vb{g}(t)",
                 html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6389em;vertical-align:-0.1944em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span></span></span></span>"
               },
               {
-                id: "text-403",
+                id: "text-394",
                 type: "text",
                 body: "in a fixed reference frame,"
               },
               {
-                id: "text-404",
+                id: "text-395",
                 type: "text",
                 body: "and its components in a rotating frame "
               },
               {
-                id: "inlineMath-162",
+                id: "inlineMath-160",
                 type: "inlineMath",
                 body: "\\vb{g}' = \\vb{g}'(t)",
                 html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.9463em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0019em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span></span></span></span>"
               },
               {
-                id: "text-405",
+                id: "text-396",
                 type: "text",
                 body: ". We will assume that the"
               },
               {
-                id: "text-406",
+                id: "text-397",
                 type: "text",
                 body: "components in the two different reference systems change as per a rotation matrix "
               },
               {
-                id: "inlineMath-163",
+                id: "inlineMath-161",
                 type: "inlineMath",
                 body: "\\vb{A}(t)",
                 html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">A</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span></span></span></span>"
               },
               {
-                id: "text-407",
+                id: "text-398",
                 type: "text",
                 body: ","
               },
               {
-                id: "text-408",
+                id: "text-399",
                 type: "text",
                 body: "which is also time-dependent:"
               }
@@ -5210,7 +5153,7 @@ export const latexDocument = {
             type: "layoutInlineGroup",
             children: [
               {
-                id: "text-409",
+                id: "text-400",
                 type: "text",
                 body: "The time derivative of the vector in the rotating frame is given by,"
               }
@@ -5241,29 +5184,29 @@ export const latexDocument = {
             type: "layoutInlineGroup",
             children: [
               {
-                id: "text-410",
+                id: "text-401",
                 type: "text",
                 body: "and the time derivative of the matrix "
               },
               {
-                id: "inlineMath-164",
+                id: "inlineMath-162",
                 type: "inlineMath",
                 body: "\\vb{A}(t)",
                 html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">A</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span></span></span></span>"
               },
               {
-                id: "text-411",
+                id: "text-402",
                 type: "text",
                 body: "at time "
               },
               {
-                id: "inlineMath-165",
+                id: "inlineMath-163",
                 type: "inlineMath",
                 body: "t_0",
                 html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7651em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
               },
               {
-                id: "text-412",
+                id: "text-403",
                 type: "text",
                 body: "is formally defined as,"
               }
@@ -5294,50 +5237,50 @@ export const latexDocument = {
             type: "layoutInlineGroup",
             children: [
               {
-                id: "text-413",
+                id: "text-404",
                 type: "text",
                 body: "The operator "
               },
               {
-                id: "inlineMath-166",
+                id: "inlineMath-164",
                 type: "inlineMath",
                 body: "\\vb{A}(t+\\Delta t)",
                 html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">A</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">Δ</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span></span></span></span>"
               },
               {
-                id: "text-414",
+                id: "text-405",
                 type: "text",
                 body: "is the composition of two rotations: one from the fixed"
               },
               {
-                id: "text-415",
+                id: "text-406",
                 type: "text",
                 body: "frame to the rotating frame at time "
               },
               {
-                id: "inlineMath-167",
+                id: "inlineMath-165",
                 type: "inlineMath",
                 body: "t",
                 html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6151em;\"></span><span class=\"mord mathnormal\">t</span></span></span></span>"
               },
               {
-                id: "text-416",
+                id: "text-407",
                 type: "text",
                 body: ", and the other being the infinitesimal rotation from"
               },
               {
-                id: "text-417",
+                id: "text-408",
                 type: "text",
                 body: "the rotating frame at time "
               },
               {
-                id: "inlineMath-168",
+                id: "inlineMath-166",
                 type: "inlineMath",
                 body: "t + dt",
                 html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6984em;vertical-align:-0.0833em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">d</span><span class=\"mord mathnormal\">t</span></span></span></span>"
               },
               {
-                id: "text-418",
+                id: "text-409",
                 type: "text",
                 body: ":"
               }
@@ -5368,18 +5311,18 @@ export const latexDocument = {
             type: "layoutInlineGroup",
             children: [
               {
-                id: "text-419",
+                id: "text-410",
                 type: "text",
                 body: "and the derivative of the operator "
               },
               {
-                id: "inlineMath-169",
+                id: "inlineMath-167",
                 type: "inlineMath",
                 body: "\\vb{A}(t)",
                 html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">A</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span></span></span></span>"
               },
               {
-                id: "text-420",
+                id: "text-411",
                 type: "text",
                 body: "is then given by,"
               }
@@ -5410,50 +5353,50 @@ export const latexDocument = {
             type: "layoutInlineGroup",
             children: [
               {
-                id: "text-421",
+                id: "text-412",
                 type: "text",
                 body: "To determine the action of this operator, let "
               },
               {
-                id: "inlineMath-170",
+                id: "inlineMath-168",
                 type: "inlineMath",
                 body: "\\vb{x}",
                 html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">x</span></span></span></span></span>"
               },
               {
-                id: "text-422",
+                id: "text-413",
                 type: "text",
                 body: "be an arbitrary vector."
               },
               {
-                id: "text-423",
+                id: "text-414",
                 type: "text",
                 body: "Since the infinitesimal matrix "
               },
               {
-                id: "inlineMath-171",
+                id: "inlineMath-169",
                 type: "inlineMath",
                 body: "\\epsilon",
                 html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">ϵ</span></span></span></span>"
               },
               {
-                id: "text-424",
+                id: "text-415",
                 type: "text",
                 body: "acts on the vector after it has already"
               },
               {
-                id: "text-425",
+                id: "text-416",
                 type: "text",
                 body: "been transformed by "
               },
               {
-                id: "inlineMath-172",
+                id: "inlineMath-170",
                 type: "inlineMath",
                 body: "\\vb{A}(t)",
                 html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">A</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span></span></span></span>"
               },
               {
-                id: "text-426",
+                id: "text-417",
                 type: "text",
                 body: ", we have"
               }
@@ -5484,7 +5427,7 @@ export const latexDocument = {
             type: "layoutInlineGroup",
             children: [
               {
-                id: "text-427",
+                id: "text-418",
                 type: "text",
                 body: "where"
               }
@@ -5515,7 +5458,7 @@ export const latexDocument = {
             type: "layoutInlineGroup",
             children: [
               {
-                id: "text-428",
+                id: "text-419",
                 type: "text",
                 body: "is the "
               },
@@ -5525,18 +5468,18 @@ export const latexDocument = {
                 type: "textbf"
               },
               {
-                id: "text-429",
+                id: "text-420",
                 type: "text",
                 body: ". Since the above relation holds for every vector"
               },
               {
-                id: "inlineMath-173",
+                id: "inlineMath-171",
                 type: "inlineMath",
                 body: "\\vb{x}",
                 html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">x</span></span></span></span></span>"
               },
               {
-                id: "text-430",
+                id: "text-421",
                 type: "text",
                 body: ", we may write"
               }
@@ -5567,23 +5510,23 @@ export const latexDocument = {
             type: "layoutInlineGroup",
             children: [
               {
-                id: "text-431",
+                id: "text-422",
                 type: "text",
                 body: "where "
               },
               {
-                id: "inlineMath-174",
+                id: "inlineMath-172",
                 type: "inlineMath",
                 body: "(\\cdot)",
                 html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">⋅</span><span class=\"mclose\">)</span></span></span></span>"
               },
               {
-                id: "text-432",
+                id: "text-423",
                 type: "text",
                 body: "denotes the placeholder for the vector on which the operator acts."
               },
               {
-                id: "text-433",
+                id: "text-424",
                 type: "text",
                 body: "where,"
               }
@@ -5614,29 +5557,29 @@ export const latexDocument = {
             type: "layoutInlineGroup",
             children: [
               {
-                id: "text-434",
+                id: "text-425",
                 type: "text",
                 body: "and "
               },
               {
-                id: "inlineMath-175",
+                id: "inlineMath-173",
                 type: "inlineMath",
                 body: "(\\cdot)",
                 html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">⋅</span><span class=\"mclose\">)</span></span></span></span>"
               },
               {
-                id: "text-435",
+                id: "text-426",
                 type: "text",
                 body: "denotes the placeholder for a vector. "
               },
               {
-                id: "inlineMath-176",
+                id: "inlineMath-174",
                 type: "inlineMath",
                 body: "\\boldsymbol{\\omega}",
                 html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.037em;\">ω</span></span></span></span></span></span>"
               },
               {
-                id: "text-436",
+                id: "text-427",
                 type: "text",
                 body: "is the"
               },
@@ -5646,12 +5589,12 @@ export const latexDocument = {
                 type: "textbf"
               },
               {
-                id: "text-437",
+                id: "text-428",
                 type: "text",
                 body: ". The final formula for the rate of change of the vector in the"
               },
               {
-                id: "text-438",
+                id: "text-429",
                 type: "text",
                 body: "rotating frame is then given by the following equivalent equations:"
               }
@@ -5683,33 +5626,33 @@ export const latexDocument = {
             type: "layoutInlineGroup",
             children: [
               {
-                id: "text-439",
+                id: "text-430",
                 type: "text",
                 body: "where in the last equation, the distributive property of matrix multiplication for orthogonal"
               },
               {
-                id: "text-440",
+                id: "text-431",
                 type: "text",
                 body: "matrices regarding the cross product has been utilized."
               },
               {
-                id: "text-441",
+                id: "text-432",
                 type: "text",
                 body: "A similar formula can be derived for the rate of change of the vector in the fixed frame,"
               },
               {
-                id: "text-442",
+                id: "text-433",
                 type: "text",
                 body: "since "
               },
               {
-                id: "inlineMath-177",
+                id: "inlineMath-175",
                 type: "inlineMath",
                 body: "\\vb{g}(t) = \\vb{A}^\\top(t)\\,\\vb{g}'(t)",
                 html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.1751em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">A</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.9251em;\"><span style=\"top:-3.139em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">⊤</span></span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span></span></span></span>"
               },
               {
-                id: "text-443",
+                id: "text-434",
                 type: "text",
                 body: ". Multiplying "
               },
@@ -5719,18 +5662,18 @@ export const latexDocument = {
                 body: "kinematics:rotating-frame-derivative"
               },
               {
-                id: "text-444",
+                id: "text-435",
                 type: "text",
                 body: "by"
               },
               {
-                id: "inlineMath-178",
+                id: "inlineMath-176",
                 type: "inlineMath",
                 body: "\\vb{A}^\\top(t)",
                 html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.1751em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">A</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.9251em;\"><span style=\"top:-3.139em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">⊤</span></span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span></span></span></span>"
               },
               {
-                id: "text-445",
+                id: "text-436",
                 type: "text",
                 body: "from the left, we obtain,"
               }
@@ -5764,7 +5707,7 @@ export const latexDocument = {
             type: "layoutInlineGroup",
             children: [
               {
-                id: "text-446",
+                id: "text-437",
                 type: "text",
                 body: "Poisson Formulas"
               }
@@ -5779,9 +5722,36 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-447",
+                    id: "text-438",
                     type: "text",
                     body: "Let us consider a set of unit vectors "
+                  },
+                  {
+                    id: "inlineMath-177",
+                    type: "inlineMath",
+                    body: "\\vb e'_i",
+                    html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0106em;vertical-align:-0.2587em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-2.4413em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2587em;\"><span></span></span></span></span></span></span></span></span></span>"
+                  },
+                  {
+                    id: "text-439",
+                    type: "text",
+                    body: "fixed in the rotating frame, and let"
+                  },
+                  {
+                    id: "inlineMath-178",
+                    type: "inlineMath",
+                    body: "\\vb e_i",
+                    html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5944em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3117em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
+                  },
+                  {
+                    id: "text-440",
+                    type: "text",
+                    body: "denote the corresponding vectors expressed in the fixed frame. Since the"
+                  },
+                  {
+                    id: "text-441",
+                    type: "text",
+                    body: "components "
                   },
                   {
                     id: "inlineMath-179",
@@ -5790,34 +5760,7 @@ export const latexDocument = {
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0106em;vertical-align:-0.2587em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-2.4413em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2587em;\"><span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-448",
-                    type: "text",
-                    body: "fixed in the rotating frame, and let"
-                  },
-                  {
-                    id: "inlineMath-180",
-                    type: "inlineMath",
-                    body: "\\vb e_i",
-                    html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5944em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3117em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
-                  },
-                  {
-                    id: "text-449",
-                    type: "text",
-                    body: "denote the corresponding vectors expressed in the fixed frame. Since the"
-                  },
-                  {
-                    id: "text-450",
-                    type: "text",
-                    body: "components "
-                  },
-                  {
-                    id: "inlineMath-181",
-                    type: "inlineMath",
-                    body: "\\vb e'_i",
-                    html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0106em;vertical-align:-0.2587em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-2.4413em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2587em;\"><span></span></span></span></span></span></span></span></span></span>"
-                  },
-                  {
-                    id: "text-451",
+                    id: "text-442",
                     type: "text",
                     body: "are constant in the rotating frame, equation"
                   },
@@ -5827,7 +5770,7 @@ export const latexDocument = {
                     body: "kinematics:rotating-frame-derivative"
                   },
                   {
-                    id: "text-452",
+                    id: "text-443",
                     type: "text",
                     body: "gives"
                   }
@@ -5858,7 +5801,7 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-453",
+                    id: "text-444",
                     type: "text",
                     body: "The quantity"
                   }
@@ -5889,7 +5832,7 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-454",
+                    id: "text-445",
                     type: "text",
                     body: "does "
                   },
@@ -5899,28 +5842,28 @@ export const latexDocument = {
                     type: "emph"
                   },
                   {
-                    id: "text-455",
+                    id: "text-446",
                     type: "text",
                     body: "denote the ordinary time derivative of the components"
                   },
                   {
-                    id: "inlineMath-182",
+                    id: "inlineMath-180",
                     type: "inlineMath",
                     body: "\\vb{e}'_i",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0106em;vertical-align:-0.2587em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-2.4413em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2587em;\"><span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-456",
+                    id: "text-447",
                     type: "text",
                     body: ", which are constant in the rotating reference frame. Instead,"
                   },
                   {
-                    id: "text-457",
+                    id: "text-448",
                     type: "text",
                     body: "throughout this section we define it as the components, expressed in the"
                   },
                   {
-                    id: "text-458",
+                    id: "text-449",
                     type: "text",
                     body: "rotating frame, of the physical time derivative of the basis vector:"
                   }
@@ -5951,7 +5894,7 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-459",
+                    id: "text-450",
                     type: "text",
                     body: "With this definition, the previous equation becomes"
                   }
@@ -5982,7 +5925,7 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-460",
+                    id: "text-451",
                     type: "text",
                     body: "which is the Poisson formula."
                   }
@@ -6006,7 +5949,7 @@ export const latexDocument = {
             type: "layoutInlineGroup",
             children: [
               {
-                id: "text-461",
+                id: "text-452",
                 type: "text",
                 body: "Components of the Angular Velocity"
               }
@@ -6021,18 +5964,18 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-462",
+                    id: "text-453",
                     type: "text",
                     body: "Let us consider the Poisson formula for the unit vector "
                   },
                   {
-                    id: "inlineMath-183",
+                    id: "inlineMath-181",
                     type: "inlineMath",
                     body: "\\vb{e}'_1",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.2481em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-2.4519em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2481em;\"><span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-463",
+                    id: "text-454",
                     type: "text",
                     body: ","
                   }
@@ -6063,34 +6006,34 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-464",
+                    id: "text-455",
                     type: "text",
                     body: "Taking the scalar product of both sides with "
                   },
                   {
-                    id: "inlineMath-184",
+                    id: "inlineMath-182",
                     type: "inlineMath",
                     body: "\\vb e'_2",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.2481em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-2.4519em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2481em;\"><span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-465",
+                    id: "text-456",
                     type: "text",
                     body: ", we obtain, we obtain the"
                   },
                   {
-                    id: "text-466",
+                    id: "text-457",
                     type: "text",
                     body: "component of the angular velocity along the "
                   },
                   {
-                    id: "inlineMath-185",
+                    id: "inlineMath-183",
                     type: "inlineMath",
                     body: "\\vb{e}'_3",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.2481em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-2.4519em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">3</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2481em;\"><span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-467",
+                    id: "text-458",
                     type: "text",
                     body: "vector:"
                   }
@@ -6121,12 +6064,12 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-468",
+                    id: "text-459",
                     type: "text",
                     body: "Similar formulas can be derived for the other components of the angular velocity, and we"
                   },
                   {
-                    id: "text-469",
+                    id: "text-460",
                     type: "text",
                     body: "ultimately obtain:"
                   }
@@ -6157,7 +6100,7 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-470",
+                    id: "text-461",
                     type: "text",
                     body: "and in vector form,"
                   }
@@ -6189,7 +6132,7 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-471",
+                    id: "text-462",
                     type: "text",
                     body: "Equation "
                   },
@@ -6199,17 +6142,17 @@ export const latexDocument = {
                     body: "kinematics:angular-velocity-components"
                   },
                   {
-                    id: "text-472",
+                    id: "text-463",
                     type: "text",
                     body: "shows that the angular"
                   },
                   {
-                    id: "text-473",
+                    id: "text-464",
                     type: "text",
                     body: "velocity is completely determined by the time evolution of the orthonormal basis"
                   },
                   {
-                    id: "text-474",
+                    id: "text-465",
                     type: "text",
                     body: "attached to the rotating reference frame."
                   }
@@ -6242,7 +6185,7 @@ export const latexDocument = {
         type: "layoutInlineGroup",
         children: [
           {
-            id: "text-475",
+            id: "text-466",
             type: "text",
             body: "Relevant Examples of Angular Velocity"
           }
@@ -6257,17 +6200,17 @@ export const latexDocument = {
             type: "layoutInlineGroup",
             children: [
               {
-                id: "text-476",
+                id: "text-467",
                 type: "text",
                 body: "In this section, we will present several examples of angular velocity in a rotating system."
               },
               {
-                id: "text-477",
+                id: "text-468",
                 type: "text",
                 body: "We begin with the case of a rigid body rotating about a fixed axis, and then consider the more"
               },
               {
-                id: "text-478",
+                id: "text-469",
                 type: "text",
                 body: "general situation in which the axis of rotation also varies with time."
               }
@@ -6284,7 +6227,7 @@ export const latexDocument = {
             type: "layoutInlineGroup",
             children: [
               {
-                id: "text-479",
+                id: "text-470",
                 type: "text",
                 body: "Rotation around a Fixed Axis"
               }
@@ -6299,40 +6242,40 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-480",
+                    id: "text-471",
                     type: "text",
                     body: "In this section, we will assume that a rigid body is rotating around a fixed axis "
                   },
                   {
-                    id: "inlineMath-186",
+                    id: "inlineMath-184",
                     type: "inlineMath",
                     body: "\\vb{n}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">n</span></span></span></span></span>"
                   },
                   {
-                    id: "text-481",
+                    id: "text-472",
                     type: "text",
                     body: "by an angle "
                   },
                   {
-                    id: "inlineMath-187",
+                    id: "inlineMath-185",
                     type: "inlineMath",
                     body: "\\theta = \\theta(t)",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">θ</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">θ</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span></span></span></span>"
                   },
                   {
-                    id: "text-482",
+                    id: "text-473",
                     type: "text",
                     body: ". The time derivative of the rotation matrix"
                   },
                   {
-                    id: "inlineMath-188",
+                    id: "inlineMath-186",
                     type: "inlineMath",
                     body: "\\vb{A}(\\vb{n}, \\theta(t))",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">A</span></span><span class=\"mopen\">(</span><span class=\"mord text\"><span class=\"mord textbf\">n</span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">θ</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">))</span></span></span></span>"
                   },
                   {
-                    id: "text-483",
+                    id: "text-474",
                     type: "text",
                     body: "from "
                   },
@@ -6342,7 +6285,7 @@ export const latexDocument = {
                     body: "kinematics:rodrigues-formula"
                   },
                   {
-                    id: "text-484",
+                    id: "text-475",
                     type: "text",
                     body: "is given by:"
                   }
@@ -6373,7 +6316,7 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-485",
+                    id: "text-476",
                     type: "text",
                     body: "It can be readily verified that:"
                   }
@@ -6404,7 +6347,7 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-486",
+                    id: "text-477",
                     type: "text",
                     body: "where the angular velocity in the rotating frame is given by:"
                   }
@@ -6436,7 +6379,7 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-487",
+                    id: "text-478",
                     type: "text",
                     body: "Since the rotation axis is invariant under the transformation,"
                   }
@@ -6467,12 +6410,12 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-488",
+                    id: "text-479",
                     type: "text",
                     body: "the components of the angular velocity are identical in both the fixed and"
                   },
                   {
-                    id: "text-489",
+                    id: "text-480",
                     type: "text",
                     body: "rotating reference frames."
                   }
@@ -6496,7 +6439,7 @@ export const latexDocument = {
             type: "layoutInlineGroup",
             children: [
               {
-                id: "text-490",
+                id: "text-481",
                 type: "text",
                 body: "Rotation around a Rotating Axis"
               }
@@ -6511,17 +6454,17 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-491",
+                    id: "text-482",
                     type: "text",
                     body: "The formula for the angular velocity when the axis of rotation is also changing in time can be"
                   },
                   {
-                    id: "text-492",
+                    id: "text-483",
                     type: "text",
                     body: "derived following the same steps as in the previous example. The derivation is algebraically involved,"
                   },
                   {
-                    id: "text-493",
+                    id: "text-484",
                     type: "text",
                     body: "so we present the final result for the angular velocity in the rotating frame:"
                   }
@@ -6553,17 +6496,17 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-494",
+                    id: "text-485",
                     type: "text",
                     body: "The last term represents the contribution due to the variation of the rotation"
                   },
                   {
-                    id: "text-495",
+                    id: "text-486",
                     type: "text",
                     body: "angle, whereas the first two terms arise from the time dependence of the"
                   },
                   {
-                    id: "text-496",
+                    id: "text-487",
                     type: "text",
                     body: "rotation axis. "
                   }
@@ -6578,23 +6521,23 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-497",
+                    id: "text-488",
                     type: "text",
                     body: "The formula above can be verified using symbolic computation software. It is convenient to express"
                   },
                   {
-                    id: "inlineMath-189",
+                    id: "inlineMath-187",
                     type: "inlineMath",
                     body: "\\vb n",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">n</span></span></span></span></span>"
                   },
                   {
-                    id: "text-498",
+                    id: "text-489",
                     type: "text",
                     body: "in polar coordinates, which automatically"
                   },
                   {
-                    id: "text-499",
+                    id: "text-490",
                     type: "text",
                     body: "enforces the constraint"
                   }
@@ -6625,18 +6568,18 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-500",
+                    id: "text-491",
                     type: "text",
                     body: "ensuring that "
                   },
                   {
-                    id: "inlineMath-190",
+                    id: "inlineMath-188",
                     type: "inlineMath",
                     body: "\\|\\vb n\\|=1",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">∥</span><span class=\"mord text\"><span class=\"mord textbf\">n</span></span><span class=\"mord\">∥</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">1</span></span></span></span>"
                   },
                   {
-                    id: "text-501",
+                    id: "text-492",
                     type: "text",
                     body: "at all times. "
                   }
@@ -6651,17 +6594,17 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-502",
+                    id: "text-493",
                     type: "text",
                     body: "The kinematical relations derived in this chapter provide the foundation for the study of"
                   },
                   {
-                    id: "text-503",
+                    id: "text-494",
                     type: "text",
                     body: "dynamics in rotating reference frames. In the next chapter, we will derive the fictitious forces that arise in non-inertial"
                   },
                   {
-                    id: "text-504",
+                    id: "text-495",
                     type: "text",
                     body: "systems, including the centrifugal and Coriolis forces, and apply these results to the motion of bodies on the rotating Earth."
                   }
