@@ -201,6 +201,9 @@ function main(): void {
   );
   const outputLayoutPath = `${outputBasePath}.layout.ast.ts`;
   const outputLabelIndexPath = `${outputBasePath}.labelIndex.ts`;
+  const temporaryOutputSuffix = `${process.pid}-${Date.now()}.tmp.ts`;
+  const temporaryLayoutPath = `${outputBasePath}.layout.ast.${temporaryOutputSuffix}`;
+  const temporaryLabelIndexPath = `${outputBasePath}.labelIndex.${temporaryOutputSuffix}`;
 
   fs.mkdirSync(path.dirname(outputLayoutPath), { recursive: true });
 
@@ -210,9 +213,9 @@ function main(): void {
     compilerPath,
     [
       document.inputPath,
-      outputLayoutPath,
+      temporaryLayoutPath,
       document.documentId,
-      outputLabelIndexPath,
+      temporaryLabelIndexPath,
     ],
     {
       cwd: projectRoot,
@@ -221,16 +224,30 @@ function main(): void {
   );
 
   if (result.error) {
+    fs.rmSync(temporaryLayoutPath, { force: true });
+    fs.rmSync(temporaryLabelIndexPath, { force: true });
     console.error(result.error.message);
     process.exit(1);
   }
 
   if (result.status !== 0) {
+    fs.rmSync(temporaryLayoutPath, { force: true });
+    fs.rmSync(temporaryLabelIndexPath, { force: true });
     process.exit(result.status ?? 1);
   }
 
   const assetsDirectory = path.join(path.dirname(sourceDirectory), "assets");
-  addFigureDimensions(outputLayoutPath, assetsDirectory);
+  try {
+    addFigureDimensions(temporaryLayoutPath, assetsDirectory);
+
+    // Keep the last valid artifacts visible until compilation and figure enrichment finish.
+    fs.renameSync(temporaryLabelIndexPath, outputLabelIndexPath);
+    fs.renameSync(temporaryLayoutPath, outputLayoutPath);
+  } catch (error: unknown) {
+    fs.rmSync(temporaryLayoutPath, { force: true });
+    fs.rmSync(temporaryLabelIndexPath, { force: true });
+    throw error;
+  }
 }
 
 main();
