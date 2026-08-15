@@ -227,8 +227,18 @@ export const latexDocument = {
               {
                 id: "text-17",
                 type: "text",
-                body: "slowly rotates with respect to the Earth due to the Coriolis force."
-              },
+                body: "slowly rotates with respect to the Earth due to the Coriolis force. "
+              }
+            ]
+          }
+        },
+        {
+          id: "contentLayoutGroup-8",
+          type: "contentLayoutGroup",
+          children: {
+            id: "layoutInlineGroup-8",
+            type: "layoutInlineGroup",
+            children: [
               {
                 id: "text-18",
                 type: "text",
@@ -243,7 +253,7 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-8",
+          id: "contentLayoutGroup-9",
           type: "contentLayoutGroup",
           children: {
             id: "layoutBlockNodeGroup-4",
@@ -259,10 +269,10 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-9",
+          id: "contentLayoutGroup-10",
           type: "contentLayoutGroup",
           children: {
-            id: "layoutInlineGroup-8",
+            id: "layoutInlineGroup-9",
             type: "layoutInlineGroup",
             children: [
               {
@@ -312,7 +322,7 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-10",
+          id: "contentLayoutGroup-11",
           type: "contentLayoutGroup",
           children: {
             id: "layoutBlockNodeGroup-5",
@@ -328,10 +338,10 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-11",
+          id: "contentLayoutGroup-12",
           type: "contentLayoutGroup",
           children: {
-            id: "layoutInlineGroup-9",
+            id: "layoutInlineGroup-10",
             type: "layoutInlineGroup",
             children: [
               {
@@ -343,7 +353,7 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-12",
+          id: "contentLayoutGroup-13",
           type: "contentLayoutGroup",
           children: {
             id: "layoutBlockNodeGroup-6",
@@ -359,10 +369,10 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-13",
+          id: "contentLayoutGroup-14",
           type: "contentLayoutGroup",
           children: {
-            id: "layoutInlineGroup-10",
+            id: "layoutInlineGroup-11",
             type: "layoutInlineGroup",
             children: [
               {
@@ -410,13 +420,13 @@ export const latexDocument = {
               {
                 id: "inlineMath-8",
                 type: "inlineMath",
-                body: "\\omega^2",
-                html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span></span></span></span>"
+                body: "\\omega^2.",
+                html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mord\">.</span></span></span></span>"
               },
               {
                 id: "text-32",
                 type: "text",
-                body: ". Equation"
+                body: "Equation"
               },
               {
                 id: "eqref-1",
@@ -432,7 +442,7 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-14",
+          id: "contentLayoutGroup-15",
           type: "contentLayoutGroup",
           children: {
             id: "layoutBlockNodeGroup-7",
@@ -449,10 +459,10 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-15",
+          id: "contentLayoutGroup-16",
           type: "contentLayoutGroup",
           children: {
-            id: "layoutInlineGroup-11",
+            id: "layoutInlineGroup-12",
             type: "layoutInlineGroup",
             children: [
               {
@@ -479,7 +489,7 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-16",
+          id: "contentLayoutGroup-17",
           type: "contentLayoutGroup",
           children: {
             id: "layoutBlockNodeGroup-8",
@@ -495,10 +505,10 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-17",
+          id: "contentLayoutGroup-18",
           type: "contentLayoutGroup",
           children: {
-            id: "layoutInlineGroup-12",
+            id: "layoutInlineGroup-13",
             type: "layoutInlineGroup",
             children: [
               {
@@ -510,7 +520,7 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-18",
+          id: "contentLayoutGroup-19",
           type: "contentLayoutGroup",
           children: {
             id: "layoutBlockNodeGroup-9",
@@ -526,10 +536,10 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-19",
+          id: "contentLayoutGroup-20",
           type: "contentLayoutGroup",
           children: {
-            id: "layoutInlineGroup-13",
+            id: "layoutInlineGroup-14",
             type: "layoutInlineGroup",
             children: [
               {
@@ -546,7 +556,7 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-20",
+          id: "contentLayoutGroup-21",
           type: "contentLayoutGroup",
           children: {
             id: "layoutBlockNodeGroup-10",
@@ -562,10 +572,10 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-21",
+          id: "contentLayoutGroup-22",
           type: "contentLayoutGroup",
           children: {
-            id: "layoutInlineGroup-14",
+            id: "layoutInlineGroup-15",
             type: "layoutInlineGroup",
             children: [
               {
@@ -577,7 +587,7 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-22",
+          id: "contentLayoutGroup-23",
           type: "contentLayoutGroup",
           children: {
             id: "layoutBlockNodeGroup-11",
@@ -593,10 +603,10 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-23",
+          id: "contentLayoutGroup-24",
           type: "contentLayoutGroup",
           children: {
-            id: "layoutInlineGroup-15",
+            id: "layoutInlineGroup-16",
             type: "layoutInlineGroup",
             children: [
               {
@@ -608,7 +618,7 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-24",
+          id: "contentLayoutGroup-25",
           type: "contentLayoutGroup",
           children: {
             id: "layoutBlockNodeGroup-12",
@@ -624,10 +634,10 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-25",
+          id: "contentLayoutGroup-26",
           type: "contentLayoutGroup",
           children: {
-            id: "layoutInlineGroup-16",
+            id: "layoutInlineGroup-17",
             type: "layoutInlineGroup",
             children: [
               {
@@ -639,7 +649,7 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-26",
+          id: "contentLayoutGroup-27",
           type: "contentLayoutGroup",
           children: {
             id: "layoutBlockNodeGroup-13",
@@ -655,10 +665,10 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-27",
+          id: "contentLayoutGroup-28",
           type: "contentLayoutGroup",
           children: {
-            id: "layoutInlineGroup-17",
+            id: "layoutInlineGroup-18",
             type: "layoutInlineGroup",
             children: [
               {
@@ -670,7 +680,7 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-28",
+          id: "contentLayoutGroup-29",
           type: "contentLayoutGroup",
           children: {
             id: "layoutBlockNodeGroup-14",
@@ -691,7 +701,7 @@ export const latexDocument = {
           id: "subsection-1",
           type: "subsection",
           title: {
-            id: "layoutInlineGroup-18",
+            id: "layoutInlineGroup-19",
             type: "layoutInlineGroup",
             children: [
               {
@@ -703,10 +713,10 @@ export const latexDocument = {
           },
           content: [
             {
-              id: "contentLayoutGroup-29",
+              id: "contentLayoutGroup-30",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-19",
+                id: "layoutInlineGroup-20",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -799,7 +809,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-30",
+              id: "contentLayoutGroup-31",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-15",
@@ -815,10 +825,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-31",
+              id: "contentLayoutGroup-32",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-20",
+                id: "layoutInlineGroup-21",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -841,7 +851,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-32",
+              id: "contentLayoutGroup-33",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-16",
@@ -854,7 +864,7 @@ export const latexDocument = {
                     width: 1536,
                     height: 1024,
                     caption: {
-                      id: "layoutInlineGroup-21",
+                      id: "layoutInlineGroup-22",
                       type: "layoutInlineGroup",
                       children: [
                         {
@@ -869,10 +879,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-33",
+              id: "contentLayoutGroup-34",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-22",
+                id: "layoutInlineGroup-23",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -900,7 +910,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-34",
+              id: "contentLayoutGroup-35",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-17",
@@ -916,10 +926,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-35",
+              id: "contentLayoutGroup-36",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-23",
+                id: "layoutInlineGroup-24",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -947,7 +957,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-36",
+              id: "contentLayoutGroup-37",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-18",
@@ -963,10 +973,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-37",
+              id: "contentLayoutGroup-38",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-24",
+                id: "layoutInlineGroup-25",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -978,7 +988,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-38",
+              id: "contentLayoutGroup-39",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-19",
@@ -994,10 +1004,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-39",
+              id: "contentLayoutGroup-40",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-25",
+                id: "layoutInlineGroup-26",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -1009,7 +1019,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-40",
+              id: "contentLayoutGroup-41",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-20",
@@ -1025,10 +1035,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-41",
+              id: "contentLayoutGroup-42",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-26",
+                id: "layoutInlineGroup-27",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -1040,7 +1050,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-42",
+              id: "contentLayoutGroup-43",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-21",
@@ -1056,10 +1066,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-43",
+              id: "contentLayoutGroup-44",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-27",
+                id: "layoutInlineGroup-28",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -1071,7 +1081,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-44",
+              id: "contentLayoutGroup-45",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-22",
@@ -1100,7 +1110,7 @@ export const latexDocument = {
           id: "subsection-2",
           type: "subsection",
           title: {
-            id: "layoutInlineGroup-28",
+            id: "layoutInlineGroup-29",
             type: "layoutInlineGroup",
             children: [
               {
@@ -1112,10 +1122,10 @@ export const latexDocument = {
           },
           content: [
             {
-              id: "contentLayoutGroup-45",
+              id: "contentLayoutGroup-46",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-29",
+                id: "layoutInlineGroup-30",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -1158,7 +1168,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-46",
+              id: "contentLayoutGroup-47",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-23",
@@ -1175,10 +1185,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-47",
+              id: "contentLayoutGroup-48",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-30",
+                id: "layoutInlineGroup-31",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -1190,7 +1200,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-48",
+              id: "contentLayoutGroup-49",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-24",
@@ -1206,22 +1216,22 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-49",
+              id: "contentLayoutGroup-50",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-31",
+                id: "layoutInlineGroup-32",
                 type: "layoutInlineGroup",
                 children: [
                   {
                     id: "text-83",
                     type: "text",
-                    body: "We therefore consider small oscillations around this configuration and write"
+                    body: "We consider small oscillations around this configuration and write"
                   }
                 ]
               }
             },
             {
-              id: "contentLayoutGroup-50",
+              id: "contentLayoutGroup-51",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-25",
@@ -1237,10 +1247,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-51",
+              id: "contentLayoutGroup-52",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-32",
+                id: "layoutInlineGroup-33",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -1252,7 +1262,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-52",
+              id: "contentLayoutGroup-53",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-26",
@@ -1261,17 +1271,17 @@ export const latexDocument = {
                   {
                     id: "displayMath-19",
                     type: "displayMath",
-                    body: "x^2+y^2+z^2-2lz=0.",
-                    html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.9474em;vertical-align:-0.0833em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8641em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0585em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">y</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8641em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.9474em;vertical-align:-0.0833em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.044em;\">z</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8641em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\">2</span><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span><span class=\"mord mathnormal\" style=\"margin-right:0.044em;\">z</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0.</span></span></span></span></span>"
+                    body: "x^2+y^2+ \\delta z^2-2l \\delta z=0.",
+                    html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.9474em;vertical-align:-0.0833em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8641em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0585em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">y</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8641em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.9474em;vertical-align:-0.0833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0379em;\">δ</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.044em;\">z</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8641em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\">2</span><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span><span class=\"mord mathnormal\" style=\"margin-right:0.0379em;\">δ</span><span class=\"mord mathnormal\" style=\"margin-right:0.044em;\">z</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0.</span></span></span></span></span>"
                   }
                 ]
               }
             },
             {
-              id: "contentLayoutGroup-53",
+              id: "contentLayoutGroup-54",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-33",
+                id: "layoutInlineGroup-34",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -1282,8 +1292,8 @@ export const latexDocument = {
                   {
                     id: "inlineMath-14",
                     type: "inlineMath",
-                    body: "z\\ll l",
-                    html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5782em;vertical-align:-0.0391em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.044em;\">z</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">≪</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span></span>"
+                    body: "\\delta z\\ll l",
+                    html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7335em;vertical-align:-0.0391em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0379em;\">δ</span><span class=\"mord mathnormal\" style=\"margin-right:0.044em;\">z</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">≪</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span></span>"
                   },
                   {
                     id: "text-86",
@@ -1305,7 +1315,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-54",
+              id: "contentLayoutGroup-55",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-27",
@@ -1314,9 +1324,9 @@ export const latexDocument = {
                   {
                     id: "equation-5",
                     type: "equation",
-                    body: "x^2+y^2=2lz.",
+                    body: "x^2+y^2=2l\\, \\delta z.",
                     label: "eq:pendulum-linearized-constraint",
-                    html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.2241em;vertical-align:-0.3621em;\"></span><span class=\"mord\"><span class=\"mtable\"><span class=\"col-align-c\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8621em;\"><span style=\"top:-2.9979em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8641em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">y</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8641em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord\">2</span><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span><span class=\"mord mathnormal\" style=\"margin-right:0.044em;\">z</span><span class=\"mord\">.</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3621em;\"><span></span></span></span></span></span></span></span></span></span></span></span>"
+                    html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.2241em;vertical-align:-0.3621em;\"></span><span class=\"mord\"><span class=\"mtable\"><span class=\"col-align-c\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8621em;\"><span style=\"top:-2.9979em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8641em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">y</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8641em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord\">2</span><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0379em;\">δ</span><span class=\"mord mathnormal\" style=\"margin-right:0.044em;\">z</span><span class=\"mord\">.</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3621em;\"><span></span></span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
                     id: "figure-2",
@@ -1325,7 +1335,7 @@ export const latexDocument = {
                     width: 1402,
                     height: 1122,
                     caption: {
-                      id: "layoutInlineGroup-34",
+                      id: "layoutInlineGroup-35",
                       type: "layoutInlineGroup",
                       children: [
                         {
@@ -1340,10 +1350,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-55",
+              id: "contentLayoutGroup-56",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-35",
+                id: "layoutInlineGroup-36",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -1381,8 +1391,8 @@ export const latexDocument = {
                   {
                     id: "inlineMath-18",
                     type: "inlineMath",
-                    body: "z",
-                    html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.044em;\">z</span></span></span></span>"
+                    body: "\\delta z",
+                    html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0379em;\">δ</span><span class=\"mord mathnormal\" style=\"margin-right:0.044em;\">z</span></span></span></span>"
                   },
                   {
                     id: "text-93",
@@ -1393,7 +1403,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-56",
+              id: "contentLayoutGroup-57",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-28",
@@ -1402,17 +1412,17 @@ export const latexDocument = {
                   {
                     id: "displayMath-20",
                     type: "displayMath",
-                    body: "z\n  =\n  \\frac{x^2+y^2}{2l}.",
-                    html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.044em;\">z</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:2.1771em;vertical-align:-0.686em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.4911em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\">2</span><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">y</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mord\">.</span></span></span></span></span>"
+                    body: "\\delta  z\n  =\n  \\frac{x^2+y^2}{2l}.",
+                    html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0379em;\">δ</span><span class=\"mord mathnormal\" style=\"margin-right:0.044em;\">z</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:2.1771em;vertical-align:-0.686em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.4911em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\">2</span><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">y</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mord\">.</span></span></span></span></span>"
                   }
                 ]
               }
             },
             {
-              id: "contentLayoutGroup-57",
+              id: "contentLayoutGroup-58",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-36",
+                id: "layoutInlineGroup-37",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -1495,7 +1505,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-58",
+              id: "contentLayoutGroup-59",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-29",
@@ -1511,10 +1521,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-59",
+              id: "contentLayoutGroup-60",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-37",
+                id: "layoutInlineGroup-38",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -1526,7 +1536,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-60",
+              id: "contentLayoutGroup-61",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-30",
@@ -1542,10 +1552,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-61",
+              id: "contentLayoutGroup-62",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-38",
+                id: "layoutInlineGroup-39",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -1600,7 +1610,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-62",
+              id: "contentLayoutGroup-63",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-31",
@@ -1616,10 +1626,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-63",
+              id: "contentLayoutGroup-64",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-39",
+                id: "layoutInlineGroup-40",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -1631,7 +1641,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-64",
+              id: "contentLayoutGroup-65",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-32",
@@ -1648,10 +1658,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-65",
+              id: "contentLayoutGroup-66",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-40",
+                id: "layoutInlineGroup-41",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -1685,7 +1695,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-66",
+              id: "contentLayoutGroup-67",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-33",
@@ -1702,10 +1712,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-67",
+              id: "contentLayoutGroup-68",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-41",
+                id: "layoutInlineGroup-42",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -1716,13 +1726,13 @@ export const latexDocument = {
                   {
                     id: "text-114",
                     type: "text",
-                    body: "motion satisfy the independent harmonic-oscillator equations"
+                    body: "motion satisfy the well known independent harmonic-oscillator equations of the pendulum under gravity"
                   }
                 ]
               }
             },
             {
-              id: "contentLayoutGroup-68",
+              id: "contentLayoutGroup-69",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-34",
@@ -1739,10 +1749,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-69",
+              id: "contentLayoutGroup-70",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-42",
+                id: "layoutInlineGroup-43",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -1754,7 +1764,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-70",
+              id: "contentLayoutGroup-71",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-35",
@@ -1782,7 +1792,7 @@ export const latexDocument = {
           id: "subsection-3",
           type: "subsection",
           title: {
-            id: "layoutInlineGroup-43",
+            id: "layoutInlineGroup-44",
             type: "layoutInlineGroup",
             children: [
               {
@@ -1794,10 +1804,10 @@ export const latexDocument = {
           },
           content: [
             {
-              id: "contentLayoutGroup-71",
+              id: "contentLayoutGroup-72",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-44",
+                id: "layoutInlineGroup-45",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -1841,7 +1851,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-72",
+              id: "contentLayoutGroup-73",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-36",
@@ -1857,10 +1867,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-73",
+              id: "contentLayoutGroup-74",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-45",
+                id: "layoutInlineGroup-46",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -1872,7 +1882,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-74",
+              id: "contentLayoutGroup-75",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-37",
@@ -1888,10 +1898,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-75",
+              id: "contentLayoutGroup-76",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-46",
+                id: "layoutInlineGroup-47",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -1935,7 +1945,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-76",
+              id: "contentLayoutGroup-77",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-38",
@@ -1951,10 +1961,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-77",
+              id: "contentLayoutGroup-78",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-47",
+                id: "layoutInlineGroup-48",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -1971,7 +1981,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-78",
+              id: "contentLayoutGroup-79",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-39",
@@ -1987,10 +1997,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-79",
+              id: "contentLayoutGroup-80",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-48",
+                id: "layoutInlineGroup-49",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -2045,7 +2055,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-80",
+              id: "contentLayoutGroup-81",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-40",
@@ -2061,10 +2071,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-81",
+              id: "contentLayoutGroup-82",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-49",
+                id: "layoutInlineGroup-50",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -2087,7 +2097,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-82",
+              id: "contentLayoutGroup-83",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-41",
@@ -2104,10 +2114,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-83",
+              id: "contentLayoutGroup-84",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-50",
+                id: "layoutInlineGroup-51",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -2190,7 +2200,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-84",
+              id: "contentLayoutGroup-85",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-42",
@@ -2206,10 +2216,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-85",
+              id: "contentLayoutGroup-86",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-51",
+                id: "layoutInlineGroup-52",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -2243,7 +2253,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-86",
+              id: "contentLayoutGroup-87",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-43",
@@ -2259,10 +2269,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-87",
+              id: "contentLayoutGroup-88",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-52",
+                id: "layoutInlineGroup-53",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -2274,7 +2284,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-88",
+              id: "contentLayoutGroup-89",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-44",
@@ -2291,10 +2301,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-89",
+              id: "contentLayoutGroup-90",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-53",
+                id: "layoutInlineGroup-54",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -2311,7 +2321,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-90",
+              id: "contentLayoutGroup-91",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-45",
@@ -2327,10 +2337,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-91",
+              id: "contentLayoutGroup-92",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-54",
+                id: "layoutInlineGroup-55",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -2369,7 +2379,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-92",
+              id: "contentLayoutGroup-93",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-46",
@@ -2386,10 +2396,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-93",
+              id: "contentLayoutGroup-94",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-55",
+                id: "layoutInlineGroup-56",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -2428,7 +2438,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-94",
+              id: "contentLayoutGroup-95",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-47",
@@ -2444,10 +2454,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-95",
+              id: "contentLayoutGroup-96",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-56",
+                id: "layoutInlineGroup-57",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -2486,7 +2496,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-96",
+              id: "contentLayoutGroup-97",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-48",
@@ -2502,10 +2512,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-97",
+              id: "contentLayoutGroup-98",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-57",
+                id: "layoutInlineGroup-58",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -2527,7 +2537,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-98",
+              id: "contentLayoutGroup-99",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-49",
@@ -2556,7 +2566,7 @@ export const latexDocument = {
           id: "subsection-4",
           type: "subsection",
           title: {
-            id: "layoutInlineGroup-58",
+            id: "layoutInlineGroup-59",
             type: "layoutInlineGroup",
             children: [
               {
@@ -2568,10 +2578,10 @@ export const latexDocument = {
           },
           content: [
             {
-              id: "contentLayoutGroup-99",
+              id: "contentLayoutGroup-100",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-59",
+                id: "layoutInlineGroup-60",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -2588,7 +2598,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-100",
+              id: "contentLayoutGroup-101",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-50",
@@ -2604,10 +2614,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-101",
+              id: "contentLayoutGroup-102",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-60",
+                id: "layoutInlineGroup-61",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -2629,7 +2639,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-102",
+              id: "contentLayoutGroup-103",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-51",
@@ -2645,10 +2655,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-103",
+              id: "contentLayoutGroup-104",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-61",
+                id: "layoutInlineGroup-62",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -2660,7 +2670,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-104",
+              id: "contentLayoutGroup-105",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-52",
@@ -2676,10 +2686,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-105",
+              id: "contentLayoutGroup-106",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-62",
+                id: "layoutInlineGroup-63",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -2691,7 +2701,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-106",
+              id: "contentLayoutGroup-107",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-53",
@@ -2707,10 +2717,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-107",
+              id: "contentLayoutGroup-108",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-63",
+                id: "layoutInlineGroup-64",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -2722,7 +2732,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-108",
+              id: "contentLayoutGroup-109",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-54",
@@ -2738,10 +2748,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-109",
+              id: "contentLayoutGroup-110",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-64",
+                id: "layoutInlineGroup-65",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -2763,7 +2773,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-110",
+              id: "contentLayoutGroup-111",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-55",
@@ -2779,10 +2789,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-111",
+              id: "contentLayoutGroup-112",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-65",
+                id: "layoutInlineGroup-66",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -2794,7 +2804,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-112",
+              id: "contentLayoutGroup-113",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-56",
@@ -2810,10 +2820,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-113",
+              id: "contentLayoutGroup-114",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-66",
+                id: "layoutInlineGroup-67",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -2851,7 +2861,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-114",
+              id: "contentLayoutGroup-115",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-57",
@@ -2867,10 +2877,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-115",
+              id: "contentLayoutGroup-116",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-67",
+                id: "layoutInlineGroup-68",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -2892,7 +2902,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-116",
+              id: "contentLayoutGroup-117",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-58",
@@ -2905,7 +2915,7 @@ export const latexDocument = {
                     width: 1536,
                     height: 1024,
                     caption: {
-                      id: "layoutInlineGroup-68",
+                      id: "layoutInlineGroup-69",
                       type: "layoutInlineGroup",
                       children: [
                         {
@@ -2920,10 +2930,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-117",
+              id: "contentLayoutGroup-118",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-69",
+                id: "layoutInlineGroup-70",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -2945,7 +2955,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-118",
+              id: "contentLayoutGroup-119",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-59",
@@ -2961,10 +2971,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-119",
+              id: "contentLayoutGroup-120",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-70",
+                id: "layoutInlineGroup-71",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -2976,7 +2986,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-120",
+              id: "contentLayoutGroup-121",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-60",
@@ -2992,10 +3002,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-121",
+              id: "contentLayoutGroup-122",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-71",
+                id: "layoutInlineGroup-72",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -3007,7 +3017,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-122",
+              id: "contentLayoutGroup-123",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-61",
@@ -3023,10 +3033,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-123",
+              id: "contentLayoutGroup-124",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-72",
+                id: "layoutInlineGroup-73",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -3038,7 +3048,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-124",
+              id: "contentLayoutGroup-125",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-62",
@@ -3054,10 +3064,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-125",
+              id: "contentLayoutGroup-126",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-73",
+                id: "layoutInlineGroup-74",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -3069,7 +3079,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-126",
+              id: "contentLayoutGroup-127",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-63",
@@ -3085,10 +3095,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-127",
+              id: "contentLayoutGroup-128",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-74",
+                id: "layoutInlineGroup-75",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -3100,7 +3110,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-128",
+              id: "contentLayoutGroup-129",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-64",
@@ -3116,10 +3126,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-129",
+              id: "contentLayoutGroup-130",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-75",
+                id: "layoutInlineGroup-76",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -3136,7 +3146,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-130",
+              id: "contentLayoutGroup-131",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-65",
@@ -3152,10 +3162,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-131",
+              id: "contentLayoutGroup-132",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-76",
+                id: "layoutInlineGroup-77",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -3167,7 +3177,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-132",
+              id: "contentLayoutGroup-133",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-66",
@@ -3183,10 +3193,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-133",
+              id: "contentLayoutGroup-134",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-77",
+                id: "layoutInlineGroup-78",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -3198,7 +3208,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-134",
+              id: "contentLayoutGroup-135",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-67",
@@ -3214,10 +3224,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-135",
+              id: "contentLayoutGroup-136",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-78",
+                id: "layoutInlineGroup-79",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -3229,7 +3239,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-136",
+              id: "contentLayoutGroup-137",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-68",
@@ -3245,10 +3255,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-137",
+              id: "contentLayoutGroup-138",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-79",
+                id: "layoutInlineGroup-80",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -3260,7 +3270,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-138",
+              id: "contentLayoutGroup-139",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-69",
@@ -3276,10 +3286,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-139",
+              id: "contentLayoutGroup-140",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-80",
+                id: "layoutInlineGroup-81",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -3291,7 +3301,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-140",
+              id: "contentLayoutGroup-141",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-70",
@@ -3307,10 +3317,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-141",
+              id: "contentLayoutGroup-142",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-81",
+                id: "layoutInlineGroup-82",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -3370,7 +3380,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-142",
+              id: "contentLayoutGroup-143",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-71",
@@ -3386,10 +3396,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-143",
+              id: "contentLayoutGroup-144",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-82",
+                id: "layoutInlineGroup-83",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -3432,7 +3442,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-144",
+              id: "contentLayoutGroup-145",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-72",
@@ -3448,10 +3458,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-145",
+              id: "contentLayoutGroup-146",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-83",
+                id: "layoutInlineGroup-84",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -3489,7 +3499,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-146",
+              id: "contentLayoutGroup-147",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-73",
@@ -3505,10 +3515,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-147",
+              id: "contentLayoutGroup-148",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-84",
+                id: "layoutInlineGroup-85",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -3520,7 +3530,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-148",
+              id: "contentLayoutGroup-149",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-74",
@@ -3536,10 +3546,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-149",
+              id: "contentLayoutGroup-150",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-85",
+                id: "layoutInlineGroup-86",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -3551,7 +3561,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-150",
+              id: "contentLayoutGroup-151",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-75",
@@ -3567,10 +3577,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-151",
+              id: "contentLayoutGroup-152",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-86",
+                id: "layoutInlineGroup-87",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -3582,7 +3592,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-152",
+              id: "contentLayoutGroup-153",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-76",
@@ -3598,10 +3608,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-153",
+              id: "contentLayoutGroup-154",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-87",
+                id: "layoutInlineGroup-88",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -3613,7 +3623,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-154",
+              id: "contentLayoutGroup-155",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-77",
@@ -3629,10 +3639,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-155",
+              id: "contentLayoutGroup-156",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-88",
+                id: "layoutInlineGroup-89",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -3655,7 +3665,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-156",
+              id: "contentLayoutGroup-157",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-78",
@@ -3671,10 +3681,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-157",
+              id: "contentLayoutGroup-158",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-89",
+                id: "layoutInlineGroup-90",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -3686,7 +3696,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-158",
+              id: "contentLayoutGroup-159",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-79",
@@ -3702,10 +3712,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-159",
+              id: "contentLayoutGroup-160",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-90",
+                id: "layoutInlineGroup-91",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -3717,7 +3727,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-160",
+              id: "contentLayoutGroup-161",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-80",
@@ -3733,10 +3743,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-161",
+              id: "contentLayoutGroup-162",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-91",
+                id: "layoutInlineGroup-92",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -3748,7 +3758,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-162",
+              id: "contentLayoutGroup-163",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-81",
@@ -3764,10 +3774,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-163",
+              id: "contentLayoutGroup-164",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-92",
+                id: "layoutInlineGroup-93",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -3779,7 +3789,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-164",
+              id: "contentLayoutGroup-165",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-82",
@@ -3796,10 +3806,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-165",
+              id: "contentLayoutGroup-166",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-93",
+                id: "layoutInlineGroup-94",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -3816,7 +3826,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-166",
+              id: "contentLayoutGroup-167",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-83",
@@ -3832,10 +3842,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-167",
+              id: "contentLayoutGroup-168",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-94",
+                id: "layoutInlineGroup-95",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -3896,7 +3906,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-168",
+              id: "contentLayoutGroup-169",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-84",
@@ -3912,10 +3922,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-169",
+              id: "contentLayoutGroup-170",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-95",
+                id: "layoutInlineGroup-96",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -3927,7 +3937,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-170",
+              id: "contentLayoutGroup-171",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-85",
@@ -3943,10 +3953,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-171",
+              id: "contentLayoutGroup-172",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-96",
+                id: "layoutInlineGroup-97",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -3969,7 +3979,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-172",
+              id: "contentLayoutGroup-173",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-86",
@@ -3985,10 +3995,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-173",
+              id: "contentLayoutGroup-174",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-97",
+                id: "layoutInlineGroup-98",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -4000,7 +4010,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-174",
+              id: "contentLayoutGroup-175",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-87",
@@ -4016,10 +4026,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-175",
+              id: "contentLayoutGroup-176",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-98",
+                id: "layoutInlineGroup-99",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -4031,7 +4041,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-176",
+              id: "contentLayoutGroup-177",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-88",
@@ -4047,10 +4057,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-177",
+              id: "contentLayoutGroup-178",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-99",
+                id: "layoutInlineGroup-100",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -4073,7 +4083,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-178",
+              id: "contentLayoutGroup-179",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-89",
@@ -4089,10 +4099,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-179",
+              id: "contentLayoutGroup-180",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-100",
+                id: "layoutInlineGroup-101",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -4104,7 +4114,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-180",
+              id: "contentLayoutGroup-181",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-90",
@@ -4120,10 +4130,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-181",
+              id: "contentLayoutGroup-182",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-101",
+                id: "layoutInlineGroup-102",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -4135,7 +4145,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-182",
+              id: "contentLayoutGroup-183",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-91",
@@ -4151,10 +4161,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-183",
+              id: "contentLayoutGroup-184",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-102",
+                id: "layoutInlineGroup-103",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -4176,7 +4186,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-184",
+              id: "contentLayoutGroup-185",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-92",
@@ -4193,10 +4203,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-185",
+              id: "contentLayoutGroup-186",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-103",
+                id: "layoutInlineGroup-104",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -4208,7 +4218,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-186",
+              id: "contentLayoutGroup-187",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-93",
@@ -4224,10 +4234,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-187",
+              id: "contentLayoutGroup-188",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-104",
+                id: "layoutInlineGroup-105",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -4293,7 +4303,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-188",
+              id: "contentLayoutGroup-189",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-94",
@@ -4309,10 +4319,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-189",
+              id: "contentLayoutGroup-190",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-105",
+                id: "layoutInlineGroup-106",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -4324,7 +4334,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-190",
+              id: "contentLayoutGroup-191",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-95",
@@ -4340,10 +4350,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-191",
+              id: "contentLayoutGroup-192",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-106",
+                id: "layoutInlineGroup-107",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -4365,7 +4375,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-192",
+              id: "contentLayoutGroup-193",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-96",
@@ -4382,10 +4392,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-193",
+              id: "contentLayoutGroup-194",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-107",
+                id: "layoutInlineGroup-108",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -4397,7 +4407,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-194",
+              id: "contentLayoutGroup-195",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-97",
@@ -4413,10 +4423,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-195",
+              id: "contentLayoutGroup-196",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-108",
+                id: "layoutInlineGroup-109",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -4428,7 +4438,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-196",
+              id: "contentLayoutGroup-197",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-98",
@@ -4457,7 +4467,7 @@ export const latexDocument = {
           id: "subsection-5",
           type: "subsection",
           title: {
-            id: "layoutInlineGroup-109",
+            id: "layoutInlineGroup-110",
             type: "layoutInlineGroup",
             children: [
               {
@@ -4469,10 +4479,10 @@ export const latexDocument = {
           },
           content: [
             {
-              id: "contentLayoutGroup-197",
+              id: "contentLayoutGroup-198",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-110",
+                id: "layoutInlineGroup-111",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -4489,7 +4499,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-198",
+              id: "contentLayoutGroup-199",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-99",
@@ -4505,10 +4515,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-199",
+              id: "contentLayoutGroup-200",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-111",
+                id: "layoutInlineGroup-112",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -4520,7 +4530,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-200",
+              id: "contentLayoutGroup-201",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-100",
@@ -4537,10 +4547,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-201",
+              id: "contentLayoutGroup-202",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-112",
+                id: "layoutInlineGroup-113",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -4552,7 +4562,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-202",
+              id: "contentLayoutGroup-203",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-101",
@@ -4568,10 +4578,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-203",
+              id: "contentLayoutGroup-204",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-113",
+                id: "layoutInlineGroup-114",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -4583,7 +4593,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-204",
+              id: "contentLayoutGroup-205",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-102",
@@ -4599,10 +4609,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-205",
+              id: "contentLayoutGroup-206",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-114",
+                id: "layoutInlineGroup-115",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -4614,7 +4624,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-206",
+              id: "contentLayoutGroup-207",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-103",
@@ -4630,10 +4640,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-207",
+              id: "contentLayoutGroup-208",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-115",
+                id: "layoutInlineGroup-116",
                 type: "layoutInlineGroup",
                 children: [
                   {

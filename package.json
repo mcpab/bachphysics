@@ -2,6 +2,7 @@
   "name": "bachphysics",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "concurrently --kill-others --names next,latex --prefix-colors blue,magenta \"pnpm dev:next\" \"pnpm dev:latex\"",
     "dev:next": "next dev --turbo",

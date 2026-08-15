@@ -66,7 +66,7 @@ applying several simplifying assumptions. The Foucault pendulum is one of the
 most elegant experiments demonstrating the rotation of the Earth. It consists of
 a heavy mass $m$ suspended by a long wire or rigid rod of length $l$, free to
 oscillate in any vertical plane. As the pendulum oscillates, the plane of motion
-slowly rotates with respect to the Earth due to the Coriolis force.
+slowly rotates with respect to the Earth due to the Coriolis force. \par
 
 Before proceeding, it is useful to estimate the relative magnitude of the terms
 appearing in the equations of motion. The angular velocity of the Earth is
@@ -107,7 +107,7 @@ and therefore
 The Coriolis terms in the equations of motion are proportional to $\omega$,
 whereas the centrifugal corrections are proportional to $\omega^2$. We shall
 therefore retain only terms up to first order in the Earth's angular velocity,
-neglecting all terms of order $\omega^2$. Equation
+neglecting all terms of order $\omega^2.$ Equation
 \eqref{earth:local-cartesian-equations} consequently reduces to
 
 \begin{equation}
@@ -406,7 +406,7 @@ The equilibrium position of the bob is
   x=y=z=0.
 \]
 
-We therefore consider small oscillations around this configuration and write
+We consider small oscillations around this configuration and write
 
 \[
   z=\delta z,
@@ -417,13 +417,13 @@ We therefore consider small oscillations around this configuration and write
 Expanding the constraint gives
 
 \[
-  x^2+y^2+z^2-2lz=0.
+  x^2+y^2+ \delta z^2-2l \delta z=0.
 \]
 
-Since \(z\ll l\), the term \(z^2\) can be neglected, and the constraint reduces to
+Since \(\delta z\ll l\), the term \(z^2\) can be neglected, and the constraint reduces to
 
 \begin{equation}
-  x^2+y^2=2lz.
+  x^2+y^2=2l\, \delta z.
   \label{eq:pendulum-linearized-constraint}
 \end{equation}
 
@@ -436,10 +436,10 @@ Since \(z\ll l\), the term \(z^2\) can be neglected, and the constraint reduces 
 
 
 This relation shows that, if \(x\) and \(y\) are treated as first-order
-displacements, then \(z\) is a second-order quantity:
+displacements, then \(\delta z\) is a second-order quantity:
 
 \[
-  z
+ \delta  z
   =
   \frac{x^2+y^2}{2l}.
 \]
@@ -496,7 +496,7 @@ Repeating the same procedure with the equations for \(x\) and \(z\) gives
 \end{equation}
 
 Thus, to first order in the horizontal displacements, the two components of the
-motion satisfy the independent harmonic-oscillator equations
+motion satisfy the well known independent harmonic-oscillator equations of the pendulum under gravity
 
 \begin{equation}
   \left\{

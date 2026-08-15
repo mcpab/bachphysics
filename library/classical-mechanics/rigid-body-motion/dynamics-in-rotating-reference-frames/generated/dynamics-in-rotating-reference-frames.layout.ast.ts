@@ -1712,7 +1712,7 @@ export const latexDocument = {
               {
                 id: "text-117",
                 type: "text",
-                body: "the carousel are not moving and you see the people on the carousel going moving in circles around the centre of"
+                body: "the carousel are not moving and you see the people on the carousel moving in circles around the centre of"
               },
               {
                 id: "text-118",

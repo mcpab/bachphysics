@@ -202,8 +202,18 @@ export const latexDocument = {
               {
                 id: "text-13",
                 type: "text",
-                body: "mathematical expressions used throughout this essay."
-              },
+                body: "mathematical expressions used throughout this essay. "
+              }
+            ]
+          }
+        },
+        {
+          id: "contentLayoutGroup-9",
+          type: "contentLayoutGroup",
+          children: {
+            id: "layoutInlineGroup-8",
+            type: "layoutInlineGroup",
+            children: [
               {
                 id: "text-14",
                 type: "text",
@@ -250,7 +260,7 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-9",
+          id: "contentLayoutGroup-10",
           type: "contentLayoutGroup",
           children: {
             id: "layoutBlockNodeGroup-4",
@@ -267,10 +277,10 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-10",
+          id: "contentLayoutGroup-11",
           type: "contentLayoutGroup",
           children: {
-            id: "layoutInlineGroup-8",
+            id: "layoutInlineGroup-9",
             type: "layoutInlineGroup",
             children: [
               {
@@ -298,8 +308,18 @@ export const latexDocument = {
               {
                 id: "text-22",
                 type: "text",
-                body: "."
-              },
+                body: ". "
+              }
+            ]
+          }
+        },
+        {
+          id: "contentLayoutGroup-12",
+          type: "contentLayoutGroup",
+          children: {
+            id: "layoutInlineGroup-10",
+            type: "layoutInlineGroup",
+            children: [
               {
                 id: "text-23",
                 type: "text",
@@ -325,7 +345,7 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-11",
+          id: "contentLayoutGroup-13",
           type: "contentLayoutGroup",
           children: {
             id: "layoutBlockNodeGroup-5",
@@ -344,7 +364,7 @@ export const latexDocument = {
                 width: 1536,
                 height: 1024,
                 caption: {
-                  id: "layoutInlineGroup-9",
+                  id: "layoutInlineGroup-11",
                   type: "layoutInlineGroup",
                   children: [
                     {
@@ -359,10 +379,10 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-12",
+          id: "contentLayoutGroup-14",
           type: "contentLayoutGroup",
           children: {
-            id: "layoutInlineGroup-10",
+            id: "layoutInlineGroup-12",
             type: "layoutInlineGroup",
             children: [
               {
@@ -445,7 +465,7 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-13",
+          id: "contentLayoutGroup-15",
           type: "contentLayoutGroup",
           children: {
             id: "layoutBlockNodeGroup-6",
@@ -461,10 +481,10 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-14",
+          id: "contentLayoutGroup-16",
           type: "contentLayoutGroup",
           children: {
-            id: "layoutInlineGroup-11",
+            id: "layoutInlineGroup-13",
             type: "layoutInlineGroup",
             children: [
               {
@@ -557,7 +577,7 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-15",
+          id: "contentLayoutGroup-17",
           type: "contentLayoutGroup",
           children: {
             id: "layoutBlockNodeGroup-7",
@@ -573,10 +593,10 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-16",
+          id: "contentLayoutGroup-18",
           type: "contentLayoutGroup",
           children: {
-            id: "layoutInlineGroup-12",
+            id: "layoutInlineGroup-14",
             type: "layoutInlineGroup",
             children: [
               {
@@ -588,7 +608,7 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-17",
+          id: "contentLayoutGroup-19",
           type: "contentLayoutGroup",
           children: {
             id: "layoutBlockNodeGroup-8",
@@ -603,10 +623,10 @@ export const latexDocument = {
                     type: "item",
                     content: [
                       {
-                        id: "contentLayoutGroup-18",
+                        id: "contentLayoutGroup-20",
                         type: "contentLayoutGroup",
                         children: {
-                          id: "layoutInlineGroup-13",
+                          id: "layoutInlineGroup-15",
                           type: "layoutInlineGroup",
                           children: [
                             {
@@ -635,10 +655,10 @@ export const latexDocument = {
                     type: "item",
                     content: [
                       {
-                        id: "contentLayoutGroup-19",
+                        id: "contentLayoutGroup-21",
                         type: "contentLayoutGroup",
                         children: {
-                          id: "layoutInlineGroup-14",
+                          id: "layoutInlineGroup-16",
                           type: "layoutInlineGroup",
                           children: [
                             {
@@ -662,10 +682,10 @@ export const latexDocument = {
                     type: "item",
                     content: [
                       {
-                        id: "contentLayoutGroup-20",
+                        id: "contentLayoutGroup-22",
                         type: "contentLayoutGroup",
                         children: {
-                          id: "layoutInlineGroup-15",
+                          id: "layoutInlineGroup-17",
                           type: "layoutInlineGroup",
                           children: [
                             {
@@ -690,10 +710,10 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-21",
+          id: "contentLayoutGroup-23",
           type: "contentLayoutGroup",
           children: {
-            id: "layoutInlineGroup-16",
+            id: "layoutInlineGroup-18",
             type: "layoutInlineGroup",
             children: [
               {
@@ -705,7 +725,7 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-22",
+          id: "contentLayoutGroup-24",
           type: "contentLayoutGroup",
           children: {
             id: "layoutBlockNodeGroup-9",
@@ -721,10 +741,10 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-23",
+          id: "contentLayoutGroup-25",
           type: "contentLayoutGroup",
           children: {
-            id: "layoutInlineGroup-17",
+            id: "layoutInlineGroup-19",
             type: "layoutInlineGroup",
             children: [
               {
@@ -736,7 +756,7 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-24",
+          id: "contentLayoutGroup-26",
           type: "contentLayoutGroup",
           children: {
             id: "layoutBlockNodeGroup-10",
@@ -752,10 +772,10 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-25",
+          id: "contentLayoutGroup-27",
           type: "contentLayoutGroup",
           children: {
-            id: "layoutInlineGroup-18",
+            id: "layoutInlineGroup-20",
             type: "layoutInlineGroup",
             children: [
               {
@@ -767,7 +787,7 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-26",
+          id: "contentLayoutGroup-28",
           type: "contentLayoutGroup",
           children: {
             id: "layoutBlockNodeGroup-11",
@@ -783,10 +803,10 @@ export const latexDocument = {
           }
         },
         {
-          id: "contentLayoutGroup-27",
+          id: "contentLayoutGroup-29",
           type: "contentLayoutGroup",
           children: {
-            id: "layoutInlineGroup-19",
+            id: "layoutInlineGroup-21",
             type: "layoutInlineGroup",
             children: [
               {
@@ -818,7 +838,7 @@ export const latexDocument = {
           id: "subsection-1",
           type: "subsection",
           title: {
-            id: "layoutInlineGroup-20",
+            id: "layoutInlineGroup-22",
             type: "layoutInlineGroup",
             children: [
               {
@@ -830,10 +850,10 @@ export const latexDocument = {
           },
           content: [
             {
-              id: "contentLayoutGroup-28",
+              id: "contentLayoutGroup-30",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-21",
+                id: "layoutInlineGroup-23",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -850,7 +870,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-29",
+              id: "contentLayoutGroup-31",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-16",
@@ -865,10 +885,10 @@ export const latexDocument = {
                         type: "item",
                         content: [
                           {
-                            id: "contentLayoutGroup-30",
+                            id: "contentLayoutGroup-32",
                             type: "contentLayoutGroup",
                             children: {
-                              id: "layoutInlineGroup-22",
+                              id: "layoutInlineGroup-24",
                               type: "layoutInlineGroup",
                               children: [
                                 {
@@ -880,7 +900,7 @@ export const latexDocument = {
                             }
                           },
                           {
-                            id: "contentLayoutGroup-31",
+                            id: "contentLayoutGroup-33",
                             type: "contentLayoutGroup",
                             children: {
                               id: "layoutBlockNodeGroup-12",
@@ -896,10 +916,10 @@ export const latexDocument = {
                             }
                           },
                           {
-                            id: "contentLayoutGroup-32",
+                            id: "contentLayoutGroup-34",
                             type: "contentLayoutGroup",
                             children: {
-                              id: "layoutInlineGroup-23",
+                              id: "layoutInlineGroup-25",
                               type: "layoutInlineGroup",
                               children: [
                                 {
@@ -939,10 +959,10 @@ export const latexDocument = {
                         type: "item",
                         content: [
                           {
-                            id: "contentLayoutGroup-33",
+                            id: "contentLayoutGroup-35",
                             type: "contentLayoutGroup",
                             children: {
-                              id: "layoutInlineGroup-24",
+                              id: "layoutInlineGroup-26",
                               type: "layoutInlineGroup",
                               children: [
                                 {
@@ -959,7 +979,7 @@ export const latexDocument = {
                             }
                           },
                           {
-                            id: "contentLayoutGroup-34",
+                            id: "contentLayoutGroup-36",
                             type: "contentLayoutGroup",
                             children: {
                               id: "layoutBlockNodeGroup-13",
@@ -982,10 +1002,10 @@ export const latexDocument = {
                         type: "item",
                         content: [
                           {
-                            id: "contentLayoutGroup-35",
+                            id: "contentLayoutGroup-37",
                             type: "contentLayoutGroup",
                             children: {
-                              id: "layoutInlineGroup-25",
+                              id: "layoutInlineGroup-27",
                               type: "layoutInlineGroup",
                               children: [
                                 {
@@ -1002,7 +1022,7 @@ export const latexDocument = {
                             }
                           },
                           {
-                            id: "contentLayoutGroup-36",
+                            id: "contentLayoutGroup-38",
                             type: "contentLayoutGroup",
                             children: {
                               id: "layoutBlockNodeGroup-14",
@@ -1018,10 +1038,10 @@ export const latexDocument = {
                             }
                           },
                           {
-                            id: "contentLayoutGroup-37",
+                            id: "contentLayoutGroup-39",
                             type: "contentLayoutGroup",
                             children: {
-                              id: "layoutInlineGroup-26",
+                              id: "layoutInlineGroup-28",
                               type: "layoutInlineGroup",
                               children: [
                                 {
@@ -1033,7 +1053,7 @@ export const latexDocument = {
                             }
                           },
                           {
-                            id: "contentLayoutGroup-38",
+                            id: "contentLayoutGroup-40",
                             type: "contentLayoutGroup",
                             children: {
                               id: "layoutBlockNodeGroup-15",
@@ -1057,10 +1077,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-39",
+              id: "contentLayoutGroup-41",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-27",
+                id: "layoutInlineGroup-29",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -1071,13 +1091,13 @@ export const latexDocument = {
                   {
                     id: "text-70",
                     type: "text",
-                    body: "force obtained by adding the centrifugal and Coriolis contributions.,"
+                    body: "force obtained by adding the centrifugal and Coriolis contributions,"
                   }
                 ]
               }
             },
             {
-              id: "contentLayoutGroup-40",
+              id: "contentLayoutGroup-42",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-17",
@@ -1093,31 +1113,21 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-41",
+              id: "contentLayoutGroup-43",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-28",
+                id: "layoutInlineGroup-30",
                 type: "layoutInlineGroup",
                 children: [
                   {
                     id: "text-71",
                     type: "text",
-                    body: "One particularly interesting situation emerge from these expressions, which corresponds to a body at rest in the inertial frame. "
-                  }
-                ]
-              }
-            },
-            {
-              id: "contentLayoutGroup-42",
-              type: "contentLayoutGroup",
-              children: {
-                id: "layoutInlineGroup-29",
-                type: "layoutInlineGroup",
-                children: [
+                    body: "One particularly interesting situation emerge from these expressions, which corresponds to a body at rest in the inertial frame."
+                  },
                   {
                     id: "text-72",
                     type: "text",
-                    body: "A body at rest in the inertial frame appears in the rotating frame to move with angular velocity"
+                    body: "In such a situation the body at rest in the inertial frame appears in the rotating frame to move with angular velocity"
                   },
                   {
                     id: "inlineMath-24",
@@ -1145,7 +1155,7 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-43",
+              id: "contentLayoutGroup-44",
               type: "contentLayoutGroup",
               children: {
                 id: "layoutBlockNodeGroup-18",
@@ -1161,10 +1171,10 @@ export const latexDocument = {
               }
             },
             {
-              id: "contentLayoutGroup-44",
+              id: "contentLayoutGroup-45",
               type: "contentLayoutGroup",
               children: {
-                id: "layoutInlineGroup-30",
+                id: "layoutInlineGroup-31",
                 type: "layoutInlineGroup",
                 children: [
                   {
@@ -1205,69 +1215,6 @@ export const latexDocument = {
                   }
                 ]
               }
-            },
-            {
-              id: "contentLayoutGroup-45",
-              type: "contentLayoutGroup",
-              children: {
-                id: "layoutInlineGroup-31",
-                type: "layoutInlineGroup",
-                children: [
-                  {
-                    id: "text-81",
-                    type: "text",
-                    body: "In the second case, it is readily verified that the inertial force vanishes when"
-                  },
-                  {
-                    id: "inlineMath-27",
-                    type: "inlineMath",
-                    body: "\\dot\\rho = 0",
-                    html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8623em;vertical-align:-0.1944em;\"></span><span class=\"mord accent\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6679em;\"><span style=\"top:-3em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord mathnormal\">ρ</span></span><span style=\"top:-3em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"accent-body\" style=\"left:-0.0556em;\"><span class=\"mord\">˙</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1944em;\"><span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0</span></span></span></span>"
-                  },
-                  {
-                    id: "text-82",
-                    type: "text",
-                    body: ", "
-                  },
-                  {
-                    id: "inlineMath-28",
-                    type: "inlineMath",
-                    body: "\\dot\\phi = 0",
-                    html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.1257em;vertical-align:-0.1944em;\"></span><span class=\"mord accent\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.9313em;\"><span style=\"top:-3em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord mathnormal\">ϕ</span></span><span style=\"top:-3.2634em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"accent-body\" style=\"left:-0.0556em;\"><span class=\"mord\">˙</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1944em;\"><span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0</span></span></span></span>"
-                  },
-                  {
-                    id: "text-83",
-                    type: "text",
-                    body: ", and "
-                  },
-                  {
-                    id: "inlineMath-29",
-                    type: "inlineMath",
-                    body: "\\dot\\theta = -\\omega/2",
-                    html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.9313em;\"></span><span class=\"mord accent\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.9313em;\"><span style=\"top:-3em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">θ</span></span><span style=\"top:-3.2634em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"accent-body\" style=\"left:-0.0556em;\"><span class=\"mord\">˙</span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">−</span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span><span class=\"mord\">/2</span></span></span></span>"
-                  },
-                  {
-                    id: "text-84",
-                    type: "text",
-                    body: ". Thus, although the body"
-                  },
-                  {
-                    id: "text-85",
-                    type: "text",
-                    body: "appears to rotate uniformly in the rotating frame with an angular velocity equal to half"
-                  },
-                  {
-                    id: "text-86",
-                    type: "text",
-                    body: "that of the Earth (in the opposite direction), the centrifugal and Coriolis forces exactly"
-                  },
-                  {
-                    id: "text-87",
-                    type: "text",
-                    body: "cancel one another."
-                  }
-                ]
-              }
             }
           ],
           numbering: {
@@ -1286,7 +1233,7 @@ export const latexDocument = {
             type: "layoutInlineGroup",
             children: [
               {
-                id: "text-88",
+                id: "text-81",
                 type: "text",
                 body: "Lagrangian in Spherical Coordinates"
               }
@@ -1301,28 +1248,28 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-89",
+                    id: "text-82",
                     type: "text",
                     body: "We now formulate the dynamics of the system in spherical coordinates. Under the assumption"
                   },
                   {
-                    id: "text-90",
+                    id: "text-83",
                     type: "text",
                     body: "that the gravitational acceleration "
                   },
                   {
-                    id: "inlineMath-30",
+                    id: "inlineMath-27",
                     type: "inlineMath",
                     body: "g",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">g</span></span></span></span>"
                   },
                   {
-                    id: "text-91",
+                    id: "text-84",
                     type: "text",
                     body: "is constant and directed radially inward, the"
                   },
                   {
-                    id: "text-92",
+                    id: "text-85",
                     type: "text",
                     body: "gravitational potential is"
                   }
@@ -1353,7 +1300,7 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-93",
+                    id: "text-86",
                     type: "text",
                     body: "The centrifugal force derives from the position-dependent potential"
                   }
@@ -1384,12 +1331,12 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-94",
+                    id: "text-87",
                     type: "text",
                     body: "The Coriolis force cannot be derived from an ordinary position-dependent potential. It can,"
                   },
                   {
-                    id: "text-95",
+                    id: "text-88",
                     type: "text",
                     body: "however, be represented by the velocity-dependent generalized potential"
                   }
@@ -1420,18 +1367,18 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-96",
+                    id: "text-89",
                     type: "text",
                     body: "Indeed, for each generalized coordinate"
                   },
                   {
-                    id: "inlineMath-31",
+                    id: "inlineMath-28",
                     type: "inlineMath",
                     body: "q_i\\in\\{\\rho,\\phi,\\theta\\}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7335em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">q</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3117em;\"><span style=\"top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">{</span><span class=\"mord mathnormal\">ρ</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">ϕ</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">θ</span><span class=\"mclose\">}</span></span></span></span>"
                   },
                   {
-                    id: "text-97",
+                    id: "text-90",
                     type: "text",
                     body: ", it satisfies"
                   }
@@ -1462,7 +1409,7 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-98",
+                    id: "text-91",
                     type: "text",
                     body: "Explicitly,"
                   }
@@ -1493,7 +1440,7 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-99",
+                    id: "text-92",
                     type: "text",
                     body: "Similarly, the centrifugal potential satisfies"
                   }
@@ -1524,7 +1471,7 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-100",
+                    id: "text-93",
                     type: "text",
                     body: "The kinetic energy is"
                   }
@@ -1555,7 +1502,7 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-101",
+                    id: "text-94",
                     type: "text",
                     body: "The Lagrangian is therefore"
                   }
@@ -1586,7 +1533,7 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-102",
+                    id: "text-95",
                     type: "text",
                     body: "or, after combining the terms,"
                   }
@@ -1617,28 +1564,28 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-103",
+                    id: "text-96",
                     type: "text",
                     body: "The appearance of the combination "
                   },
                   {
-                    id: "inlineMath-32",
+                    id: "inlineMath-29",
                     type: "inlineMath",
                     body: "(\\dot\\theta+\\omega)",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.1813em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord accent\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.9313em;\"><span style=\"top:-3em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">θ</span></span><span style=\"top:-3.2634em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"accent-body\" style=\"left:-0.0556em;\"><span class=\"mord\">˙</span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span><span class=\"mclose\">)</span></span></span></span>"
                   },
                   {
-                    id: "text-104",
+                    id: "text-97",
                     type: "text",
                     body: "has a direct physical interpretation:"
                   },
                   {
-                    id: "text-105",
+                    id: "text-98",
                     type: "text",
                     body: "it is the angular velocity of the body with respect to the inertial frame."
                   },
                   {
-                    id: "text-106",
+                    id: "text-99",
                     type: "text",
                     body: "The equations of motion follow from the Euler--Lagrange equations,"
                   }
@@ -1669,23 +1616,23 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-107",
+                    id: "text-100",
                     type: "text",
                     body: "Since the Lagrangian does not depend explicitly on "
                   },
                   {
-                    id: "inlineMath-33",
+                    id: "inlineMath-30",
                     type: "inlineMath",
                     body: "\\theta",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">θ</span></span></span></span>"
                   },
                   {
-                    id: "text-108",
+                    id: "text-101",
                     type: "text",
                     body: ", this coordinate is cyclic and"
                   },
                   {
-                    id: "text-109",
+                    id: "text-102",
                     type: "text",
                     body: "its conjugate momentum is conserved,"
                   }
@@ -1716,7 +1663,7 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-110",
+                    id: "text-103",
                     type: "text",
                     body: "Expanding the Euler--Lagrange equations yields the nonlinear system"
                   }
@@ -1757,7 +1704,7 @@ export const latexDocument = {
             type: "layoutInlineGroup",
             children: [
               {
-                id: "text-111",
+                id: "text-104",
                 type: "text",
                 body: "Linearized Equations of Motion"
               }
@@ -1772,39 +1719,39 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-112",
+                    id: "text-105",
                     type: "text",
                     body: "We consider now the motion of an object covering distances over the Earth surface much"
                   },
                   {
-                    id: "text-113",
+                    id: "text-106",
                     type: "text",
                     body: "smaller than Earth radius "
                   },
                   {
-                    id: "inlineMath-34",
+                    id: "inlineMath-31",
                     type: "inlineMath",
                     body: "R",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span></span></span></span>"
                   },
                   {
-                    id: "text-114",
+                    id: "text-107",
                     type: "text",
                     body: "in any direction. We will assume the dynamics is in a"
                   },
                   {
-                    id: "text-115",
+                    id: "text-108",
                     type: "text",
                     body: "neighbourhood of the position identified by spherical coordinates "
                   },
                   {
-                    id: "inlineMath-35",
+                    id: "inlineMath-32",
                     type: "inlineMath",
                     body: "(\\rho_0, \\theta_0, \\phi_0)",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\">ρ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">θ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">ϕ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>"
                   },
                   {
-                    id: "text-116",
+                    id: "text-109",
                     type: "text",
                     body: ","
                   }
@@ -1835,56 +1782,56 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-117",
+                    id: "text-110",
                     type: "text",
                     body: "where "
                   },
                   {
-                    id: "inlineMath-36",
+                    id: "inlineMath-33",
                     type: "inlineMath",
                     body: "\\rho_0 \\approx R",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6776em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">ρ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">≈</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span></span></span></span>"
                   },
                   {
-                    id: "text-118",
+                    id: "text-111",
                     type: "text",
                     body: "."
                   },
                   {
-                    id: "text-119",
+                    id: "text-112",
                     type: "text",
                     body: "Around this position a local system of reference can be constructed by the unit vectors"
                   },
                   {
-                    id: "inlineMath-37",
+                    id: "inlineMath-34",
                     type: "inlineMath",
                     body: "\\vb{e}_{\\rho_0}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7305em;vertical-align:-0.2861em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">ρ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3173em;\"><span style=\"top:-2.357em;margin-left:0em;margin-right:0.0714em;\"><span class=\"pstrut\" style=\"height:2.5em;\"></span><span class=\"sizing reset-size3 size1 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.143em;\"><span></span></span></span></span></span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2861em;\"><span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-120",
+                    id: "text-113",
                     type: "text",
                     body: ", "
                   },
                   {
-                    id: "inlineMath-38",
+                    id: "inlineMath-35",
                     type: "inlineMath",
                     body: "\\vb{e}_{\\theta_0}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6945em;vertical-align:-0.2501em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3361em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0278em;\">θ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3173em;\"><span style=\"top:-2.357em;margin-left:-0.0278em;margin-right:0.0714em;\"><span class=\"pstrut\" style=\"height:2.5em;\"></span><span class=\"sizing reset-size3 size1 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.143em;\"><span></span></span></span></span></span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2501em;\"><span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-121",
+                    id: "text-114",
                     type: "text",
                     body: ", and "
                   },
                   {
-                    id: "inlineMath-39",
+                    id: "inlineMath-36",
                     type: "inlineMath",
                     body: "\\vb{e}_{\\phi_0}",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7305em;vertical-align:-0.2861em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3361em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">ϕ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3173em;\"><span style=\"top:-2.357em;margin-left:0em;margin-right:0.0714em;\"><span class=\"pstrut\" style=\"height:2.5em;\"></span><span class=\"sizing reset-size3 size1 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.143em;\"><span></span></span></span></span></span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2861em;\"><span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-122",
+                    id: "text-115",
                     type: "text",
                     body: "as,"
                   }
@@ -1915,29 +1862,29 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-123",
+                    id: "text-116",
                     type: "text",
                     body: "and a point in the vicinity of the position "
                   },
                   {
-                    id: "inlineMath-40",
+                    id: "inlineMath-37",
                     type: "inlineMath",
                     body: "\\vb{r}_0",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5944em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">r</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-124",
+                    id: "text-117",
                     type: "text",
                     body: "has spherical coordinates"
                   },
                   {
-                    id: "inlineMath-41",
+                    id: "inlineMath-38",
                     type: "inlineMath",
                     body: "(\\rho_0+\\delta\\rho,\\;\\theta_0+\\delta\\theta,\\;\\phi_0+\\delta\\phi)",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\">ρ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0379em;\">δ</span><span class=\"mord mathnormal\">ρ</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">θ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0379em;\">δ</span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">θ</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">ϕ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0379em;\">δ</span><span class=\"mord mathnormal\">ϕ</span><span class=\"mclose\">)</span></span></span></span>"
                   },
                   {
-                    id: "text-125",
+                    id: "text-118",
                     type: "text",
                     body: "and position,"
                   }
@@ -1968,7 +1915,7 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-126",
+                    id: "text-119",
                     type: "text",
                     body: "which up to first order reads,"
                   }
@@ -1999,23 +1946,23 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-127",
+                    id: "text-120",
                     type: "text",
                     body: "Under the assumption that "
                   },
                   {
-                    id: "inlineMath-42",
+                    id: "inlineMath-39",
                     type: "inlineMath",
                     body: "\\|\\vb{r} - \\vb{r}_0\\| \\ll R",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">∥</span><span class=\"mord text\"><span class=\"mord textbf\">r</span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">r</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord\">∥</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">≪</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span></span></span></span>"
                   },
                   {
-                    id: "text-128",
+                    id: "text-121",
                     type: "text",
                     body: ", we have for the displacements in"
                   },
                   {
-                    id: "text-129",
+                    id: "text-122",
                     type: "text",
                     body: "each direction,"
                   }
@@ -2046,7 +1993,7 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-130",
+                    id: "text-123",
                     type: "text",
                     body: "We will therefore assume that the dynamics can be described by the perturbations,"
                   }
@@ -2077,45 +2024,45 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-131",
+                    id: "text-124",
                     type: "text",
                     body: "where at all times "
                   },
                   {
-                    id: "inlineMath-43",
+                    id: "inlineMath-40",
                     type: "inlineMath",
                     body: "\\rho(t) \\ll \\rho_0",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">ρ</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">≪</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">ρ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
                   },
                   {
-                    id: "text-132",
+                    id: "text-125",
                     type: "text",
                     body: ", "
                   },
                   {
-                    id: "inlineMath-44",
+                    id: "inlineMath-41",
                     type: "inlineMath",
                     body: "\\phi(t) \\ll 1",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">ϕ</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">≪</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">1</span></span></span></span>"
                   },
                   {
-                    id: "text-133",
+                    id: "text-126",
                     type: "text",
                     body: ", and"
                   },
                   {
-                    id: "inlineMath-45",
+                    id: "inlineMath-42",
                     type: "inlineMath",
                     body: "\\sin(\\phi_0)\\,\\theta(t) \\ll 1",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mop\">sin</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\">ϕ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">θ</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">≪</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">1</span></span></span></span>"
                   },
                   {
-                    id: "text-134",
+                    id: "text-127",
                     type: "text",
                     body: "."
                   },
                   {
-                    id: "text-135",
+                    id: "text-128",
                     type: "text",
                     body: "The equations of motion "
                   },
@@ -2125,23 +2072,23 @@ export const latexDocument = {
                     body: "earth:spherical-equations-of-motion"
                   },
                   {
-                    id: "text-136",
+                    id: "text-129",
                     type: "text",
                     body: "can be expressed in terms of the"
                   },
                   {
-                    id: "text-137",
+                    id: "text-130",
                     type: "text",
                     body: "displacements "
                   },
                   {
-                    id: "inlineMath-46",
+                    id: "inlineMath-43",
                     type: "inlineMath",
                     body: "(\\rho(t), \\theta(t), \\phi(t))",
                     html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">ρ</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">θ</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">ϕ</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">))</span></span></span></span>"
                   },
                   {
-                    id: "text-138",
+                    id: "text-131",
                     type: "text",
                     body: "and simplified to first order as,"
                   }
@@ -2173,7 +2120,7 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-139",
+                    id: "text-132",
                     type: "text",
                     body: "Defining dimensional variables of length as,"
                   }
@@ -2204,7 +2151,7 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-140",
+                    id: "text-133",
                     type: "text",
                     body: "and defining a local coordinate system as,"
                   }
@@ -2235,7 +2182,7 @@ export const latexDocument = {
                 type: "layoutInlineGroup",
                 children: [
                   {
-                    id: "text-141",
+                    id: "text-134",
                     type: "text",
                     body: "the linearized equations of motion can be expressed as,"
                   }
