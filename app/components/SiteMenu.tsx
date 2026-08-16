@@ -192,6 +192,12 @@ export function SiteMenu() {
                                         type: 'link',
                                         label: 'Composition of Velocities',
                                     },
+                                    {
+                                        id: 'twin-paradox',
+                                        href: '/physics/relativity/special-relativity/twin-paradox',
+                                        type: 'link',
+                                        label: 'The Twin Paradox',
+                                    },
                                 ],
                             },
                             {

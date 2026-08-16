@@ -1,0 +1,786 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{hyperref}
+\usepackage{graphicx}
+
+% Shorthand for displaystyle fractions inside inline math
+\newcommand{\ds}{\displaystyle}
+
+\title{The Twin Paradox}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+% ============================================================
+\section{Introduction}
+% ============================================================
+
+In this essay we will discuss the twin paradox, which arises in relativity when two objects,
+initially at the same position and each equipped with its own clock, move away from each other
+and later return to the same position. We assume that the two clocks are initially synchronized
+and therefore measure exactly the same time. When the two objects meet again, however, the clocks
+will in general have measured different elapsed times. \par
+
+In the twin experiment, one of two identical twins embarks on a space journey, moving at a speed
+close to the speed of light, while the other remains at home and waits for the traveling twin to
+return. When the twins meet again, the twin who remained at home has aged more than the one who
+traveled. This result appears paradoxical in two different ways. First, it is very counterintuitive
+to accept that simply moving differently can change the amount of time experienced by the two twins.
+Second, and more importantly, there appears to be a breaking of symmetry. Why should one twin age
+differently from the other when there is no privileged system of reference? It seems as though the
+younger twin must somehow be different from the twin who remained at home. Yet, during their relative
+motion, each twin may regard the other as moving. We will examine in detail how this apparent
+asymmetry arises and why there is no contradiction with the principle of relativity. \par
+
+Below we will make use of formulas derived in the essay
+\href{/physics/relativity/special-relativity/lorentz-transformations}{Lorentz Transformations}.
+In particular, we will need the transformation between two inertial reference frames $F$ and $F'$,
+where $F'$ moves with velocity $\vb{v}=v\vb{e}_1$ relative to $F$. The Lorentz transformation
+for this boost is
+
+\begin{equation}
+  \begin{aligned}
+    \boldsymbol{\Lambda}(\vb{v}) =\;
+      &\gamma\ket{\vb{e}_1,0}\bra{\vb{e}_1,0}
+      - \gamma\,\frac{v}{c}
+        \ket{\vb{e}_1,0}\bra{\vb{0},1}
+      + \ket{\vb{e}_2,0}\bra{\vb{e}_2,0}
+      + \ket{\vb{e}_3,0}\bra{\vb{e}_3,0}
+      \\
+      &- \gamma\,\frac{v}{c}
+        \ket{\vb{0},1}\bra{\vb{e}_1,0}
+      + \gamma\ket{\vb{0},1}\bra{\vb{0},1}.
+  \end{aligned}
+  \label{eq:Lorentz_transformation}
+\end{equation}
+
+Here,
+
+\begin{equation}
+  \gamma
+  =
+  \frac{1}{\sqrt{1-\dfrac{v^2}{c^2}}}.
+  \label{eq:Lorentz_factor}
+\end{equation}
+
+We will restrict our analysis to the case in which the relative velocity is directed along the
+$x$-axis. In this case, the corresponding transformations of space and time are
+
+\begin{equation}
+  \begin{aligned}
+    x' &= \gamma(x-vt), \\
+    y' &= y, \\
+    z' &= z, \\
+    t' &= \gamma\!\left(t-\frac{v}{c^2}x\right).
+  \end{aligned}
+  \label{eq:Lorentz_transformation_along_x}
+\end{equation}
+
+As shown in the essay
+\href{/physics/relativity/special-relativity/composition-of-velocities}{Composition of Velocities},
+the two frames measure relative velocities of equal magnitude and opposite direction:
+
+\begin{equation}
+  \left.\vb{u}\right|_{\vb{u}'=0}=\vb{v},
+  \qquad
+  \left.\vb{u}'\right|_{\vb{u}=0}=-\vb{v},
+  \qquad
+  |\vb{u}|=|\vb{u}'|=v.
+  \label{eq:reciprocal_relative_velocities}
+\end{equation}
+
+These equations provide the kinematic relations needed to compare the elapsed times measured
+along the twins' different journeys.
+
+% ============================================================
+\section{Description of the Experiment}
+% ============================================================
+
+We will describe the experiment in terms of physical \textit{events}. An event is a definite
+physical occurrence, such as the departure of the rocket or its arrival at planet $G$. The event
+itself is independent of the reference frame, although different reference frames generally assign
+different space and time coordinates to it. Consequently, a distance, an elapsed time, or a
+statement of simultaneity is meaningful only after the events used in the comparison have been
+specified. \par
+
+Let us consider the Earth as the origin of the spatial coordinates of a reference frame
+with coordinates $(x,y,z)$, and let us consider a planet $G$ located at a distance $l$
+along the $x$-axis of this frame. \par
+
+We assume that one of the twins remains at the origin of the Earth reference frame and
+is equipped with a clock that he uses to measure time $t$. This twin does not change his
+position with respect to this reference frame and measures spatial distances using the
+Earth coordinate system. \par
+
+We now consider the other twin, who will travel toward the planet $G$. We assume that,
+at the beginning of the journey, the two twins occupy exactly the same position. At this
+instant, the twin on the rocket introduces a spatial coordinate system $(x',y',z')$ whose
+origin and axes coincide with those of the Earth frame. The time measured by the clock
+carried by this twin will be denoted by $t'$. \par
+
+Before departure, the twins synchronize their clocks and denote the departure event by $(P_0)$,
+choosing it to correspond to
+
+\[
+  t=t'=0.
+\]
+
+At this instant their relative velocity is still zero, and the two spatial coordinate
+systems coincide. They therefore both agree that the planet $G$ is located at a distance
+$l$ from Earth along the positive $x$-axis. \par
+
+The twin on the rocket now begins his journey toward the planet $G$, following a straight
+trajectory along the direction of the common $x$-axis.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.6\textwidth]{twinsBegin.png}
+  \caption{Departure event}
+  \label{fig:twin_departure}
+\end{figure}
+% ============================================================
+\subsection{Acceleration to $\vb v$}
+% ============================================================
+
+We now consider the initial portion of the journey during which the rocket accelerates
+until it reaches the cruise velocity $\vb v.$ We use the following two events to delimit
+this phase:
+
+
+\begin{itemize}
+  \item  $(P_0)$ The rocket leaves Earth and begins its initial acceleration.
+
+  \item  $(B)$ The rocket reaches the cruise velocity $\vb v$.
+\end{itemize}
+
+The twin on Earth assigns to event $(P_0)$ the coordinates
+
+\[
+  (x,y,z,t)=(0,0,0,0),
+\]
+
+and to event $(B)$ the coordinates
+
+\[
+  (x,y,z,t)=(x_1,0,0,\epsilon),
+\]
+
+where $\epsilon$ is the time required, according to the Earth clock, for the rocket
+to reach its cruise velocity, and $x_1$ is the corresponding position of the rocket
+relative to Earth. \par
+
+The clock carried by the rocket is also set to zero at event $(P_0)$. Let $\epsilon'$
+denote the elapsed time measured by this clock between events $(P_0)$ and $(B)$. Since
+the rocket is accelerating during this interval, there is no single Lorentz transformation
+that relates the Earth frame to the rocket over the entire acceleration phase. Instead,
+at every instant we consider the Lorentz transformation whose velocity parameter is equal
+to the instantaneous velocity of the rocket. \par
+
+For a Lorentz transformation with velocity parameter $v$ along the $x$-axis, the
+differential of the time coordinate is
+
+\begin{equation}
+  dt'
+  =
+  \gamma(v)
+  \left(
+    dt-\frac{v}{c^2}dx
+  \right).
+  \label{eq:Lorentz_transformation_differential_time}
+\end{equation}
+
+Looking at the differential above, we may wonder why no term proportional to $dv$
+appears, since the velocity of the rocket is itself changing with time. The reason is
+that the velocity $v$ appearing in the Lorentz transformation is a parameter of the
+transformation. For each Lorentz transformation it is therefore held fixed when the
+differential with respect to the spacetime coordinates is taken. Thus,
+
+\[
+  dt'
+  =
+  \gamma(v)
+  \left(
+    dt-\frac{v}{c^2}dx
+  \right),
+\]
+
+contains no contribution proportional to $dv$. \par
+
+During the acceleration phase, the value of the parameter $v$ changes along the
+trajectory of the rocket. We therefore use, at each event of the trajectory, the
+Lorentz transformation whose velocity parameter is equal to the velocity of the rocket
+at that event. In this sense, $dt'$ represents the infinitesimal time measured in the
+corresponding instantaneous rocket frame; it should not be interpreted as the
+differential of a single inertial time coordinate $t'$ extending over the entire
+acceleration phase. Rather, we consider a family of Lorentz
+transformations
+
+\[
+  \boldsymbol{\Lambda}\bigl(v(t)\bigr),
+\]
+
+and at each instant we use the member of this family whose fixed parameter is equal to
+the instantaneous velocity of the rocket. The parameter labeling the transformation
+changes along the trajectory, but it does not contribute to the differential within
+each individual transformation.  \par
+Along the trajectory of the rocket,
+
+\[
+  dx=v(t)\,dt,
+\]
+
+and therefore \eqref{eq:Lorentz_transformation_differential_time} becomes
+
+\begin{equation}
+  dt'
+  =
+  \gamma(v)
+  \left(
+    1-\frac{v^2}{c^2}
+  \right)dt
+  =
+  \frac{dt}{\gamma(v)}.
+  \label{eq:rocket_clock_differential}
+\end{equation}
+
+The elapsed time measured by the clock carried by the rocket during the acceleration
+phase is consequently
+
+\begin{equation}
+  \epsilon'
+  =
+  \int_0^\epsilon
+  \frac{dt}{\gamma(v(t))}
+  =
+  \int_0^\epsilon
+  \sqrt{1-\frac{v^2(t)}{c^2}}\,dt.
+  \label{eq:acceleration_elapsed_time}
+\end{equation}
+
+The precise relation between $\epsilon$ and $\epsilon'$ therefore depends on the
+acceleration profile $v(t)$ of the rocket. No assumption is made here that the velocity
+is small compared with the speed of light; on the contrary, the cruise velocity may
+be arbitrarily close to $c$. \par
+
+
+We will assume that the acceleration phase is very short compared with the duration
+of the complete journey. More precisely, if $T$ and $T'$ denote characteristic time
+scales of the journey as measured in the Earth frame and by the clock carried by the
+rocket, respectively, we assume that
+
+\begin{equation}
+  \epsilon \ll T,
+  \qquad
+  \epsilon' \ll T'.
+  \label{eq:negligible_acceleration_times}
+\end{equation}
+
+The times spent accelerating are therefore negligible compared with the times spent
+traveling at cruise velocity. In the remainder of the analysis we will neglect both
+$\epsilon$ and $\epsilon'$, while allowing the cruise velocity $\vb v$ to remain fully
+relativistic. \par
+
+We further assume that the distance $x_1$ traveled by the rocket during the initial
+acceleration phase is very small compared with the distance $l$ between Earth and
+planet $G$,
+
+\[
+  x_1 \ll l.
+\]
+
+We will therefore also neglect $x_1$ in the remainder of the analysis.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+% ============================================================
+\subsection{Trip to $G$}
+% ============================================================
+
+We now consider the journey of the rocket to the planet $G$. Since the motion takes
+place entirely along the direction of the common $x$-axis, we will omit the coordinates
+$y$ and $z$ in what follows. \par
+
+
+We consider the following two events:
+
+\begin{itemize}
+  \item $(P_0)$ The rocket departs from Earth.
+
+  \item $(P_1)$ The rocket reaches the planet $G$ with velocity $\vb v$ and begins
+  to decelerate.
+\end{itemize}
+
+In light of the approximations introduced for the initial acceleration phase, we neglect
+both the time and the distance between events $(P_0)$ and $(B)$. Thus, for the cruise-phase
+calculation, event $(B)$ is treated as coincident with $(P_0)$ to the accuracy of our
+approximation. Accordingly, both twins assign to event $(P_0)$ the coordinates
+
+\[
+  (x,t)=(0,0),
+  \qquad
+  (x',t')=(0,0).
+\]
+
+The twin on Earth assigns to event $(P_1)$ the coordinates
+
+\[
+  (x,t)=(l,t_1),
+\]
+
+where $t_1$ is the time required for the rocket to travel from Earth to planet $G$.
+Since the rocket moves with constant speed $v=|\vb v|$ during this portion of the
+journey,
+
+\begin{equation}
+  t_1=\frac{l}{v}.
+  \label{eq:outbound_time_earth}
+\end{equation}
+
+During the outbound cruise, let $F'_{\mathrm{out}}$ denote the inertial frame comoving with
+the rocket. The rocket moves with velocity $+\vb v$ relative to the Earth frame $F$, while
+Earth and planet $G$ move with velocity $-\vb v$ relative to $F'_{\mathrm{out}}$. The twin on
+the rocket assigns to event $(P_1)$ the coordinates
+
+\[
+  (x',t')=(0,t_1'),
+\]
+
+where $t_1'$ is the elapsed time measured by his clock during the journey to planet
+$G$. There are two different ways in which he can determine $t_1'$. \par
+
+The first is to use the Lorentz transformation directly. Applying it to event $(P_1)$,
+whose coordinates in the Earth frame are
+
+\[
+  (x,t)=\left(l,\frac{l}{v}\right),
+\]
+
+we obtain
+
+\begin{equation}
+  \begin{aligned}
+    x'
+    &=
+    \gamma(x-vt)
+    =
+    \gamma\left(
+      l-v\frac{l}{v}
+    \right)
+    =
+    0,
+    \\
+    t_1'
+    &=
+    \gamma\left(
+      t-\frac{v}{c^2}x
+    \right)
+    \\
+    &=
+    \gamma\left(
+      \frac{l}{v}-\frac{vl}{c^2}
+    \right)
+    =
+    \frac{1}{\gamma}\frac{l}{v}.
+  \end{aligned}
+  \label{eq:outbound_time_rocket_lorentz}
+\end{equation}
+
+Therefore,
+
+\begin{equation}
+  t_1'=\frac{t_1}{\gamma}.
+  \label{eq:outbound_time_relation}
+\end{equation}
+
+There is, however, another way for the twin on the rocket to understand this result.
+As soon as the rocket has reached its cruise velocity $\vb v$, the distance between
+Earth and planet $G$, measured in the rocket frame, is smaller than the corresponding
+distance $l$ measured in the Earth frame. \par
+
+To understand why, let us first consider how the twin on the rocket measures a length
+belonging to an object at rest in the Earth frame. As an example, consider the diameter
+of the Earth along the direction of motion. Let its diameter measured in the Earth frame
+be
+
+\[
+  d=2r.
+\]
+
+A measurement of this diameter in the rocket frame requires the positions of the two
+opposite endpoints of the diameter to be determined \textit{simultaneously in the
+rocket frame}. We therefore introduce two events:
+
+\begin{itemize}
+  \item $(E_+)$ The position of the endpoint of the Earth on the positive side of the
+  $x$-axis is measured.
+
+  \item $(E_-)$ The position of the endpoint of the Earth on the negative side of the
+  $x$-axis is measured.
+\end{itemize}
+
+Since these two measurements are simultaneous in the rocket frame, their coordinates
+can be written as
+
+\begin{equation}
+  \begin{aligned}
+    E_+ &: \qquad (x',t')=(x_+',t_+'), \\
+    E_- &: \qquad (x',t')=(x_-',t_-').
+  \end{aligned}
+  \label{eq:earth_diameter_events_rocket}
+\end{equation}
+
+The diameter measured by the twin on the rocket is therefore
+
+\begin{equation}
+  d'=x_+'-x_-'.
+  \label{eq:earth_diameter_rocket_definition}
+\end{equation}
+
+It is important to emphasize that the measurement of a spatial distance in a given
+reference frame requires the positions of its endpoints to be measured at the same
+time in that frame. The events $E_+$ and $E_-$ are simultaneous in the rocket frame,
+but they are not simultaneous in the Earth frame. \par
+
+Since the Earth is at rest in the Earth frame and centered at the origin, the same two
+events have coordinates
+
+\begin{equation}
+  \begin{aligned}
+    E_+ &: \qquad (x,t)=(r,t_+), \\
+    E_- &: \qquad (x,t)=(-r,t_-).
+  \end{aligned}
+  \label{eq:earth_diameter_events_earth}
+\end{equation}
+
+Because the two events are simultaneous in the rocket frame,
+
+\[
+  t_+'-t_-'=0,
+\]
+
+using the Lorentz transformation for the time coordinate, we obtain
+
+\begin{equation}
+  \begin{aligned}
+    0
+    &=
+    \gamma\left(
+      t_+-\frac{v}{c^2}r
+    \right)
+    -
+    \gamma\left(
+      t_- -\frac{v}{c^2}(-r)
+    \right)
+    \\
+    &=
+    \gamma\left[
+      t_+-t_-
+      -
+      \frac{v}{c^2}(2r)
+    \right].
+  \end{aligned}
+\end{equation}
+
+Since $d=2r$, it follows that
+
+\begin{equation}
+  t_+-t_-=\frac{v}{c^2}d.
+  \label{eq:earth_diameter_relativity_simultaneity}
+\end{equation}
+
+Thus, although $E_+$ and $E_-$ occur simultaneously for the twin on the rocket,
+event $E_+$ occurs after event $E_-$ according to the twin on Earth. This is a direct
+manifestation of the relativity of simultaneity. \par
+
+We can now use the spatial part of the Lorentz transformation to determine the diameter
+measured in the rocket frame. Taking the difference between the transformed positions
+of the two events gives
+
+\begin{equation}
+  \begin{aligned}
+    d'
+    &=
+    x_+'-x_-'
+    \\
+    &=
+    \gamma\left[
+      (r-(-r))-v(t_+-t_-)
+    \right].
+  \end{aligned}
+\end{equation}
+
+Using \eqref{eq:earth_diameter_relativity_simultaneity}, we obtain
+
+\begin{equation}
+  \begin{aligned}
+    d'
+    &=
+    \gamma\left(
+      d-\frac{v^2}{c^2}d
+    \right)
+    \\
+    &=
+    \frac{d}{\gamma}.
+  \end{aligned}
+  \label{eq:length_contraction_example}
+\end{equation}
+
+The twin on the rocket therefore measures a smaller longitudinal diameter for the
+Earth than the twin at rest with respect to it. More generally, the separation between
+two points that are at rest in the Earth frame and separated along the direction of
+relative motion is measured in the rocket frame to be
+
+
+\begin{equation}
+  l'=\frac{l}{\gamma}.
+  \label{eq:earth_planet_distance_rocket}
+\end{equation}
+
+
+In particular, Earth and planet $G$ are both at rest in the Earth frame and are
+separated by the distance $l$. The twin on the rocket therefore measures their
+separation to be $l'$. \par
+
+The following figure summarizes the outbound journey in both reference frames. In the Earth
+frame, Earth and planet $G$ are at rest and separated by the distance $l$, while the
+rocket moves between them with speed $v$. In the rocket frame, the rocket is at rest,
+while Earth and planet $G$ move with the same speed $v$ in the opposite direction, but
+their separation is reduced to $l/\gamma$. 
+
+In the rocket-frame diagram, the rocket is shown midway between Earth and planet $G$
+only for visual convenience. This midpoint has no special physical significance. At the
+instant represented in the figure,
+
+\[
+  x'_{\mathrm E}=-\frac{l'}{2},
+  \qquad
+  x'_G=\frac{l'}{2},
+\]
+
+with
+
+\[
+  l'=\frac{l}{\gamma}.
+\]
+
+At any other instant during the cruise, the individual coordinates of Earth and planet
+$G$ would be different, while their simultaneous separation in the rocket frame would
+remain equal to $l'$.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.6\textwidth]{rocketOutbound.png}
+  \caption{Outbound trip: Earth frame $F$ versus the outbound rocket frame $F'_{\mathrm{out}}$.}
+  \label{fig:twin_outbound_frames}
+\end{figure}
+
+
+As shown previously in \eqref{eq:reciprocal_relative_velocities}, if the rocket moves
+with velocity $\vb v$ relative to Earth, then Earth and planet $G$ move with velocity
+$-\vb v$ relative to the rocket. The magnitude of the relative velocity is therefore
+the same in both descriptions and is equal to $v$. Consequently, according to the
+rocket twin, planet $G$ approaches him with speed $v$, and the time required for the
+planet to reach him is
+
+\begin{equation}
+  t_1'
+  =
+  \frac{l'}{v}
+  =
+  \frac{1}{\gamma}\frac{l}{v}.
+  \label{eq:outbound_time_rocket_length}
+\end{equation}
+
+This is identical to the result obtained directly from the Lorentz transformation in
+\eqref{eq:outbound_time_rocket_lorentz}. Since $\gamma>1$ for $v>0$, we also have
+
+\begin{equation}
+  t_1'<t_1.
+\end{equation}
+
+Thus, the two twins agree on the events marking the beginning and the end of this
+portion of the journey, but they assign different spatial distances and different
+elapsed times to it. For the twin on the rocket, the distance between Earth and planet
+$G$ is shorter, and correspondingly less time elapses before the rocket and the planet
+meet.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+% ============================================================
+\subsection{Trip Back to Earth}
+% ============================================================
+
+Once the twin on the rocket reaches planet $G$, he reverses his motion and begins the
+journey back to Earth. As in the initial acceleration phase, we assume that the time
+required to reverse the motion is very small compared with the duration of the journey,
+and we neglect both this time interval and the corresponding displacement. \par
+
+We denote by $(P_2)$ the event at which the traveling twin reunites with the twin on Earth.
+For the return cruise, let $F'_{\mathrm{in}}$ denote the inertial frame comoving with the
+rocket. The rocket moves with velocity $-\vb v$ relative to the Earth frame $F$, while Earth
+and planet $G$ move with velocity $+\vb v$ relative to $F'_{\mathrm{in}}$. The magnitude of
+the relative velocity is therefore again $v$. Moreover, for the same reason discussed in
+the previous section, the distance between Earth and planet $G$ measured in the inbound
+rocket frame is
+
+\[
+  l'=\frac{l}{\gamma}.
+\]
+
+Consequently, the elapsed time measured by the twin on the rocket during the return
+journey is
+
+\begin{equation}
+  t_2'
+  =
+  \frac{l'}{v}
+  =
+  \frac{1}{\gamma}\frac{l}{v}.
+  \label{eq:return_time_rocket}
+\end{equation}
+
+For the twin on Earth, on the other hand, the rocket travels the distance $l$ from
+planet $G$ back to Earth with speed $v$. The elapsed time for the return journey is
+therefore
+
+\begin{equation}
+  t_2
+  =
+  \frac{l}{v}.
+  \label{eq:return_time_earth}
+\end{equation}
+
+The outbound and return portions of the journey have the same duration in each
+corresponding description,
+
+\[
+  t_2=t_1,
+  \qquad
+  t_2'=t_1'.
+\]
+
+Within the approximation that the launch and turnaround durations and displacements are
+negligible compared with the two cruise portions, the total elapsed time measured by the
+clock carried by the rocket is therefore
+
+\begin{equation}
+  \begin{aligned}
+    T'
+    &=
+    t_1'+t_2'
+    \\
+    &=
+    2\frac{1}{\gamma}\frac{l}{v},
+  \end{aligned}
+  \label{eq:total_journey_time_rocket}
+\end{equation}
+
+whereas the total elapsed time measured by the clock on Earth is
+
+\begin{equation}
+  \begin{aligned}
+    T
+    &=
+    t_1+t_2
+    \\
+    &=
+    2\frac{l}{v}.
+  \end{aligned}
+  \label{eq:total_journey_time_earth}
+\end{equation}
+
+Since $\gamma>1$ for any nonzero relative velocity,
+
+\begin{equation}
+  T'<T.
+  \label{eq:twin_elapsed_time_difference}
+\end{equation}
+
+Thus, at the reunion event $(P_2)$ on Earth, the clock carried by the traveling twin
+records a smaller elapsed time than the clock that remained on Earth. Since each twin's
+clock measures the time experienced by that twin, the traveling twin is younger when
+the two are reunited. The quantity $T'$ is the elapsed time recorded by the same continuous
+onboard clock throughout the entire journey; it is not a coordinate time belonging to one
+global inertial frame $F'$.
+ 
+The complete journey is summarized in the following figure. The upper row
+represents the motion in the Earth frame, while the lower row represents the corresponding
+description during the constant-velocity portions of the rocket's motion. The short
+turnaround interval is shown explicitly but is assumed to be negligible compared with the
+duration of the two cruise portions. \par
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.6\textwidth]{rocketInbound.png}
+  \caption{Complete journey in the Earth frame $F$ and in the corresponding outbound and
+  inbound rocket frames $F'_{\mathrm{out}}$ and $F'_{\mathrm{in}}$.}
+  \label{fig:twin_complete_journey}
+\end{figure}
+
+
+
+As in the previous figure, the precise positions shown during the cruise are schematic.
+What is physically relevant is that Earth and planet $G$ are separated by the distance
+$l$ in the Earth frame and by the contracted distance $l/\gamma$ in the corresponding
+outbound or inbound rocket frame.
+
+% ============================================================
+\subsection{Reciprocal Time Dilation and the Role of Events}
+% ============================================================
+
+At first sight, the result obtained above may still appear paradoxical. During every
+portion of the journey in which the relative velocity is constant, the twin on the
+rocket is equally entitled to regard himself as being at rest and the Earth as moving
+with speed $v$. In both $F'_{\mathrm{out}}$ and $F'_{\mathrm{in}}$, he therefore assigns
+the clock on Earth a slower rate than his own clock, just as the twin on Earth assigns
+the rocket clock a slower rate during each constant-velocity leg. \par
+
+There is no contradiction between these two statements and the result obtained above.
+The essential point is that a comparison of elapsed times is meaningful only after the
+events between which those times are measured have been specified. \par
+
+For example, during the outbound journey we considered the two events
+
+\begin{itemize}
+  \item $(P_0)$ The rocket leaves Earth.
+
+  \item $(P_1)$ The rocket reaches planet $G$.
+\end{itemize}
+
+The two twins assign different coordinates to these same physical events, but they
+agree on their identity. The elapsed times
+
+\[
+  t_1=\frac{l}{v},
+  \qquad
+  t_1'=\frac{1}{\gamma}\frac{l}{v},
+\]
+
+refer precisely to the interval between $P_0$ and $P_1$. \par
+
+When the twin on the rocket states instead that the clock on Earth runs more slowly,
+he is comparing two events that both lie on the worldline of the Earth clock. These
+are not the same two events $P_0$ and $P_1$, since $P_1$ occurs at planet $G$ and not
+on Earth. The reciprocal time-dilation statement therefore refers to a different pair
+of events from the pair used to compute the duration of the rocket's outbound journey.
+The same reasoning applies during the inbound leg in $F'_{\mathrm{in}}$, where the
+reciprocal clock-rate statement again compares a different pair of events on the Earth
+clock's worldline. \par
+
+This distinction is fundamental in relativity. An event is a definite physical
+occurrence, while its space and time coordinates depend on the reference frame used
+to describe it. Statements about elapsed times, distances, or simultaneity must
+therefore always specify which events are being compared. In particular, the total
+elapsed times $T$ and $T'$ compare the readings accumulated by the two clocks between
+the same departure event $(P_0)$ and reunion event $(P_2)$. The reciprocal clock-rate
+statements made during the two cruise legs compare different pairs of events and do not
+contradict this common-event comparison. During the finite turnaround interval, the
+rocket's comoving frame changes continuously in a way that depends on its velocity
+profile, but no detailed description of that interval is required for the elapsed-time
+calculation made here. Once the events are kept fixed, the apparent contradiction
+disappears.
+
+\end{document}
