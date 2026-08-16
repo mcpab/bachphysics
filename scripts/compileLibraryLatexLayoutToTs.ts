@@ -10,6 +10,11 @@ type ResolvedLatexDocument = {
   relativeSourcePath: string;
 };
 
+type FigureDimensions = {
+  width: number;
+  height: number;
+};
+
 const projectRoot = process.cwd();
 const libraryRoot = path.join(projectRoot, "library");
 const generatedRoot = path.join(libraryRoot, "generated");
@@ -137,11 +142,33 @@ function resolveKatexCompilerPath(): string {
   return compilerPath;
 }
 
-function addFigureDimensions(
-  outputLayoutPath: string,
+function resolveFigureDimensions(
+  assetsDirectory: string,
+  figureSource: string,
+): FigureDimensions {
+  const assetPath = path.resolve(assetsDirectory, figureSource);
+  const relativeAssetPath = path.relative(assetsDirectory, assetPath);
+
+  // Generated figure paths must not be able to escape their essay's asset directory.
+  if (relativeAssetPath.startsWith("..") || path.isAbsolute(relativeAssetPath)) {
+    throw new Error(`Figure source points outside the asset directory: ${figureSource}`);
+  }
+
+  const dimensions = readImageDimensions(assetPath);
+  if (!dimensions) {
+    throw new Error(
+      `Could not read dimensions for figure ${figureSource} at ${assetPath}`,
+    );
+  }
+
+  return dimensions;
+}
+
+function addFigureDimensionsToLayout(
+  outputPath: string,
   assetsDirectory: string,
 ): void {
-  const moduleSource = fs.readFileSync(outputLayoutPath, "utf8");
+  const moduleSource = fs.readFileSync(outputPath, "utf8");
   const figureSourcePattern = /^(\s*)type: "figure",\n(\s*)src: ("(?:[^"\\]|\\.)*"),$/gm;
   let figureCount = 0;
 
@@ -150,20 +177,7 @@ function addFigureDimensions(
     (figureProperties, _typeIndent: string, propertyIndent: string, sourceLiteral: string) => {
       figureCount += 1;
       const figureSource = JSON.parse(sourceLiteral) as string;
-      const assetPath = path.resolve(assetsDirectory, figureSource);
-      const relativeAssetPath = path.relative(assetsDirectory, assetPath);
-
-      // Generated figure paths must not be able to escape their essay's asset directory.
-      if (relativeAssetPath.startsWith("..") || path.isAbsolute(relativeAssetPath)) {
-        throw new Error(`Figure source points outside the asset directory: ${figureSource}`);
-      }
-
-      const dimensions = readImageDimensions(assetPath);
-      if (!dimensions) {
-        throw new Error(
-          `Could not read dimensions for figure ${figureSource} at ${assetPath}`,
-        );
-      }
+      const dimensions = resolveFigureDimensions(assetsDirectory, figureSource);
 
       return [
         figureProperties,
@@ -174,8 +188,43 @@ function addFigureDimensions(
   );
 
   if (figureCount > 0) {
-    fs.writeFileSync(outputLayoutPath, moduleSourceWithDimensions);
+    fs.writeFileSync(outputPath, moduleSourceWithDimensions);
     console.log(`Added intrinsic dimensions to ${figureCount} figure(s).`);
+  }
+}
+
+function addFigureDimensionsToLabelIndex(
+  outputPath: string,
+  assetsDirectory: string,
+): void {
+  const moduleSource = fs.readFileSync(outputPath, "utf8");
+  const figurePreviewSourcePattern = /^(\s*)nodeType: "figure",\n\1previewProps: \{\n(\s*)id: "(?:[^"\\]|\\.)*",\n(\s*)src: ("(?:[^"\\]|\\.)*"),$/gm;
+  let figureCount = 0;
+
+  const moduleSourceWithDimensions = moduleSource.replace(
+    figurePreviewSourcePattern,
+    (
+      figureProperties,
+      _entryIndent: string,
+      _idPropertyIndent: string,
+      sourcePropertyIndent: string,
+      sourceLiteral: string,
+    ) => {
+      figureCount += 1;
+      const figureSource = JSON.parse(sourceLiteral) as string;
+      const dimensions = resolveFigureDimensions(assetsDirectory, figureSource);
+
+      return [
+        figureProperties,
+        `${sourcePropertyIndent}width: ${dimensions.width},`,
+        `${sourcePropertyIndent}height: ${dimensions.height},`,
+      ].join("\n");
+    },
+  );
+
+  if (figureCount > 0) {
+    fs.writeFileSync(outputPath, moduleSourceWithDimensions);
+    console.log(`Added intrinsic dimensions to ${figureCount} figure preview(s).`);
   }
 }
 
@@ -238,7 +287,8 @@ function main(): void {
 
   const assetsDirectory = path.join(path.dirname(sourceDirectory), "assets");
   try {
-    addFigureDimensions(temporaryLayoutPath, assetsDirectory);
+    addFigureDimensionsToLayout(temporaryLayoutPath, assetsDirectory);
+    addFigureDimensionsToLabelIndex(temporaryLabelIndexPath, assetsDirectory);
 
     // Keep the last valid artifacts visible until compilation and figure enrichment finish.
     fs.renameSync(temporaryLabelIndexPath, outputLabelIndexPath);

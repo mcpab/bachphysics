@@ -85,6 +85,8 @@ export const labelIndex = {
     previewProps: {
       id: "figure-1",
       src: "twinsBegin.png",
+      width: 1536,
+      height: 1024,
       caption: {
         id: "layoutInlineGroup-19",
         type: "layoutInlineGroup",
@@ -356,6 +358,8 @@ export const labelIndex = {
     previewProps: {
       id: "figure-2",
       src: "rocketOutbound.png",
+      width: 1536,
+      height: 1026,
       caption: {
         id: "layoutInlineGroup-74",
         type: "layoutInlineGroup",
@@ -516,6 +520,8 @@ export const labelIndex = {
     previewProps: {
       id: "figure-3",
       src: "rocketInbound.png",
+      width: 1536,
+      height: 1024,
       caption: {
         id: "layoutInlineGroup-88",
         type: "layoutInlineGroup",
