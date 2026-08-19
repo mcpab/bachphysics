@@ -726,61 +726,240 @@ As in the previous figure, the precise positions shown during the cruise are sch
 What is physically relevant is that Earth and planet $G$ are separated by the distance
 $l$ in the Earth frame and by the contracted distance $l/\gamma$ in the corresponding
 outbound or inbound rocket frame.
-
 % ============================================================
-\subsection{Reciprocal Time Dilation and the Role of Events}
+\subsection{Events and the Apparent Asymmetry of Time Dilation}
 % ============================================================
 
-At first sight, the result obtained above may still appear paradoxical. During every
-portion of the journey in which the relative velocity is constant, the twin on the
-rocket is equally entitled to regard himself as being at rest and the Earth as moving
-with speed $v$. In both $F'_{\mathrm{out}}$ and $F'_{\mathrm{in}}$, he therefore assigns
-the clock on Earth a slower rate than his own clock, just as the twin on Earth assigns
-the rocket clock a slower rate during each constant-velocity leg. \par
+We will now return to the question raised at the beginning of the essay and address
+the apparent asymmetry in the motion of the two twins. One of the apparent
+contradictions comes from the familiar statement that a clock observed from a
+reference frame in which it is moving appears to run more slowly. It therefore seems
+reasonable that, when the rocket reaches planet $G$, the clock carried by the rocket
+has recorded less time than the clock on Earth. By symmetry, however, we might also
+expect the twin on the rocket to find that the clock on Earth has recorded less time
+than his own. \par
 
-There is no contradiction between these two statements and the result obtained above.
-The essential point is that a comparison of elapsed times is meaningful only after the
-events between which those times are measured have been specified. \par
+The resolution of this apparent contradiction requires us to be very precise about
+the events being compared. The familiar formulas for time dilation do not apply to
+arbitrary events: they apply to particular pairs of events selected by specific
+conditions. \par
 
-For example, during the outbound journey we considered the two events
-
-\begin{itemize}
-  \item $(P_0)$ The rocket leaves Earth.
-
-  \item $(P_1)$ The rocket reaches planet $G$.
-\end{itemize}
-
-The two twins assign different coordinates to these same physical events, but they
-agree on their identity. The elapsed times
+Let us first consider the arrival of the rocket at planet $G$ from the point of view
+of the twin on Earth. The arrival event is
 
 \[
-  t_1=\frac{l}{v},
+  P_1:
   \qquad
-  t_1'=\frac{1}{\gamma}\frac{l}{v},
+  (x,t)
+  =
+  \left(
+    l,\frac{l}{v}
+  \right).
 \]
 
-refer precisely to the interval between $P_0$ and $P_1$. \par
+At the same time in the Earth frame, the twin on Earth is still at the origin of $F$.
+We therefore consider the event
 
-When the twin on the rocket states instead that the clock on Earth runs more slowly,
-he is comparing two events that both lie on the worldline of the Earth clock. These
-are not the same two events $P_0$ and $P_1$, since $P_1$ occurs at planet $G$ and not
-on Earth. The reciprocal time-dilation statement therefore refers to a different pair
-of events from the pair used to compute the duration of the rocket's outbound journey.
-The same reasoning applies during the inbound leg in $F'_{\mathrm{in}}$, where the
-reciprocal clock-rate statement again compares a different pair of events on the Earth
-clock's worldline. \par
+\[
+  Q_1:
+  \qquad
+  (x,t)
+  =
+  \left(
+    0,\frac{l}{v}
+  \right).
+\]
 
-This distinction is fundamental in relativity. An event is a definite physical
-occurrence, while its space and time coordinates depend on the reference frame used
-to describe it. Statements about elapsed times, distances, or simultaneity must
-therefore always specify which events are being compared. In particular, the total
-elapsed times $T$ and $T'$ compare the readings accumulated by the two clocks between
-the same departure event $(P_0)$ and reunion event $(P_2)$. The reciprocal clock-rate
-statements made during the two cruise legs compare different pairs of events and do not
-contradict this common-event comparison. During the finite turnaround interval, the
-rocket's comoving frame changes continuously in a way that depends on its velocity
-profile, but no detailed description of that interval is required for the elapsed-time
-calculation made here. Once the events are kept fixed, the apparent contradiction
-disappears.
+Thus, in the Earth frame, the two events
+
+\[
+  P_1
+  \qquad\text{and}\qquad
+  Q_1
+\]
+
+are simultaneous. The first occurs at planet $G$, while the second occurs at the
+position of the twin on Earth. In this description, the Earth twin is at rest and his
+position remains fixed at $x=0$. \par
+
+Let us now describe the same arrival event $P_1$ from the outbound rocket frame
+$F'_{\mathrm{out}}$. Its coordinates are
+
+\[
+  P_1:
+  \qquad
+  (x',t')
+  =
+  \left(
+    0,\frac{l}{\gamma v}
+  \right).
+\]
+
+At this same time in $F'_{\mathrm{out}}$, the twin on Earth is not at a fixed spatial
+position. He is moving toward the negative $x'$ direction with velocity $-\vb{v}$.
+Since the distance between Earth and planet $G$ measured in the rocket frame is
+
+\[
+  l'=\frac{l}{\gamma},
+\]
+
+at the instant at which the rocket reaches planet $G$, the Earth twin is located at
+
+\[
+  x'=-\frac{l}{\gamma}.
+\]
+
+We therefore introduce the event
+
+\[
+  R_1:
+  \qquad
+  (x',t')
+  =
+  \left(
+    -\frac{l}{\gamma},
+    \frac{l}{\gamma v}
+  \right).
+\]
+
+Thus, in the rocket frame, the two events
+
+\[
+  P_1
+  \qquad\text{and}\qquad
+  R_1
+\]
+
+are simultaneous. Again, one event is the arrival of the rocket at planet $G$, while
+the other occurs at the position of the twin on Earth at that same time according to
+the rocket frame. The difference is that, in this description, the Earth twin is
+moving rather than remaining at a fixed spatial coordinate. \par
+
+We can now determine how the event $R_1$ is recorded in the Earth frame by using the
+inverse Lorentz transformation,
+
+\[
+  x=\gamma(x'+vt'),
+  \qquad
+  t=\gamma\left(t'+\frac{v}{c^2}x'\right).
+\]
+
+For the spatial coordinate we obtain
+
+\begin{align}
+  x(R_1)
+  &=
+  \gamma
+  \left(
+    -\frac{l}{\gamma}
+    +
+    v\frac{l}{\gamma v}
+  \right)
+  \nonumber\\
+  &=
+  0,
+\end{align}
+
+as expected, since $R_1$ is the position of the twin on Earth. For the
+time coordinate,
+
+\begin{align}
+  t(R_1)
+  &=
+  \gamma
+  \left(
+    \frac{l}{\gamma v}
+    -
+    \frac{v}{c^2}\frac{l}{\gamma}
+  \right)
+  \nonumber\\
+  &=
+  \frac{l}{v}
+  \left(
+    1-\frac{v^2}{c^2}
+  \right)
+  \nonumber\\
+  &=
+  \frac{l}{\gamma^2 v}.
+\end{align}
+
+Since the elapsed time measured by the rocket clock between departure and $P_1$ is
+
+\[
+  t_1'=\frac{l}{\gamma v},
+\]
+
+we may equivalently write
+
+\[
+  t(R_1)=\frac{t_1'}{\gamma}.
+\]
+
+We therefore recover the familiar reciprocal time-dilation result: according to the
+outbound rocket frame, the clock on Earth has advanced by less than the clock carried
+by the rocket. \par
+
+There is nevertheless no contradiction with the result obtained previously. The
+Earth event $Q_1$ used in the Earth-frame description and the Earth event $R_1$ used
+in the rocket-frame description are not the same event. Indeed,
+
+\[
+  t(Q_1)=\frac{l}{v},
+  \qquad
+  t(R_1)=\frac{l}{\gamma^2 v}.
+\]
+
+Thus,
+
+\[
+  Q_1\neq R_1.
+\]
+
+The two events are selected by different simultaneity conditions. In the Earth frame,
+
+\[
+  t(P_1)=t(Q_1),
+\]
+
+while in the outbound rocket frame,
+
+\[
+  t'(P_1)=t'(R_1).
+\]
+
+The two reference frames therefore associate different events on the Earth twin's
+reference system with the same arrival event $P_1$. \par
+
+This distinction is the key point. The arrival event $P_1$ is not arbitrary: it is
+constrained by the physical setup of the experiment. Planet $G$ remains at the fixed
+position $x=l$ in the Earth frame, while the rocket travels with speed $v$. Therefore
+the rocket can meet planet $G$ only when
+
+\[
+  l=vt,
+\]
+
+which fixes the Earth-frame time of the arrival event to be
+
+\[
+  t(P_1)=\frac{l}{v}.
+\]
+
+The event selected by the reciprocal time-dilation comparison in
+$F'_{\mathrm{out}}$ is instead $R_1$, a different event on the Earth reference system. The
+two apparently contradictory statements therefore compare different pairs of events.
+\par
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.6\textwidth]{eventsRole.png}
+  \caption{The role of events in the comparison of elapsed times.}
+  \label{fig:role_of_events}
+\end{figure}
+
+This illustrates a principle that is fundamental throughout special relativity:
+before applying a formula for time dilation, length contraction, or simultaneity, we
+must first identify precisely the events to which that formula refers.
 
 \end{document}
