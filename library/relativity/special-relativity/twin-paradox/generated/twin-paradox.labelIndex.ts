@@ -575,5 +575,31 @@ export const labelIndex = {
       align: "center",
       label: "fig:twin_complete_journey"
     }
+  },
+  "fig:role_of_events": {
+    label: "fig:role_of_events",
+    documentId: "twin-paradox",
+    nodeId: "figure-4",
+    nodeType: "figure",
+    previewProps: {
+      id: "figure-4",
+      src: "eventsRole.png",
+      width: 1536,
+      height: 1024,
+      caption: {
+        id: "layoutInlineGroup-117",
+        type: "layoutInlineGroup",
+        children: [
+          {
+            id: "text-458",
+            type: "text",
+            body: "The role of events in the comparison of elapsed times."
+          }
+        ]
+      },
+      alt: "The role of events in the comparison of elapsed times.",
+      align: "center",
+      label: "fig:role_of_events"
+    }
   }
 } as const satisfies LatexReferenceIndex;

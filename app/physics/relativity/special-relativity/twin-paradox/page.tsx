@@ -3,6 +3,7 @@ import { labelIndex } from '@/library/relativity/special-relativity/twin-paradox
 import { latexDocument } from '@/library/relativity/special-relativity/twin-paradox/generated/twin-paradox.layout.ast';
 
 import Essay from '@/app/components/Essay';
+import type { LatexPropsOverrides } from '@mcpab/katex';
 import {
     type ChapterFrontMatterProps
 } from "@mcpab/katex/react";
@@ -30,10 +31,22 @@ subtitle: 'The apparent asymmetry of relativistic motion and its resolution',
   ],
 } satisfies ChapterFrontMatterProps;
 
+const latexPropsOverride = {
+  figure: {
+    // Figure labels are stable reference keys, not reader-facing caption text.
+    $all: { label: undefined },
+  },
+} satisfies LatexPropsOverrides;
+
 export default function RigidBodyMotion(): React.ReactElement {
 
     return (
-        <Essay frontMatter={frontMatter} labelIndex={labelIndex} latexDocument={latexDocument} />
+        <Essay
+          frontMatter={frontMatter}
+          labelIndex={labelIndex}
+          latexDocument={latexDocument}
+          latexPropsOverride={latexPropsOverride}
+        />
     )
 
 }
