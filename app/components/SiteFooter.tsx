@@ -73,7 +73,7 @@ export function SiteFooter() {
                 opacity: 0.25,
                 mb: 2,
             }} />
-            <FinePrint sx={{ opacity: 0.7, fontSize: '0.9rem' }}>  © 2026 Bach and Physics. All rights reserved.</FinePrint>
+            <FinePrint sx={{ opacity: 0.7, fontSize: '0.9rem' }}>  © 2026 Marco C. P. A. Brunelli. All rights reserved. </FinePrint>
         </Box>
     );
     return (
