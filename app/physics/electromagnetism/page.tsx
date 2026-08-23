@@ -1,3 +1,5 @@
+import { getImmediateMenuTopics } from '@/app/navigation/getImmediateMenuTopics';
+import { siteMenuTree } from '@/app/navigation/siteMenuTree';
 import { PhysicsSubjectOverview } from '../components/PhysicsSubjectOverview';
 
 
@@ -10,16 +12,7 @@ const electromagnetismDescription = [
 ] as const;
 
 
-const electromagnetismTopics = [
-    {
-        href: '/physics/electromagnetism/moving-charges/',
-        title: 'Electromagnetic Field of Moving Charges',
-    },
-    {
-        href: '/physics/electromagnetism/relativistic-electromagnetism/maxwell-equations',
-        title: 'Relativistic Maxwell Equations',
-    },
-] as const;
+const electromagnetismTopics = getImmediateMenuTopics(siteMenuTree, 'electromagnetism');
 
 
 

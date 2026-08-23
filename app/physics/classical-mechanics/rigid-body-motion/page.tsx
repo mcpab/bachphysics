@@ -1,27 +1,33 @@
+import {
+    getImmediateMenuTopics,
+    withMenuTopicMetadata,
+} from '@/app/navigation/getImmediateMenuTopics';
+import { siteMenuTree } from '@/app/navigation/siteMenuTree';
 import { PhysicsTopicOverview } from '../../components/PhysicsTopicOverview';
 
-const rigidBodyEssays = [
-    {
-        href: '/physics/classical-mechanics/rigid-body-motion/kinematics-of-rotations',
+const rigidBodyEssayMetadata = {
+    '/physics/classical-mechanics/rigid-body-motion/kinematics-of-rotations': {
         title: 'The Kinematics of Rotations',
         description: 'Develops the geometry of rigid body motion, including orthogonal transformations, finite and infinitesimal rotations, angular velocity, and rotating reference frames.',
     },
-    {
-        href: '/physics/classical-mechanics/rigid-body-motion/dynamics-in-rotating-reference-frames',
+    '/physics/classical-mechanics/rigid-body-motion/dynamics-in-rotating-reference-frames': {
         title: 'Dynamics in Rotating Reference Frames',
         description: 'Derives Newton\'s laws as observed from rotating frames and obtains the Euler, Coriolis, and centrifugal forces.',
     },
-    {
-        href: '/physics/classical-mechanics/rigid-body-motion/motion-on-the-rotating-earth',
+    '/physics/classical-mechanics/rigid-body-motion/motion-on-the-rotating-earth': {
         title: 'Motion on the Rotating Earth',
         description: 'Applies rotating-frame dynamics to motion near Earth\'s surface and examines the observable effects of Earth\'s rotation.',
     },
-    {
-        href: '/physics/classical-mechanics/rigid-body-motion/foucault-pendulum',
+    '/physics/classical-mechanics/rigid-body-motion/foucault-pendulum': {
         title: 'The Foucault Pendulum',
         description: 'Derives the constrained motion of the Foucault pendulum and explains the slow precession of its oscillation plane.',
     },
-] as const;
+} as const;
+
+const rigidBodyEssays = withMenuTopicMetadata(
+    getImmediateMenuTopics(siteMenuTree, 'rigid-body-motion'),
+    rigidBodyEssayMetadata,
+);
 
 export default function RigidBodyMotion(): React.ReactElement {
     return (

@@ -1,3 +1,5 @@
+import { getImmediateMenuTopics } from '@/app/navigation/getImmediateMenuTopics';
+import { siteMenuTree } from '@/app/navigation/siteMenuTree';
 import { PhysicsSubjectOverview } from '../components/PhysicsSubjectOverview';
 
 const classicalMechanicsDescription = [
@@ -9,20 +11,10 @@ const classicalMechanicsDescription = [
     "The subject will be developed through the following major topics."
 ] as const;
 
-const classicalMechanicsTopics = [
-    {
-        href: '/physics/classical-mechanics/rigid-body-motion',
-        title: 'Rigid Body Motion',
-    },
-    {
-        href: '/physics/classical-mechanics/lagrangian-mechanics',
-        title: 'Lagrangian Mechanics',
-    },
-    {
-        href: '/physics/classical-mechanics/hamiltonian-mechanics',
-        title: 'Hamiltonian Mechanics',
-    },
-] as const;
+const classicalMechanicsTopics = getImmediateMenuTopics(
+    siteMenuTree,
+    'classical-mechanics',
+);
 
 export default function ClassicalMechanics(): React.ReactElement {
     return (
