@@ -17,6 +17,12 @@ export const siteMenuTree: DrawerMenuTree = {
             label: 'about',
         },
         {
+            id: 'contact',
+            href: '/contact',
+            type: 'link',
+            label: 'contact',
+        },
+        {
             id: 'colophon',
             href: '/colophon',
             type: 'link',
