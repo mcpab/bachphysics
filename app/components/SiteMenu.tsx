@@ -8,7 +8,7 @@ import type { BreadMenuProps, HeaderLogoProps } from '@mcpab/web-blocks';
 import { HeaderDrawer, type DrawerMenuRootProps } from '@mcpab/web-blocks/client';
 import { usePathname } from 'next/navigation';
 import { NextLinkLike } from './NextLinkLike';
-
+import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
 export function SiteMenu(): React.ReactElement {
     const currentPath = usePathname();
 
@@ -41,6 +41,23 @@ export function SiteMenu(): React.ReactElement {
                     iconProps: {
                         sx: {
                             color: 'primary.main',
+                            minWidth: 36,
+                        },
+                    },
+                },
+                contact: {
+                    iconProps: {
+                        sx: {
+                            color: 'primary.main',
+                            minWidth: 36,
+                        },
+                    },
+                },
+                colophon: {
+                    icon: <DescriptionOutlinedIcon />,
+                    iconProps: {
+                        sx: {
+                            color: "primary.main",
                             minWidth: 36,
                         },
                     },
