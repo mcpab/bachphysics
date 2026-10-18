@@ -3,7 +3,7 @@ import {
     withMenuTopicMetadata,
 } from '@/app/navigation/getImmediateMenuTopics';
 import { siteMenuTree } from '@/app/navigation/siteMenuTree';
-import { PhysicsTopicOverview } from '../../components/PhysicsTopicOverview';
+import { EssayCollectionOverview } from '@/app/components/overview/EssayCollectionOverview';
 
 const specialRelativityEssayMetadata = {
     '/physics/relativity/special-relativity/lorentz-transformations': {
@@ -24,9 +24,9 @@ const specialRelativityEssays = withMenuTopicMetadata(
 
 export default function SpecialRelativity(): React.ReactElement {
     return (
-        <PhysicsTopicOverview
+        <EssayCollectionOverview
             title="Special Relativity"
-            description={[
+            introduction={[
                 'This collection develops Special Relativity systematically from its kinematical foundations, with particular emphasis on the structure of spacetime, the role of events and reference frames, and the physical meaning of relativistic quantities.',
                 'The essays are intended to build on one another, deriving results carefully from first principles and developing the mathematical language needed for more advanced topics in relativistic physics.',
             ]}

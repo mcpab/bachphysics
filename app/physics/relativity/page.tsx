@@ -1,6 +1,6 @@
 import { getImmediateMenuTopics } from '@/app/navigation/getImmediateMenuTopics';
 import { siteMenuTree } from '@/app/navigation/siteMenuTree';
-import { PhysicsSubjectOverview } from '../components/PhysicsSubjectOverview';
+import { SectionOverview } from '@/app/components/overview/SectionOverview';
 
 const relativityDescription = [
   'This section is part of the long-term BachPhysics project and currently contains only essays on Special Relativity.',
@@ -11,17 +11,17 @@ const relativityTopics = getImmediateMenuTopics(siteMenuTree, 'relativity');
 
 export default function Relativity(): React.ReactElement {
     return (
-        <PhysicsSubjectOverview
+        <SectionOverview
             title="Relativity"
-            caption="Relativity in the BachPhysics library."
-            description={relativityDescription}
-            imageConf={{
+            heroCaption="Relativity in the BachPhysics library."
+            introduction={relativityDescription}
+            heroImage={{
                 src: '/img/relativity.jpg',
                 objectPosition: 'center',
                 priority: true,
                 overlayColor: 'rgba(12, 11, 10, 0.52)',
             }}
-            topics={relativityTopics}
+            sections={relativityTopics}
         />
     );
 }

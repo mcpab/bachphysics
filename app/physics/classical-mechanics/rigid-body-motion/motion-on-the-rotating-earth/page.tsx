@@ -1,23 +1,16 @@
 'use client'
 import { NextLinkLike } from '@/app/components/NextLinkLike';
 import { NextImageAdapter } from '@/src/components/NextImageAdapter';
-import { FigureEnhancer, ReferenceEnhancer } from '@mcpab/katex/client';
 import {
-    createLatexRendererContextValue,
-    LatexHostContext,
-    LatexRendererContext,
-    type LatexHostContextValue,
-    RenderLatexDocument,
+    type LatexHostContextValue
 } from '@mcpab/katex/react';
 
-import { latexDocument } from '@/library/classical-mechanics/rigid-body-motion/motion-on-the-rotating-earth/generated/motion-on-the-rotating-earth.layout.ast';
+import Essay from '@/app/components/Essay';
 import { labelIndex } from '@/library/classical-mechanics/rigid-body-motion/motion-on-the-rotating-earth/generated/motion-on-the-rotating-earth.labelIndex';
-import { PageFrame } from '@/app/components/PageFrame';
-import { scientificEssayLayout } from "@/app/physics/scientificEssayLayout";
+import { latexDocument } from '@/library/classical-mechanics/rigid-body-motion/motion-on-the-rotating-earth/generated/motion-on-the-rotating-earth.layout.ast';
 
 import {
-    ChapterFrontMatter,
-    type ChapterFrontMatterProps,
+    type ChapterFrontMatterProps
 } from "@mcpab/katex/react";
 
 const frontMatter = {
@@ -50,31 +43,14 @@ const frontMatter = {
 } satisfies ChapterFrontMatterProps;
 
 export default function RigidBodyMotion(): React.ReactElement {
-
-    const latexRendererContextValue = createLatexRendererContextValue({
-    })
-
-    const latexHostContextValue: LatexHostContextValue = {
-        ImageComponent: NextImageAdapter,
-        resolveAssetSrc: (src) => `/img/${src}`,
-        LinkComponent: NextLinkLike,
-    };
-
-
+   
     return (
 
-        <LatexRendererContext.Provider value={latexRendererContextValue}>
-            <LatexHostContext.Provider value={latexHostContextValue}>
-                <PageFrame>
-                    <RenderLatexDocument latexDocument={latexDocument} layoutConfig={scientificEssayLayout}
-                        frontMatter={
-                            <ChapterFrontMatter {...frontMatter} />
-                        } />
-                    <ReferenceEnhancer labelIndex={labelIndex} />
-                    <FigureEnhancer />
-                </PageFrame>
-            </LatexHostContext.Provider>
-        </LatexRendererContext.Provider>
+       <Essay
+                   frontMatter={frontMatter}
+                   labelIndex={labelIndex}
+                   latexDocument={latexDocument}
+               />
     )
 
 

@@ -199,5 +199,37 @@ export const siteMenuTree: DrawerMenuTree = {
                 },
             ],
         },
+        {
+            id: 'mathematics',
+            type: 'group',
+            label: 'Mathematics',
+            children: [
+                {
+                    id: 'mathematics-overview',
+                    href: '/mathematics',
+                    type: 'link',
+                    label: 'Overview',
+                },
+                {
+                    id: 'geometry',
+                    type: 'group',
+                    label: 'Geometry',
+                    children: [
+                        {
+                            id: 'geometry-overview',
+                            href: '/mathematics/geometry',
+                            type: 'link',
+                            label: 'Overview',
+                        },
+                        {
+                            id: 'affine-geometry',
+                            href: '/mathematics/geometry/affine-geometry',
+                            type: 'link',
+                            label: 'Affine Geometry',
+                        },
+                    ],
+                },
+            ],
+        },
     ],
 };

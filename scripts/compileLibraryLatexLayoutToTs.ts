@@ -164,7 +164,7 @@ function resolveFigureDimensions(
   return dimensions;
 }
 
-function addFigureDimensionsToLayout(
+function addFigureDimensionsToGeneratedModule(
   outputPath: string,
   assetsDirectory: string,
 ): void {
@@ -189,42 +189,7 @@ function addFigureDimensionsToLayout(
 
   if (figureCount > 0) {
     fs.writeFileSync(outputPath, moduleSourceWithDimensions);
-    console.log(`Added intrinsic dimensions to ${figureCount} figure(s).`);
-  }
-}
-
-function addFigureDimensionsToLabelIndex(
-  outputPath: string,
-  assetsDirectory: string,
-): void {
-  const moduleSource = fs.readFileSync(outputPath, "utf8");
-  const figurePreviewSourcePattern = /^(\s*)nodeType: "figure",\n\1previewProps: \{\n(\s*)id: "(?:[^"\\]|\\.)*",\n(\s*)src: ("(?:[^"\\]|\\.)*"),$/gm;
-  let figureCount = 0;
-
-  const moduleSourceWithDimensions = moduleSource.replace(
-    figurePreviewSourcePattern,
-    (
-      figureProperties,
-      _entryIndent: string,
-      _idPropertyIndent: string,
-      sourcePropertyIndent: string,
-      sourceLiteral: string,
-    ) => {
-      figureCount += 1;
-      const figureSource = JSON.parse(sourceLiteral) as string;
-      const dimensions = resolveFigureDimensions(assetsDirectory, figureSource);
-
-      return [
-        figureProperties,
-        `${sourcePropertyIndent}width: ${dimensions.width},`,
-        `${sourcePropertyIndent}height: ${dimensions.height},`,
-      ].join("\n");
-    },
-  );
-
-  if (figureCount > 0) {
-    fs.writeFileSync(outputPath, moduleSourceWithDimensions);
-    console.log(`Added intrinsic dimensions to ${figureCount} figure preview(s).`);
+    console.log(`Added intrinsic dimensions to ${figureCount} figure node(s).`);
   }
 }
 
@@ -287,8 +252,9 @@ function main(): void {
 
   const assetsDirectory = path.join(path.dirname(sourceDirectory), "assets");
   try {
-    addFigureDimensionsToLayout(temporaryLayoutPath, assetsDirectory);
-    addFigureDimensionsToLabelIndex(temporaryLabelIndexPath, assetsDirectory);
+    // Both artifacts now contain semantic AST nodes, so figure enrichment is shared.
+    addFigureDimensionsToGeneratedModule(temporaryLayoutPath, assetsDirectory);
+    addFigureDimensionsToGeneratedModule(temporaryLabelIndexPath, assetsDirectory);
 
     // Keep the last valid artifacts visible until compilation and figure enrichment finish.
     fs.renameSync(temporaryLabelIndexPath, outputLabelIndexPath);

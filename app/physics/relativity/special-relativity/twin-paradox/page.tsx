@@ -29,7 +29,7 @@ const frontMatter = {
     ],
 } satisfies ChapterFrontMatterProps;
 
-const latexPropsOverride = {
+const latexPropsOverrides = {
     figure: {
         // Figure labels are stable reference keys, not reader-facing caption text.
         $all: { label: undefined },
@@ -42,7 +42,7 @@ export default function TwinParadox(): React.ReactElement {
             frontMatter={frontMatter}
             labelIndex={labelIndex}
             latexDocument={latexDocument}
-            latexPropsOverride={latexPropsOverride}
+            latexPropsOverrides={latexPropsOverrides}
         />
     );
 }

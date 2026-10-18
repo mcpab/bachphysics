@@ -1,20 +1,13 @@
 'use client'
 
+import Essay from '@/app/components/Essay';
 import { NextLinkLike } from '@/app/components/NextLinkLike';
-import { PageFrame } from '@/app/components/PageFrame';
-import { scientificEssayLayout } from '@/app/physics/scientificEssayLayout';
 import { labelIndex } from '@/library/classical-mechanics/rigid-body-motion/foucault-pendulum/generated/foucault-pendulum.labelIndex';
 import { latexDocument } from '@/library/classical-mechanics/rigid-body-motion/foucault-pendulum/generated/foucault-pendulum.layout.ast';
 import { NextImageAdapter } from '@/src/components/NextImageAdapter';
-import { FigureEnhancer, ReferenceEnhancer } from '@mcpab/katex/client';
 import {
-    ChapterFrontMatter,
-    createLatexRendererContextValue,
-    LatexHostContext,
-    LatexRendererContext,
     type ChapterFrontMatterProps,
-    type LatexHostContextValue,
-    RenderLatexDocument,
+    type LatexHostContextValue
 } from '@mcpab/katex/react';
 
 const frontMatter = {
@@ -41,27 +34,13 @@ const frontMatter = {
 } satisfies ChapterFrontMatterProps;
 
 export default function FoucaultPendulum(): React.ReactElement {
-    const latexRendererContextValue = createLatexRendererContextValue({});
-
-    const latexHostContextValue: LatexHostContextValue = {
-        ImageComponent: NextImageAdapter,
-        resolveAssetSrc: (src) => `/img/${src}`,
-        LinkComponent: NextLinkLike,
-    };
-
+ 
     return (
-        <LatexRendererContext.Provider value={latexRendererContextValue}>
-            <LatexHostContext.Provider value={latexHostContextValue}>
-                <PageFrame>
-                    <RenderLatexDocument
-                        latexDocument={latexDocument}
-                        layoutConfig={scientificEssayLayout}
-                        frontMatter={<ChapterFrontMatter {...frontMatter} />}
-                    />
-                    <ReferenceEnhancer labelIndex={labelIndex} />
-                    <FigureEnhancer />
-                </PageFrame>
-            </LatexHostContext.Provider>
-        </LatexRendererContext.Provider>
+              <Essay
+            frontMatter={frontMatter}
+            labelIndex={labelIndex}
+            latexDocument={latexDocument}
+        />
+
     );
 }

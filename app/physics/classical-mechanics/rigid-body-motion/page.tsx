@@ -3,7 +3,7 @@ import {
     withMenuTopicMetadata,
 } from '@/app/navigation/getImmediateMenuTopics';
 import { siteMenuTree } from '@/app/navigation/siteMenuTree';
-import { PhysicsTopicOverview } from '../../components/PhysicsTopicOverview';
+import { EssayCollectionOverview } from '@/app/components/overview/EssayCollectionOverview';
 
 const rigidBodyEssayMetadata = {
     '/physics/classical-mechanics/rigid-body-motion/kinematics-of-rotations': {
@@ -31,9 +31,9 @@ const rigidBodyEssays = withMenuTopicMetadata(
 
 export default function RigidBodyMotion(): React.ReactElement {
     return (
-        <PhysicsTopicOverview
+        <EssayCollectionOverview
             title='Rigid Body Motion'
-            description={[
+            introduction={[
                 'The theory of rigid body motion is developed through four essays intended to be read in sequence. Each essay establishes the ideas and notation used by the next.',
                 'The sequence begins with the geometry of rotations and rotating coordinate systems, proceeds to dynamics in rotating reference frames, applies those ideas to motion near the Earth\'s surface, and concludes with the Foucault pendulum.',
             ]}

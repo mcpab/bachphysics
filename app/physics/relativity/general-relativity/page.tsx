@@ -1,10 +1,10 @@
-import { PhysicsTopicOverview } from '../../components/PhysicsTopicOverview';
+import { EssayCollectionOverview } from '@/app/components/overview/EssayCollectionOverview';
 
 export default function GeneralRelativity(): React.ReactElement {
     return (
-        <PhysicsTopicOverview
+        <EssayCollectionOverview
             title="General Relativity"
-            description="A future collection devoted to gravitation, spacetime geometry, and Einstein's field equations."
+            introduction="A future collection devoted to gravitation, spacetime geometry, and Einstein's field equations."
             showWorkInProgressNote
         />
     );

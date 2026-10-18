@@ -1,10 +1,10 @@
-import { PhysicsTopicOverview } from '../../components/PhysicsTopicOverview';
+import { EssayCollectionOverview } from '@/app/components/overview/EssayCollectionOverview';
 
 export default function HamiltonianMechanics(): React.ReactElement {
     return (
-        <PhysicsTopicOverview
+        <EssayCollectionOverview
             title='Hamiltonian Mechanics'
-            description='A future collection devoted to phase space, canonical equations, and the Hamiltonian formulation of classical mechanics.'
+            introduction='A future collection devoted to phase space, canonical equations, and the Hamiltonian formulation of classical mechanics.'
             showWorkInProgressNote
         />
     );

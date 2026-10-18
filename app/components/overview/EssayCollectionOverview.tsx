@@ -1,28 +1,28 @@
-import NextLink from 'next/link';
 import { SectionTitle, SubsectionTitle } from '@mcpab/web-blocks';
 import Box from '@mui/material/Box';
-import { PageFrame } from '../../components/PageFrame';
-import { LeadText } from '../../components/TextComponents';
+import NextLink from 'next/link';
+import { PageFrame } from '../PageFrame';
+import { LeadText } from '../TextComponents';
 
-type TopicEssayLink = {
+export type EssayLink = {
     href: string;
     title: string;
     description?: string;
 };
 
-type PhysicsTopicOverviewProps = {
+export type EssayCollectionOverviewProps = {
     title: string;
-    description: string | readonly string[];
-    essays?: readonly TopicEssayLink[];
+    introduction: string | readonly string[];
+    essays?: readonly EssayLink[];
     showWorkInProgressNote?: boolean;
 };
 
-export function PhysicsTopicOverview({
+export function EssayCollectionOverview({
     title,
-    description,
+    introduction,
     essays = [],
     showWorkInProgressNote = false,
-}: PhysicsTopicOverviewProps): React.ReactElement {
+}: EssayCollectionOverviewProps): React.ReactElement {
     return (
         <PageFrame>
             <Box
@@ -46,18 +46,19 @@ export function PhysicsTopicOverview({
                 >
                     {title}
                 </SectionTitle>
-                {typeof description === 'string' ? (
-                    <LeadText>{description}</LeadText>
+                {typeof introduction === 'string' ? (
+                    <LeadText>{introduction}</LeadText>
                 ) : (
-                    description.map((paragraph, paragraphIndex) => (
-                        <LeadText key={paragraphIndex}>{paragraph}</LeadText>
+                    introduction.map((paragraph, paragraphIndex) => (
+                        <LeadText key={`${title}-introduction-${paragraphIndex}`}>{paragraph}</LeadText>
                     ))
                 )}
                 {showWorkInProgressNote && (
                     <LeadText>
                         This section is part of the long-term BachPhysics project and is currently
                         under development. Future essays will develop the subject carefully from
-                        first principles, with emphasis on derivation, notation, and physical meaning.
+                        first principles, with emphasis on derivation, notation, and conceptual
+                        understanding.
                     </LeadText>
                 )}
                 {essays.length > 0 && (

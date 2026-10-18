@@ -1,10 +1,10 @@
-import { PhysicsTopicOverview } from '../../components/PhysicsTopicOverview';
+import { EssayCollectionOverview } from '@/app/components/overview/EssayCollectionOverview';
 
 export default function LagrangianMechanics(): React.ReactElement {
     return (
-        <PhysicsTopicOverview
+        <EssayCollectionOverview
             title='Lagrangian Mechanics'
-            description='A future collection devoted to variational principles and the Lagrangian formulation of classical mechanics.'
+            introduction='A future collection devoted to variational principles and the Lagrangian formulation of classical mechanics.'
             showWorkInProgressNote
         />
     );

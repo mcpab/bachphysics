@@ -1,6 +1,6 @@
 import { getImmediateMenuTopics } from '../navigation/getImmediateMenuTopics';
 import { siteMenuTree } from '../navigation/siteMenuTree';
-import { PhysicsSubjectOverview } from './components/PhysicsSubjectOverview';
+import { SectionOverview } from '../components/overview/SectionOverview';
 
 const physicsDescription = [
     'BachPhysics is a long-term project and remains very much a work in progress. The collection presented here is only the beginning and will continue to grow over time.',
@@ -13,17 +13,17 @@ const physicsTopics = getImmediateMenuTopics(siteMenuTree, 'physics');
 
 export default function Physics(): React.ReactElement {
     return (
-        <PhysicsSubjectOverview
+        <SectionOverview
             title="Physics"
-            caption="Hero image: a page from Newton's manuscript on the method of fluxions."
-            description={physicsDescription}
-            imageConf={{
+            heroCaption="Hero image: a page from Newton's manuscript on the method of fluxions."
+            introduction={physicsDescription}
+            heroImage={{
                 src: '/img/fluxions.png',
                 objectPosition: '10% 1%',
                 priority: true,
                 overlayColor: 'rgba(12, 11, 10, 0.52)',
             }}
-            topics={physicsTopics}
+            sections={physicsTopics}
         />
     );
 }

@@ -1,31 +1,30 @@
 'use client';
+
 import { NextLinkLike } from '@/app/components/NextLinkLike';
 import { PageFrame } from '@/app/components/PageFrame';
 import { scientificEssayLayout } from '@/app/physics/scientificEssayLayout';
 import { NextImageAdapter } from '@/src/components/NextImageAdapter';
-import { FigureEnhancer, ReferenceEnhancer } from '@mcpab/katex/client';
+import type {
+    LatexDocumentNode,
+    LatexLabelNodeIndex,
+    LatexPropsOverrides,
+} from '@mcpab/katex/latex';
 import {
     ChapterFrontMatter,
-    createLatexRendererContextValue,
+    LatexDocumentPage,
     LatexHostContext,
-    LatexRendererContext,
     type ChapterFrontMatterProps,
     type LatexHostContextValue,
-    RenderLatexDocument,
 } from '@mcpab/katex/react';
-import type { LatexNodeMap, LatexReferenceIndex, LatexPropsOverrides } from '@mcpab/katex';
 
 
 export type EssayProps = {
     frontMatter: ChapterFrontMatterProps;
-    latexDocument: LatexNodeMap['latexDocument'];
-    labelIndex: LatexReferenceIndex;
-    latexPropsOverride?: LatexPropsOverrides;
+    latexDocument: LatexDocumentNode;
+    labelIndex: LatexLabelNodeIndex;
+    latexPropsOverrides?: LatexPropsOverrides;
 }
-export default function Essay({ frontMatter, latexDocument, labelIndex, latexPropsOverride }: EssayProps): React.ReactElement {
-    //
-
-    const latexRendererContextValue = createLatexRendererContextValue({ latexPropsOverride });
+export default function Essay({ frontMatter, latexDocument, labelIndex, latexPropsOverrides }: EssayProps): React.ReactElement {
 
     const latexHostContextValue: LatexHostContextValue = {
         ImageComponent: NextImageAdapter,
@@ -34,18 +33,24 @@ export default function Essay({ frontMatter, latexDocument, labelIndex, latexPro
     };
 
     return (
-        <LatexRendererContext.Provider value={latexRendererContextValue}>
-            <LatexHostContext.Provider value={latexHostContextValue}>
-                <PageFrame>
-                    <RenderLatexDocument
-                        latexDocument={latexDocument}
-                        layoutConfig={scientificEssayLayout}
-                        frontMatter={<ChapterFrontMatter {...frontMatter} />}
-                    />
-                    <ReferenceEnhancer labelIndex={labelIndex} />
-                    <FigureEnhancer />
-                </PageFrame>
-            </LatexHostContext.Provider>
-        </LatexRendererContext.Provider>
+        <LatexHostContext.Provider value={latexHostContextValue}>
+            <PageFrame>
+                <LatexDocumentPage
+                    component="div"
+                    documentLayout={scientificEssayLayout}
+                    frontMatter={
+                        <ChapterFrontMatter
+                            {...frontMatter}
+                            editorialMaxWidth={scientificEssayLayout.editorialMaxWidth}
+                            chapterTitleSx={scientificEssayLayout.chapterTitleSx}
+                        />
+                    }
+                    labelIndex={labelIndex}
+                    latexDocument={latexDocument}
+                    latexPropsOverrides={latexPropsOverrides}
+                    sx={{ p: 0 }}
+                />
+            </PageFrame>
+        </LatexHostContext.Provider>
     );
 }

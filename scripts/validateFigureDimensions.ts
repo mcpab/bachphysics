@@ -121,13 +121,8 @@ function validateLabelIndex(
   }
 
   for (const entry of Object.values(value)) {
-    if (
-      isRecord(entry) &&
-      entry.nodeType === "figure" &&
-      isRecord(entry.previewProps)
-    ) {
-      validateFigure(entry.previewProps, filePath, failures);
-    }
+    // Label indexes contain document-local semantic AST nodes in the current API.
+    validateAstValue(entry, filePath, failures);
   }
 }
 

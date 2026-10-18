@@ -1,6 +1,6 @@
 import { getImmediateMenuTopics } from '@/app/navigation/getImmediateMenuTopics';
 import { siteMenuTree } from '@/app/navigation/siteMenuTree';
-import { PhysicsSubjectOverview } from '../components/PhysicsSubjectOverview';
+import { SectionOverview } from '@/app/components/overview/SectionOverview';
 
 
 const electromagnetismDescription = [
@@ -18,23 +18,23 @@ const electromagnetismTopics = getImmediateMenuTopics(siteMenuTree, 'electromagn
 
 export default function Electromagnetism(): React.ReactElement {
   return (
-          <PhysicsSubjectOverview
+          <SectionOverview
               title="Electromagnetism"
-              caption={
+              heroCaption={
                   <>
                       Hero image: James Clerk Maxwell, “A Dynamical Theory of the
                       Electromagnetic Field” (1865).
                   </>
               }
-              description={electromagnetismDescription}
-              imageConf={{
+              introduction={electromagnetismDescription}
+              heroImage={{
                   src: '/img/maxwellManuscript.png',
                 //   objectPosition: '10% 1%',
                   transform: 'scale(1.18)',
                   priority: true,
                   overlayColor: 'rgba(12, 11, 10, 0.52)',
               }}
-              topics={electromagnetismTopics}
+              sections={electromagnetismTopics}
           />
       );
 }

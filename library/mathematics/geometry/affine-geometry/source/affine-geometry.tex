@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{hyperref}
+
+\title{Affine Geometry}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+% ============================================================
+\section{Introduction}
+% ============================================================
+
+\section{Affine Spaces}
+
+\textbf{Definition of an affine space.}
+
+An \(n\)-dimensional affine space over the field of real numbers
+\(\mathbb{R}\) consists of:
+
+\begin{itemize}
+    \item a vector space \(V\), whose elements are called vectors;
+    \item a set \(X\), whose elements are called points.
+\end{itemize}
+
+To each vector \(\mathbf{v} \in V\) is associated a mapping
+\[
+\mathbf{v} \colon X \longrightarrow X,
+\]
+\[
+\mathbf{v}(x) = y,
+\]
+where \(x,y \in X\), with the following properties:
+
+\begin{enumerate}
+    \item
+    \(\mathbf{0}(x)=x\), where \(\mathbf{0}\) is the null vector.
+
+    \item
+    For all \(x,y\in X\), there exists a unique \(\mathbf{v}\in V\)
+    such that \(\mathbf{v}(x)=y\), and we denote
+    \(\mathbf{v}=\overrightarrow{xy}\).
+
+    \item
+    If \(\mathbf{v},\mathbf{w}\in V\), the composition of the action
+    of two vectors is defined formally as the sum of two vectors:
+    
+    \[(\mathbf{v}\circ\mathbf{w})(x)
+    =\mathbf{v}\bigl(\mathbf{w}(x)\bigr)
+    \coloneqq(\mathbf{v}+\mathbf{w})(x).\]
+
+\end{enumerate}
+
+Such a composition must be commutative, as the sum of vectors is:
+\[
+\mathbf{v}\circ\mathbf{w}
+=
+\mathbf{v}+\mathbf{w}
+=
+\mathbf{w}+\mathbf{v}
+=
+\mathbf{w}\circ\mathbf{v}.
+\] 
+
+\begin{theorem}\label{thm:affine-composition}
+The composition of translations is commutative.
+\end{theorem}
+
+By Theorem \ref{thm:affine-composition}, the composition is commutative.
+
+\end{document}

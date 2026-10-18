@@ -1,6 +1,6 @@
 import { getImmediateMenuTopics } from '@/app/navigation/getImmediateMenuTopics';
 import { siteMenuTree } from '@/app/navigation/siteMenuTree';
-import { PhysicsSubjectOverview } from '../components/PhysicsSubjectOverview';
+import { SectionOverview } from '@/app/components/overview/SectionOverview';
 
 const classicalMechanicsDescription = [
     'Classical Mechanics is the foundation upon which much of physics is built. Its apparent simplicity is somewhat deceptive: beneath familiar concepts such as motion and force lies a rich mathematical structure ranging from elementary kinematics to the variational principles of Lagrangian and Hamiltonian mechanics.',
@@ -18,23 +18,23 @@ const classicalMechanicsTopics = getImmediateMenuTopics(
 
 export default function ClassicalMechanics(): React.ReactElement {
     return (
-        <PhysicsSubjectOverview
+        <SectionOverview
             title="Classical Mechanics"
-            caption={
+            heroCaption={
                 <>
                     Hero image: Galileo&apos;s <em>Discorsi e Dimostrazioni Matematiche</em>{' '}
                     (1638).
                 </>
             }
-            description={classicalMechanicsDescription}
-            imageConf={{
+            introduction={classicalMechanicsDescription}
+            heroImage={{
                 src: '/img/galileo.jpg',
                 objectPosition: '10% 1%',
                 transform: 'scale(1.18)',
                 priority: true,
                 overlayColor: 'rgba(12, 11, 10, 0.52)',
             }}
-            topics={classicalMechanicsTopics}
+            sections={classicalMechanicsTopics}
         />
     );
 }

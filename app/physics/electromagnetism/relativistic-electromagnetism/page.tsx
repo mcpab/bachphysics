@@ -3,7 +3,7 @@ import {
     withMenuTopicMetadata,
 } from '@/app/navigation/getImmediateMenuTopics';
 import { siteMenuTree } from '@/app/navigation/siteMenuTree';
-import { PhysicsTopicOverview } from '../../components/PhysicsTopicOverview';
+import { EssayCollectionOverview } from '@/app/components/overview/EssayCollectionOverview';
 
 const relativisticElectromagnetismEssayMetadata = {
     '/physics/electromagnetism/relativistic-electromagnetism/maxwell-equations': {
@@ -19,9 +19,9 @@ const relativisticElectromagnetismEssays = withMenuTopicMetadata(
 
 export default function RelativisticElectromagnetism(): React.ReactElement {
     return (
-        <PhysicsTopicOverview
+        <EssayCollectionOverview
             title="Relativistic Electromagnetism"
-            description="A collection examining the Lorentz covariance of electromagnetic fields and Maxwell's equations."
+            introduction="A collection examining the Lorentz covariance of electromagnetic fields and Maxwell's equations."
             essays={relativisticElectromagnetismEssays}
         />
     );

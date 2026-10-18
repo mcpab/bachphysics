@@ -3,7 +3,7 @@ import {
     withMenuTopicMetadata,
 } from '@/app/navigation/getImmediateMenuTopics';
 import { siteMenuTree } from '@/app/navigation/siteMenuTree';
-import { PhysicsTopicOverview } from '../../components/PhysicsTopicOverview';
+import { EssayCollectionOverview } from '@/app/components/overview/EssayCollectionOverview';
 
 const movingChargesEssayMetadata = {
     '/physics/electromagnetism/moving-charges/uniformly-moving-charge': {
@@ -19,9 +19,9 @@ const movingChargesEssays = withMenuTopicMetadata(
 
 export default function MovingCharges(): React.ReactElement {
     return (
-        <PhysicsTopicOverview
+        <EssayCollectionOverview
             title='Moving Charges'
-            description={[
+            introduction={[
                 'A stationary point charge gives rise to the familiar Coulomb field.',
                 'Once the charge begins to move, however, electric and magnetic fields become inseparably linked.',
                 'Rather than introducing the final expressions directly, we derive the fields of moving charges step by step from Maxwell\'s equations, beginning with uniform motion and later extending to accelerated charges and electromagnetic radiation.',

@@ -1,4 +1,4 @@
-import type { LatexDocumentLayoutConfig } from "@mcpab/katex/react";
+import type { LatexDocumentLayoutConfig } from "@mcpab/katex/latex";
 
 export const scientificEssayLayout = {
   editorialMaxWidth: "52rem",
@@ -41,8 +41,8 @@ export const scientificEssayLayout = {
     subsection: {
       style: "decimal",
       numbered: true,
-      includeAncestors:false,
-      suffix:'.'
+      includeAncestors: false,
+      suffix: '.'
     },
 
     subsubsection: {
@@ -50,5 +50,18 @@ export const scientificEssayLayout = {
       numbered: false,
     },
   },
+  statementNumberingPolicy: {
+    separator: ".",
 
+    section: {
+      style: "upper-roman",
+    },
+
+    statement: {
+      style: "decimal",
+      numbered: true,
+      includeSection: true,
+      suffix: ".",
+    },
+  },
 } satisfies LatexDocumentLayoutConfig;
