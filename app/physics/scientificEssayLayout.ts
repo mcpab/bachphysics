@@ -64,4 +64,14 @@ export const scientificEssayLayout = {
       suffix: ".",
     },
   },
+  statementTitleSx: {
+    fontSize: {
+      xs: "1.25rem",
+      sm: "1.375rem",
+      md: "1.5rem",
+    },
+    lineHeight: 1.3,
+    mt: 3,
+    mb: 1.5,
+  },
 } satisfies LatexDocumentLayoutConfig;

@@ -19,15 +19,13 @@
 
 \section{Affine Spaces}
 
-\textbf{Definition of an affine space.}
-
-An \(n\)-dimensional affine space over the field of real numbers
-\(\mathbb{R}\) consists of:
-
+\begin{definition}[Affine space]
+An \(n\)-dimensional affine space over \(\mathbb{R}\) consists of:
 \begin{itemize}
-    \item a vector space \(V\), whose elements are called vectors;
-    \item a set \(X\), whose elements are called points.
+    \item a vector space \(V\);
+    \item a set \(X\) of points.
 \end{itemize}
+\end{definition}
 
 To each vector \(\mathbf{v} \in V\) is associated a mapping
 \[
@@ -68,10 +66,1574 @@ Such a composition must be commutative, as the sum of vectors is:
 \mathbf{w}\circ\mathbf{v}.
 \] 
 
-\begin{theorem}\label{thm:affine-composition}
-The composition of translations is commutative.
-\end{theorem}
 
-By Theorem \ref{thm:affine-composition}, the composition is commutative.
+\begin{definition}[Translation]
+To any given vector \(\mathbf{v}\in V\) is associated a mapping
+\[
+T_{\mathbf{v}}\colon X\longrightarrow X
+\]
+such that
+\[
+T_{\mathbf{v}}(x)=\mathbf{v}(x).
+\]
+Such a mapping is called a translation.
+\end{definition}
+
+\begin{proposition}
+For every \(\mathbf{v}\in V\), the translation
+\[
+T_{\mathbf{v}}\colon X\longrightarrow X
+\]
+is one-to-one and onto.
+\end{proposition}
+
+\begin{proof}
+Let us prove that \(T_{\mathbf{v}}\) is one-to-one. Assume that
+\(z,y\in X\) and
+\[
+T_{\mathbf{v}}(z)=T_{\mathbf{v}}(y).
+\]
+Therefore,
+\[
+\mathbf{v}(z)=\mathbf{v}(y).
+\]
+Applying \(-\mathbf{v}\) to both sides, we obtain
+\[
+(-\mathbf{v})\bigl(\mathbf{v}(z)\bigr)
+=
+(-\mathbf{v})\bigl(\mathbf{v}(y)\bigr).
+\]
+Hence,
+\[
+(-\mathbf{v}+\mathbf{v})(z)
+=
+(-\mathbf{v}+\mathbf{v})(y),
+\]
+and therefore
+\[
+\mathbf{0}(z)=\mathbf{0}(y).
+\]
+It follows that
+\[
+z=y.
+\]
+
+Let us now prove that \(T_{\mathbf{v}}\) is onto. For every \(y\in X\), we
+need to prove that there exists \(x\in X\) such that
+\[
+\mathbf{v}(x)=y.
+\]
+We simply take
+\[
+x=(-\mathbf{v})(y).
+\]
+Then
+\[
+\mathbf{v}(x)
+=
+\mathbf{v}\bigl((-\mathbf{v})(y)\bigr)
+=
+(\mathbf{v}-\mathbf{v})(y)
+=
+\mathbf{0}(y)
+=
+y.
+\]
+\end{proof}
+
+\begin{definition}[Permutation group]
+Let \(X\) be a set. The set
+\[
+S_X
+=
+\left\{
+f\colon X\longrightarrow X
+\;\middle|\;
+f \text{ is bijective}
+\right\}
+\]
+is called the permutation group of \(X\). Its group operation is the
+composition of mappings.
+\end{definition}
+
+\begin{proposition}
+The mapping
+\[
+\rho\colon V\longrightarrow S_X,
+\qquad
+\rho(\mathbf{v})=T_{\mathbf{v}},
+\]
+is an injective homomorphism from the additive group of \(V\) into the
+permutation group \(S_X\).
+\end{proposition}
+
+\begin{proof}
+We first prove that \(\rho\) preserves the group operation. Let
+\(\mathbf{u},\mathbf{v}\in V\). For every \(x\in X\),
+\[
+\rho(\mathbf{u}+\mathbf{v})(x)
+=
+T_{\mathbf{u}+\mathbf{v}}(x)
+=
+(\mathbf{u}+\mathbf{v})(x).
+\]
+By the definition of the action of the sum of two vectors,
+\[
+(\mathbf{u}+\mathbf{v})(x)
+=
+\mathbf{u}\bigl(\mathbf{v}(x)\bigr)
+=
+\bigl(T_{\mathbf{u}}\circ T_{\mathbf{v}}\bigr)(x).
+\]
+Therefore,
+\[
+\rho(\mathbf{u}+\mathbf{v})
+=
+\rho(\mathbf{u})\circ\rho(\mathbf{v}),
+\]
+and hence \(\rho\) is a homomorphism.
+
+We now prove that \(\rho\) is injective. Assume that
+\[
+\rho(\mathbf{u})=\rho(\mathbf{v}).
+\]
+Then
+\[
+T_{\mathbf{u}}(x)=T_{\mathbf{v}}(x)
+\]
+for every \(x\in X\), and therefore
+\[
+\mathbf{u}(x)=\mathbf{v}(x).
+\]
+Applying \(-\mathbf{v}\) to both sides gives
+\[
+(-\mathbf{v})\bigl(\mathbf{u}(x)\bigr)
+=
+(-\mathbf{v})\bigl(\mathbf{v}(x)\bigr).
+\]
+Thus,
+\[
+(-\mathbf{v}+\mathbf{u})(x)
+=
+(-\mathbf{v}+\mathbf{v})(x)
+=
+\mathbf{0}(x)
+=
+x.
+\]
+By the uniqueness of the vector that maps \(x\) onto itself,
+\[
+-\mathbf{v}+\mathbf{u}=\mathbf{0},
+\]
+and hence
+\[
+\mathbf{u}=\mathbf{v}.
+\]
+Therefore, \(\rho\) is injective.
+\end{proof}
+
+
+
+\section{Affine Subspaces}
+
+\begin{definition}[Affine subspace]
+Let \(x\in X\), and let \(U\) be a vector subspace of \(V\). The affine
+subspace of \(X\) determined by \(x\) and \(U\) is
+\[
+S(x,U)
+=
+\left\{
+\mathbf{u}(x)
+\;\middle|\;
+\mathbf{u}\in U
+\right\}.
+\]
+Its dimension is defined by
+\[
+\dim S(x,U)=\dim U.
+\]
+\end{definition}
+
+\begin{proposition}
+An \(n\)-dimensional affine space \(X\) has only one \(n\)-dimensional
+affine subspace, namely \(X\) itself.
+\end{proposition}
+
+\begin{proof}
+Suppose that
+\[
+\dim U=n.
+\]
+Let
+\[
+\mathbf{u}_1,\ldots,\mathbf{u}_n\in U
+\]
+be a basis of \(U\). Thus,
+\[
+\lambda_1\mathbf{u}_1+\cdots+\lambda_n\mathbf{u}_n=\mathbf{0}
+\quad\Longleftrightarrow\quad
+\lambda_i=0
+\quad\text{for every }i=1,\ldots,n.
+\]
+Since \(U\) and \(V\) both have dimension \(n\), we have
+\[
+\operatorname{span}
+\left\{
+\mathbf{u}_1,\ldots,\mathbf{u}_n
+\right\}
+=
+U
+=
+V.
+\]
+
+Fix \(x\in X\). We know that for every \(y\in X\), there exists a unique
+vector \(\mathbf{u}\in V\) such that
+\[
+\mathbf{u}(x)=y.
+\]
+Since \(U=V\), we have \(\mathbf{u}\in U\). Therefore,
+\[
+y\in S(x,U).
+\]
+Hence,
+\[
+S(x,U)=X.
+\]
+\end{proof}
+
+\begin{proposition}
+Let \(S(x,U)\) be an affine subspace determined by the point \(x\) and
+the linear subspace \(U\). Then
+\[
+U
+=
+\left\{
+\overrightarrow{yz}
+\;\middle|\;
+y,z\in S(x,U)
+\right\}.
+\]
+\end{proposition}
+
+\begin{proof}
+Let us first consider \(\mathbf{u}\in U\), and let
+\[
+y=\mathbf{u}(x).
+\]
+By the definition of \(S(x,U)\), we have \(y\in S(x,U)\). Moreover,
+\[
+\mathbf{u}=\overrightarrow{xy}.
+\]
+Since \(x,y\in S(x,U)\), it follows that
+\[
+U
+\subseteq
+\left\{
+\overrightarrow{yz}
+\;\middle|\;
+y,z\in S(x,U)
+\right\}.
+\]
+
+We now prove the opposite inclusion. Let \(y,z\in S(x,U)\). By the
+definition of \(S(x,U)\), there exist \(\mathbf{u},\mathbf{v}\in U\)
+such that
+\[
+y=\mathbf{u}(x)
+\qquad\text{and}\qquad
+z=\mathbf{v}(x).
+\]
+Then
+\[
+(\mathbf{v}-\mathbf{u})(y)
+=
+(\mathbf{v}-\mathbf{u})\bigl(\mathbf{u}(x)\bigr)
+=
+\bigl((\mathbf{v}-\mathbf{u})+\mathbf{u}\bigr)(x)
+=
+\mathbf{v}(x)
+=
+z.
+\]
+Therefore,
+\[
+\overrightarrow{yz}
+=
+\mathbf{v}-\mathbf{u}.
+\]
+Since \(\mathbf{u},\mathbf{v}\in U\) and \(U\) is a vector subspace,
+\[
+\mathbf{v}-\mathbf{u}\in U.
+\]
+It follows that
+\[
+\left\{
+\overrightarrow{yz}
+\;\middle|\;
+y,z\in S(x,U)
+\right\}
+\subseteq U.
+\]
+Hence,
+\[
+U
+=
+\left\{
+\overrightarrow{yz}
+\;\middle|\;
+y,z\in S(x,U)
+\right\}.
+\]
+\end{proof}
+
+\begin{proposition}
+Let \(x,y\in X\), and let \(U,W\) be linear subspaces of \(V\). Then
+\[
+S(x,U)=S(y,W)
+\]
+if and only if
+\[
+U=W
+\qquad\text{and}\qquad
+S(x,U)\cap S(y,W)\neq\varnothing.
+\]
+\end{proposition}
+
+\begin{proof}
+Let us first assume that
+\[
+S(x,U)=S(y,W).
+\]
+It is then obvious that
+\[
+S(x,U)\cap S(y,W)\neq\varnothing.
+\]
+We need to prove that \(U=W\).
+
+Let \(\mathbf{u}\in U\). There exists \(z\in S(x,U)\) such that
+\[
+z=\mathbf{u}(x).
+\]
+Since \(S(x,U)=S(y,W)\), we also have \(z\in S(y,W)\). Therefore, there
+exists \(\mathbf{v}\in W\) such that
+\[
+z=\mathbf{v}(y).
+\]
+It follows that
+\[
+\mathbf{u}(x)=\mathbf{v}(y),
+\]
+and therefore
+\[
+x=(\mathbf{v}-\mathbf{u})(y).
+\]
+
+Since
+\[
+x\in S(x,U)=S(y,W),
+\]
+the vector mapping \(y\) onto \(x\) belongs to \(W\). Hence, there exists
+\(\mathbf{w}\in W\) such that
+\[
+\mathbf{v}-\mathbf{u}=\mathbf{w}.
+\]
+Therefore,
+\[
+\mathbf{u}=-\mathbf{w}+\mathbf{v}.
+\]
+Since \(\mathbf{v},\mathbf{w}\in W\), it follows that
+\[
+\mathbf{u}\in W.
+\]
+Thus,
+\[
+U\subseteq W.
+\]
+Similarly, we can prove that
+\[
+W\subseteq U.
+\]
+Therefore,
+\[
+U=W.
+\]
+
+Conversely, let us assume that
+\[
+U=W
+\qquad\text{and}\qquad
+S(x,U)\cap S(y,W)\neq\varnothing.
+\]
+Let
+\[
+z\in S(x,U)\cap S(y,W).
+\]
+Then there exist \(\mathbf{u}\in U\) and \(\mathbf{v}\in W\) such that
+\[
+z=\mathbf{u}(x)=\mathbf{v}(y).
+\]
+
+We also know that for every \(k\in S(x,U)\), there exists
+\(\mathbf{q}\in U\) such that
+\[
+k=\mathbf{q}(x).
+\]
+Since
+\[
+\mathbf{u}(x)=\mathbf{v}(y),
+\]
+we have
+\[
+x=(\mathbf{v}-\mathbf{u})(y).
+\]
+Therefore,
+\[
+k
+=
+\mathbf{q}(x)
+=
+\mathbf{q}\bigl((\mathbf{v}-\mathbf{u})(y)\bigr)
+=
+(\mathbf{q}+\mathbf{v}-\mathbf{u})(y).
+\]
+Since \(U=W\), we have
+\[
+\mathbf{q}+\mathbf{v}-\mathbf{u}\in W.
+\]
+It follows that
+\[
+k\in S(y,W).
+\]
+Therefore,
+\[
+S(x,U)\subseteq S(y,W).
+\]
+Similarly, we can prove that
+\[
+S(y,W)\subseteq S(x,U).
+\]
+Hence,
+\[
+S(x,U)=S(y,W).
+\]
+\end{proof}
+\begin{proposition}
+Let \(S(x,U)\) be a \(d\)-dimensional affine subspace of \(X\). Then,
+with the action inherited from \(X\), \(S(x,U)\) is itself a
+\(d\)-dimensional affine space over the vector space \(U\).
+\end{proposition}
+
+\begin{proof}
+Since \(U\) is a vector subspace of \(V\), the action of \(U\) on
+\(S(x,U)\) is well-defined. Indeed, let \(\mathbf{u}\in U\) and
+\(y\in S(x,U)\). Then there exists \(\mathbf{p}\in U\) such that
+\[
+y=\mathbf{p}(x).
+\]
+Therefore,
+\[
+\mathbf{u}(y)
+=
+\mathbf{u}\bigl(\mathbf{p}(x)\bigr)
+=
+(\mathbf{u}+\mathbf{p})(x).
+\]
+Since
+\[
+\mathbf{u}+\mathbf{p}\in U,
+\]
+it follows that
+\[
+\mathbf{u}(y)\in S(x,U).
+\]
+
+We know that \(U\) is a vector space. Hence, it has the null vector
+\[
+\mathbf{0}\in U,
+\]
+and, for every \(y\in S(x,U)\),
+\[
+\mathbf{0}(y)=y.
+\]
+
+We now need to prove that, for every \(z,y\in S(x,U)\), there exists a
+unique \(\mathbf{u}\in U\) such that
+\[
+\mathbf{u}(y)=z.
+\]
+We know that there exist unique vectors \(\mathbf{q},\mathbf{p}\in U\)
+such that
+\[
+z=\mathbf{q}(x)
+\qquad\text{and}\qquad
+y=\mathbf{p}(x).
+\]
+Therefore,
+\[
+x=(-\mathbf{p})(y),
+\]
+and hence
+\[
+z
+=
+\mathbf{q}(x)
+=
+\mathbf{q}\bigl((-\mathbf{p})(y)\bigr)
+=
+(\mathbf{q}-\mathbf{p})(y),
+\]
+because of the inherited composition.
+
+Therefore, there exists a unique \(\mathbf{u}\in U\) such that
+\[
+z=\mathbf{u}(y),
+\]
+where
+\[
+\mathbf{u}=\mathbf{q}-\mathbf{p}.
+\]
+
+Finally, the composition property is inherited from the action of \(V\)
+on \(X\). For every \(\mathbf{u},\mathbf{v}\in U\) and
+\(y\in S(x,U)\),
+\[
+(\mathbf{u}\circ\mathbf{v})(y)
+=
+\mathbf{u}\bigl(\mathbf{v}(y)\bigr)
+=
+(\mathbf{u}+\mathbf{v})(y).
+\]
+
+Therefore, \(S(x,U)\) is an affine space over \(U\). Since
+\[
+\dim U=d,
+\]
+the affine space \(S(x,U)\) has dimension \(d\).
+\end{proof}
+
+\begin{proposition}
+Let \(S(x,U)\) and \(S(y,W)\) be affine subspaces of \(X\). If
+\[
+z\in S(x,U)\cap S(y,W),
+\]
+then
+\[
+S(x,U)\cap S(y,W)
+=
+S(z,U\cap W).
+\]
+\end{proposition}
+
+\begin{proof}
+Since
+\[
+z\in S(x,U)\cap S(y,W),
+\]
+there exist \(\mathbf{u}\in U\) and \(\mathbf{v}\in W\) such that
+\[
+z=\mathbf{u}(x)=\mathbf{v}(y).
+\]
+
+We first consider an arbitrary point
+\[
+h\in S(x,U)\cap S(y,W).
+\]
+Then there exist \(\mathbf{q}\in U\) and \(\mathbf{p}\in W\) such that
+\[
+h=\mathbf{q}(x)=\mathbf{p}(y).
+\]
+
+Since
+\[
+z=\mathbf{u}(x),
+\]
+we have
+\[
+x=(-\mathbf{u})(z),
+\]
+and therefore
+\[
+h
+=
+\mathbf{q}(x)
+=
+\mathbf{q}\bigl((-\mathbf{u})(z)\bigr)
+=
+(\mathbf{q}-\mathbf{u})(z).
+\]
+Similarly, since
+\[
+z=\mathbf{v}(y),
+\]
+we have
+\[
+h
+=
+\mathbf{p}(y)
+=
+\mathbf{p}\bigl((-\mathbf{v})(z)\bigr)
+=
+(\mathbf{p}-\mathbf{v})(z).
+\]
+
+By the uniqueness of the vector mapping \(z\) onto \(h\),
+\[
+\mathbf{q}-\mathbf{u}
+=
+\mathbf{p}-\mathbf{v}
+=
+\mathbf{m}.
+\]
+Since
+\[
+\mathbf{q}-\mathbf{u}\in U
+\qquad\text{and}\qquad
+\mathbf{p}-\mathbf{v}\in W,
+\]
+it follows that
+\[
+\mathbf{m}\in U\cap W.
+\]
+Hence,
+\[
+h=\mathbf{m}(z),
+\]
+and therefore
+\[
+S(x,U)\cap S(y,W)
+\subseteq
+S(z,U\cap W).
+\]
+
+We now take a point
+\[
+k\in S(z,U\cap W).
+\]
+Then there exists \(\mathbf{q}\in U\cap W\) such that
+\[
+k=\mathbf{q}(z).
+\]
+Since
+\[
+z=\mathbf{u}(x)=\mathbf{v}(y),
+\]
+we have
+\[
+k
+=
+\mathbf{q}(z)
+=
+\mathbf{q}\bigl(\mathbf{u}(x)\bigr)
+=
+(\mathbf{q}+\mathbf{u})(x),
+\]
+and
+\[
+k
+=
+\mathbf{q}(z)
+=
+\mathbf{q}\bigl(\mathbf{v}(y)\bigr)
+=
+(\mathbf{q}+\mathbf{v})(y).
+\]
+Since
+\[
+\mathbf{q}+\mathbf{u}\in U
+\qquad\text{and}\qquad
+\mathbf{q}+\mathbf{v}\in W,
+\]
+we have
+\[
+k\in S(x,U)\cap S(y,W).
+\]
+Therefore,
+\[
+S(z,U\cap W)
+\subseteq
+S(x,U)\cap S(y,W).
+\]
+
+Hence,
+\[
+S(x,U)\cap S(y,W)
+=
+S(z,U\cap W).
+\]
+\end{proof}
+
+\begin{definition}[Coordinate system]
+Let \(S(x,U)\) be an affine space of dimension \(d\). Let
+\[
+\mathbf{a}_1,\mathbf{a}_2,\ldots,\mathbf{a}_d
+\]
+be a basis for \(U\), and let \(x_0\) be a point in \(S(x,U)\). The point \(x_0\) and the basis \(\mathbf{a}_1,\ldots,\mathbf{a}_d\) form a coordinate system for \(S(x,U)\).
+
+We use the Einstein summation convention throughout: an index that occurs twice in a term is implicitly summed over its full range.
+
+Let \(y\in S(x,U)\). There exist unique vectors
+\(\mathbf{u},\mathbf{u}_0\in U\) such that
+\[
+y=\mathbf{u}(x)
+\qquad\text{and}\qquad
+x_0=\mathbf{u}_0(x).
+\]
+Hence
+\[
+x=(-\mathbf{u}_0)(x_0),
+\]
+and therefore
+\[
+y
+=
+\mathbf{u}\bigl((-\mathbf{u}_0)(x_0)\bigr)
+=
+(\mathbf{u}-\mathbf{u}_0)(x_0).
+\]
+Thus
+\[
+\overrightarrow{x_0y}=\mathbf{u}-\mathbf{u}_0.
+\]
+Writing
+\[
+\mathbf{u}-\mathbf{u}_0=y^i\mathbf{a}_i,
+\]
+the components \(y^1,\ldots,y^d\) are called the coordinates of \(y\) with respect to this coordinate system.
+\end{definition}
+
+\begin{proposition}
+Given a coordinate system \(x_0,\mathbf{a}_i\) for an affine subspace
+\(S(x,U)\), the mapping
+\[
+c:S(x,U)\longrightarrow\mathbb{R}^d,
+\qquad
+c(y)=\left(y^1,y^2,\ldots,y^d\right),
+\]
+is one-to-one and onto.
+\end{proposition}
+
+\begin{proof}
+First, we note that \(c\) is the composition of two mappings:
+\[
+S(x,U)\xrightarrow{\,g\,}U\xrightarrow{\,h\,}\mathbb{R}^d.
+\]
+
+For any \(y\in S(x,U)\), let
+\[
+y=\mathbf{u}(x)
+\qquad\text{and}\qquad
+x_0=\mathbf{u}_0(x).
+\]
+We define
+\[
+g(y)=\mathbf{u}-\mathbf{u}_0.
+\]
+If
+\[
+\mathbf{v}=v^i\mathbf{a}_i,
+\]
+we define
+\[
+h(\mathbf{v})=\left(v^1,v^2,\ldots,v^d\right).
+\]
+Therefore,
+\[
+c(y)=(h\circ g)(y).
+\]
+
+Let us first prove that \(c\) is one-to-one. Assume that
+\[
+(h\circ g)(z)=(h\circ g)(y).
+\]
+Let
+\[
+z=\mathbf{q}(x)
+\qquad\text{and}\qquad
+y=\mathbf{u}(x).
+\]
+Then
+\[
+g(z)=\mathbf{q}-\mathbf{u}_0
+\qquad\text{and}\qquad
+g(y)=\mathbf{u}-\mathbf{u}_0.
+\]
+Hence
+\[
+h(\mathbf{q}-\mathbf{u}_0)
+=
+h(\mathbf{u}-\mathbf{u}_0).
+\]
+The components of a vector with respect to a basis are unique, and therefore
+\[
+\mathbf{q}-\mathbf{u}_0
+=
+\mathbf{u}-\mathbf{u}_0.
+\]
+Thus
+\[
+\mathbf{q}=\mathbf{u},
+\]
+and consequently
+\[
+z=y.
+\]
+Hence \(c\) is one-to-one.
+
+Let us now prove that \(c\) is onto. We first prove that
+\[
+h:U\longrightarrow\mathbb{R}^d
+\]
+is onto. Indeed, for any
+\[
+\mathbf{k}=\left(k^1,k^2,\ldots,k^d\right)\in\mathbb{R}^d,
+\]
+there exists a vector \(\mathbf{p}\in U\) given by
+\[
+\mathbf{p}=k^i\mathbf{a}_i,
+\]
+such that
+\[
+h(\mathbf{p})=\mathbf{k}.
+\]
+
+We now prove that
+\[
+g:S(x,U)\longrightarrow U
+\]
+is onto. Indeed, for any \(\mathbf{p}\in U\), set
+\[
+\mathbf{u}=\mathbf{p}+\mathbf{u}_0.
+\]
+Then \(\mathbf{u}\in U\), and
+\[
+y=(\mathbf{u}-\mathbf{u}_0)(x_0)\in S(x,U).
+\]
+Moreover,
+\[
+g(y)=\mathbf{u}-\mathbf{u}_0=\mathbf{p}.
+\]
+Therefore \(g\) is onto.
+
+Since both \(g\) and \(h\) are onto, their composition
+\[
+c=h\circ g
+\]
+is onto.
+\end{proof}
+
+\section{Analytic Geometry}
+
+A functional on a real vector space \(V\) is a mapping
+\[
+f:V\longrightarrow\mathbb{R}
+\]
+which satisfies the linearity conditions
+\[
+f(\mathbf{u}+\mathbf{v})
+=
+f(\mathbf{u})+f(\mathbf{v}),
+\qquad
+\mathbf{u},\mathbf{v}\in V,
+\]
+and
+\[
+f(t\mathbf{v})
+=
+t f(\mathbf{v}),
+\qquad
+\mathbf{v}\in V,\quad t\in\mathbb{R}.
+\]
+
+\begin{proposition}
+Let \(V\) be a real vector space of dimension \(m\). Any
+\((m-1)\)-dimensional linear subspace \(U\) of \(V\) is the kernel of a
+nonzero functional
+\[
+f:V\longrightarrow\mathbb{R}.
+\]
+Conversely, the kernel of every nonzero functional on \(V\) is an
+\((m-1)\)-dimensional linear subspace of \(V\). Moreover, the functional
+is determined by \(U\) up to a nonzero scalar factor.
+\end{proposition}
+
+\begin{proof}
+We first prove that the kernel of a nonzero functional \(f\) is a linear
+subspace of \(V\) of dimension \(m-1\).
+
+The kernel of \(f\) is
+\[
+\ker(f)
+=
+\left\{
+\mathbf{u}\in V
+\mid
+f(\mathbf{u})=0
+\right\}.
+\]
+Let \(\mathbf{u},\mathbf{v}\in\ker(f)\), and let
+\(\alpha,\beta\in\mathbb{R}\). By linearity,
+\[
+f(\alpha\mathbf{u}+\beta\mathbf{v})
+=
+\alpha f(\mathbf{u})+\beta f(\mathbf{v})
+=
+0.
+\]
+Hence
+\[
+\alpha\mathbf{u}+\beta\mathbf{v}\in\ker(f),
+\]
+and therefore \(\ker(f)\) is a linear subspace of \(V\).
+
+Let
+\[
+\mathbf{a}_1,\ldots,\mathbf{a}_m
+\]
+be a basis of \(V\). Since \(f\) is nonzero, at least one basis vector
+has a nonzero image. After relabeling the basis if necessary, we may
+assume that
+\[
+f(\mathbf{a}_m)\neq0.
+\]
+For any \(\mathbf{u}\in\ker(f)\), write
+\[
+\mathbf{u}=u^i\mathbf{a}_i.
+\]
+Then
+\[
+f(\mathbf{u})
+=
+u^i f(\mathbf{a}_i)
+=
+0.
+\]
+Thus
+\[
+u^m
+=
+-\frac{
+u^1f(\mathbf{a}_1)+\cdots+u^{m-1}f(\mathbf{a}_{m-1})
+}{
+f(\mathbf{a}_m)
+}.
+\]
+Therefore only \(m-1\) coefficients can be chosen independently, and
+\[
+\dim\ker(f)=m-1.
+\]
+
+We now prove the converse. Let \(U\) be an \((m-1)\)-dimensional linear
+subspace of \(V\). Choose a vector
+\[
+\mathbf{e}\in V\setminus U.
+\]
+Then
+\[
+W=\operatorname{span}\{\mathbf{e}\}
+\]
+is a one-dimensional linear subspace of \(V\), and
+\[
+U\cap W=\{\mathbf{0}\}.
+\]
+Since
+\[
+\dim U+\dim W=m,
+\]
+we have
+\[
+V=U\oplus W.
+\]
+Hence every \(\mathbf{v}\in V\) can be written uniquely as
+\[
+\mathbf{v}=\mathbf{u}+\beta\mathbf{e},
+\qquad
+\mathbf{u}\in U,\quad \beta\in\mathbb{R}.
+\]
+
+Define
+\[
+f:V\longrightarrow\mathbb{R}
+\]
+by
+\[
+f(\mathbf{v})=\beta.
+\]
+This functional is linear and nonzero. Moreover,
+\[
+f(\mathbf{v})=0
+\]
+if and only if \(\beta=0\), which holds if and only if
+\(\mathbf{v}\in U\). Therefore,
+\[
+\ker(f)=U.
+\]
+
+Finally, let \(f\) and \(g\) be two nonzero functionals with the same
+kernel \(U\):
+\[
+\ker(f)=\ker(g)=U.
+\]
+For any \(\mathbf{v}\in V\), write
+\[
+\mathbf{v}=\mathbf{u}+\beta\mathbf{e},
+\qquad
+\mathbf{u}\in U.
+\]
+Since
+\[
+f(\mathbf{u})=g(\mathbf{u})=0,
+\]
+we have
+\[
+f(\mathbf{v})=\beta f(\mathbf{e})
+\]
+and
+\[
+g(\mathbf{v})=\beta g(\mathbf{e}).
+\]
+Furthermore,
+\[
+f(\mathbf{e})\neq0
+\qquad\text{and}\qquad
+g(\mathbf{e})\neq0,
+\]
+because \(\mathbf{e}\notin U\). Define
+\[
+\lambda
+=
+\frac{f(\mathbf{e})}{g(\mathbf{e})}.
+\]
+Then \(\lambda\neq0\), and
+\[
+f(\mathbf{v})
+=
+\lambda g(\mathbf{v})
+\]
+for every \(\mathbf{v}\in V\). Hence \(f\) is determined by \(U\) up to
+a nonzero scalar factor.
+\end{proof}
+
+\begin{definition}
+Let \(X\) be an \(n\)-dimensional affine space. An affine
+subspace \(S(x,U)\) of \(X\) is called a \emph{hyperplane} if its
+direction space \(U\) has dimension \(n-1\).
+\end{definition}
+
+\begin{definition}[Coordinate map]
+Let
+\[
+x_0,\mathbf a_1,\ldots,\mathbf a_m
+\]
+be a reference system for an affine space $(X,V)$, where
+$\mathbf a_1,\ldots,\mathbf a_m$ is a basis of $V$.
+
+The coordinate map associated with this reference system is the map
+\[
+c:X\longrightarrow\mathbb R^m
+\]
+defined by
+\[
+c(y)=(y^1,\ldots,y^m)
+\]
+if and only if
+\[
+y=(y^i\mathbf a_i)(x_0).
+\]
+\end{definition}
+
+\begin{proposition}
+Let $(X,V)$ be an affine space of dimension $m$, equipped with the
+reference system
+\[
+x_0,\mathbf a_1,\ldots,\mathbf a_m.
+\]
+
+A hyperplane of $X$ is determined, with respect to this reference
+system, by a linear equation
+\[
+p^i\xi_i=\mu_0,
+\]
+where $\xi_1,\ldots,\xi_m,\mu_0\in\mathbb R$ and not all the
+coefficients $\xi_i$ are zero.
+
+Conversely, every equation of this form determines a hyperplane of
+$X$.
+\end{proposition}
+
+\begin{proof}
+Let us first consider a hyperplane
+\[
+S(x,U)=\{\mathbf u(x)\mid \mathbf u\in U\},
+\]
+where $U$ is an $(m-1)$-dimensional linear subspace of $V$.
+
+By the preceding proposition, there exists a nonzero functional
+\[
+f:V\longrightarrow\mathbb R
+\]
+such that
+\[
+\ker f=U.
+\]
+
+Define the set of coordinate tuples of the points of the hyperplane by
+\[
+C:=c\bigl(S(x,U)\bigr)
+  =\left\{(p^i)\in\mathbb R^m
+    \,\middle|\,
+    \exists\,y\in S(x,U),\ c(y)=(p^i)
+   \right\}.
+\]
+
+Because the action of $V$ on $X$ is transitive, there exists a unique
+vector $\mathbf u_0\in V$ such that
+\[
+x=\mathbf u_0(x_0).
+\]
+
+We shall prove that
+\[
+C=F,
+\]
+where
+\[
+F:=\left\{(p^i)\in\mathbb R^m
+          \,\middle|\,
+          p^i\xi_i=\mu_0
+   \right\}
+\]
+for suitable coefficients $\xi_i$ and $\mu_0$.
+
+Let $(p^i)\in C$. Then there exists a point
+\[
+y\in S(x,U)
+\]
+whose coordinates are $(p^i)$. Define its coordinate vector by
+\[
+\mathbf p:=p^i\mathbf a_i.
+\]
+Thus
+\[
+y=\mathbf p(x_0).
+\]
+
+Since $y\in S(x,U)$, there exists a vector $\mathbf u\in U$ such that
+\[
+y=\mathbf u(x).
+\]
+Using $x=\mathbf u_0(x_0)$, we obtain
+\[
+y
+ =\mathbf u\bigl(\mathbf u_0(x_0)\bigr)
+ =(\mathbf u+\mathbf u_0)(x_0).
+\]
+On the other hand,
+\[
+y=\mathbf p(x_0).
+\]
+Since the action is free,
+\[
+\mathbf p=\mathbf u+\mathbf u_0,
+\]
+and therefore
+\[
+\mathbf u=\mathbf p-\mathbf u_0.
+\]
+
+Because $\mathbf u\in U=\ker f$,
+\[
+f(\mathbf p-\mathbf u_0)=0.
+\]
+By the linearity of $f$,
+\[
+f(\mathbf p)-f(\mathbf u_0)=0.
+\]
+Since $\mathbf p=p^i\mathbf a_i$, this becomes
+\[
+p^if(\mathbf a_i)-f(\mathbf u_0)=0.
+\]
+
+We now define
+\[
+\xi_i:=f(\mathbf a_i),
+\qquad
+\mu_0:=f(\mathbf u_0).
+\]
+It follows that
+\[
+p^i\xi_i=\mu_0.
+\]
+Therefore
+\[
+(p^i)\in F,
+\]
+and hence
+\[
+C\subseteq F.
+\]
+
+Moreover, not all the coefficients $\xi_i$ are zero. Indeed, if
+\[
+\xi_i=f(\mathbf a_i)=0
+\qquad
+\text{for every }i,
+\]
+then $f$ would vanish on a basis of $V$ and would therefore be the zero
+functional, contrary to the choice of $f$.
+
+We now prove the reverse inclusion. Let
+\[
+(p^i)\in F
+\]
+and define
+\[
+\mathbf p:=p^i\mathbf a_i,
+\qquad
+y:=\mathbf p(x_0).
+\]
+Because $(p^i)\in F$,
+\[
+p^i\xi_i=\mu_0.
+\]
+Consequently,
+\[
+f(\mathbf p-\mathbf u_0)
+ =p^if(\mathbf a_i)-f(\mathbf u_0)
+ =p^i\xi_i-\mu_0
+ =0.
+\]
+Thus
+\[
+\mathbf p-\mathbf u_0\in\ker f=U.
+\]
+
+Since $x=\mathbf u_0(x_0)$, we have
+\[
+y
+ =\mathbf p(x_0)
+ =(\mathbf p-\mathbf u_0)\bigl(\mathbf u_0(x_0)\bigr)
+ =(\mathbf p-\mathbf u_0)(x).
+\]
+Therefore
+\[
+y\in S(x,U),
+\]
+and hence
+\[
+(p^i)=c(y)\in C.
+\]
+It follows that
+\[
+F\subseteq C.
+\]
+
+We conclude that
+\[
+C=F.
+\]
+Thus every hyperplane is determined, in the chosen reference system,
+by one linear equation
+\[
+p^i\xi_i=\mu_0,
+\]
+where not all the coefficients $\xi_i$ are zero.
+
+We now prove the converse. Consider the set
+\[
+F:=\left\{(p^i)\in\mathbb R^m
+          \,\middle|\,
+          p^i\xi_i=\mu_0
+   \right\},
+\]
+where not all the coefficients $\xi_i$ are zero.
+
+Define a functional
+\[
+f:V\longrightarrow\mathbb R
+\]
+by prescribing its values on the basis:
+\[
+f(\mathbf a_i):=\xi_i.
+\]
+Equivalently, if
+\[
+\mathbf p=p^i\mathbf a_i,
+\]
+then
+\[
+f(\mathbf p)=p^i\xi_i.
+\]
+
+Since not all the coefficients $\xi_i$ are zero, the functional $f$ is
+nonzero. Therefore
+\[
+U:=\ker f
+\]
+is an $(m-1)$-dimensional linear subspace of $V$.
+
+Choose a vector
+\[
+\mathbf m\in V\setminus U
+\]
+and define the one-dimensional subspace
+\[
+W:=\operatorname{span}\{\mathbf m\}.
+\]
+Since $\mathbf m\notin\ker f$, the restriction
+\[
+f|_W:W\longrightarrow\mathbb R
+\]
+is nonzero. Because both $W$ and $\mathbb R$ are one-dimensional,
+$f|_W$ is surjective. Hence there exists a vector
+\[
+\mathbf v_0\in W
+\]
+such that
+\[
+f(\mathbf v_0)=\mu_0.
+\]
+
+Define the point
+\[
+x:=\mathbf v_0(x_0)
+\]
+and consider the affine subspace
+\[
+S(x,U).
+\]
+Since $\dim U=m-1$, this affine subspace is a hyperplane.
+
+Let
+\[
+C:=c\bigl(S(x,U)\bigr).
+\]
+We shall prove that
+\[
+C=F.
+\]
+
+Let $(p^i)\in C$. Then there exists a point
+\[
+y\in S(x,U)
+\]
+with
+\[
+c(y)=(p^i).
+\]
+Define
+\[
+\mathbf p:=p^i\mathbf a_i,
+\]
+so that
+\[
+y=\mathbf p(x_0).
+\]
+
+Since $y\in S(x,U)$, there exists $\mathbf u\in U$ such that
+\[
+y=\mathbf u(x).
+\]
+Using $x=\mathbf v_0(x_0)$, we obtain
+\[
+y
+ =\mathbf u\bigl(\mathbf v_0(x_0)\bigr)
+ =(\mathbf u+\mathbf v_0)(x_0).
+\]
+Since also $y=\mathbf p(x_0)$ and the action is free,
+\[
+\mathbf p=\mathbf u+\mathbf v_0.
+\]
+Therefore
+\[
+f(\mathbf p)
+ =f(\mathbf u)+f(\mathbf v_0)
+ =0+\mu_0
+ =\mu_0.
+\]
+Since
+\[
+f(\mathbf p)=p^i\xi_i,
+\]
+we obtain
+\[
+p^i\xi_i=\mu_0.
+\]
+Thus
+\[
+(p^i)\in F,
+\]
+and hence
+\[
+C\subseteq F.
+\]
+
+Conversely, let
+\[
+(p^i)\in F
+\]
+and define
+\[
+\mathbf p:=p^i\mathbf a_i,
+\qquad
+y:=\mathbf p(x_0).
+\]
+Since $(p^i)\in F$,
+\[
+p^i\xi_i=\mu_0.
+\]
+It follows that
+\[
+f(\mathbf p-\mathbf v_0)
+ =f(\mathbf p)-f(\mathbf v_0)
+ =p^i\xi_i-\mu_0
+ =0.
+\]
+Therefore
+\[
+\mathbf p-\mathbf v_0\in\ker f=U.
+\]
+
+Using $x=\mathbf v_0(x_0)$, we obtain
+\[
+y
+ =\mathbf p(x_0)
+ =(\mathbf p-\mathbf v_0)\bigl(\mathbf v_0(x_0)\bigr)
+ =(\mathbf p-\mathbf v_0)(x).
+\]
+Hence
+\[
+y\in S(x,U),
+\]
+so
+\[
+(p^i)=c(y)\in C.
+\]
+Therefore
+\[
+F\subseteq C.
+\]
+
+We conclude that
+\[
+C=F.
+\]
+Thus the given linear equation determines the hyperplane $S(x,U)$.
+\end{proof}
+
+\begin{definition}[Parallel affine subspaces]
+Let
+\[
+S(x,U)
+\qquad\text{and}\qquad
+S(x',W)
+\]
+be affine subspaces of \(X\). They are said to be parallel if and only if
+they have the same direction space; that is,
+\[
+S(x,U)\parallel S(x',W)
+\quad\Longleftrightarrow\quad
+U=W.
+\]
+\end{definition}
+
+\begin{proposition}
+Let \(S(x,U)\) be an affine subspace of \(X\). For every
+\(\mathbf v\in V\),
+\[
+T_{\mathbf v}\bigl(S(x,U)\bigr)
+=
+S\bigl(\mathbf v(x),U\bigr).
+\]
+Consequently, every translate of an affine subspace is parallel to the
+original affine subspace.
+\end{proposition}
+
+\begin{proof}
+By definition,
+\[
+T_{\mathbf v}\bigl(S(x,U)\bigr)
+=
+\left\{
+y\in X
+\;\middle|\;
+y=\mathbf v\bigl(\mathbf u(x)\bigr)
+\text{ for some }\mathbf u\in U
+\right\}.
+\]
+
+Let
+\[
+y\in T_{\mathbf v}\bigl(S(x,U)\bigr).
+\]
+Then there exists \(\mathbf u\in U\) such that
+\[
+y=\mathbf v\bigl(\mathbf u(x)\bigr).
+\]
+Using the properties of the action of \(V\) on \(X\), we obtain
+\[
+y
+=
+(\mathbf v+\mathbf u)(x)
+=
+\mathbf u\bigl(\mathbf v(x)\bigr).
+\]
+Therefore
+\[
+y\in S\bigl(\mathbf v(x),U\bigr),
+\]
+and hence
+\[
+T_{\mathbf v}\bigl(S(x,U)\bigr)
+\subseteq
+S\bigl(\mathbf v(x),U\bigr).
+\]
+
+Conversely, let
+\[
+y\in S\bigl(\mathbf v(x),U\bigr).
+\]
+Then there exists \(\mathbf u\in U\) such that
+\[
+y=\mathbf u\bigl(\mathbf v(x)\bigr).
+\]
+Again using the properties of the action, we obtain
+\[
+y
+=
+(\mathbf u+\mathbf v)(x)
+=
+\mathbf v\bigl(\mathbf u(x)\bigr).
+\]
+Since
+\[
+\mathbf u(x)\in S(x,U),
+\]
+it follows that
+\[
+y\in T_{\mathbf v}\bigl(S(x,U)\bigr).
+\]
+Therefore
+\[
+S\bigl(\mathbf v(x),U\bigr)
+\subseteq
+T_{\mathbf v}\bigl(S(x,U)\bigr).
+\]
+
+We conclude that
+\[
+T_{\mathbf v}\bigl(S(x,U)\bigr)
+=
+S\bigl(\mathbf v(x),U\bigr).
+\]
+
+Since both affine subspaces have direction space \(U\),
+\[
+T_{\mathbf v}\bigl(S(x,U)\bigr)
+\parallel
+S(x,U).
+\]
+\end{proof}
+
 
 \end{document}
