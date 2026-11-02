@@ -1,9 +1,4 @@
 'use client'
-import { NextLinkLike } from '@/app/components/NextLinkLike';
-import { NextImageAdapter } from '@/src/components/NextImageAdapter';
-import {
-    type LatexHostContextValue
-} from '@mcpab/katex/react';
 
 import Essay from '@/app/components/Essay';
 import { labelIndex } from '@/library/classical-mechanics/rigid-body-motion/motion-on-the-rotating-earth/generated/motion-on-the-rotating-earth.labelIndex';

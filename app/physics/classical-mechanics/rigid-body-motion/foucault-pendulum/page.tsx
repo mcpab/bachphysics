@@ -1,13 +1,10 @@
 'use client'
 
 import Essay from '@/app/components/Essay';
-import { NextLinkLike } from '@/app/components/NextLinkLike';
 import { labelIndex } from '@/library/classical-mechanics/rigid-body-motion/foucault-pendulum/generated/foucault-pendulum.labelIndex';
 import { latexDocument } from '@/library/classical-mechanics/rigid-body-motion/foucault-pendulum/generated/foucault-pendulum.layout.ast';
-import { NextImageAdapter } from '@/src/components/NextImageAdapter';
 import {
-    type ChapterFrontMatterProps,
-    type LatexHostContextValue
+    type ChapterFrontMatterProps
 } from '@mcpab/katex/react';
 
 const frontMatter = {
