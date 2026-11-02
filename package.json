@@ -20,7 +20,7 @@
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@hookform/resolvers": "^5.9.1",
-    "@mcpab/katex": "0.1.4",
+    "@mcpab/katex": "0.1.6",
     "@mcpab/mui-theme": "^0.1.2",
     "@mcpab/web-blocks": "^0.3.8",
     "@mui/icons-material": "^7.3.11",

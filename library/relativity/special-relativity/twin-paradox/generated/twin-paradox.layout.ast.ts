@@ -28,20 +28,40 @@ export const latexDocument = {
             {
               id: "text-3",
               type: "text",
-              body: "initially at the same position and each equipped with its own clock, move away from each other"
+              body: " "
             },
             {
               id: "text-4",
               type: "text",
-              body: "and later return to the same position. We assume that the two clocks are initially synchronized"
+              body: "initially at the same position and each equipped with its own clock, move away from each other"
             },
             {
               id: "text-5",
               type: "text",
-              body: "and therefore measure exactly the same time. When the two objects meet again, however, the clocks"
+              body: " "
             },
             {
               id: "text-6",
+              type: "text",
+              body: "and later return to the same position. We assume that the two clocks are initially synchronized"
+            },
+            {
+              id: "text-7",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-8",
+              type: "text",
+              body: "and therefore measure exactly the same time. When the two objects meet again, however, the clocks"
+            },
+            {
+              id: "text-9",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-10",
               type: "text",
               body: "will in general have measured different elapsed times. "
             }
@@ -52,52 +72,97 @@ export const latexDocument = {
           type: "paragraph",
           children: [
             {
-              id: "text-7",
+              id: "text-11",
               type: "text",
               body: "In the twin experiment, one of two identical twins embarks on a space journey, moving at a speed"
             },
             {
-              id: "text-8",
-              type: "text",
-              body: "close to the speed of light, while the other remains at home and waits for the traveling twin to"
-            },
-            {
-              id: "text-9",
-              type: "text",
-              body: "return. When the twins meet again, the twin who remained at home has aged more than the one who"
-            },
-            {
-              id: "text-10",
-              type: "text",
-              body: "traveled. This result appears paradoxical in two different ways. First, it is very counterintuitive"
-            },
-            {
-              id: "text-11",
-              type: "text",
-              body: "to accept that simply moving differently can change the amount of time experienced by the two twins."
-            },
-            {
               id: "text-12",
               type: "text",
-              body: "Second, and more importantly, there appears to be a breaking of symmetry. Why should one twin age"
+              body: " "
             },
             {
               id: "text-13",
               type: "text",
-              body: "differently from the other when there is no privileged system of reference? It seems as though the"
+              body: "close to the speed of light, while the other remains at home and waits for the traveling twin to"
             },
             {
               id: "text-14",
               type: "text",
-              body: "younger twin must somehow be different from the twin who remained at home. Yet, during their relative"
+              body: " "
             },
             {
               id: "text-15",
               type: "text",
-              body: "motion, each twin may regard the other as moving. We will examine in detail how this apparent"
+              body: "return. When the twins meet again, the twin who remained at home has aged more than the one who"
             },
             {
               id: "text-16",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-17",
+              type: "text",
+              body: "traveled. This result appears paradoxical in two different ways. First, it is very counterintuitive"
+            },
+            {
+              id: "text-18",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-19",
+              type: "text",
+              body: "to accept that simply moving differently can change the amount of time experienced by the two twins."
+            },
+            {
+              id: "text-20",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-21",
+              type: "text",
+              body: "Second, and more importantly, there appears to be a breaking of symmetry. Why should one twin age"
+            },
+            {
+              id: "text-22",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-23",
+              type: "text",
+              body: "differently from the other when there is no privileged system of reference? It seems as though the"
+            },
+            {
+              id: "text-24",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-25",
+              type: "text",
+              body: "younger twin must somehow be different from the twin who remained at home. Yet, during their relative"
+            },
+            {
+              id: "text-26",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-27",
+              type: "text",
+              body: "motion, each twin may regard the other as moving. We will examine in detail how this apparent"
+            },
+            {
+              id: "text-28",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-29",
               type: "text",
               body: "asymmetry arises and why there is no contradiction with the principle of relativity. "
             }
@@ -108,9 +173,14 @@ export const latexDocument = {
           type: "paragraph",
           children: [
             {
-              id: "text-17",
+              id: "text-30",
               type: "text",
               body: "Below we will make use of formulas derived in the essay"
+            },
+            {
+              id: "text-31",
+              type: "text",
+              body: " "
             },
             {
               id: "href-1",
@@ -118,19 +188,24 @@ export const latexDocument = {
               href: "/physics/relativity/special-relativity/lorentz-transformations",
               label: [
                 {
-                  id: "text-18",
+                  id: "text-32",
                   type: "text",
                   body: "Lorentz Transformations"
                 }
               ]
             },
             {
-              id: "text-19",
+              id: "text-33",
               type: "text",
               body: "."
             },
             {
-              id: "text-20",
+              id: "text-34",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-35",
               type: "text",
               body: "In particular, we will need the transformation between two inertial reference frames "
             },
@@ -141,9 +216,9 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">F</span></span></span></span>"
             },
             {
-              id: "text-21",
+              id: "text-36",
               type: "text",
-              body: "and "
+              body: " and "
             },
             {
               id: "inlineMath-2",
@@ -152,12 +227,17 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">F</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span>"
             },
             {
-              id: "text-22",
+              id: "text-37",
               type: "text",
               body: ","
             },
             {
-              id: "text-23",
+              id: "text-38",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-39",
               type: "text",
               body: "where "
             },
@@ -168,9 +248,9 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">F</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span>"
             },
             {
-              id: "text-24",
+              id: "text-40",
               type: "text",
-              body: "moves with velocity "
+              body: " moves with velocity "
             },
             {
               id: "inlineMath-4",
@@ -179,9 +259,9 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">v</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.5944em;vertical-align:-0.15em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
             },
             {
-              id: "text-25",
+              id: "text-41",
               type: "text",
-              body: "relative to "
+              body: " relative to "
             },
             {
               id: "inlineMath-5",
@@ -190,12 +270,17 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">F</span></span></span></span>"
             },
             {
-              id: "text-26",
+              id: "text-42",
               type: "text",
               body: ". The Lorentz transformation"
             },
             {
-              id: "text-27",
+              id: "text-43",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-44",
               type: "text",
               body: "for this boost is"
             }
@@ -213,7 +298,7 @@ export const latexDocument = {
           type: "paragraph",
           children: [
             {
-              id: "text-28",
+              id: "text-45",
               type: "text",
               body: "Here,"
             }
@@ -231,9 +316,14 @@ export const latexDocument = {
           type: "paragraph",
           children: [
             {
-              id: "text-29",
+              id: "text-46",
               type: "text",
               body: "We will restrict our analysis to the case in which the relative velocity is directed along the"
+            },
+            {
+              id: "text-47",
+              type: "text",
+              body: " "
             },
             {
               id: "inlineMath-6",
@@ -242,7 +332,7 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span></span></span></span>"
             },
             {
-              id: "text-30",
+              id: "text-48",
               type: "text",
               body: "-axis. In this case, the corresponding transformations of space and time are"
             }
@@ -260,9 +350,14 @@ export const latexDocument = {
           type: "paragraph",
           children: [
             {
-              id: "text-31",
+              id: "text-49",
               type: "text",
               body: "As shown in the essay"
+            },
+            {
+              id: "text-50",
+              type: "text",
+              body: " "
             },
             {
               id: "href-2",
@@ -270,19 +365,24 @@ export const latexDocument = {
               href: "/physics/relativity/special-relativity/composition-of-velocities",
               label: [
                 {
-                  id: "text-32",
+                  id: "text-51",
                   type: "text",
                   body: "Composition of Velocities"
                 }
               ]
             },
             {
-              id: "text-33",
+              id: "text-52",
               type: "text",
               body: ","
             },
             {
-              id: "text-34",
+              id: "text-53",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-54",
               type: "text",
               body: "the two frames measure relative velocities of equal magnitude and opposite direction:"
             }
@@ -300,12 +400,17 @@ export const latexDocument = {
           type: "paragraph",
           children: [
             {
-              id: "text-35",
+              id: "text-55",
               type: "text",
               body: "These equations provide the kinematic relations needed to compare the elapsed times measured"
             },
             {
-              id: "text-36",
+              id: "text-56",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-57",
               type: "text",
               body: "along the twins' different journeys."
             }
@@ -326,7 +431,7 @@ export const latexDocument = {
       type: "section",
       title: [
         {
-          id: "text-37",
+          id: "text-58",
           type: "text",
           body: "Description of the Experiment"
         }
@@ -337,7 +442,7 @@ export const latexDocument = {
           type: "paragraph",
           children: [
             {
-              id: "text-38",
+              id: "text-59",
               type: "text",
               body: "We will describe the experiment in terms of physical "
             },
@@ -347,12 +452,17 @@ export const latexDocument = {
               type: "textit"
             },
             {
-              id: "text-39",
+              id: "text-60",
               type: "text",
               body: ". An event is a definite"
             },
             {
-              id: "text-40",
+              id: "text-61",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-62",
               type: "text",
               body: "physical occurrence, such as the departure of the rocket or its arrival at planet "
             },
@@ -363,27 +473,47 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>"
             },
             {
-              id: "text-41",
+              id: "text-63",
               type: "text",
               body: ". The event"
             },
             {
-              id: "text-42",
+              id: "text-64",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-65",
               type: "text",
               body: "itself is independent of the reference frame, although different reference frames generally assign"
             },
             {
-              id: "text-43",
+              id: "text-66",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-67",
               type: "text",
               body: "different space and time coordinates to it. Consequently, a distance, an elapsed time, or a"
             },
             {
-              id: "text-44",
+              id: "text-68",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-69",
               type: "text",
               body: "statement of simultaneity is meaningful only after the events used in the comparison have been"
             },
             {
-              id: "text-45",
+              id: "text-70",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-71",
               type: "text",
               body: "specified. "
             }
@@ -394,12 +524,17 @@ export const latexDocument = {
           type: "paragraph",
           children: [
             {
-              id: "text-46",
+              id: "text-72",
               type: "text",
               body: "Let us consider the Earth as the origin of the spatial coordinates of a reference frame"
             },
             {
-              id: "text-47",
+              id: "text-73",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-74",
               type: "text",
               body: "with coordinates "
             },
@@ -410,7 +545,7 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">y</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.044em;\">z</span><span class=\"mclose\">)</span></span></span></span>"
             },
             {
-              id: "text-48",
+              id: "text-75",
               type: "text",
               body: ", and let us consider a planet "
             },
@@ -421,9 +556,9 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>"
             },
             {
-              id: "text-49",
+              id: "text-76",
               type: "text",
-              body: "located at a distance "
+              body: " located at a distance "
             },
             {
               id: "inlineMath-10",
@@ -432,7 +567,12 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span></span>"
             },
             {
-              id: "text-50",
+              id: "text-77",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-78",
               type: "text",
               body: "along the "
             },
@@ -443,7 +583,7 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span></span></span></span>"
             },
             {
-              id: "text-51",
+              id: "text-79",
               type: "text",
               body: "-axis of this frame. "
             }
@@ -454,12 +594,17 @@ export const latexDocument = {
           type: "paragraph",
           children: [
             {
-              id: "text-52",
+              id: "text-80",
               type: "text",
               body: "We assume that one of the twins remains at the origin of the Earth reference frame and"
             },
             {
-              id: "text-53",
+              id: "text-81",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-82",
               type: "text",
               body: "is equipped with a clock that he uses to measure time "
             },
@@ -470,17 +615,27 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6151em;\"></span><span class=\"mord mathnormal\">t</span></span></span></span>"
             },
             {
-              id: "text-54",
+              id: "text-83",
               type: "text",
               body: ". This twin does not change his"
             },
             {
-              id: "text-55",
+              id: "text-84",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-85",
               type: "text",
               body: "position with respect to this reference frame and measures spatial distances using the"
             },
             {
-              id: "text-56",
+              id: "text-86",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-87",
               type: "text",
               body: "Earth coordinate system. "
             }
@@ -491,7 +646,7 @@ export const latexDocument = {
           type: "paragraph",
           children: [
             {
-              id: "text-57",
+              id: "text-88",
               type: "text",
               body: "We now consider the other twin, who will travel toward the planet "
             },
@@ -502,17 +657,27 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>"
             },
             {
-              id: "text-58",
+              id: "text-89",
               type: "text",
               body: ". We assume that,"
             },
             {
-              id: "text-59",
+              id: "text-90",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-91",
               type: "text",
               body: "at the beginning of the journey, the two twins occupy exactly the same position. At this"
             },
             {
-              id: "text-60",
+              id: "text-92",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-93",
               type: "text",
               body: "instant, the twin on the rocket introduces a spatial coordinate system "
             },
@@ -523,17 +688,27 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0019em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">y</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.044em;\">z</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>"
             },
             {
-              id: "text-61",
+              id: "text-94",
               type: "text",
-              body: "whose"
+              body: " whose"
             },
             {
-              id: "text-62",
+              id: "text-95",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-96",
               type: "text",
               body: "origin and axes coincide with those of the Earth frame. The time measured by the clock"
             },
             {
-              id: "text-63",
+              id: "text-97",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-98",
               type: "text",
               body: "carried by this twin will be denoted by "
             },
@@ -544,7 +719,7 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span>"
             },
             {
-              id: "text-64",
+              id: "text-99",
               type: "text",
               body: ". "
             }
@@ -555,7 +730,7 @@ export const latexDocument = {
           type: "paragraph",
           children: [
             {
-              id: "text-65",
+              id: "text-100",
               type: "text",
               body: "Before departure, the twins synchronize their clocks and denote the departure event by "
             },
@@ -566,12 +741,17 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">P</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>"
             },
             {
-              id: "text-66",
+              id: "text-101",
               type: "text",
               body: ","
             },
             {
-              id: "text-67",
+              id: "text-102",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-103",
               type: "text",
               body: "choosing it to correspond to"
             }
@@ -588,12 +768,17 @@ export const latexDocument = {
           type: "paragraph",
           children: [
             {
-              id: "text-68",
+              id: "text-104",
               type: "text",
               body: "At this instant their relative velocity is still zero, and the two spatial coordinate"
             },
             {
-              id: "text-69",
+              id: "text-105",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-106",
               type: "text",
               body: "systems coincide. They therefore both agree that the planet "
             },
@@ -604,9 +789,14 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>"
             },
             {
-              id: "text-70",
+              id: "text-107",
               type: "text",
-              body: "is located at a distance"
+              body: " is located at a distance"
+            },
+            {
+              id: "text-108",
+              type: "text",
+              body: " "
             },
             {
               id: "inlineMath-18",
@@ -615,9 +805,9 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span></span>"
             },
             {
-              id: "text-71",
+              id: "text-109",
               type: "text",
-              body: "from Earth along the positive "
+              body: " from Earth along the positive "
             },
             {
               id: "inlineMath-19",
@@ -626,7 +816,7 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span></span></span></span>"
             },
             {
-              id: "text-72",
+              id: "text-110",
               type: "text",
               body: "-axis. "
             }
@@ -637,7 +827,7 @@ export const latexDocument = {
           type: "paragraph",
           children: [
             {
-              id: "text-73",
+              id: "text-111",
               type: "text",
               body: "The twin on the rocket now begins his journey toward the planet "
             },
@@ -648,12 +838,17 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>"
             },
             {
-              id: "text-74",
+              id: "text-112",
               type: "text",
               body: ", following a straight"
             },
             {
-              id: "text-75",
+              id: "text-113",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-114",
               type: "text",
               body: "trajectory along the direction of the common "
             },
@@ -664,7 +859,7 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span></span></span></span>"
             },
             {
-              id: "text-76",
+              id: "text-115",
               type: "text",
               body: "-axis."
             }
@@ -678,7 +873,7 @@ export const latexDocument = {
           height: 1024,
           caption: [
             {
-              id: "text-77",
+              id: "text-116",
               type: "text",
               body: "Departure event"
             }
@@ -692,7 +887,7 @@ export const latexDocument = {
           type: "subsection",
           title: [
             {
-              id: "text-78",
+              id: "text-117",
               type: "text",
               body: "Acceleration to "
             },
@@ -709,12 +904,17 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-79",
+                  id: "text-118",
                   type: "text",
                   body: "We now consider the initial portion of the journey during which the rocket accelerates"
                 },
                 {
-                  id: "text-80",
+                  id: "text-119",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-120",
                   type: "text",
                   body: "until it reaches the cruise velocity "
                 },
@@ -725,12 +925,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">v</span></span><span class=\"mord\">.</span></span></span></span>"
                 },
                 {
-                  id: "text-81",
+                  id: "text-121",
                   type: "text",
-                  body: "We use the following two events to delimit"
+                  body: " We use the following two events to delimit"
                 },
                 {
-                  id: "text-82",
+                  id: "text-122",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-123",
                   type: "text",
                   body: "this phase:"
                 }
@@ -755,9 +960,9 @@ export const latexDocument = {
                           html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">P</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>"
                         },
                         {
-                          id: "text-83",
+                          id: "text-124",
                           type: "text",
-                          body: "The rocket leaves Earth and begins its initial acceleration."
+                          body: " The rocket leaves Earth and begins its initial acceleration."
                         }
                       ]
                     }
@@ -778,9 +983,9 @@ export const latexDocument = {
                           html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0502em;\">B</span><span class=\"mclose\">)</span></span></span></span>"
                         },
                         {
-                          id: "text-84",
+                          id: "text-125",
                           type: "text",
-                          body: "The rocket reaches the cruise velocity "
+                          body: " The rocket reaches the cruise velocity "
                         },
                         {
                           id: "inlineMath-26",
@@ -789,7 +994,7 @@ export const latexDocument = {
                           html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">v</span></span></span></span></span>"
                         },
                         {
-                          id: "text-85",
+                          id: "text-126",
                           type: "text",
                           body: "."
                         }
@@ -804,7 +1009,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-86",
+                  id: "text-127",
                   type: "text",
                   body: "The twin on Earth assigns to event "
                 },
@@ -815,9 +1020,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">P</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>"
                 },
                 {
-                  id: "text-87",
+                  id: "text-128",
                   type: "text",
-                  body: "the coordinates"
+                  body: " the coordinates"
                 }
               ]
             },
@@ -832,7 +1037,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-88",
+                  id: "text-129",
                   type: "text",
                   body: "and to event "
                 },
@@ -843,9 +1048,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0502em;\">B</span><span class=\"mclose\">)</span></span></span></span>"
                 },
                 {
-                  id: "text-89",
+                  id: "text-130",
                   type: "text",
-                  body: "the coordinates"
+                  body: " the coordinates"
                 }
               ]
             },
@@ -860,7 +1065,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-90",
+                  id: "text-131",
                   type: "text",
                   body: "where "
                 },
@@ -871,12 +1076,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">ϵ</span></span></span></span>"
                 },
                 {
-                  id: "text-91",
+                  id: "text-132",
                   type: "text",
-                  body: "is the time required, according to the Earth clock, for the rocket"
+                  body: " is the time required, according to the Earth clock, for the rocket"
                 },
                 {
-                  id: "text-92",
+                  id: "text-133",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-134",
                   type: "text",
                   body: "to reach its cruise velocity, and "
                 },
@@ -887,12 +1097,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5806em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-93",
+                  id: "text-135",
                   type: "text",
-                  body: "is the corresponding position of the rocket"
+                  body: " is the corresponding position of the rocket"
                 },
                 {
-                  id: "text-94",
+                  id: "text-136",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-137",
                   type: "text",
                   body: "relative to Earth. "
                 }
@@ -903,7 +1118,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-95",
+                  id: "text-138",
                   type: "text",
                   body: "The clock carried by the rocket is also set to zero at event "
                 },
@@ -914,7 +1129,7 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">P</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>"
                 },
                 {
-                  id: "text-96",
+                  id: "text-139",
                   type: "text",
                   body: ". Let "
                 },
@@ -925,7 +1140,12 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">ϵ</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-97",
+                  id: "text-140",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-141",
                   type: "text",
                   body: "denote the elapsed time measured by this clock between events "
                 },
@@ -936,9 +1156,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">P</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>"
                 },
                 {
-                  id: "text-98",
+                  id: "text-142",
                   type: "text",
-                  body: "and "
+                  body: " and "
                 },
                 {
                   id: "inlineMath-34",
@@ -947,27 +1167,47 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0502em;\">B</span><span class=\"mclose\">)</span></span></span></span>"
                 },
                 {
-                  id: "text-99",
+                  id: "text-143",
                   type: "text",
                   body: ". Since"
                 },
                 {
-                  id: "text-100",
+                  id: "text-144",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-145",
                   type: "text",
                   body: "the rocket is accelerating during this interval, there is no single Lorentz transformation"
                 },
                 {
-                  id: "text-101",
+                  id: "text-146",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-147",
                   type: "text",
                   body: "that relates the Earth frame to the rocket over the entire acceleration phase. Instead,"
                 },
                 {
-                  id: "text-102",
+                  id: "text-148",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-149",
                   type: "text",
                   body: "at every instant we consider the Lorentz transformation whose velocity parameter is equal"
                 },
                 {
-                  id: "text-103",
+                  id: "text-150",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-151",
                   type: "text",
                   body: "to the instantaneous velocity of the rocket. "
                 }
@@ -978,7 +1218,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-104",
+                  id: "text-152",
                   type: "text",
                   body: "For a Lorentz transformation with velocity parameter "
                 },
@@ -989,9 +1229,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span></span></span></span>"
                 },
                 {
-                  id: "text-105",
+                  id: "text-153",
                   type: "text",
-                  body: "along the "
+                  body: " along the "
                 },
                 {
                   id: "inlineMath-36",
@@ -1000,12 +1240,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span></span></span></span>"
                 },
                 {
-                  id: "text-106",
+                  id: "text-154",
                   type: "text",
                   body: "-axis, the"
                 },
                 {
-                  id: "text-107",
+                  id: "text-155",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-156",
                   type: "text",
                   body: "differential of the time coordinate is"
                 }
@@ -1023,7 +1268,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-108",
+                  id: "text-157",
                   type: "text",
                   body: "Looking at the differential above, we may wonder why no term proportional to "
                 },
@@ -1034,12 +1279,22 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">d</span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span></span></span></span>"
                 },
                 {
-                  id: "text-109",
+                  id: "text-158",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-159",
                   type: "text",
                   body: "appears, since the velocity of the rocket is itself changing with time. The reason is"
                 },
                 {
-                  id: "text-110",
+                  id: "text-160",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-161",
                   type: "text",
                   body: "that the velocity "
                 },
@@ -1050,17 +1305,27 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span></span></span></span>"
                 },
                 {
-                  id: "text-111",
+                  id: "text-162",
                   type: "text",
-                  body: "appearing in the Lorentz transformation is a parameter of the"
+                  body: " appearing in the Lorentz transformation is a parameter of the"
                 },
                 {
-                  id: "text-112",
+                  id: "text-163",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-164",
                   type: "text",
                   body: "transformation. For each Lorentz transformation it is therefore held fixed when the"
                 },
                 {
-                  id: "text-113",
+                  id: "text-165",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-166",
                   type: "text",
                   body: "differential with respect to the spacetime coordinates is taken. Thus,"
                 }
@@ -1077,7 +1342,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-114",
+                  id: "text-167",
                   type: "text",
                   body: "contains no contribution proportional to "
                 },
@@ -1088,7 +1353,7 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">d</span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span></span></span></span>"
                 },
                 {
-                  id: "text-115",
+                  id: "text-168",
                   type: "text",
                   body: ". "
                 }
@@ -1099,7 +1364,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-116",
+                  id: "text-169",
                   type: "text",
                   body: "During the acceleration phase, the value of the parameter "
                 },
@@ -1110,22 +1375,37 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span></span></span></span>"
                 },
                 {
-                  id: "text-117",
+                  id: "text-170",
                   type: "text",
-                  body: "changes along the"
+                  body: " changes along the"
                 },
                 {
-                  id: "text-118",
+                  id: "text-171",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-172",
                   type: "text",
                   body: "trajectory of the rocket. We therefore use, at each event of the trajectory, the"
                 },
                 {
-                  id: "text-119",
+                  id: "text-173",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-174",
                   type: "text",
                   body: "Lorentz transformation whose velocity parameter is equal to the velocity of the rocket"
                 },
                 {
-                  id: "text-120",
+                  id: "text-175",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-176",
                   type: "text",
                   body: "at that event. In this sense, "
                 },
@@ -1136,17 +1416,27 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord mathnormal\">d</span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-121",
+                  id: "text-177",
                   type: "text",
-                  body: "represents the infinitesimal time measured in the"
+                  body: " represents the infinitesimal time measured in the"
                 },
                 {
-                  id: "text-122",
+                  id: "text-178",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-179",
                   type: "text",
                   body: "corresponding instantaneous rocket frame; it should not be interpreted as the"
                 },
                 {
-                  id: "text-123",
+                  id: "text-180",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-181",
                   type: "text",
                   body: "differential of a single inertial time coordinate "
                 },
@@ -1157,17 +1447,27 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-124",
+                  id: "text-182",
                   type: "text",
-                  body: "extending over the entire"
+                  body: " extending over the entire"
                 },
                 {
-                  id: "text-125",
+                  id: "text-183",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-184",
                   type: "text",
                   body: "acceleration phase. Rather, we consider a family of Lorentz"
                 },
                 {
-                  id: "text-126",
+                  id: "text-185",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-186",
                   type: "text",
                   body: "transformations"
                 }
@@ -1184,22 +1484,37 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-127",
+                  id: "text-187",
                   type: "text",
                   body: "and at each instant we use the member of this family whose fixed parameter is equal to"
                 },
                 {
-                  id: "text-128",
+                  id: "text-188",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-189",
                   type: "text",
                   body: "the instantaneous velocity of the rocket. The parameter labeling the transformation"
                 },
                 {
-                  id: "text-129",
+                  id: "text-190",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-191",
                   type: "text",
                   body: "changes along the trajectory, but it does not contribute to the differential within"
                 },
                 {
-                  id: "text-130",
+                  id: "text-192",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-193",
                   type: "text",
                   body: "each individual transformation.  "
                 }
@@ -1210,7 +1525,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-131",
+                  id: "text-194",
                   type: "text",
                   body: "Along the trajectory of the rocket,"
                 }
@@ -1227,7 +1542,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-132",
+                  id: "text-195",
                   type: "text",
                   body: "and therefore "
                 },
@@ -1237,9 +1552,9 @@ export const latexDocument = {
                   body: "eq:Lorentz_transformation_differential_time"
                 },
                 {
-                  id: "text-133",
+                  id: "text-196",
                   type: "text",
-                  body: "becomes"
+                  body: " becomes"
                 }
               ]
             },
@@ -1255,12 +1570,17 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-134",
+                  id: "text-197",
                   type: "text",
                   body: "The elapsed time measured by the clock carried by the rocket during the acceleration"
                 },
                 {
-                  id: "text-135",
+                  id: "text-198",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-199",
                   type: "text",
                   body: "phase is consequently"
                 }
@@ -1278,7 +1598,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-136",
+                  id: "text-200",
                   type: "text",
                   body: "The precise relation between "
                 },
@@ -1289,9 +1609,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">ϵ</span></span></span></span>"
                 },
                 {
-                  id: "text-137",
+                  id: "text-201",
                   type: "text",
-                  body: "and "
+                  body: " and "
                 },
                 {
                   id: "inlineMath-44",
@@ -1300,12 +1620,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">ϵ</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-138",
+                  id: "text-202",
                   type: "text",
-                  body: "therefore depends on the"
+                  body: " therefore depends on the"
                 },
                 {
-                  id: "text-139",
+                  id: "text-203",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-204",
                   type: "text",
                   body: "acceleration profile "
                 },
@@ -1316,17 +1641,27 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span></span></span></span>"
                 },
                 {
-                  id: "text-140",
+                  id: "text-205",
                   type: "text",
-                  body: "of the rocket. No assumption is made here that the velocity"
+                  body: " of the rocket. No assumption is made here that the velocity"
                 },
                 {
-                  id: "text-141",
+                  id: "text-206",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-207",
                   type: "text",
                   body: "is small compared with the speed of light; on the contrary, the cruise velocity may"
                 },
                 {
-                  id: "text-142",
+                  id: "text-208",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-209",
                   type: "text",
                   body: "be arbitrarily close to "
                 },
@@ -1337,7 +1672,7 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">c</span></span></span></span>"
                 },
                 {
-                  id: "text-143",
+                  id: "text-210",
                   type: "text",
                   body: ". "
                 }
@@ -1348,12 +1683,17 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-144",
+                  id: "text-211",
                   type: "text",
                   body: "We will assume that the acceleration phase is very short compared with the duration"
                 },
                 {
-                  id: "text-145",
+                  id: "text-212",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-213",
                   type: "text",
                   body: "of the complete journey. More precisely, if "
                 },
@@ -1364,9 +1704,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">T</span></span></span></span>"
                 },
                 {
-                  id: "text-146",
+                  id: "text-214",
                   type: "text",
-                  body: "and "
+                  body: " and "
                 },
                 {
                   id: "inlineMath-48",
@@ -1375,17 +1715,27 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">T</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-147",
+                  id: "text-215",
                   type: "text",
-                  body: "denote characteristic time"
+                  body: " denote characteristic time"
                 },
                 {
-                  id: "text-148",
+                  id: "text-216",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-217",
                   type: "text",
                   body: "scales of the journey as measured in the Earth frame and by the clock carried by the"
                 },
                 {
-                  id: "text-149",
+                  id: "text-218",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-219",
                   type: "text",
                   body: "rocket, respectively, we assume that"
                 }
@@ -1403,14 +1753,24 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-150",
+                  id: "text-220",
                   type: "text",
                   body: "The times spent accelerating are therefore negligible compared with the times spent"
                 },
                 {
-                  id: "text-151",
+                  id: "text-221",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-222",
                   type: "text",
                   body: "traveling at cruise velocity. In the remainder of the analysis we will neglect both"
+                },
+                {
+                  id: "text-223",
+                  type: "text",
+                  body: " "
                 },
                 {
                   id: "inlineMath-49",
@@ -1419,9 +1779,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">ϵ</span></span></span></span>"
                 },
                 {
-                  id: "text-152",
+                  id: "text-224",
                   type: "text",
-                  body: "and "
+                  body: " and "
                 },
                 {
                   id: "inlineMath-50",
@@ -1430,7 +1790,7 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">ϵ</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-153",
+                  id: "text-225",
                   type: "text",
                   body: ", while allowing the cruise velocity "
                 },
@@ -1441,12 +1801,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">v</span></span></span></span></span>"
                 },
                 {
-                  id: "text-154",
+                  id: "text-226",
                   type: "text",
-                  body: "to remain fully"
+                  body: " to remain fully"
                 },
                 {
-                  id: "text-155",
+                  id: "text-227",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-228",
                   type: "text",
                   body: "relativistic. "
                 }
@@ -1457,7 +1822,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-156",
+                  id: "text-229",
                   type: "text",
                   body: "We further assume that the distance "
                 },
@@ -1468,12 +1833,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5806em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-157",
+                  id: "text-230",
                   type: "text",
-                  body: "traveled by the rocket during the initial"
+                  body: " traveled by the rocket during the initial"
                 },
                 {
-                  id: "text-158",
+                  id: "text-231",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-232",
                   type: "text",
                   body: "acceleration phase is very small compared with the distance "
                 },
@@ -1484,12 +1854,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span></span>"
                 },
                 {
-                  id: "text-159",
+                  id: "text-233",
                   type: "text",
-                  body: "between Earth and"
+                  body: " between Earth and"
                 },
                 {
-                  id: "text-160",
+                  id: "text-234",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-235",
                   type: "text",
                   body: "planet "
                 },
@@ -1500,7 +1875,7 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>"
                 },
                 {
-                  id: "text-161",
+                  id: "text-236",
                   type: "text",
                   body: ","
                 }
@@ -1517,7 +1892,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-162",
+                  id: "text-237",
                   type: "text",
                   body: "We will therefore also neglect "
                 },
@@ -1528,9 +1903,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5806em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-163",
+                  id: "text-238",
                   type: "text",
-                  body: "in the remainder of the analysis."
+                  body: " in the remainder of the analysis."
                 }
               ]
             }
@@ -1548,7 +1923,7 @@ export const latexDocument = {
           type: "subsection",
           title: [
             {
-              id: "text-164",
+              id: "text-239",
               type: "text",
               body: "Trip to "
             },
@@ -1565,7 +1940,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-165",
+                  id: "text-240",
                   type: "text",
                   body: "We now consider the journey of the rocket to the planet "
                 },
@@ -1576,12 +1951,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>"
                 },
                 {
-                  id: "text-166",
+                  id: "text-241",
                   type: "text",
                   body: ". Since the motion takes"
                 },
                 {
-                  id: "text-167",
+                  id: "text-242",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-243",
                   type: "text",
                   body: "place entirely along the direction of the common "
                 },
@@ -1592,9 +1972,14 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span></span></span></span>"
                 },
                 {
-                  id: "text-168",
+                  id: "text-244",
                   type: "text",
                   body: "-axis, we will omit the coordinates"
+                },
+                {
+                  id: "text-245",
+                  type: "text",
+                  body: " "
                 },
                 {
                   id: "inlineMath-59",
@@ -1603,9 +1988,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">y</span></span></span></span>"
                 },
                 {
-                  id: "text-169",
+                  id: "text-246",
                   type: "text",
-                  body: "and "
+                  body: " and "
                 },
                 {
                   id: "inlineMath-60",
@@ -1614,9 +1999,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.044em;\">z</span></span></span></span>"
                 },
                 {
-                  id: "text-170",
+                  id: "text-247",
                   type: "text",
-                  body: "in what follows. "
+                  body: " in what follows. "
                 }
               ]
             },
@@ -1625,7 +2010,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-171",
+                  id: "text-248",
                   type: "text",
                   body: "We consider the following two events:"
                 }
@@ -1650,9 +2035,9 @@ export const latexDocument = {
                           html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">P</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>"
                         },
                         {
-                          id: "text-172",
+                          id: "text-249",
                           type: "text",
-                          body: "The rocket departs from Earth."
+                          body: " The rocket departs from Earth."
                         }
                       ]
                     }
@@ -1673,9 +2058,9 @@ export const latexDocument = {
                           html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">P</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>"
                         },
                         {
-                          id: "text-173",
+                          id: "text-250",
                           type: "text",
-                          body: "The rocket reaches the planet "
+                          body: " The rocket reaches the planet "
                         },
                         {
                           id: "inlineMath-63",
@@ -1684,9 +2069,9 @@ export const latexDocument = {
                           html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>"
                         },
                         {
-                          id: "text-174",
+                          id: "text-251",
                           type: "text",
-                          body: "with velocity "
+                          body: " with velocity "
                         },
                         {
                           id: "inlineMath-64",
@@ -1695,12 +2080,17 @@ export const latexDocument = {
                           html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">v</span></span></span></span></span>"
                         },
                         {
-                          id: "text-175",
+                          id: "text-252",
                           type: "text",
-                          body: "and begins"
+                          body: " and begins"
                         },
                         {
-                          id: "text-176",
+                          id: "text-253",
+                          type: "text",
+                          body: " "
+                        },
+                        {
+                          id: "text-254",
                           type: "text",
                           body: "to decelerate."
                         }
@@ -1715,12 +2105,17 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-177",
+                  id: "text-255",
                   type: "text",
                   body: "In light of the approximations introduced for the initial acceleration phase, we neglect"
                 },
                 {
-                  id: "text-178",
+                  id: "text-256",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-257",
                   type: "text",
                   body: "both the time and the distance between events "
                 },
@@ -1731,9 +2126,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">P</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>"
                 },
                 {
-                  id: "text-179",
+                  id: "text-258",
                   type: "text",
-                  body: "and "
+                  body: " and "
                 },
                 {
                   id: "inlineMath-66",
@@ -1742,12 +2137,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0502em;\">B</span><span class=\"mclose\">)</span></span></span></span>"
                 },
                 {
-                  id: "text-180",
+                  id: "text-259",
                   type: "text",
                   body: ". Thus, for the cruise-phase"
                 },
                 {
-                  id: "text-181",
+                  id: "text-260",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-261",
                   type: "text",
                   body: "calculation, event "
                 },
@@ -1758,9 +2158,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0502em;\">B</span><span class=\"mclose\">)</span></span></span></span>"
                 },
                 {
-                  id: "text-182",
+                  id: "text-262",
                   type: "text",
-                  body: "is treated as coincident with "
+                  body: " is treated as coincident with "
                 },
                 {
                   id: "inlineMath-68",
@@ -1769,12 +2169,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">P</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>"
                 },
                 {
-                  id: "text-183",
+                  id: "text-263",
                   type: "text",
-                  body: "to the accuracy of our"
+                  body: " to the accuracy of our"
                 },
                 {
-                  id: "text-184",
+                  id: "text-264",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-265",
                   type: "text",
                   body: "approximation. Accordingly, both twins assign to event "
                 },
@@ -1785,9 +2190,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">P</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>"
                 },
                 {
-                  id: "text-185",
+                  id: "text-266",
                   type: "text",
-                  body: "the coordinates"
+                  body: " the coordinates"
                 }
               ]
             },
@@ -1802,7 +2207,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-186",
+                  id: "text-267",
                   type: "text",
                   body: "The twin on Earth assigns to event "
                 },
@@ -1813,9 +2218,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">P</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>"
                 },
                 {
-                  id: "text-187",
+                  id: "text-268",
                   type: "text",
-                  body: "the coordinates"
+                  body: " the coordinates"
                 }
               ]
             },
@@ -1830,7 +2235,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-188",
+                  id: "text-269",
                   type: "text",
                   body: "where "
                 },
@@ -1841,9 +2246,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7651em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-189",
+                  id: "text-270",
                   type: "text",
-                  body: "is the time required for the rocket to travel from Earth to planet "
+                  body: " is the time required for the rocket to travel from Earth to planet "
                 },
                 {
                   id: "inlineMath-72",
@@ -1852,12 +2257,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>"
                 },
                 {
-                  id: "text-190",
+                  id: "text-271",
                   type: "text",
                   body: "."
                 },
                 {
-                  id: "text-191",
+                  id: "text-272",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-273",
                   type: "text",
                   body: "Since the rocket moves with constant speed "
                 },
@@ -1868,12 +2278,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">∣</span><span class=\"mord text\"><span class=\"mord textbf\">v</span></span><span class=\"mord\">∣</span></span></span></span>"
                 },
                 {
-                  id: "text-192",
+                  id: "text-274",
                   type: "text",
-                  body: "during this portion of the"
+                  body: " during this portion of the"
                 },
                 {
-                  id: "text-193",
+                  id: "text-275",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-276",
                   type: "text",
                   body: "journey,"
                 }
@@ -1891,7 +2306,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-194",
+                  id: "text-277",
                   type: "text",
                   body: "During the outbound cruise, let "
                 },
@@ -1902,12 +2317,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.9989em;vertical-align:-0.247em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">F</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-2.453em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathrm mtight\">out</span></span></span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-195",
+                  id: "text-278",
                   type: "text",
-                  body: "denote the inertial frame comoving with"
+                  body: " denote the inertial frame comoving with"
                 },
                 {
-                  id: "text-196",
+                  id: "text-279",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-280",
                   type: "text",
                   body: "the rocket. The rocket moves with velocity "
                 },
@@ -1918,9 +2338,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">+</span><span class=\"mord text\"><span class=\"mord textbf\">v</span></span></span></span></span>"
                 },
                 {
-                  id: "text-197",
+                  id: "text-281",
                   type: "text",
-                  body: "relative to the Earth frame "
+                  body: " relative to the Earth frame "
                 },
                 {
                   id: "inlineMath-76",
@@ -1929,12 +2349,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">F</span></span></span></span>"
                 },
                 {
-                  id: "text-198",
+                  id: "text-282",
                   type: "text",
                   body: ", while"
                 },
                 {
-                  id: "text-199",
+                  id: "text-283",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-284",
                   type: "text",
                   body: "Earth and planet "
                 },
@@ -1945,9 +2370,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>"
                 },
                 {
-                  id: "text-200",
+                  id: "text-285",
                   type: "text",
-                  body: "move with velocity "
+                  body: " move with velocity "
                 },
                 {
                   id: "inlineMath-78",
@@ -1956,9 +2381,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">−</span><span class=\"mord text\"><span class=\"mord textbf\">v</span></span></span></span></span>"
                 },
                 {
-                  id: "text-201",
+                  id: "text-286",
                   type: "text",
-                  body: "relative to "
+                  body: " relative to "
                 },
                 {
                   id: "inlineMath-79",
@@ -1967,12 +2392,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.9989em;vertical-align:-0.247em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">F</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-2.453em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathrm mtight\">out</span></span></span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-202",
+                  id: "text-287",
                   type: "text",
                   body: ". The twin on"
                 },
                 {
-                  id: "text-203",
+                  id: "text-288",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-289",
                   type: "text",
                   body: "the rocket assigns to event "
                 },
@@ -1983,9 +2413,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">P</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>"
                 },
                 {
-                  id: "text-204",
+                  id: "text-290",
                   type: "text",
-                  body: "the coordinates"
+                  body: " the coordinates"
                 }
               ]
             },
@@ -2000,7 +2430,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-205",
+                  id: "text-291",
                   type: "text",
                   body: "where "
                 },
@@ -2011,9 +2441,14 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.2481em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-2.4519em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2481em;\"><span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-206",
+                  id: "text-292",
                   type: "text",
-                  body: "is the elapsed time measured by his clock during the journey to planet"
+                  body: " is the elapsed time measured by his clock during the journey to planet"
+                },
+                {
+                  id: "text-293",
+                  type: "text",
+                  body: " "
                 },
                 {
                   id: "inlineMath-82",
@@ -2022,7 +2457,7 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>"
                 },
                 {
-                  id: "text-207",
+                  id: "text-294",
                   type: "text",
                   body: ". There are two different ways in which he can determine "
                 },
@@ -2033,7 +2468,7 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.2481em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-2.4519em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2481em;\"><span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-208",
+                  id: "text-295",
                   type: "text",
                   body: ". "
                 }
@@ -2044,7 +2479,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-209",
+                  id: "text-296",
                   type: "text",
                   body: "The first is to use the Lorentz transformation directly. Applying it to event "
                 },
@@ -2055,12 +2490,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">P</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>"
                 },
                 {
-                  id: "text-210",
+                  id: "text-297",
                   type: "text",
                   body: ","
                 },
                 {
-                  id: "text-211",
+                  id: "text-298",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-299",
                   type: "text",
                   body: "whose coordinates in the Earth frame are"
                 }
@@ -2077,7 +2517,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-212",
+                  id: "text-300",
                   type: "text",
                   body: "we obtain"
                 }
@@ -2095,7 +2535,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-213",
+                  id: "text-301",
                   type: "text",
                   body: "Therefore,"
                 }
@@ -2113,12 +2553,17 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-214",
+                  id: "text-302",
                   type: "text",
                   body: "There is, however, another way for the twin on the rocket to understand this result."
                 },
                 {
-                  id: "text-215",
+                  id: "text-303",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-304",
                   type: "text",
                   body: "As soon as the rocket has reached its cruise velocity "
                 },
@@ -2129,12 +2574,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">v</span></span></span></span></span>"
                 },
                 {
-                  id: "text-216",
+                  id: "text-305",
                   type: "text",
                   body: ", the distance between"
                 },
                 {
-                  id: "text-217",
+                  id: "text-306",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-307",
                   type: "text",
                   body: "Earth and planet "
                 },
@@ -2145,12 +2595,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>"
                 },
                 {
-                  id: "text-218",
+                  id: "text-308",
                   type: "text",
                   body: ", measured in the rocket frame, is smaller than the corresponding"
                 },
                 {
-                  id: "text-219",
+                  id: "text-309",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-310",
                   type: "text",
                   body: "distance "
                 },
@@ -2161,9 +2616,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span></span>"
                 },
                 {
-                  id: "text-220",
+                  id: "text-311",
                   type: "text",
-                  body: "measured in the Earth frame. "
+                  body: " measured in the Earth frame. "
                 }
               ]
             },
@@ -2172,22 +2627,37 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-221",
+                  id: "text-312",
                   type: "text",
                   body: "To understand why, let us first consider how the twin on the rocket measures a length"
                 },
                 {
-                  id: "text-222",
+                  id: "text-313",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-314",
                   type: "text",
                   body: "belonging to an object at rest in the Earth frame. As an example, consider the diameter"
                 },
                 {
-                  id: "text-223",
+                  id: "text-315",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-316",
                   type: "text",
                   body: "of the Earth along the direction of motion. Let its diameter measured in the Earth frame"
                 },
                 {
-                  id: "text-224",
+                  id: "text-317",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-318",
                   type: "text",
                   body: "be"
                 }
@@ -2204,12 +2674,17 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-225",
+                  id: "text-319",
                   type: "text",
                   body: "A measurement of this diameter in the rocket frame requires the positions of the two"
                 },
                 {
-                  id: "text-226",
+                  id: "text-320",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-321",
                   type: "text",
                   body: "opposite endpoints of the diameter to be determined "
                 },
@@ -2219,7 +2694,7 @@ export const latexDocument = {
                   type: "textit"
                 },
                 {
-                  id: "text-227",
+                  id: "text-322",
                   type: "text",
                   body: ". We therefore introduce two events:"
                 }
@@ -2244,9 +2719,14 @@ export const latexDocument = {
                           html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0576em;\">E</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2583em;\"><span style=\"top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mbin mtight\">+</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2083em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>"
                         },
                         {
-                          id: "text-228",
+                          id: "text-323",
                           type: "text",
-                          body: "The position of the endpoint of the Earth on the positive side of the"
+                          body: " The position of the endpoint of the Earth on the positive side of the"
+                        },
+                        {
+                          id: "text-324",
+                          type: "text",
+                          body: " "
                         },
                         {
                           id: "inlineMath-89",
@@ -2255,7 +2735,7 @@ export const latexDocument = {
                           html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span></span></span></span>"
                         },
                         {
-                          id: "text-229",
+                          id: "text-325",
                           type: "text",
                           body: "-axis is measured."
                         }
@@ -2278,9 +2758,14 @@ export const latexDocument = {
                           html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0576em;\">E</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2583em;\"><span style=\"top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mbin mtight\">−</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2083em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>"
                         },
                         {
-                          id: "text-230",
+                          id: "text-326",
                           type: "text",
-                          body: "The position of the endpoint of the Earth on the negative side of the"
+                          body: " The position of the endpoint of the Earth on the negative side of the"
+                        },
+                        {
+                          id: "text-327",
+                          type: "text",
+                          body: " "
                         },
                         {
                           id: "inlineMath-91",
@@ -2289,7 +2774,7 @@ export const latexDocument = {
                           html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span></span></span></span>"
                         },
                         {
-                          id: "text-231",
+                          id: "text-328",
                           type: "text",
                           body: "-axis is measured."
                         }
@@ -2304,12 +2789,17 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-232",
+                  id: "text-329",
                   type: "text",
                   body: "Since these two measurements are simultaneous in the rocket frame, their coordinates"
                 },
                 {
-                  id: "text-233",
+                  id: "text-330",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-331",
                   type: "text",
                   body: "can be written as"
                 }
@@ -2327,7 +2817,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-234",
+                  id: "text-332",
                   type: "text",
                   body: "The diameter measured by the twin on the rocket is therefore"
                 }
@@ -2345,17 +2835,27 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-235",
+                  id: "text-333",
                   type: "text",
                   body: "It is important to emphasize that the measurement of a spatial distance in a given"
                 },
                 {
-                  id: "text-236",
+                  id: "text-334",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-335",
                   type: "text",
                   body: "reference frame requires the positions of its endpoints to be measured at the same"
                 },
                 {
-                  id: "text-237",
+                  id: "text-336",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-337",
                   type: "text",
                   body: "time in that frame. The events "
                 },
@@ -2366,9 +2866,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8917em;vertical-align:-0.2083em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0576em;\">E</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2583em;\"><span style=\"top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mbin mtight\">+</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2083em;\"><span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-238",
+                  id: "text-338",
                   type: "text",
-                  body: "and "
+                  body: " and "
                 },
                 {
                   id: "inlineMath-93",
@@ -2377,12 +2877,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8917em;vertical-align:-0.2083em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0576em;\">E</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2583em;\"><span style=\"top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mbin mtight\">−</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2083em;\"><span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-239",
+                  id: "text-339",
                   type: "text",
-                  body: "are simultaneous in the rocket frame,"
+                  body: " are simultaneous in the rocket frame,"
                 },
                 {
-                  id: "text-240",
+                  id: "text-340",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-341",
                   type: "text",
                   body: "but they are not simultaneous in the Earth frame. "
                 }
@@ -2393,12 +2898,17 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-241",
+                  id: "text-342",
                   type: "text",
                   body: "Since the Earth is at rest in the Earth frame and centered at the origin, the same two"
                 },
                 {
-                  id: "text-242",
+                  id: "text-343",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-344",
                   type: "text",
                   body: "events have coordinates"
                 }
@@ -2416,7 +2926,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-243",
+                  id: "text-345",
                   type: "text",
                   body: "Because the two events are simultaneous in the rocket frame,"
                 }
@@ -2433,7 +2943,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-244",
+                  id: "text-346",
                   type: "text",
                   body: "using the Lorentz transformation for the time coordinate, we obtain"
                 }
@@ -2450,7 +2960,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-245",
+                  id: "text-347",
                   type: "text",
                   body: "Since "
                 },
@@ -2461,7 +2971,7 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">d</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">2</span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">r</span></span></span></span>"
                 },
                 {
-                  id: "text-246",
+                  id: "text-348",
                   type: "text",
                   body: ", it follows that"
                 }
@@ -2479,7 +2989,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-247",
+                  id: "text-349",
                   type: "text",
                   body: "Thus, although "
                 },
@@ -2490,9 +3000,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8917em;vertical-align:-0.2083em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0576em;\">E</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2583em;\"><span style=\"top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mbin mtight\">+</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2083em;\"><span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-248",
+                  id: "text-350",
                   type: "text",
-                  body: "and "
+                  body: " and "
                 },
                 {
                   id: "inlineMath-96",
@@ -2501,12 +3011,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8917em;vertical-align:-0.2083em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0576em;\">E</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2583em;\"><span style=\"top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mbin mtight\">−</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2083em;\"><span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-249",
+                  id: "text-351",
                   type: "text",
-                  body: "occur simultaneously for the twin on the rocket,"
+                  body: " occur simultaneously for the twin on the rocket,"
                 },
                 {
-                  id: "text-250",
+                  id: "text-352",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-353",
                   type: "text",
                   body: "event "
                 },
@@ -2517,9 +3032,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8917em;vertical-align:-0.2083em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0576em;\">E</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2583em;\"><span style=\"top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mbin mtight\">+</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2083em;\"><span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-251",
+                  id: "text-354",
                   type: "text",
-                  body: "occurs after event "
+                  body: " occurs after event "
                 },
                 {
                   id: "inlineMath-98",
@@ -2528,12 +3043,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8917em;vertical-align:-0.2083em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0576em;\">E</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2583em;\"><span style=\"top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mbin mtight\">−</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2083em;\"><span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-252",
+                  id: "text-355",
                   type: "text",
-                  body: "according to the twin on Earth. This is a direct"
+                  body: " according to the twin on Earth. This is a direct"
                 },
                 {
-                  id: "text-253",
+                  id: "text-356",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-357",
                   type: "text",
                   body: "manifestation of the relativity of simultaneity. "
                 }
@@ -2544,17 +3064,27 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-254",
+                  id: "text-358",
                   type: "text",
                   body: "We can now use the spatial part of the Lorentz transformation to determine the diameter"
                 },
                 {
-                  id: "text-255",
+                  id: "text-359",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-360",
                   type: "text",
                   body: "measured in the rocket frame. Taking the difference between the transformed positions"
                 },
                 {
-                  id: "text-256",
+                  id: "text-361",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-362",
                   type: "text",
                   body: "of the two events gives"
                 }
@@ -2571,7 +3101,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-257",
+                  id: "text-363",
                   type: "text",
                   body: "Using "
                 },
@@ -2581,7 +3111,7 @@ export const latexDocument = {
                   body: "eq:earth_diameter_relativity_simultaneity"
                 },
                 {
-                  id: "text-258",
+                  id: "text-364",
                   type: "text",
                   body: ", we obtain"
                 }
@@ -2599,22 +3129,37 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-259",
+                  id: "text-365",
                   type: "text",
                   body: "The twin on the rocket therefore measures a smaller longitudinal diameter for the"
                 },
                 {
-                  id: "text-260",
+                  id: "text-366",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-367",
                   type: "text",
                   body: "Earth than the twin at rest with respect to it. More generally, the separation between"
                 },
                 {
-                  id: "text-261",
+                  id: "text-368",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-369",
                   type: "text",
                   body: "two points that are at rest in the Earth frame and separated along the direction of"
                 },
                 {
-                  id: "text-262",
+                  id: "text-370",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-371",
                   type: "text",
                   body: "relative motion is measured in the rocket frame to be"
                 }
@@ -2632,7 +3177,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-263",
+                  id: "text-372",
                   type: "text",
                   body: "In particular, Earth and planet "
                 },
@@ -2643,12 +3188,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>"
                 },
                 {
-                  id: "text-264",
+                  id: "text-373",
                   type: "text",
-                  body: "are both at rest in the Earth frame and are"
+                  body: " are both at rest in the Earth frame and are"
                 },
                 {
-                  id: "text-265",
+                  id: "text-374",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-375",
                   type: "text",
                   body: "separated by the distance "
                 },
@@ -2659,12 +3209,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span></span>"
                 },
                 {
-                  id: "text-266",
+                  id: "text-376",
                   type: "text",
                   body: ". The twin on the rocket therefore measures their"
                 },
                 {
-                  id: "text-267",
+                  id: "text-377",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-378",
                   type: "text",
                   body: "separation to be "
                 },
@@ -2675,7 +3230,7 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-268",
+                  id: "text-379",
                   type: "text",
                   body: ". "
                 }
@@ -2686,12 +3241,17 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-269",
+                  id: "text-380",
                   type: "text",
                   body: "The following figure summarizes the outbound journey in both reference frames. In the Earth"
                 },
                 {
-                  id: "text-270",
+                  id: "text-381",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-382",
                   type: "text",
                   body: "frame, Earth and planet "
                 },
@@ -2702,9 +3262,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>"
                 },
                 {
-                  id: "text-271",
+                  id: "text-383",
                   type: "text",
-                  body: "are at rest and separated by the distance "
+                  body: " are at rest and separated by the distance "
                 },
                 {
                   id: "inlineMath-103",
@@ -2713,12 +3273,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span></span>"
                 },
                 {
-                  id: "text-272",
+                  id: "text-384",
                   type: "text",
                   body: ", while the"
                 },
                 {
-                  id: "text-273",
+                  id: "text-385",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-386",
                   type: "text",
                   body: "rocket moves between them with speed "
                 },
@@ -2729,12 +3294,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span></span></span></span>"
                 },
                 {
-                  id: "text-274",
+                  id: "text-387",
                   type: "text",
                   body: ". In the rocket frame, the rocket is at rest,"
                 },
                 {
-                  id: "text-275",
+                  id: "text-388",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-389",
                   type: "text",
                   body: "while Earth and planet "
                 },
@@ -2745,9 +3315,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>"
                 },
                 {
-                  id: "text-276",
+                  id: "text-390",
                   type: "text",
-                  body: "move with the same speed "
+                  body: " move with the same speed "
                 },
                 {
                   id: "inlineMath-106",
@@ -2756,12 +3326,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span></span></span></span>"
                 },
                 {
-                  id: "text-277",
+                  id: "text-391",
                   type: "text",
-                  body: "in the opposite direction, but"
+                  body: " in the opposite direction, but"
                 },
                 {
-                  id: "text-278",
+                  id: "text-392",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-393",
                   type: "text",
                   body: "their separation is reduced to "
                 },
@@ -2772,12 +3347,18 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span><span class=\"mord\">/</span><span class=\"mord mathnormal\" style=\"margin-right:0.0556em;\">γ</span></span></span></span>"
                 },
                 {
-                  id: "text-279",
+                  id: "text-394",
                   type: "text",
                   body: ". "
-                },
+                }
+              ]
+            },
+            {
+              id: "paragraph-65",
+              type: "paragraph",
+              children: [
                 {
-                  id: "text-280",
+                  id: "text-395",
                   type: "text",
                   body: "In the rocket-frame diagram, the rocket is shown midway between Earth and planet "
                 },
@@ -2788,12 +3369,22 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>"
                 },
                 {
-                  id: "text-281",
+                  id: "text-396",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-397",
                   type: "text",
                   body: "only for visual convenience. This midpoint has no special physical significance. At the"
                 },
                 {
-                  id: "text-282",
+                  id: "text-398",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-399",
                   type: "text",
                   body: "instant represented in the figure,"
                 }
@@ -2806,11 +3397,11 @@ export const latexDocument = {
               html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0489em;vertical-align:-0.247em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-2.453em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathrm mtight\">E</span></span></span></span><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:2.1149em;vertical-align:-0.686em;\"></span><span class=\"mord\">−</span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.4289em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\">2</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:2em;\"></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-2.453em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">G</span></span></span><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:2.1149em;vertical-align:-0.686em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.4289em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\">2</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mpunct\">,</span></span></span></span></span>"
             },
             {
-              id: "paragraph-65",
+              id: "paragraph-66",
               type: "paragraph",
               children: [
                 {
-                  id: "text-283",
+                  id: "text-400",
                   type: "text",
                   body: "with"
                 }
@@ -2823,13 +3414,18 @@ export const latexDocument = {
               html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8019em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:2.2519em;vertical-align:-0.8804em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3714em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0556em;\">γ</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8804em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mord\">.</span></span></span></span></span>"
             },
             {
-              id: "paragraph-66",
+              id: "paragraph-67",
               type: "paragraph",
               children: [
                 {
-                  id: "text-284",
+                  id: "text-401",
                   type: "text",
                   body: "At any other instant during the cruise, the individual coordinates of Earth and planet"
+                },
+                {
+                  id: "text-402",
+                  type: "text",
+                  body: " "
                 },
                 {
                   id: "inlineMath-109",
@@ -2838,12 +3434,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>"
                 },
                 {
-                  id: "text-285",
+                  id: "text-403",
                   type: "text",
-                  body: "would be different, while their simultaneous separation in the rocket frame would"
+                  body: " would be different, while their simultaneous separation in the rocket frame would"
                 },
                 {
-                  id: "text-286",
+                  id: "text-404",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-405",
                   type: "text",
                   body: "remain equal to "
                 },
@@ -2854,7 +3455,7 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-287",
+                  id: "text-406",
                   type: "text",
                   body: "."
                 }
@@ -2868,7 +3469,7 @@ export const latexDocument = {
               height: 1026,
               caption: [
                 {
-                  id: "text-288",
+                  id: "text-407",
                   type: "text",
                   body: "Outbound trip: Earth frame "
                 },
@@ -2879,9 +3480,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">F</span></span></span></span>"
                 },
                 {
-                  id: "text-289",
+                  id: "text-408",
                   type: "text",
-                  body: "versus the outbound rocket frame "
+                  body: " versus the outbound rocket frame "
                 },
                 {
                   id: "inlineMath-112",
@@ -2890,7 +3491,7 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.9989em;vertical-align:-0.247em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">F</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-2.453em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathrm mtight\">out</span></span></span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-290",
+                  id: "text-409",
                   type: "text",
                   body: "."
                 }
@@ -2898,11 +3499,11 @@ export const latexDocument = {
               label: "fig:twin_outbound_frames"
             },
             {
-              id: "paragraph-67",
+              id: "paragraph-68",
               type: "paragraph",
               children: [
                 {
-                  id: "text-291",
+                  id: "text-410",
                   type: "text",
                   body: "As shown previously in "
                 },
@@ -2912,12 +3513,17 @@ export const latexDocument = {
                   body: "eq:reciprocal_relative_velocities"
                 },
                 {
-                  id: "text-292",
+                  id: "text-411",
                   type: "text",
                   body: ", if the rocket moves"
                 },
                 {
-                  id: "text-293",
+                  id: "text-412",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-413",
                   type: "text",
                   body: "with velocity "
                 },
@@ -2928,9 +3534,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">v</span></span></span></span></span>"
                 },
                 {
-                  id: "text-294",
+                  id: "text-414",
                   type: "text",
-                  body: "relative to Earth, then Earth and planet "
+                  body: " relative to Earth, then Earth and planet "
                 },
                 {
                   id: "inlineMath-114",
@@ -2939,9 +3545,14 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>"
                 },
                 {
-                  id: "text-295",
+                  id: "text-415",
                   type: "text",
-                  body: "move with velocity"
+                  body: " move with velocity"
+                },
+                {
+                  id: "text-416",
+                  type: "text",
+                  body: " "
                 },
                 {
                   id: "inlineMath-115",
@@ -2950,12 +3561,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">−</span><span class=\"mord text\"><span class=\"mord textbf\">v</span></span></span></span></span>"
                 },
                 {
-                  id: "text-296",
+                  id: "text-417",
                   type: "text",
-                  body: "relative to the rocket. The magnitude of the relative velocity is therefore"
+                  body: " relative to the rocket. The magnitude of the relative velocity is therefore"
                 },
                 {
-                  id: "text-297",
+                  id: "text-418",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-419",
                   type: "text",
                   body: "the same in both descriptions and is equal to "
                 },
@@ -2966,12 +3582,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span></span></span></span>"
                 },
                 {
-                  id: "text-298",
+                  id: "text-420",
                   type: "text",
                   body: ". Consequently, according to the"
                 },
                 {
-                  id: "text-299",
+                  id: "text-421",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-422",
                   type: "text",
                   body: "rocket twin, planet "
                 },
@@ -2982,9 +3603,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>"
                 },
                 {
-                  id: "text-300",
+                  id: "text-423",
                   type: "text",
-                  body: "approaches him with speed "
+                  body: " approaches him with speed "
                 },
                 {
                   id: "inlineMath-118",
@@ -2993,12 +3614,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span></span></span></span>"
                 },
                 {
-                  id: "text-301",
+                  id: "text-424",
                   type: "text",
                   body: ", and the time required for the"
                 },
                 {
-                  id: "text-302",
+                  id: "text-425",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-426",
                   type: "text",
                   body: "planet to reach him is"
                 }
@@ -3012,13 +3638,18 @@ export const latexDocument = {
               html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:2.3093em;vertical-align:-0.9047em;\"></span><span class=\"mord\"><span class=\"mtable\"><span class=\"col-align-c\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.4047em;\"><span style=\"top:-3.4047em;\"><span class=\"pstrut\" style=\"height:3.4289em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-2.453em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.4289em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3214em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0556em;\">γ</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8804em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3714em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mord\">.</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.9047em;\"><span></span></span></span></span></span></span></span></span></span></span></span>"
             },
             {
-              id: "paragraph-68",
+              id: "paragraph-69",
               type: "paragraph",
               children: [
                 {
-                  id: "text-303",
+                  id: "text-427",
                   type: "text",
                   body: "This is identical to the result obtained directly from the Lorentz transformation in"
+                },
+                {
+                  id: "text-428",
+                  type: "text",
+                  body: " "
                 },
                 {
                   id: "eqref-4",
@@ -3026,7 +3657,7 @@ export const latexDocument = {
                   body: "eq:outbound_time_rocket_lorentz"
                 },
                 {
-                  id: "text-304",
+                  id: "text-429",
                   type: "text",
                   body: ". Since "
                 },
@@ -3037,9 +3668,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7335em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0556em;\">γ</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">&gt;</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">1</span></span></span></span>"
                 },
                 {
-                  id: "text-305",
+                  id: "text-430",
                   type: "text",
-                  body: "for "
+                  body: " for "
                 },
                 {
                   id: "inlineMath-120",
@@ -3048,7 +3679,7 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5782em;vertical-align:-0.0391em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">&gt;</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0</span></span></span></span>"
                 },
                 {
-                  id: "text-306",
+                  id: "text-431",
                   type: "text",
                   body: ", we also have"
                 }
@@ -3061,23 +3692,38 @@ export const latexDocument = {
               html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.2em;vertical-align:-0.35em;\"></span><span class=\"mord\"><span class=\"mtable\"><span class=\"col-align-c\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.85em;\"><span style=\"top:-3.01em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-2.453em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">&lt;</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord\">.</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.35em;\"><span></span></span></span></span></span></span></span></span></span></span></span>"
             },
             {
-              id: "paragraph-69",
+              id: "paragraph-70",
               type: "paragraph",
               children: [
                 {
-                  id: "text-307",
+                  id: "text-432",
                   type: "text",
                   body: "Thus, the two twins agree on the events marking the beginning and the end of this"
                 },
                 {
-                  id: "text-308",
+                  id: "text-433",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-434",
                   type: "text",
                   body: "portion of the journey, but they assign different spatial distances and different"
                 },
                 {
-                  id: "text-309",
+                  id: "text-435",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-436",
                   type: "text",
                   body: "elapsed times to it. For the twin on the rocket, the distance between Earth and planet"
+                },
+                {
+                  id: "text-437",
+                  type: "text",
+                  body: " "
                 },
                 {
                   id: "inlineMath-121",
@@ -3086,12 +3732,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>"
                 },
                 {
-                  id: "text-310",
+                  id: "text-438",
                   type: "text",
-                  body: "is shorter, and correspondingly less time elapses before the rocket and the planet"
+                  body: " is shorter, and correspondingly less time elapses before the rocket and the planet"
                 },
                 {
-                  id: "text-311",
+                  id: "text-439",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-440",
                   type: "text",
                   body: "meet."
                 }
@@ -3111,18 +3762,18 @@ export const latexDocument = {
           type: "subsection",
           title: [
             {
-              id: "text-312",
+              id: "text-441",
               type: "text",
               body: "Trip Back to Earth"
             }
           ],
           content: [
             {
-              id: "paragraph-70",
+              id: "paragraph-71",
               type: "paragraph",
               children: [
                 {
-                  id: "text-313",
+                  id: "text-442",
                   type: "text",
                   body: "Once the twin on the rocket reaches planet "
                 },
@@ -3133,33 +3784,48 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>"
                 },
                 {
-                  id: "text-314",
+                  id: "text-443",
                   type: "text",
                   body: ", he reverses his motion and begins the"
                 },
                 {
-                  id: "text-315",
+                  id: "text-444",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-445",
                   type: "text",
                   body: "journey back to Earth. As in the initial acceleration phase, we assume that the time"
                 },
                 {
-                  id: "text-316",
+                  id: "text-446",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-447",
                   type: "text",
                   body: "required to reverse the motion is very small compared with the duration of the journey,"
                 },
                 {
-                  id: "text-317",
+                  id: "text-448",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-449",
                   type: "text",
                   body: "and we neglect both this time interval and the corresponding displacement. "
                 }
               ]
             },
             {
-              id: "paragraph-71",
+              id: "paragraph-72",
               type: "paragraph",
               children: [
                 {
-                  id: "text-318",
+                  id: "text-450",
                   type: "text",
                   body: "We denote by "
                 },
@@ -3170,12 +3836,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">P</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>"
                 },
                 {
-                  id: "text-319",
+                  id: "text-451",
                   type: "text",
-                  body: "the event at which the traveling twin reunites with the twin on Earth."
+                  body: " the event at which the traveling twin reunites with the twin on Earth."
                 },
                 {
-                  id: "text-320",
+                  id: "text-452",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-453",
                   type: "text",
                   body: "For the return cruise, let "
                 },
@@ -3186,12 +3857,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0164em;vertical-align:-0.2645em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">F</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-2.4355em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathrm mtight\">in</span></span></span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2645em;\"><span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-321",
+                  id: "text-454",
                   type: "text",
-                  body: "denote the inertial frame comoving with the"
+                  body: " denote the inertial frame comoving with the"
                 },
                 {
-                  id: "text-322",
+                  id: "text-455",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-456",
                   type: "text",
                   body: "rocket. The rocket moves with velocity "
                 },
@@ -3202,9 +3878,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">−</span><span class=\"mord text\"><span class=\"mord textbf\">v</span></span></span></span></span>"
                 },
                 {
-                  id: "text-323",
+                  id: "text-457",
                   type: "text",
-                  body: "relative to the Earth frame "
+                  body: " relative to the Earth frame "
                 },
                 {
                   id: "inlineMath-126",
@@ -3213,12 +3889,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">F</span></span></span></span>"
                 },
                 {
-                  id: "text-324",
+                  id: "text-458",
                   type: "text",
                   body: ", while Earth"
                 },
                 {
-                  id: "text-325",
+                  id: "text-459",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-460",
                   type: "text",
                   body: "and planet "
                 },
@@ -3229,9 +3910,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>"
                 },
                 {
-                  id: "text-326",
+                  id: "text-461",
                   type: "text",
-                  body: "move with velocity "
+                  body: " move with velocity "
                 },
                 {
                   id: "inlineMath-128",
@@ -3240,9 +3921,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">+</span><span class=\"mord text\"><span class=\"mord textbf\">v</span></span></span></span></span>"
                 },
                 {
-                  id: "text-327",
+                  id: "text-462",
                   type: "text",
-                  body: "relative to "
+                  body: " relative to "
                 },
                 {
                   id: "inlineMath-129",
@@ -3251,12 +3932,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0164em;vertical-align:-0.2645em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">F</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-2.4355em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathrm mtight\">in</span></span></span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2645em;\"><span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-328",
+                  id: "text-463",
                   type: "text",
                   body: ". The magnitude of"
                 },
                 {
-                  id: "text-329",
+                  id: "text-464",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-465",
                   type: "text",
                   body: "the relative velocity is therefore again "
                 },
@@ -3267,12 +3953,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span></span></span></span>"
                 },
                 {
-                  id: "text-330",
+                  id: "text-466",
                   type: "text",
                   body: ". Moreover, for the same reason discussed in"
                 },
                 {
-                  id: "text-331",
+                  id: "text-467",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-468",
                   type: "text",
                   body: "the previous section, the distance between Earth and planet "
                 },
@@ -3283,12 +3974,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>"
                 },
                 {
-                  id: "text-332",
+                  id: "text-469",
                   type: "text",
-                  body: "measured in the inbound"
+                  body: " measured in the inbound"
                 },
                 {
-                  id: "text-333",
+                  id: "text-470",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-471",
                   type: "text",
                   body: "rocket frame is"
                 }
@@ -3301,16 +3997,21 @@ export const latexDocument = {
               html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8019em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:2.2519em;vertical-align:-0.8804em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3714em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0556em;\">γ</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8804em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mord\">.</span></span></span></span></span>"
             },
             {
-              id: "paragraph-72",
+              id: "paragraph-73",
               type: "paragraph",
               children: [
                 {
-                  id: "text-334",
+                  id: "text-472",
                   type: "text",
                   body: "Consequently, the elapsed time measured by the twin on the rocket during the return"
                 },
                 {
-                  id: "text-335",
+                  id: "text-473",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-474",
                   type: "text",
                   body: "journey is"
                 }
@@ -3324,11 +4025,11 @@ export const latexDocument = {
               html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:2.3093em;vertical-align:-0.9047em;\"></span><span class=\"mord\"><span class=\"mtable\"><span class=\"col-align-c\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.4047em;\"><span style=\"top:-3.4047em;\"><span class=\"pstrut\" style=\"height:3.4289em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-2.453em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.4289em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3214em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0556em;\">γ</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8804em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3714em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mord\">.</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.9047em;\"><span></span></span></span></span></span></span></span></span></span></span></span>"
             },
             {
-              id: "paragraph-73",
+              id: "paragraph-74",
               type: "paragraph",
               children: [
                 {
-                  id: "text-336",
+                  id: "text-475",
                   type: "text",
                   body: "For the twin on Earth, on the other hand, the rocket travels the distance "
                 },
@@ -3339,12 +4040,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span></span>"
                 },
                 {
-                  id: "text-337",
+                  id: "text-476",
                   type: "text",
-                  body: "from"
+                  body: " from"
                 },
                 {
-                  id: "text-338",
+                  id: "text-477",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-478",
                   type: "text",
                   body: "planet "
                 },
@@ -3355,9 +4061,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>"
                 },
                 {
-                  id: "text-339",
+                  id: "text-479",
                   type: "text",
-                  body: "back to Earth with speed "
+                  body: " back to Earth with speed "
                 },
                 {
                   id: "inlineMath-134",
@@ -3366,12 +4072,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span></span></span></span>"
                 },
                 {
-                  id: "text-340",
+                  id: "text-480",
                   type: "text",
                   body: ". The elapsed time for the return journey is"
                 },
                 {
-                  id: "text-341",
+                  id: "text-481",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-482",
                   type: "text",
                   body: "therefore"
                 }
@@ -3385,16 +4096,21 @@ export const latexDocument = {
               html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:2.0574em;vertical-align:-0.7787em;\"></span><span class=\"mord\"><span class=\"mtable\"><span class=\"col-align-c\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.2787em;\"><span style=\"top:-3.2787em;\"><span class=\"pstrut\" style=\"height:3.3714em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3714em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mord\">.</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7787em;\"><span></span></span></span></span></span></span></span></span></span></span></span>"
             },
             {
-              id: "paragraph-74",
+              id: "paragraph-75",
               type: "paragraph",
               children: [
                 {
-                  id: "text-342",
+                  id: "text-483",
                   type: "text",
                   body: "The outbound and return portions of the journey have the same duration in each"
                 },
                 {
-                  id: "text-343",
+                  id: "text-484",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-485",
                   type: "text",
                   body: "corresponding description,"
                 }
@@ -3407,21 +4123,31 @@ export const latexDocument = {
               html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7651em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0489em;vertical-align:-0.247em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:2em;\"></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-2.453em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0489em;vertical-align:-0.247em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-2.453em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span><span class=\"mord\">.</span></span></span></span></span>"
             },
             {
-              id: "paragraph-75",
+              id: "paragraph-76",
               type: "paragraph",
               children: [
                 {
-                  id: "text-344",
+                  id: "text-486",
                   type: "text",
                   body: "Within the approximation that the launch and turnaround durations and displacements are"
                 },
                 {
-                  id: "text-345",
+                  id: "text-487",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-488",
                   type: "text",
                   body: "negligible compared with the two cruise portions, the total elapsed time measured by the"
                 },
                 {
-                  id: "text-346",
+                  id: "text-489",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-490",
                   type: "text",
                   body: "clock carried by the rocket is therefore"
                 }
@@ -3435,11 +4161,11 @@ export const latexDocument = {
               html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:3.7519em;vertical-align:-1.6259em;\"></span><span class=\"mord\"><span class=\"mtable\"><span class=\"col-align-c\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:2.1259em;\"><span style=\"top:-4.1259em;\"><span class=\"pstrut\" style=\"height:4.1259em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mtable\"><span class=\"col-align-r\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:2.1259em;\"><span style=\"top:-4.6574em;\"><span class=\"pstrut\" style=\"height:3.3714em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">T</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span><span style=\"top:-2.6259em;\"><span class=\"pstrut\" style=\"height:3.3714em;\"></span><span class=\"mord\"></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.6259em;\"><span></span></span></span></span></span><span class=\"col-align-l\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:2.1259em;\"><span style=\"top:-4.6574em;\"><span class=\"pstrut\" style=\"height:3.3714em;\"></span><span class=\"mord\"><span class=\"mord\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-2.453em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-2.453em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span></span></span><span style=\"top:-2.6259em;\"><span class=\"pstrut\" style=\"height:3.3714em;\"></span><span class=\"mord\"><span class=\"mord\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord\">2</span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3214em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0556em;\">γ</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8804em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3714em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mpunct\">,</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.6259em;\"><span></span></span></span></span></span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.6259em;\"><span></span></span></span></span></span></span></span></span></span></span></span>"
             },
             {
-              id: "paragraph-76",
+              id: "paragraph-77",
               type: "paragraph",
               children: [
                 {
-                  id: "text-347",
+                  id: "text-491",
                   type: "text",
                   body: "whereas the total elapsed time measured by the clock on Earth is"
                 }
@@ -3453,11 +4179,11 @@ export const latexDocument = {
               html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:3.5574em;vertical-align:-1.5287em;\"></span><span class=\"mord\"><span class=\"mtable\"><span class=\"col-align-c\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:2.0287em;\"><span style=\"top:-4.0287em;\"><span class=\"pstrut\" style=\"height:4.0287em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mtable\"><span class=\"col-align-r\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:2.0287em;\"><span style=\"top:-4.5602em;\"><span class=\"pstrut\" style=\"height:3.3714em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">T</span></span></span><span style=\"top:-2.5287em;\"><span class=\"pstrut\" style=\"height:3.3714em;\"></span><span class=\"mord\"></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.5287em;\"><span></span></span></span></span></span><span class=\"col-align-l\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:2.0287em;\"><span style=\"top:-4.5602em;\"><span class=\"pstrut\" style=\"height:3.3714em;\"></span><span class=\"mord\"><span class=\"mord\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span><span style=\"top:-2.5287em;\"><span class=\"pstrut\" style=\"height:3.3714em;\"></span><span class=\"mord\"><span class=\"mord\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord\">2</span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3714em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mord\">.</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.5287em;\"><span></span></span></span></span></span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.5287em;\"><span></span></span></span></span></span></span></span></span></span></span></span>"
             },
             {
-              id: "paragraph-77",
+              id: "paragraph-78",
               type: "paragraph",
               children: [
                 {
-                  id: "text-348",
+                  id: "text-492",
                   type: "text",
                   body: "Since "
                 },
@@ -3468,9 +4194,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7335em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0556em;\">γ</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">&gt;</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">1</span></span></span></span>"
                 },
                 {
-                  id: "text-349",
+                  id: "text-493",
                   type: "text",
-                  body: "for any nonzero relative velocity,"
+                  body: " for any nonzero relative velocity,"
                 }
               ]
             },
@@ -3482,11 +4208,11 @@ export const latexDocument = {
               html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.2em;vertical-align:-0.35em;\"></span><span class=\"mord\"><span class=\"mtable\"><span class=\"col-align-c\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.85em;\"><span style=\"top:-3.01em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">T</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">&lt;</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">T</span><span class=\"mord\">.</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.35em;\"><span></span></span></span></span></span></span></span></span></span></span></span>"
             },
             {
-              id: "paragraph-78",
+              id: "paragraph-79",
               type: "paragraph",
               children: [
                 {
-                  id: "text-350",
+                  id: "text-494",
                   type: "text",
                   body: "Thus, at the reunion event "
                 },
@@ -3497,22 +4223,37 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">P</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>"
                 },
                 {
-                  id: "text-351",
+                  id: "text-495",
                   type: "text",
-                  body: "on Earth, the clock carried by the traveling twin"
+                  body: " on Earth, the clock carried by the traveling twin"
                 },
                 {
-                  id: "text-352",
+                  id: "text-496",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-497",
                   type: "text",
                   body: "records a smaller elapsed time than the clock that remained on Earth. Since each twin's"
                 },
                 {
-                  id: "text-353",
+                  id: "text-498",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-499",
                   type: "text",
                   body: "clock measures the time experienced by that twin, the traveling twin is younger when"
                 },
                 {
-                  id: "text-354",
+                  id: "text-500",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-501",
                   type: "text",
                   body: "the two are reunited. The quantity "
                 },
@@ -3523,17 +4264,27 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">T</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-355",
+                  id: "text-502",
                   type: "text",
-                  body: "is the elapsed time recorded by the same continuous"
+                  body: " is the elapsed time recorded by the same continuous"
                 },
                 {
-                  id: "text-356",
+                  id: "text-503",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-504",
                   type: "text",
                   body: "onboard clock throughout the entire journey; it is not a coordinate time belonging to one"
                 },
                 {
-                  id: "text-357",
+                  id: "text-505",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-506",
                   type: "text",
                   body: "global inertial frame "
                 },
@@ -3544,32 +4295,58 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">F</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-358",
+                  id: "text-507",
                   type: "text",
                   body: "."
-                },
+                }
+              ]
+            },
+            {
+              id: "paragraph-80",
+              type: "paragraph",
+              children: [
                 {
-                  id: "text-359",
+                  id: "text-508",
                   type: "text",
                   body: "The complete journey is summarized in the following figure. The upper row"
                 },
                 {
-                  id: "text-360",
+                  id: "text-509",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-510",
                   type: "text",
                   body: "represents the motion in the Earth frame, while the lower row represents the corresponding"
                 },
                 {
-                  id: "text-361",
+                  id: "text-511",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-512",
                   type: "text",
                   body: "description during the constant-velocity portions of the rocket's motion. The short"
                 },
                 {
-                  id: "text-362",
+                  id: "text-513",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-514",
                   type: "text",
                   body: "turnaround interval is shown explicitly but is assumed to be negligible compared with the"
                 },
                 {
-                  id: "text-363",
+                  id: "text-515",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-516",
                   type: "text",
                   body: "duration of the two cruise portions. "
                 }
@@ -3583,7 +4360,7 @@ export const latexDocument = {
               height: 1024,
               caption: [
                 {
-                  id: "text-364",
+                  id: "text-517",
                   type: "text",
                   body: "Complete journey in the Earth frame "
                 },
@@ -3594,12 +4371,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">F</span></span></span></span>"
                 },
                 {
-                  id: "text-365",
+                  id: "text-518",
                   type: "text",
-                  body: "and in the corresponding outbound and"
+                  body: " and in the corresponding outbound and"
                 },
                 {
-                  id: "text-366",
+                  id: "text-519",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-520",
                   type: "text",
                   body: "inbound rocket frames "
                 },
@@ -3610,9 +4392,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.9989em;vertical-align:-0.247em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">F</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-2.453em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathrm mtight\">out</span></span></span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-367",
+                  id: "text-521",
                   type: "text",
-                  body: "and "
+                  body: " and "
                 },
                 {
                   id: "inlineMath-141",
@@ -3621,7 +4403,7 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0164em;vertical-align:-0.2645em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">F</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-2.4355em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathrm mtight\">in</span></span></span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2645em;\"><span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-368",
+                  id: "text-522",
                   type: "text",
                   body: "."
                 }
@@ -3629,16 +4411,21 @@ export const latexDocument = {
               label: "fig:twin_complete_journey"
             },
             {
-              id: "paragraph-79",
+              id: "paragraph-81",
               type: "paragraph",
               children: [
                 {
-                  id: "text-369",
+                  id: "text-523",
                   type: "text",
                   body: "As in the previous figure, the precise positions shown during the cruise are schematic."
                 },
                 {
-                  id: "text-370",
+                  id: "text-524",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-525",
                   type: "text",
                   body: "What is physically relevant is that Earth and planet "
                 },
@@ -3649,9 +4436,14 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>"
                 },
                 {
-                  id: "text-371",
+                  id: "text-526",
                   type: "text",
-                  body: "are separated by the distance"
+                  body: " are separated by the distance"
+                },
+                {
+                  id: "text-527",
+                  type: "text",
+                  body: " "
                 },
                 {
                   id: "inlineMath-143",
@@ -3660,9 +4452,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span></span>"
                 },
                 {
-                  id: "text-372",
+                  id: "text-528",
                   type: "text",
-                  body: "in the Earth frame and by the contracted distance "
+                  body: " in the Earth frame and by the contracted distance "
                 },
                 {
                   id: "inlineMath-144",
@@ -3671,12 +4463,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span><span class=\"mord\">/</span><span class=\"mord mathnormal\" style=\"margin-right:0.0556em;\">γ</span></span></span></span>"
                 },
                 {
-                  id: "text-373",
+                  id: "text-529",
                   type: "text",
-                  body: "in the corresponding"
+                  body: " in the corresponding"
                 },
                 {
-                  id: "text-374",
+                  id: "text-530",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-531",
                   type: "text",
                   body: "outbound or inbound rocket frame."
                 }
@@ -3696,38 +4493,58 @@ export const latexDocument = {
           type: "subsection",
           title: [
             {
-              id: "text-375",
+              id: "text-532",
               type: "text",
               body: "Events and the Apparent Asymmetry of Time Dilation"
             }
           ],
           content: [
             {
-              id: "paragraph-80",
+              id: "paragraph-82",
               type: "paragraph",
               children: [
                 {
-                  id: "text-376",
+                  id: "text-533",
                   type: "text",
                   body: "We will now return to the question raised at the beginning of the essay and address"
                 },
                 {
-                  id: "text-377",
+                  id: "text-534",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-535",
                   type: "text",
                   body: "the apparent asymmetry in the motion of the two twins. One of the apparent"
                 },
                 {
-                  id: "text-378",
+                  id: "text-536",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-537",
                   type: "text",
                   body: "contradictions comes from the familiar statement that a clock observed from a"
                 },
                 {
-                  id: "text-379",
+                  id: "text-538",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-539",
                   type: "text",
                   body: "reference frame in which it is moving appears to run more slowly. It therefore seems"
                 },
                 {
-                  id: "text-380",
+                  id: "text-540",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-541",
                   type: "text",
                   body: "reasonable that, when the rocket reaches planet "
                 },
@@ -3738,59 +4555,89 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>"
                 },
                 {
-                  id: "text-381",
+                  id: "text-542",
                   type: "text",
                   body: ", the clock carried by the rocket"
                 },
                 {
-                  id: "text-382",
+                  id: "text-543",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-544",
                   type: "text",
                   body: "has recorded less time than the clock on Earth. By symmetry, however, we might also"
                 },
                 {
-                  id: "text-383",
+                  id: "text-545",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-546",
                   type: "text",
                   body: "expect the twin on the rocket to find that the clock on Earth has recorded less time"
                 },
                 {
-                  id: "text-384",
+                  id: "text-547",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-548",
                   type: "text",
                   body: "than his own. "
                 }
               ]
             },
             {
-              id: "paragraph-81",
+              id: "paragraph-83",
               type: "paragraph",
               children: [
                 {
-                  id: "text-385",
+                  id: "text-549",
                   type: "text",
                   body: "The resolution of this apparent contradiction requires us to be very precise about"
                 },
                 {
-                  id: "text-386",
+                  id: "text-550",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-551",
                   type: "text",
                   body: "the events being compared. The familiar formulas for time dilation do not apply to"
                 },
                 {
-                  id: "text-387",
+                  id: "text-552",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-553",
                   type: "text",
                   body: "arbitrary events: they apply to particular pairs of events selected by specific"
                 },
                 {
-                  id: "text-388",
+                  id: "text-554",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-555",
                   type: "text",
                   body: "conditions. "
                 }
               ]
             },
             {
-              id: "paragraph-82",
+              id: "paragraph-84",
               type: "paragraph",
               children: [
                 {
-                  id: "text-389",
+                  id: "text-556",
                   type: "text",
                   body: "Let us first consider the arrival of the rocket at planet "
                 },
@@ -3801,12 +4648,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>"
                 },
                 {
-                  id: "text-390",
+                  id: "text-557",
                   type: "text",
-                  body: "from the point of view"
+                  body: " from the point of view"
                 },
                 {
-                  id: "text-391",
+                  id: "text-558",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-559",
                   type: "text",
                   body: "of the twin on Earth. The arrival event is"
                 }
@@ -3819,11 +4671,11 @@ export const latexDocument = {
               html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">P</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:2em;\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:2.4em;vertical-align:-0.95em;\"></span><span class=\"minner\"><span class=\"mopen delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size3\">(</span></span><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3714em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mclose delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size3\">)</span></span></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">.</span></span></span></span></span>"
             },
             {
-              id: "paragraph-83",
+              id: "paragraph-85",
               type: "paragraph",
               children: [
                 {
-                  id: "text-392",
+                  id: "text-560",
                   type: "text",
                   body: "At the same time in the Earth frame, the twin on Earth is still at the origin of "
                 },
@@ -3834,12 +4686,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">F</span></span></span></span>"
                 },
                 {
-                  id: "text-393",
+                  id: "text-561",
                   type: "text",
                   body: "."
                 },
                 {
-                  id: "text-394",
+                  id: "text-562",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-563",
                   type: "text",
                   body: "We therefore consider the event"
                 }
@@ -3852,11 +4709,11 @@ export const latexDocument = {
               html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">Q</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:2em;\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:2.4em;vertical-align:-0.95em;\"></span><span class=\"minner\"><span class=\"mopen delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size3\">(</span></span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3714em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mclose delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size3\">)</span></span></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">.</span></span></span></span></span>"
             },
             {
-              id: "paragraph-84",
+              id: "paragraph-86",
               type: "paragraph",
               children: [
                 {
-                  id: "text-395",
+                  id: "text-564",
                   type: "text",
                   body: "Thus, in the Earth frame, the two events"
                 }
@@ -3869,11 +4726,11 @@ export const latexDocument = {
               html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">P</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:2em;\"></span><span class=\"mord text\"><span class=\"mord\">and</span></span><span class=\"mspace\" style=\"margin-right:2em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">Q</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span></span>"
             },
             {
-              id: "paragraph-85",
+              id: "paragraph-87",
               type: "paragraph",
               children: [
                 {
-                  id: "text-396",
+                  id: "text-565",
                   type: "text",
                   body: "are simultaneous. The first occurs at planet "
                 },
@@ -3884,17 +4741,27 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>"
                 },
                 {
-                  id: "text-397",
+                  id: "text-566",
                   type: "text",
                   body: ", while the second occurs at the"
                 },
                 {
-                  id: "text-398",
+                  id: "text-567",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-568",
                   type: "text",
                   body: "position of the twin on Earth. In this description, the Earth twin is at rest and his"
                 },
                 {
-                  id: "text-399",
+                  id: "text-569",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-570",
                   type: "text",
                   body: "position remains fixed at "
                 },
@@ -3905,18 +4772,18 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0</span></span></span></span>"
                 },
                 {
-                  id: "text-400",
+                  id: "text-571",
                   type: "text",
                   body: ". "
                 }
               ]
             },
             {
-              id: "paragraph-86",
+              id: "paragraph-88",
               type: "paragraph",
               children: [
                 {
-                  id: "text-401",
+                  id: "text-572",
                   type: "text",
                   body: "Let us now describe the same arrival event "
                 },
@@ -3927,9 +4794,14 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">P</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-402",
+                  id: "text-573",
                   type: "text",
-                  body: "from the outbound rocket frame"
+                  body: " from the outbound rocket frame"
+                },
+                {
+                  id: "text-574",
+                  type: "text",
+                  body: " "
                 },
                 {
                   id: "inlineMath-151",
@@ -3938,7 +4810,7 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.9989em;vertical-align:-0.247em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">F</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-2.453em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathrm mtight\">out</span></span></span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-403",
+                  id: "text-575",
                   type: "text",
                   body: ". Its coordinates are"
                 }
@@ -3951,11 +4823,11 @@ export const latexDocument = {
               html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">P</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:2em;\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0519em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:2.4em;vertical-align:-0.95em;\"></span><span class=\"minner\"><span class=\"mopen delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size3\">(</span></span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3714em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0556em;\">γ</span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8804em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mclose delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size3\">)</span></span></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">.</span></span></span></span></span>"
             },
             {
-              id: "paragraph-87",
+              id: "paragraph-89",
               type: "paragraph",
               children: [
                 {
-                  id: "text-404",
+                  id: "text-576",
                   type: "text",
                   body: "At this same time in "
                 },
@@ -3966,12 +4838,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.9989em;vertical-align:-0.247em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">F</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-2.453em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathrm mtight\">out</span></span></span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-405",
+                  id: "text-577",
                   type: "text",
                   body: ", the twin on Earth is not at a fixed spatial"
                 },
                 {
-                  id: "text-406",
+                  id: "text-578",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-579",
                   type: "text",
                   body: "position. He is moving toward the negative "
                 },
@@ -3982,9 +4859,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-407",
+                  id: "text-580",
                   type: "text",
-                  body: "direction with velocity "
+                  body: " direction with velocity "
                 },
                 {
                   id: "inlineMath-154",
@@ -3993,12 +4870,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">−</span><span class=\"mord text\"><span class=\"mord textbf\">v</span></span></span></span></span>"
                 },
                 {
-                  id: "text-408",
+                  id: "text-581",
                   type: "text",
                   body: "."
                 },
                 {
-                  id: "text-409",
+                  id: "text-582",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-583",
                   type: "text",
                   body: "Since the distance between Earth and planet "
                 },
@@ -4009,9 +4891,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>"
                 },
                 {
-                  id: "text-410",
+                  id: "text-584",
                   type: "text",
-                  body: "measured in the rocket frame is"
+                  body: " measured in the rocket frame is"
                 }
               ]
             },
@@ -4022,11 +4904,11 @@ export const latexDocument = {
               html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8019em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:2.2519em;vertical-align:-0.8804em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3714em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0556em;\">γ</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8804em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mpunct\">,</span></span></span></span></span>"
             },
             {
-              id: "paragraph-88",
+              id: "paragraph-90",
               type: "paragraph",
               children: [
                 {
-                  id: "text-411",
+                  id: "text-585",
                   type: "text",
                   body: "at the instant at which the rocket reaches planet "
                 },
@@ -4037,7 +4919,7 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>"
                 },
                 {
-                  id: "text-412",
+                  id: "text-586",
                   type: "text",
                   body: ", the Earth twin is located at"
                 }
@@ -4050,11 +4932,11 @@ export const latexDocument = {
               html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8019em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:2.2519em;vertical-align:-0.8804em;\"></span><span class=\"mord\">−</span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3714em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0556em;\">γ</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8804em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mord\">.</span></span></span></span></span>"
             },
             {
-              id: "paragraph-89",
+              id: "paragraph-91",
               type: "paragraph",
               children: [
                 {
-                  id: "text-413",
+                  id: "text-587",
                   type: "text",
                   body: "We therefore introduce the event"
                 }
@@ -4067,11 +4949,11 @@ export const latexDocument = {
               html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0077em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:2em;\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0519em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:2.4em;vertical-align:-0.95em;\"></span><span class=\"minner\"><span class=\"mopen delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size3\">(</span></span><span class=\"mord\">−</span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3714em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0556em;\">γ</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8804em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3714em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0556em;\">γ</span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8804em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mclose delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size3\">)</span></span></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">.</span></span></span></span></span>"
             },
             {
-              id: "paragraph-90",
+              id: "paragraph-92",
               type: "paragraph",
               children: [
                 {
-                  id: "text-414",
+                  id: "text-588",
                   type: "text",
                   body: "Thus, in the rocket frame, the two events"
                 }
@@ -4084,11 +4966,11 @@ export const latexDocument = {
               html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8444em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">P</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:2em;\"></span><span class=\"mord text\"><span class=\"mord\">and</span></span><span class=\"mspace\" style=\"margin-right:2em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0077em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span></span>"
             },
             {
-              id: "paragraph-91",
+              id: "paragraph-93",
               type: "paragraph",
               children: [
                 {
-                  id: "text-415",
+                  id: "text-589",
                   type: "text",
                   body: "are simultaneous. Again, one event is the arrival of the rocket at planet "
                 },
@@ -4099,33 +4981,48 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>"
                 },
                 {
-                  id: "text-416",
+                  id: "text-590",
                   type: "text",
                   body: ", while"
                 },
                 {
-                  id: "text-417",
+                  id: "text-591",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-592",
                   type: "text",
                   body: "the other occurs at the position of the twin on Earth at that same time according to"
                 },
                 {
-                  id: "text-418",
+                  id: "text-593",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-594",
                   type: "text",
                   body: "the rocket frame. The difference is that, in this description, the Earth twin is"
                 },
                 {
-                  id: "text-419",
+                  id: "text-595",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-596",
                   type: "text",
                   body: "moving rather than remaining at a fixed spatial coordinate. "
                 }
               ]
             },
             {
-              id: "paragraph-92",
+              id: "paragraph-94",
               type: "paragraph",
               children: [
                 {
-                  id: "text-420",
+                  id: "text-597",
                   type: "text",
                   body: "We can now determine how the event "
                 },
@@ -4136,12 +5033,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0077em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-421",
+                  id: "text-598",
                   type: "text",
-                  body: "is recorded in the Earth frame by using the"
+                  body: " is recorded in the Earth frame by using the"
                 },
                 {
-                  id: "text-422",
+                  id: "text-599",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-600",
                   type: "text",
                   body: "inverse Lorentz transformation,"
                 }
@@ -4154,11 +5056,11 @@ export const latexDocument = {
               html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0519em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0556em;\">γ</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0519em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:2em;\"></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.836em;vertical-align:-0.686em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0556em;\">γ</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"minner\"><span class=\"mopen delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size2\">(</span></span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.1076em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathnormal\">c</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7401em;\"><span style=\"top:-2.989em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mclose delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size2\">)</span></span></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">.</span></span></span></span></span>"
             },
             {
-              id: "paragraph-93",
+              id: "paragraph-95",
               type: "paragraph",
               children: [
                 {
-                  id: "text-423",
+                  id: "text-601",
                   type: "text",
                   body: "For the spatial coordinate we obtain"
                 }
@@ -4171,11 +5073,11 @@ export const latexDocument = {
               html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:3.9em;vertical-align:-1.7em;\"></span><span class=\"mord\"><span class=\"mtable\"><span class=\"col-align-r\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:2.2em;\"><span style=\"top:-4.2em;\"><span class=\"pstrut\" style=\"height:3.45em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0077em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span><span style=\"top:-2.11em;\"><span class=\"pstrut\" style=\"height:3.45em;\"></span><span class=\"mord\"></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.7em;\"><span></span></span></span></span></span><span class=\"col-align-l\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:2.2em;\"><span style=\"top:-4.2em;\"><span class=\"pstrut\" style=\"height:3.45em;\"></span><span class=\"mord\"><span class=\"mord\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0556em;\">γ</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"minner\"><span class=\"mopen delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size3\">(</span></span><span class=\"mord\">−</span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3714em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0556em;\">γ</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8804em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3714em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0556em;\">γ</span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8804em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mclose delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size3\">)</span></span></span></span></span><span style=\"top:-2.11em;\"><span class=\"pstrut\" style=\"height:3.45em;\"></span><span class=\"mord\"><span class=\"mord\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord\">0</span><span class=\"mpunct\">,</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.7em;\"><span></span></span></span></span></span></span></span></span></span></span></span>"
             },
             {
-              id: "paragraph-94",
+              id: "paragraph-96",
               type: "paragraph",
               children: [
                 {
-                  id: "text-424",
+                  id: "text-602",
                   type: "text",
                   body: "as expected, since "
                 },
@@ -4186,12 +5088,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0077em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-425",
+                  id: "text-603",
                   type: "text",
-                  body: "is the position of the twin on Earth. For the"
+                  body: " is the position of the twin on Earth. For the"
                 },
                 {
-                  id: "text-426",
+                  id: "text-604",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-605",
                   type: "text",
                   body: "time coordinate,"
                 }
@@ -4204,11 +5111,11 @@ export const latexDocument = {
               html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:7.693em;vertical-align:-3.5965em;\"></span><span class=\"mord\"><span class=\"mtable\"><span class=\"col-align-r\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:4.0965em;\"><span style=\"top:-6.1376em;\"><span class=\"pstrut\" style=\"height:3.4911em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0077em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span><span style=\"top:-3.3965em;\"><span class=\"pstrut\" style=\"height:3.4911em;\"></span><span class=\"mord\"></span></span><span style=\"top:-0.775em;\"><span class=\"pstrut\" style=\"height:3.4911em;\"></span><span class=\"mord\"></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:3.5965em;\"><span></span></span></span></span></span><span class=\"col-align-l\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:4.0965em;\"><span style=\"top:-6.1376em;\"><span class=\"pstrut\" style=\"height:3.4911em;\"></span><span class=\"mord\"><span class=\"mord\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0556em;\">γ</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"minner\"><span class=\"mopen delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size3\">(</span></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3714em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0556em;\">γ</span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8804em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.1076em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathnormal\">c</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7401em;\"><span style=\"top:-2.989em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3714em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0556em;\">γ</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8804em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mclose delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size3\">)</span></span></span></span></span><span style=\"top:-3.3965em;\"><span class=\"pstrut\" style=\"height:3.4911em;\"></span><span class=\"mord\"><span class=\"mord\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3714em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"minner\"><span class=\"mopen delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size3\">(</span></span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.4911em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathnormal\">c</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7401em;\"><span style=\"top:-2.989em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mclose delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size3\">)</span></span></span></span></span><span style=\"top:-0.775em;\"><span class=\"pstrut\" style=\"height:3.4911em;\"></span><span class=\"mord\"><span class=\"mord\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3714em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0556em;\">γ</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7401em;\"><span style=\"top:-2.989em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8804em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mord\">.</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:3.5965em;\"><span></span></span></span></span></span></span></span></span></span></span></span>"
             },
             {
-              id: "paragraph-95",
+              id: "paragraph-97",
               type: "paragraph",
               children: [
                 {
-                  id: "text-427",
+                  id: "text-606",
                   type: "text",
                   body: "Since the elapsed time measured by the rocket clock between departure and "
                 },
@@ -4219,9 +5126,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">P</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-428",
+                  id: "text-607",
                   type: "text",
-                  body: "is"
+                  body: " is"
                 }
               ]
             },
@@ -4232,11 +5139,11 @@ export const latexDocument = {
               html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0489em;vertical-align:-0.247em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-2.453em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:2.2519em;vertical-align:-0.8804em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3714em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0556em;\">γ</span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8804em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mpunct\">,</span></span></span></span></span>"
             },
             {
-              id: "paragraph-96",
+              id: "paragraph-98",
               type: "paragraph",
               children: [
                 {
-                  id: "text-429",
+                  id: "text-608",
                   type: "text",
                   body: "we may equivalently write"
                 }
@@ -4249,37 +5156,52 @@ export const latexDocument = {
               html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0077em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:2.3093em;vertical-align:-0.8804em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.4289em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0556em;\">γ</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-2.4519em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2481em;\"><span></span></span></span></span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8804em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mord\">.</span></span></span></span></span>"
             },
             {
-              id: "paragraph-97",
+              id: "paragraph-99",
               type: "paragraph",
               children: [
                 {
-                  id: "text-430",
+                  id: "text-609",
                   type: "text",
                   body: "We therefore recover the familiar reciprocal time-dilation result: according to the"
                 },
                 {
-                  id: "text-431",
+                  id: "text-610",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-611",
                   type: "text",
                   body: "outbound rocket frame, the clock on Earth has advanced by less than the clock carried"
                 },
                 {
-                  id: "text-432",
+                  id: "text-612",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-613",
                   type: "text",
                   body: "by the rocket. "
                 }
               ]
             },
             {
-              id: "paragraph-98",
+              id: "paragraph-100",
               type: "paragraph",
               children: [
                 {
-                  id: "text-433",
+                  id: "text-614",
                   type: "text",
                   body: "There is nevertheless no contradiction with the result obtained previously. The"
                 },
                 {
-                  id: "text-434",
+                  id: "text-615",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-616",
                   type: "text",
                   body: "Earth event "
                 },
@@ -4290,9 +5212,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">Q</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-435",
+                  id: "text-617",
                   type: "text",
-                  body: "used in the Earth-frame description and the Earth event "
+                  body: " used in the Earth-frame description and the Earth event "
                 },
                 {
                   id: "inlineMath-162",
@@ -4301,12 +5223,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0077em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-436",
+                  id: "text-618",
                   type: "text",
-                  body: "used"
+                  body: " used"
                 },
                 {
-                  id: "text-437",
+                  id: "text-619",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-620",
                   type: "text",
                   body: "in the rocket-frame description are not the same event. Indeed,"
                 }
@@ -4319,11 +5246,11 @@ export const latexDocument = {
               html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\">Q</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:2.0574em;vertical-align:-0.686em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3714em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:2em;\"></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0077em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:2.2519em;vertical-align:-0.8804em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3714em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0556em;\">γ</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7401em;\"><span style=\"top:-2.989em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8804em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mord\">.</span></span></span></span></span>"
             },
             {
-              id: "paragraph-99",
+              id: "paragraph-101",
               type: "paragraph",
               children: [
                 {
-                  id: "text-438",
+                  id: "text-621",
                   type: "text",
                   body: "Thus,"
                 }
@@ -4336,11 +5263,11 @@ export const latexDocument = {
               html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">Q</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\"><span class=\"mrel\"><span class=\"mord vbox\"><span class=\"thinbox\"><span class=\"rlap\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"inner\"><span class=\"mord\"><span class=\"mrel\"></span></span></span><span class=\"fix\"></span></span></span></span></span><span class=\"mspace nobreak\"></span><span class=\"mrel\">=</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0077em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord\">.</span></span></span></span></span>"
             },
             {
-              id: "paragraph-100",
+              id: "paragraph-102",
               type: "paragraph",
               children: [
                 {
-                  id: "text-439",
+                  id: "text-622",
                   type: "text",
                   body: "The two events are selected by different simultaneity conditions. In the Earth frame,"
                 }
@@ -4353,11 +5280,11 @@ export const latexDocument = {
               html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">P</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\">Q</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mpunct\">,</span></span></span></span></span>"
             },
             {
-              id: "paragraph-101",
+              id: "paragraph-103",
               type: "paragraph",
               children: [
                 {
-                  id: "text-440",
+                  id: "text-623",
                   type: "text",
                   body: "while in the outbound rocket frame,"
                 }
@@ -4370,16 +5297,21 @@ export const latexDocument = {
               html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0519em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">P</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0519em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0077em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mord\">.</span></span></span></span></span>"
             },
             {
-              id: "paragraph-102",
+              id: "paragraph-104",
               type: "paragraph",
               children: [
                 {
-                  id: "text-441",
+                  id: "text-624",
                   type: "text",
                   body: "The two reference frames therefore associate different events on the Earth twin's"
                 },
                 {
-                  id: "text-442",
+                  id: "text-625",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-626",
                   type: "text",
                   body: "reference system with the same arrival event "
                 },
@@ -4390,18 +5322,18 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">P</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-443",
+                  id: "text-627",
                   type: "text",
                   body: ". "
                 }
               ]
             },
             {
-              id: "paragraph-103",
+              id: "paragraph-105",
               type: "paragraph",
               children: [
                 {
-                  id: "text-444",
+                  id: "text-628",
                   type: "text",
                   body: "This distinction is the key point. The arrival event "
                 },
@@ -4412,12 +5344,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">P</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-445",
+                  id: "text-629",
                   type: "text",
-                  body: "is not arbitrary: it is"
+                  body: " is not arbitrary: it is"
                 },
                 {
-                  id: "text-446",
+                  id: "text-630",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-631",
                   type: "text",
                   body: "constrained by the physical setup of the experiment. Planet "
                 },
@@ -4428,12 +5365,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>"
                 },
                 {
-                  id: "text-447",
+                  id: "text-632",
                   type: "text",
-                  body: "remains at the fixed"
+                  body: " remains at the fixed"
                 },
                 {
-                  id: "text-448",
+                  id: "text-633",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-634",
                   type: "text",
                   body: "position "
                 },
@@ -4444,9 +5386,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span></span>"
                 },
                 {
-                  id: "text-449",
+                  id: "text-635",
                   type: "text",
-                  body: "in the Earth frame, while the rocket travels with speed "
+                  body: " in the Earth frame, while the rocket travels with speed "
                 },
                 {
                   id: "inlineMath-167",
@@ -4455,12 +5397,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span></span></span></span>"
                 },
                 {
-                  id: "text-450",
+                  id: "text-636",
                   type: "text",
                   body: ". Therefore"
                 },
                 {
-                  id: "text-451",
+                  id: "text-637",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-638",
                   type: "text",
                   body: "the rocket can meet planet "
                 },
@@ -4471,9 +5418,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>"
                 },
                 {
-                  id: "text-452",
+                  id: "text-639",
                   type: "text",
-                  body: "only when"
+                  body: " only when"
                 }
               ]
             },
@@ -4484,11 +5431,11 @@ export const latexDocument = {
               html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8095em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span><span class=\"mord mathnormal\">t</span><span class=\"mpunct\">,</span></span></span></span></span>"
             },
             {
-              id: "paragraph-104",
+              id: "paragraph-106",
               type: "paragraph",
               children: [
                 {
-                  id: "text-453",
+                  id: "text-640",
                   type: "text",
                   body: "which fixes the Earth-frame time of the arrival event to be"
                 }
@@ -4501,13 +5448,18 @@ export const latexDocument = {
               html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">P</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:2.0574em;vertical-align:-0.686em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3714em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0197em;\">l</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mord\">.</span></span></span></span></span>"
             },
             {
-              id: "paragraph-105",
+              id: "paragraph-107",
               type: "paragraph",
               children: [
                 {
-                  id: "text-454",
+                  id: "text-641",
                   type: "text",
                   body: "The event selected by the reciprocal time-dilation comparison in"
+                },
+                {
+                  id: "text-642",
+                  type: "text",
+                  body: " "
                 },
                 {
                   id: "inlineMath-169",
@@ -4516,9 +5468,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.9989em;vertical-align:-0.247em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">F</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-2.453em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathrm mtight\">out</span></span></span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-455",
+                  id: "text-643",
                   type: "text",
-                  body: "is instead "
+                  body: " is instead "
                 },
                 {
                   id: "inlineMath-170",
@@ -4527,12 +5479,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0077em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-456",
+                  id: "text-644",
                   type: "text",
                   body: ", a different event on the Earth reference system. The"
                 },
                 {
-                  id: "text-457",
+                  id: "text-645",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-646",
                   type: "text",
                   body: "two apparently contradictory statements therefore compare different pairs of events."
                 }
@@ -4546,7 +5503,7 @@ export const latexDocument = {
               height: 1024,
               caption: [
                 {
-                  id: "text-458",
+                  id: "text-647",
                   type: "text",
                   body: "The role of events in the comparison of elapsed times."
                 }
@@ -4554,21 +5511,31 @@ export const latexDocument = {
               label: "fig:role_of_events"
             },
             {
-              id: "paragraph-106",
+              id: "paragraph-108",
               type: "paragraph",
               children: [
                 {
-                  id: "text-459",
+                  id: "text-648",
                   type: "text",
                   body: "This illustrates a principle that is fundamental throughout special relativity:"
                 },
                 {
-                  id: "text-460",
+                  id: "text-649",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-650",
                   type: "text",
                   body: "before applying a formula for time dilation, length contraction, or simultaneity, we"
                 },
                 {
-                  id: "text-461",
+                  id: "text-651",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-652",
                   type: "text",
                   body: "must first identify precisely the events to which that formula refers."
                 }

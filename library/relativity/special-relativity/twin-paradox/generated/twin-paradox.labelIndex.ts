@@ -37,7 +37,7 @@ export const labelIndex = {
     height: 1024,
     caption: [
       {
-        id: "text-77",
+        id: "text-116",
         type: "text",
         body: "Departure event"
       }
@@ -143,7 +143,7 @@ export const labelIndex = {
     height: 1026,
     caption: [
       {
-        id: "text-288",
+        id: "text-407",
         type: "text",
         body: "Outbound trip: Earth frame "
       },
@@ -154,9 +154,9 @@ export const labelIndex = {
         html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">F</span></span></span></span>"
       },
       {
-        id: "text-289",
+        id: "text-408",
         type: "text",
-        body: "versus the outbound rocket frame "
+        body: " versus the outbound rocket frame "
       },
       {
         id: "inlineMath-112",
@@ -165,7 +165,7 @@ export const labelIndex = {
         html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.9989em;vertical-align:-0.247em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">F</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-2.453em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathrm mtight\">out</span></span></span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span></span></span></span>"
       },
       {
-        id: "text-290",
+        id: "text-409",
         type: "text",
         body: "."
       }
@@ -222,7 +222,7 @@ export const labelIndex = {
     height: 1024,
     caption: [
       {
-        id: "text-364",
+        id: "text-517",
         type: "text",
         body: "Complete journey in the Earth frame "
       },
@@ -233,12 +233,17 @@ export const labelIndex = {
         html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">F</span></span></span></span>"
       },
       {
-        id: "text-365",
+        id: "text-518",
         type: "text",
-        body: "and in the corresponding outbound and"
+        body: " and in the corresponding outbound and"
       },
       {
-        id: "text-366",
+        id: "text-519",
+        type: "text",
+        body: " "
+      },
+      {
+        id: "text-520",
         type: "text",
         body: "inbound rocket frames "
       },
@@ -249,9 +254,9 @@ export const labelIndex = {
         html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.9989em;vertical-align:-0.247em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">F</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-2.453em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathrm mtight\">out</span></span></span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span></span></span></span>"
       },
       {
-        id: "text-367",
+        id: "text-521",
         type: "text",
-        body: "and "
+        body: " and "
       },
       {
         id: "inlineMath-141",
@@ -260,7 +265,7 @@ export const labelIndex = {
         html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0164em;vertical-align:-0.2645em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">F</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-2.4355em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathrm mtight\">in</span></span></span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2645em;\"><span></span></span></span></span></span></span></span></span></span>"
       },
       {
-        id: "text-368",
+        id: "text-522",
         type: "text",
         body: "."
       }
@@ -275,7 +280,7 @@ export const labelIndex = {
     height: 1024,
     caption: [
       {
-        id: "text-458",
+        id: "text-647",
         type: "text",
         body: "The role of events in the comparison of elapsed times."
       }

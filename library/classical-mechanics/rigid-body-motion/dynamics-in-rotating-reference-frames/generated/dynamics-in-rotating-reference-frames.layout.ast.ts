@@ -28,15 +28,30 @@ export const latexDocument = {
             {
               id: "text-3",
               type: "text",
-              body: "We begin by recalling the kinematical relations required"
+              body: " "
             },
             {
               id: "text-4",
               type: "text",
-              body: "to compare time derivatives in inertial and rotating frames, then derive the transformation"
+              body: "We begin by recalling the kinematical relations required"
             },
             {
               id: "text-5",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-6",
+              type: "text",
+              body: "to compare time derivatives in inertial and rotating frames, then derive the transformation"
+            },
+            {
+              id: "text-7",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-8",
               type: "text",
               body: "of the acceleration and the inertial forces that arise from it."
             }
@@ -49,7 +64,7 @@ export const latexDocument = {
           type: "subsection",
           title: [
             {
-              id: "text-6",
+              id: "text-9",
               type: "text",
               body: "Kinematical Preliminaries"
             }
@@ -60,7 +75,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-7",
+                  id: "text-10",
                   type: "text",
                   body: "Let "
                 },
@@ -71,12 +86,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">A</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span></span></span></span>"
                 },
                 {
-                  id: "text-8",
+                  id: "text-11",
                   type: "text",
-                  body: "be the orthogonal matrix that maps the components of a vector in the inertial"
+                  body: " be the orthogonal matrix that maps the components of a vector in the inertial"
                 },
                 {
-                  id: "text-9",
+                  id: "text-12",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-13",
                   type: "text",
                   body: "frame to its components in the rotating frame:"
                 }
@@ -94,7 +114,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-10",
+                  id: "text-14",
                   type: "text",
                   body: "The angular velocity vector is defined as the time derivative of the infinitesimal rotation vector,"
                 }
@@ -112,7 +132,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-11",
+                  id: "text-15",
                   type: "text",
                   body: "The corresponding transformation law for time derivatives is"
                 }
@@ -130,7 +150,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-12",
+                  id: "text-16",
                   type: "text",
                   body: "These equations summarize all the results from rigid-body kinematics required in the remainder of this essay."
                 }
@@ -159,7 +179,7 @@ export const latexDocument = {
       type: "section",
       title: [
         {
-          id: "text-13",
+          id: "text-17",
           type: "text",
           body: "Equations of Motion in a Rotating Frame"
         }
@@ -170,17 +190,27 @@ export const latexDocument = {
           type: "paragraph",
           children: [
             {
-              id: "text-14",
+              id: "text-18",
               type: "text",
               body: "In this section we derive the equations of motion of a particle as observed in a rotating frame of reference"
             },
             {
-              id: "text-15",
+              id: "text-19",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-20",
               type: "text",
               body: "with respect to an inertial one.We restrict our discussion to the case of constant angular velocity. The resulting equations"
             },
             {
-              id: "text-16",
+              id: "text-21",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-22",
               type: "text",
               body: "introduce the Coriolis and centrifugal forces that arise in a rotating frame."
             }
@@ -191,7 +221,7 @@ export const latexDocument = {
           type: "paragraph",
           children: [
             {
-              id: "text-17",
+              id: "text-23",
               type: "text",
               body: "We begin with the transformation law for time derivatives, Eq. "
             },
@@ -201,12 +231,17 @@ export const latexDocument = {
               body: "rotating-frames:time-derivative-rule"
             },
             {
-              id: "text-18",
+              id: "text-24",
               type: "text",
               body: "."
             },
             {
-              id: "text-19",
+              id: "text-25",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-26",
               type: "text",
               body: "Differentiating once more gives the second derivative of the position vector in the inertial frame,"
             }
@@ -223,7 +258,7 @@ export const latexDocument = {
           type: "paragraph",
           children: [
             {
-              id: "text-20",
+              id: "text-27",
               type: "text",
               body: "From the orthogonality of the rotation matrix, "
             },
@@ -234,7 +269,7 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.9251em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">A</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.9251em;\"><span style=\"top:-3.139em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">⊤</span></span></span></span></span></span></span></span><span class=\"mord text\"><span class=\"mord textbf\">A</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">I</span></span></span></span></span>"
             },
             {
-              id: "text-21",
+              id: "text-28",
               type: "text",
               body: ":"
             }
@@ -251,7 +286,7 @@ export const latexDocument = {
           type: "paragraph",
           children: [
             {
-              id: "text-22",
+              id: "text-29",
               type: "text",
               body: "we obtain:"
             }
@@ -268,7 +303,7 @@ export const latexDocument = {
           type: "paragraph",
           children: [
             {
-              id: "text-23",
+              id: "text-30",
               type: "text",
               body: "Inserting this expression in the equation above, and using the invariance of the cross product under proper orthogonal transformations,,"
             }
@@ -285,7 +320,7 @@ export const latexDocument = {
           type: "paragraph",
           children: [
             {
-              id: "text-24",
+              id: "text-31",
               type: "text",
               body: "we arrive at the equation:"
             }
@@ -302,7 +337,7 @@ export const latexDocument = {
           type: "paragraph",
           children: [
             {
-              id: "text-25",
+              id: "text-32",
               type: "text",
               body: "Introducing the inertial acceleration "
             },
@@ -313,12 +348,17 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">a</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.4539em;vertical-align:-0.345em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.1089em;\"><span style=\"top:-2.655em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">d</span><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">t</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7463em;\"><span style=\"top:-2.786em;margin-right:0.0714em;\"><span class=\"pstrut\" style=\"height:2.5em;\"></span><span class=\"sizing reset-size3 size1 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span></span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.485em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">d</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8913em;\"><span style=\"top:-2.931em;margin-right:0.0714em;\"><span class=\"pstrut\" style=\"height:2.5em;\"></span><span class=\"sizing reset-size3 size1 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mord text mtight\"><span class=\"mord textbf mtight\">r</span></span><span class=\"mopen mtight\">(</span><span class=\"mord mathnormal mtight\">t</span><span class=\"mclose mtight\">)</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.345em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span></span></span></span>"
             },
             {
-              id: "text-26",
+              id: "text-33",
               type: "text",
               body: ", and"
             },
             {
-              id: "text-27",
+              id: "text-34",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-35",
               type: "text",
               body: "the acceleration measured in the rotating frame as "
             },
@@ -329,12 +369,17 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">a</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.4539em;vertical-align:-0.345em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.1089em;\"><span style=\"top:-2.655em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">d</span><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">t</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7463em;\"><span style=\"top:-2.786em;margin-right:0.0714em;\"><span class=\"pstrut\" style=\"height:2.5em;\"></span><span class=\"sizing reset-size3 size1 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span></span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.485em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">d</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8913em;\"><span style=\"top:-2.931em;margin-right:0.0714em;\"><span class=\"pstrut\" style=\"height:2.5em;\"></span><span class=\"sizing reset-size3 size1 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mord mtight\"><span class=\"mord text mtight\"><span class=\"mord textbf mtight\">r</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8278em;\"><span style=\"top:-2.931em;margin-right:0.0714em;\"><span class=\"pstrut\" style=\"height:2.5em;\"></span><span class=\"sizing reset-size3 size1 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mopen mtight\">(</span><span class=\"mord mathnormal mtight\">t</span><span class=\"mclose mtight\">)</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.345em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span></span></span></span>"
             },
             {
-              id: "text-28",
+              id: "text-36",
               type: "text",
               body: ", we obtain"
             },
             {
-              id: "text-29",
+              id: "text-37",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-38",
               type: "text",
               body: "the acceleration transformation:"
             }
@@ -352,7 +397,7 @@ export const latexDocument = {
           type: "paragraph",
           children: [
             {
-              id: "text-30",
+              id: "text-39",
               type: "text",
               body: "Equation "
             },
@@ -362,17 +407,27 @@ export const latexDocument = {
               body: "rotating-frames:acceleration-transformation"
             },
             {
-              id: "text-31",
+              id: "text-40",
               type: "text",
-              body: "is purely kinematical."
+              body: " is purely kinematical."
             },
             {
-              id: "text-32",
+              id: "text-41",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-42",
               type: "text",
               body: "No dynamical assumptions have been introduced yet. By applying Newton's second law"
             },
             {
-              id: "text-33",
+              id: "text-43",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-44",
               type: "text",
               body: "to the rotating frame, we identify"
             }
@@ -389,7 +444,7 @@ export const latexDocument = {
           type: "paragraph",
           children: [
             {
-              id: "text-34",
+              id: "text-45",
               type: "text",
               body: "and Eq. "
             },
@@ -399,9 +454,9 @@ export const latexDocument = {
               body: "rotating-frames:acceleration-transformation"
             },
             {
-              id: "text-35",
+              id: "text-46",
               type: "text",
-              body: "becomes"
+              body: " becomes"
             }
           ]
         },
@@ -417,17 +472,27 @@ export const latexDocument = {
           type: "paragraph",
           children: [
             {
-              id: "text-36",
+              id: "text-47",
               type: "text",
               body: "In this equation there are terms that originate entirely from the kinematics of"
             },
             {
-              id: "text-37",
+              id: "text-48",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-49",
               type: "text",
               body: "the rotating frame. They are interpreted as apparent forces and are responsible"
             },
             {
-              id: "text-38",
+              id: "text-50",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-51",
               type: "text",
               body: "for the distinctive dynamics observed in non-inertial reference frames."
             }
@@ -440,7 +505,7 @@ export const latexDocument = {
           type: "subsection",
           title: [
             {
-              id: "text-39",
+              id: "text-52",
               type: "text",
               body: "The Centrifugal Force"
             }
@@ -451,7 +516,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-40",
+                  id: "text-53",
                   type: "text",
                   body: "The centrifugal force is the first term of equation "
                 },
@@ -461,7 +526,7 @@ export const latexDocument = {
                   body: "rotating-frames:forces-transformation"
                 },
                 {
-                  id: "text-41",
+                  id: "text-54",
                   type: "text",
                   body: ","
                 }
@@ -479,17 +544,27 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-42",
+                  id: "text-55",
                   type: "text",
                   body: "which has a magnitude proportional to the square of the angular velocity, and is directed perpendicular to"
                 },
                 {
-                  id: "text-43",
+                  id: "text-56",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-57",
                   type: "text",
                   body: "the rotation axis and away from it. This force depends only on the angular velocity of the rotating frame"
                 },
                 {
-                  id: "text-44",
+                  id: "text-58",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-59",
                   type: "text",
                   body: "and on the position of the body. It is independent of the body's velocity in the rotating frame. "
                 }
@@ -500,7 +575,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-45",
+                  id: "text-60",
                   type: "text",
                   body: "The centrifugal force admits the potential"
                 }
@@ -517,7 +592,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-46",
+                  id: "text-61",
                   type: "text",
                   body: "and it is therefore a conservative force, since"
                 }
@@ -543,7 +618,7 @@ export const latexDocument = {
           type: "subsection",
           title: [
             {
-              id: "text-47",
+              id: "text-62",
               type: "text",
               body: "The Coriolis Force"
             }
@@ -554,12 +629,17 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-48",
+                  id: "text-63",
                   type: "text",
                   body: "The Coriolis force is the term proportional to the velocity of the body in the"
                 },
                 {
-                  id: "text-49",
+                  id: "text-64",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-65",
                   type: "text",
                   body: "rotating frame appearing in equation "
                 },
@@ -569,7 +649,7 @@ export const latexDocument = {
                   body: "rotating-frames:forces-transformation"
                 },
                 {
-                  id: "text-50",
+                  id: "text-66",
                   type: "text",
                   body: ","
                 }
@@ -587,17 +667,27 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-51",
+                  id: "text-67",
                   type: "text",
                   body: "This force arises only from the motion of the body with respect to the rotating"
                 },
                 {
-                  id: "text-52",
+                  id: "text-68",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-69",
                   type: "text",
                   body: "frame. Since it is always perpendicular to the velocity, it performs no work on"
                 },
                 {
-                  id: "text-53",
+                  id: "text-70",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-71",
                   type: "text",
                   body: "the body. "
                 }
@@ -608,17 +698,27 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-54",
+                  id: "text-72",
                   type: "text",
                   body: "The Coriolis force has the same mathematical structure as the Lorentz force in"
                 },
                 {
-                  id: "text-55",
+                  id: "text-73",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-74",
                   type: "text",
                   body: "electromagnetism. Although it is not conservative, since it depends explicitly on the velocity,"
                 },
                 {
-                  id: "text-56",
+                  id: "text-75",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-76",
                   type: "text",
                   body: "it can nevertheless be derived from the generalized potential "
                 },
@@ -629,9 +729,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.2222em;\">V</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord text mtight\"><span class=\"mord mtight\">cor</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-57",
+                  id: "text-77",
                   type: "text",
-                  body: "determined as,"
+                  body: " determined as,"
                 }
               ]
             },
@@ -646,7 +746,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-58",
+                  id: "text-78",
                   type: "text",
                   body: "so that the Coriolis force derives from a generalized potential:"
                 }
@@ -663,12 +763,17 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-59",
+                  id: "text-79",
                   type: "text",
                   body: "To verify that the generalized potential indeed reproduces the Coriolis force,"
                 },
                 {
-                  id: "text-60",
+                  id: "text-80",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-81",
                   type: "text",
                   body: "we use the cyclic permutation identity of the scalar triple product,"
                 }
@@ -685,19 +790,34 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-61",
+                  id: "text-82",
                   type: "text",
                   body: "to rewrite the scalar product so that the vector with respect to which the"
                 },
                 {
-                  id: "text-62",
+                  id: "text-83",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-84",
                   type: "text",
                   body: "gradient is taken appears directly in the scalar product rather than in the"
                 },
                 {
-                  id: "text-63",
+                  id: "text-85",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-86",
                   type: "text",
                   body: "cross product. This allows the required derivatives with respect to"
+                },
+                {
+                  id: "text-87",
+                  type: "text",
+                  body: " "
                 },
                 {
                   id: "inlineMath-6",
@@ -706,9 +826,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">r</span></span></span></span></span>"
                 },
                 {
-                  id: "text-64",
+                  id: "text-88",
                   type: "text",
-                  body: "and "
+                  body: " and "
                 },
                 {
                   id: "inlineMath-7",
@@ -717,9 +837,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6813em;\"></span><span class=\"mord accent\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6813em;\"><span style=\"top:-3em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">r</span></span></span><span style=\"top:-3.0134em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"accent-body\" style=\"left:-0.1389em;\"><span class=\"mord\">˙</span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-65",
+                  id: "text-89",
                   type: "text",
-                  body: "to be computed immediately. "
+                  body: " to be computed immediately. "
                 }
               ]
             },
@@ -728,22 +848,37 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-66",
+                  id: "text-90",
                   type: "text",
                   body: "Unlike an ordinary potential, a generalized potential may depend explicitly on"
                 },
                 {
-                  id: "text-67",
+                  id: "text-91",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-92",
                   type: "text",
                   body: "both the position and the velocity of the body. Such potentials naturally arise"
                 },
                 {
-                  id: "text-68",
+                  id: "text-93",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-94",
                   type: "text",
                   body: "in systems whose forces are linear in the velocity, such as the Coriolis force"
                 },
                 {
-                  id: "text-69",
+                  id: "text-95",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-96",
                   type: "text",
                   body: "and the Lorentz force in electromagnetism."
                 }
@@ -763,7 +898,7 @@ export const latexDocument = {
           type: "subsection",
           title: [
             {
-              id: "text-70",
+              id: "text-97",
               type: "text",
               body: "Lagrange Equations of Motion in a Rotating Frame"
             }
@@ -774,7 +909,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-71",
+                  id: "text-98",
                   type: "text",
                   body: "In the remainder of this section, we will denote the time derivative "
                 },
@@ -785,9 +920,14 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">d</span><span class=\"mord mathnormal\">a</span><span class=\"mord\">/</span><span class=\"mord mathnormal\">d</span><span class=\"mord mathnormal\">t</span></span></span></span>"
                 },
                 {
-                  id: "text-72",
+                  id: "text-99",
                   type: "text",
-                  body: "to"
+                  body: " to"
+                },
+                {
+                  id: "text-100",
+                  type: "text",
+                  body: " "
                 },
                 {
                   id: "inlineMath-9",
@@ -796,12 +936,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6679em;\"></span><span class=\"mord accent\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6679em;\"><span style=\"top:-3em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord mathnormal\">a</span></span><span style=\"top:-3em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"accent-body\" style=\"left:-0.1389em;\"><span class=\"mord\">˙</span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-73",
+                  id: "text-101",
                   type: "text",
-                  body: "to simplify the equations. Unless otherwise stated, all vectors will be expressed in the rotating frame,"
+                  body: " to simplify the equations. Unless otherwise stated, all vectors will be expressed in the rotating frame,"
                 },
                 {
-                  id: "text-74",
+                  id: "text-102",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-103",
                   type: "text",
                   body: "and "
                 },
@@ -812,17 +957,27 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">r</span></span></span></span></span>"
                 },
                 {
-                  id: "text-75",
+                  id: "text-104",
                   type: "text",
-                  body: "will denote the position vector in that frame. In this section"
+                  body: " will denote the position vector in that frame. In this section"
                 },
                 {
-                  id: "text-76",
+                  id: "text-105",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-106",
                   type: "text",
                   body: "we would like to briefly touch on the functional form of the Lagrangian"
                 },
                 {
-                  id: "text-77",
+                  id: "text-107",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-108",
                   type: "text",
                   body: "in the rotating frame of a body subject to "
                 },
@@ -830,6 +985,11 @@ export const latexDocument = {
                   body: "zero net force  in the inertial frame",
                   id: "textbf-1",
                   type: "textbf"
+                },
+                {
+                  id: "text-109",
+                  type: "text",
+                  body: "  "
                 }
               ]
             },
@@ -838,7 +998,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-78",
+                  id: "text-110",
                   type: "text",
                   body: "The Lagrangian is obtained by adding to the kinetic energy all potential contributions, including generalized potentials when present."
                 }
@@ -855,7 +1015,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-79",
+                  id: "text-111",
                   type: "text",
                   body: "As the centrifugal and Coriolis forces admit potentials,  the Lagrangian of the system reads:"
                 }
@@ -872,7 +1032,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-80",
+                  id: "text-112",
                   type: "text",
                   body: "The Lagrange equations of motion are given by:"
                 }
@@ -889,7 +1049,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-81",
+                  id: "text-113",
                   type: "text",
                   body: "The first term of the Lagrangian gives:"
                 }
@@ -906,7 +1066,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-82",
+                  id: "text-114",
                   type: "text",
                   body: "The second term of the Lagrangian gives:"
                 }
@@ -923,7 +1083,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-83",
+                  id: "text-115",
                   type: "text",
                   body: "The Lagrange equations of motion in the rotating frame are therefore"
                 }
@@ -940,7 +1100,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-84",
+                  id: "text-116",
                   type: "text",
                   body: "Dividing by "
                 },
@@ -951,7 +1111,7 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">m</span></span></span></span>"
                 },
                 {
-                  id: "text-85",
+                  id: "text-117",
                   type: "text",
                   body: ", we obtain"
                 }
@@ -968,9 +1128,14 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-86",
+                  id: "text-118",
                   type: "text",
                   body: "which is identical to equation"
+                },
+                {
+                  id: "text-119",
+                  type: "text",
+                  body: " "
                 },
                 {
                   id: "eqref-6",
@@ -978,7 +1143,7 @@ export const latexDocument = {
                   body: "rotating-frames:acceleration-transformation"
                 },
                 {
-                  id: "text-87",
+                  id: "text-120",
                   type: "text",
                   body: "."
                 }
@@ -989,17 +1154,27 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-88",
+                  id: "text-121",
                   type: "text",
                   body: "It has to be noted that a conservative force in the inertial frame is not necessarily"
                 },
                 {
-                  id: "text-89",
+                  id: "text-122",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-123",
                   type: "text",
                   body: "conservative in the rotating frame. A simple example can be easily constructed by considering"
                 },
                 {
-                  id: "text-90",
+                  id: "text-124",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-125",
                   type: "text",
                   body: "a constant force in the plane "
                 },
@@ -1010,9 +1185,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.044em;\">z</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0</span></span></span></span>"
                 },
                 {
-                  id: "text-91",
+                  id: "text-126",
                   type: "text",
-                  body: "of the inertial frame such as:"
+                  body: " of the inertial frame such as:"
                 }
               ]
             },
@@ -1027,7 +1202,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-92",
+                  id: "text-127",
                   type: "text",
                   body: "where "
                 },
@@ -1038,9 +1213,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">F</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">x</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-93",
+                  id: "text-128",
                   type: "text",
-                  body: "and "
+                  body: " and "
                 },
                 {
                   id: "inlineMath-14",
@@ -1049,9 +1224,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.9694em;vertical-align:-0.2861em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">F</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0359em;\">y</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2861em;\"><span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-94",
+                  id: "text-129",
                   type: "text",
-                  body: "are constants and "
+                  body: " are constants and "
                 },
                 {
                   id: "inlineMath-15",
@@ -1060,7 +1235,7 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">i</span></span></span></span></span>"
                 },
                 {
-                  id: "text-95",
+                  id: "text-130",
                   type: "text",
                   body: ", "
                 },
@@ -1071,12 +1246,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">j</span></span></span></span></span>"
                 },
                 {
-                  id: "text-96",
+                  id: "text-131",
                   type: "text",
-                  body: "are the unit vectors of the"
+                  body: " are the unit vectors of the"
                 },
                 {
-                  id: "text-97",
+                  id: "text-132",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-133",
                   type: "text",
                   body: "inertial frame. The force in a frame rotating with constant angular velocity "
                 },
@@ -1087,12 +1267,17 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span></span></span></span>"
                 },
                 {
-                  id: "text-98",
+                  id: "text-134",
                   type: "text",
-                  body: "around"
+                  body: " around"
                 },
                 {
-                  id: "text-99",
+                  id: "text-135",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-136",
                   type: "text",
                   body: "the axis "
                 },
@@ -1103,9 +1288,9 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.044em;\">z</span></span></span></span>"
                 },
                 {
-                  id: "text-100",
+                  id: "text-137",
                   type: "text",
-                  body: "is given by:"
+                  body: " is given by:"
                 }
               ]
             },
@@ -1120,7 +1305,7 @@ export const latexDocument = {
               type: "paragraph",
               children: [
                 {
-                  id: "text-101",
+                  id: "text-138",
                   type: "text",
                   body: "where "
                 },
@@ -1131,7 +1316,7 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8362em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">i</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8362em;\"><span style=\"top:-3.1473em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-102",
+                  id: "text-139",
                   type: "text",
                   body: ", "
                 },
@@ -1142,27 +1327,47 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0307em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">j</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8362em;\"><span style=\"top:-3.1473em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span>"
                 },
                 {
-                  id: "text-103",
+                  id: "text-140",
                   type: "text",
-                  body: "are the unit vectors of the rotating frame. The force in the"
+                  body: " are the unit vectors of the rotating frame. The force in the"
                 },
                 {
-                  id: "text-104",
+                  id: "text-141",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-142",
                   type: "text",
                   body: "rotating frame is time-dependent, and does not have a generalized potential as it does not"
                 },
                 {
-                  id: "text-105",
+                  id: "text-143",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-144",
                   type: "text",
                   body: "explicitly depend on the velocity. Each case will have to be considered individually to"
                 },
                 {
-                  id: "text-106",
+                  id: "text-145",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-146",
                   type: "text",
                   body: "determine whether the dynamics can be described in a Lagrangian formalism, and in general the"
                 },
                 {
-                  id: "text-107",
+                  id: "text-147",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-148",
                   type: "text",
                   body: "equations of motion "
                 },
@@ -1172,27 +1377,48 @@ export const latexDocument = {
                   body: "rotating-frames:acceleration-transformation"
                 },
                 {
-                  id: "text-108",
+                  id: "text-149",
                   type: "text",
-                  body: "will have to be used."
-                },
+                  body: " will have to be used."
+                }
+              ]
+            },
+            {
+              id: "paragraph-39",
+              type: "paragraph",
+              children: [
                 {
-                  id: "text-109",
+                  id: "text-150",
                   type: "text",
                   body: "The existence of a Lagrangian for the inertial forces provides an elegant alternative formulation"
                 },
                 {
-                  id: "text-110",
+                  id: "text-151",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-152",
                   type: "text",
                   body: "of the dynamics in rotating reference frames. Nevertheless, when additional external forces are present,"
                 },
                 {
-                  id: "text-111",
+                  id: "text-153",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-154",
                   type: "text",
                   body: "each case must be analyzed individually to determine whether a Lagrangian description exists"
                 },
                 {
-                  id: "text-112",
+                  id: "text-155",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-156",
                   type: "text",
                   body: "or whether the equations of motion must instead be used directly."
                 }
@@ -1221,44 +1447,59 @@ export const latexDocument = {
       type: "section",
       title: [
         {
-          id: "text-113",
+          id: "text-157",
           type: "text",
           body: "Life in a Rotating Reference Frame"
         }
       ],
       intro: [
         {
-          id: "paragraph-39",
+          id: "paragraph-40",
           type: "paragraph",
           children: [
             {
-              id: "text-114",
+              id: "text-158",
               type: "text",
               body: "The dynamics of rotating reference frames is often counterintuitive, and even situations with which"
             },
             {
-              id: "text-115",
+              id: "text-159",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-160",
               type: "text",
               body: "we are very familiar become surprisingly subtle when examined in detail. One such example is the carousel. "
             }
           ]
         },
         {
-          id: "paragraph-40",
+          id: "paragraph-41",
           type: "paragraph",
           children: [
             {
-              id: "text-116",
+              id: "text-161",
               type: "text",
               body: "If you are an observer at rest in the inertial frame fixed to the Earth, life is quite simple for you. All people standing in front of"
             },
             {
-              id: "text-117",
+              id: "text-162",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-163",
               type: "text",
               body: "the carousel are not moving and you see the people on the carousel moving in circles around the centre of"
             },
             {
-              id: "text-118",
+              id: "text-164",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-165",
               type: "text",
               body: "rotation of the carousel, which has an angular velocity "
             },
@@ -1269,12 +1510,17 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.037em;\">ω</span></span></span></span></span></span>"
             },
             {
-              id: "text-119",
+              id: "text-166",
               type: "text",
-              body: "parallel to the axis perpendicular to the Earth"
+              body: " parallel to the axis perpendicular to the Earth"
             },
             {
-              id: "text-120",
+              id: "text-167",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-168",
               type: "text",
               body: "surface, which we call "
             },
@@ -1285,50 +1531,9 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5944em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.044em;\">z</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
             },
             {
-              id: "text-121",
+              id: "text-169",
               type: "text",
               body: ". "
-            }
-          ]
-        },
-        {
-          id: "paragraph-41",
-          type: "paragraph",
-          children: [
-            {
-              id: "text-122",
-              type: "text",
-              body: "If you are on the carousel, reality is more complicated"
-            },
-            {
-              id: "text-123",
-              type: "text",
-              body: "First, you have to hold on to something in order not to fly away. You clearly perceive and measure a force that pushes"
-            },
-            {
-              id: "text-124",
-              type: "text",
-              body: "you away from the center of rotation, whose magnitude increases with your distance from the center."
-            },
-            {
-              id: "text-125",
-              type: "text",
-              body: "Furthermore, you see the people standing on the Earth moving around you in circles with constant angular velocity."
-            },
-            {
-              id: "text-126",
-              type: "text",
-              body: "This is quite a strange observation, because you cannot explain why they are not pushed away by the same force that you yourself must resist in order not to fly away."
-            },
-            {
-              id: "text-127",
-              type: "text",
-              body: "Even more interestingly, if something anchored to the carousel for"
-            },
-            {
-              id: "text-128",
-              type: "text",
-              body: "some reason slips away, it also starts to go in circle although following a more complicated dynamics as the people on the Earth."
             }
           ]
         },
@@ -1337,9 +1542,29 @@ export const latexDocument = {
           type: "paragraph",
           children: [
             {
-              id: "text-129",
+              id: "text-170",
               type: "text",
-              body: "The resolution of these apparent paradoxes lies in the combined action of the centrifugal and Coriolis forces in the rotating frame."
+              body: "If you are on the carousel, reality is more complicated"
+            },
+            {
+              id: "text-171",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-172",
+              type: "text",
+              body: "First, you have to hold on to something in order not to fly away. You clearly perceive and measure a force that pushes"
+            },
+            {
+              id: "text-173",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-174",
+              type: "text",
+              body: "you away from the center of rotation, whose magnitude increases with your distance from the center."
             }
           ]
         },
@@ -1348,12 +1573,69 @@ export const latexDocument = {
           type: "paragraph",
           children: [
             {
-              id: "text-130",
+              id: "text-175",
+              type: "text",
+              body: "Furthermore, you see the people standing on the Earth moving around you in circles with constant angular velocity."
+            },
+            {
+              id: "text-176",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-177",
+              type: "text",
+              body: "This is quite a strange observation, because you cannot explain why they are not pushed away by the same force that you yourself must resist in order not to fly away."
+            },
+            {
+              id: "text-178",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-179",
+              type: "text",
+              body: "Even more interestingly, if something anchored to the carousel for"
+            },
+            {
+              id: "text-180",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-181",
+              type: "text",
+              body: "some reason slips away, it also starts to go in circle although following a more complicated dynamics as the people on the Earth."
+            }
+          ]
+        },
+        {
+          id: "paragraph-44",
+          type: "paragraph",
+          children: [
+            {
+              id: "text-182",
+              type: "text",
+              body: "The resolution of these apparent paradoxes lies in the combined action of the centrifugal and Coriolis forces in the rotating frame."
+            }
+          ]
+        },
+        {
+          id: "paragraph-45",
+          type: "paragraph",
+          children: [
+            {
+              id: "text-183",
               type: "text",
               body: "Consider a person standing on the Earth. Since the Earth is at rest in the"
             },
             {
-              id: "text-131",
+              id: "text-184",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-185",
               type: "text",
               body: "inertial frame, its position vector "
             },
@@ -1364,9 +1646,9 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span></span></span></span>"
             },
             {
-              id: "text-132",
+              id: "text-186",
               type: "text",
-              body: "is constant in time, and therefore"
+              body: " is constant in time, and therefore"
             }
           ]
         },
@@ -1377,16 +1659,21 @@ export const latexDocument = {
           html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:2.0574em;vertical-align:-0.686em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3714em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">d</span><span class=\"mord mathnormal\">t</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">d</span><span class=\"mord text\"><span class=\"mord textbf\">g</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0.</span></span></span></span></span>"
         },
         {
-          id: "paragraph-44",
+          id: "paragraph-46",
           type: "paragraph",
           children: [
             {
-              id: "text-133",
+              id: "text-187",
               type: "text",
               body: "Using the transformation law relating the components of a vector in the fixed"
             },
             {
-              id: "text-134",
+              id: "text-188",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-189",
               type: "text",
               body: "and rotating frames,"
             }
@@ -1399,11 +1686,11 @@ export const latexDocument = {
           html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:2.0574em;vertical-align:-0.686em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3714em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">d</span><span class=\"mord mathnormal\">t</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">d</span><span class=\"mord text\"><span class=\"mord textbf\">g</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:2.4em;vertical-align:-0.95em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">A</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8641em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">−</span><span class=\"mord mtight\">1</span></span></span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"minner\"><span class=\"mopen delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size3\">(</span></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.037em;\">ω</span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.4289em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">d</span><span class=\"mord mathnormal\">t</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">d</span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mclose delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size3\">)</span></span></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mpunct\">,</span></span></span></span></span>"
         },
         {
-          id: "paragraph-45",
+          id: "paragraph-47",
           type: "paragraph",
           children: [
             {
-              id: "text-135",
+              id: "text-190",
               type: "text",
               body: "we conclude that"
             }
@@ -1416,26 +1703,42 @@ export const latexDocument = {
           html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:2.1149em;vertical-align:-0.686em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.4289em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">d</span><span class=\"mord mathnormal\">t</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">d</span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">−</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.037em;\">ω</span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.9963em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mord\">.</span></span></span></span></span>"
         },
         {
-          id: "paragraph-46",
+          id: "paragraph-48",
           type: "paragraph",
           children: [
             {
-              id: "text-136",
+              id: "text-191",
               type: "text",
               body: "Thus, an observer on the carousel sees every point fixed on the Earth moving"
             },
             {
-              id: "text-137",
+              id: "text-192",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-193",
               type: "text",
               body: "with a velocity equal to the opposite of the local rotational velocity of the"
             },
             {
-              id: "text-138",
+              id: "text-194",
               type: "text",
-              body: "carousel."
+              body: " "
             },
             {
-              id: "text-139",
+              id: "text-195",
+              type: "text",
+              body: "carousel."
+            }
+          ]
+        },
+        {
+          id: "paragraph-49",
+          type: "paragraph",
+          children: [
+            {
+              id: "text-196",
               type: "text",
               body: "The differential equation"
             }
@@ -1448,11 +1751,11 @@ export const latexDocument = {
           html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:2.1149em;vertical-align:-0.686em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.4289em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">d</span><span class=\"mord mathnormal\">t</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">d</span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">−</span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.037em;\">ω</span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.9963em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span></span>"
         },
         {
-          id: "paragraph-47",
+          id: "paragraph-50",
           type: "paragraph",
           children: [
             {
-              id: "text-140",
+              id: "text-197",
               type: "text",
               body: "can be solved explicitly. We seek a solution of the form"
             }
@@ -1465,11 +1768,11 @@ export const latexDocument = {
           html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0519em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0691em;vertical-align:-0.1944em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">k</span></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">e</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8747em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">−</span><span class=\"mord mathnormal mtight\">i</span><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0037em;\">α</span><span class=\"mord mathnormal mtight\">t</span></span></span></span></span></span></span></span></span><span class=\"mpunct\">,</span></span></span></span></span>"
         },
         {
-          id: "paragraph-48",
+          id: "paragraph-51",
           type: "paragraph",
           children: [
             {
-              id: "text-141",
+              id: "text-198",
               type: "text",
               body: "where "
             },
@@ -1480,12 +1783,17 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">k</span></span></span></span></span>"
             },
             {
-              id: "text-142",
+              id: "text-199",
               type: "text",
-              body: "is a complex constant vector. Substituting into the differential"
+              body: " is a complex constant vector. Substituting into the differential"
             },
             {
-              id: "text-143",
+              id: "text-200",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-201",
               type: "text",
               body: "equation gives"
             }
@@ -1498,11 +1806,11 @@ export const latexDocument = {
           html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">i</span><span class=\"mord mathnormal\" style=\"margin-right:0.0037em;\">α</span><span class=\"mord text\"><span class=\"mord textbf\">k</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">−</span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.037em;\">ω</span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">k</span></span><span class=\"mord\">.</span></span></span></span></span>"
         },
         {
-          id: "paragraph-49",
+          id: "paragraph-52",
           type: "paragraph",
           children: [
             {
-              id: "text-144",
+              id: "text-202",
               type: "text",
               body: "Writing the complex vector as"
             }
@@ -1515,11 +1823,11 @@ export const latexDocument = {
           html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">k</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">a</span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">i</span><span class=\"mord text\"><span class=\"mord textbf\">b</span></span><span class=\"mpunct\">,</span></span></span></span></span>"
         },
         {
-          id: "paragraph-50",
+          id: "paragraph-53",
           type: "paragraph",
           children: [
             {
-              id: "text-145",
+              id: "text-203",
               type: "text",
               body: "with "
             },
@@ -1530,9 +1838,9 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">a</span></span></span></span></span>"
             },
             {
-              id: "text-146",
+              id: "text-204",
               type: "text",
-              body: "and "
+              body: " and "
             },
             {
               id: "inlineMath-26",
@@ -1541,9 +1849,9 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">b</span></span></span></span></span>"
             },
             {
-              id: "text-147",
+              id: "text-205",
               type: "text",
-              body: "real vectors, we obtain"
+              body: " real vectors, we obtain"
             }
           ]
         },
@@ -1554,11 +1862,11 @@ export const latexDocument = {
           html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">i</span><span class=\"mord mathnormal\" style=\"margin-right:0.0037em;\">α</span><span class=\"mopen\">(</span><span class=\"mord text\"><span class=\"mord textbf\">a</span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">i</span><span class=\"mord text\"><span class=\"mord textbf\">b</span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">−</span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.037em;\">ω</span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord text\"><span class=\"mord textbf\">a</span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">i</span><span class=\"mord text\"><span class=\"mord textbf\">b</span></span><span class=\"mclose\">)</span><span class=\"mpunct\">,</span></span></span></span></span>"
         },
         {
-          id: "paragraph-51",
+          id: "paragraph-54",
           type: "paragraph",
           children: [
             {
-              id: "text-148",
+              id: "text-206",
               type: "text",
               body: "which, upon separating the real and imaginary parts, yields"
             }
@@ -1571,11 +1879,11 @@ export const latexDocument = {
           html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:2.7em;vertical-align:-1.1em;\"></span><span class=\"mord\"><span class=\"mtable\"><span class=\"col-align-r\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.6em;\"><span style=\"top:-3.76em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0037em;\">α</span><span class=\"mord text\"><span class=\"mord textbf\">a</span></span></span></span><span style=\"top:-2.26em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0037em;\">α</span><span class=\"mord text\"><span class=\"mord textbf\">b</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.1em;\"><span></span></span></span></span></span><span class=\"col-align-l\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.6em;\"><span style=\"top:-3.76em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord\">−</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.037em;\">ω</span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">b</span></span><span class=\"mpunct\">,</span></span></span><span style=\"top:-2.26em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord\" style=\"color:transparent;\">−</span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.037em;\">ω</span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">a</span></span><span class=\"mord\">.</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.1em;\"><span></span></span></span></span></span></span></span></span></span></span></span>"
         },
         {
-          id: "paragraph-52",
+          id: "paragraph-55",
           type: "paragraph",
           children: [
             {
-              id: "text-149",
+              id: "text-207",
               type: "text",
               body: "The second equation implies"
             }
@@ -1588,11 +1896,11 @@ export const latexDocument = {
           html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">b</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:2.0074em;vertical-align:-0.686em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3214em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0037em;\">α</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.037em;\">ω</span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">a</span></span><span class=\"mord\">.</span></span></span></span></span>"
         },
         {
-          id: "paragraph-53",
+          id: "paragraph-56",
           type: "paragraph",
           children: [
             {
-              id: "text-150",
+              id: "text-208",
               type: "text",
               body: "Substituting the expression for "
             },
@@ -1603,9 +1911,9 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">b</span></span></span></span></span>"
             },
             {
-              id: "text-151",
+              id: "text-209",
               type: "text",
-              body: "into the first equation yields"
+              body: " into the first equation yields"
             }
           ]
         },
@@ -1616,11 +1924,11 @@ export const latexDocument = {
           html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0037em;\">α</span><span class=\"mord text\"><span class=\"mord textbf\">a</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:2.0074em;vertical-align:-0.686em;\"></span><span class=\"mord\">−</span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3214em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0037em;\">α</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.037em;\">ω</span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"minner\"><span class=\"mopen delimcenter\" style=\"top:0em;\">(</span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.037em;\">ω</span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">a</span></span><span class=\"mclose delimcenter\" style=\"top:0em;\">)</span></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mpunct\">,</span></span></span></span></span>"
         },
         {
-          id: "paragraph-54",
+          id: "paragraph-57",
           type: "paragraph",
           children: [
             {
-              id: "text-152",
+              id: "text-210",
               type: "text",
               body: "or equivalently,"
             }
@@ -1633,11 +1941,11 @@ export const latexDocument = {
           html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8641em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0037em;\">α</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8641em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mord text\"><span class=\"mord textbf\">a</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">−</span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.037em;\">ω</span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"minner\"><span class=\"mopen delimcenter\" style=\"top:0em;\">(</span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.037em;\">ω</span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">a</span></span><span class=\"mclose delimcenter\" style=\"top:0em;\">)</span></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">.</span></span></span></span></span>"
         },
         {
-          id: "paragraph-55",
+          id: "paragraph-58",
           type: "paragraph",
           children: [
             {
-              id: "text-153",
+              id: "text-211",
               type: "text",
               body: "Using the vector identity"
             }
@@ -1650,11 +1958,11 @@ export const latexDocument = {
           html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">u</span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord text\"><span class=\"mord textbf\">v</span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">w</span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">⟨</span><span class=\"mord text\"><span class=\"mord textbf\">u</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">∣</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">w</span></span><span class=\"mclose\">⟩</span><span class=\"mord text\"><span class=\"mord textbf\">v</span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">⟨</span><span class=\"mord text\"><span class=\"mord textbf\">u</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">∣</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">v</span></span><span class=\"mclose\">⟩</span><span class=\"mord text\"><span class=\"mord textbf\">w</span></span><span class=\"mpunct\">,</span></span></span></span></span>"
         },
         {
-          id: "paragraph-56",
+          id: "paragraph-59",
           type: "paragraph",
           children: [
             {
-              id: "text-154",
+              id: "text-212",
               type: "text",
               body: "we obtain"
             }
@@ -1667,11 +1975,11 @@ export const latexDocument = {
           html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8641em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0037em;\">α</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8641em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mord text\"><span class=\"mord textbf\">a</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.2141em;vertical-align:-0.35em;\"></span><span class=\"mord\">−</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"minner\"><span class=\"mopen delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size1\">(</span></span><span class=\"mopen\">⟨</span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.037em;\">ω</span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">∣</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">a</span></span><span class=\"mclose\">⟩</span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.037em;\">ω</span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8641em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mord text\"><span class=\"mord textbf\">a</span></span><span class=\"mclose delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size1\">)</span></span></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mpunct\">,</span></span></span></span></span>"
         },
         {
-          id: "paragraph-57",
+          id: "paragraph-60",
           type: "paragraph",
           children: [
             {
-              id: "text-155",
+              id: "text-213",
               type: "text",
               body: "which may be rewritten as"
             }
@@ -1684,11 +1992,11 @@ export const latexDocument = {
           html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.2141em;vertical-align:-0.35em;\"></span><span class=\"minner\"><span class=\"mopen delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size1\">(</span></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0037em;\">α</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8641em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8641em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mclose delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size1\">)</span></span></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">a</span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">⟨</span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.037em;\">ω</span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">∣</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">a</span></span><span class=\"mclose\">⟩</span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.037em;\">ω</span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0.</span></span></span></span></span>"
         },
         {
-          id: "paragraph-58",
+          id: "paragraph-61",
           type: "paragraph",
           children: [
             {
-              id: "text-156",
+              id: "text-214",
               type: "text",
               body: "Since the two vectors "
             },
@@ -1699,9 +2007,9 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">a</span></span></span></span></span>"
             },
             {
-              id: "text-157",
+              id: "text-215",
               type: "text",
-              body: "and "
+              body: " and "
             },
             {
               id: "inlineMath-29",
@@ -1710,12 +2018,17 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.037em;\">ω</span></span></span></span></span></span>"
             },
             {
-              id: "text-158",
+              id: "text-216",
               type: "text",
-              body: "are linearly"
+              body: " are linearly"
             },
             {
-              id: "text-159",
+              id: "text-217",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-218",
               type: "text",
               body: "independent, the above equation implies"
             }
@@ -1728,11 +2041,11 @@ export const latexDocument = {
           html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8641em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0037em;\">α</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8641em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.1141em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8641em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:2em;\"></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mopen\">⟨</span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.037em;\">ω</span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">∣</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">a</span></span><span class=\"mclose\">⟩</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0.</span></span></span></span></span>"
         },
         {
-          id: "paragraph-59",
+          id: "paragraph-62",
           type: "paragraph",
           children: [
             {
-              id: "text-160",
+              id: "text-219",
               type: "text",
               body: "Hence,"
             }
@@ -1745,11 +2058,11 @@ export const latexDocument = {
           html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0037em;\">α</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7778em;vertical-align:-0.1944em;\"></span><span class=\"mord\">±</span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span><span class=\"mpunct\">,</span></span></span></span></span>"
         },
         {
-          id: "paragraph-60",
+          id: "paragraph-63",
           type: "paragraph",
           children: [
             {
-              id: "text-161",
+              id: "text-220",
               type: "text",
               body: "The general solution is therefore given by"
             }
@@ -1762,11 +2075,11 @@ export const latexDocument = {
           html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0519em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:2.4em;vertical-align:-0.95em;\"></span><span class=\"minner\"><span class=\"mopen delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size3\">(</span></span><span class=\"mord text\"><span class=\"mord textbf\">a</span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3365em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0037em;\">α</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.037em;\">ω</span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">a</span></span><span class=\"mclose delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size3\">)</span></span></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">e</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8747em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">−</span><span class=\"mord mathnormal mtight\">i</span><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0037em;\">α</span><span class=\"mord mathnormal mtight\">t</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0489em;vertical-align:-0.247em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-2.453em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:2em;\"></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0037em;\">α</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7778em;vertical-align:-0.1944em;\"></span><span class=\"mord\">±</span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span><span class=\"mpunct\">,</span></span></span></span></span>"
         },
         {
-          id: "paragraph-61",
+          id: "paragraph-64",
           type: "paragraph",
           children: [
             {
-              id: "text-162",
+              id: "text-221",
               type: "text",
               body: "where "
             },
@@ -1777,9 +2090,14 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.2481em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-2.4519em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2481em;\"><span></span></span></span></span></span></span></span></span></span>"
             },
             {
-              id: "text-163",
+              id: "text-222",
               type: "text",
-              body: "is any constant vector parallel to"
+              body: " is any constant vector parallel to"
+            },
+            {
+              id: "text-223",
+              type: "text",
+              body: " "
             },
             {
               id: "inlineMath-31",
@@ -1788,12 +2106,18 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.037em;\">ω</span></span></span></span></span></span>"
             },
             {
-              id: "text-164",
+              id: "text-224",
               type: "text",
               body: "."
-            },
+            }
+          ]
+        },
+        {
+          id: "paragraph-65",
+          type: "paragraph",
+          children: [
             {
-              id: "text-165",
+              id: "text-225",
               type: "text",
               body: "To obtain a more explicit expression, we define the orthonormal basis"
             }
@@ -1806,11 +2130,11 @@ export const latexDocument = {
           html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">a</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6389em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">a</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">x</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:2em;\"></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.037em;\">ω</span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6389em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.044em;\">z</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span></span></span></span></span>"
         },
         {
-          id: "paragraph-62",
+          id: "paragraph-66",
           type: "paragraph",
           children: [
             {
-              id: "text-166",
+              id: "text-226",
               type: "text",
               body: "where "
             },
@@ -1821,9 +2145,9 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5944em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">x</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
             },
             {
-              id: "text-167",
+              id: "text-227",
               type: "text",
-              body: "is chosen along the direction of "
+              body: " is chosen along the direction of "
             },
             {
               id: "inlineMath-33",
@@ -1832,9 +2156,14 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">a</span></span></span></span></span>"
             },
             {
-              id: "text-168",
+              id: "text-228",
               type: "text",
-              body: "and"
+              body: " and"
+            },
+            {
+              id: "text-229",
+              type: "text",
+              body: " "
             },
             {
               id: "inlineMath-34",
@@ -1843,9 +2172,9 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5944em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.044em;\">z</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>"
             },
             {
-              id: "text-169",
+              id: "text-230",
               type: "text",
-              body: "is parallel to the axis of rotation. Since"
+              body: " is parallel to the axis of rotation. Since"
             }
           ]
         },
@@ -1856,11 +2185,11 @@ export const latexDocument = {
           html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7305em;vertical-align:-0.2861em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0359em;\">y</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2861em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.044em;\">z</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6389em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">x</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span></span></span></span></span>"
         },
         {
-          id: "paragraph-63",
+          id: "paragraph-67",
           type: "paragraph",
           children: [
             {
-              id: "text-170",
+              id: "text-231",
               type: "text",
               body: "we obtain"
             }
@@ -1873,11 +2202,11 @@ export const latexDocument = {
           html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.037em;\">ω</span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">a</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7305em;vertical-align:-0.2861em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span><span class=\"mord mathnormal\">a</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0359em;\">y</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2861em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span></span></span></span></span>"
         },
         {
-          id: "paragraph-64",
+          id: "paragraph-68",
           type: "paragraph",
           children: [
             {
-              id: "text-171",
+              id: "text-232",
               type: "text",
               body: "and the solution becomes"
             }
@@ -1890,16 +2219,21 @@ export const latexDocument = {
           html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0519em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.836em;vertical-align:-0.686em;\"></span><span class=\"mord mathnormal\">a</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"minner\"><span class=\"mopen delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size2\">(</span></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">x</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord mathnormal\">i</span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.1076em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0037em;\">α</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0359em;\">y</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2861em;\"><span></span></span></span></span></span></span><span class=\"mclose delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size2\">)</span></span></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">e</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8747em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">−</span><span class=\"mord mathnormal mtight\">i</span><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0037em;\">α</span><span class=\"mord mathnormal mtight\">t</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0489em;vertical-align:-0.247em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-2.453em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span><span class=\"mord\">.</span></span></span></span></span>"
         },
         {
-          id: "paragraph-65",
+          id: "paragraph-69",
           type: "paragraph",
           children: [
             {
-              id: "text-172",
+              id: "text-233",
               type: "text",
               body: "The physical solutions are obtained by taking the real part of the complex"
             },
             {
-              id: "text-173",
+              id: "text-234",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-235",
               type: "text",
               body: "solutions. Using"
             }
@@ -1912,11 +2246,11 @@ export const latexDocument = {
           html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8747em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">e</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8747em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">−</span><span class=\"mord mathnormal mtight\">i</span><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0037em;\">α</span><span class=\"mord mathnormal mtight\">t</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mop\">cos</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0037em;\">α</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">i</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mop\">sin</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0037em;\">α</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mpunct\">,</span></span></span></span></span>"
         },
         {
-          id: "paragraph-66",
+          id: "paragraph-70",
           type: "paragraph",
           children: [
             {
-              id: "text-174",
+              id: "text-236",
               type: "text",
               body: "we find"
             }
@@ -1929,11 +2263,11 @@ export const latexDocument = {
           html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:3.972em;vertical-align:-1.736em;\"></span><span class=\"mord\"><span class=\"mtable\"><span class=\"col-align-r\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:2.236em;\"><span style=\"top:-4.236em;\"><span class=\"pstrut\" style=\"height:3.15em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span></span></span><span style=\"top:-2.1em;\"><span class=\"pstrut\" style=\"height:3.15em;\"></span><span class=\"mord\"></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.736em;\"><span></span></span></span></span></span><span class=\"col-align-l\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:2.236em;\"><span style=\"top:-4.236em;\"><span class=\"pstrut\" style=\"height:3.15em;\"></span><span class=\"mord\"><span class=\"mord\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord\">ℜ</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"minner\"><span class=\"mopen delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size2\">[</span></span><span class=\"mord mathnormal\">a</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"minner\"><span class=\"mopen delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size2\">(</span></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">x</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord mathnormal\">i</span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.1076em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0037em;\">α</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0359em;\">y</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2861em;\"><span></span></span></span></span></span></span><span class=\"mclose delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size2\">)</span></span></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">e</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8747em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">−</span><span class=\"mord mathnormal mtight\">i</span><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0037em;\">α</span><span class=\"mord mathnormal mtight\">t</span></span></span></span></span></span></span></span></span><span class=\"mclose delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size2\">]</span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-2.453em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span></span></span><span style=\"top:-2.1em;\"><span class=\"pstrut\" style=\"height:3.15em;\"></span><span class=\"mord\"><span class=\"mord\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord mathnormal\">a</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"minner\"><span class=\"mopen delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size2\">[</span></span><span class=\"mop\">cos</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0037em;\">α</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">x</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.1076em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0037em;\">α</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mop\">sin</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0037em;\">α</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0359em;\">y</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2861em;\"><span></span></span></span></span></span></span><span class=\"mclose delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size2\">]</span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-2.453em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.736em;\"><span></span></span></span></span></span></span></span></span></span></span></span>"
         },
         {
-          id: "paragraph-67",
+          id: "paragraph-71",
           type: "paragraph",
           children: [
             {
-              id: "text-175",
+              id: "text-237",
               type: "text",
               body: "where "
             },
@@ -1944,12 +2278,18 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.2481em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-2.4519em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2481em;\"><span></span></span></span></span></span></span></span></span></span>"
             },
             {
-              id: "text-176",
+              id: "text-238",
               type: "text",
-              body: "is constant and parallel to the axis of rotation."
-            },
+              body: " is constant and parallel to the axis of rotation."
+            }
+          ]
+        },
+        {
+          id: "paragraph-72",
+          type: "paragraph",
+          children: [
             {
-              id: "text-177",
+              id: "text-239",
               type: "text",
               body: "For "
             },
@@ -1960,7 +2300,7 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0037em;\">α</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span></span></span></span>"
             },
             {
-              id: "text-178",
+              id: "text-240",
               type: "text",
               body: ", this gives"
             }
@@ -1973,11 +2313,11 @@ export const latexDocument = {
           html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0519em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0361em;vertical-align:-0.2861em;\"></span><span class=\"mord mathnormal\">a</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"minner\"><span class=\"mopen delimcenter\" style=\"top:0em;\">[</span><span class=\"mop\">cos</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">x</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mop\">sin</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0359em;\">y</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2861em;\"><span></span></span></span></span></span></span><span class=\"mclose delimcenter\" style=\"top:0em;\">]</span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0489em;vertical-align:-0.247em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-2.453em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span><span class=\"mord\">.</span></span></span></span></span>"
         },
         {
-          id: "paragraph-68",
+          id: "paragraph-73",
           type: "paragraph",
           children: [
             {
-              id: "text-179",
+              id: "text-241",
               type: "text",
               body: "For "
             },
@@ -1988,7 +2328,7 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0037em;\">α</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">−</span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span></span></span></span>"
             },
             {
-              id: "text-180",
+              id: "text-242",
               type: "text",
               body: ", we obtain"
             }
@@ -2001,11 +2341,11 @@ export const latexDocument = {
           html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:3.9em;vertical-align:-1.7em;\"></span><span class=\"mord\"><span class=\"mtable\"><span class=\"col-align-r\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:2.2em;\"><span style=\"top:-4.2em;\"><span class=\"pstrut\" style=\"height:3.45em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span></span></span><span style=\"top:-2.11em;\"><span class=\"pstrut\" style=\"height:3.45em;\"></span><span class=\"mord\"></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.7em;\"><span></span></span></span></span></span><span class=\"col-align-l\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:2.2em;\"><span style=\"top:-4.2em;\"><span class=\"pstrut\" style=\"height:3.45em;\"></span><span class=\"mord\"><span class=\"mord\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord mathnormal\">a</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"minner\"><span class=\"mopen delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size3\">[</span></span><span class=\"mop\">cos</span><span class=\"mopen\">(</span><span class=\"mord\">−</span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">x</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.1076em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\">−</span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7693em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mop\">sin</span><span class=\"mopen\">(</span><span class=\"mord\">−</span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0359em;\">y</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2861em;\"><span></span></span></span></span></span></span><span class=\"mclose delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size3\">]</span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-2.453em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span></span></span><span style=\"top:-2.11em;\"><span class=\"pstrut\" style=\"height:3.45em;\"></span><span class=\"mord\"><span class=\"mord\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord mathnormal\">a</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"minner\"><span class=\"mopen delimcenter\" style=\"top:0em;\">[</span><span class=\"mop\">cos</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">x</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mop\">sin</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0359em;\">y</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2861em;\"><span></span></span></span></span></span></span><span class=\"mclose delimcenter\" style=\"top:0em;\">]</span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-2.453em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span><span class=\"mord\">.</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.7em;\"><span></span></span></span></span></span></span></span></span></span></span></span>"
         },
         {
-          id: "paragraph-69",
+          id: "paragraph-74",
           type: "paragraph",
           children: [
             {
-              id: "text-181",
+              id: "text-243",
               type: "text",
               body: "Thus, both values of "
             },
@@ -2016,17 +2356,28 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0037em;\">α</span></span></span></span>"
             },
             {
-              id: "text-182",
+              id: "text-244",
               type: "text",
-              body: "produce the same real solution."
-            },
+              body: " produce the same real solution."
+            }
+          ]
+        },
+        {
+          id: "paragraph-75",
+          type: "paragraph",
+          children: [
             {
-              id: "text-183",
+              id: "text-245",
               type: "text",
               body: "The same result can be obtained directly from the rotation matrix. Consider,"
             },
             {
-              id: "text-184",
+              id: "text-246",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-247",
               type: "text",
               body: "for simplicity, a point whose position in the fixed frame is"
             }
@@ -2039,11 +2390,11 @@ export const latexDocument = {
           html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6389em;vertical-align:-0.1944em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7333em;vertical-align:-0.15em;\"></span><span class=\"mord mathnormal\">a</span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">x</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6886em;vertical-align:-0.2441em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.207em;\"><span style=\"top:-2.4559em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2441em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span></span></span></span></span>"
         },
         {
-          id: "paragraph-70",
+          id: "paragraph-76",
           type: "paragraph",
           children: [
             {
-              id: "text-185",
+              id: "text-248",
               type: "text",
               body: "where "
             },
@@ -2054,12 +2405,17 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6886em;vertical-align:-0.2441em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.207em;\"><span style=\"top:-2.4559em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2441em;\"><span></span></span></span></span></span></span></span></span></span>"
             },
             {
-              id: "text-186",
+              id: "text-249",
               type: "text",
-              body: "is parallel to the axis of rotation. Its components in the"
+              body: " is parallel to the axis of rotation. Its components in the"
             },
             {
-              id: "text-187",
+              id: "text-250",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-251",
               type: "text",
               body: "rotating frame are obtained by applying the rotation matrix "
             },
@@ -2070,7 +2426,7 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span></span></span></span>"
             },
             {
-              id: "text-188",
+              id: "text-252",
               type: "text",
               body: ":"
             }
@@ -2083,11 +2439,11 @@ export const latexDocument = {
           html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:6.6em;vertical-align:-3.05em;\"></span><span class=\"mord\"><span class=\"mtable\"><span class=\"col-align-r\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:3.55em;\"><span style=\"top:-6.76em;\"><span class=\"pstrut\" style=\"height:4.05em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span></span></span><span style=\"top:-4.05em;\"><span class=\"pstrut\" style=\"height:4.05em;\"></span><span class=\"mord\"></span></span><span style=\"top:-1.36em;\"><span class=\"pstrut\" style=\"height:4.05em;\"></span><span class=\"mord\"></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:3.05em;\"><span></span></span></span></span></span><span class=\"col-align-l\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:3.55em;\"><span style=\"top:-6.76em;\"><span class=\"pstrut\" style=\"height:4.05em;\"></span><span class=\"mord\"><span class=\"mord\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mord text\"><span class=\"mord textbf\">g</span></span></span></span><span style=\"top:-4.05em;\"><span class=\"pstrut\" style=\"height:4.05em;\"></span><span class=\"mord\"><span class=\"mord\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord mathnormal\">a</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"minner\"><span class=\"mopen\"><span class=\"delimsizing mult\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:2.05em;\"><span style=\"top:-4.05em;\"><span class=\"pstrut\" style=\"height:5.6em;\"></span><span style=\"width:0.875em;height:3.6em;\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"0.875em\" height=\"3.6em\" viewBox=\"0 0 875 3600\"><path d=\"M863,9c0,-2,-2,-5,-6,-9c0,0,-17,0,-17,0c-12.7,0,-19.3,0.3,-20,1\nc-5.3,5.3,-10.3,11,-15,17c-242.7,294.7,-395.3,682,-458,1162c-21.3,163.3,-33.3,349,\n-36,557 l0,84c0.2,6,0,26,0,60c2,159.3,10,310.7,24,454c53.3,528,210,\n949.7,470,1265c4.7,6,9.7,11.7,15,17c0.7,0.7,7,1,19,1c0,0,18,0,18,0c4,-4,6,-7,6,-9\nc0,-2.7,-3.3,-8.7,-10,-18c-135.3,-192.7,-235.5,-414.3,-300.5,-665c-65,-250.7,-102.5,\n-544.7,-112.5,-882c-2,-104,-3,-167,-3,-189\nl0,-92c0,-162.7,5.7,-314,17,-454c20.7,-272,63.7,-513,129,-723c65.3,\n-210,155.3,-396.3,270,-559c6.7,-9.3,10,-15.3,10,-18z\"/></svg></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.55em;\"><span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mtable\"><span class=\"col-align-c\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:2.05em;\"><span style=\"top:-4.21em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mop\">cos</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span></span></span><span style=\"top:-3.01em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\">−</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mop\">sin</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span></span></span><span style=\"top:-1.81em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.55em;\"><span></span></span></span></span></span><span class=\"arraycolsep\" style=\"width:0.5em;\"></span><span class=\"arraycolsep\" style=\"width:0.5em;\"></span><span class=\"col-align-c\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:2.05em;\"><span style=\"top:-4.21em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mop\">sin</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span></span></span><span style=\"top:-3.01em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mop\">cos</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span></span></span><span style=\"top:-1.81em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.55em;\"><span></span></span></span></span></span><span class=\"arraycolsep\" style=\"width:0.5em;\"></span><span class=\"arraycolsep\" style=\"width:0.5em;\"></span><span class=\"col-align-c\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:2.05em;\"><span style=\"top:-4.21em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\">0</span></span></span><span style=\"top:-3.01em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\">0</span></span></span><span style=\"top:-1.81em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.55em;\"><span></span></span></span></span></span></span></span><span class=\"mclose\"><span class=\"delimsizing mult\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:2.05em;\"><span style=\"top:-4.05em;\"><span class=\"pstrut\" style=\"height:5.6em;\"></span><span style=\"width:0.875em;height:3.6em;\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"0.875em\" height=\"3.6em\" viewBox=\"0 0 875 3600\"><path d=\"M76,0c-16.7,0,-25,3,-25,9c0,2,2,6.3,6,13c21.3,28.7,42.3,60.3,\n63,95c96.7,156.7,172.8,332.5,228.5,527.5c55.7,195,92.8,416.5,111.5,664.5\nc11.3,139.3,17,290.7,17,454c0,28,1.7,43,3.3,45l0,9\nc-3,4,-3.3,16.7,-3.3,38c0,162,-5.7,313.7,-17,455c-18.7,248,-55.8,469.3,-111.5,664\nc-55.7,194.7,-131.8,370.3,-228.5,527c-20.7,34.7,-41.7,66.3,-63,95c-2,3.3,-4,7,-6,11\nc0,7.3,5.7,11,17,11c0,0,11,0,11,0c9.3,0,14.3,-0.3,15,-1c5.3,-5.3,10.3,-11,15,-17\nc242.7,-294.7,395.3,-681.7,458,-1161c21.3,-164.7,33.3,-350.7,36,-558\nl0,-144c-2,-159.3,-10,-310.7,-24,-454c-53.3,-528,-210,-949.7,\n-470,-1265c-4.7,-6,-9.7,-11.7,-15,-17c-0.7,-0.7,-6.7,-1,-18,-1z\"/></svg></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.55em;\"><span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"minner\"><span class=\"mopen\"><span class=\"delimsizing mult\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:2.05em;\"><span style=\"top:-4.05em;\"><span class=\"pstrut\" style=\"height:5.6em;\"></span><span style=\"width:0.875em;height:3.6em;\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"0.875em\" height=\"3.6em\" viewBox=\"0 0 875 3600\"><path d=\"M863,9c0,-2,-2,-5,-6,-9c0,0,-17,0,-17,0c-12.7,0,-19.3,0.3,-20,1\nc-5.3,5.3,-10.3,11,-15,17c-242.7,294.7,-395.3,682,-458,1162c-21.3,163.3,-33.3,349,\n-36,557 l0,84c0.2,6,0,26,0,60c2,159.3,10,310.7,24,454c53.3,528,210,\n949.7,470,1265c4.7,6,9.7,11.7,15,17c0.7,0.7,7,1,19,1c0,0,18,0,18,0c4,-4,6,-7,6,-9\nc0,-2.7,-3.3,-8.7,-10,-18c-135.3,-192.7,-235.5,-414.3,-300.5,-665c-65,-250.7,-102.5,\n-544.7,-112.5,-882c-2,-104,-3,-167,-3,-189\nl0,-92c0,-162.7,5.7,-314,17,-454c20.7,-272,63.7,-513,129,-723c65.3,\n-210,155.3,-396.3,270,-559c6.7,-9.3,10,-15.3,10,-18z\"/></svg></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.55em;\"><span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mtable\"><span class=\"col-align-c\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:2.05em;\"><span style=\"top:-4.21em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\">1</span></span></span><span style=\"top:-3.01em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\">0</span></span></span><span style=\"top:-1.81em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.55em;\"><span></span></span></span></span></span></span></span><span class=\"mclose\"><span class=\"delimsizing mult\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:2.05em;\"><span style=\"top:-4.05em;\"><span class=\"pstrut\" style=\"height:5.6em;\"></span><span style=\"width:0.875em;height:3.6em;\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"0.875em\" height=\"3.6em\" viewBox=\"0 0 875 3600\"><path d=\"M76,0c-16.7,0,-25,3,-25,9c0,2,2,6.3,6,13c21.3,28.7,42.3,60.3,\n63,95c96.7,156.7,172.8,332.5,228.5,527.5c55.7,195,92.8,416.5,111.5,664.5\nc11.3,139.3,17,290.7,17,454c0,28,1.7,43,3.3,45l0,9\nc-3,4,-3.3,16.7,-3.3,38c0,162,-5.7,313.7,-17,455c-18.7,248,-55.8,469.3,-111.5,664\nc-55.7,194.7,-131.8,370.3,-228.5,527c-20.7,34.7,-41.7,66.3,-63,95c-2,3.3,-4,7,-6,11\nc0,7.3,5.7,11,17,11c0,0,11,0,11,0c9.3,0,14.3,-0.3,15,-1c5.3,-5.3,10.3,-11,15,-17\nc242.7,-294.7,395.3,-681.7,458,-1161c21.3,-164.7,33.3,-350.7,36,-558\nl0,-144c-2,-159.3,-10,-310.7,-24,-454c-53.3,-528,-210,-949.7,\n-470,-1265c-4.7,-6,-9.7,-11.7,-15,-17c-0.7,-0.7,-6.7,-1,-18,-1z\"/></svg></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.55em;\"><span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.207em;\"><span style=\"top:-2.4559em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2441em;\"><span></span></span></span></span></span></span></span></span><span style=\"top:-1.36em;\"><span class=\"pstrut\" style=\"height:4.05em;\"></span><span class=\"mord\"><span class=\"mord\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord mathnormal\">a</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"minner\"><span class=\"mopen delimcenter\" style=\"top:0em;\">[</span><span class=\"mop\">cos</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">x</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mop\">sin</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">e</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0359em;\">y</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2861em;\"><span></span></span></span></span></span></span><span class=\"mclose delimcenter\" style=\"top:0em;\">]</span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.207em;\"><span style=\"top:-2.4559em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2441em;\"><span></span></span></span></span></span></span><span class=\"mord\">.</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:3.05em;\"><span></span></span></span></span></span></span></span></span></span></span></span>"
         },
         {
-          id: "paragraph-71",
+          id: "paragraph-77",
           type: "paragraph",
           children: [
             {
-              id: "text-189",
+              id: "text-253",
               type: "text",
               body: "This is precisely the same solution obtained from the differential equation"
             }
@@ -2100,21 +2456,31 @@ export const latexDocument = {
           html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:2.1149em;vertical-align:-0.686em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.4289em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">d</span><span class=\"mord mathnormal\">t</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">d</span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">−</span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.037em;\">ω</span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.9963em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mord\">.</span></span></span></span></span>"
         },
         {
-          id: "paragraph-72",
+          id: "paragraph-78",
           type: "paragraph",
           children: [
             {
-              id: "text-190",
+              id: "text-254",
               type: "text",
               body: "Now that we have determined the trajectory of a person standing on the Earth"
             },
             {
-              id: "text-191",
+              id: "text-255",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-256",
               type: "text",
               body: "as observed from the rotating frame, we can compute the centrifugal force"
             },
             {
-              id: "text-192",
+              id: "text-257",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-258",
               type: "text",
               body: "acting on this person,"
             }
@@ -2127,11 +2493,11 @@ export const latexDocument = {
           html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8361em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">F</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3361em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord text mtight\"><span class=\"mord mtight\">cf</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.1141em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">m</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8641em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mpunct\">,</span></span></span></span></span>"
         },
         {
-          id: "paragraph-73",
+          id: "paragraph-79",
           type: "paragraph",
           children: [
             {
-              id: "text-193",
+              id: "text-259",
               type: "text",
               body: "where we have used the fact that the solution satisfies"
             }
@@ -2144,11 +2510,11 @@ export const latexDocument = {
           html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">⟨</span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.037em;\">ω</span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">∣</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0519em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mclose\">⟩</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0.</span></span></span></span></span>"
         },
         {
-          id: "paragraph-74",
+          id: "paragraph-80",
           type: "paragraph",
           children: [
             {
-              id: "text-194",
+              id: "text-260",
               type: "text",
               body: "The Coriolis force is,"
             }
@@ -2161,11 +2527,11 @@ export const latexDocument = {
           html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:3.6149em;vertical-align:-1.5574em;\"></span><span class=\"mord\"><span class=\"mtable\"><span class=\"col-align-r\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:2.0574em;\"><span style=\"top:-4.0574em;\"><span class=\"pstrut\" style=\"height:3.4289em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">F</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord text mtight\"><span class=\"mord mtight\">cor</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span><span style=\"top:-2.2314em;\"><span class=\"pstrut\" style=\"height:3.4289em;\"></span><span class=\"mord\"></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.5574em;\"><span></span></span></span></span></span><span class=\"col-align-l\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:2.0574em;\"><span style=\"top:-4.0574em;\"><span class=\"pstrut\" style=\"height:3.4289em;\"></span><span class=\"mord\"><span class=\"mord\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord\">−</span><span class=\"mord\">2</span><span class=\"mord mathnormal\">m</span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.037em;\">ω</span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.4289em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">d</span><span class=\"mord mathnormal\">t</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">d</span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span></span></span><span style=\"top:-2.2314em;\"><span class=\"pstrut\" style=\"height:3.4289em;\"></span><span class=\"mord\"><span class=\"mord\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord\">2</span><span class=\"mord mathnormal\">m</span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.037em;\">ω</span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"minner\"><span class=\"mopen delimcenter\" style=\"top:0em;\">(</span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.037em;\">ω</span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mclose delimcenter\" style=\"top:0em;\">)</span></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mpunct\">,</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.5574em;\"><span></span></span></span></span></span></span></span></span></span></span></span>"
         },
         {
-          id: "paragraph-75",
+          id: "paragraph-81",
           type: "paragraph",
           children: [
             {
-              id: "text-195",
+              id: "text-261",
               type: "text",
               body: "where we have used"
             }
@@ -2178,11 +2544,11 @@ export const latexDocument = {
           html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:2.1149em;vertical-align:-0.686em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.4289em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">d</span><span class=\"mord mathnormal\">t</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">d</span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">−</span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.037em;\">ω</span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.9963em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mord\">.</span></span></span></span></span>"
         },
         {
-          id: "paragraph-76",
+          id: "paragraph-82",
           type: "paragraph",
           children: [
             {
-              id: "text-196",
+              id: "text-262",
               type: "text",
               body: "Since "
             },
@@ -2193,9 +2559,9 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.9463em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span>"
             },
             {
-              id: "text-197",
+              id: "text-263",
               type: "text",
-              body: "is orthogonal to "
+              body: " is orthogonal to "
             },
             {
               id: "inlineMath-42",
@@ -2204,7 +2570,7 @@ export const latexDocument = {
               html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.037em;\">ω</span></span></span></span></span></span>"
             },
             {
-              id: "text-198",
+              id: "text-264",
               type: "text",
               body: ", we obtain"
             }
@@ -2217,11 +2583,11 @@ export const latexDocument = {
           html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.2241em;vertical-align:-0.3621em;\"></span><span class=\"mord\"><span class=\"mtable\"><span class=\"col-align-r\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8621em;\"><span style=\"top:-2.9979em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">F</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord text mtight\"><span class=\"mord mtight\">cor</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3621em;\"><span></span></span></span></span></span><span class=\"col-align-l\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8621em;\"><span style=\"top:-2.9979em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord\">−</span><span class=\"mord\">2</span><span class=\"mord mathnormal\">m</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8641em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mord\">.</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3621em;\"><span></span></span></span></span></span></span></span></span></span></span></span>"
         },
         {
-          id: "paragraph-77",
+          id: "paragraph-83",
           type: "paragraph",
           children: [
             {
-              id: "text-199",
+              id: "text-265",
               type: "text",
               body: "The total apparent force acting on the person in the rotating frame is therefore"
             }
@@ -2234,16 +2600,21 @@ export const latexDocument = {
           html: "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:4.2482em;vertical-align:-1.8741em;\"></span><span class=\"mord\"><span class=\"mtable\"><span class=\"col-align-r\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:2.3741em;\"><span style=\"top:-4.5341em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">F</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2806em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord text mtight\"><span class=\"mord mtight\">tot</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span><span style=\"top:-3.01em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"></span></span><span style=\"top:-1.4859em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.8741em;\"><span></span></span></span></span></span><span class=\"col-align-l\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:2.3741em;\"><span style=\"top:-4.5341em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">F</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3361em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord text mtight\"><span class=\"mord mtight\">cf</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">F</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord text mtight\"><span class=\"mord mtight\">cor</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span><span style=\"top:-3.01em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord mathnormal\">m</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8641em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord\">2</span><span class=\"mord mathnormal\">m</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8641em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span></span></span><span style=\"top:-1.4859em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord\">−</span><span class=\"mord mathnormal\">m</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">ω</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8641em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord textbf\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8019em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mord\">.</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.8741em;\"><span></span></span></span></span></span></span></span></span></span></span></span>"
         },
         {
-          id: "paragraph-78",
+          id: "paragraph-84",
           type: "paragraph",
           children: [
             {
-              id: "text-200",
+              id: "text-266",
               type: "text",
               body: "This is precisely the centripetal force required to keep the person on the Earth"
             },
             {
-              id: "text-201",
+              id: "text-267",
+              type: "text",
+              body: " "
+            },
+            {
+              id: "text-268",
               type: "text",
               body: "moving on the circular trajectory observed from the rotating frame."
             }
@@ -2256,49 +2627,69 @@ export const latexDocument = {
           type: "subsection",
           title: [
             {
-              id: "text-202",
+              id: "text-269",
               type: "text",
               body: "A Final Comment"
             }
           ],
           content: [
             {
-              id: "paragraph-79",
+              id: "paragraph-85",
               type: "paragraph",
               children: [
                 {
-                  id: "text-203",
+                  id: "text-270",
                   type: "text",
                   body: "At this point it is worth pausing to discuss a few important conceptual points"
                 },
                 {
-                  id: "text-204",
+                  id: "text-271",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-272",
                   type: "text",
                   body: "that, although implicit throughout our derivation, play a fundamental role in"
                 },
                 {
-                  id: "text-205",
+                  id: "text-273",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-274",
                   type: "text",
                   body: "the dynamics of rotating reference frames. "
                 }
               ]
             },
             {
-              id: "paragraph-80",
+              id: "paragraph-86",
               type: "paragraph",
               children: [
                 {
-                  id: "text-206",
+                  id: "text-275",
                   type: "text",
                   body: "So far, we have assumed that Newton's first principle of dynamics holds in the"
                 },
                 {
-                  id: "text-207",
+                  id: "text-276",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-277",
                   type: "text",
                   body: "rotating frame. An observer standing on the carousel could verify this"
                 },
                 {
-                  id: "text-208",
+                  id: "text-278",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-279",
                   type: "text",
                   body: "experimentally by measuring the force required to keep a mass "
                 },
@@ -2309,109 +2700,189 @@ export const latexDocument = {
                   html: "<span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">m</span></span></span></span>"
                 },
                 {
-                  id: "text-209",
+                  id: "text-280",
                   type: "text",
-                  body: "at rest at"
+                  body: " at rest at"
                 },
                 {
-                  id: "text-210",
+                  id: "text-281",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-282",
                   type: "text",
                   body: "different positions on the carousel. The measured force would be precisely the"
                 },
                 {
-                  id: "text-211",
+                  id: "text-283",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-284",
                   type: "text",
                   body: "centrifugal force. Likewise, the observer could measure the force required to"
                 },
                 {
-                  id: "text-212",
+                  id: "text-285",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-286",
                   type: "text",
                   body: "keep a body moving with constant velocity. Repeating this experiment for"
                 },
                 {
-                  id: "text-213",
+                  id: "text-287",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-288",
                   type: "text",
                   body: "different velocities would allow the observer to determine the combined action"
                 },
                 {
-                  id: "text-214",
+                  id: "text-289",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-290",
                   type: "text",
                   body: "of the centrifugal and Coriolis forces. The fact that such experiments can be"
                 },
                 {
-                  id: "text-215",
+                  id: "text-291",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-292",
                   type: "text",
                   body: "performed and lead to well-defined force fields is a remarkable property of"
                 },
                 {
-                  id: "text-216",
+                  id: "text-293",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-294",
                   type: "text",
                   body: "rotating frames and is by no means obvious. "
                 }
               ]
             },
             {
-              id: "paragraph-81",
+              id: "paragraph-87",
               type: "paragraph",
               children: [
                 {
-                  id: "text-217",
+                  id: "text-295",
                   type: "text",
                   body: "Once these force fields have been determined - assuming no other forces are"
                 },
                 {
-                  id: "text-218",
+                  id: "text-296",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-297",
                   type: "text",
                   body: "present - the observer can predict the motion of any body from its initial"
                 },
                 {
-                  id: "text-219",
+                  id: "text-298",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-299",
                   type: "text",
                   body: "conditions by solving Newton's second law or, equivalently, the Lagrange"
                 },
                 {
-                  id: "text-220",
+                  id: "text-300",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-301",
                   type: "text",
                   body: "equations. Thus, in the rotating frame, Newton's second law, Hamilton's"
                 },
                 {
-                  id: "text-221",
+                  id: "text-302",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-303",
                   type: "text",
                   body: "principle, the Lagrange equations, and the Hamilton equations remain perfectly"
                 },
                 {
-                  id: "text-222",
+                  id: "text-304",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-305",
                   type: "text",
                   body: "valid descriptions of the dynamics. "
                 }
               ]
             },
             {
-              id: "paragraph-82",
+              id: "paragraph-88",
               type: "paragraph",
               children: [
                 {
-                  id: "text-223",
+                  id: "text-306",
                   type: "text",
                   body: "What would nevertheless surprise the observer is that the apparent forces do"
                 },
                 {
-                  id: "text-224",
+                  id: "text-307",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-308",
                   type: "text",
                   body: "not satisfy Newton's third principle of dynamics. In particular, there is no"
                 },
                 {
-                  id: "text-225",
+                  id: "text-309",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-310",
                   type: "text",
                   body: "body in the universe on which acts a force equal and opposite to the"
                 },
                 {
-                  id: "text-226",
+                  id: "text-311",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-312",
                   type: "text",
                   body: "centrifugal force. This lack of an action-reaction pair is one of the reasons"
                 },
                 {
-                  id: "text-227",
+                  id: "text-313",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-314",
                   type: "text",
                   body: "why the centrifugal and Coriolis forces are referred to as "
                 },
@@ -2421,145 +2892,255 @@ export const latexDocument = {
                   type: "emph"
                 },
                 {
-                  id: "text-228",
+                  id: "text-315",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-316",
                   type: "text",
                   body: "forces. "
                 }
               ]
             },
             {
-              id: "paragraph-83",
+              id: "paragraph-89",
               type: "paragraph",
               children: [
                 {
-                  id: "text-229",
+                  id: "text-317",
                   type: "text",
                   body: "In classical mechanics, inertial reference frames are precisely those in"
                 },
                 {
-                  id: "text-230",
+                  id: "text-318",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-319",
                   type: "text",
                   body: "which Newton's three principles of dynamics hold. The rotating frame considered in this"
                 },
                 {
-                  id: "text-231",
+                  id: "text-320",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-321",
                   type: "text",
                   body: "chapter is therefore not an inertial frame. Remarkably, by introducing the centrifugal"
                 },
                 {
-                  id: "text-232",
+                  id: "text-322",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-323",
                   type: "text",
                   body: "and Coriolis forces, Newton's first and second principles can be restored, allowing"
                 },
                 {
-                  id: "text-233",
+                  id: "text-324",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-325",
                   type: "text",
                   body: "the dynamics to be described exactly as in an inertial frame. Newton's third principle,"
                 },
                 {
-                  id: "text-234",
+                  id: "text-326",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-327",
                   type: "text",
                   body: "however, cannot be recovered: there is no body on which acts a force equal and opposite to the centrifugal or Coriolis"
                 },
                 {
-                  id: "text-235",
+                  id: "text-328",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-329",
                   type: "text",
                   body: "force. This is one of the defining characteristics of apparent forces. "
                 }
               ]
             },
             {
-              id: "paragraph-84",
+              id: "paragraph-90",
               type: "paragraph",
               children: [
                 {
-                  id: "text-236",
+                  id: "text-330",
                   type: "text",
                   body: "One should not conclude that every force that fails to satisfy"
                 },
                 {
-                  id: "text-237",
+                  id: "text-331",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-332",
                   type: "text",
                   body: "the simple action-reaction principle is therefore an apparent force."
                 },
                 {
-                  id: "text-238",
+                  id: "text-333",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-334",
                   type: "text",
                   body: "The Lorentz force on a charge moving in a magnetic field provides an important counterexample."
                 },
                 {
-                  id: "text-239",
+                  id: "text-335",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-336",
                   type: "text",
                   body: "Unlike the centrifugal and Coriolis forces, the Lorentz"
                 },
                 {
-                  id: "text-240",
+                  id: "text-337",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-338",
                   type: "text",
                   body: "force cannot be eliminated by changing the reference frame. It represents a"
                 },
                 {
-                  id: "text-241",
+                  id: "text-339",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-340",
                   type: "text",
                   body: "genuine physical interaction and therefore belongs to a completely different category. "
                 }
               ]
             },
             {
-              id: "paragraph-85",
+              id: "paragraph-91",
               type: "paragraph",
               children: [
                 {
-                  id: "text-242",
+                  id: "text-341",
                   type: "text",
                   body: "There is, however, an even deeper reason why these forces are regarded as"
                 },
                 {
-                  id: "text-243",
+                  id: "text-342",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-343",
                   type: "text",
                   body: "apparent. The Lorentz force"
                 },
                 {
-                  id: "text-244",
+                  id: "text-344",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-345",
                   type: "text",
                   body: "is fundamentally different from the centrifugal and Coriolis forces. No"
                 },
                 {
-                  id: "text-245",
+                  id: "text-346",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-347",
                   type: "text",
                   body: "change of coordinates can eliminate the Lorentz force, since it originates from"
                 },
                 {
-                  id: "text-246",
+                  id: "text-348",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-349",
                   type: "text",
                   body: "the electromagnetic interaction and, in special relativity, arises from the"
                 },
                 {
-                  id: "text-247",
+                  id: "text-350",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-351",
                   type: "text",
                   body: "transformation of the electric field of the charge in its rest frame. The"
                 },
                 {
-                  id: "text-248",
+                  id: "text-352",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-353",
                   type: "text",
                   body: "centrifugal and Coriolis forces, on the other hand, can be made to disappear"
                 },
                 {
-                  id: "text-249",
+                  id: "text-354",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-355",
                   type: "text",
                   body: "completely simply by observing the same motion from an inertial frame, such as"
                 },
                 {
-                  id: "text-250",
+                  id: "text-356",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-357",
                   type: "text",
                   body: "the frame of an observer standing on the Earth. It is this dependence on the"
                 },
                 {
-                  id: "text-251",
+                  id: "text-358",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-359",
                   type: "text",
                   body: "choice of reference frame that ultimately distinguishes apparent forces from"
                 },
                 {
-                  id: "text-252",
+                  id: "text-360",
+                  type: "text",
+                  body: " "
+                },
+                {
+                  id: "text-361",
                   type: "text",
                   body: "genuine physical interactions."
                 }
