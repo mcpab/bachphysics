@@ -73,3 +73,5 @@ pnpm-debug.log*
 *.log
 *.out
 *.pdf
+
+/next-env.d.ts
