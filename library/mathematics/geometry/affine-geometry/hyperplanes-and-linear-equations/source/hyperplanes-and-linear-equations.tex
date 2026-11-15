@@ -1,0 +1,613 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{hyperref}
+
+\title{Hyperplanes and Linear Equations}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Analytic Geometry}
+
+A functional on a real vector space \(V\) is a mapping
+\[
+f:V\longrightarrow\mathbb{R}
+\]
+which satisfies the linearity conditions
+\[
+f(\mathbf{u}+\mathbf{v})
+=
+f(\mathbf{u})+f(\mathbf{v}),
+\qquad
+\mathbf{u},\mathbf{v}\in V,
+\]
+and
+\[
+f(t\mathbf{v})
+=
+t f(\mathbf{v}),
+\qquad
+\mathbf{v}\in V,\quad t\in\mathbb{R}.
+\]
+
+\begin{proposition}
+Let \(V\) be a real vector space of dimension \(n\). Any
+\((n-1)\)-dimensional linear subspace \(U\) of \(V\) is the kernel of a
+nonzero functional
+\[
+f:V\longrightarrow\mathbb{R}.
+\]
+Conversely, the kernel of every nonzero functional on \(V\) is an
+\((n-1)\)-dimensional linear subspace of \(V\). Moreover, the functional
+is determined by \(U\) up to a nonzero scalar factor.
+\end{proposition}
+
+\begin{proof}
+We first prove that the kernel of a nonzero functional \(f\) is a linear
+subspace of \(V\) of dimension \(n-1\).
+
+The kernel of \(f\) is
+\[
+\ker(f)
+=
+\left\{
+\mathbf{u}\in V
+\mid
+f(\mathbf{u})=0
+\right\}.
+\]
+Let \(\mathbf{u},\mathbf{v}\in\ker(f)\), and let
+\(\alpha,\beta\in\mathbb{R}\). By linearity,
+\[
+f(\alpha\mathbf{u}+\beta\mathbf{v})
+=
+\alpha f(\mathbf{u})+\beta f(\mathbf{v})
+=
+0.
+\]
+Hence
+\[
+\alpha\mathbf{u}+\beta\mathbf{v}\in\ker(f),
+\]
+and therefore \(\ker(f)\) is a linear subspace of \(V\).
+
+Let
+\[
+\mathbf{v}_1,\ldots,\mathbf{v}_n
+\]
+be a basis of \(V\). Since \(f\) is nonzero, at least one basis vector
+has a nonzero image. After relabeling the basis if necessary, we may
+assume that
+\[
+f(\mathbf{v}_n)\neq0.
+\]
+For any \(\mathbf{u}\in\ker(f)\), write
+\[
+\mathbf{u}=u^i\mathbf{v}_i.
+\]
+Then
+\[
+f(\mathbf{u})
+=
+u^i f(\mathbf{v}_i)
+=
+0.
+\]
+Thus
+\[
+u^n
+=
+-\frac{
+u^1f(\mathbf{v}_1)+\cdots+u^{n-1}f(\mathbf{v}_{n-1})
+}{
+f(\mathbf{v}_n)
+}.
+\]
+Therefore only \(n-1\) coefficients can be chosen independently, and
+\[
+\dim\ker(f)=n-1.
+\]
+
+We now prove the converse. Let \(U\) be an \((n-1)\)-dimensional linear
+subspace of \(V\). Choose a vector
+\[
+\mathbf{e}\in V\setminus U.
+\]
+Then
+\[
+W=\operatorname{span}\{\mathbf{e}\}
+\]
+is a one-dimensional linear subspace of \(V\), and
+\[
+U\cap W=\{\mathbf{0}\}.
+\]
+Since
+\[
+\dim U+\dim W=n,
+\]
+we have
+\[
+V=U\oplus W.
+\]
+Hence every \(\mathbf{v}\in V\) can be written uniquely as
+\[
+\mathbf{v}=\mathbf{u}+\beta\mathbf{e},
+\qquad
+\mathbf{u}\in U,\quad \beta\in\mathbb{R}.
+\]
+
+Define
+\[
+f:V\longrightarrow\mathbb{R}
+\]
+by
+\[
+f(\mathbf{v})=\beta.
+\]
+This functional is linear and nonzero. Moreover,
+\[
+f(\mathbf{v})=0
+\]
+if and only if \(\beta=0\), which holds if and only if
+\(\mathbf{v}\in U\). Therefore,
+\[
+\ker(f)=U.
+\]
+
+Finally, let \(f\) and \(g\) be two nonzero functionals with the same
+kernel \(U\):
+\[
+\ker(f)=\ker(g)=U.
+\]
+For any \(\mathbf{v}\in V\), write
+\[
+\mathbf{v}=\mathbf{u}+\beta\mathbf{e},
+\qquad
+\mathbf{u}\in U.
+\]
+Since
+\[
+f(\mathbf{u})=g(\mathbf{u})=0,
+\]
+we have
+\[
+f(\mathbf{v})=\beta f(\mathbf{e})
+\]
+and
+\[
+g(\mathbf{v})=\beta g(\mathbf{e}).
+\]
+Furthermore,
+\[
+f(\mathbf{e})\neq0
+\qquad\text{and}\qquad
+g(\mathbf{e})\neq0,
+\]
+because \(\mathbf{e}\notin U\). Define
+\[
+\lambda
+=
+\frac{f(\mathbf{e})}{g(\mathbf{e})}.
+\]
+Then \(\lambda\neq0\), and
+\[
+f(\mathbf{v})
+=
+\lambda g(\mathbf{v})
+\]
+for every \(\mathbf{v}\in V\). Hence \(f\) is determined by \(U\) up to
+a nonzero scalar factor.
+\end{proof}
+
+\begin{definition}
+Let \(\mathcal A\) be an \(n\)-dimensional affine space. An affine
+subspace \(S(x,U)\) of \(\mathcal A\) is called a \emph{hyperplane} if its
+direction space \(U\) has dimension \(n-1\).
+\end{definition}
+
+\begin{definition}[Coordinate map]
+Let
+\[
+x_0,\mathbf v_1,\ldots,\mathbf v_n
+\]
+be an affine coordinate system for an affine space $(\mathcal A,V)$, where
+$\mathbf v_1,\ldots,\mathbf v_n$ is a basis of $V$.
+
+The coordinate map associated with this affine coordinate system is the map
+\[
+c:\mathcal A\longrightarrow\mathbb R^n
+\]
+defined by
+\[
+c(y)=(y^1,\ldots,y^n)
+\]
+if and only if
+\[
+y=(y^i\mathbf v_i)(x_0).
+\]
+\end{definition}
+
+\begin{proposition}
+Let $(\mathcal A,V)$ be an affine space of dimension $n$, equipped with the
+affine coordinate system
+\[
+x_0,\mathbf v_1,\ldots,\mathbf v_n.
+\]
+
+A hyperplane of $\mathcal A$ is determined, with respect to this reference
+system, by a linear equation
+\[
+d^i\xi_i=\mu_0,
+\]
+where $\xi_1,\ldots,\xi_n,\mu_0\in\mathbb R$ and not all the
+coefficients $\xi_i$ are zero.
+
+Conversely, every equation of this form determines a hyperplane of
+$\mathcal A$.
+\end{proposition}
+
+\begin{proof}
+Let us first consider a hyperplane
+\[
+S(x,U)=\{\mathbf u(x)\mid \mathbf u\in U\},
+\]
+where $U$ is an $(n-1)$-dimensional linear subspace of $V$.
+
+By the preceding proposition, there exists a nonzero functional
+\[
+f:V\longrightarrow\mathbb R
+\]
+such that
+\[
+\ker f=U.
+\]
+
+Define the set of coordinate tuples of the points of the hyperplane by
+\[
+C:=c\bigl(S(x,U)\bigr)
+  =\left\{(d^i)\in\mathbb R^n
+    \,\middle|\,
+    \exists\,y\in S(x,U),\ c(y)=(d^i)
+   \right\}.
+\]
+
+Because the action of $V$ on $\mathcal A$ is transitive, there exists a unique
+vector $\mathbf u_0\in V$ such that
+\[
+x=\mathbf u_0(x_0).
+\]
+
+We shall prove that
+\[
+C=F,
+\]
+where
+\[
+F:=\left\{(d^i)\in\mathbb R^n
+          \,\middle|\,
+          d^i\xi_i=\mu_0
+   \right\}
+\]
+for suitable coefficients $\xi_i$ and $\mu_0$.
+
+Let $(d^i)\in C$. Then there exists a point
+\[
+y\in S(x,U)
+\]
+whose coordinates are $(d^i)$. Define its displacement vector by
+\[
+\mathbf d:=\overrightarrow{x_0y}=d^i\mathbf v_i,
+\qquad
+y=\mathbf d(x_0).
+\]
+
+Since $y\in S(x,U)$, there exists a vector $\mathbf u\in U$ such that
+\[
+y=\mathbf u(x).
+\]
+Using $x=\mathbf u_0(x_0)$, we obtain
+\[
+y
+ =\mathbf u\bigl(\mathbf u_0(x_0)\bigr)
+ =(\mathbf u+\mathbf u_0)(x_0).
+\]
+On the other hand,
+\[
+y=\mathbf d(x_0).
+\]
+Since the action is free,
+\[
+\mathbf d=\mathbf u+\mathbf u_0,
+\]
+and therefore
+\[
+\mathbf u=\mathbf d-\mathbf u_0.
+\]
+
+Because $\mathbf u\in U=\ker f$,
+\[
+f(\mathbf d-\mathbf u_0)=0.
+\]
+By the linearity of $f$,
+\[
+f(\mathbf d)-f(\mathbf u_0)=0.
+\]
+Since $\mathbf d=d^i\mathbf v_i$, this becomes
+\[
+d^if(\mathbf v_i)-f(\mathbf u_0)=0.
+\]
+
+We now define
+\[
+\xi_i:=f(\mathbf v_i),
+\qquad
+\mu_0:=f(\mathbf u_0).
+\]
+It follows that
+\[
+d^i\xi_i=\mu_0.
+\]
+Therefore
+\[
+(d^i)\in F,
+\]
+and hence
+\[
+C\subseteq F.
+\]
+
+Moreover, not all the coefficients $\xi_i$ are zero. Indeed, if
+\[
+\xi_i=f(\mathbf v_i)=0
+\qquad
+\text{for every }i,
+\]
+then $f$ would vanish on a basis of $V$ and would therefore be the zero
+functional, contrary to the choice of $f$.
+
+We now prove the reverse inclusion. Let
+\[
+(d^i)\in F
+\]
+and define
+\[
+\mathbf d:=d^i\mathbf v_i,
+\qquad
+y:=\mathbf d(x_0).
+\]
+Because $(d^i)\in F$,
+\[
+d^i\xi_i=\mu_0.
+\]
+Consequently,
+\[
+f(\mathbf d-\mathbf u_0)
+ =d^if(\mathbf v_i)-f(\mathbf u_0)
+ =d^i\xi_i-\mu_0
+ =0.
+\]
+Thus
+\[
+\mathbf d-\mathbf u_0\in\ker f=U.
+\]
+
+Since $x=\mathbf u_0(x_0)$, we have
+\[
+y
+ =\mathbf d(x_0)
+ =(\mathbf d-\mathbf u_0)\bigl(\mathbf u_0(x_0)\bigr)
+ =(\mathbf d-\mathbf u_0)(x).
+\]
+Therefore
+\[
+y\in S(x,U),
+\]
+and hence
+\[
+(d^i)=c(y)\in C.
+\]
+It follows that
+\[
+F\subseteq C.
+\]
+
+We conclude that
+\[
+C=F.
+\]
+Thus every hyperplane is determined, in the chosen affine coordinate system,
+by one linear equation
+\[
+d^i\xi_i=\mu_0,
+\]
+where not all the coefficients $\xi_i$ are zero.
+
+We now prove the converse. Consider the set
+\[
+F:=\left\{(d^i)\in\mathbb R^n
+          \,\middle|\,
+          d^i\xi_i=\mu_0
+   \right\},
+\]
+where not all the coefficients $\xi_i$ are zero.
+
+Define a functional
+\[
+f:V\longrightarrow\mathbb R
+\]
+by prescribing its values on the basis:
+\[
+f(\mathbf v_i):=\xi_i.
+\]
+Equivalently, if
+\[
+\mathbf d=d^i\mathbf v_i,
+\]
+then
+\[
+f(\mathbf d)=d^i\xi_i.
+\]
+
+Since not all the coefficients $\xi_i$ are zero, the functional $f$ is
+nonzero. Therefore
+\[
+U:=\ker f
+\]
+is an $(n-1)$-dimensional linear subspace of $V$.
+
+Choose a vector
+\[
+\mathbf m\in V\setminus U
+\]
+and define the one-dimensional subspace
+\[
+W:=\operatorname{span}\{\mathbf m\}.
+\]
+Since $\mathbf m\notin\ker f$, the restriction
+\[
+f|_W:W\longrightarrow\mathbb R
+\]
+is nonzero. Because both $W$ and $\mathbb R$ are one-dimensional,
+$f|_W$ is surjective. Hence there exists a vector
+\[
+\mathbf v_0\in W
+\]
+such that
+\[
+f(\mathbf v_0)=\mu_0.
+\]
+
+Define the point
+\[
+x:=\mathbf v_0(x_0)
+\]
+and consider the affine subspace
+\[
+S(x,U).
+\]
+Since $\dim U=n-1$, this affine subspace is a hyperplane.
+
+Let
+\[
+C:=c\bigl(S(x,U)\bigr).
+\]
+We shall prove that
+\[
+C=F.
+\]
+
+Let $(d^i)\in C$. Then there exists a point
+\[
+y\in S(x,U)
+\]
+with
+\[
+c(y)=(d^i).
+\]
+Define
+\[
+\mathbf d:=d^i\mathbf v_i,
+\]
+so that
+\[
+y=\mathbf d(x_0).
+\]
+
+Since $y\in S(x,U)$, there exists $\mathbf u\in U$ such that
+\[
+y=\mathbf u(x).
+\]
+Using $x=\mathbf v_0(x_0)$, we obtain
+\[
+y
+ =\mathbf u\bigl(\mathbf v_0(x_0)\bigr)
+ =(\mathbf u+\mathbf v_0)(x_0).
+\]
+Since also $y=\mathbf d(x_0)$ and the action is free,
+\[
+\mathbf d=\mathbf u+\mathbf v_0.
+\]
+Therefore
+\[
+f(\mathbf d)
+ =f(\mathbf u)+f(\mathbf v_0)
+ =0+\mu_0
+ =\mu_0.
+\]
+Since
+\[
+f(\mathbf d)=d^i\xi_i,
+\]
+we obtain
+\[
+d^i\xi_i=\mu_0.
+\]
+Thus
+\[
+(d^i)\in F,
+\]
+and hence
+\[
+C\subseteq F.
+\]
+
+Conversely, let
+\[
+(d^i)\in F
+\]
+and define
+\[
+\mathbf d:=d^i\mathbf v_i,
+\qquad
+y:=\mathbf d(x_0).
+\]
+Since $(d^i)\in F$,
+\[
+d^i\xi_i=\mu_0.
+\]
+It follows that
+\[
+f(\mathbf d-\mathbf v_0)
+ =f(\mathbf d)-f(\mathbf v_0)
+ =d^i\xi_i-\mu_0
+ =0.
+\]
+Therefore
+\[
+\mathbf d-\mathbf v_0\in\ker f=U.
+\]
+
+Using $x=\mathbf v_0(x_0)$, we obtain
+\[
+y
+ =\mathbf d(x_0)
+ =(\mathbf d-\mathbf v_0)\bigl(\mathbf v_0(x_0)\bigr)
+ =(\mathbf d-\mathbf v_0)(x).
+\]
+Hence
+\[
+y\in S(x,U),
+\]
+so
+\[
+(d^i)=c(y)\in C.
+\]
+Therefore
+\[
+F\subseteq C.
+\]
+
+We conclude that
+\[
+C=F.
+\]
+Thus the given linear equation determines the hyperplane $S(x,U)$.
+\end{proof}
+
+\end{document}

@@ -1,0 +1,287 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{hyperref}
+
+\title{Affine Independence and Spans}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Affine Subspaces Spanned by Points}
+
+\begin{definition}
+Let \(\ell\geq 1\). The points
+\[
+x_1,\ldots,x_\ell\in \mathcal A
+\]
+are called \emph{affinely independent} if there exists no affine
+subspace of \(\mathcal A\) of dimension at most \(\ell-2\) containing all of them.
+Otherwise, the points are called \emph{affinely dependent}.
+\end{definition}
+
+For example, suppose that the ambient affine space \(\mathcal A\) has dimension
+\(n=3\).
+
+\begin{itemize}
+    \item If \(\ell=1\), a single point is always affinely independent.
+
+    \item If \(\ell=2\), two points are affinely independent if and only if
+    they are distinct.
+
+    \item If \(\ell=3\), three points are affinely independent if and only if
+    they do not lie on the same affine line.
+
+    \item If \(\ell=4\), four points are affinely independent if and only if
+    they do not lie in the same affine plane.
+
+    \item If \(\ell\geq 5\), the points are always affinely dependent.
+\end{itemize}
+
+Indeed, when \(n=3\) and \(\ell\geq5\), we have
+\[
+\ell-2\geq3.
+\]
+Since all the points lie in \(\mathcal A\), which is itself a
+three-dimensional affine space, they are affinely dependent.
+
+\begin{proposition}
+There exist \(\ell\) affinely independent points of \(\mathcal A\) whenever
+\[
+1\leq \ell\leq n+1,
+\]
+where \(n=\dim \mathcal A=\dim V\).
+\end{proposition}
+
+\begin{proof}
+Choose a point \(x\in \mathcal A\). Since \(\dim V=n\), we may choose a basis
+\[
+\mathbf v_1,\ldots,\mathbf v_n
+\]
+of \(V\). Define the points
+\[
+x_i=\mathbf v_i(x),
+\qquad i=1,\ldots,n.
+\]
+
+For \(\ell=1\), the set \(\{x\}\) is contained in the zero-dimensional
+affine subspace
+\[
+S(x,\{\mathbf 0\})=\{x\},
+\]
+and \(x\) is affinely independent.
+
+Now let
+\[
+2\leq \ell\leq n+1
+\]
+and define
+\[
+U=\operatorname{span}
+\{\mathbf v_1,\ldots,\mathbf v_{\ell-1}\}.
+\]
+Since the vectors
+\[
+\mathbf v_1,\ldots,\mathbf v_{\ell-1}
+\]
+belong to a basis of \(V\), they are linearly independent. Therefore,
+\[
+\dim U=\ell-1.
+\]
+
+The points
+\[
+x,x_1,\ldots,x_{\ell-1}
+\]
+belong to the affine subspace \(S(x,U)\); that is,
+\[
+\{x,x_1,\ldots,x_{\ell-1}\}\subseteq S(x,U).
+\]
+
+Suppose that these points also belong to an arbitrary affine subspace
+containing \(x\). Since \(x\) belongs to this affine subspace, we may
+write it as \(S(x,W)\) for some linear subspace \(W\leq V\). Thus,
+\[
+\{x,x_1,\ldots,x_{\ell-1}\}
+\subseteq S(x,U)\cap S(x,W).
+\]
+
+Because the intersection contains \(x\), it is nonempty, and hence
+\[
+S(x,U)\cap S(x,W)=S(x,U\cap W).
+\]
+Consequently,
+\[
+x_i\in S(x,U\cap W),
+\qquad i=1,\ldots,\ell-1.
+\]
+
+Since
+\[
+x_i=\mathbf v_i(x),
+\]
+the uniqueness of the vector mapping \(x\) to \(x_i\) implies that
+\[
+\mathbf v_i\in U\cap W,
+\qquad i=1,\ldots,\ell-1.
+\]
+Therefore,
+\[
+U
+=\operatorname{span}
+\{\mathbf v_1,\ldots,\mathbf v_{\ell-1}\}
+\subseteq U\cap W.
+\]
+Since \(U\cap W\subseteq U\), we conclude that
+\[
+U\cap W=U.
+\]
+In particular,
+\[
+U\subseteq W,
+\]
+and hence
+\[
+\dim W\geq\dim U=\ell-1.
+\]
+
+Thus every affine subspace containing
+\[
+x,x_1,\ldots,x_{\ell-1}
+\]
+has dimension at least \(\ell-1\). Therefore, these \(\ell\) points cannot
+all belong to an affine subspace of dimension at most \(\ell-2\), and
+they are affinely independent.
+\end{proof}
+
+\begin{proposition}
+Let
+\[
+1\leq \ell\leq n+1.
+\]
+If the points
+\[
+x_1,\ldots,x_\ell\in \mathcal A
+\]
+are affinely independent, then there exists one and only one
+\((\ell-1)\)-dimensional affine subspace of \(\mathcal A\) containing them.
+\end{proposition}
+
+\begin{proof}
+If \(\ell=1\), the unique zero-dimensional affine subspace containing
+\(x_1\) is
+\[
+S(x_1,\{\mathbf 0\})=\{x_1\}.
+\]
+
+Let now \(\ell\geq2\), and consider the \(\ell-1\) vectors
+\[
+\mathbf d_i=\overrightarrow{x_1x_{i+1}},
+\qquad i=1,\ldots,\ell-1.
+\]
+
+We first show that these vectors are linearly independent. Suppose,
+on the contrary, that they are linearly dependent, and let
+\[
+U=\operatorname{span}
+\{\mathbf d_1,\ldots,\mathbf d_{\ell-1}\}.
+\]
+Their linear dependence would imply that
+\[
+\dim U\leq \ell-2.
+\]
+
+By construction,
+\[
+x_{i+1}=\mathbf d_i(x_1),
+\qquad i=1,\ldots,\ell-1.
+\]
+Therefore,
+\[
+x_1,\ldots,x_\ell\in S(x_1,U).
+\]
+The points would consequently lie in an affine subspace of dimension
+at most \(\ell-2\), contradicting their affine independence. Hence,
+\[
+\mathbf d_1,\ldots,\mathbf d_{\ell-1}
+\]
+are linearly independent.
+
+It follows that
+\[
+\dim U=\ell-1,
+\]
+and therefore
+\[
+S=S(x_1,U)
+\]
+is a \((\ell-1)\)-dimensional affine subspace containing
+\(x_1,\ldots,x_\ell\). This proves existence.
+
+We now prove uniqueness. Suppose that \(S'\) is another
+\((\ell-1)\)-dimensional affine subspace containing the same points.
+Write
+\[
+S'=S(y,W),
+\qquad
+\dim W=\ell-1.
+\]
+Since \(x_1\in S'\), we may take \(x_1\) as its reference point, and
+hence
+\[
+S'=S(x_1,W).
+\]
+
+All the points \(x_1,\ldots,x_\ell\) belong to both \(S(x_1,U)\) and
+\(S(x_1,W)\). Thus,
+\[
+x_1,\ldots,x_\ell
+\in
+S(x_1,U)\cap S(x_1,W)
+=
+S(x_1,U\cap W).
+\]
+
+For every \(i=1,\ldots,\ell-1\), we therefore have
+\[
+\mathbf d_i
+=
+\overrightarrow{x_1x_{i+1}}
+\in U\cap W.
+\]
+Since the vectors \(\mathbf d_1,\ldots,\mathbf d_{\ell-1}\) span \(U\),
+it follows that
+\[
+U\subseteq U\cap W.
+\]
+The reverse inclusion is automatic, so
+\[
+U\cap W=U.
+\]
+Consequently,
+\[
+U\subseteq W.
+\]
+
+But
+\[
+\dim U=\dim W=\ell-1,
+\]
+and therefore
+\[
+U=W.
+\]
+It follows that
+\[
+S'=S(x_1,W)=S(x_1,U)=S.
+\]
+Hence the \((\ell-1)\)-dimensional affine subspace containing
+\(x_1,\ldots,x_\ell\) is unique.
+\end{proof}
+
+\end{document}

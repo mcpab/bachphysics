@@ -1,0 +1,704 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{hyperref}
+
+\title{Affine Subspaces and Coordinates}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Affine Subspaces}
+
+\begin{definition}[Affine subspace]
+Let \(x\in \mathcal A\), and let \(U\) be a vector subspace of \(V\). The affine
+subspace of \(\mathcal A\) determined by \(x\) and \(U\) is
+\[
+S(x,U)
+=
+\left\{
+\mathbf{u}(x)
+\;\middle|\;
+\mathbf{u}\in U
+\right\}.
+\]
+Its dimension is defined by
+\[
+\dim S(x,U)=\dim U.
+\]
+\end{definition}
+
+\begin{proposition}
+An \(n\)-dimensional affine space \(\mathcal A\) has only one \(n\)-dimensional
+affine subspace, namely \(\mathcal A\) itself.
+\end{proposition}
+
+\begin{proof}
+Suppose that
+\[
+\dim U=n.
+\]
+Let
+\[
+\mathbf{u}_1,\ldots,\mathbf{u}_n\in U
+\]
+be a basis of \(U\). Thus,
+\[
+\lambda_1\mathbf{u}_1+\cdots+\lambda_n\mathbf{u}_n=\mathbf{0}
+\quad\Longleftrightarrow\quad
+\lambda_i=0
+\quad\text{for every }i=1,\ldots,n.
+\]
+Since \(U\) and \(V\) both have dimension \(n\), we have
+\[
+\operatorname{span}
+\left\{
+\mathbf{u}_1,\ldots,\mathbf{u}_n
+\right\}
+=
+U
+=
+V.
+\]
+
+Fix \(x\in \mathcal A\). We know that for every \(y\in \mathcal A\), there exists a unique
+vector \(\mathbf{u}\in V\) such that
+\[
+\mathbf{u}(x)=y.
+\]
+Since \(U=V\), we have \(\mathbf{u}\in U\). Therefore,
+\[
+y\in S(x,U).
+\]
+Hence,
+\[
+S(x,U)=\mathcal A.
+\]
+\end{proof}
+
+\begin{proposition}
+Let \(S(x,U)\) be an affine subspace determined by the point \(x\) and
+the linear subspace \(U\). Then
+\[
+U
+=
+\left\{
+\overrightarrow{yz}
+\;\middle|\;
+y,z\in S(x,U)
+\right\}.
+\]
+\end{proposition}
+
+\begin{proof}
+Let us first consider \(\mathbf{u}\in U\), and let
+\[
+y=\mathbf{u}(x).
+\]
+By the definition of \(S(x,U)\), we have \(y\in S(x,U)\). Moreover,
+\[
+\mathbf{u}=\overrightarrow{xy}.
+\]
+Since \(x,y\in S(x,U)\), it follows that
+\[
+U
+\subseteq
+\left\{
+\overrightarrow{yz}
+\;\middle|\;
+y,z\in S(x,U)
+\right\}.
+\]
+
+We now prove the opposite inclusion. Let \(y,z\in S(x,U)\). By the
+definition of \(S(x,U)\), there exist \(\mathbf{u},\mathbf{v}\in U\)
+such that
+\[
+y=\mathbf{u}(x)
+\qquad\text{and}\qquad
+z=\mathbf{v}(x).
+\]
+Then
+\[
+(\mathbf{v}-\mathbf{u})(y)
+=
+(\mathbf{v}-\mathbf{u})\bigl(\mathbf{u}(x)\bigr)
+=
+\bigl((\mathbf{v}-\mathbf{u})+\mathbf{u}\bigr)(x)
+=
+\mathbf{v}(x)
+=
+z.
+\]
+Therefore,
+\[
+\overrightarrow{yz}
+=
+\mathbf{v}-\mathbf{u}.
+\]
+Since \(\mathbf{u},\mathbf{v}\in U\) and \(U\) is a vector subspace,
+\[
+\mathbf{v}-\mathbf{u}\in U.
+\]
+It follows that
+\[
+\left\{
+\overrightarrow{yz}
+\;\middle|\;
+y,z\in S(x,U)
+\right\}
+\subseteq U.
+\]
+Hence,
+\[
+U
+=
+\left\{
+\overrightarrow{yz}
+\;\middle|\;
+y,z\in S(x,U)
+\right\}.
+\]
+\end{proof}
+
+\begin{proposition}
+Let \(x,y\in \mathcal A\), and let \(U,W\) be linear subspaces of \(V\). Then
+\[
+S(x,U)=S(y,W)
+\]
+if and only if
+\[
+U=W
+\qquad\text{and}\qquad
+S(x,U)\cap S(y,W)\neq\varnothing.
+\]
+\end{proposition}
+
+\begin{proof}
+Let us first assume that
+\[
+S(x,U)=S(y,W).
+\]
+It is then obvious that
+\[
+S(x,U)\cap S(y,W)\neq\varnothing.
+\]
+We need to prove that \(U=W\).
+
+Let \(\mathbf{u}\in U\). There exists \(z\in S(x,U)\) such that
+\[
+z=\mathbf{u}(x).
+\]
+Since \(S(x,U)=S(y,W)\), we also have \(z\in S(y,W)\). Therefore, there
+exists \(\mathbf{v}\in W\) such that
+\[
+z=\mathbf{v}(y).
+\]
+It follows that
+\[
+\mathbf{u}(x)=\mathbf{v}(y),
+\]
+and therefore
+\[
+x=(\mathbf{v}-\mathbf{u})(y).
+\]
+
+Since
+\[
+x\in S(x,U)=S(y,W),
+\]
+the vector mapping \(y\) onto \(x\) belongs to \(W\). Hence, there exists
+\(\mathbf{w}\in W\) such that
+\[
+\mathbf{v}-\mathbf{u}=\mathbf{w}.
+\]
+Therefore,
+\[
+\mathbf{u}=-\mathbf{w}+\mathbf{v}.
+\]
+Since \(\mathbf{v},\mathbf{w}\in W\), it follows that
+\[
+\mathbf{u}\in W.
+\]
+Thus,
+\[
+U\subseteq W.
+\]
+Similarly, we can prove that
+\[
+W\subseteq U.
+\]
+Therefore,
+\[
+U=W.
+\]
+
+Conversely, let us assume that
+\[
+U=W
+\qquad\text{and}\qquad
+S(x,U)\cap S(y,W)\neq\varnothing.
+\]
+Let
+\[
+z\in S(x,U)\cap S(y,W).
+\]
+Then there exist \(\mathbf{u}\in U\) and \(\mathbf{v}\in W\) such that
+\[
+z=\mathbf{u}(x)=\mathbf{v}(y).
+\]
+
+We also know that for every \(k\in S(x,U)\), there exists
+\(\mathbf{q}\in U\) such that
+\[
+k=\mathbf{q}(x).
+\]
+Since
+\[
+\mathbf{u}(x)=\mathbf{v}(y),
+\]
+we have
+\[
+x=(\mathbf{v}-\mathbf{u})(y).
+\]
+Therefore,
+\[
+k
+=
+\mathbf{q}(x)
+=
+\mathbf{q}\bigl((\mathbf{v}-\mathbf{u})(y)\bigr)
+=
+(\mathbf{q}+\mathbf{v}-\mathbf{u})(y).
+\]
+Since \(U=W\), we have
+\[
+\mathbf{q}+\mathbf{v}-\mathbf{u}\in W.
+\]
+It follows that
+\[
+k\in S(y,W).
+\]
+Therefore,
+\[
+S(x,U)\subseteq S(y,W).
+\]
+Similarly, we can prove that
+\[
+S(y,W)\subseteq S(x,U).
+\]
+Hence,
+\[
+S(x,U)=S(y,W).
+\]
+\end{proof}
+\begin{proposition}
+Let \(S(x,U)\) be a \(r\)-dimensional affine subspace of \(\mathcal A\). Then,
+with the action inherited from \(\mathcal A\), \(S(x,U)\) is itself a
+\(r\)-dimensional affine space over the vector space \(U\).
+\end{proposition}
+
+\begin{proof}
+Since \(U\) is a vector subspace of \(V\), the action of \(U\) on
+\(S(x,U)\) is well-defined. Indeed, let \(\mathbf{u}\in U\) and
+\(y\in S(x,U)\). Then there exists \(\mathbf{p}\in U\) such that
+\[
+y=\mathbf{p}(x).
+\]
+Therefore,
+\[
+\mathbf{u}(y)
+=
+\mathbf{u}\bigl(\mathbf{p}(x)\bigr)
+=
+(\mathbf{u}+\mathbf{p})(x).
+\]
+Since
+\[
+\mathbf{u}+\mathbf{p}\in U,
+\]
+it follows that
+\[
+\mathbf{u}(y)\in S(x,U).
+\]
+
+We know that \(U\) is a vector space. Hence, it has the null vector
+\[
+\mathbf{0}\in U,
+\]
+and, for every \(y\in S(x,U)\),
+\[
+\mathbf{0}(y)=y.
+\]
+
+We now need to prove that, for every \(z,y\in S(x,U)\), there exists a
+unique \(\mathbf{u}\in U\) such that
+\[
+\mathbf{u}(y)=z.
+\]
+We know that there exist unique vectors \(\mathbf{q},\mathbf{p}\in U\)
+such that
+\[
+z=\mathbf{q}(x)
+\qquad\text{and}\qquad
+y=\mathbf{p}(x).
+\]
+Therefore,
+\[
+x=(-\mathbf{p})(y),
+\]
+and hence
+\[
+z
+=
+\mathbf{q}(x)
+=
+\mathbf{q}\bigl((-\mathbf{p})(y)\bigr)
+=
+(\mathbf{q}-\mathbf{p})(y),
+\]
+because of the inherited composition.
+
+Therefore, there exists a unique \(\mathbf{u}\in U\) such that
+\[
+z=\mathbf{u}(y),
+\]
+where
+\[
+\mathbf{u}=\mathbf{q}-\mathbf{p}.
+\]
+
+Finally, the composition property is inherited from the action of \(V\)
+on \(\mathcal A\). For every \(\mathbf{u},\mathbf{v}\in U\) and
+\(y\in S(x,U)\),
+\[
+(\mathbf{u}\circ\mathbf{v})(y)
+=
+\mathbf{u}\bigl(\mathbf{v}(y)\bigr)
+=
+(\mathbf{u}+\mathbf{v})(y).
+\]
+
+Therefore, \(S(x,U)\) is an affine space over \(U\). Since
+\[
+\dim U=r,
+\]
+the affine space \(S(x,U)\) has dimension \(r\).
+\end{proof}
+
+\begin{proposition}
+Let \(S(x,U)\) and \(S(y,W)\) be affine subspaces of \(\mathcal A\). If
+\[
+z\in S(x,U)\cap S(y,W),
+\]
+then
+\[
+S(x,U)\cap S(y,W)
+=
+S(z,U\cap W).
+\]
+\end{proposition}
+
+\begin{proof}
+Since
+\[
+z\in S(x,U)\cap S(y,W),
+\]
+there exist \(\mathbf{u}\in U\) and \(\mathbf{v}\in W\) such that
+\[
+z=\mathbf{u}(x)=\mathbf{v}(y).
+\]
+
+We first consider an arbitrary point
+\[
+h\in S(x,U)\cap S(y,W).
+\]
+Then there exist \(\mathbf{q}\in U\) and \(\mathbf{p}\in W\) such that
+\[
+h=\mathbf{q}(x)=\mathbf{p}(y).
+\]
+
+Since
+\[
+z=\mathbf{u}(x),
+\]
+we have
+\[
+x=(-\mathbf{u})(z),
+\]
+and therefore
+\[
+h
+=
+\mathbf{q}(x)
+=
+\mathbf{q}\bigl((-\mathbf{u})(z)\bigr)
+=
+(\mathbf{q}-\mathbf{u})(z).
+\]
+Similarly, since
+\[
+z=\mathbf{v}(y),
+\]
+we have
+\[
+h
+=
+\mathbf{p}(y)
+=
+\mathbf{p}\bigl((-\mathbf{v})(z)\bigr)
+=
+(\mathbf{p}-\mathbf{v})(z).
+\]
+
+By the uniqueness of the vector mapping \(z\) onto \(h\),
+\[
+\mathbf{q}-\mathbf{u}
+=
+\mathbf{p}-\mathbf{v}
+=
+\mathbf{m}.
+\]
+Since
+\[
+\mathbf{q}-\mathbf{u}\in U
+\qquad\text{and}\qquad
+\mathbf{p}-\mathbf{v}\in W,
+\]
+it follows that
+\[
+\mathbf{m}\in U\cap W.
+\]
+Hence,
+\[
+h=\mathbf{m}(z),
+\]
+and therefore
+\[
+S(x,U)\cap S(y,W)
+\subseteq
+S(z,U\cap W).
+\]
+
+We now take a point
+\[
+k\in S(z,U\cap W).
+\]
+Then there exists \(\mathbf{q}\in U\cap W\) such that
+\[
+k=\mathbf{q}(z).
+\]
+Since
+\[
+z=\mathbf{u}(x)=\mathbf{v}(y),
+\]
+we have
+\[
+k
+=
+\mathbf{q}(z)
+=
+\mathbf{q}\bigl(\mathbf{u}(x)\bigr)
+=
+(\mathbf{q}+\mathbf{u})(x),
+\]
+and
+\[
+k
+=
+\mathbf{q}(z)
+=
+\mathbf{q}\bigl(\mathbf{v}(y)\bigr)
+=
+(\mathbf{q}+\mathbf{v})(y).
+\]
+Since
+\[
+\mathbf{q}+\mathbf{u}\in U
+\qquad\text{and}\qquad
+\mathbf{q}+\mathbf{v}\in W,
+\]
+we have
+\[
+k\in S(x,U)\cap S(y,W).
+\]
+Therefore,
+\[
+S(z,U\cap W)
+\subseteq
+S(x,U)\cap S(y,W).
+\]
+
+Hence,
+\[
+S(x,U)\cap S(y,W)
+=
+S(z,U\cap W).
+\]
+\end{proof}
+
+\begin{definition}[Coordinate system]
+Let \(S(x,U)\) be an affine space of dimension \(r\). Let
+\[
+\mathbf{u}_1,\mathbf{u}_2,\ldots,\mathbf{u}_r
+\]
+be a basis for \(U\), and let \(x_0\) be a point in \(S(x,U)\). The point \(x_0\) and the basis \(\mathbf{u}_1,\ldots,\mathbf{u}_r\) form a coordinate system for \(S(x,U)\).
+
+We use the Einstein summation convention throughout: an index that occurs twice in a term is implicitly summed over its full range.
+
+Let \(y\in S(x,U)\). There exist unique vectors
+\(\mathbf{u},\mathbf{u}_0\in U\) such that
+\[
+y=\mathbf{u}(x)
+\qquad\text{and}\qquad
+x_0=\mathbf{u}_0(x).
+\]
+Hence
+\[
+x=(-\mathbf{u}_0)(x_0),
+\]
+and therefore
+\[
+y
+=
+\mathbf{u}\bigl((-\mathbf{u}_0)(x_0)\bigr)
+=
+(\mathbf{u}-\mathbf{u}_0)(x_0).
+\]
+Thus
+\[
+\overrightarrow{x_0y}=\mathbf{u}-\mathbf{u}_0.
+\]
+Writing
+\[
+\mathbf{u}-\mathbf{u}_0=y^i\mathbf{u}_i,
+\]
+the components \(y^1,\ldots,y^r\) are called the coordinates of \(y\) with respect to this coordinate system.
+\end{definition}
+
+\begin{proposition}
+Given a coordinate system \(x_0,\mathbf{u}_i\) for an affine subspace
+\(S(x,U)\), the mapping
+\[
+c:S(x,U)\longrightarrow\mathbb{R}^r,
+\qquad
+c(y)=\left(y^1,y^2,\ldots,y^r\right),
+\]
+is one-to-one and onto.
+\end{proposition}
+
+\begin{proof}
+First, we note that \(c\) is the composition of two mappings:
+\[
+S(x,U)\xrightarrow{\,g\,}U\xrightarrow{\,h\,}\mathbb{R}^r.
+\]
+
+For any \(y\in S(x,U)\), let
+\[
+y=\mathbf{u}(x)
+\qquad\text{and}\qquad
+x_0=\mathbf{u}_0(x).
+\]
+We define
+\[
+g(y)=\mathbf{u}-\mathbf{u}_0.
+\]
+If
+\[
+\mathbf{v}=v^i\mathbf{u}_i,
+\]
+we define
+\[
+h(\mathbf{v})=\left(v^1,v^2,\ldots,v^r\right).
+\]
+Therefore,
+\[
+c(y)=(h\circ g)(y).
+\]
+
+Let us first prove that \(c\) is one-to-one. Assume that
+\[
+(h\circ g)(z)=(h\circ g)(y).
+\]
+Let
+\[
+z=\mathbf{q}(x)
+\qquad\text{and}\qquad
+y=\mathbf{u}(x).
+\]
+Then
+\[
+g(z)=\mathbf{q}-\mathbf{u}_0
+\qquad\text{and}\qquad
+g(y)=\mathbf{u}-\mathbf{u}_0.
+\]
+Hence
+\[
+h(\mathbf{q}-\mathbf{u}_0)
+=
+h(\mathbf{u}-\mathbf{u}_0).
+\]
+The components of a vector with respect to a basis are unique, and therefore
+\[
+\mathbf{q}-\mathbf{u}_0
+=
+\mathbf{u}-\mathbf{u}_0.
+\]
+Thus
+\[
+\mathbf{q}=\mathbf{u},
+\]
+and consequently
+\[
+z=y.
+\]
+Hence \(c\) is one-to-one.
+
+Let us now prove that \(c\) is onto. We first prove that
+\[
+h:U\longrightarrow\mathbb{R}^r
+\]
+is onto. Indeed, for any
+\[
+\mathbf{k}=\left(k^1,k^2,\ldots,k^r\right)\in\mathbb{R}^r,
+\]
+there exists a vector \(\mathbf{p}\in U\) given by
+\[
+\mathbf{p}=k^i\mathbf{u}_i,
+\]
+such that
+\[
+h(\mathbf{p})=\mathbf{k}.
+\]
+
+We now prove that
+\[
+g:S(x,U)\longrightarrow U
+\]
+is onto. Indeed, for any \(\mathbf{p}\in U\), set
+\[
+\mathbf{u}=\mathbf{p}+\mathbf{u}_0.
+\]
+Then \(\mathbf{u}\in U\), and
+\[
+y=(\mathbf{u}-\mathbf{u}_0)(x_0)\in S(x,U).
+\]
+Moreover,
+\[
+g(y)=\mathbf{u}-\mathbf{u}_0=\mathbf{p}.
+\]
+Therefore \(g\) is onto.
+
+Since both \(g\) and \(h\) are onto, their composition
+\[
+c=h\circ g
+\]
+is onto.
+\end{proof}
+
+\end{document}

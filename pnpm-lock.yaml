@@ -21,8 +21,8 @@ importers:
         specifier: ^5.9.1
         version: 5.9.1(react-hook-form@7.86.0(react@19.2.8))(zod@4.5.1)
       '@mcpab/katex':
-        specifier: 0.1.6
-        version: 0.1.6(b13a6cf8db3a143aed1c1326ca6ae73c)
+        specifier: 0.1.7
+        version: 0.1.7(b13a6cf8db3a143aed1c1326ca6ae73c)
       '@mcpab/mui-theme':
         specifier: ^0.1.2
         version: 0.1.2(@emotion/react@11.14.0(@types/react@19.2.18)(react@19.2.8))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.2.18)(react@19.2.8))(@types/react@19.2.18)(react@19.2.8))(@mui/material@7.3.11(@emotion/react@11.14.0(@types/react@19.2.18)(react@19.2.8))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.2.18)(react@19.2.8))(@types/react@19.2.18)(react@19.2.8))(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@mui/utils@7.3.11(@types/react@19.2.18)(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
@@ -548,8 +548,8 @@ packages:
       react: '>=18'
       react-dom: '>=18'
 
-  '@mcpab/katex@0.1.6':
-    resolution: {integrity: sha512-U9oBdL/y0s4I6GCklBUuhoWOqZPJXV96i68nYUB+SVLj+G95S1py4r7TQaxtgkXdSLIdgH0UwpwP+hJRukGU8A==, tarball: https://npm.pkg.github.com/download/@mcpab/katex/0.1.6/6db539a798fa877a80ed95d7238fe0ef5acb4f92}
+  '@mcpab/katex@0.1.7':
+    resolution: {integrity: sha512-XvzuczEB+tFt2KRvZyNSUXruAzfiIXCpBf5R31PG3iXECt5f7NuIMaqEYsuiDToJvAcL9ThLMlZVeubyZrAZug==, tarball: https://npm.pkg.github.com/download/@mcpab/katex/0.1.7/c89c9922c4d91e55f296ba320b3c2d31886e48f3}
     hasBin: true
     peerDependencies:
       '@emotion/react': ^11.14.0
@@ -2753,7 +2753,7 @@ snapshots:
       react: 19.2.8
       react-dom: 19.2.8(react@19.2.8)
 
-  '@mcpab/katex@0.1.6(b13a6cf8db3a143aed1c1326ca6ae73c)':
+  '@mcpab/katex@0.1.7(b13a6cf8db3a143aed1c1326ca6ae73c)':
     dependencies:
       '@emotion/react': 11.14.0(@types/react@19.2.18)(react@19.2.8)
       '@emotion/styled': 11.14.1(@emotion/react@11.14.0(@types/react@19.2.18)(react@19.2.8))(@types/react@19.2.18)(react@19.2.8)

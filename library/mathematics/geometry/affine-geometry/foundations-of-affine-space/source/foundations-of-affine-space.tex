@@ -1,0 +1,280 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{hyperref}
+
+\title{Foundations of Affine Space}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+% ============================================================
+
+\subsection{Notation and conventions}
+
+Before beginning the mathematical development, we establish the notation
+that will be used throughout this essay.
+
+Points and vectors are distinct kinds of objects: points belong to
+\(\mathcal A\), whereas vectors belong to \(V\).
+
+\begin{center}
+\begin{tabular}{lll}
+Symbol & Meaning & Convention or remarks \\
+\hline
+\(\mathcal A\) & Ambient affine space & Its elements are points \(x,y,z\in\mathcal A\). \\
+\(V\) & Vector space associated with \(\mathcal A\) & Its elements are bold lowercase vectors \(\mathbf u,\mathbf v,\mathbf w\in V\). \\
+\(U,W\) & Linear subspaces of \(V\) & Typical elements are \(\mathbf u\in U\) and \(\mathbf w\in W\). \\
+\(\{\mathbf v_i\}_{i=1}^{n}\) & Basis of \(V\) & \(n=\dim\mathcal A=\dim V\). \\
+\(\{\mathbf u_i\}_{i=1}^{r}\) & Basis of \(U\) & \(r=\dim U\). \\
+\(\{\mathbf w_i\}_{i=1}^{s}\) & Basis of \(W\) & \(s=\dim W\). \\
+\(S(x,U)\) & Affine subspace of \(\mathcal A\) through \(x\) with direction space \(U\) & \(x\in\mathcal A\) and \(U\) linear subspace of \(V\). \\
+\end{tabular}
+\end{center}
+
+The vector \(\overrightarrow{xy}\in V\) denotes the unique displacement
+from the point \(x\) to the point \(y\).
+
+Once an affine coordinate system has been chosen, point coordinates and
+vector components are distinguished as shown below.
+
+\begin{center}
+\begin{tabular}{lll}
+Symbol & Meaning & Convention or remarks \\
+\hline
+\(\overrightarrow{xy}\) & Unique displacement from \(x\) to \(y\) & \(\overrightarrow{xy}\in V\). \\
+\(\mathbf d\) & Explicitly named displacement & \(\mathbf d:=\overrightarrow{xy}\). \\
+\(\mathbf d_{ij}\) & Indexed displacement & \(\mathbf d_{ij}:=\overrightarrow{x_i x_j}\). \\
+\((x^1,\ldots,x^n)\) & Coordinates of \(x\in\mathcal A\) & Defined after choosing an affine coordinate system. \\
+\(v^i,u^i,w^i\) & Components of vectors & \(\mathbf v=v^i\mathbf v_i\), \(\mathbf u=u^i\mathbf u_i\), and \(\mathbf w=w^i\mathbf w_i\). \\
+\(i,j\) & Basis and coordinate indices & Their range is determined by the relevant basis: \(1,\ldots,n\), \(1,\ldots,r\), or \(1,\ldots,s\). \\
+\(v^i\mathbf v_i\) & Einstein summation convention & An index repeated once upstairs and once downstairs is summed over its range. The same convention applies to \(u^i\mathbf u_i\) and \(w^i\mathbf w_i\). \\
+\end{tabular}
+\end{center}
+
+Additional symbols will be introduced as the corresponding mathematical
+objects are needed.
+
+\section{Affine Spaces}
+
+\begin{definition}[Affine space]
+An \(n\)-dimensional affine space over \(\mathbb{R}\) consists of:
+\begin{itemize}
+    \item a vector space \(V\);
+    \item a set \(\mathcal A\) of points.
+\end{itemize}
+\end{definition}
+
+To each vector \(\mathbf{v} \in V\) is associated a mapping
+\[
+\mathbf{v} \colon \mathcal A \longrightarrow \mathcal A,
+\]
+\[
+\mathbf{v}(x) = y,
+\]
+where \(x,y \in \mathcal A\), with the following properties:
+
+\begin{enumerate}
+    \item
+    \(\mathbf{0}(x)=x\), where \(\mathbf{0}\) is the null vector.
+
+    \item
+    For all \(x,y\in \mathcal A\), there exists a unique \(\mathbf{v}\in V\)
+    such that \(\mathbf{v}(x)=y\), and we denote
+    \(\mathbf{v}=\overrightarrow{xy}\).
+
+    \item
+    If \(\mathbf{v},\mathbf{w}\in V\), the composition of the action
+    of two vectors is defined formally as the sum of two vectors:
+    
+    \[(\mathbf{v}\circ\mathbf{w})(x)
+    =\mathbf{v}\bigl(\mathbf{w}(x)\bigr)
+    \coloneqq(\mathbf{v}+\mathbf{w})(x).\]
+
+\end{enumerate}
+
+Such a composition must be commutative, as the sum of vectors is:
+\[
+\mathbf{v}\circ\mathbf{w}
+=
+\mathbf{v}+\mathbf{w}
+=
+\mathbf{w}+\mathbf{v}
+=
+\mathbf{w}\circ\mathbf{v}.
+\] 
+
+
+\begin{definition}[Translation]
+To any given vector \(\mathbf{v}\in V\) is associated a mapping
+\[
+T_{\mathbf{v}}\colon \mathcal A\longrightarrow \mathcal A
+\]
+such that
+\[
+T_{\mathbf{v}}(x)=\mathbf{v}(x).
+\]
+Such a mapping is called a translation.
+\end{definition}
+
+\begin{proposition}
+For every \(\mathbf{v}\in V\), the translation
+\[
+T_{\mathbf{v}}\colon \mathcal A\longrightarrow \mathcal A
+\]
+is one-to-one and onto.
+\end{proposition}
+
+\begin{proof}
+Let us prove that \(T_{\mathbf{v}}\) is one-to-one. Assume that
+\(z,y\in \mathcal A\) and
+\[
+T_{\mathbf{v}}(z)=T_{\mathbf{v}}(y).
+\]
+Therefore,
+\[
+\mathbf{v}(z)=\mathbf{v}(y).
+\]
+Applying \(-\mathbf{v}\) to both sides, we obtain
+\[
+(-\mathbf{v})\bigl(\mathbf{v}(z)\bigr)
+=
+(-\mathbf{v})\bigl(\mathbf{v}(y)\bigr).
+\]
+Hence,
+\[
+(-\mathbf{v}+\mathbf{v})(z)
+=
+(-\mathbf{v}+\mathbf{v})(y),
+\]
+and therefore
+\[
+\mathbf{0}(z)=\mathbf{0}(y).
+\]
+It follows that
+\[
+z=y.
+\]
+
+Let us now prove that \(T_{\mathbf{v}}\) is onto. For every \(y\in \mathcal A\), we
+need to prove that there exists \(x\in \mathcal A\) such that
+\[
+\mathbf{v}(x)=y.
+\]
+We simply take
+\[
+x=(-\mathbf{v})(y).
+\]
+Then
+\[
+\mathbf{v}(x)
+=
+\mathbf{v}\bigl((-\mathbf{v})(y)\bigr)
+=
+(\mathbf{v}-\mathbf{v})(y)
+=
+\mathbf{0}(y)
+=
+y.
+\]
+\end{proof}
+
+\begin{definition}[Permutation group]
+Let \(Y\) be a set. The set
+\[
+\operatorname{Sym}(Y)
+=
+\left\{
+f\colon Y\longrightarrow Y
+\;\middle|\;
+f \text{ is bijective}
+\right\}
+\]
+is called the permutation group of \(Y\). Its group operation is the
+composition of mappings.
+\end{definition}
+
+\begin{proposition}
+The mapping
+\[
+\rho\colon V\longrightarrow\operatorname{Sym}(\mathcal A),
+\qquad
+\rho(\mathbf{v})=T_{\mathbf{v}},
+\]
+is an injective homomorphism from the additive group of \(V\) into the
+permutation group \(\operatorname{Sym}(\mathcal A)\).
+\end{proposition}
+
+\begin{proof}
+We first prove that \(\rho\) preserves the group operation. Let
+\(\mathbf{u},\mathbf{v}\in V\). For every \(x\in \mathcal A\),
+\[
+\rho(\mathbf{u}+\mathbf{v})(x)
+=
+T_{\mathbf{u}+\mathbf{v}}(x)
+=
+(\mathbf{u}+\mathbf{v})(x).
+\]
+By the definition of the action of the sum of two vectors,
+\[
+(\mathbf{u}+\mathbf{v})(x)
+=
+\mathbf{u}\bigl(\mathbf{v}(x)\bigr)
+=
+\bigl(T_{\mathbf{u}}\circ T_{\mathbf{v}}\bigr)(x).
+\]
+Therefore,
+\[
+\rho(\mathbf{u}+\mathbf{v})
+=
+\rho(\mathbf{u})\circ\rho(\mathbf{v}),
+\]
+and hence \(\rho\) is a homomorphism.
+
+We now prove that \(\rho\) is injective. Assume that
+\[
+\rho(\mathbf{u})=\rho(\mathbf{v}).
+\]
+Then
+\[
+T_{\mathbf{u}}(x)=T_{\mathbf{v}}(x)
+\]
+for every \(x\in \mathcal A\), and therefore
+\[
+\mathbf{u}(x)=\mathbf{v}(x).
+\]
+Applying \(-\mathbf{v}\) to both sides gives
+\[
+(-\mathbf{v})\bigl(\mathbf{u}(x)\bigr)
+=
+(-\mathbf{v})\bigl(\mathbf{v}(x)\bigr).
+\]
+Thus,
+\[
+(-\mathbf{v}+\mathbf{u})(x)
+=
+(-\mathbf{v}+\mathbf{v})(x)
+=
+\mathbf{0}(x)
+=
+x.
+\]
+By the uniqueness of the vector that maps \(x\) onto itself,
+\[
+-\mathbf{v}+\mathbf{u}=\mathbf{0},
+\]
+and hence
+\[
+\mathbf{u}=\mathbf{v}.
+\]
+Therefore, \(\rho\) is injective.
+\end{proof}
+
+
+\end{document}

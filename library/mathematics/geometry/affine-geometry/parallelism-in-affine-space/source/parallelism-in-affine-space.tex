@@ -1,0 +1,334 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{hyperref}
+
+\title{Parallelism in Affine Space}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Parallelism in Affine Space}
+
+\begin{definition}[Parallel affine subspaces]
+Let
+\[
+S(x,U)
+\qquad\text{and}\qquad
+S(x',W)
+\]
+be affine subspaces of \(\mathcal A\). They are said to be parallel if and only if
+they have the same direction space; that is,
+\[
+S(x,U)\parallel S(x',W)
+\quad\Longleftrightarrow\quad
+U=W.
+\]
+\end{definition}
+
+\begin{proposition}
+Let \(S(x,U)\) be an affine subspace of \(\mathcal A\). For every
+\(\mathbf v\in V\),
+\[
+T_{\mathbf v}\bigl(S(x,U)\bigr)
+=
+S\bigl(\mathbf v(x),U\bigr).
+\]
+Consequently, every translate of an affine subspace is parallel to the
+original affine subspace.
+\end{proposition}
+
+\begin{proof}
+By definition,
+\[
+T_{\mathbf v}\bigl(S(x,U)\bigr)
+=
+\left\{
+y\in \mathcal A
+\;\middle|\;
+y=\mathbf v\bigl(\mathbf u(x)\bigr)
+\text{ for some }\mathbf u\in U
+\right\}.
+\]
+
+Let
+\[
+y\in T_{\mathbf v}\bigl(S(x,U)\bigr).
+\]
+Then there exists \(\mathbf u\in U\) such that
+\[
+y=\mathbf v\bigl(\mathbf u(x)\bigr).
+\]
+Using the properties of the action of \(V\) on \(\mathcal A\), we obtain
+\[
+y
+=
+(\mathbf v+\mathbf u)(x)
+=
+\mathbf u\bigl(\mathbf v(x)\bigr).
+\]
+Therefore
+\[
+y\in S\bigl(\mathbf v(x),U\bigr),
+\]
+and hence
+\[
+T_{\mathbf v}\bigl(S(x,U)\bigr)
+\subseteq
+S\bigl(\mathbf v(x),U\bigr).
+\]
+
+Conversely, let
+\[
+y\in S\bigl(\mathbf v(x),U\bigr).
+\]
+Then there exists \(\mathbf u\in U\) such that
+\[
+y=\mathbf u\bigl(\mathbf v(x)\bigr).
+\]
+Again using the properties of the action, we obtain
+\[
+y
+=
+(\mathbf u+\mathbf v)(x)
+=
+\mathbf v\bigl(\mathbf u(x)\bigr).
+\]
+Since
+\[
+\mathbf u(x)\in S(x,U),
+\]
+it follows that
+\[
+y\in T_{\mathbf v}\bigl(S(x,U)\bigr).
+\]
+Therefore
+\[
+S\bigl(\mathbf v(x),U\bigr)
+\subseteq
+T_{\mathbf v}\bigl(S(x,U)\bigr).
+\]
+
+We conclude that
+\[
+T_{\mathbf v}\bigl(S(x,U)\bigr)
+=
+S\bigl(\mathbf v(x),U\bigr).
+\]
+
+Since both affine subspaces have direction space \(U\),
+\[
+T_{\mathbf v}\bigl(S(x,U)\bigr)
+\parallel
+S(x,U).
+\]
+\end{proof}
+
+\begin{proposition}
+Let
+\[
+S=S(x,U)
+\qquad\text{and}\qquad
+S'=S(y,W)
+\]
+be affine subspaces of \(\mathcal A\).
+
+If \(S\parallel S'\), then either
+\[
+S=S'
+\]
+or
+\[
+S\cap S'=\varnothing.
+\]
+
+Moreover, if \(S\) and \(S'\) are hyperplanes, then
+\[
+S\parallel S'
+\quad\Longleftrightarrow\quad
+S=S'
+\ \text{or}\
+S\cap S'=\varnothing.
+\]
+\end{proposition}
+
+\begin{proof}
+Suppose first that \(S\parallel S'\). By definition, their direction
+spaces coincide, so
+\[
+U=W.
+\]
+
+Assume that
+\[
+S\cap S'\neq\varnothing,
+\]
+and choose a point \(z\in S\cap S'\). Since \(z\in S\) and
+\(z\in S'\), there exist vectors \(\mathbf b,\mathbf c\in U\) such
+that
+\[
+z=\mathbf b(x)=\mathbf c(y).
+\]
+It follows that
+\[
+y=(-\mathbf c)(z)
+  =(-\mathbf c)\bigl(\mathbf b(x)\bigr)
+  =(\mathbf b-\mathbf c)(x).
+\]
+Since \(\mathbf b-\mathbf c\in U\), we have \(y\in S\).
+
+Now let \(p\in S'\). There exists \(\mathbf u\in U\) such that
+\[
+p=\mathbf u(y).
+\]
+Therefore,
+\[
+p
+ =\mathbf u\bigl((\mathbf b-\mathbf c)(x)\bigr)
+ =(\mathbf u+\mathbf b-\mathbf c)(x).
+\]
+Because
+\[
+\mathbf u+\mathbf b-\mathbf c\in U,
+\]
+we obtain \(p\in S\). Hence
+\[
+S'\subseteq S.
+\]
+Interchanging \(S\) and \(S'\) gives
+\[
+S\subseteq S',
+\]
+and consequently
+\[
+S=S'.
+\]
+Thus, if \(S\) and \(S'\) are parallel, then either
+\[
+S=S'
+\]
+or
+\[
+S\cap S'=\varnothing.
+\]
+
+We now assume that \(S\) and \(S'\) are hyperplanes and prove the
+converse. If \(S=S'\), then their direction spaces are equal, and
+therefore \(S\parallel S'\).
+
+It remains to prove that
+\[
+S\cap S'=\varnothing
+\quad\Longrightarrow\quad
+S\parallel S'.
+\]
+Equivalently, we prove the contrapositive
+\[
+S\not\parallel S'
+\quad\Longrightarrow\quad
+S\cap S'\neq\varnothing.
+\]
+
+Suppose, therefore, that \(S\not\parallel S'\). Then
+\[
+U\neq W.
+\]
+Since \(U\) and \(W\) are distinct \((n-1)\)-dimensional linear
+subspaces of \(V\), we have
+\[
+U+W=V.
+\]
+
+Let
+\[
+\mathbf d=\overrightarrow{xy}.
+\]
+Since \(\mathbf d\in V=U+W\), there exist
+\[
+\mathbf b\in U
+\qquad\text{and}\qquad
+\mathbf c\in W
+\]
+such that
+\[
+\mathbf d=\mathbf b+\mathbf c.
+\]
+Consequently,
+\[
+y=\mathbf d(x)=(\mathbf b+\mathbf c)(x),
+\]
+and hence
+\[
+(-\mathbf c)(y)=\mathbf b(x). 
+\]
+
+The point \(\mathbf b(x)\) belongs to \(S\), since \(\mathbf b\in U\),
+while the same point, written as \((-\mathbf c)(y)\), belongs to
+\(S'\), since \(-\mathbf c\in W\). Therefore,
+\[
+S\cap S'\neq\varnothing.
+\]
+
+This proves the contrapositive and hence
+\[
+S\cap S'=\varnothing
+\quad\Longrightarrow\quad
+S\parallel S'.
+\]
+The proof is complete.
+\end{proof}
+
+\begin{proposition}[The fifth parallel axiom]
+Let \(S\) be a \(r\)-dimensional affine subspace of \(\mathcal A\), and let
+\(x\in \mathcal A\). Then there exists one and only one \(r\)-dimensional
+affine subspace \(S'\) of \(\mathcal A\) which contains \(x\) and is parallel
+to \(S\).
+\end{proposition}
+
+\begin{proof}
+Let
+\[
+S=S(y,U),
+\]
+where \(U\) is a \(r\)-dimensional linear subspace of \(V\). Define
+\[
+\mathbf d=\overrightarrow{yx}.
+\]
+Then
+\[
+T_{\mathbf d}(y)=x.
+\]
+We therefore define
+\[
+S'
+   =S\bigl(T_{\mathbf d}(y),U\bigr)
+   =S(x,U).
+\]
+It follows immediately that
+\[
+x\in S'
+\qquad\text{and}\qquad
+S'\parallel S,
+\]
+since \(S\) and \(S'\) have the same direction space \(U\). Moreover,
+\[
+\dim S'=\dim U=r.
+\]
+This proves existence.
+
+To prove uniqueness, let \(S''\) be a \(r\)-dimensional affine
+subspace containing \(x\) and parallel to \(S\). Since \(S''\parallel
+S\), its direction space is \(U\). Since \(x\in S''\), we may take
+\(x\) as its reference point, and therefore
+\[
+S''=S(x,U)=S'.
+\]
+Hence \(S'\) is unique.
+\end{proof}
+
+\end{document}

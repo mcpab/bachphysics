@@ -1,27 +1,43 @@
-'use client';
+import { EssayCollectionOverview } from '@/app/components/overview/EssayCollectionOverview';
+import {
+    getImmediateMenuTopics,
+    withMenuTopicMetadata,
+} from '@/app/navigation/getImmediateMenuTopics';
+import { siteMenuTree } from '@/app/navigation/siteMenuTree';
 
-import Essay from '@/app/components/Essay';
-import { labelIndex } from '@/library/mathematics/geometry/affine-geometry/generated/affine-geometry.labelIndex';
-import { latexDocument } from '@/library/mathematics/geometry/affine-geometry/generated/affine-geometry.layout.ast';
-import type { ChapterFrontMatterProps } from '@mcpab/katex/react';
+const affineGeometryIntroduction = [
+    // TODO: Write the Affine Geometry collection introduction.
+] as const;
 
-const frontMatter = {
-    eyebrow: 'Geometry',
-    title: 'Affine Geometry',
-    subtitle: 'Points, vectors, affine spaces, and the transformations that preserve their structure.',
-    abstract: [
-        'This essay is under development. It will introduce affine geometry from first principles and establish the notation used by later geometry essays.',
-    ],
-    prerequisites: [],
-    topics: [],
-} satisfies ChapterFrontMatterProps;
+const affineGeometryEssayMetadata = {
+    '/mathematics/geometry/affine-geometry/foundations-of-affine-space': {
+        title: 'Foundations of Affine Space',
+    },
+    '/mathematics/geometry/affine-geometry/affine-subspaces-and-coordinates': {
+        title: 'Affine Subspaces and Coordinates',
+    },
+    '/mathematics/geometry/affine-geometry/hyperplanes-and-linear-equations': {
+        title: 'Hyperplanes and Linear Equations',
+    },
+    '/mathematics/geometry/affine-geometry/parallelism-in-affine-space': {
+        title: 'Parallelism in Affine Space',
+    },
+    '/mathematics/geometry/affine-geometry/affine-independence-and-spans': {
+        title: 'Affine Independence and Spans',
+    },
+} as const;
+
+const affineGeometryEssays = withMenuTopicMetadata(
+    getImmediateMenuTopics(siteMenuTree, 'affine-geometry'),
+    affineGeometryEssayMetadata,
+);
 
 export default function AffineGeometry(): React.ReactElement {
     return (
-        <Essay
-            frontMatter={frontMatter}
-            labelIndex={labelIndex}
-            latexDocument={latexDocument}
+        <EssayCollectionOverview
+            title="Affine Geometry"
+            introduction={affineGeometryIntroduction}
+            essays={affineGeometryEssays}
         />
     );
 }

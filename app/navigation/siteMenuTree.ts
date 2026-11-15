@@ -223,9 +223,46 @@ export const siteMenuTree: DrawerMenuTree = {
                         },
                         {
                             id: 'affine-geometry',
-                            href: '/mathematics/geometry/affine-geometry',
-                            type: 'link',
+                            type: 'group',
                             label: 'Affine Geometry',
+                            children: [
+                                {
+                                    id: 'affine-geometry-overview',
+                                    href: '/mathematics/geometry/affine-geometry',
+                                    type: 'link',
+                                    label: 'Overview',
+                                },
+                                {
+                                    id: 'foundations-of-affine-space',
+                                    href: '/mathematics/geometry/affine-geometry/foundations-of-affine-space',
+                                    type: 'link',
+                                    label: 'Foundations of Affine Space',
+                                },
+                                {
+                                    id: 'affine-subspaces-and-coordinates',
+                                    href: '/mathematics/geometry/affine-geometry/affine-subspaces-and-coordinates',
+                                    type: 'link',
+                                    label: 'Affine Subspaces and Coordinates',
+                                },
+                                {
+                                    id: 'hyperplanes-and-linear-equations',
+                                    href: '/mathematics/geometry/affine-geometry/hyperplanes-and-linear-equations',
+                                    type: 'link',
+                                    label: 'Hyperplanes and Linear Equations',
+                                },
+                                {
+                                    id: 'parallelism-in-affine-space',
+                                    href: '/mathematics/geometry/affine-geometry/parallelism-in-affine-space',
+                                    type: 'link',
+                                    label: 'Parallelism in Affine Space',
+                                },
+                                {
+                                    id: 'affine-independence-and-spans',
+                                    href: '/mathematics/geometry/affine-geometry/affine-independence-and-spans',
+                                    type: 'link',
+                                    label: 'Affine Independence and Spans',
+                                },
+                            ],
                         },
                     ],
                 },
