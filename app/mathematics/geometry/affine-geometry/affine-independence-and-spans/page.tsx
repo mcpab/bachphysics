@@ -4,6 +4,7 @@ import Essay from '@/app/components/Essay';
 import { labelIndex } from '@/library/mathematics/geometry/affine-geometry/affine-independence-and-spans/generated/affine-independence-and-spans.labelIndex';
 import { latexDocument } from '@/library/mathematics/geometry/affine-geometry/affine-independence-and-spans/generated/affine-independence-and-spans.layout.ast';
 import type { ChapterFrontMatterProps } from '@mcpab/katex/react';
+import { affineGeometryLatexPropsOverrides } from '../affineGeometryOverrides';
 
 const frontMatter = {
     eyebrow: 'Geometry',
@@ -35,6 +36,7 @@ export default function AffineIndependenceAndSpans(): React.ReactElement {
             frontMatter={frontMatter}
             labelIndex={labelIndex}
             latexDocument={latexDocument}
+            latexPropsOverrides={affineGeometryLatexPropsOverrides}
         />
     );
 }

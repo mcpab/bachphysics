@@ -5,6 +5,7 @@ import { labelIndex } from '@/library/mathematics/geometry/affine-geometry/found
 import { latexDocument } from '@/library/mathematics/geometry/affine-geometry/foundations-of-affine-space/generated/foundations-of-affine-space.layout.ast';
 import type { LatexPropsOverrides } from '@mcpab/katex';
 import type { ChapterFrontMatterProps } from '@mcpab/katex/react';
+import { affineGeometryLatexPropsOverrides } from '../affineGeometryOverrides';
 
 const latexPropsOverrides = {
     table: {
@@ -13,6 +14,7 @@ const latexPropsOverrides = {
             align: 'left',
         },
     },
+    ...affineGeometryLatexPropsOverrides
 } satisfies LatexPropsOverrides;
 
 const frontMatter = {
@@ -20,13 +22,13 @@ const frontMatter = {
     title: 'Foundations of Affine Space',
 
     // TODO: Write the essay subtitle.
-    // subtitle: '',
+subtitle: 'The basic definitions of an affine space.',
 
-    abstract: [
-        // TODO: Write the essay abstract.
-    ],
+abstract: [
+    'This essay introduces the physical context for affine space, presents its basic definitions, and establishes the notation and conventions used throughout the Affine Geometry collection.',
+],
 
-    prerequisites: [],
+    prerequisites: ['Linear algebra'],
 
     topics: [
         'Notation and conventions',

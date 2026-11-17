@@ -4,7 +4,7 @@ import Essay from '@/app/components/Essay';
 import { labelIndex } from '@/library/mathematics/geometry/affine-geometry/affine-subspaces-and-coordinates/generated/affine-subspaces-and-coordinates.labelIndex';
 import { latexDocument } from '@/library/mathematics/geometry/affine-geometry/affine-subspaces-and-coordinates/generated/affine-subspaces-and-coordinates.layout.ast';
 import type { ChapterFrontMatterProps } from '@mcpab/katex/react';
-
+import { affineGeometryLatexPropsOverrides } from '../affineGeometryOverrides';
 const frontMatter = {
     eyebrow: 'Geometry',
     title: 'Affine Subspaces and Coordinates',
@@ -34,6 +34,7 @@ export default function AffineSubspacesAndCoordinates(): React.ReactElement {
             frontMatter={frontMatter}
             labelIndex={labelIndex}
             latexDocument={latexDocument}
+            latexPropsOverrides={affineGeometryLatexPropsOverrides}
         />
     );
 }

@@ -14,7 +14,50 @@
 \maketitle
 
 \section{Introduction}
-% ============================================================
+
+When we first approach the study of physics, we begin with an elementary
+treatment of vectors. We learn that a vector has a direction and a magnitude
+and can be applied at a point in space. A typical example is the arrow from
+$x$ to $y$, which represents the displacement from one point to the other.
+
+We are then taught that we can slide the arrow parallel to itself and place
+its tail at a different point. Its endpoints change, yet it represents the
+same displacement. We get used to doing this so early that we rarely stop
+to ask what it means for a vector to act at a point. This rather mysterious
+association between vectors and points is easy to gloss over in elementary
+physics, and we continue to use it throughout our studies, often without
+ever making it explicit. \par
+
+During our initial studies, we also learn to add vectors using the
+parallelogram rule. For displacements, the same sum can be read directly
+by following two arrows head to tail. If we go from $x$ to $z$ and then from
+$z$ to $y$, the sum of the two displacements is the displacement from $x$
+to $y$:
+\[
+  \overrightarrow{xz} + \overrightarrow{zy} = \overrightarrow{xy}.
+\]
+
+We use this association again when we set up a coordinate system in
+three-dimensional space. We choose a point $o$ as the origin, and we use
+vectors to locate every other point relative to it. To specify the
+position of a point $x$, we give the vector $\overrightarrow{ox}$ that
+takes us from $o$ to $x$. Conversely, any displacement vector applied at
+$o$ leads to a unique point in space. Once we choose a basis for the
+displacement vectors, the components of $\overrightarrow{ox}$ give the
+coordinates of $x$.
+
+The preceding examples suggest that a set of points can acquire an
+\emph{additional} structure when we associate a vector space with it
+and specify how its vectors act on the points. The points themselves
+can stay the same while the structure changes if we change the vector space. It is the relation
+between the points and the vectors that we are adding.
+
+In ordinary three-dimensional space, we naturally interpret the
+vectors as displacements. This gives us a familiar way to picture
+the relation between points and vectors. But the same
+structure arises elsewhere in mathematics and physics.  Affine geometry takes that
+relation as the starting point and formulates it for an abstract set
+of points and a vector space acting on it. 
 
 \subsection{Notation and conventions}
 
@@ -63,13 +106,22 @@ objects are needed.
 
 \section{Affine Spaces}
 
+In this section, we define an affine space by associating a set of
+points with a vector space over the real numbers $\mathbb{R}$ and
+specifying how the vectors act on the points.
+
+More generally, affine geometry can be developed over a division ring,
+whose multiplication need not be commutative. In these essays, we
+restrict our attention to the real numbers, which are the scalars in
+the physical applications we will consider.
+
 \begin{definition}[Affine space]
+
 An \(n\)-dimensional affine space over \(\mathbb{R}\) consists of:
 \begin{itemize}
     \item a vector space \(V\);
     \item a set \(\mathcal A\) of points.
 \end{itemize}
-\end{definition}
 
 To each vector \(\mathbf{v} \in V\) is associated a mapping
 \[
@@ -85,9 +137,9 @@ where \(x,y \in \mathcal A\), with the following properties:
     \(\mathbf{0}(x)=x\), where \(\mathbf{0}\) is the null vector.
 
     \item
-    For all \(x,y\in \mathcal A\), there exists a unique \(\mathbf{v}\in V\)
-    such that \(\mathbf{v}(x)=y\), and we denote
-    \(\mathbf{v}=\overrightarrow{xy}\).
+    For all \(x,y\in \mathcal A\), there exists a unique \(\mathbf{d}\in V\)
+    such that \(\mathbf{d}(x)=y\), and we denote
+    \(\mathbf{d}=\overrightarrow{xy}\).
 
     \item
     If \(\mathbf{v},\mathbf{w}\in V\), the composition of the action
@@ -99,17 +151,58 @@ where \(x,y \in \mathcal A\), with the following properties:
 
 \end{enumerate}
 
-Such a composition must be commutative, as the sum of vectors is:
-\[
-\mathbf{v}\circ\mathbf{w}
-=
-\mathbf{v}+\mathbf{w}
-=
-\mathbf{w}+\mathbf{v}
-=
-\mathbf{w}\circ\mathbf{v}.
-\] 
+\end{definition}
 
+
+One point is easy to gloss over. The action of a vector on the points
+of an affine space respects vector addition:
+
+\[
+  \mathbf{v}\circ\mathbf{w}
+  =
+  \mathbf{v}+\mathbf{w}
+  =
+  \mathbf{w}+\mathbf{v}
+  =
+  \mathbf{w}\circ\mathbf{v},
+\]
+where the sums in the middle denote the maps induced by the
+corresponding sums of vectors. Since vector addition is commutative,
+the maps induced by the vectors commute as well.
+
+The action also gives us a direct way to undo a move. If we apply
+$\mathbf{v}$ and then $-\mathbf{v}$, the combined action is that of the
+zero vector, which leaves every point fixed. In other words, the inverse of the map induced by $\mathbf{v}$ is the map induced by
+$-\mathbf{v}$. Indeed, their composition in either order is the map
+induced by the zero vector, which is the identity map on $\mathcal A$:
+\[
+  \mathbf{v}\circ(-\mathbf{v})
+  =
+  (-\mathbf{v})\circ\mathbf{v}
+  =
+  \operatorname{id}_{\mathcal A}.
+\]
+
+Coming back to the displacement example, suppose we start at $x$,
+apply $\overrightarrow{xz}$ to reach $z$, and then apply
+$\overrightarrow{zy}$ to reach $y$. We can just as well start at $x$
+and apply $\overrightarrow{zy}$ first, followed by
+$\overrightarrow{xz}$. In general, we pass through a different
+intermediate point, but we still end up at $y$. This is the familiar
+parallelogram rule expressed in terms of how vectors act on points.
+
+We can now see what structure a vector space brings to a set of points
+$\mathcal{A}$. We start with a nonempty set whose elements we call points.
+We assume no geometry on this set. Once we equip it with an affine action
+of a vector space, its points are related through the action of vectors.
+Given any two points, there is a unique vector whose action takes the
+first point to the second.
+
+So far, we have considered what happens when a vector acts on a single
+point. What happens to the set $\mathcal{A}$ as a whole if we apply the
+same vector to every point? We will show that the resulting set is again
+$\mathcal{A}$. Before doing so, we define the map obtained by applying
+a fixed vector to every point. We call this map a \textit{translation}.
 
 \begin{definition}[Translation]
 To any given vector \(\mathbf{v}\in V\) is associated a mapping
@@ -122,6 +215,11 @@ T_{\mathbf{v}}(x)=\mathbf{v}(x).
 \]
 Such a mapping is called a translation.
 \end{definition}
+
+Now we can prove that a translation maps $\mathcal A$ onto itself.
+You will already see how powerful it is that adding vectors corresponds
+to composing their action maps, and that negating a vector corresponds
+to taking the inverse map
 
 \begin{proposition}
 For every \(\mathbf{v}\in V\), the translation
@@ -185,96 +283,46 @@ y.
 \]
 \end{proof}
 
-\begin{definition}[Permutation group]
-Let \(Y\) be a set. The set
-\[
-\operatorname{Sym}(Y)
-=
-\left\{
-f\colon Y\longrightarrow Y
-\;\middle|\;
-f \text{ is bijective}
-\right\}
-\]
-is called the permutation group of \(Y\). Its group operation is the
-composition of mappings.
-\end{definition}
+We will conclude this essay with some basic examples of affine space:
 
-\begin{proposition}
-The mapping
-\[
-\rho\colon V\longrightarrow\operatorname{Sym}(\mathcal A),
-\qquad
-\rho(\mathbf{v})=T_{\mathbf{v}},
-\]
-is an injective homomorphism from the additive group of \(V\) into the
-permutation group \(\operatorname{Sym}(\mathcal A)\).
-\end{proposition}
+\begin{itemize}
 
-\begin{proof}
-We first prove that \(\rho\) preserves the group operation. Let
-\(\mathbf{u},\mathbf{v}\in V\). For every \(x\in \mathcal A\),
+  \item The ordinary Euclidean point space $\mathcal A$, with translation-vector
+space $V=\mathbb R^3$, is an affine space of dimension $3$.
+  \item Both Galilean spacetime and the spacetime of special relativity
+provide examples of the same affine construction. The points are
+events, and the vectors are spacetime displacements. In a chosen
+inertial coordinate system, an event has coordinates $(t,x,y,z)$,
+and a displacement $\mathbf d=(\Delta t,\Delta x,\Delta y,\Delta z)$ acts on it by
+adding the corresponding increments. Given two events $p$ and $q$,
+taking the difference of their coordinates gives the unique displacement
+$\mathbf d=\overrightarrow{pq}$ such that $\mathbf d(p)=q$. These affine spaces have dimension $4$.
+  \item Consider the set
 \[
-\rho(\mathbf{u}+\mathbf{v})(x)
-=
-T_{\mathbf{u}+\mathbf{v}}(x)
-=
-(\mathbf{u}+\mathbf{v})(x).
+  \mathcal A
+  =
+  \left\{
+    f\in C([0,1],\mathbb R)
+    \;\middle|\;
+    \int_0^1 f(t)\,dt=1
+  \right\},
 \]
-By the definition of the action of the sum of two vectors,
+where $C([0,1],\mathbb R)$ denotes the set of continuous real-valued
+functions on $[0,1]$. The set
 \[
-(\mathbf{u}+\mathbf{v})(x)
-=
-\mathbf{u}\bigl(\mathbf{v}(x)\bigr)
-=
-\bigl(T_{\mathbf{u}}\circ T_{\mathbf{v}}\bigr)(x).
+  V
+  =
+  \left\{
+    \mathbf v\in C([0,1],\mathbb R)
+    \;\middle|\;
+    \int_0^1 \mathbf v(t)\,dt=0
+  \right\}
 \]
-Therefore,
-\[
-\rho(\mathbf{u}+\mathbf{v})
-=
-\rho(\mathbf{u})\circ\rho(\mathbf{v}),
-\]
-and hence \(\rho\) is a homomorphism.
-
-We now prove that \(\rho\) is injective. Assume that
-\[
-\rho(\mathbf{u})=\rho(\mathbf{v}).
-\]
-Then
-\[
-T_{\mathbf{u}}(x)=T_{\mathbf{v}}(x)
-\]
-for every \(x\in \mathcal A\), and therefore
-\[
-\mathbf{u}(x)=\mathbf{v}(x).
-\]
-Applying \(-\mathbf{v}\) to both sides gives
-\[
-(-\mathbf{v})\bigl(\mathbf{u}(x)\bigr)
-=
-(-\mathbf{v})\bigl(\mathbf{v}(x)\bigr).
-\]
-Thus,
-\[
-(-\mathbf{v}+\mathbf{u})(x)
-=
-(-\mathbf{v}+\mathbf{v})(x)
-=
-\mathbf{0}(x)
-=
-x.
-\]
-By the uniqueness of the vector that maps \(x\) onto itself,
-\[
--\mathbf{v}+\mathbf{u}=\mathbf{0},
-\]
-and hence
-\[
-\mathbf{u}=\mathbf{v}.
-\]
-Therefore, \(\rho\) is injective.
-\end{proof}
-
+is a vector space under the usual operations on functions. It acts on
+$\mathcal A$ by addition, $\mathbf v(f)=f+\mathbf v$. Given any two functions
+$f,g\in\mathcal A$, the unique displacement that takes $f$ to $g$ is
+$\mathbf d:=g-f$, whose integral is zero. Thus $\mathbf d(f)=g$, and
+$\mathcal A$, together with $V$ and this action, is an affine space. This affine space has infinite dimension.
+\end{itemize}
 
 \end{document}

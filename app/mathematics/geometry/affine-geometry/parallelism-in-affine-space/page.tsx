@@ -4,6 +4,7 @@ import Essay from '@/app/components/Essay';
 import { labelIndex } from '@/library/mathematics/geometry/affine-geometry/parallelism-in-affine-space/generated/parallelism-in-affine-space.labelIndex';
 import { latexDocument } from '@/library/mathematics/geometry/affine-geometry/parallelism-in-affine-space/generated/parallelism-in-affine-space.layout.ast';
 import type { ChapterFrontMatterProps } from '@mcpab/katex/react';
+import { affineGeometryLatexPropsOverrides } from '../affineGeometryOverrides';
 
 const frontMatter = {
     eyebrow: 'Geometry',
@@ -36,6 +37,7 @@ export default function ParallelismInAffineSpace(): React.ReactElement {
             frontMatter={frontMatter}
             labelIndex={labelIndex}
             latexDocument={latexDocument}
+            latexPropsOverrides={affineGeometryLatexPropsOverrides}
         />
     );
 }
